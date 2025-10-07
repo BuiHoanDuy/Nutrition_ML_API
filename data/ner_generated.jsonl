@@ -1,0 +1,234 @@
+{"text": "0.5 bầu Bánh mỳ", "entities": [{"start": 0, "end": 3, "label": "QUANTITY"}, {"start": 8, "end": 15, "label": "FOOD"}]}
+{"text": "Ăn 0.5 tảng Bánh mỳ cho bữa trưa.", "entities": [{"start": 3, "end": 6, "label": "QUANTITY"}, {"start": 12, "end": 19, "label": "FOOD"}]}
+{"text": "Ăn 0.5 tô Bánh mỳ cho bữa trưa.", "entities": [{"start": 3, "end": 6, "label": "QUANTITY"}, {"start": 10, "end": 17, "label": "FOOD"}]}
+{"text": "Ăn 1 xâu Bánh mỳ cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 9, "end": 16, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 1 bó Bánh mỳ.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 21, "end": 28, "label": "FOOD"}]}
+{"text": "0.5 củ Bánh mỳ", "entities": [{"start": 0, "end": 3, "label": "QUANTITY"}, {"start": 7, "end": 14, "label": "FOOD"}]}
+{"text": "3 ml Bơ", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 5, "end": 7, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 2 tảng Bơ.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 23, "end": 25, "label": "FOOD"}]}
+{"text": "Tôi ăn 2 hũ Bơ vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 12, "end": 14, "label": "FOOD"}]}
+{"text": "Ăn 3 bắp Bơ cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 9, "end": 11, "label": "FOOD"}]}
+{"text": "1 gói Bơ", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 6, "end": 8, "label": "FOOD"}]}
+{"text": "Ăn 1 củ Bơ cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 8, "end": 10, "label": "FOOD"}]}
+{"text": "Ăn 1 thỏi Bông cải xanh cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 10, "end": 23, "label": "FOOD"}]}
+{"text": "2 túi Bông cải xanh", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 6, "end": 19, "label": "FOOD"}]}
+{"text": "0.5 phần Bông cải xanh", "entities": [{"start": 0, "end": 3, "label": "QUANTITY"}, {"start": 9, "end": 22, "label": "FOOD"}]}
+{"text": "2 mẩu Bông cải xanh", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 6, "end": 19, "label": "FOOD"}]}
+{"text": "2 tách Bông cải xanh", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 7, "end": 20, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 2 hũ Bông cải xanh.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 21, "end": 34, "label": "FOOD"}]}
+{"text": "Ăn 0.5 lạng Bỏng ngô cho bữa trưa.", "entities": [{"start": 3, "end": 6, "label": "QUANTITY"}, {"start": 12, "end": 20, "label": "FOOD"}]}
+{"text": "Ăn 3 bó Bỏng ngô cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 8, "end": 16, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 1 nhánh Bỏng ngô.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 24, "end": 32, "label": "FOOD"}]}
+{"text": "Ăn 2 đôi Bỏng ngô cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 9, "end": 17, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 2 chai Bỏng ngô.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 23, "end": 31, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 3 bông Bỏng ngô.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 23, "end": 31, "label": "FOOD"}]}
+{"text": "3 viên Broccoli", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 7, "end": 15, "label": "FOOD"}]}
+{"text": "Ăn 1 bịch Broccoli cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 10, "end": 18, "label": "FOOD"}]}
+{"text": "1 ống Broccoli", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 6, "end": 14, "label": "FOOD"}]}
+{"text": "3 phần Broccoli", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 7, "end": 15, "label": "FOOD"}]}
+{"text": "Ăn 1 vỉ Broccoli cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 8, "end": 16, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 0.5 miếng Broccoli.", "entities": [{"start": 16, "end": 19, "label": "QUANTITY"}, {"start": 26, "end": 34, "label": "FOOD"}]}
+{"text": "3 viên Cà chua", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 7, "end": 14, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 0.5 cây Cà chua.", "entities": [{"start": 16, "end": 19, "label": "QUANTITY"}, {"start": 24, "end": 31, "label": "FOOD"}]}
+{"text": "0.5 bông Cà chua", "entities": [{"start": 0, "end": 3, "label": "QUANTITY"}, {"start": 9, "end": 16, "label": "FOOD"}]}
+{"text": "1 đoạn Cà chua", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 7, "end": 14, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 0.5 ly Cà chua.", "entities": [{"start": 16, "end": 19, "label": "QUANTITY"}, {"start": 23, "end": 30, "label": "FOOD"}]}
+{"text": "Ăn 0.5 viên Cà chua cho bữa trưa.", "entities": [{"start": 3, "end": 6, "label": "QUANTITY"}, {"start": 12, "end": 19, "label": "FOOD"}]}
+{"text": "0.5 đĩa Cá hồi", "entities": [{"start": 0, "end": 3, "label": "QUANTITY"}, {"start": 8, "end": 14, "label": "FOOD"}]}
+{"text": "2 xấp Cá hồi", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 6, "end": 12, "label": "FOOD"}]}
+{"text": "Ăn 0.5 nhánh Cá hồi cho bữa trưa.", "entities": [{"start": 3, "end": 6, "label": "QUANTITY"}, {"start": 13, "end": 19, "label": "FOOD"}]}
+{"text": "Ăn 1 phần Cá hồi cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 10, "end": 16, "label": "FOOD"}]}
+{"text": "Ăn 0.5 đôi Cá hồi cho bữa trưa.", "entities": [{"start": 3, "end": 6, "label": "QUANTITY"}, {"start": 11, "end": 17, "label": "FOOD"}]}
+{"text": "Ăn 2 bông Cá hồi cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 10, "end": 16, "label": "FOOD"}]}
+{"text": "Tôi ăn 3 bầu Cà phê vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 13, "end": 19, "label": "FOOD"}]}
+{"text": "Tôi ăn 0.5 tách Cà phê vào buổi sáng.", "entities": [{"start": 7, "end": 10, "label": "QUANTITY"}, {"start": 16, "end": 22, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 0.5 cái Cà phê.", "entities": [{"start": 16, "end": 19, "label": "QUANTITY"}, {"start": 24, "end": 30, "label": "FOOD"}]}
+{"text": "Ăn 1 bịch Cà phê cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 10, "end": 16, "label": "FOOD"}]}
+{"text": "Ăn 2 miếng Cà phê cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 11, "end": 17, "label": "FOOD"}]}
+{"text": "Ăn 1 thỏi Cà phê cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 10, "end": 16, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 2 quyển Cà rốt.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 24, "end": 30, "label": "FOOD"}]}
+{"text": "2 gói Cà rốt", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 6, "end": 12, "label": "FOOD"}]}
+{"text": "Tôi ăn 1 bắp Cà rốt vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 13, "end": 19, "label": "FOOD"}]}
+{"text": "Tôi ăn 3 tô Cà rốt vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 12, "end": 18, "label": "FOOD"}]}
+{"text": "2 quả Cà rốt", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 6, "end": 12, "label": "FOOD"}]}
+{"text": "2 củ Cà rốt", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 5, "end": 11, "label": "FOOD"}]}
+{"text": "Ăn 2 cọng Carrot cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 10, "end": 16, "label": "FOOD"}]}
+{"text": "Ăn 0.5 chai Carrot cho bữa trưa.", "entities": [{"start": 3, "end": 6, "label": "QUANTITY"}, {"start": 12, "end": 18, "label": "FOOD"}]}
+{"text": "Tôi ăn 1 củ Carrot vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 12, "end": 18, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 3 muỗng Carrot.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 24, "end": 30, "label": "FOOD"}]}
+{"text": "Tôi ăn 0.5 miếng Carrot vào buổi sáng.", "entities": [{"start": 7, "end": 10, "label": "QUANTITY"}, {"start": 17, "end": 23, "label": "FOOD"}]}
+{"text": "Ăn 1 cọng Carrot cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 10, "end": 16, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 3 nải Cheese.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 22, "end": 28, "label": "FOOD"}]}
+{"text": "Tôi ăn 2 bó Cheese vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 12, "end": 18, "label": "FOOD"}]}
+{"text": "1 mẩu Cheese", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 6, "end": 12, "label": "FOOD"}]}
+{"text": "Tôi ăn 1 bịch Cheese vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 14, "end": 20, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 3 con Cheese.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 22, "end": 28, "label": "FOOD"}]}
+{"text": "Ăn 2 lá Cheese cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 8, "end": 14, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 3 cái Chip.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 22, "end": 26, "label": "FOOD"}]}
+{"text": "Tôi ăn 2 muỗng Chip vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 15, "end": 19, "label": "FOOD"}]}
+{"text": "Tôi ăn 1 bắp Chip vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 13, "end": 17, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 1 xâu Chip.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 22, "end": 26, "label": "FOOD"}]}
+{"text": "Tôi ăn 1 quyển Chip vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 15, "end": 19, "label": "FOOD"}]}
+{"text": "Tôi ăn 3 tách Chip vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 14, "end": 18, "label": "FOOD"}]}
+{"text": "3 con Chuối", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 6, "end": 11, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 2 vá Chuối.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 21, "end": 26, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 2 đĩa Chuối.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 22, "end": 27, "label": "FOOD"}]}
+{"text": "Tôi ăn 0.5 cốc Chuối vào buổi sáng.", "entities": [{"start": 7, "end": 10, "label": "QUANTITY"}, {"start": 15, "end": 20, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 3 xấp Chuối.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 22, "end": 27, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 0.5 đĩa Chuối.", "entities": [{"start": 16, "end": 19, "label": "QUANTITY"}, {"start": 24, "end": 29, "label": "FOOD"}]}
+{"text": "Tôi ăn 3 tảng Cơm vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 14, "end": 17, "label": "FOOD"}]}
+{"text": "Ăn 1 xấp Cơm cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 9, "end": 12, "label": "FOOD"}]}
+{"text": "0.5 tách Cơm", "entities": [{"start": 0, "end": 3, "label": "QUANTITY"}, {"start": 9, "end": 12, "label": "FOOD"}]}
+{"text": "1 tảng Cơm", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 7, "end": 10, "label": "FOOD"}]}
+{"text": "Ăn 3 bịch Cơm cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 10, "end": 13, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 2 bát Cơm.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 22, "end": 25, "label": "FOOD"}]}
+{"text": "Ăn 1 túi Cookie cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 9, "end": 15, "label": "FOOD"}]}
+{"text": "Tôi ăn 3 nắm Cookie vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 13, "end": 19, "label": "FOOD"}]}
+{"text": "Ăn 2 túi Cookie cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 9, "end": 15, "label": "FOOD"}]}
+{"text": "1 cọng Cookie", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 7, "end": 13, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 1 túi Cookie.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 22, "end": 28, "label": "FOOD"}]}
+{"text": "Tôi ăn 0.5 hộp Cookie vào buổi sáng.", "entities": [{"start": 7, "end": 10, "label": "QUANTITY"}, {"start": 15, "end": 21, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 0.5 bắp Da ua.", "entities": [{"start": 16, "end": 19, "label": "QUANTITY"}, {"start": 24, "end": 29, "label": "FOOD"}]}
+{"text": "Tôi ăn 1 hộp Da ua vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 13, "end": 18, "label": "FOOD"}]}
+{"text": "Tôi ăn 1 gói Da ua vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 13, "end": 18, "label": "FOOD"}]}
+{"text": "Ăn 0.5 vỉ Da ua cho bữa trưa.", "entities": [{"start": 3, "end": 6, "label": "QUANTITY"}, {"start": 10, "end": 15, "label": "FOOD"}]}
+{"text": "Ăn 2 cây Da ua cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 9, "end": 14, "label": "FOOD"}]}
+{"text": "Tôi ăn 3 viên Da ua vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 14, "end": 19, "label": "FOOD"}]}
+{"text": "Tôi ăn 0.5 tô Hạt vào buổi sáng.", "entities": [{"start": 7, "end": 10, "label": "QUANTITY"}, {"start": 14, "end": 17, "label": "FOOD"}]}
+{"text": "Tôi ăn 2 cái Hạt vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 13, "end": 16, "label": "FOOD"}]}
+{"text": "3 cốc Hạt", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 6, "end": 9, "label": "FOOD"}]}
+{"text": "Ăn 2 mẩu Hạt cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 9, "end": 12, "label": "FOOD"}]}
+{"text": "Ăn 3 mẩu Hạt cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 9, "end": 12, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 1 tô Hạt.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 21, "end": 24, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 0.5 con Khoai tây.", "entities": [{"start": 16, "end": 19, "label": "QUANTITY"}, {"start": 24, "end": 33, "label": "FOOD"}]}
+{"text": "Ăn 1 lá Khoai tây cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 8, "end": 17, "label": "FOOD"}]}
+{"text": "Tôi ăn 1 xâu Khoai tây vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 13, "end": 22, "label": "FOOD"}]}
+{"text": "Tôi ăn 2 bó Khoai tây vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 12, "end": 21, "label": "FOOD"}]}
+{"text": "2 bó Khoai tây", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 5, "end": 14, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 2 bầu Khoai tây.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 22, "end": 31, "label": "FOOD"}]}
+{"text": "Tôi ăn 2 củ Mì ống vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 12, "end": 18, "label": "FOOD"}]}
+{"text": "Ăn 2 đĩa Mì ống cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 9, "end": 15, "label": "FOOD"}]}
+{"text": "Ăn 3 bông Mì ống cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 10, "end": 16, "label": "FOOD"}]}
+{"text": "Tôi ăn 3 bông Mì ống vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 14, "end": 20, "label": "FOOD"}]}
+{"text": "3 hũ Mì ống", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 5, "end": 11, "label": "FOOD"}]}
+{"text": "0.5 thỏi Mì ống", "entities": [{"start": 0, "end": 3, "label": "QUANTITY"}, {"start": 9, "end": 15, "label": "FOOD"}]}
+{"text": "0.5 bắp Nước", "entities": [{"start": 0, "end": 3, "label": "QUANTITY"}, {"start": 8, "end": 12, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 1 cái Nước.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 22, "end": 26, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 2 bánh Nước.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 23, "end": 27, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 3 bó Nước.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 21, "end": 25, "label": "FOOD"}]}
+{"text": "0.5 túi Nước", "entities": [{"start": 0, "end": 3, "label": "QUANTITY"}, {"start": 8, "end": 12, "label": "FOOD"}]}
+{"text": "Ăn 2 nắm Nước cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 9, "end": 13, "label": "FOOD"}]}
+{"text": "1 vỉ Nước cam", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 5, "end": 13, "label": "FOOD"}]}
+{"text": "0.5 bịch Nước cam", "entities": [{"start": 0, "end": 3, "label": "QUANTITY"}, {"start": 9, "end": 17, "label": "FOOD"}]}
+{"text": "Tôi ăn 2 cọng Nước cam vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 14, "end": 22, "label": "FOOD"}]}
+{"text": "Ăn 3 bó Nước cam cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 8, "end": 16, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 3 gói Nước cam.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 22, "end": 30, "label": "FOOD"}]}
+{"text": "3 bịch Nước cam", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 7, "end": 15, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 2 chai Paneer.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 23, "end": 29, "label": "FOOD"}]}
+{"text": "Ăn 2 mẩu Paneer cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 9, "end": 15, "label": "FOOD"}]}
+{"text": "Tôi ăn 2 lạng Paneer vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 14, "end": 20, "label": "FOOD"}]}
+{"text": "2 cọng Paneer", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 7, "end": 13, "label": "FOOD"}]}
+{"text": "Tôi ăn 2 phần Paneer vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 14, "end": 20, "label": "FOOD"}]}
+{"text": "Tôi ăn 3 cốc Paneer vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 13, "end": 19, "label": "FOOD"}]}
+{"text": "2 con Phô mai", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 6, "end": 13, "label": "FOOD"}]}
+{"text": "Ăn 0.5 g Phô mai cho bữa trưa.", "entities": [{"start": 3, "end": 6, "label": "QUANTITY"}, {"start": 9, "end": 16, "label": "FOOD"}]}
+{"text": "Tôi ăn 1 cốc Phô mai vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 13, "end": 20, "label": "FOOD"}]}
+{"text": "Tôi ăn 1 viên Phô mai vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 14, "end": 21, "label": "FOOD"}]}
+{"text": "Ăn 0.5 gói Phô mai cho bữa trưa.", "entities": [{"start": 3, "end": 6, "label": "QUANTITY"}, {"start": 11, "end": 18, "label": "FOOD"}]}
+{"text": "Ăn 0.5 viên Phô mai cho bữa trưa.", "entities": [{"start": 3, "end": 6, "label": "QUANTITY"}, {"start": 12, "end": 19, "label": "FOOD"}]}
+{"text": "Ăn 1 lạng Quả cam cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 10, "end": 17, "label": "FOOD"}]}
+{"text": "2 củ Quả cam", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 5, "end": 12, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 2 viên Quả cam.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 23, "end": 30, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 3 củ Quả cam.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 21, "end": 28, "label": "FOOD"}]}
+{"text": "Ăn 0.5 cây Quả cam cho bữa trưa.", "entities": [{"start": 3, "end": 6, "label": "QUANTITY"}, {"start": 11, "end": 18, "label": "FOOD"}]}
+{"text": "Ăn 1 tô Quả cam cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 8, "end": 15, "label": "FOOD"}]}
+{"text": "0.5 túi Quả dâu", "entities": [{"start": 0, "end": 3, "label": "QUANTITY"}, {"start": 8, "end": 15, "label": "FOOD"}]}
+{"text": "Tôi ăn 0.5 đôi Quả dâu vào buổi sáng.", "entities": [{"start": 7, "end": 10, "label": "QUANTITY"}, {"start": 15, "end": 22, "label": "FOOD"}]}
+{"text": "Tôi ăn 3 bịch Quả dâu vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 14, "end": 21, "label": "FOOD"}]}
+{"text": "Ăn 3 viên Quả dâu cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 10, "end": 17, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 0.5 xấp Quả dâu.", "entities": [{"start": 16, "end": 19, "label": "QUANTITY"}, {"start": 24, "end": 31, "label": "FOOD"}]}
+{"text": "Ăn 0.5 nải Quả dâu cho bữa trưa.", "entities": [{"start": 3, "end": 6, "label": "QUANTITY"}, {"start": 11, "end": 18, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 3 mẩu Quả nho.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 22, "end": 29, "label": "FOOD"}]}
+{"text": "Tôi ăn 2 phần Quả nho vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 14, "end": 21, "label": "FOOD"}]}
+{"text": "Ăn 3 nhánh Quả nho cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 11, "end": 18, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 2 hộp Quả nho.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 22, "end": 29, "label": "FOOD"}]}
+{"text": "Ăn 1 g Quả nho cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 7, "end": 14, "label": "FOOD"}]}
+{"text": "Tôi ăn 0.5 tảng Quả nho vào buổi sáng.", "entities": [{"start": 7, "end": 10, "label": "QUANTITY"}, {"start": 16, "end": 23, "label": "FOOD"}]}
+{"text": "Tôi ăn 3 bông Quả táo vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 14, "end": 21, "label": "FOOD"}]}
+{"text": "1 miếng Quả táo", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 8, "end": 15, "label": "FOOD"}]}
+{"text": "Tôi ăn 3 con Quả táo vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 13, "end": 20, "label": "FOOD"}]}
+{"text": "1 gói Quả táo", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 6, "end": 13, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 3 đôi Quả táo.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 22, "end": 29, "label": "FOOD"}]}
+{"text": "Ăn 1 tảng Quả táo cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 10, "end": 17, "label": "FOOD"}]}
+{"text": "Tôi ăn 1 quả Quinoa vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 13, "end": 19, "label": "FOOD"}]}
+{"text": "Ăn 2 nải Quinoa cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 9, "end": 15, "label": "FOOD"}]}
+{"text": "Ăn 1 cái Quinoa cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 9, "end": 15, "label": "FOOD"}]}
+{"text": "Ăn 3 miếng Quinoa cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 11, "end": 17, "label": "FOOD"}]}
+{"text": "Ăn 3 tảng Quinoa cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 10, "end": 16, "label": "FOOD"}]}
+{"text": "Ăn 1 cây Quinoa cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 9, "end": 15, "label": "FOOD"}]}
+{"text": "Tôi ăn 2 nải Rau chân vịt vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 13, "end": 25, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 1 bông Rau chân vịt.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 23, "end": 35, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 2 nhánh Rau chân vịt.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 24, "end": 36, "label": "FOOD"}]}
+{"text": "1 quả Rau chân vịt", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 6, "end": 18, "label": "FOOD"}]}
+{"text": "Tôi ăn 0.5 đĩa Rau chân vịt vào buổi sáng.", "entities": [{"start": 7, "end": 10, "label": "QUANTITY"}, {"start": 15, "end": 27, "label": "FOOD"}]}
+{"text": "0.5 tách Rau chân vịt", "entities": [{"start": 0, "end": 3, "label": "QUANTITY"}, {"start": 9, "end": 21, "label": "FOOD"}]}
+{"text": "Ăn 0.5 thỏi Sôcôla cho bữa trưa.", "entities": [{"start": 3, "end": 6, "label": "QUANTITY"}, {"start": 12, "end": 18, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 3 khúc Sôcôla.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 23, "end": 29, "label": "FOOD"}]}
+{"text": "Ăn 1 gói Sôcôla cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 9, "end": 15, "label": "FOOD"}]}
+{"text": "2 cây Sôcôla", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 6, "end": 12, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 3 tảng Sôcôla.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 23, "end": 29, "label": "FOOD"}]}
+{"text": "Tôi ăn 0.5 thỏi Sôcôla vào buổi sáng.", "entities": [{"start": 7, "end": 10, "label": "QUANTITY"}, {"start": 16, "end": 22, "label": "FOOD"}]}
+{"text": "Tôi ăn 1 bịch Sữa vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 14, "end": 17, "label": "FOOD"}]}
+{"text": "Ăn 2 thỏi Sữa cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 10, "end": 13, "label": "FOOD"}]}
+{"text": "Tôi ăn 3 quyển Sữa vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 15, "end": 18, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 1 gói Sữa.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 22, "end": 25, "label": "FOOD"}]}
+{"text": "Ăn 3 tảng Sữa cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 10, "end": 13, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 0.5 gói Sữa.", "entities": [{"start": 16, "end": 19, "label": "QUANTITY"}, {"start": 24, "end": 27, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 1 bó Sữa lắc.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 21, "end": 28, "label": "FOOD"}]}
+{"text": "2 bịch Sữa lắc", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 7, "end": 14, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 1 bánh Sữa lắc.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 23, "end": 30, "label": "FOOD"}]}
+{"text": "3 bánh Sữa lắc", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 7, "end": 14, "label": "FOOD"}]}
+{"text": "Tôi ăn 1 bó Sữa lắc vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 12, "end": 19, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 2 đoạn Sữa lắc.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 23, "end": 30, "label": "FOOD"}]}
+{"text": "Ăn 0.5 bát Thịt bò bít tết cho bữa trưa.", "entities": [{"start": 3, "end": 6, "label": "QUANTITY"}, {"start": 11, "end": 26, "label": "FOOD"}]}
+{"text": "0.5 hộp Thịt bò bít tết", "entities": [{"start": 0, "end": 3, "label": "QUANTITY"}, {"start": 8, "end": 23, "label": "FOOD"}]}
+{"text": "Ăn 3 con Thịt bò bít tết cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 9, "end": 24, "label": "FOOD"}]}
+{"text": "Tôi ăn 3 vỉ Thịt bò bít tết vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 12, "end": 27, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 0.5 bông Thịt bò bít tết.", "entities": [{"start": 16, "end": 19, "label": "QUANTITY"}, {"start": 25, "end": 40, "label": "FOOD"}]}
+{"text": "Ăn 2 quyển Thịt bò bít tết cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 11, "end": 26, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 2 lá Thịt lợn Chop.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 21, "end": 34, "label": "FOOD"}]}
+{"text": "Ăn 1 đoạn Thịt lợn Chop cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 10, "end": 23, "label": "FOOD"}]}
+{"text": "Tôi ăn 3 cái Thịt lợn Chop vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 13, "end": 26, "label": "FOOD"}]}
+{"text": "Tôi ăn 3 cốc Thịt lợn Chop vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 13, "end": 26, "label": "FOOD"}]}
+{"text": "Tôi ăn 3 gói Thịt lợn Chop vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 13, "end": 26, "label": "FOOD"}]}
+{"text": "Tôi ăn 2 vỉ Thịt lợn Chop vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 12, "end": 25, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 3 ống Tomato.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 22, "end": 28, "label": "FOOD"}]}
+{"text": "Tôi ăn 0.5 gói Tomato vào buổi sáng.", "entities": [{"start": 7, "end": 10, "label": "QUANTITY"}, {"start": 15, "end": 21, "label": "FOOD"}]}
+{"text": "Ăn 1 nải Tomato cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 9, "end": 15, "label": "FOOD"}]}
+{"text": "0.5 lá Tomato", "entities": [{"start": 0, "end": 3, "label": "QUANTITY"}, {"start": 7, "end": 13, "label": "FOOD"}]}
+{"text": "Ăn 0.5 hộp Tomato cho bữa trưa.", "entities": [{"start": 3, "end": 6, "label": "QUANTITY"}, {"start": 11, "end": 17, "label": "FOOD"}]}
+{"text": "Ăn 1 quả Tomato cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 9, "end": 15, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 2 phần Trà xanh.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 23, "end": 31, "label": "FOOD"}]}
+{"text": "0.5 muỗng Trà xanh", "entities": [{"start": 0, "end": 3, "label": "QUANTITY"}, {"start": 10, "end": 18, "label": "FOOD"}]}
+{"text": "Tôi ăn 1 củ Trà xanh vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 12, "end": 20, "label": "FOOD"}]}
+{"text": "Ăn 3 đoạn Trà xanh cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 10, "end": 18, "label": "FOOD"}]}
+{"text": "Tôi ăn 2 tô Trà xanh vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 12, "end": 20, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 0.5 con Trà xanh.", "entities": [{"start": 16, "end": 19, "label": "QUANTITY"}, {"start": 24, "end": 32, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 3 lạng Trứng.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 23, "end": 28, "label": "FOOD"}]}
+{"text": "Ăn 0.5 xâu Trứng cho bữa trưa.", "entities": [{"start": 3, "end": 6, "label": "QUANTITY"}, {"start": 11, "end": 16, "label": "FOOD"}]}
+{"text": "Tôi ăn 3 hũ Trứng vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 12, "end": 17, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 1 túi Trứng.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 22, "end": 27, "label": "FOOD"}]}
+{"text": "Tôi ăn 3 cọng Trứng vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 14, "end": 19, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 0.5 hộp Trứng.", "entities": [{"start": 16, "end": 19, "label": "QUANTITY"}, {"start": 24, "end": 29, "label": "FOOD"}]}
+{"text": "3 miếng Ức gà", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 8, "end": 13, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 0.5 mẩu Ức gà.", "entities": [{"start": 16, "end": 19, "label": "QUANTITY"}, {"start": 24, "end": 29, "label": "FOOD"}]}
+{"text": "2 đôi Ức gà", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 6, "end": 11, "label": "FOOD"}]}
+{"text": "Tôi ăn 3 đôi Ức gà vào buổi sáng.", "entities": [{"start": 7, "end": 8, "label": "QUANTITY"}, {"start": 13, "end": 18, "label": "FOOD"}]}
+{"text": "3 tảng Ức gà", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 7, "end": 12, "label": "FOOD"}]}
+{"text": "Ăn 1 nhánh Ức gà cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 11, "end": 16, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 1 đĩa Yến mạch.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 22, "end": 30, "label": "FOOD"}]}
+{"text": "0.5 cái Yến mạch", "entities": [{"start": 0, "end": 3, "label": "QUANTITY"}, {"start": 8, "end": 16, "label": "FOOD"}]}
+{"text": "Ăn 2 tô Yến mạch cho bữa trưa.", "entities": [{"start": 3, "end": 4, "label": "QUANTITY"}, {"start": 8, "end": 16, "label": "FOOD"}]}
+{"text": "0.5 viên Yến mạch", "entities": [{"start": 0, "end": 3, "label": "QUANTITY"}, {"start": 9, "end": 17, "label": "FOOD"}]}
+{"text": "2 cái Yến mạch", "entities": [{"start": 0, "end": 1, "label": "QUANTITY"}, {"start": 6, "end": 14, "label": "FOOD"}]}
+{"text": "Hôm nay mình ăn 3 bắp Yến mạch.", "entities": [{"start": 16, "end": 17, "label": "QUANTITY"}, {"start": 22, "end": 30, "label": "FOOD"}]}

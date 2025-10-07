@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+joblib
+rapidfuzz
+unidecode
+datasets
+transformers
+torch
+seqeval
