@@ -8,3 +8,5 @@ datasets
 transformers
 torch
 seqeval
+fastapi 
+uvicorn

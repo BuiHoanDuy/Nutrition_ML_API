@@ -54,3 +54,6 @@ python services/infer.py
 services/models/
 ├── calorie_from_macro_rf.pkl
 └── ner_phobert/
+
+-- Run server for testing API
+python -m uvicorn api.main:app --host 127.0.0.1 --port 8000 --reload
