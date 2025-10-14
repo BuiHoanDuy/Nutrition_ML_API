@@ -41,6 +41,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 
 - Run step by step
+python data/translate_food_items.py
 python scripts/clean_data.py
 python scripts/build_food_master.py
 python scripts/fuzzy_match.py     # test fuzzy search

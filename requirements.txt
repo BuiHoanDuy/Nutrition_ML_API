@@ -10,3 +10,4 @@ torch
 seqeval
 fastapi 
 uvicorn
+deep-translator

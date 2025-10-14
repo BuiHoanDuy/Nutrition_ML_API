@@ -6,7 +6,11 @@ import pandas as pd
 from pathlib import Path
 
 def main():
-    df = pd.read_csv("data/cleaned_logs.csv")
+    # Use the new FOOD-DATA.csv if available, otherwise fall back to cleaned_logs
+    try:
+        df = pd.read_csv("data/FOOD-DATA.csv")
+    except Exception:
+        df = pd.read_csv("data/cleaned_logs.csv")
 
     group = (
         df.groupby("Food_norm")

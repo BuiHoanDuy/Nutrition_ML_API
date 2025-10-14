@@ -11,9 +11,19 @@ import joblib
 from pathlib import Path
 
 def main():
-    df = pd.read_csv("data/cleaned_logs.csv")
-    X = df[["Protein_g", "Carbohydrates_g", "Fat_g", "Fiber_g", "Sugars_g"]].fillna(0)
-    y = df["Calories_kcal"]
+    # Load new dataset with Vietnamese nutrition columns
+    df = pd.read_csv("data/food_nutrition_data_final.csv")
+    
+    # Map Vietnamese column names to standard names used in model
+    X = pd.DataFrame({
+        "Protein_g": df["Protein"],
+        "Carbohydrates_g": df["Glucid"],  # Glucid = carbohydrates
+        "Fat_g": df["Lipid"],             # Lipid = fat
+        "Fiber_g": df["Celluloza"],       # Celluloza = fiber
+        "Sugars_g": df["Glucid"] * 0.1    # Estimate sugars as 10% of total carbs if not available
+    }).fillna(0)
+    
+    y = df["Năng lượng"]  # Energy/calories column
 
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
     model = RandomForestRegressor(n_estimators=200, random_state=42)

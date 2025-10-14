@@ -8,7 +8,11 @@ import random
 from pathlib import Path
 
 def main():
-    foods = pd.read_csv("data/food_master.csv")["Food_Item"].dropna().unique().tolist()
+    # Prefer the new dataset file
+    try:
+        foods = pd.read_csv("data/FOOD-DATA.csv")["Food_Item"].dropna().unique().tolist()
+    except Exception:
+        foods = pd.read_csv("data/food_master.csv")["Food_Item"].dropna().unique().tolist()
     units = ["cái", "bát", "muỗng", "g", "ml", "phần", "chén", 
              "tô", "hũ", "ly", "đĩa", "miếng", "quả", "viên", "cốc", "gói", "tách", "chai", "ống", "hộp"
              , "bánh", "cây", "bịch", "tảng", "miếng", "thỏi", "bó", "con", "củ", "nhánh", "lá", "quyển", 
