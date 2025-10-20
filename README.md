@@ -58,3 +58,43 @@ services/models/
 
 -- Run server for testing API
 python -m uvicorn api.main:app --host 127.0.0.1 --port 8000 --reload
+
+## API: /predict (Postman example)
+
+Use Postman to POST JSON to the running server:
+
+URL: http://127.0.0.1:8000/predict
+Method: POST
+Headers: Content-Type: application/json
+Body (raw JSON):
+```
+{ "content": "Tôi ăn 300g bột gạo" }
+```
+
+Example successful response:
+```
+{
+	"success": true,
+	"result": {
+		"food": "Bột gạo tí",
+		"food_key": "bot gao ti",
+		"quantity": 300.0,
+		"unit": "g",
+		"nutrition": {
+			"calories": 1077.0,
+			"protein_g": 19.8,
+			"carbs_g": 246.6,
+			"fat_g": 1.2,
+			"fiber_g": 1.2,
+			"water_g": 30.0,
+			"ash_g": 1.2
+		},
+		"found_in_master": true
+	}
+}
+```
+
+If the food isn't found the API returns a helpful message and parsed output:
+```
+{ "success": true, "result": { "found_in_master": false, "message": "Không tìm thấy món ăn.", "parsed": { ... } } }
+```

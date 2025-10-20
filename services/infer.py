@@ -95,6 +95,6 @@ def infer(text: str):
 
 if __name__ == "__main__":
     # print(infer("Tôi ăn 3 cái bánh mì thịt"))
-    print(infer("Tôi ăn 300 bánh mì"))
+    print(infer("Tôi ăn 300g bột gạo"))
 
 
