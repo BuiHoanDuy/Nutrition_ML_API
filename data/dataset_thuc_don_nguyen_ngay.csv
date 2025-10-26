@@ -1,0 +1,501 @@
+﻿id,câu_hỏi_người_dùng,intent_dinh_dưỡng,tình_trạng_sức_khỏe,mục_tiêu,bữa_sáng,bữa_trưa,bữa_tối,bữa_phụ,tổng_calo,ghi_chú
+1,Người cao huyết áp nên ăn thế nào để tăng cân trong 1 ngày?,tăng cân,cao huyết áp,duy trì sức khỏe,Bánh mì trứng,Cơm gạo lứt + cá hấp,Salad rau củ + trứng,Sữa whey,1545,Ngủ đủ 7 tiếng.
+2,"Tôi muốn tăng cơ, nên ăn gì trong ngày?",tăng cơ,tiểu đường,duy trì sức khỏe,Trứng luộc + rau xanh,Cơm + thịt bò xào,Salad rau củ + trứng,Sữa chua không đường,1606,Không dùng đồ ngọt.
+3,"Tôi muốn tăng cân, nên ăn gì trong ngày?",tăng cân,béo phì,duy trì sức khỏe,Bánh mì trứng,Cơm + cá hồi áp chảo,Cơm + tôm hấp,Sữa chua không đường,1260,Uống 2L nước/ngày.
+4,"Tôi đang ổn định đường huyết, ăn gì sáng, trưa, tối hợp lý?",ổn định đường huyết,tiểu đường,giảm cân,Trứng luộc + rau xanh,Đậu hũ sốt cà + rau luộc,Cá hồi + khoai lang,Sữa whey,1846,Tránh ăn sau 21h.
+5,"Tôi đang tăng cơ, ăn gì sáng, trưa, tối hợp lý?",tăng cơ,gầy yếu,tăng cân,Sữa tươi + trái cây ít đường,Cơm gạo lứt + cá hấp,Cá hồi + khoai lang,Táo xanh,1472,Ngủ đủ 7 tiếng.
+6,"Tôi bị bình thường, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cân,bình thường,tăng cân,Trứng luộc + rau xanh,Cơm gạo lứt + cá hấp,Đậu hũ chiên + cơm gạo lứt,Hạt hạnh nhân,1942,Không dùng đồ ngọt.
+7,Hãy gợi ý thực đơn nguyên ngày giúp tôi giữ cân.,giữ cân,tiểu đường,duy trì sức khỏe,Cháo yến mạch,Cơm gạo lứt + cá hấp,Ức gà + rau củ hấp,Sữa whey,2110,Uống 2L nước/ngày.
+8,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,béo phì,tăng cân,Trứng luộc + rau xanh,Cơm + thịt bò xào,Salad rau củ + trứng,Hạt hạnh nhân,1504,Không dùng đồ ngọt.
+9,"Tôi muốn giữ cân, nên ăn gì trong ngày?",giữ cân,tiểu đường,ăn lành mạnh,Trứng luộc + rau xanh,Cơm + thịt bò xào,Cá hồi + khoai lang,Táo xanh,1342,Không dùng đồ ngọt.
+10,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cân.,tăng cân,béo phì,duy trì sức khỏe,Cháo yến mạch,Đậu hũ sốt cà + rau luộc,Cơm + tôm hấp,Sữa whey,1771,Uống 2L nước/ngày.
+11,Người cao huyết áp nên ăn thế nào để giảm cân trong 1 ngày?,giảm cân,cao huyết áp,ăn lành mạnh,Bánh mì trứng,Cơm + thịt bò xào,Ức gà + rau củ hấp,Táo xanh,1300,Không dùng đồ ngọt.
+12,"Tôi bị gầy yếu, gợi ý thực đơn cho cả ngày giúp tôi.",ổn định đường huyết,gầy yếu,giảm cân,Yến mạch sữa chua,Cơm + thịt bò xào,Salad rau củ + trứng,Hạt hạnh nhân,1596,Uống 2L nước/ngày.
+13,"Tôi bị tiểu đường, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cân,tiểu đường,ăn lành mạnh,Bánh mì trứng,Cơm + cá hồi áp chảo,Ức gà + rau củ hấp,Sữa chua không đường,1787,Kết hợp tập thể dục 30 phút/ngày.
+14,Hãy gợi ý thực đơn nguyên ngày giúp tôi giữ cân.,giữ cân,cao huyết áp,duy trì sức khỏe,Cháo yến mạch,Cơm + cá hồi áp chảo,Cá hồi + khoai lang,Hạt hạnh nhân,1465,Kết hợp tập thể dục 30 phút/ngày.
+15,Người béo phì nên ăn thế nào để tăng cơ trong 1 ngày?,tăng cơ,béo phì,tăng cân,Bánh mì trứng,Ức gà nướng + salad,Ức gà + rau củ hấp,Chuối chín,1360,Uống 2L nước/ngày.
+16,Hãy gợi ý thực đơn nguyên ngày giúp tôi ổn định đường huyết.,ổn định đường huyết,tiểu đường,tăng cân,Sữa tươi + trái cây ít đường,Cơm + thịt bò xào,Cá hồi + khoai lang,Hạt hạnh nhân,2236,Tránh ăn sau 21h.
+17,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cân.,tăng cân,bình thường,tăng cân,Yến mạch sữa chua,Ức gà nướng + salad,Ức gà + rau củ hấp,Sữa chua không đường,1782,Ngủ đủ 7 tiếng.
+18,Người tiểu đường nên ăn thế nào để giữ cân trong 1 ngày?,giữ cân,tiểu đường,tăng cơ,Trứng luộc + rau xanh,Cơm + cá hồi áp chảo,Đậu hũ chiên + cơm gạo lứt,Sữa chua không đường,1231,Tránh ăn sau 21h.
+19,Người gầy yếu nên ăn thế nào để giảm cân trong 1 ngày?,giảm cân,gầy yếu,duy trì sức khỏe,Cháo yến mạch,Cơm + thịt bò xào,Salad rau củ + trứng,Chuối chín,1260,Ngủ đủ 7 tiếng.
+20,Người bình thường nên ăn thế nào để ổn định đường huyết trong 1 ngày?,ổn định đường huyết,bình thường,tăng cân,Sữa tươi + trái cây ít đường,Cơm + thịt bò xào,Cơm + tôm hấp,Hạt hạnh nhân,1426,Không dùng đồ ngọt.
+21,"Tôi bị bình thường, gợi ý thực đơn cho cả ngày giúp tôi.",giữ cân,bình thường,giảm cân,Cháo yến mạch,Đậu hũ sốt cà + rau luộc,Cơm + tôm hấp,Chuối chín,1796,Kết hợp tập thể dục 30 phút/ngày.
+22,"Tôi muốn giảm cân, nên ăn gì trong ngày?",giảm cân,cao huyết áp,ăn lành mạnh,Trứng luộc + rau xanh,Cơm gạo lứt + cá hấp,Salad rau củ + trứng,Táo xanh,1912,Kết hợp tập thể dục 30 phút/ngày.
+23,"Tôi đang giữ cân, ăn gì sáng, trưa, tối hợp lý?",giữ cân,gầy yếu,ăn lành mạnh,Bánh mì trứng,Cơm + cá hồi áp chảo,Cá hồi + khoai lang,Táo xanh,1924,Tránh ăn sau 21h.
+24,"Tôi đang giảm cân, ăn gì sáng, trưa, tối hợp lý?",giảm cân,cao huyết áp,giảm cân,Trứng luộc + rau xanh,Đậu hũ sốt cà + rau luộc,Đậu hũ chiên + cơm gạo lứt,Hạt hạnh nhân,2189,Tránh ăn sau 21h.
+25,"Tôi bị béo phì, gợi ý thực đơn cho cả ngày giúp tôi.",giữ cân,béo phì,ăn lành mạnh,Cháo yến mạch,Cơm + thịt bò xào,Salad rau củ + trứng,Chuối chín,1412,Ngủ đủ 7 tiếng.
+26,"Tôi bị gầy yếu, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cân,gầy yếu,giảm cân,Trứng luộc + rau xanh,Cơm gạo lứt + cá hấp,Cá hồi + khoai lang,Hạt hạnh nhân,1637,Kết hợp tập thể dục 30 phút/ngày.
+27,"Tôi muốn tăng cơ, nên ăn gì trong ngày?",tăng cơ,bình thường,duy trì sức khỏe,Bánh mì trứng,Cơm + cá hồi áp chảo,Salad rau củ + trứng,Chuối chín,2144,Kết hợp tập thể dục 30 phút/ngày.
+28,Người cao huyết áp nên ăn thế nào để ổn định đường huyết trong 1 ngày?,ổn định đường huyết,cao huyết áp,ăn lành mạnh,Bánh mì trứng,Cơm + thịt bò xào,Cá hồi + khoai lang,Sữa whey,1803,Kết hợp tập thể dục 30 phút/ngày.
+29,Hãy gợi ý thực đơn nguyên ngày giúp tôi giảm cân.,giảm cân,cao huyết áp,ăn lành mạnh,Yến mạch sữa chua,Ức gà nướng + salad,Cá hồi + khoai lang,Táo xanh,1570,Kết hợp tập thể dục 30 phút/ngày.
+30,Hãy gợi ý thực đơn nguyên ngày giúp tôi giữ cân.,giữ cân,béo phì,tăng cân,Yến mạch sữa chua,Cơm gạo lứt + cá hấp,Cơm + tôm hấp,Sữa chua không đường,1394,Tránh ăn sau 21h.
+31,"Tôi đang ổn định đường huyết, ăn gì sáng, trưa, tối hợp lý?",ổn định đường huyết,cao huyết áp,duy trì sức khỏe,Yến mạch sữa chua,Ức gà nướng + salad,Salad rau củ + trứng,Chuối chín,1854,Kết hợp tập thể dục 30 phút/ngày.
+32,Người bình thường nên ăn thế nào để tăng cân trong 1 ngày?,tăng cân,bình thường,tăng cơ,Yến mạch sữa chua,Cơm gạo lứt + cá hấp,Ức gà + rau củ hấp,Chuối chín,1539,Uống 2L nước/ngày.
+33,Hãy gợi ý thực đơn nguyên ngày giúp tôi giảm cân.,giảm cân,cao huyết áp,ăn lành mạnh,Sữa tươi + trái cây ít đường,Đậu hũ sốt cà + rau luộc,Salad rau củ + trứng,Táo xanh,1243,Kết hợp tập thể dục 30 phút/ngày.
+34,"Tôi bị gầy yếu, gợi ý thực đơn cho cả ngày giúp tôi.",giữ cân,gầy yếu,duy trì sức khỏe,Yến mạch sữa chua,Cơm gạo lứt + cá hấp,Cơm + tôm hấp,Sữa whey,1944,Ngủ đủ 7 tiếng.
+35,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cơ.,tăng cơ,cao huyết áp,tăng cân,Bánh mì trứng,Cơm gạo lứt + cá hấp,Ức gà + rau củ hấp,Sữa whey,1423,Uống 2L nước/ngày.
+36,"Tôi muốn tăng cân, nên ăn gì trong ngày?",tăng cân,bình thường,tăng cơ,Cháo yến mạch,Ức gà nướng + salad,Cá hồi + khoai lang,Sữa chua không đường,1902,Ngủ đủ 7 tiếng.
+37,Người gầy yếu nên ăn thế nào để giảm cân trong 1 ngày?,giảm cân,gầy yếu,tăng cơ,Yến mạch sữa chua,Cơm + thịt bò xào,Đậu hũ chiên + cơm gạo lứt,Táo xanh,1518,Không dùng đồ ngọt.
+38,Người bình thường nên ăn thế nào để tăng cơ trong 1 ngày?,tăng cơ,bình thường,giảm cân,Yến mạch sữa chua,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Sữa chua không đường,1757,Không dùng đồ ngọt.
+39,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,cao huyết áp,giảm cân,Sữa tươi + trái cây ít đường,Cơm + thịt bò xào,Ức gà + rau củ hấp,Hạt hạnh nhân,1611,Kết hợp tập thể dục 30 phút/ngày.
+40,Hãy gợi ý thực đơn nguyên ngày giúp tôi giữ cân.,giữ cân,béo phì,ăn lành mạnh,Sữa tươi + trái cây ít đường,Cơm + cá hồi áp chảo,Salad rau củ + trứng,Sữa chua không đường,2094,Tránh ăn sau 21h.
+41,Hãy gợi ý thực đơn nguyên ngày giúp tôi giữ cân.,giữ cân,cao huyết áp,duy trì sức khỏe,Bánh mì trứng,Đậu hũ sốt cà + rau luộc,Cá hồi + khoai lang,Sữa chua không đường,1900,Uống 2L nước/ngày.
+42,Người cao huyết áp nên ăn thế nào để tăng cân trong 1 ngày?,tăng cân,cao huyết áp,tăng cân,Bánh mì trứng,Ức gà nướng + salad,Cá hồi + khoai lang,Táo xanh,2054,Tránh ăn sau 21h.
+43,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cơ.,tăng cơ,cao huyết áp,duy trì sức khỏe,Trứng luộc + rau xanh,Cơm + cá hồi áp chảo,Đậu hũ chiên + cơm gạo lứt,Sữa whey,2043,Kết hợp tập thể dục 30 phút/ngày.
+44,"Tôi muốn giữ cân, nên ăn gì trong ngày?",giữ cân,cao huyết áp,ăn lành mạnh,Bánh mì trứng,Cơm + cá hồi áp chảo,Ức gà + rau củ hấp,Hạt hạnh nhân,1292,Kết hợp tập thể dục 30 phút/ngày.
+45,Người bình thường nên ăn thế nào để tăng cơ trong 1 ngày?,tăng cơ,bình thường,giảm cân,Bánh mì trứng,Cơm gạo lứt + cá hấp,Ức gà + rau củ hấp,Sữa whey,1941,Kết hợp tập thể dục 30 phút/ngày.
+46,Người béo phì nên ăn thế nào để giảm cân trong 1 ngày?,giảm cân,béo phì,ăn lành mạnh,Yến mạch sữa chua,Cơm gạo lứt + cá hấp,Cơm + tôm hấp,Sữa whey,1516,Không dùng đồ ngọt.
+47,Người bình thường nên ăn thế nào để ổn định đường huyết trong 1 ngày?,ổn định đường huyết,bình thường,tăng cơ,Sữa tươi + trái cây ít đường,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Táo xanh,1293,Kết hợp tập thể dục 30 phút/ngày.
+48,"Tôi bị béo phì, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cân,béo phì,duy trì sức khỏe,Bánh mì trứng,Cơm + cá hồi áp chảo,Salad rau củ + trứng,Hạt hạnh nhân,1758,Uống 2L nước/ngày.
+49,"Tôi muốn giữ cân, nên ăn gì trong ngày?",giữ cân,gầy yếu,ăn lành mạnh,Sữa tươi + trái cây ít đường,Cơm + thịt bò xào,Ức gà + rau củ hấp,Hạt hạnh nhân,2231,Kết hợp tập thể dục 30 phút/ngày.
+50,Hãy gợi ý thực đơn nguyên ngày giúp tôi ổn định đường huyết.,ổn định đường huyết,béo phì,ăn lành mạnh,Bánh mì trứng,Cơm gạo lứt + cá hấp,Đậu hũ chiên + cơm gạo lứt,Sữa chua không đường,2282,Kết hợp tập thể dục 30 phút/ngày.
+51,"Tôi đang tăng cân, ăn gì sáng, trưa, tối hợp lý?",tăng cân,cao huyết áp,tăng cơ,Yến mạch sữa chua,Cơm gạo lứt + cá hấp,Ức gà + rau củ hấp,Hạt hạnh nhân,1270,Kết hợp tập thể dục 30 phút/ngày.
+52,Người cao huyết áp nên ăn thế nào để ổn định đường huyết trong 1 ngày?,ổn định đường huyết,cao huyết áp,tăng cơ,Bánh mì trứng,Cơm + thịt bò xào,Ức gà + rau củ hấp,Sữa whey,1507,Tránh ăn sau 21h.
+53,"Tôi đang giữ cân, ăn gì sáng, trưa, tối hợp lý?",giữ cân,cao huyết áp,tăng cơ,Bánh mì trứng,Ức gà nướng + salad,Salad rau củ + trứng,Táo xanh,1435,Ngủ đủ 7 tiếng.
+54,"Tôi đang giữ cân, ăn gì sáng, trưa, tối hợp lý?",giữ cân,bình thường,giảm cân,Trứng luộc + rau xanh,Cơm + cá hồi áp chảo,Cơm + tôm hấp,Chuối chín,1649,Uống 2L nước/ngày.
+55,"Tôi đang giữ cân, ăn gì sáng, trưa, tối hợp lý?",giữ cân,gầy yếu,duy trì sức khỏe,Yến mạch sữa chua,Đậu hũ sốt cà + rau luộc,Ức gà + rau củ hấp,Sữa whey,1810,Không dùng đồ ngọt.
+56,"Tôi bị béo phì, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cơ,béo phì,duy trì sức khỏe,Cháo yến mạch,Cơm + cá hồi áp chảo,Đậu hũ chiên + cơm gạo lứt,Sữa chua không đường,1329,Không dùng đồ ngọt.
+57,Người tiểu đường nên ăn thế nào để giảm cân trong 1 ngày?,giảm cân,tiểu đường,ăn lành mạnh,Trứng luộc + rau xanh,Đậu hũ sốt cà + rau luộc,Salad rau củ + trứng,Sữa whey,1811,Kết hợp tập thể dục 30 phút/ngày.
+58,"Tôi muốn giữ cân, nên ăn gì trong ngày?",giữ cân,béo phì,tăng cơ,Trứng luộc + rau xanh,Đậu hũ sốt cà + rau luộc,Cơm + tôm hấp,Hạt hạnh nhân,2131,Tránh ăn sau 21h.
+59,"Tôi muốn tăng cơ, nên ăn gì trong ngày?",tăng cơ,bình thường,tăng cơ,Cháo yến mạch,Đậu hũ sốt cà + rau luộc,Salad rau củ + trứng,Chuối chín,1333,Kết hợp tập thể dục 30 phút/ngày.
+60,"Tôi bị tiểu đường, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cơ,tiểu đường,tăng cân,Yến mạch sữa chua,Cơm gạo lứt + cá hấp,Đậu hũ chiên + cơm gạo lứt,Táo xanh,2114,Ngủ đủ 7 tiếng.
+61,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cơ.,tăng cơ,tiểu đường,giảm cân,Sữa tươi + trái cây ít đường,Đậu hũ sốt cà + rau luộc,Cá hồi + khoai lang,Hạt hạnh nhân,1422,Kết hợp tập thể dục 30 phút/ngày.
+62,"Tôi đang tăng cơ, ăn gì sáng, trưa, tối hợp lý?",tăng cơ,tiểu đường,tăng cân,Trứng luộc + rau xanh,Cơm + thịt bò xào,Cơm + tôm hấp,Sữa chua không đường,1673,Ngủ đủ 7 tiếng.
+63,"Tôi muốn tăng cơ, nên ăn gì trong ngày?",tăng cơ,tiểu đường,ăn lành mạnh,Sữa tươi + trái cây ít đường,Đậu hũ sốt cà + rau luộc,Cơm + tôm hấp,Hạt hạnh nhân,2088,Ngủ đủ 7 tiếng.
+64,Hãy gợi ý thực đơn nguyên ngày giúp tôi ổn định đường huyết.,ổn định đường huyết,béo phì,duy trì sức khỏe,Bánh mì trứng,Cơm + cá hồi áp chảo,Đậu hũ chiên + cơm gạo lứt,Hạt hạnh nhân,1626,Tránh ăn sau 21h.
+65,"Tôi bị bình thường, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cơ,bình thường,ăn lành mạnh,Sữa tươi + trái cây ít đường,Cơm gạo lứt + cá hấp,Salad rau củ + trứng,Sữa chua không đường,1870,Không dùng đồ ngọt.
+66,"Tôi muốn giữ cân, nên ăn gì trong ngày?",giữ cân,cao huyết áp,giảm cân,Yến mạch sữa chua,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Chuối chín,2292,Tránh ăn sau 21h.
+67,Người gầy yếu nên ăn thế nào để giữ cân trong 1 ngày?,giữ cân,gầy yếu,tăng cơ,Sữa tươi + trái cây ít đường,Đậu hũ sốt cà + rau luộc,Salad rau củ + trứng,Hạt hạnh nhân,1356,Tránh ăn sau 21h.
+68,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cân.,tăng cân,bình thường,tăng cơ,Sữa tươi + trái cây ít đường,Đậu hũ sốt cà + rau luộc,Salad rau củ + trứng,Táo xanh,2121,Ngủ đủ 7 tiếng.
+69,"Tôi bị gầy yếu, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cân,gầy yếu,duy trì sức khỏe,Yến mạch sữa chua,Cơm + thịt bò xào,Đậu hũ chiên + cơm gạo lứt,Sữa chua không đường,1236,Ngủ đủ 7 tiếng.
+70,"Tôi muốn tăng cơ, nên ăn gì trong ngày?",tăng cơ,gầy yếu,tăng cân,Bánh mì trứng,Cơm gạo lứt + cá hấp,Đậu hũ chiên + cơm gạo lứt,Sữa whey,2059,Không dùng đồ ngọt.
+71,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,tiểu đường,tăng cân,Bánh mì trứng,Cơm + cá hồi áp chảo,Đậu hũ chiên + cơm gạo lứt,Hạt hạnh nhân,1475,Kết hợp tập thể dục 30 phút/ngày.
+72,Người tiểu đường nên ăn thế nào để tăng cân trong 1 ngày?,tăng cân,tiểu đường,duy trì sức khỏe,Sữa tươi + trái cây ít đường,Đậu hũ sốt cà + rau luộc,Cơm + tôm hấp,Sữa whey,1831,Kết hợp tập thể dục 30 phút/ngày.
+73,Người bình thường nên ăn thế nào để tăng cân trong 1 ngày?,tăng cân,bình thường,tăng cơ,Yến mạch sữa chua,Cơm + thịt bò xào,Đậu hũ chiên + cơm gạo lứt,Sữa chua không đường,1738,Tránh ăn sau 21h.
+74,"Tôi bị cao huyết áp, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cân,cao huyết áp,ăn lành mạnh,Bánh mì trứng,Cơm + cá hồi áp chảo,Salad rau củ + trứng,Táo xanh,2193,Ngủ đủ 7 tiếng.
+75,"Tôi bị cao huyết áp, gợi ý thực đơn cho cả ngày giúp tôi.",giảm cân,cao huyết áp,giảm cân,Sữa tươi + trái cây ít đường,Đậu hũ sốt cà + rau luộc,Cá hồi + khoai lang,Táo xanh,1498,Ngủ đủ 7 tiếng.
+76,"Tôi đang ổn định đường huyết, ăn gì sáng, trưa, tối hợp lý?",ổn định đường huyết,tiểu đường,ăn lành mạnh,Yến mạch sữa chua,Đậu hũ sốt cà + rau luộc,Đậu hũ chiên + cơm gạo lứt,Táo xanh,1991,Ngủ đủ 7 tiếng.
+77,Người bình thường nên ăn thế nào để tăng cân trong 1 ngày?,tăng cân,bình thường,ăn lành mạnh,Trứng luộc + rau xanh,Cơm + cá hồi áp chảo,Salad rau củ + trứng,Sữa chua không đường,1343,Uống 2L nước/ngày.
+78,Hãy gợi ý thực đơn nguyên ngày giúp tôi giảm cân.,giảm cân,gầy yếu,tăng cơ,Yến mạch sữa chua,Cơm + cá hồi áp chảo,Cá hồi + khoai lang,Sữa whey,1836,Tránh ăn sau 21h.
+79,Hãy gợi ý thực đơn nguyên ngày giúp tôi ổn định đường huyết.,ổn định đường huyết,bình thường,duy trì sức khỏe,Sữa tươi + trái cây ít đường,Cơm gạo lứt + cá hấp,Đậu hũ chiên + cơm gạo lứt,Sữa chua không đường,1455,Tránh ăn sau 21h.
+80,"Tôi muốn tăng cơ, nên ăn gì trong ngày?",tăng cơ,bình thường,ăn lành mạnh,Trứng luộc + rau xanh,Ức gà nướng + salad,Cơm + tôm hấp,Sữa chua không đường,1221,Kết hợp tập thể dục 30 phút/ngày.
+81,"Tôi bị cao huyết áp, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cơ,cao huyết áp,duy trì sức khỏe,Trứng luộc + rau xanh,Đậu hũ sốt cà + rau luộc,Ức gà + rau củ hấp,Táo xanh,1331,Tránh ăn sau 21h.
+82,Hãy gợi ý thực đơn nguyên ngày giúp tôi giảm cân.,giảm cân,tiểu đường,giảm cân,Trứng luộc + rau xanh,Cơm + cá hồi áp chảo,Cá hồi + khoai lang,Sữa whey,1764,Ngủ đủ 7 tiếng.
+83,Người béo phì nên ăn thế nào để giảm cân trong 1 ngày?,giảm cân,béo phì,giảm cân,Trứng luộc + rau xanh,Cơm + cá hồi áp chảo,Đậu hũ chiên + cơm gạo lứt,Táo xanh,1290,Tránh ăn sau 21h.
+84,Người bình thường nên ăn thế nào để tăng cơ trong 1 ngày?,tăng cơ,bình thường,ăn lành mạnh,Sữa tươi + trái cây ít đường,Cơm + cá hồi áp chảo,Cơm + tôm hấp,Táo xanh,1975,Không dùng đồ ngọt.
+85,"Tôi đang tăng cân, ăn gì sáng, trưa, tối hợp lý?",tăng cân,bình thường,giảm cân,Cháo yến mạch,Cơm + thịt bò xào,Đậu hũ chiên + cơm gạo lứt,Chuối chín,1868,Không dùng đồ ngọt.
+86,"Tôi muốn giữ cân, nên ăn gì trong ngày?",giữ cân,bình thường,tăng cơ,Trứng luộc + rau xanh,Đậu hũ sốt cà + rau luộc,Salad rau củ + trứng,Chuối chín,1213,Uống 2L nước/ngày.
+87,"Tôi muốn tăng cơ, nên ăn gì trong ngày?",tăng cơ,béo phì,tăng cân,Yến mạch sữa chua,Cơm gạo lứt + cá hấp,Đậu hũ chiên + cơm gạo lứt,Sữa chua không đường,1259,Tránh ăn sau 21h.
+88,"Tôi muốn giảm cân, nên ăn gì trong ngày?",giảm cân,gầy yếu,tăng cân,Bánh mì trứng,Cơm + cá hồi áp chảo,Ức gà + rau củ hấp,Chuối chín,1265,Không dùng đồ ngọt.
+89,"Tôi bị tiểu đường, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cân,tiểu đường,giảm cân,Sữa tươi + trái cây ít đường,Cơm + cá hồi áp chảo,Đậu hũ chiên + cơm gạo lứt,Táo xanh,2281,Tránh ăn sau 21h.
+90,Người bình thường nên ăn thế nào để giảm cân trong 1 ngày?,giảm cân,bình thường,ăn lành mạnh,Trứng luộc + rau xanh,Cơm + thịt bò xào,Cá hồi + khoai lang,Hạt hạnh nhân,1490,Ngủ đủ 7 tiếng.
+91,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,bình thường,tăng cơ,Sữa tươi + trái cây ít đường,Cơm gạo lứt + cá hấp,Ức gà + rau củ hấp,Sữa chua không đường,1915,Không dùng đồ ngọt.
+92,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cân.,tăng cân,gầy yếu,duy trì sức khỏe,Sữa tươi + trái cây ít đường,Ức gà nướng + salad,Cá hồi + khoai lang,Sữa whey,1844,Không dùng đồ ngọt.
+93,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cân.,tăng cân,cao huyết áp,tăng cân,Bánh mì trứng,Đậu hũ sốt cà + rau luộc,Đậu hũ chiên + cơm gạo lứt,Sữa chua không đường,2109,Kết hợp tập thể dục 30 phút/ngày.
+94,"Tôi muốn giảm cân, nên ăn gì trong ngày?",giảm cân,tiểu đường,giảm cân,Cháo yến mạch,Cơm gạo lứt + cá hấp,Cơm + tôm hấp,Sữa chua không đường,1612,Ngủ đủ 7 tiếng.
+95,"Tôi đang tăng cơ, ăn gì sáng, trưa, tối hợp lý?",tăng cơ,bình thường,giảm cân,Yến mạch sữa chua,Ức gà nướng + salad,Cá hồi + khoai lang,Táo xanh,2262,Không dùng đồ ngọt.
+96,"Tôi đang ổn định đường huyết, ăn gì sáng, trưa, tối hợp lý?",ổn định đường huyết,cao huyết áp,tăng cân,Sữa tươi + trái cây ít đường,Cơm gạo lứt + cá hấp,Cá hồi + khoai lang,Sữa chua không đường,1840,Uống 2L nước/ngày.
+97,"Tôi muốn giảm cân, nên ăn gì trong ngày?",giảm cân,tiểu đường,duy trì sức khỏe,Cháo yến mạch,Cơm gạo lứt + cá hấp,Cơm + tôm hấp,Sữa chua không đường,2193,Uống 2L nước/ngày.
+98,"Tôi bị cao huyết áp, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cân,cao huyết áp,giảm cân,Sữa tươi + trái cây ít đường,Cơm gạo lứt + cá hấp,Cá hồi + khoai lang,Sữa chua không đường,1913,Uống 2L nước/ngày.
+99,"Tôi muốn giảm cân, nên ăn gì trong ngày?",giảm cân,tiểu đường,duy trì sức khỏe,Yến mạch sữa chua,Ức gà nướng + salad,Ức gà + rau củ hấp,Sữa chua không đường,2188,Tránh ăn sau 21h.
+100,"Tôi muốn giảm cân, nên ăn gì trong ngày?",giảm cân,tiểu đường,tăng cân,Cháo yến mạch,Ức gà nướng + salad,Cá hồi + khoai lang,Hạt hạnh nhân,1504,Ngủ đủ 7 tiếng.
+101,"Tôi đang giữ cân, ăn gì sáng, trưa, tối hợp lý?",giữ cân,tiểu đường,tăng cân,Bánh mì trứng,Đậu hũ sốt cà + rau luộc,Đậu hũ chiên + cơm gạo lứt,Táo xanh,1231,Ngủ đủ 7 tiếng.
+102,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cân.,tăng cân,gầy yếu,duy trì sức khỏe,Cháo yến mạch,Đậu hũ sốt cà + rau luộc,Cơm + tôm hấp,Sữa whey,1750,Tránh ăn sau 21h.
+103,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cân.,tăng cân,béo phì,duy trì sức khỏe,Cháo yến mạch,Cơm + cá hồi áp chảo,Ức gà + rau củ hấp,Sữa whey,1342,Kết hợp tập thể dục 30 phút/ngày.
+104,"Tôi bị béo phì, gợi ý thực đơn cho cả ngày giúp tôi.",giảm cân,béo phì,tăng cơ,Sữa tươi + trái cây ít đường,Ức gà nướng + salad,Salad rau củ + trứng,Hạt hạnh nhân,1731,Ngủ đủ 7 tiếng.
+105,Người gầy yếu nên ăn thế nào để giảm cân trong 1 ngày?,giảm cân,gầy yếu,tăng cân,Sữa tươi + trái cây ít đường,Cơm gạo lứt + cá hấp,Đậu hũ chiên + cơm gạo lứt,Sữa whey,2158,Uống 2L nước/ngày.
+106,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cân.,tăng cân,tiểu đường,tăng cơ,Bánh mì trứng,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Hạt hạnh nhân,1468,Ngủ đủ 7 tiếng.
+107,"Tôi đang ổn định đường huyết, ăn gì sáng, trưa, tối hợp lý?",ổn định đường huyết,tiểu đường,tăng cân,Yến mạch sữa chua,Đậu hũ sốt cà + rau luộc,Đậu hũ chiên + cơm gạo lứt,Táo xanh,1745,Kết hợp tập thể dục 30 phút/ngày.
+108,"Tôi muốn giảm cân, nên ăn gì trong ngày?",giảm cân,tiểu đường,tăng cơ,Yến mạch sữa chua,Ức gà nướng + salad,Salad rau củ + trứng,Táo xanh,1902,Ngủ đủ 7 tiếng.
+109,Người tiểu đường nên ăn thế nào để ổn định đường huyết trong 1 ngày?,ổn định đường huyết,tiểu đường,duy trì sức khỏe,Sữa tươi + trái cây ít đường,Ức gà nướng + salad,Cơm + tôm hấp,Táo xanh,1495,Tránh ăn sau 21h.
+110,"Tôi đang giảm cân, ăn gì sáng, trưa, tối hợp lý?",giảm cân,béo phì,ăn lành mạnh,Trứng luộc + rau xanh,Đậu hũ sốt cà + rau luộc,Đậu hũ chiên + cơm gạo lứt,Sữa chua không đường,1972,Uống 2L nước/ngày.
+111,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,gầy yếu,ăn lành mạnh,Bánh mì trứng,Ức gà nướng + salad,Cơm + tôm hấp,Sữa whey,1829,Uống 2L nước/ngày.
+112,"Tôi đang giữ cân, ăn gì sáng, trưa, tối hợp lý?",giữ cân,gầy yếu,giảm cân,Bánh mì trứng,Ức gà nướng + salad,Ức gà + rau củ hấp,Sữa whey,1440,Không dùng đồ ngọt.
+113,"Tôi muốn giảm cân, nên ăn gì trong ngày?",giảm cân,tiểu đường,tăng cơ,Sữa tươi + trái cây ít đường,Cơm + thịt bò xào,Ức gà + rau củ hấp,Táo xanh,2114,Ngủ đủ 7 tiếng.
+114,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,tiểu đường,duy trì sức khỏe,Cháo yến mạch,Cơm gạo lứt + cá hấp,Đậu hũ chiên + cơm gạo lứt,Chuối chín,1985,Tránh ăn sau 21h.
+115,Hãy gợi ý thực đơn nguyên ngày giúp tôi giữ cân.,giữ cân,cao huyết áp,duy trì sức khỏe,Trứng luộc + rau xanh,Đậu hũ sốt cà + rau luộc,Salad rau củ + trứng,Táo xanh,1861,Tránh ăn sau 21h.
+116,"Tôi muốn tăng cơ, nên ăn gì trong ngày?",tăng cơ,béo phì,giảm cân,Bánh mì trứng,Đậu hũ sốt cà + rau luộc,Ức gà + rau củ hấp,Hạt hạnh nhân,1943,Uống 2L nước/ngày.
+117,"Tôi đang giảm cân, ăn gì sáng, trưa, tối hợp lý?",giảm cân,gầy yếu,ăn lành mạnh,Bánh mì trứng,Cơm + cá hồi áp chảo,Cơm + tôm hấp,Táo xanh,1878,Tránh ăn sau 21h.
+118,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,gầy yếu,tăng cơ,Sữa tươi + trái cây ít đường,Cơm + thịt bò xào,Cá hồi + khoai lang,Hạt hạnh nhân,1480,Ngủ đủ 7 tiếng.
+119,"Tôi đang tăng cân, ăn gì sáng, trưa, tối hợp lý?",tăng cân,gầy yếu,tăng cơ,Bánh mì trứng,Cơm + thịt bò xào,Salad rau củ + trứng,Sữa whey,2112,Tránh ăn sau 21h.
+120,"Tôi bị cao huyết áp, gợi ý thực đơn cho cả ngày giúp tôi.",giảm cân,cao huyết áp,giảm cân,Bánh mì trứng,Đậu hũ sốt cà + rau luộc,Ức gà + rau củ hấp,Sữa whey,2203,Không dùng đồ ngọt.
+121,"Tôi bị gầy yếu, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cơ,gầy yếu,tăng cân,Bánh mì trứng,Ức gà nướng + salad,Cá hồi + khoai lang,Sữa chua không đường,1883,Kết hợp tập thể dục 30 phút/ngày.
+122,"Tôi bị cao huyết áp, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cơ,cao huyết áp,duy trì sức khỏe,Bánh mì trứng,Cơm + thịt bò xào,Đậu hũ chiên + cơm gạo lứt,Hạt hạnh nhân,1351,Ngủ đủ 7 tiếng.
+123,"Tôi đang tăng cân, ăn gì sáng, trưa, tối hợp lý?",tăng cân,cao huyết áp,duy trì sức khỏe,Sữa tươi + trái cây ít đường,Cơm gạo lứt + cá hấp,Cơm + tôm hấp,Sữa whey,1615,Tránh ăn sau 21h.
+124,Người bình thường nên ăn thế nào để giảm cân trong 1 ngày?,giảm cân,bình thường,tăng cơ,Sữa tươi + trái cây ít đường,Cơm + thịt bò xào,Cơm + tôm hấp,Sữa chua không đường,1408,Kết hợp tập thể dục 30 phút/ngày.
+125,Người cao huyết áp nên ăn thế nào để tăng cân trong 1 ngày?,tăng cân,cao huyết áp,giảm cân,Bánh mì trứng,Cơm gạo lứt + cá hấp,Đậu hũ chiên + cơm gạo lứt,Hạt hạnh nhân,2041,Ngủ đủ 7 tiếng.
+126,Người gầy yếu nên ăn thế nào để tăng cân trong 1 ngày?,tăng cân,gầy yếu,duy trì sức khỏe,Yến mạch sữa chua,Ức gà nướng + salad,Ức gà + rau củ hấp,Hạt hạnh nhân,1744,Ngủ đủ 7 tiếng.
+127,"Tôi bị cao huyết áp, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cơ,cao huyết áp,tăng cân,Yến mạch sữa chua,Cơm + thịt bò xào,Đậu hũ chiên + cơm gạo lứt,Sữa whey,1974,Không dùng đồ ngọt.
+128,"Tôi muốn tăng cân, nên ăn gì trong ngày?",tăng cân,gầy yếu,duy trì sức khỏe,Trứng luộc + rau xanh,Cơm + thịt bò xào,Cơm + tôm hấp,Sữa whey,1855,Ngủ đủ 7 tiếng.
+129,"Tôi bị tiểu đường, gợi ý thực đơn cho cả ngày giúp tôi.",giữ cân,tiểu đường,ăn lành mạnh,Trứng luộc + rau xanh,Đậu hũ sốt cà + rau luộc,Ức gà + rau củ hấp,Sữa whey,1422,Không dùng đồ ngọt.
+130,"Tôi muốn tăng cơ, nên ăn gì trong ngày?",tăng cơ,gầy yếu,ăn lành mạnh,Bánh mì trứng,Đậu hũ sốt cà + rau luộc,Salad rau củ + trứng,Sữa chua không đường,1623,Không dùng đồ ngọt.
+131,Hãy gợi ý thực đơn nguyên ngày giúp tôi giữ cân.,giữ cân,tiểu đường,tăng cơ,Sữa tươi + trái cây ít đường,Cơm gạo lứt + cá hấp,Cơm + tôm hấp,Sữa whey,2201,Tránh ăn sau 21h.
+132,Hãy gợi ý thực đơn nguyên ngày giúp tôi giảm cân.,giảm cân,bình thường,tăng cơ,Cháo yến mạch,Cơm + cá hồi áp chảo,Cá hồi + khoai lang,Chuối chín,2029,Tránh ăn sau 21h.
+133,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cân.,tăng cân,gầy yếu,ăn lành mạnh,Cháo yến mạch,Cơm + cá hồi áp chảo,Cá hồi + khoai lang,Sữa whey,1297,Uống 2L nước/ngày.
+134,"Tôi muốn giảm cân, nên ăn gì trong ngày?",giảm cân,tiểu đường,giảm cân,Sữa tươi + trái cây ít đường,Ức gà nướng + salad,Salad rau củ + trứng,Sữa whey,1473,Ngủ đủ 7 tiếng.
+135,"Tôi đang giảm cân, ăn gì sáng, trưa, tối hợp lý?",giảm cân,gầy yếu,tăng cơ,Cháo yến mạch,Ức gà nướng + salad,Ức gà + rau củ hấp,Chuối chín,1613,Không dùng đồ ngọt.
+136,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cơ.,tăng cơ,gầy yếu,tăng cân,Trứng luộc + rau xanh,Cơm gạo lứt + cá hấp,Salad rau củ + trứng,Sữa chua không đường,1273,Không dùng đồ ngọt.
+137,"Tôi muốn tăng cân, nên ăn gì trong ngày?",tăng cân,béo phì,tăng cơ,Yến mạch sữa chua,Cơm + cá hồi áp chảo,Cơm + tôm hấp,Táo xanh,2297,Kết hợp tập thể dục 30 phút/ngày.
+138,"Tôi bị bình thường, gợi ý thực đơn cho cả ngày giúp tôi.",giảm cân,bình thường,tăng cơ,Trứng luộc + rau xanh,Ức gà nướng + salad,Ức gà + rau củ hấp,Sữa chua không đường,1464,Uống 2L nước/ngày.
+139,"Tôi đang tăng cơ, ăn gì sáng, trưa, tối hợp lý?",tăng cơ,béo phì,ăn lành mạnh,Cháo yến mạch,Cơm gạo lứt + cá hấp,Đậu hũ chiên + cơm gạo lứt,Sữa chua không đường,2159,Uống 2L nước/ngày.
+140,"Tôi đang ổn định đường huyết, ăn gì sáng, trưa, tối hợp lý?",ổn định đường huyết,tiểu đường,giảm cân,Yến mạch sữa chua,Cơm gạo lứt + cá hấp,Cá hồi + khoai lang,Sữa chua không đường,1693,Kết hợp tập thể dục 30 phút/ngày.
+141,"Tôi bị gầy yếu, gợi ý thực đơn cho cả ngày giúp tôi.",giảm cân,gầy yếu,giảm cân,Trứng luộc + rau xanh,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Hạt hạnh nhân,1545,Uống 2L nước/ngày.
+142,Người bình thường nên ăn thế nào để tăng cân trong 1 ngày?,tăng cân,bình thường,ăn lành mạnh,Cháo yến mạch,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Hạt hạnh nhân,2123,Không dùng đồ ngọt.
+143,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cân.,tăng cân,cao huyết áp,ăn lành mạnh,Bánh mì trứng,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Hạt hạnh nhân,1569,Ngủ đủ 7 tiếng.
+144,"Tôi bị cao huyết áp, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cân,cao huyết áp,ăn lành mạnh,Yến mạch sữa chua,Cơm gạo lứt + cá hấp,Đậu hũ chiên + cơm gạo lứt,Chuối chín,1254,Tránh ăn sau 21h.
+145,"Tôi bị cao huyết áp, gợi ý thực đơn cho cả ngày giúp tôi.",giảm cân,cao huyết áp,tăng cân,Bánh mì trứng,Ức gà nướng + salad,Salad rau củ + trứng,Hạt hạnh nhân,1921,Uống 2L nước/ngày.
+146,"Tôi muốn tăng cơ, nên ăn gì trong ngày?",tăng cơ,bình thường,ăn lành mạnh,Yến mạch sữa chua,Cơm + cá hồi áp chảo,Ức gà + rau củ hấp,Sữa whey,1284,Không dùng đồ ngọt.
+147,"Tôi bị cao huyết áp, gợi ý thực đơn cho cả ngày giúp tôi.",ổn định đường huyết,cao huyết áp,giảm cân,Yến mạch sữa chua,Cơm + cá hồi áp chảo,Salad rau củ + trứng,Táo xanh,2217,Tránh ăn sau 21h.
+148,Người béo phì nên ăn thế nào để tăng cân trong 1 ngày?,tăng cân,béo phì,tăng cơ,Bánh mì trứng,Ức gà nướng + salad,Cá hồi + khoai lang,Hạt hạnh nhân,1750,Ngủ đủ 7 tiếng.
+149,Hãy gợi ý thực đơn nguyên ngày giúp tôi giữ cân.,giữ cân,gầy yếu,duy trì sức khỏe,Cháo yến mạch,Cơm + cá hồi áp chảo,Cá hồi + khoai lang,Hạt hạnh nhân,2035,Tránh ăn sau 21h.
+150,"Tôi đang giữ cân, ăn gì sáng, trưa, tối hợp lý?",giữ cân,bình thường,tăng cân,Trứng luộc + rau xanh,Cơm gạo lứt + cá hấp,Cơm + tôm hấp,Sữa whey,1353,Ngủ đủ 7 tiếng.
+151,"Tôi bị tiểu đường, gợi ý thực đơn cho cả ngày giúp tôi.",giữ cân,tiểu đường,tăng cân,Trứng luộc + rau xanh,Cơm + cá hồi áp chảo,Đậu hũ chiên + cơm gạo lứt,Chuối chín,1983,Uống 2L nước/ngày.
+152,Hãy gợi ý thực đơn nguyên ngày giúp tôi giữ cân.,giữ cân,gầy yếu,ăn lành mạnh,Sữa tươi + trái cây ít đường,Cơm gạo lứt + cá hấp,Ức gà + rau củ hấp,Chuối chín,1235,Ngủ đủ 7 tiếng.
+153,Người gầy yếu nên ăn thế nào để ổn định đường huyết trong 1 ngày?,ổn định đường huyết,gầy yếu,tăng cân,Cháo yến mạch,Cơm + cá hồi áp chảo,Cơm + tôm hấp,Táo xanh,2090,Ngủ đủ 7 tiếng.
+154,"Tôi đang giảm cân, ăn gì sáng, trưa, tối hợp lý?",giảm cân,gầy yếu,duy trì sức khỏe,Sữa tươi + trái cây ít đường,Cơm gạo lứt + cá hấp,Đậu hũ chiên + cơm gạo lứt,Sữa whey,2273,Uống 2L nước/ngày.
+155,"Tôi bị gầy yếu, gợi ý thực đơn cho cả ngày giúp tôi.",ổn định đường huyết,gầy yếu,ăn lành mạnh,Yến mạch sữa chua,Đậu hũ sốt cà + rau luộc,Salad rau củ + trứng,Hạt hạnh nhân,1287,Tránh ăn sau 21h.
+156,"Tôi muốn tăng cơ, nên ăn gì trong ngày?",tăng cơ,cao huyết áp,tăng cân,Trứng luộc + rau xanh,Đậu hũ sốt cà + rau luộc,Salad rau củ + trứng,Chuối chín,1616,Ngủ đủ 7 tiếng.
+157,"Tôi bị bình thường, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cân,bình thường,tăng cơ,Cháo yến mạch,Cơm gạo lứt + cá hấp,Đậu hũ chiên + cơm gạo lứt,Táo xanh,1888,Không dùng đồ ngọt.
+158,"Tôi đang tăng cân, ăn gì sáng, trưa, tối hợp lý?",tăng cân,gầy yếu,duy trì sức khỏe,Cháo yến mạch,Đậu hũ sốt cà + rau luộc,Cơm + tôm hấp,Sữa whey,1827,Không dùng đồ ngọt.
+159,Người tiểu đường nên ăn thế nào để tăng cân trong 1 ngày?,tăng cân,tiểu đường,ăn lành mạnh,Bánh mì trứng,Ức gà nướng + salad,Salad rau củ + trứng,Sữa whey,1484,Kết hợp tập thể dục 30 phút/ngày.
+160,"Tôi đang giữ cân, ăn gì sáng, trưa, tối hợp lý?",giữ cân,bình thường,duy trì sức khỏe,Cháo yến mạch,Cơm + thịt bò xào,Đậu hũ chiên + cơm gạo lứt,Sữa whey,1349,Ngủ đủ 7 tiếng.
+161,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,gầy yếu,duy trì sức khỏe,Yến mạch sữa chua,Ức gà nướng + salad,Cá hồi + khoai lang,Sữa whey,2141,Kết hợp tập thể dục 30 phút/ngày.
+162,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cơ.,tăng cơ,gầy yếu,giảm cân,Cháo yến mạch,Cơm + cá hồi áp chảo,Cá hồi + khoai lang,Táo xanh,2126,Uống 2L nước/ngày.
+163,Hãy gợi ý thực đơn nguyên ngày giúp tôi ổn định đường huyết.,ổn định đường huyết,cao huyết áp,tăng cơ,Yến mạch sữa chua,Cơm gạo lứt + cá hấp,Ức gà + rau củ hấp,Hạt hạnh nhân,1266,Uống 2L nước/ngày.
+164,Người bình thường nên ăn thế nào để tăng cân trong 1 ngày?,tăng cân,bình thường,tăng cơ,Sữa tươi + trái cây ít đường,Đậu hũ sốt cà + rau luộc,Đậu hũ chiên + cơm gạo lứt,Sữa chua không đường,1688,Kết hợp tập thể dục 30 phút/ngày.
+165,"Tôi bị gầy yếu, gợi ý thực đơn cho cả ngày giúp tôi.",giảm cân,gầy yếu,duy trì sức khỏe,Sữa tươi + trái cây ít đường,Đậu hũ sốt cà + rau luộc,Cơm + tôm hấp,Sữa chua không đường,1507,Uống 2L nước/ngày.
+166,"Tôi bị béo phì, gợi ý thực đơn cho cả ngày giúp tôi.",giảm cân,béo phì,tăng cơ,Bánh mì trứng,Đậu hũ sốt cà + rau luộc,Đậu hũ chiên + cơm gạo lứt,Sữa whey,1211,Kết hợp tập thể dục 30 phút/ngày.
+167,"Tôi đang ổn định đường huyết, ăn gì sáng, trưa, tối hợp lý?",ổn định đường huyết,cao huyết áp,ăn lành mạnh,Sữa tươi + trái cây ít đường,Đậu hũ sốt cà + rau luộc,Salad rau củ + trứng,Sữa whey,2134,Kết hợp tập thể dục 30 phút/ngày.
+168,"Tôi muốn giữ cân, nên ăn gì trong ngày?",giữ cân,bình thường,ăn lành mạnh,Trứng luộc + rau xanh,Ức gà nướng + salad,Cá hồi + khoai lang,Sữa chua không đường,1274,Uống 2L nước/ngày.
+169,Người tiểu đường nên ăn thế nào để ổn định đường huyết trong 1 ngày?,ổn định đường huyết,tiểu đường,giảm cân,Bánh mì trứng,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Chuối chín,1589,Không dùng đồ ngọt.
+170,Người gầy yếu nên ăn thế nào để giảm cân trong 1 ngày?,giảm cân,gầy yếu,giảm cân,Cháo yến mạch,Đậu hũ sốt cà + rau luộc,Ức gà + rau củ hấp,Táo xanh,1717,Ngủ đủ 7 tiếng.
+171,Người bình thường nên ăn thế nào để tăng cân trong 1 ngày?,tăng cân,bình thường,giảm cân,Trứng luộc + rau xanh,Cơm + cá hồi áp chảo,Cơm + tôm hấp,Táo xanh,2300,Ngủ đủ 7 tiếng.
+172,"Tôi đang giảm cân, ăn gì sáng, trưa, tối hợp lý?",giảm cân,bình thường,tăng cơ,Yến mạch sữa chua,Cơm gạo lứt + cá hấp,Ức gà + rau củ hấp,Hạt hạnh nhân,2030,Không dùng đồ ngọt.
+173,"Tôi đang tăng cơ, ăn gì sáng, trưa, tối hợp lý?",tăng cơ,bình thường,ăn lành mạnh,Sữa tươi + trái cây ít đường,Cơm gạo lứt + cá hấp,Cá hồi + khoai lang,Sữa chua không đường,1409,Uống 2L nước/ngày.
+174,"Tôi bị tiểu đường, gợi ý thực đơn cho cả ngày giúp tôi.",ổn định đường huyết,tiểu đường,duy trì sức khỏe,Sữa tươi + trái cây ít đường,Cơm + thịt bò xào,Cơm + tôm hấp,Sữa chua không đường,1230,Kết hợp tập thể dục 30 phút/ngày.
+175,"Tôi muốn giữ cân, nên ăn gì trong ngày?",giữ cân,tiểu đường,ăn lành mạnh,Bánh mì trứng,Cơm + thịt bò xào,Đậu hũ chiên + cơm gạo lứt,Sữa whey,2147,Kết hợp tập thể dục 30 phút/ngày.
+176,Người gầy yếu nên ăn thế nào để ổn định đường huyết trong 1 ngày?,ổn định đường huyết,gầy yếu,giảm cân,Cháo yến mạch,Đậu hũ sốt cà + rau luộc,Cá hồi + khoai lang,Chuối chín,2135,Ngủ đủ 7 tiếng.
+177,Người cao huyết áp nên ăn thế nào để giảm cân trong 1 ngày?,giảm cân,cao huyết áp,giảm cân,Sữa tươi + trái cây ít đường,Đậu hũ sốt cà + rau luộc,Đậu hũ chiên + cơm gạo lứt,Sữa chua không đường,1635,Tránh ăn sau 21h.
+178,"Tôi đang tăng cân, ăn gì sáng, trưa, tối hợp lý?",tăng cân,béo phì,tăng cơ,Trứng luộc + rau xanh,Ức gà nướng + salad,Cơm + tôm hấp,Táo xanh,1227,Tránh ăn sau 21h.
+179,Người béo phì nên ăn thế nào để ổn định đường huyết trong 1 ngày?,ổn định đường huyết,béo phì,tăng cơ,Yến mạch sữa chua,Đậu hũ sốt cà + rau luộc,Cá hồi + khoai lang,Sữa whey,2110,Tránh ăn sau 21h.
+180,Hãy gợi ý thực đơn nguyên ngày giúp tôi giữ cân.,giữ cân,béo phì,tăng cơ,Sữa tươi + trái cây ít đường,Cơm + cá hồi áp chảo,Đậu hũ chiên + cơm gạo lứt,Sữa chua không đường,1932,Ngủ đủ 7 tiếng.
+181,"Tôi đang tăng cân, ăn gì sáng, trưa, tối hợp lý?",tăng cân,cao huyết áp,giảm cân,Yến mạch sữa chua,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Chuối chín,2197,Không dùng đồ ngọt.
+182,Người bình thường nên ăn thế nào để giảm cân trong 1 ngày?,giảm cân,bình thường,tăng cân,Bánh mì trứng,Đậu hũ sốt cà + rau luộc,Đậu hũ chiên + cơm gạo lứt,Táo xanh,1568,Không dùng đồ ngọt.
+183,Người gầy yếu nên ăn thế nào để giảm cân trong 1 ngày?,giảm cân,gầy yếu,duy trì sức khỏe,Bánh mì trứng,Ức gà nướng + salad,Ức gà + rau củ hấp,Sữa chua không đường,1925,Uống 2L nước/ngày.
+184,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,tiểu đường,duy trì sức khỏe,Sữa tươi + trái cây ít đường,Cơm + cá hồi áp chảo,Cá hồi + khoai lang,Táo xanh,1904,Kết hợp tập thể dục 30 phút/ngày.
+185,Người bình thường nên ăn thế nào để giảm cân trong 1 ngày?,giảm cân,bình thường,tăng cân,Trứng luộc + rau xanh,Cơm + thịt bò xào,Cơm + tôm hấp,Táo xanh,1958,Không dùng đồ ngọt.
+186,"Tôi bị tiểu đường, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cơ,tiểu đường,tăng cơ,Sữa tươi + trái cây ít đường,Cơm + thịt bò xào,Đậu hũ chiên + cơm gạo lứt,Sữa whey,1249,Uống 2L nước/ngày.
+187,Người gầy yếu nên ăn thế nào để tăng cơ trong 1 ngày?,tăng cơ,gầy yếu,tăng cân,Sữa tươi + trái cây ít đường,Cơm gạo lứt + cá hấp,Cá hồi + khoai lang,Chuối chín,1313,Tránh ăn sau 21h.
+188,"Tôi đang giảm cân, ăn gì sáng, trưa, tối hợp lý?",giảm cân,cao huyết áp,ăn lành mạnh,Sữa tươi + trái cây ít đường,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Sữa whey,1677,Tránh ăn sau 21h.
+189,"Tôi đang ổn định đường huyết, ăn gì sáng, trưa, tối hợp lý?",ổn định đường huyết,tiểu đường,tăng cơ,Trứng luộc + rau xanh,Cơm + cá hồi áp chảo,Ức gà + rau củ hấp,Táo xanh,1778,Không dùng đồ ngọt.
+190,Người tiểu đường nên ăn thế nào để giữ cân trong 1 ngày?,giữ cân,tiểu đường,tăng cân,Cháo yến mạch,Cơm gạo lứt + cá hấp,Cơm + tôm hấp,Sữa whey,1773,Tránh ăn sau 21h.
+191,Hãy gợi ý thực đơn nguyên ngày giúp tôi ổn định đường huyết.,ổn định đường huyết,béo phì,duy trì sức khỏe,Trứng luộc + rau xanh,Cơm + thịt bò xào,Cơm + tôm hấp,Hạt hạnh nhân,2045,Không dùng đồ ngọt.
+192,"Tôi muốn giữ cân, nên ăn gì trong ngày?",giữ cân,béo phì,ăn lành mạnh,Yến mạch sữa chua,Cơm gạo lứt + cá hấp,Đậu hũ chiên + cơm gạo lứt,Sữa whey,1770,Uống 2L nước/ngày.
+193,"Tôi đang tăng cơ, ăn gì sáng, trưa, tối hợp lý?",tăng cơ,tiểu đường,ăn lành mạnh,Trứng luộc + rau xanh,Cơm + cá hồi áp chảo,Salad rau củ + trứng,Sữa whey,1204,Tránh ăn sau 21h.
+194,"Tôi bị tiểu đường, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cơ,tiểu đường,ăn lành mạnh,Sữa tươi + trái cây ít đường,Cơm + cá hồi áp chảo,Ức gà + rau củ hấp,Chuối chín,2164,Tránh ăn sau 21h.
+195,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cơ.,tăng cơ,cao huyết áp,tăng cơ,Sữa tươi + trái cây ít đường,Đậu hũ sốt cà + rau luộc,Cá hồi + khoai lang,Hạt hạnh nhân,1776,Kết hợp tập thể dục 30 phút/ngày.
+196,"Tôi đang tăng cân, ăn gì sáng, trưa, tối hợp lý?",tăng cân,gầy yếu,giảm cân,Bánh mì trứng,Cơm + thịt bò xào,Salad rau củ + trứng,Sữa whey,1326,Uống 2L nước/ngày.
+197,"Tôi đang tăng cơ, ăn gì sáng, trưa, tối hợp lý?",tăng cơ,bình thường,tăng cơ,Cháo yến mạch,Ức gà nướng + salad,Cơm + tôm hấp,Táo xanh,1943,Không dùng đồ ngọt.
+198,"Tôi bị gầy yếu, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cơ,gầy yếu,tăng cơ,Sữa tươi + trái cây ít đường,Cơm gạo lứt + cá hấp,Cá hồi + khoai lang,Chuối chín,2248,Uống 2L nước/ngày.
+199,"Tôi muốn tăng cân, nên ăn gì trong ngày?",tăng cân,cao huyết áp,ăn lành mạnh,Yến mạch sữa chua,Đậu hũ sốt cà + rau luộc,Cá hồi + khoai lang,Táo xanh,1227,Tránh ăn sau 21h.
+200,Người bình thường nên ăn thế nào để ổn định đường huyết trong 1 ngày?,ổn định đường huyết,bình thường,giảm cân,Trứng luộc + rau xanh,Cơm + cá hồi áp chảo,Đậu hũ chiên + cơm gạo lứt,Sữa whey,2286,Không dùng đồ ngọt.
+201,"Tôi muốn giảm cân, nên ăn gì trong ngày?",giảm cân,béo phì,duy trì sức khỏe,Sữa tươi + trái cây ít đường,Cơm + thịt bò xào,Cá hồi + khoai lang,Táo xanh,2240,Không dùng đồ ngọt.
+202,"Tôi bị cao huyết áp, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cân,cao huyết áp,ăn lành mạnh,Cháo yến mạch,Cơm + cá hồi áp chảo,Ức gà + rau củ hấp,Táo xanh,1458,Kết hợp tập thể dục 30 phút/ngày.
+203,"Tôi bị béo phì, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cân,béo phì,giảm cân,Trứng luộc + rau xanh,Đậu hũ sốt cà + rau luộc,Salad rau củ + trứng,Chuối chín,1415,Kết hợp tập thể dục 30 phút/ngày.
+204,Người béo phì nên ăn thế nào để tăng cân trong 1 ngày?,tăng cân,béo phì,tăng cơ,Cháo yến mạch,Đậu hũ sốt cà + rau luộc,Cơm + tôm hấp,Chuối chín,1818,Không dùng đồ ngọt.
+205,"Tôi đang giảm cân, ăn gì sáng, trưa, tối hợp lý?",giảm cân,cao huyết áp,tăng cân,Cháo yến mạch,Cơm + cá hồi áp chảo,Ức gà + rau củ hấp,Táo xanh,2225,Không dùng đồ ngọt.
+206,Người bình thường nên ăn thế nào để giữ cân trong 1 ngày?,giữ cân,bình thường,tăng cơ,Trứng luộc + rau xanh,Cơm + cá hồi áp chảo,Ức gà + rau củ hấp,Sữa chua không đường,1914,Kết hợp tập thể dục 30 phút/ngày.
+207,Hãy gợi ý thực đơn nguyên ngày giúp tôi ổn định đường huyết.,ổn định đường huyết,tiểu đường,tăng cơ,Bánh mì trứng,Cơm + cá hồi áp chảo,Cá hồi + khoai lang,Táo xanh,1853,Uống 2L nước/ngày.
+208,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,cao huyết áp,tăng cơ,Bánh mì trứng,Ức gà nướng + salad,Ức gà + rau củ hấp,Táo xanh,1258,Không dùng đồ ngọt.
+209,Người bình thường nên ăn thế nào để ổn định đường huyết trong 1 ngày?,ổn định đường huyết,bình thường,tăng cân,Trứng luộc + rau xanh,Cơm + thịt bò xào,Cơm + tôm hấp,Táo xanh,2266,Không dùng đồ ngọt.
+210,"Tôi bị cao huyết áp, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cơ,cao huyết áp,ăn lành mạnh,Sữa tươi + trái cây ít đường,Cơm + thịt bò xào,Cơm + tôm hấp,Sữa chua không đường,1347,Không dùng đồ ngọt.
+211,"Tôi đang ổn định đường huyết, ăn gì sáng, trưa, tối hợp lý?",ổn định đường huyết,bình thường,giảm cân,Sữa tươi + trái cây ít đường,Đậu hũ sốt cà + rau luộc,Đậu hũ chiên + cơm gạo lứt,Táo xanh,1378,Uống 2L nước/ngày.
+212,"Tôi muốn tăng cơ, nên ăn gì trong ngày?",tăng cơ,gầy yếu,tăng cân,Cháo yến mạch,Đậu hũ sốt cà + rau luộc,Salad rau củ + trứng,Táo xanh,1614,Uống 2L nước/ngày.
+213,"Tôi muốn giảm cân, nên ăn gì trong ngày?",giảm cân,cao huyết áp,tăng cân,Trứng luộc + rau xanh,Cơm + cá hồi áp chảo,Ức gà + rau củ hấp,Sữa chua không đường,2005,Không dùng đồ ngọt.
+214,"Tôi bị bình thường, gợi ý thực đơn cho cả ngày giúp tôi.",giảm cân,bình thường,tăng cơ,Trứng luộc + rau xanh,Ức gà nướng + salad,Cơm + tôm hấp,Táo xanh,1852,Ngủ đủ 7 tiếng.
+215,"Tôi muốn giữ cân, nên ăn gì trong ngày?",giữ cân,cao huyết áp,ăn lành mạnh,Trứng luộc + rau xanh,Ức gà nướng + salad,Cơm + tôm hấp,Chuối chín,1874,Không dùng đồ ngọt.
+216,"Tôi muốn tăng cơ, nên ăn gì trong ngày?",tăng cơ,gầy yếu,giảm cân,Bánh mì trứng,Cơm gạo lứt + cá hấp,Ức gà + rau củ hấp,Hạt hạnh nhân,1497,Kết hợp tập thể dục 30 phút/ngày.
+217,Hãy gợi ý thực đơn nguyên ngày giúp tôi giảm cân.,giảm cân,cao huyết áp,giảm cân,Bánh mì trứng,Cơm + cá hồi áp chảo,Đậu hũ chiên + cơm gạo lứt,Hạt hạnh nhân,1817,Ngủ đủ 7 tiếng.
+218,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cân.,tăng cân,bình thường,giảm cân,Sữa tươi + trái cây ít đường,Đậu hũ sốt cà + rau luộc,Cá hồi + khoai lang,Hạt hạnh nhân,1277,Ngủ đủ 7 tiếng.
+219,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cân.,tăng cân,bình thường,tăng cân,Trứng luộc + rau xanh,Cơm + cá hồi áp chảo,Salad rau củ + trứng,Hạt hạnh nhân,1580,Uống 2L nước/ngày.
+220,Người gầy yếu nên ăn thế nào để giữ cân trong 1 ngày?,giữ cân,gầy yếu,giảm cân,Sữa tươi + trái cây ít đường,Cơm + cá hồi áp chảo,Ức gà + rau củ hấp,Chuối chín,1913,Kết hợp tập thể dục 30 phút/ngày.
+221,Người béo phì nên ăn thế nào để tăng cân trong 1 ngày?,tăng cân,béo phì,tăng cơ,Bánh mì trứng,Đậu hũ sốt cà + rau luộc,Cơm + tôm hấp,Chuối chín,1948,Ngủ đủ 7 tiếng.
+222,"Tôi muốn tăng cân, nên ăn gì trong ngày?",tăng cân,béo phì,ăn lành mạnh,Cháo yến mạch,Ức gà nướng + salad,Salad rau củ + trứng,Sữa whey,2260,Không dùng đồ ngọt.
+223,Người béo phì nên ăn thế nào để giữ cân trong 1 ngày?,giữ cân,béo phì,tăng cân,Yến mạch sữa chua,Ức gà nướng + salad,Cơm + tôm hấp,Táo xanh,1813,Tránh ăn sau 21h.
+224,"Tôi đang giữ cân, ăn gì sáng, trưa, tối hợp lý?",giữ cân,cao huyết áp,ăn lành mạnh,Sữa tươi + trái cây ít đường,Cơm + thịt bò xào,Ức gà + rau củ hấp,Hạt hạnh nhân,1672,Uống 2L nước/ngày.
+225,"Tôi đang tăng cơ, ăn gì sáng, trưa, tối hợp lý?",tăng cơ,gầy yếu,tăng cơ,Sữa tươi + trái cây ít đường,Đậu hũ sốt cà + rau luộc,Ức gà + rau củ hấp,Chuối chín,1793,Kết hợp tập thể dục 30 phút/ngày.
+226,"Tôi bị gầy yếu, gợi ý thực đơn cho cả ngày giúp tôi.",giảm cân,gầy yếu,duy trì sức khỏe,Sữa tươi + trái cây ít đường,Cơm gạo lứt + cá hấp,Cá hồi + khoai lang,Chuối chín,1662,Kết hợp tập thể dục 30 phút/ngày.
+227,Hãy gợi ý thực đơn nguyên ngày giúp tôi giảm cân.,giảm cân,gầy yếu,giảm cân,Cháo yến mạch,Cơm + thịt bò xào,Cơm + tôm hấp,Táo xanh,1664,Ngủ đủ 7 tiếng.
+228,"Tôi đang giảm cân, ăn gì sáng, trưa, tối hợp lý?",giảm cân,gầy yếu,tăng cân,Cháo yến mạch,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Táo xanh,1430,Không dùng đồ ngọt.
+229,Người cao huyết áp nên ăn thế nào để ổn định đường huyết trong 1 ngày?,ổn định đường huyết,cao huyết áp,giảm cân,Cháo yến mạch,Đậu hũ sốt cà + rau luộc,Salad rau củ + trứng,Hạt hạnh nhân,1305,Tránh ăn sau 21h.
+230,"Tôi muốn giảm cân, nên ăn gì trong ngày?",giảm cân,tiểu đường,duy trì sức khỏe,Yến mạch sữa chua,Ức gà nướng + salad,Cơm + tôm hấp,Sữa whey,2126,Ngủ đủ 7 tiếng.
+231,Người gầy yếu nên ăn thế nào để ổn định đường huyết trong 1 ngày?,ổn định đường huyết,gầy yếu,duy trì sức khỏe,Cháo yến mạch,Ức gà nướng + salad,Salad rau củ + trứng,Sữa chua không đường,1553,Không dùng đồ ngọt.
+232,"Tôi bị tiểu đường, gợi ý thực đơn cho cả ngày giúp tôi.",giảm cân,tiểu đường,ăn lành mạnh,Bánh mì trứng,Ức gà nướng + salad,Ức gà + rau củ hấp,Sữa whey,2183,Không dùng đồ ngọt.
+233,Người gầy yếu nên ăn thế nào để tăng cơ trong 1 ngày?,tăng cơ,gầy yếu,tăng cân,Trứng luộc + rau xanh,Cơm gạo lứt + cá hấp,Salad rau củ + trứng,Chuối chín,1549,Uống 2L nước/ngày.
+234,"Tôi đang tăng cân, ăn gì sáng, trưa, tối hợp lý?",tăng cân,tiểu đường,ăn lành mạnh,Yến mạch sữa chua,Ức gà nướng + salad,Ức gà + rau củ hấp,Táo xanh,1873,Uống 2L nước/ngày.
+235,"Tôi đang tăng cơ, ăn gì sáng, trưa, tối hợp lý?",tăng cơ,bình thường,tăng cân,Sữa tươi + trái cây ít đường,Đậu hũ sốt cà + rau luộc,Cơm + tôm hấp,Sữa whey,1229,Kết hợp tập thể dục 30 phút/ngày.
+236,Hãy gợi ý thực đơn nguyên ngày giúp tôi ổn định đường huyết.,ổn định đường huyết,tiểu đường,tăng cân,Bánh mì trứng,Ức gà nướng + salad,Ức gà + rau củ hấp,Sữa whey,2132,Ngủ đủ 7 tiếng.
+237,"Tôi bị tiểu đường, gợi ý thực đơn cho cả ngày giúp tôi.",giữ cân,tiểu đường,ăn lành mạnh,Yến mạch sữa chua,Cơm + cá hồi áp chảo,Cá hồi + khoai lang,Sữa whey,1971,Không dùng đồ ngọt.
+238,"Tôi muốn giảm cân, nên ăn gì trong ngày?",giảm cân,béo phì,ăn lành mạnh,Yến mạch sữa chua,Đậu hũ sốt cà + rau luộc,Salad rau củ + trứng,Sữa whey,1369,Ngủ đủ 7 tiếng.
+239,"Tôi muốn giảm cân, nên ăn gì trong ngày?",giảm cân,bình thường,tăng cân,Cháo yến mạch,Cơm + thịt bò xào,Cá hồi + khoai lang,Hạt hạnh nhân,1528,Tránh ăn sau 21h.
+240,Hãy gợi ý thực đơn nguyên ngày giúp tôi giữ cân.,giữ cân,gầy yếu,ăn lành mạnh,Yến mạch sữa chua,Đậu hũ sốt cà + rau luộc,Salad rau củ + trứng,Sữa whey,1703,Không dùng đồ ngọt.
+241,"Tôi đang giảm cân, ăn gì sáng, trưa, tối hợp lý?",giảm cân,bình thường,ăn lành mạnh,Sữa tươi + trái cây ít đường,Cơm + cá hồi áp chảo,Cá hồi + khoai lang,Sữa chua không đường,2161,Ngủ đủ 7 tiếng.
+242,"Tôi bị béo phì, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cơ,béo phì,ăn lành mạnh,Cháo yến mạch,Đậu hũ sốt cà + rau luộc,Đậu hũ chiên + cơm gạo lứt,Táo xanh,2238,Không dùng đồ ngọt.
+243,Người gầy yếu nên ăn thế nào để tăng cân trong 1 ngày?,tăng cân,gầy yếu,tăng cân,Cháo yến mạch,Cơm + cá hồi áp chảo,Salad rau củ + trứng,Sữa chua không đường,2129,Ngủ đủ 7 tiếng.
+244,"Tôi bị béo phì, gợi ý thực đơn cho cả ngày giúp tôi.",ổn định đường huyết,béo phì,giảm cân,Bánh mì trứng,Đậu hũ sốt cà + rau luộc,Salad rau củ + trứng,Táo xanh,1697,Uống 2L nước/ngày.
+245,Người tiểu đường nên ăn thế nào để tăng cân trong 1 ngày?,tăng cân,tiểu đường,giảm cân,Sữa tươi + trái cây ít đường,Cơm gạo lứt + cá hấp,Salad rau củ + trứng,Sữa whey,1686,Ngủ đủ 7 tiếng.
+246,Người tiểu đường nên ăn thế nào để tăng cơ trong 1 ngày?,tăng cơ,tiểu đường,giảm cân,Sữa tươi + trái cây ít đường,Cơm gạo lứt + cá hấp,Ức gà + rau củ hấp,Chuối chín,1757,Kết hợp tập thể dục 30 phút/ngày.
+247,"Tôi bị bình thường, gợi ý thực đơn cho cả ngày giúp tôi.",giữ cân,bình thường,tăng cân,Trứng luộc + rau xanh,Cơm + cá hồi áp chảo,Đậu hũ chiên + cơm gạo lứt,Chuối chín,1896,Uống 2L nước/ngày.
+248,Hãy gợi ý thực đơn nguyên ngày giúp tôi giữ cân.,giữ cân,gầy yếu,tăng cơ,Yến mạch sữa chua,Ức gà nướng + salad,Ức gà + rau củ hấp,Táo xanh,1366,Uống 2L nước/ngày.
+249,Hãy gợi ý thực đơn nguyên ngày giúp tôi giữ cân.,giữ cân,cao huyết áp,tăng cơ,Bánh mì trứng,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Táo xanh,1739,Tránh ăn sau 21h.
+250,"Tôi muốn giảm cân, nên ăn gì trong ngày?",giảm cân,gầy yếu,tăng cân,Sữa tươi + trái cây ít đường,Cơm + thịt bò xào,Salad rau củ + trứng,Táo xanh,1678,Tránh ăn sau 21h.
+251,Người tiểu đường nên ăn thế nào để tăng cân trong 1 ngày?,tăng cân,tiểu đường,giảm cân,Cháo yến mạch,Cơm + cá hồi áp chảo,Salad rau củ + trứng,Táo xanh,2146,Kết hợp tập thể dục 30 phút/ngày.
+252,"Tôi đang tăng cơ, ăn gì sáng, trưa, tối hợp lý?",tăng cơ,tiểu đường,tăng cân,Bánh mì trứng,Cơm + thịt bò xào,Đậu hũ chiên + cơm gạo lứt,Hạt hạnh nhân,1754,Uống 2L nước/ngày.
+253,Người tiểu đường nên ăn thế nào để ổn định đường huyết trong 1 ngày?,ổn định đường huyết,tiểu đường,duy trì sức khỏe,Cháo yến mạch,Đậu hũ sốt cà + rau luộc,Cơm + tôm hấp,Hạt hạnh nhân,1283,Kết hợp tập thể dục 30 phút/ngày.
+254,"Tôi bị gầy yếu, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cân,gầy yếu,giảm cân,Bánh mì trứng,Ức gà nướng + salad,Cá hồi + khoai lang,Hạt hạnh nhân,1930,Ngủ đủ 7 tiếng.
+255,"Tôi bị bình thường, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cân,bình thường,giảm cân,Yến mạch sữa chua,Đậu hũ sốt cà + rau luộc,Đậu hũ chiên + cơm gạo lứt,Hạt hạnh nhân,1862,Không dùng đồ ngọt.
+256,Người bình thường nên ăn thế nào để tăng cơ trong 1 ngày?,tăng cơ,bình thường,tăng cân,Sữa tươi + trái cây ít đường,Đậu hũ sốt cà + rau luộc,Salad rau củ + trứng,Sữa whey,1457,Uống 2L nước/ngày.
+257,"Tôi đang tăng cơ, ăn gì sáng, trưa, tối hợp lý?",tăng cơ,béo phì,ăn lành mạnh,Yến mạch sữa chua,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Sữa whey,1554,Tránh ăn sau 21h.
+258,"Tôi bị béo phì, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cân,béo phì,ăn lành mạnh,Trứng luộc + rau xanh,Đậu hũ sốt cà + rau luộc,Cơm + tôm hấp,Sữa whey,2015,Tránh ăn sau 21h.
+259,Người gầy yếu nên ăn thế nào để ổn định đường huyết trong 1 ngày?,ổn định đường huyết,gầy yếu,tăng cân,Cháo yến mạch,Ức gà nướng + salad,Cơm + tôm hấp,Chuối chín,1359,Không dùng đồ ngọt.
+260,Hãy gợi ý thực đơn nguyên ngày giúp tôi giảm cân.,giảm cân,tiểu đường,giảm cân,Sữa tươi + trái cây ít đường,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Táo xanh,2107,Kết hợp tập thể dục 30 phút/ngày.
+261,"Tôi muốn giữ cân, nên ăn gì trong ngày?",giữ cân,gầy yếu,tăng cơ,Cháo yến mạch,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Sữa chua không đường,1436,Tránh ăn sau 21h.
+262,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,cao huyết áp,giảm cân,Cháo yến mạch,Đậu hũ sốt cà + rau luộc,Đậu hũ chiên + cơm gạo lứt,Chuối chín,1959,Uống 2L nước/ngày.
+263,"Tôi đang giữ cân, ăn gì sáng, trưa, tối hợp lý?",giữ cân,gầy yếu,tăng cân,Trứng luộc + rau xanh,Cơm + thịt bò xào,Đậu hũ chiên + cơm gạo lứt,Hạt hạnh nhân,1522,Tránh ăn sau 21h.
+264,Người béo phì nên ăn thế nào để giảm cân trong 1 ngày?,giảm cân,béo phì,ăn lành mạnh,Cháo yến mạch,Cơm gạo lứt + cá hấp,Đậu hũ chiên + cơm gạo lứt,Táo xanh,1216,Kết hợp tập thể dục 30 phút/ngày.
+265,"Tôi đang tăng cân, ăn gì sáng, trưa, tối hợp lý?",tăng cân,gầy yếu,giảm cân,Yến mạch sữa chua,Đậu hũ sốt cà + rau luộc,Ức gà + rau củ hấp,Sữa whey,1219,Không dùng đồ ngọt.
+266,Người cao huyết áp nên ăn thế nào để giảm cân trong 1 ngày?,giảm cân,cao huyết áp,giảm cân,Yến mạch sữa chua,Cơm gạo lứt + cá hấp,Đậu hũ chiên + cơm gạo lứt,Sữa whey,1228,Uống 2L nước/ngày.
+267,"Tôi đang tăng cân, ăn gì sáng, trưa, tối hợp lý?",tăng cân,tiểu đường,giảm cân,Sữa tươi + trái cây ít đường,Đậu hũ sốt cà + rau luộc,Đậu hũ chiên + cơm gạo lứt,Táo xanh,1629,Tránh ăn sau 21h.
+268,Hãy gợi ý thực đơn nguyên ngày giúp tôi giảm cân.,giảm cân,béo phì,tăng cơ,Sữa tươi + trái cây ít đường,Đậu hũ sốt cà + rau luộc,Cá hồi + khoai lang,Táo xanh,1947,Kết hợp tập thể dục 30 phút/ngày.
+269,"Tôi bị béo phì, gợi ý thực đơn cho cả ngày giúp tôi.",giảm cân,béo phì,ăn lành mạnh,Bánh mì trứng,Cơm gạo lứt + cá hấp,Ức gà + rau củ hấp,Hạt hạnh nhân,2189,Kết hợp tập thể dục 30 phút/ngày.
+270,"Tôi bị béo phì, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cơ,béo phì,giảm cân,Sữa tươi + trái cây ít đường,Cơm gạo lứt + cá hấp,Salad rau củ + trứng,Sữa whey,1543,Không dùng đồ ngọt.
+271,"Tôi muốn giữ cân, nên ăn gì trong ngày?",giữ cân,bình thường,ăn lành mạnh,Sữa tươi + trái cây ít đường,Cơm + cá hồi áp chảo,Salad rau củ + trứng,Hạt hạnh nhân,1420,Tránh ăn sau 21h.
+272,Người gầy yếu nên ăn thế nào để ổn định đường huyết trong 1 ngày?,ổn định đường huyết,gầy yếu,duy trì sức khỏe,Yến mạch sữa chua,Cơm + thịt bò xào,Đậu hũ chiên + cơm gạo lứt,Sữa chua không đường,1639,Không dùng đồ ngọt.
+273,Người béo phì nên ăn thế nào để giữ cân trong 1 ngày?,giữ cân,béo phì,tăng cơ,Sữa tươi + trái cây ít đường,Cơm + cá hồi áp chảo,Ức gà + rau củ hấp,Hạt hạnh nhân,1288,Không dùng đồ ngọt.
+274,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,béo phì,tăng cân,Cháo yến mạch,Cơm + thịt bò xào,Cá hồi + khoai lang,Hạt hạnh nhân,2155,Ngủ đủ 7 tiếng.
+275,"Tôi bị bình thường, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cơ,bình thường,giảm cân,Cháo yến mạch,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Sữa chua không đường,1914,Uống 2L nước/ngày.
+276,"Tôi muốn giữ cân, nên ăn gì trong ngày?",giữ cân,béo phì,duy trì sức khỏe,Cháo yến mạch,Cơm gạo lứt + cá hấp,Đậu hũ chiên + cơm gạo lứt,Chuối chín,1677,Ngủ đủ 7 tiếng.
+277,Người cao huyết áp nên ăn thế nào để tăng cân trong 1 ngày?,tăng cân,cao huyết áp,giảm cân,Bánh mì trứng,Cơm + thịt bò xào,Đậu hũ chiên + cơm gạo lứt,Hạt hạnh nhân,2019,Tránh ăn sau 21h.
+278,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,bình thường,tăng cân,Bánh mì trứng,Cơm + cá hồi áp chảo,Cá hồi + khoai lang,Táo xanh,1220,Không dùng đồ ngọt.
+279,Hãy gợi ý thực đơn nguyên ngày giúp tôi giảm cân.,giảm cân,bình thường,tăng cân,Cháo yến mạch,Đậu hũ sốt cà + rau luộc,Đậu hũ chiên + cơm gạo lứt,Chuối chín,2126,Ngủ đủ 7 tiếng.
+280,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,tiểu đường,tăng cơ,Trứng luộc + rau xanh,Đậu hũ sốt cà + rau luộc,Đậu hũ chiên + cơm gạo lứt,Chuối chín,1741,Không dùng đồ ngọt.
+281,"Tôi đang giảm cân, ăn gì sáng, trưa, tối hợp lý?",giảm cân,cao huyết áp,ăn lành mạnh,Yến mạch sữa chua,Đậu hũ sốt cà + rau luộc,Cá hồi + khoai lang,Sữa chua không đường,2247,Kết hợp tập thể dục 30 phút/ngày.
+282,Hãy gợi ý thực đơn nguyên ngày giúp tôi giữ cân.,giữ cân,cao huyết áp,tăng cân,Trứng luộc + rau xanh,Đậu hũ sốt cà + rau luộc,Salad rau củ + trứng,Táo xanh,2148,Kết hợp tập thể dục 30 phút/ngày.
+283,Hãy gợi ý thực đơn nguyên ngày giúp tôi giảm cân.,giảm cân,cao huyết áp,ăn lành mạnh,Cháo yến mạch,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Chuối chín,1964,Tránh ăn sau 21h.
+284,"Tôi đang giữ cân, ăn gì sáng, trưa, tối hợp lý?",giữ cân,cao huyết áp,ăn lành mạnh,Yến mạch sữa chua,Ức gà nướng + salad,Cá hồi + khoai lang,Hạt hạnh nhân,2096,Uống 2L nước/ngày.
+285,"Tôi đang giữ cân, ăn gì sáng, trưa, tối hợp lý?",giữ cân,bình thường,tăng cơ,Bánh mì trứng,Ức gà nướng + salad,Salad rau củ + trứng,Hạt hạnh nhân,1557,Kết hợp tập thể dục 30 phút/ngày.
+286,"Tôi muốn giữ cân, nên ăn gì trong ngày?",giữ cân,gầy yếu,ăn lành mạnh,Sữa tươi + trái cây ít đường,Cơm + thịt bò xào,Ức gà + rau củ hấp,Sữa chua không đường,1964,Uống 2L nước/ngày.
+287,Hãy gợi ý thực đơn nguyên ngày giúp tôi giữ cân.,giữ cân,tiểu đường,duy trì sức khỏe,Cháo yến mạch,Cơm + cá hồi áp chảo,Đậu hũ chiên + cơm gạo lứt,Hạt hạnh nhân,2066,Tránh ăn sau 21h.
+288,"Tôi bị cao huyết áp, gợi ý thực đơn cho cả ngày giúp tôi.",giảm cân,cao huyết áp,ăn lành mạnh,Bánh mì trứng,Đậu hũ sốt cà + rau luộc,Cơm + tôm hấp,Hạt hạnh nhân,2093,Uống 2L nước/ngày.
+289,Người bình thường nên ăn thế nào để giữ cân trong 1 ngày?,giữ cân,bình thường,giảm cân,Cháo yến mạch,Ức gà nướng + salad,Salad rau củ + trứng,Sữa whey,1348,Tránh ăn sau 21h.
+290,Người gầy yếu nên ăn thế nào để giữ cân trong 1 ngày?,giữ cân,gầy yếu,tăng cơ,Sữa tươi + trái cây ít đường,Ức gà nướng + salad,Cá hồi + khoai lang,Sữa whey,1449,Kết hợp tập thể dục 30 phút/ngày.
+291,"Tôi bị gầy yếu, gợi ý thực đơn cho cả ngày giúp tôi.",giảm cân,gầy yếu,duy trì sức khỏe,Trứng luộc + rau xanh,Cơm + cá hồi áp chảo,Cơm + tôm hấp,Sữa whey,2121,Uống 2L nước/ngày.
+292,Hãy gợi ý thực đơn nguyên ngày giúp tôi ổn định đường huyết.,ổn định đường huyết,cao huyết áp,giảm cân,Trứng luộc + rau xanh,Cơm + cá hồi áp chảo,Đậu hũ chiên + cơm gạo lứt,Sữa whey,1678,Uống 2L nước/ngày.
+293,Hãy gợi ý thực đơn nguyên ngày giúp tôi ổn định đường huyết.,ổn định đường huyết,bình thường,tăng cơ,Trứng luộc + rau xanh,Cơm gạo lứt + cá hấp,Ức gà + rau củ hấp,Chuối chín,1851,Kết hợp tập thể dục 30 phút/ngày.
+294,Người tiểu đường nên ăn thế nào để giữ cân trong 1 ngày?,giữ cân,tiểu đường,giảm cân,Sữa tươi + trái cây ít đường,Đậu hũ sốt cà + rau luộc,Salad rau củ + trứng,Táo xanh,2045,Không dùng đồ ngọt.
+295,"Tôi đang ổn định đường huyết, ăn gì sáng, trưa, tối hợp lý?",ổn định đường huyết,tiểu đường,ăn lành mạnh,Sữa tươi + trái cây ít đường,Đậu hũ sốt cà + rau luộc,Cá hồi + khoai lang,Táo xanh,1268,Tránh ăn sau 21h.
+296,Hãy gợi ý thực đơn nguyên ngày giúp tôi giảm cân.,giảm cân,bình thường,duy trì sức khỏe,Bánh mì trứng,Cơm + thịt bò xào,Đậu hũ chiên + cơm gạo lứt,Hạt hạnh nhân,1328,Không dùng đồ ngọt.
+297,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cơ.,tăng cơ,bình thường,tăng cân,Bánh mì trứng,Đậu hũ sốt cà + rau luộc,Ức gà + rau củ hấp,Hạt hạnh nhân,1874,Không dùng đồ ngọt.
+298,"Tôi muốn giữ cân, nên ăn gì trong ngày?",giữ cân,béo phì,tăng cân,Yến mạch sữa chua,Cơm + cá hồi áp chảo,Salad rau củ + trứng,Sữa whey,2146,Kết hợp tập thể dục 30 phút/ngày.
+299,Hãy gợi ý thực đơn nguyên ngày giúp tôi giữ cân.,giữ cân,bình thường,duy trì sức khỏe,Bánh mì trứng,Cơm + cá hồi áp chảo,Salad rau củ + trứng,Táo xanh,2226,Không dùng đồ ngọt.
+300,Người cao huyết áp nên ăn thế nào để tăng cơ trong 1 ngày?,tăng cơ,cao huyết áp,giảm cân,Sữa tươi + trái cây ít đường,Ức gà nướng + salad,Cá hồi + khoai lang,Sữa whey,1317,Tránh ăn sau 21h.
+301,"Tôi đang giảm cân, ăn gì sáng, trưa, tối hợp lý?",giảm cân,béo phì,giảm cân,Yến mạch sữa chua,Ức gà nướng + salad,Cơm + tôm hấp,Sữa whey,2236,Tránh ăn sau 21h.
+302,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cơ.,tăng cơ,gầy yếu,giảm cân,Trứng luộc + rau xanh,Cơm gạo lứt + cá hấp,Salad rau củ + trứng,Chuối chín,1900,Kết hợp tập thể dục 30 phút/ngày.
+303,"Tôi bị bình thường, gợi ý thực đơn cho cả ngày giúp tôi.",ổn định đường huyết,bình thường,giảm cân,Sữa tươi + trái cây ít đường,Cơm + thịt bò xào,Salad rau củ + trứng,Sữa whey,1443,Uống 2L nước/ngày.
+304,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,bình thường,duy trì sức khỏe,Sữa tươi + trái cây ít đường,Cơm + cá hồi áp chảo,Cơm + tôm hấp,Hạt hạnh nhân,1865,Ngủ đủ 7 tiếng.
+305,"Tôi bị cao huyết áp, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cân,cao huyết áp,tăng cơ,Yến mạch sữa chua,Cơm + cá hồi áp chảo,Ức gà + rau củ hấp,Táo xanh,1574,Không dùng đồ ngọt.
+306,"Tôi đang tăng cân, ăn gì sáng, trưa, tối hợp lý?",tăng cân,béo phì,ăn lành mạnh,Bánh mì trứng,Cơm + thịt bò xào,Salad rau củ + trứng,Táo xanh,1649,Tránh ăn sau 21h.
+307,"Tôi muốn giảm cân, nên ăn gì trong ngày?",giảm cân,bình thường,tăng cân,Bánh mì trứng,Cơm + thịt bò xào,Cơm + tôm hấp,Táo xanh,1981,Tránh ăn sau 21h.
+308,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cân.,tăng cân,tiểu đường,duy trì sức khỏe,Cháo yến mạch,Cơm + cá hồi áp chảo,Ức gà + rau củ hấp,Chuối chín,1781,Uống 2L nước/ngày.
+309,"Tôi muốn tăng cơ, nên ăn gì trong ngày?",tăng cơ,gầy yếu,tăng cơ,Trứng luộc + rau xanh,Cơm gạo lứt + cá hấp,Ức gà + rau củ hấp,Hạt hạnh nhân,1220,Kết hợp tập thể dục 30 phút/ngày.
+310,"Tôi bị tiểu đường, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cơ,tiểu đường,tăng cơ,Yến mạch sữa chua,Đậu hũ sốt cà + rau luộc,Cơm + tôm hấp,Táo xanh,1296,Kết hợp tập thể dục 30 phút/ngày.
+311,Người gầy yếu nên ăn thế nào để ổn định đường huyết trong 1 ngày?,ổn định đường huyết,gầy yếu,tăng cân,Cháo yến mạch,Cơm + cá hồi áp chảo,Salad rau củ + trứng,Táo xanh,2235,Không dùng đồ ngọt.
+312,Người cao huyết áp nên ăn thế nào để tăng cơ trong 1 ngày?,tăng cơ,cao huyết áp,ăn lành mạnh,Cháo yến mạch,Cơm gạo lứt + cá hấp,Đậu hũ chiên + cơm gạo lứt,Chuối chín,1866,Uống 2L nước/ngày.
+313,"Tôi đang ổn định đường huyết, ăn gì sáng, trưa, tối hợp lý?",ổn định đường huyết,gầy yếu,giảm cân,Cháo yến mạch,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Táo xanh,2263,Không dùng đồ ngọt.
+314,Hãy gợi ý thực đơn nguyên ngày giúp tôi ổn định đường huyết.,ổn định đường huyết,tiểu đường,giảm cân,Sữa tươi + trái cây ít đường,Cơm + cá hồi áp chảo,Cá hồi + khoai lang,Sữa whey,2180,Kết hợp tập thể dục 30 phút/ngày.
+315,Người tiểu đường nên ăn thế nào để tăng cân trong 1 ngày?,tăng cân,tiểu đường,giảm cân,Cháo yến mạch,Đậu hũ sốt cà + rau luộc,Cá hồi + khoai lang,Sữa chua không đường,1798,Không dùng đồ ngọt.
+316,"Tôi muốn tăng cân, nên ăn gì trong ngày?",tăng cân,tiểu đường,duy trì sức khỏe,Yến mạch sữa chua,Cơm + cá hồi áp chảo,Cơm + tôm hấp,Sữa chua không đường,1982,Không dùng đồ ngọt.
+317,Hãy gợi ý thực đơn nguyên ngày giúp tôi ổn định đường huyết.,ổn định đường huyết,tiểu đường,giảm cân,Trứng luộc + rau xanh,Cơm + thịt bò xào,Đậu hũ chiên + cơm gạo lứt,Sữa whey,2272,Tránh ăn sau 21h.
+318,"Tôi đang giảm cân, ăn gì sáng, trưa, tối hợp lý?",giảm cân,cao huyết áp,tăng cân,Cháo yến mạch,Cơm + thịt bò xào,Ức gà + rau củ hấp,Táo xanh,2131,Không dùng đồ ngọt.
+319,Hãy gợi ý thực đơn nguyên ngày giúp tôi giữ cân.,giữ cân,tiểu đường,ăn lành mạnh,Bánh mì trứng,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Táo xanh,1885,Ngủ đủ 7 tiếng.
+320,"Tôi đang tăng cơ, ăn gì sáng, trưa, tối hợp lý?",tăng cơ,bình thường,tăng cân,Trứng luộc + rau xanh,Cơm gạo lứt + cá hấp,Cơm + tôm hấp,Táo xanh,1485,Ngủ đủ 7 tiếng.
+321,Người gầy yếu nên ăn thế nào để tăng cơ trong 1 ngày?,tăng cơ,gầy yếu,duy trì sức khỏe,Yến mạch sữa chua,Cơm + cá hồi áp chảo,Cá hồi + khoai lang,Hạt hạnh nhân,2087,Không dùng đồ ngọt.
+322,"Tôi đang giảm cân, ăn gì sáng, trưa, tối hợp lý?",giảm cân,béo phì,ăn lành mạnh,Sữa tươi + trái cây ít đường,Cơm gạo lứt + cá hấp,Ức gà + rau củ hấp,Sữa chua không đường,2214,Uống 2L nước/ngày.
+323,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,béo phì,tăng cân,Sữa tươi + trái cây ít đường,Đậu hũ sốt cà + rau luộc,Cá hồi + khoai lang,Sữa chua không đường,1479,Uống 2L nước/ngày.
+324,Người tiểu đường nên ăn thế nào để giữ cân trong 1 ngày?,giữ cân,tiểu đường,giảm cân,Bánh mì trứng,Ức gà nướng + salad,Cá hồi + khoai lang,Táo xanh,1432,Kết hợp tập thể dục 30 phút/ngày.
+325,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,tiểu đường,ăn lành mạnh,Sữa tươi + trái cây ít đường,Cơm gạo lứt + cá hấp,Cá hồi + khoai lang,Chuối chín,1533,Không dùng đồ ngọt.
+326,Người béo phì nên ăn thế nào để giữ cân trong 1 ngày?,giữ cân,béo phì,tăng cơ,Trứng luộc + rau xanh,Cơm + cá hồi áp chảo,Cơm + tôm hấp,Táo xanh,1450,Uống 2L nước/ngày.
+327,"Tôi muốn tăng cân, nên ăn gì trong ngày?",tăng cân,gầy yếu,tăng cơ,Bánh mì trứng,Ức gà nướng + salad,Cơm + tôm hấp,Hạt hạnh nhân,1739,Tránh ăn sau 21h.
+328,Người tiểu đường nên ăn thế nào để ổn định đường huyết trong 1 ngày?,ổn định đường huyết,tiểu đường,duy trì sức khỏe,Cháo yến mạch,Cơm gạo lứt + cá hấp,Cơm + tôm hấp,Sữa chua không đường,2050,Ngủ đủ 7 tiếng.
+329,"Tôi muốn giảm cân, nên ăn gì trong ngày?",giảm cân,gầy yếu,giảm cân,Sữa tươi + trái cây ít đường,Cơm gạo lứt + cá hấp,Cơm + tôm hấp,Hạt hạnh nhân,2099,Kết hợp tập thể dục 30 phút/ngày.
+330,"Tôi bị bình thường, gợi ý thực đơn cho cả ngày giúp tôi.",ổn định đường huyết,bình thường,ăn lành mạnh,Bánh mì trứng,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Sữa whey,1734,Uống 2L nước/ngày.
+331,Hãy gợi ý thực đơn nguyên ngày giúp tôi ổn định đường huyết.,ổn định đường huyết,gầy yếu,ăn lành mạnh,Yến mạch sữa chua,Cơm gạo lứt + cá hấp,Salad rau củ + trứng,Táo xanh,1468,Tránh ăn sau 21h.
+332,"Tôi muốn tăng cân, nên ăn gì trong ngày?",tăng cân,gầy yếu,ăn lành mạnh,Cháo yến mạch,Cơm gạo lứt + cá hấp,Đậu hũ chiên + cơm gạo lứt,Táo xanh,1254,Kết hợp tập thể dục 30 phút/ngày.
+333,Người tiểu đường nên ăn thế nào để giữ cân trong 1 ngày?,giữ cân,tiểu đường,tăng cân,Yến mạch sữa chua,Ức gà nướng + salad,Ức gà + rau củ hấp,Sữa whey,1527,Không dùng đồ ngọt.
+334,Hãy gợi ý thực đơn nguyên ngày giúp tôi giảm cân.,giảm cân,bình thường,ăn lành mạnh,Trứng luộc + rau xanh,Ức gà nướng + salad,Cá hồi + khoai lang,Chuối chín,1539,Uống 2L nước/ngày.
+335,"Tôi bị gầy yếu, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cân,gầy yếu,giảm cân,Yến mạch sữa chua,Cơm gạo lứt + cá hấp,Ức gà + rau củ hấp,Chuối chín,1373,Tránh ăn sau 21h.
+336,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cơ.,tăng cơ,tiểu đường,duy trì sức khỏe,Yến mạch sữa chua,Cơm + cá hồi áp chảo,Salad rau củ + trứng,Sữa whey,2157,Kết hợp tập thể dục 30 phút/ngày.
+337,Người bình thường nên ăn thế nào để giảm cân trong 1 ngày?,giảm cân,bình thường,tăng cơ,Trứng luộc + rau xanh,Đậu hũ sốt cà + rau luộc,Đậu hũ chiên + cơm gạo lứt,Táo xanh,1262,Uống 2L nước/ngày.
+338,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,béo phì,tăng cân,Yến mạch sữa chua,Cơm gạo lứt + cá hấp,Cá hồi + khoai lang,Sữa whey,1621,Tránh ăn sau 21h.
+339,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,béo phì,giảm cân,Cháo yến mạch,Cơm + cá hồi áp chảo,Cơm + tôm hấp,Táo xanh,2094,Tránh ăn sau 21h.
+340,Người tiểu đường nên ăn thế nào để tăng cơ trong 1 ngày?,tăng cơ,tiểu đường,ăn lành mạnh,Bánh mì trứng,Ức gà nướng + salad,Ức gà + rau củ hấp,Hạt hạnh nhân,1742,Ngủ đủ 7 tiếng.
+341,Người bình thường nên ăn thế nào để tăng cơ trong 1 ngày?,tăng cơ,bình thường,ăn lành mạnh,Bánh mì trứng,Ức gà nướng + salad,Salad rau củ + trứng,Chuối chín,2129,Tránh ăn sau 21h.
+342,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cân.,tăng cân,gầy yếu,tăng cơ,Yến mạch sữa chua,Cơm + thịt bò xào,Cơm + tôm hấp,Chuối chín,2061,Không dùng đồ ngọt.
+343,"Tôi đang tăng cơ, ăn gì sáng, trưa, tối hợp lý?",tăng cơ,gầy yếu,tăng cơ,Trứng luộc + rau xanh,Cơm + cá hồi áp chảo,Ức gà + rau củ hấp,Sữa whey,2083,Không dùng đồ ngọt.
+344,"Tôi muốn tăng cơ, nên ăn gì trong ngày?",tăng cơ,bình thường,tăng cơ,Bánh mì trứng,Cơm gạo lứt + cá hấp,Cá hồi + khoai lang,Táo xanh,1795,Không dùng đồ ngọt.
+345,"Tôi muốn tăng cơ, nên ăn gì trong ngày?",tăng cơ,gầy yếu,duy trì sức khỏe,Trứng luộc + rau xanh,Cơm + thịt bò xào,Đậu hũ chiên + cơm gạo lứt,Chuối chín,1633,Không dùng đồ ngọt.
+346,"Tôi bị béo phì, gợi ý thực đơn cho cả ngày giúp tôi.",giữ cân,béo phì,duy trì sức khỏe,Cháo yến mạch,Cơm + cá hồi áp chảo,Salad rau củ + trứng,Hạt hạnh nhân,1741,Kết hợp tập thể dục 30 phút/ngày.
+347,"Tôi bị bình thường, gợi ý thực đơn cho cả ngày giúp tôi.",giảm cân,bình thường,duy trì sức khỏe,Cháo yến mạch,Ức gà nướng + salad,Ức gà + rau củ hấp,Sữa chua không đường,1222,Ngủ đủ 7 tiếng.
+348,"Tôi muốn giảm cân, nên ăn gì trong ngày?",giảm cân,bình thường,duy trì sức khỏe,Bánh mì trứng,Ức gà nướng + salad,Salad rau củ + trứng,Sữa whey,1845,Tránh ăn sau 21h.
+349,Hãy gợi ý thực đơn nguyên ngày giúp tôi ổn định đường huyết.,ổn định đường huyết,bình thường,tăng cơ,Cháo yến mạch,Cơm gạo lứt + cá hấp,Cơm + tôm hấp,Sữa chua không đường,2092,Kết hợp tập thể dục 30 phút/ngày.
+350,"Tôi đang tăng cơ, ăn gì sáng, trưa, tối hợp lý?",tăng cơ,gầy yếu,ăn lành mạnh,Cháo yến mạch,Cơm gạo lứt + cá hấp,Cơm + tôm hấp,Chuối chín,2187,Kết hợp tập thể dục 30 phút/ngày.
+351,"Tôi bị bình thường, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cân,bình thường,tăng cân,Cháo yến mạch,Đậu hũ sốt cà + rau luộc,Đậu hũ chiên + cơm gạo lứt,Sữa whey,2050,Không dùng đồ ngọt.
+352,"Tôi bị béo phì, gợi ý thực đơn cho cả ngày giúp tôi.",giảm cân,béo phì,tăng cơ,Sữa tươi + trái cây ít đường,Cơm + thịt bò xào,Salad rau củ + trứng,Táo xanh,1927,Tránh ăn sau 21h.
+353,"Tôi bị bình thường, gợi ý thực đơn cho cả ngày giúp tôi.",giảm cân,bình thường,duy trì sức khỏe,Trứng luộc + rau xanh,Cơm + cá hồi áp chảo,Salad rau củ + trứng,Hạt hạnh nhân,1898,Tránh ăn sau 21h.
+354,Người gầy yếu nên ăn thế nào để giảm cân trong 1 ngày?,giảm cân,gầy yếu,tăng cân,Trứng luộc + rau xanh,Cơm gạo lứt + cá hấp,Đậu hũ chiên + cơm gạo lứt,Hạt hạnh nhân,1732,Tránh ăn sau 21h.
+355,"Tôi muốn giảm cân, nên ăn gì trong ngày?",giảm cân,cao huyết áp,tăng cơ,Bánh mì trứng,Cơm + thịt bò xào,Đậu hũ chiên + cơm gạo lứt,Chuối chín,2044,Ngủ đủ 7 tiếng.
+356,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cơ.,tăng cơ,cao huyết áp,duy trì sức khỏe,Yến mạch sữa chua,Ức gà nướng + salad,Cá hồi + khoai lang,Chuối chín,1585,Uống 2L nước/ngày.
+357,"Tôi bị cao huyết áp, gợi ý thực đơn cho cả ngày giúp tôi.",giữ cân,cao huyết áp,tăng cơ,Bánh mì trứng,Cơm + cá hồi áp chảo,Salad rau củ + trứng,Táo xanh,1214,Tránh ăn sau 21h.
+358,"Tôi bị gầy yếu, gợi ý thực đơn cho cả ngày giúp tôi.",giữ cân,gầy yếu,tăng cân,Bánh mì trứng,Cơm gạo lứt + cá hấp,Salad rau củ + trứng,Chuối chín,1769,Không dùng đồ ngọt.
+359,Người béo phì nên ăn thế nào để tăng cơ trong 1 ngày?,tăng cơ,béo phì,ăn lành mạnh,Bánh mì trứng,Đậu hũ sốt cà + rau luộc,Cơm + tôm hấp,Sữa chua không đường,1504,Không dùng đồ ngọt.
+360,"Tôi muốn tăng cơ, nên ăn gì trong ngày?",tăng cơ,béo phì,giảm cân,Trứng luộc + rau xanh,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Táo xanh,2011,Không dùng đồ ngọt.
+361,Người tiểu đường nên ăn thế nào để tăng cơ trong 1 ngày?,tăng cơ,tiểu đường,ăn lành mạnh,Bánh mì trứng,Cơm + thịt bò xào,Salad rau củ + trứng,Sữa whey,1592,Không dùng đồ ngọt.
+362,Hãy gợi ý thực đơn nguyên ngày giúp tôi giữ cân.,giữ cân,cao huyết áp,ăn lành mạnh,Cháo yến mạch,Cơm + cá hồi áp chảo,Salad rau củ + trứng,Chuối chín,1779,Uống 2L nước/ngày.
+363,"Tôi đang tăng cơ, ăn gì sáng, trưa, tối hợp lý?",tăng cơ,bình thường,duy trì sức khỏe,Trứng luộc + rau xanh,Cơm gạo lứt + cá hấp,Đậu hũ chiên + cơm gạo lứt,Sữa chua không đường,1227,Uống 2L nước/ngày.
+364,"Tôi đang giảm cân, ăn gì sáng, trưa, tối hợp lý?",giảm cân,gầy yếu,tăng cân,Trứng luộc + rau xanh,Đậu hũ sốt cà + rau luộc,Ức gà + rau củ hấp,Sữa whey,1850,Tránh ăn sau 21h.
+365,"Tôi bị gầy yếu, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cân,gầy yếu,ăn lành mạnh,Trứng luộc + rau xanh,Ức gà nướng + salad,Ức gà + rau củ hấp,Chuối chín,2057,Ngủ đủ 7 tiếng.
+366,Hãy gợi ý thực đơn nguyên ngày giúp tôi giữ cân.,giữ cân,bình thường,duy trì sức khỏe,Bánh mì trứng,Cơm gạo lứt + cá hấp,Salad rau củ + trứng,Chuối chín,2039,Ngủ đủ 7 tiếng.
+367,"Tôi đang ổn định đường huyết, ăn gì sáng, trưa, tối hợp lý?",ổn định đường huyết,cao huyết áp,ăn lành mạnh,Trứng luộc + rau xanh,Đậu hũ sốt cà + rau luộc,Cá hồi + khoai lang,Sữa chua không đường,1403,Tránh ăn sau 21h.
+368,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,gầy yếu,tăng cơ,Cháo yến mạch,Cơm + cá hồi áp chảo,Cá hồi + khoai lang,Sữa chua không đường,1832,Không dùng đồ ngọt.
+369,"Tôi bị gầy yếu, gợi ý thực đơn cho cả ngày giúp tôi.",giảm cân,gầy yếu,tăng cơ,Yến mạch sữa chua,Cơm + cá hồi áp chảo,Cá hồi + khoai lang,Chuối chín,2229,Không dùng đồ ngọt.
+370,Người tiểu đường nên ăn thế nào để tăng cân trong 1 ngày?,tăng cân,tiểu đường,ăn lành mạnh,Bánh mì trứng,Đậu hũ sốt cà + rau luộc,Cơm + tôm hấp,Chuối chín,1575,Ngủ đủ 7 tiếng.
+371,"Tôi bị béo phì, gợi ý thực đơn cho cả ngày giúp tôi.",giảm cân,béo phì,ăn lành mạnh,Trứng luộc + rau xanh,Cơm gạo lứt + cá hấp,Salad rau củ + trứng,Sữa chua không đường,2109,Tránh ăn sau 21h.
+372,"Tôi bị bình thường, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cơ,bình thường,tăng cơ,Sữa tươi + trái cây ít đường,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Táo xanh,1518,Uống 2L nước/ngày.
+373,"Tôi bị tiểu đường, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cân,tiểu đường,giảm cân,Sữa tươi + trái cây ít đường,Cơm gạo lứt + cá hấp,Ức gà + rau củ hấp,Sữa whey,1980,Tránh ăn sau 21h.
+374,Hãy gợi ý thực đơn nguyên ngày giúp tôi giảm cân.,giảm cân,gầy yếu,tăng cơ,Bánh mì trứng,Cơm + cá hồi áp chảo,Cơm + tôm hấp,Táo xanh,1269,Uống 2L nước/ngày.
+375,"Tôi muốn giảm cân, nên ăn gì trong ngày?",giảm cân,tiểu đường,tăng cơ,Sữa tươi + trái cây ít đường,Cơm gạo lứt + cá hấp,Cơm + tôm hấp,Hạt hạnh nhân,1713,Tránh ăn sau 21h.
+376,Hãy gợi ý thực đơn nguyên ngày giúp tôi ổn định đường huyết.,ổn định đường huyết,bình thường,giảm cân,Sữa tươi + trái cây ít đường,Ức gà nướng + salad,Cá hồi + khoai lang,Chuối chín,1615,Ngủ đủ 7 tiếng.
+377,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cân.,tăng cân,tiểu đường,ăn lành mạnh,Yến mạch sữa chua,Cơm + cá hồi áp chảo,Ức gà + rau củ hấp,Táo xanh,1778,Kết hợp tập thể dục 30 phút/ngày.
+378,Người béo phì nên ăn thế nào để giảm cân trong 1 ngày?,giảm cân,béo phì,ăn lành mạnh,Bánh mì trứng,Cơm + thịt bò xào,Cơm + tôm hấp,Chuối chín,2156,Ngủ đủ 7 tiếng.
+379,Người tiểu đường nên ăn thế nào để tăng cân trong 1 ngày?,tăng cân,tiểu đường,tăng cơ,Sữa tươi + trái cây ít đường,Cơm gạo lứt + cá hấp,Cơm + tôm hấp,Chuối chín,1454,Kết hợp tập thể dục 30 phút/ngày.
+380,"Tôi đang giảm cân, ăn gì sáng, trưa, tối hợp lý?",giảm cân,cao huyết áp,tăng cơ,Cháo yến mạch,Ức gà nướng + salad,Salad rau củ + trứng,Chuối chín,2070,Tránh ăn sau 21h.
+381,"Tôi đang tăng cơ, ăn gì sáng, trưa, tối hợp lý?",tăng cơ,béo phì,tăng cân,Yến mạch sữa chua,Cơm + cá hồi áp chảo,Ức gà + rau củ hấp,Sữa chua không đường,1354,Ngủ đủ 7 tiếng.
+382,"Tôi muốn tăng cân, nên ăn gì trong ngày?",tăng cân,béo phì,giảm cân,Yến mạch sữa chua,Cơm gạo lứt + cá hấp,Cá hồi + khoai lang,Hạt hạnh nhân,2156,Không dùng đồ ngọt.
+383,Người béo phì nên ăn thế nào để tăng cơ trong 1 ngày?,tăng cơ,béo phì,tăng cân,Cháo yến mạch,Cơm + thịt bò xào,Ức gà + rau củ hấp,Chuối chín,1931,Không dùng đồ ngọt.
+384,"Tôi đang giữ cân, ăn gì sáng, trưa, tối hợp lý?",giữ cân,bình thường,tăng cân,Bánh mì trứng,Đậu hũ sốt cà + rau luộc,Cá hồi + khoai lang,Sữa chua không đường,2251,Kết hợp tập thể dục 30 phút/ngày.
+385,"Tôi đang giữ cân, ăn gì sáng, trưa, tối hợp lý?",giữ cân,bình thường,ăn lành mạnh,Yến mạch sữa chua,Đậu hũ sốt cà + rau luộc,Cá hồi + khoai lang,Sữa chua không đường,1610,Uống 2L nước/ngày.
+386,Người béo phì nên ăn thế nào để giữ cân trong 1 ngày?,giữ cân,béo phì,ăn lành mạnh,Trứng luộc + rau xanh,Cơm gạo lứt + cá hấp,Cá hồi + khoai lang,Sữa chua không đường,2097,Không dùng đồ ngọt.
+387,"Tôi bị béo phì, gợi ý thực đơn cho cả ngày giúp tôi.",ổn định đường huyết,béo phì,duy trì sức khỏe,Sữa tươi + trái cây ít đường,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Hạt hạnh nhân,2106,Ngủ đủ 7 tiếng.
+388,"Tôi đang tăng cơ, ăn gì sáng, trưa, tối hợp lý?",tăng cơ,cao huyết áp,ăn lành mạnh,Cháo yến mạch,Cơm + thịt bò xào,Cơm + tôm hấp,Táo xanh,2160,Uống 2L nước/ngày.
+389,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cân.,tăng cân,bình thường,duy trì sức khỏe,Trứng luộc + rau xanh,Cơm gạo lứt + cá hấp,Salad rau củ + trứng,Hạt hạnh nhân,1654,Ngủ đủ 7 tiếng.
+390,"Tôi bị bình thường, gợi ý thực đơn cho cả ngày giúp tôi.",ổn định đường huyết,bình thường,tăng cân,Bánh mì trứng,Cơm gạo lứt + cá hấp,Salad rau củ + trứng,Chuối chín,2063,Tránh ăn sau 21h.
+391,Người cao huyết áp nên ăn thế nào để tăng cân trong 1 ngày?,tăng cân,cao huyết áp,giảm cân,Sữa tươi + trái cây ít đường,Cơm + thịt bò xào,Salad rau củ + trứng,Hạt hạnh nhân,1770,Uống 2L nước/ngày.
+392,"Tôi bị tiểu đường, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cơ,tiểu đường,duy trì sức khỏe,Trứng luộc + rau xanh,Cơm + thịt bò xào,Ức gà + rau củ hấp,Chuối chín,2175,Tránh ăn sau 21h.
+393,"Tôi bị béo phì, gợi ý thực đơn cho cả ngày giúp tôi.",giữ cân,béo phì,ăn lành mạnh,Bánh mì trứng,Cơm + cá hồi áp chảo,Salad rau củ + trứng,Sữa chua không đường,1456,Kết hợp tập thể dục 30 phút/ngày.
+394,Người béo phì nên ăn thế nào để tăng cơ trong 1 ngày?,tăng cơ,béo phì,duy trì sức khỏe,Yến mạch sữa chua,Cơm + cá hồi áp chảo,Đậu hũ chiên + cơm gạo lứt,Sữa chua không đường,1932,Kết hợp tập thể dục 30 phút/ngày.
+395,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,cao huyết áp,tăng cơ,Bánh mì trứng,Đậu hũ sốt cà + rau luộc,Cơm + tôm hấp,Chuối chín,1811,Kết hợp tập thể dục 30 phút/ngày.
+396,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cơ.,tăng cơ,cao huyết áp,tăng cơ,Trứng luộc + rau xanh,Đậu hũ sốt cà + rau luộc,Ức gà + rau củ hấp,Hạt hạnh nhân,1348,Uống 2L nước/ngày.
+397,"Tôi bị gầy yếu, gợi ý thực đơn cho cả ngày giúp tôi.",ổn định đường huyết,gầy yếu,giảm cân,Trứng luộc + rau xanh,Cơm gạo lứt + cá hấp,Cá hồi + khoai lang,Sữa chua không đường,2270,Uống 2L nước/ngày.
+398,Người gầy yếu nên ăn thế nào để giảm cân trong 1 ngày?,giảm cân,gầy yếu,tăng cân,Sữa tươi + trái cây ít đường,Đậu hũ sốt cà + rau luộc,Cơm + tôm hấp,Sữa chua không đường,1684,Uống 2L nước/ngày.
+399,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cân.,tăng cân,bình thường,giảm cân,Trứng luộc + rau xanh,Cơm + thịt bò xào,Salad rau củ + trứng,Hạt hạnh nhân,2245,Kết hợp tập thể dục 30 phút/ngày.
+400,"Tôi bị gầy yếu, gợi ý thực đơn cho cả ngày giúp tôi.",giữ cân,gầy yếu,tăng cơ,Yến mạch sữa chua,Cơm gạo lứt + cá hấp,Cơm + tôm hấp,Hạt hạnh nhân,1340,Kết hợp tập thể dục 30 phút/ngày.
+401,"Tôi muốn giảm cân, nên ăn gì trong ngày?",giảm cân,cao huyết áp,tăng cơ,Trứng luộc + rau xanh,Cơm gạo lứt + cá hấp,Cơm + tôm hấp,Hạt hạnh nhân,1431,Ngủ đủ 7 tiếng.
+402,"Tôi bị béo phì, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cân,béo phì,duy trì sức khỏe,Cháo yến mạch,Cơm gạo lứt + cá hấp,Cá hồi + khoai lang,Hạt hạnh nhân,1860,Kết hợp tập thể dục 30 phút/ngày.
+403,"Tôi đang giảm cân, ăn gì sáng, trưa, tối hợp lý?",giảm cân,bình thường,giảm cân,Bánh mì trứng,Cơm + thịt bò xào,Cá hồi + khoai lang,Sữa chua không đường,1843,Uống 2L nước/ngày.
+404,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,tiểu đường,tăng cân,Cháo yến mạch,Ức gà nướng + salad,Salad rau củ + trứng,Táo xanh,1382,Không dùng đồ ngọt.
+405,Hãy gợi ý thực đơn nguyên ngày giúp tôi ổn định đường huyết.,ổn định đường huyết,tiểu đường,tăng cân,Sữa tươi + trái cây ít đường,Cơm + cá hồi áp chảo,Cá hồi + khoai lang,Sữa chua không đường,1623,Không dùng đồ ngọt.
+406,"Tôi bị cao huyết áp, gợi ý thực đơn cho cả ngày giúp tôi.",ổn định đường huyết,cao huyết áp,tăng cơ,Yến mạch sữa chua,Đậu hũ sốt cà + rau luộc,Cá hồi + khoai lang,Sữa chua không đường,2143,Kết hợp tập thể dục 30 phút/ngày.
+407,"Tôi đang giữ cân, ăn gì sáng, trưa, tối hợp lý?",giữ cân,gầy yếu,ăn lành mạnh,Yến mạch sữa chua,Đậu hũ sốt cà + rau luộc,Cá hồi + khoai lang,Hạt hạnh nhân,1949,Tránh ăn sau 21h.
+408,"Tôi đang tăng cơ, ăn gì sáng, trưa, tối hợp lý?",tăng cơ,béo phì,duy trì sức khỏe,Yến mạch sữa chua,Đậu hũ sốt cà + rau luộc,Salad rau củ + trứng,Sữa chua không đường,2060,Không dùng đồ ngọt.
+409,Hãy gợi ý thực đơn nguyên ngày giúp tôi ổn định đường huyết.,ổn định đường huyết,bình thường,duy trì sức khỏe,Trứng luộc + rau xanh,Ức gà nướng + salad,Ức gà + rau củ hấp,Hạt hạnh nhân,1442,Kết hợp tập thể dục 30 phút/ngày.
+410,"Tôi muốn tăng cân, nên ăn gì trong ngày?",tăng cân,béo phì,tăng cơ,Trứng luộc + rau xanh,Cơm + cá hồi áp chảo,Đậu hũ chiên + cơm gạo lứt,Táo xanh,2012,Không dùng đồ ngọt.
+411,"Tôi đang ổn định đường huyết, ăn gì sáng, trưa, tối hợp lý?",ổn định đường huyết,gầy yếu,duy trì sức khỏe,Yến mạch sữa chua,Cơm + thịt bò xào,Cơm + tôm hấp,Táo xanh,1237,Không dùng đồ ngọt.
+412,"Tôi bị cao huyết áp, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cân,cao huyết áp,duy trì sức khỏe,Sữa tươi + trái cây ít đường,Cơm + cá hồi áp chảo,Salad rau củ + trứng,Sữa whey,1281,Uống 2L nước/ngày.
+413,Người béo phì nên ăn thế nào để tăng cơ trong 1 ngày?,tăng cơ,béo phì,tăng cân,Trứng luộc + rau xanh,Đậu hũ sốt cà + rau luộc,Ức gà + rau củ hấp,Sữa chua không đường,1351,Ngủ đủ 7 tiếng.
+414,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,tiểu đường,tăng cơ,Cháo yến mạch,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Hạt hạnh nhân,2073,Uống 2L nước/ngày.
+415,"Tôi muốn giữ cân, nên ăn gì trong ngày?",giữ cân,gầy yếu,tăng cơ,Bánh mì trứng,Cơm gạo lứt + cá hấp,Ức gà + rau củ hấp,Chuối chín,1894,Không dùng đồ ngọt.
+416,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cân.,tăng cân,gầy yếu,tăng cân,Cháo yến mạch,Đậu hũ sốt cà + rau luộc,Đậu hũ chiên + cơm gạo lứt,Hạt hạnh nhân,2118,Không dùng đồ ngọt.
+417,"Tôi đang giữ cân, ăn gì sáng, trưa, tối hợp lý?",giữ cân,tiểu đường,tăng cân,Trứng luộc + rau xanh,Cơm + thịt bò xào,Salad rau củ + trứng,Táo xanh,1347,Kết hợp tập thể dục 30 phút/ngày.
+418,"Tôi bị béo phì, gợi ý thực đơn cho cả ngày giúp tôi.",ổn định đường huyết,béo phì,duy trì sức khỏe,Bánh mì trứng,Đậu hũ sốt cà + rau luộc,Salad rau củ + trứng,Sữa chua không đường,2133,Kết hợp tập thể dục 30 phút/ngày.
+419,"Tôi bị tiểu đường, gợi ý thực đơn cho cả ngày giúp tôi.",giữ cân,tiểu đường,ăn lành mạnh,Sữa tươi + trái cây ít đường,Ức gà nướng + salad,Cơm + tôm hấp,Chuối chín,2134,Tránh ăn sau 21h.
+420,"Tôi đang tăng cơ, ăn gì sáng, trưa, tối hợp lý?",tăng cơ,gầy yếu,giảm cân,Trứng luộc + rau xanh,Đậu hũ sốt cà + rau luộc,Ức gà + rau củ hấp,Chuối chín,2244,Kết hợp tập thể dục 30 phút/ngày.
+421,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,cao huyết áp,giảm cân,Sữa tươi + trái cây ít đường,Đậu hũ sốt cà + rau luộc,Salad rau củ + trứng,Táo xanh,1208,Tránh ăn sau 21h.
+422,"Tôi đang giảm cân, ăn gì sáng, trưa, tối hợp lý?",giảm cân,bình thường,ăn lành mạnh,Trứng luộc + rau xanh,Ức gà nướng + salad,Cá hồi + khoai lang,Chuối chín,1635,Không dùng đồ ngọt.
+423,"Tôi muốn giảm cân, nên ăn gì trong ngày?",giảm cân,cao huyết áp,duy trì sức khỏe,Cháo yến mạch,Ức gà nướng + salad,Ức gà + rau củ hấp,Chuối chín,1758,Không dùng đồ ngọt.
+424,"Tôi bị gầy yếu, gợi ý thực đơn cho cả ngày giúp tôi.",ổn định đường huyết,gầy yếu,tăng cân,Sữa tươi + trái cây ít đường,Ức gà nướng + salad,Cơm + tôm hấp,Sữa whey,1324,Uống 2L nước/ngày.
+425,"Tôi đang giữ cân, ăn gì sáng, trưa, tối hợp lý?",giữ cân,gầy yếu,tăng cơ,Sữa tươi + trái cây ít đường,Cơm + thịt bò xào,Cá hồi + khoai lang,Sữa chua không đường,1954,Ngủ đủ 7 tiếng.
+426,"Tôi muốn giảm cân, nên ăn gì trong ngày?",giảm cân,tiểu đường,duy trì sức khỏe,Trứng luộc + rau xanh,Cơm + cá hồi áp chảo,Ức gà + rau củ hấp,Hạt hạnh nhân,2247,Uống 2L nước/ngày.
+427,Hãy gợi ý thực đơn nguyên ngày giúp tôi giữ cân.,giữ cân,tiểu đường,ăn lành mạnh,Sữa tươi + trái cây ít đường,Cơm + thịt bò xào,Cá hồi + khoai lang,Sữa whey,1648,Uống 2L nước/ngày.
+428,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cân.,tăng cân,gầy yếu,giảm cân,Yến mạch sữa chua,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Chuối chín,1709,Không dùng đồ ngọt.
+429,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,gầy yếu,duy trì sức khỏe,Cháo yến mạch,Đậu hũ sốt cà + rau luộc,Salad rau củ + trứng,Táo xanh,2191,Kết hợp tập thể dục 30 phút/ngày.
+430,"Tôi đang ổn định đường huyết, ăn gì sáng, trưa, tối hợp lý?",ổn định đường huyết,gầy yếu,ăn lành mạnh,Yến mạch sữa chua,Cơm + thịt bò xào,Đậu hũ chiên + cơm gạo lứt,Sữa chua không đường,1291,Uống 2L nước/ngày.
+431,"Tôi muốn tăng cơ, nên ăn gì trong ngày?",tăng cơ,béo phì,tăng cân,Bánh mì trứng,Cơm gạo lứt + cá hấp,Cơm + tôm hấp,Sữa whey,1423,Tránh ăn sau 21h.
+432,"Tôi bị tiểu đường, gợi ý thực đơn cho cả ngày giúp tôi.",giảm cân,tiểu đường,tăng cơ,Yến mạch sữa chua,Đậu hũ sốt cà + rau luộc,Cơm + tôm hấp,Hạt hạnh nhân,1707,Uống 2L nước/ngày.
+433,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,cao huyết áp,tăng cân,Trứng luộc + rau xanh,Ức gà nướng + salad,Cơm + tôm hấp,Chuối chín,1772,Tránh ăn sau 21h.
+434,"Tôi muốn tăng cơ, nên ăn gì trong ngày?",tăng cơ,cao huyết áp,duy trì sức khỏe,Trứng luộc + rau xanh,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Chuối chín,1740,Kết hợp tập thể dục 30 phút/ngày.
+435,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,bình thường,tăng cơ,Bánh mì trứng,Cơm + cá hồi áp chảo,Cá hồi + khoai lang,Sữa whey,2188,Uống 2L nước/ngày.
+436,"Tôi đang giữ cân, ăn gì sáng, trưa, tối hợp lý?",giữ cân,béo phì,ăn lành mạnh,Yến mạch sữa chua,Ức gà nướng + salad,Cá hồi + khoai lang,Hạt hạnh nhân,2067,Uống 2L nước/ngày.
+437,"Tôi đang tăng cân, ăn gì sáng, trưa, tối hợp lý?",tăng cân,béo phì,ăn lành mạnh,Bánh mì trứng,Cơm + thịt bò xào,Cá hồi + khoai lang,Sữa chua không đường,1869,Không dùng đồ ngọt.
+438,Hãy gợi ý thực đơn nguyên ngày giúp tôi ổn định đường huyết.,ổn định đường huyết,tiểu đường,ăn lành mạnh,Bánh mì trứng,Đậu hũ sốt cà + rau luộc,Đậu hũ chiên + cơm gạo lứt,Táo xanh,2189,Uống 2L nước/ngày.
+439,"Tôi muốn tăng cơ, nên ăn gì trong ngày?",tăng cơ,gầy yếu,ăn lành mạnh,Yến mạch sữa chua,Ức gà nướng + salad,Cơm + tôm hấp,Chuối chín,1495,Uống 2L nước/ngày.
+440,"Tôi bị bình thường, gợi ý thực đơn cho cả ngày giúp tôi.",ổn định đường huyết,bình thường,tăng cân,Cháo yến mạch,Cơm gạo lứt + cá hấp,Ức gà + rau củ hấp,Chuối chín,1863,Không dùng đồ ngọt.
+441,"Tôi muốn giảm cân, nên ăn gì trong ngày?",giảm cân,bình thường,giảm cân,Sữa tươi + trái cây ít đường,Đậu hũ sốt cà + rau luộc,Cá hồi + khoai lang,Chuối chín,1580,Kết hợp tập thể dục 30 phút/ngày.
+442,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,cao huyết áp,tăng cơ,Trứng luộc + rau xanh,Cơm + cá hồi áp chảo,Cơm + tôm hấp,Chuối chín,1708,Uống 2L nước/ngày.
+443,"Tôi đang ổn định đường huyết, ăn gì sáng, trưa, tối hợp lý?",ổn định đường huyết,bình thường,giảm cân,Sữa tươi + trái cây ít đường,Đậu hũ sốt cà + rau luộc,Cơm + tôm hấp,Táo xanh,2064,Tránh ăn sau 21h.
+444,Hãy gợi ý thực đơn nguyên ngày giúp tôi giữ cân.,giữ cân,tiểu đường,giảm cân,Cháo yến mạch,Cơm + cá hồi áp chảo,Cơm + tôm hấp,Chuối chín,1703,Kết hợp tập thể dục 30 phút/ngày.
+445,"Tôi đang tăng cơ, ăn gì sáng, trưa, tối hợp lý?",tăng cơ,tiểu đường,ăn lành mạnh,Yến mạch sữa chua,Cơm + cá hồi áp chảo,Ức gà + rau củ hấp,Hạt hạnh nhân,1685,Tránh ăn sau 21h.
+446,"Tôi bị bình thường, gợi ý thực đơn cho cả ngày giúp tôi.",ổn định đường huyết,bình thường,giảm cân,Cháo yến mạch,Cơm + thịt bò xào,Cơm + tôm hấp,Sữa chua không đường,1561,Tránh ăn sau 21h.
+447,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,tiểu đường,ăn lành mạnh,Trứng luộc + rau xanh,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Hạt hạnh nhân,2282,Uống 2L nước/ngày.
+448,Hãy gợi ý thực đơn nguyên ngày giúp tôi ổn định đường huyết.,ổn định đường huyết,gầy yếu,duy trì sức khỏe,Bánh mì trứng,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Chuối chín,1713,Tránh ăn sau 21h.
+449,"Tôi muốn giữ cân, nên ăn gì trong ngày?",giữ cân,béo phì,tăng cơ,Trứng luộc + rau xanh,Cơm gạo lứt + cá hấp,Cá hồi + khoai lang,Táo xanh,1434,Kết hợp tập thể dục 30 phút/ngày.
+450,"Tôi muốn tăng cơ, nên ăn gì trong ngày?",tăng cơ,bình thường,giảm cân,Cháo yến mạch,Cơm + cá hồi áp chảo,Cá hồi + khoai lang,Chuối chín,1726,Tránh ăn sau 21h.
+451,"Tôi muốn giữ cân, nên ăn gì trong ngày?",giữ cân,bình thường,tăng cơ,Sữa tươi + trái cây ít đường,Cơm gạo lứt + cá hấp,Cơm + tôm hấp,Sữa chua không đường,1966,Không dùng đồ ngọt.
+452,"Tôi muốn giữ cân, nên ăn gì trong ngày?",giữ cân,cao huyết áp,duy trì sức khỏe,Cháo yến mạch,Cơm gạo lứt + cá hấp,Cơm + tôm hấp,Hạt hạnh nhân,1938,Ngủ đủ 7 tiếng.
+453,"Tôi bị béo phì, gợi ý thực đơn cho cả ngày giúp tôi.",giữ cân,béo phì,duy trì sức khỏe,Cháo yến mạch,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Sữa whey,1938,Kết hợp tập thể dục 30 phút/ngày.
+454,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,bình thường,ăn lành mạnh,Trứng luộc + rau xanh,Cơm + thịt bò xào,Ức gà + rau củ hấp,Chuối chín,2256,Uống 2L nước/ngày.
+455,Người tiểu đường nên ăn thế nào để tăng cân trong 1 ngày?,tăng cân,tiểu đường,ăn lành mạnh,Cháo yến mạch,Cơm gạo lứt + cá hấp,Salad rau củ + trứng,Sữa chua không đường,1361,Không dùng đồ ngọt.
+456,"Tôi muốn tăng cơ, nên ăn gì trong ngày?",tăng cơ,béo phì,ăn lành mạnh,Cháo yến mạch,Ức gà nướng + salad,Salad rau củ + trứng,Sữa chua không đường,1566,Tránh ăn sau 21h.
+457,"Tôi đang tăng cơ, ăn gì sáng, trưa, tối hợp lý?",tăng cơ,cao huyết áp,ăn lành mạnh,Trứng luộc + rau xanh,Cơm + cá hồi áp chảo,Cơm + tôm hấp,Hạt hạnh nhân,2075,Uống 2L nước/ngày.
+458,Hãy gợi ý thực đơn nguyên ngày giúp tôi ổn định đường huyết.,ổn định đường huyết,gầy yếu,giảm cân,Sữa tươi + trái cây ít đường,Cơm + thịt bò xào,Đậu hũ chiên + cơm gạo lứt,Chuối chín,1348,Không dùng đồ ngọt.
+459,"Tôi bị cao huyết áp, gợi ý thực đơn cho cả ngày giúp tôi.",ổn định đường huyết,cao huyết áp,tăng cơ,Cháo yến mạch,Ức gà nướng + salad,Cơm + tôm hấp,Chuối chín,1658,Không dùng đồ ngọt.
+460,"Tôi đang giữ cân, ăn gì sáng, trưa, tối hợp lý?",giữ cân,bình thường,giảm cân,Bánh mì trứng,Cơm + cá hồi áp chảo,Cơm + tôm hấp,Sữa chua không đường,1844,Không dùng đồ ngọt.
+461,Người gầy yếu nên ăn thế nào để tăng cơ trong 1 ngày?,tăng cơ,gầy yếu,duy trì sức khỏe,Cháo yến mạch,Cơm gạo lứt + cá hấp,Ức gà + rau củ hấp,Hạt hạnh nhân,1561,Ngủ đủ 7 tiếng.
+462,"Tôi bị cao huyết áp, gợi ý thực đơn cho cả ngày giúp tôi.",giảm cân,cao huyết áp,giảm cân,Sữa tươi + trái cây ít đường,Đậu hũ sốt cà + rau luộc,Đậu hũ chiên + cơm gạo lứt,Hạt hạnh nhân,1740,Uống 2L nước/ngày.
+463,"Tôi muốn ổn định đường huyết, nên ăn gì trong ngày?",ổn định đường huyết,bình thường,tăng cơ,Yến mạch sữa chua,Cơm gạo lứt + cá hấp,Ức gà + rau củ hấp,Hạt hạnh nhân,1310,Uống 2L nước/ngày.
+464,"Tôi muốn tăng cân, nên ăn gì trong ngày?",tăng cân,tiểu đường,ăn lành mạnh,Trứng luộc + rau xanh,Cơm gạo lứt + cá hấp,Ức gà + rau củ hấp,Chuối chín,1706,Ngủ đủ 7 tiếng.
+465,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cân.,tăng cân,cao huyết áp,ăn lành mạnh,Cháo yến mạch,Cơm + thịt bò xào,Salad rau củ + trứng,Sữa whey,1981,Kết hợp tập thể dục 30 phút/ngày.
+466,Hãy gợi ý thực đơn nguyên ngày giúp tôi giữ cân.,giữ cân,cao huyết áp,duy trì sức khỏe,Trứng luộc + rau xanh,Đậu hũ sốt cà + rau luộc,Cơm + tôm hấp,Táo xanh,1704,Không dùng đồ ngọt.
+467,"Tôi bị cao huyết áp, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cân,cao huyết áp,duy trì sức khỏe,Yến mạch sữa chua,Ức gà nướng + salad,Cơm + tôm hấp,Hạt hạnh nhân,1262,Tránh ăn sau 21h.
+468,Người béo phì nên ăn thế nào để giữ cân trong 1 ngày?,giữ cân,béo phì,tăng cân,Trứng luộc + rau xanh,Cơm + cá hồi áp chảo,Cá hồi + khoai lang,Sữa chua không đường,2166,Không dùng đồ ngọt.
+469,Hãy gợi ý thực đơn nguyên ngày giúp tôi giữ cân.,giữ cân,béo phì,ăn lành mạnh,Cháo yến mạch,Cơm + cá hồi áp chảo,Đậu hũ chiên + cơm gạo lứt,Chuối chín,1597,Uống 2L nước/ngày.
+470,Hãy gợi ý thực đơn nguyên ngày giúp tôi giảm cân.,giảm cân,bình thường,tăng cân,Trứng luộc + rau xanh,Đậu hũ sốt cà + rau luộc,Cá hồi + khoai lang,Chuối chín,1831,Kết hợp tập thể dục 30 phút/ngày.
+471,"Tôi muốn tăng cân, nên ăn gì trong ngày?",tăng cân,tiểu đường,giảm cân,Bánh mì trứng,Ức gà nướng + salad,Ức gà + rau củ hấp,Táo xanh,1279,Ngủ đủ 7 tiếng.
+472,"Tôi muốn tăng cơ, nên ăn gì trong ngày?",tăng cơ,tiểu đường,duy trì sức khỏe,Cháo yến mạch,Cơm + thịt bò xào,Cá hồi + khoai lang,Chuối chín,1742,Ngủ đủ 7 tiếng.
+473,"Tôi muốn tăng cân, nên ăn gì trong ngày?",tăng cân,béo phì,ăn lành mạnh,Cháo yến mạch,Ức gà nướng + salad,Salad rau củ + trứng,Chuối chín,1208,Ngủ đủ 7 tiếng.
+474,"Tôi bị cao huyết áp, gợi ý thực đơn cho cả ngày giúp tôi.",ổn định đường huyết,cao huyết áp,tăng cân,Yến mạch sữa chua,Cơm + cá hồi áp chảo,Salad rau củ + trứng,Hạt hạnh nhân,1677,Uống 2L nước/ngày.
+475,"Tôi đang tăng cân, ăn gì sáng, trưa, tối hợp lý?",tăng cân,tiểu đường,ăn lành mạnh,Bánh mì trứng,Đậu hũ sốt cà + rau luộc,Cá hồi + khoai lang,Sữa chua không đường,2094,Tránh ăn sau 21h.
+476,"Tôi bị bình thường, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cơ,bình thường,tăng cân,Yến mạch sữa chua,Cơm + cá hồi áp chảo,Salad rau củ + trứng,Táo xanh,1891,Không dùng đồ ngọt.
+477,"Tôi bị gầy yếu, gợi ý thực đơn cho cả ngày giúp tôi.",ổn định đường huyết,gầy yếu,ăn lành mạnh,Trứng luộc + rau xanh,Cơm gạo lứt + cá hấp,Cơm + tôm hấp,Sữa whey,1686,Tránh ăn sau 21h.
+478,Người bình thường nên ăn thế nào để giảm cân trong 1 ngày?,giảm cân,bình thường,tăng cân,Trứng luộc + rau xanh,Đậu hũ sốt cà + rau luộc,Cá hồi + khoai lang,Táo xanh,2146,Không dùng đồ ngọt.
+479,"Tôi muốn giảm cân, nên ăn gì trong ngày?",giảm cân,bình thường,tăng cơ,Bánh mì trứng,Cơm + thịt bò xào,Ức gà + rau củ hấp,Chuối chín,1893,Kết hợp tập thể dục 30 phút/ngày.
+480,"Tôi bị cao huyết áp, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cân,cao huyết áp,ăn lành mạnh,Trứng luộc + rau xanh,Đậu hũ sốt cà + rau luộc,Salad rau củ + trứng,Sữa chua không đường,1254,Ngủ đủ 7 tiếng.
+481,Người tiểu đường nên ăn thế nào để tăng cơ trong 1 ngày?,tăng cơ,tiểu đường,duy trì sức khỏe,Cháo yến mạch,Ức gà nướng + salad,Ức gà + rau củ hấp,Táo xanh,2065,Tránh ăn sau 21h.
+482,"Tôi bị cao huyết áp, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cân,cao huyết áp,tăng cơ,Yến mạch sữa chua,Cơm + thịt bò xào,Cơm + tôm hấp,Sữa whey,2105,Ngủ đủ 7 tiếng.
+483,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cơ.,tăng cơ,bình thường,tăng cân,Cháo yến mạch,Cơm gạo lứt + cá hấp,Đậu hũ chiên + cơm gạo lứt,Sữa chua không đường,2298,Tránh ăn sau 21h.
+484,Người gầy yếu nên ăn thế nào để tăng cơ trong 1 ngày?,tăng cơ,gầy yếu,duy trì sức khỏe,Sữa tươi + trái cây ít đường,Cơm + thịt bò xào,Ức gà + rau củ hấp,Sữa whey,2032,Không dùng đồ ngọt.
+485,"Tôi bị cao huyết áp, gợi ý thực đơn cho cả ngày giúp tôi.",giữ cân,cao huyết áp,duy trì sức khỏe,Cháo yến mạch,Cơm + thịt bò xào,Cơm + tôm hấp,Chuối chín,1415,Uống 2L nước/ngày.
+486,Hãy gợi ý thực đơn nguyên ngày giúp tôi giữ cân.,giữ cân,gầy yếu,giảm cân,Trứng luộc + rau xanh,Cơm + thịt bò xào,Cá hồi + khoai lang,Chuối chín,2146,Ngủ đủ 7 tiếng.
+487,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cơ.,tăng cơ,gầy yếu,tăng cân,Yến mạch sữa chua,Cơm + cá hồi áp chảo,Cá hồi + khoai lang,Sữa chua không đường,2199,Tránh ăn sau 21h.
+488,"Tôi đang tăng cơ, ăn gì sáng, trưa, tối hợp lý?",tăng cơ,bình thường,giảm cân,Yến mạch sữa chua,Đậu hũ sốt cà + rau luộc,Salad rau củ + trứng,Chuối chín,1211,Ngủ đủ 7 tiếng.
+489,Người gầy yếu nên ăn thế nào để giảm cân trong 1 ngày?,giảm cân,gầy yếu,duy trì sức khỏe,Trứng luộc + rau xanh,Cơm gạo lứt + cá hấp,Salad rau củ + trứng,Táo xanh,2003,Ngủ đủ 7 tiếng.
+490,"Tôi đang giữ cân, ăn gì sáng, trưa, tối hợp lý?",giữ cân,cao huyết áp,tăng cân,Bánh mì trứng,Cơm gạo lứt + cá hấp,Ức gà + rau củ hấp,Táo xanh,2296,Tránh ăn sau 21h.
+491,"Tôi đang giảm cân, ăn gì sáng, trưa, tối hợp lý?",giảm cân,tiểu đường,ăn lành mạnh,Bánh mì trứng,Đậu hũ sốt cà + rau luộc,Salad rau củ + trứng,Sữa whey,1236,Không dùng đồ ngọt.
+492,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cân.,tăng cân,cao huyết áp,tăng cân,Yến mạch sữa chua,Đậu hũ sốt cà + rau luộc,Đậu hũ chiên + cơm gạo lứt,Chuối chín,1293,Kết hợp tập thể dục 30 phút/ngày.
+493,Hãy gợi ý thực đơn nguyên ngày giúp tôi giảm cân.,giảm cân,cao huyết áp,duy trì sức khỏe,Cháo yến mạch,Đậu hũ sốt cà + rau luộc,Salad rau củ + trứng,Sữa chua không đường,2088,Không dùng đồ ngọt.
+494,"Tôi muốn tăng cơ, nên ăn gì trong ngày?",tăng cơ,tiểu đường,duy trì sức khỏe,Cháo yến mạch,Cơm gạo lứt + cá hấp,Cá hồi + khoai lang,Táo xanh,1838,Kết hợp tập thể dục 30 phút/ngày.
+495,"Tôi bị tiểu đường, gợi ý thực đơn cho cả ngày giúp tôi.",tăng cân,tiểu đường,tăng cân,Sữa tươi + trái cây ít đường,Cơm + thịt bò xào,Cá hồi + khoai lang,Hạt hạnh nhân,2062,Tránh ăn sau 21h.
+496,Hãy gợi ý thực đơn nguyên ngày giúp tôi tăng cân.,tăng cân,béo phì,tăng cân,Sữa tươi + trái cây ít đường,Đậu hũ sốt cà + rau luộc,Cá hồi + khoai lang,Sữa chua không đường,1741,Ngủ đủ 7 tiếng.
+497,"Tôi đang giảm cân, ăn gì sáng, trưa, tối hợp lý?",giảm cân,bình thường,ăn lành mạnh,Trứng luộc + rau xanh,Cơm + thịt bò xào,Cá hồi + khoai lang,Táo xanh,1209,Không dùng đồ ngọt.
+498,"Tôi đang ổn định đường huyết, ăn gì sáng, trưa, tối hợp lý?",ổn định đường huyết,gầy yếu,tăng cơ,Yến mạch sữa chua,Ức gà nướng + salad,Đậu hũ chiên + cơm gạo lứt,Hạt hạnh nhân,1209,Ngủ đủ 7 tiếng.
+499,"Tôi muốn giữ cân, nên ăn gì trong ngày?",giữ cân,cao huyết áp,tăng cân,Bánh mì trứng,Cơm + cá hồi áp chảo,Ức gà + rau củ hấp,Táo xanh,1245,Không dùng đồ ngọt.
+500,Người tiểu đường nên ăn thế nào để ổn định đường huyết trong 1 ngày?,ổn định đường huyết,tiểu đường,ăn lành mạnh,Cháo yến mạch,Đậu hũ sốt cà + rau luộc,Ức gà + rau củ hấp,Hạt hạnh nhân,1402,Tránh ăn sau 21h.

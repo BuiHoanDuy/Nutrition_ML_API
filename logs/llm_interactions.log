@@ -122,3 +122,19 @@ LLM parsing failed for question: TÃ´i muá»‘n giáº£m cÃ¢n, sÃ¡ng nÃ
 2025-10-26 16:16:04,427 - llm_interactions - WARNING - LLM parsing failed for question: tôi cần giảm cân, hãy cho tôi thực đơn. Falling back to keyword parsing.
 2025-10-26 16:16:04,450 - llm_interactions - WARNING - OPENROUTER_API_KEY not set. Skipping LLM call.
 2025-10-26 16:16:04,450 - llm_interactions - WARNING - LLM response for natural language generation was not in the expected format. Falling back to raw data.
+2025-10-26 19:20:19,671 - llm_interactions - WARNING - OPENROUTER_API_KEY not set. Skipping LLM call.
+2025-10-26 19:20:19,672 - llm_interactions - WARNING - LLM parsing failed for question: Tôi muốn giảm cân, nên ăn gì trong ngày?. Falling back to keyword parsing.
+2025-10-26 19:20:19,861 - llm_interactions - WARNING - OPENROUTER_API_KEY not set. Skipping LLM call.
+2025-10-26 19:20:19,861 - llm_interactions - WARNING - LLM response for natural language generation was not in the expected format. Falling back to raw data.
+2025-10-26 19:20:27,290 - llm_interactions - WARNING - OPENROUTER_API_KEY not set. Skipping LLM call.
+2025-10-26 19:20:27,290 - llm_interactions - WARNING - LLM parsing failed for question: Tôi muốn giảm cân, nên ăn gì trong ngày?. Falling back to keyword parsing.
+2025-10-26 19:20:27,293 - llm_interactions - WARNING - OPENROUTER_API_KEY not set. Skipping LLM call.
+2025-10-26 19:20:27,293 - llm_interactions - WARNING - LLM response for natural language generation was not in the expected format. Falling back to raw data.
+2025-10-26 19:22:40,724 - llm_interactions - WARNING - OPENROUTER_API_KEY not set. Skipping LLM call.
+2025-10-26 19:22:40,724 - llm_interactions - WARNING - LLM parsing failed for question: Tôi muốn giảm cân, nên ăn gì trong ngày?. Falling back to keyword parsing.
+2025-10-26 19:22:40,727 - llm_interactions - WARNING - OPENROUTER_API_KEY not set. Skipping LLM call.
+2025-10-26 19:22:40,727 - llm_interactions - WARNING - LLM response for natural language generation was not in the expected format. Falling back to raw data.
+2025-10-26 20:13:52,814 - llm_interactions - WARNING - OPENROUTER_API_KEY not set. Skipping LLM call.
+2025-10-26 20:13:52,814 - llm_interactions - WARNING - LLM parsing failed for question: tôi cần giảm cân, hãy cho tôi thực đơn. Falling back to keyword parsing.
+2025-10-26 20:13:52,864 - llm_interactions - WARNING - OPENROUTER_API_KEY not set. Skipping LLM call.
+2025-10-26 20:13:52,864 - llm_interactions - WARNING - LLM response for natural language generation was not in the expected format. Falling back to raw data.

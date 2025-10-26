@@ -16,7 +16,7 @@ def train_obesity_model():
     print("[INFO] Loading obesity dataset...")
     
     # Load data
-    data_path = Path(__file__).parent.parent / "models" / "obesity" / "ObesityDataSet.csv"
+    data_path = Path(__file__).parent.parent / "data" / "ObesityDataSet.csv"
     df = pd.read_csv(data_path, encoding='utf-8')
     
     print(f"[INFO] Dataset shape: {df.shape}")
