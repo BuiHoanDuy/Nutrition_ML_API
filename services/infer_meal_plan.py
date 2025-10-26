@@ -31,6 +31,9 @@ llm_logger.propagate = False # Prevent logs from propagating to the root logger
 llm_handler = RotatingFileHandler(
     LOGS_DIR / "llm_interactions.log", maxBytes=10_000_000, backupCount=5, encoding="utf-8"
 )
+# Set formatter to handle Unicode properly
+llm_formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+llm_handler.setFormatter(llm_formatter)
 llm_logger.addHandler(llm_handler)
 
 # Global variables to store loaded artifacts
@@ -49,7 +52,7 @@ def load_recommender_artifacts():
     if meal_plans_df is not None: # Already loaded
         return
 
-    print("🔹 Loading meal plan recommender artifacts...")
+    print("[INFO] Loading meal plan recommender artifacts...")
     try:
         meal_plans_df = pd.read_csv(MODEL_DIR / "meal_plans_data.csv", encoding='utf-8-sig')
         user_feature_encoder = joblib.load(MODEL_DIR / "user_feature_encoder.pkl")
@@ -57,10 +60,10 @@ def load_recommender_artifacts():
         user_features_encoded_matrix = scipy.sparse.load_npz(MODEL_DIR / "user_features_encoded.npz")
         meal_features_tfidf_matrix = scipy.sparse.load_npz(MODEL_DIR / "meal_features_tfidf.npz")
         
-        print("✅ Meal plan recommender artifacts loaded successfully.")
+        print("[SUCCESS] Meal plan recommender artifacts loaded successfully.")
 
     except FileNotFoundError as e:
-        print(f"❌ Error loading meal plan recommender artifacts: {e}")
+        print(f"[ERROR] Error loading meal plan recommender artifacts: {e}")
         print("Please ensure 'meal_plan_recommender_train.py' has been run successfully.")
         # Reset globals to None to indicate failure
         meal_plans_df = None
@@ -69,7 +72,7 @@ def load_recommender_artifacts():
         user_features_encoded_matrix = None
         meal_features_tfidf_matrix = None
     except Exception as e:
-        print(f"❌ An unexpected error occurred while loading artifacts: {e}")
+        print(f"[ERROR] An unexpected error occurred while loading artifacts: {e}")
         meal_plans_df = None
         user_feature_encoder = None
         meal_tfidf_vectorizer = None
@@ -111,7 +114,14 @@ async def call_openrouter_llm(prompt: str, model: str = OPENROUTER_MODEL, json_m
             response_json = response.json()
             
             llm_response_content = response_json["choices"][0]["message"]["content"]
-            llm_logger.info(f"LLM call successful. Model: {model}, Prompt: {prompt[:100]}..., Raw Response: {llm_response_content}")
+            # Safe logging with Unicode handling
+            try:
+                llm_logger.info(f"LLM call successful. Model: {model}, Prompt: {prompt[:100]}..., Raw Response: {llm_response_content}")
+            except UnicodeEncodeError:
+                # Fallback: encode to ASCII with replacement
+                safe_prompt = prompt[:100].encode('ascii', 'replace').decode('ascii')
+                safe_response = llm_response_content.encode('ascii', 'replace').decode('ascii')
+                llm_logger.info(f"LLM call successful. Model: {model}, Prompt: {safe_prompt}..., Raw Response: {safe_response}")
 
             if json_mode:
                 # Attempt to parse the LLM's string response as JSON
@@ -156,7 +166,11 @@ Vui lòng chỉ trả về một đối tượng JSON hợp lệ.
     llm_parsed_params = await call_openrouter_llm(llm_prompt)
 
     if llm_parsed_params:
-        llm_logger.info(f"LLM successfully parsed question: {question} -> {llm_parsed_params}")
+        try:
+            llm_logger.info(f"LLM successfully parsed question: {question} -> {llm_parsed_params}")
+        except UnicodeEncodeError:
+            safe_question = question.encode('ascii', 'replace').decode('ascii')
+            llm_logger.info(f"LLM successfully parsed question: {safe_question} -> {llm_parsed_params}")
         # Validate LLM output structure and fill defaults if necessary
         final_params = {
             "health_status": llm_parsed_params.get("health_status", "không có"),
@@ -170,7 +184,11 @@ Vui lòng chỉ trả về một đối tượng JSON hợp lệ.
             final_params["requested_meals"] = ["bữa_sáng", "bữa_trưa", "bữa_tối", "bữa_phụ"]
         return final_params
     else:
-        llm_logger.warning(f"LLM parsing failed for question: {question}. Falling back to keyword parsing.")
+        try:
+            llm_logger.warning(f"LLM parsing failed for question: {question}. Falling back to keyword parsing.")
+        except UnicodeEncodeError:
+            safe_question = question.encode('ascii', 'replace').decode('ascii')
+            llm_logger.warning(f"LLM parsing failed for question: {safe_question}. Falling back to keyword parsing.")
         # 2. Fallback to keyword matching if LLM fails
         # (Existing keyword parsing logic starts here)
     question_lower = question.lower()
@@ -312,7 +330,7 @@ def recommend_meal_plan(
     try:
         user_input_encoded = user_feature_encoder.transform(user_input_df[user_features_cols])
     except ValueError as e:
-        print(f"❌ Error encoding user input: {e}")
+        print(f"[ERROR] Error encoding user input: {e}")
         return []
 
     # 3. Calculate similarity between user input and all existing user profiles
@@ -392,7 +410,14 @@ Nhiệm vụ của bạn là diễn giải những gợi ý trên thành một c
 
     if natural_response and isinstance(natural_response, str):
         # Thêm một bước làm sạch cuối cùng để đảm bảo không còn ký tự không mong muốn
-        return natural_response.replace("\n", " ").replace("- ", "").strip()
+        # Also handle Unicode encoding issues
+        try:
+            cleaned_response = natural_response.replace("\n", " ").replace("- ", "").strip()
+            return cleaned_response
+        except UnicodeEncodeError:
+            # Fallback: encode to ASCII with replacement for problematic characters
+            safe_response = natural_response.encode('ascii', 'replace').decode('ascii')
+            return safe_response.replace("\n", " ").replace("- ", "").strip()
     
     llm_logger.warning("LLM response for natural language generation was not in the expected format. Falling back to raw data.")
     # Fallback if LLM fails

@@ -44,7 +44,7 @@ python -m uvicorn api.main:app --host 127.0.0.1 --port 8000 --reload
 }
 ```
 # Run the obesity predict
-C:\Users\Admin\Documents\Study\AI\Project1\nutrition-ai-app\.venv\Scripts\python.exe -m uvicorn obesity.api:app --reload
+python -m uvicorn api.main:app --host 127.0.0.1 --port 8000 --reload
 
 Example successful response:
 ```

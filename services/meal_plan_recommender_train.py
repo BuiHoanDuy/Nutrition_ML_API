@@ -32,22 +32,22 @@ def main():
     # Create model directory if it doesn't exist
     MODEL_DIR.mkdir(parents=True, exist_ok=True)
 
-    print("🔹 Loading and cleaning data...")
+    print("[INFO] Loading and cleaning data...")
     try:
         # Load the CSV file, ensuring UTF-8 encoding is used for Vietnamese characters.
         df = pd.read_csv(DATA_PATH, encoding='utf-8')
 
     except FileNotFoundError:
-        print(f"❌ Error: Data file not found at {DATA_PATH}")
+        print(f"[ERROR] Error: Data file not found at {DATA_PATH}")
         return
     except Exception as e:
-        print(f"❌ An error occurred while reading the CSV file: {e}")
+        print(f"[ERROR] An error occurred while reading the CSV file: {e}")
         return
 
     # --- Feature Engineering ---
 
     # 1. User Profile Features (Categorical)
-    print("🔹 Processing user profile features with OneHotEncoder...")
+    print("[INFO] Processing user profile features with OneHotEncoder...")
     user_features = ['tình_trạng_sức_khỏe', 'mục_tiêu', 'intent_dinh_dưỡng']
     df[user_features] = df[user_features].fillna('không có') # Handle missing values
 
@@ -55,7 +55,7 @@ def main():
     user_features_encoded = encoder.fit_transform(df[user_features])
 
     # 2. Meal Plan Content Features (Text)
-    print("🔹 Processing meal plan content with TF-IDF Vectorizer...")
+    print("[INFO] Processing meal plan content with TF-IDF Vectorizer...")
     meal_cols = ['bữa_sáng', 'bữa_trưa', 'bữa_tối', 'bữa_phụ']
     df[meal_cols] = df[meal_cols].fillna('') # Handle missing meals
     
@@ -66,7 +66,7 @@ def main():
     meal_features_tfidf = vectorizer.fit_transform(df['full_meal_plan'])
 
     # --- Save Artifacts for Inference ---
-    print("🔹 Saving processed data and models...")
+    print("[INFO] Saving processed data and models...")
 
     # Save the main DataFrame for lookup
     df.to_csv(MODEL_DIR / "meal_plans_data.csv", index=False, encoding='utf-8-sig')
@@ -79,7 +79,7 @@ def main():
     scipy.sparse.save_npz(MODEL_DIR / "user_features_encoded.npz", user_features_encoded)
     scipy.sparse.save_npz(MODEL_DIR / "meal_features_tfidf.npz", meal_features_tfidf)
 
-    print(f"✅ Successfully processed and saved artifacts to {MODEL_DIR}")
+    print(f"[SUCCESS] Successfully processed and saved artifacts to {MODEL_DIR}")
 
 if __name__ == "__main__":
     main()

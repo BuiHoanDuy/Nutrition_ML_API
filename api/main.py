@@ -7,6 +7,9 @@ from pathlib import Path
 import json
 from datetime import datetime
 
+# Import routers
+from api.routers import obesity
+
 from services.infer import infer # For calorie prediction
 from services.infer_meal_plan import recommend_meal_plan, parse_meal_plan_question, generate_natural_response_from_recommendations # For meal plan recommendation and parsing
 # from services.infer_meal_sequence import generate_full_day_menu, suggest_next_meal # For HMM meal sequence
@@ -26,9 +29,15 @@ request_logger.propagate = False
 handler = RotatingFileHandler(
     LOGS_DIR / "meal_plan_requests.log", maxBytes=10_000_000, backupCount=5, encoding="utf-8"
 )
+# Set formatter to handle Unicode properly
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+handler.setFormatter(formatter)
 request_logger.addHandler(handler)
 
 app = FastAPI(title="Nutrition Inference API")
+
+# Include routers
+app.include_router(obesity.router)
 
 
 class PredictRequest(BaseModel):
@@ -64,7 +73,13 @@ async def get_meal_plan_recommendations(
             "timestamp": datetime.utcnow().isoformat(),
             "question": req.question
         }
-        request_logger.info(json.dumps(log_entry, ensure_ascii=False))
+        try:
+            request_logger.info(json.dumps(log_entry, ensure_ascii=False))
+        except UnicodeEncodeError:
+            # Fallback: encode question to ASCII with replacement
+            safe_question = req.question.encode('ascii', 'replace').decode('ascii')
+            log_entry["question"] = safe_question
+            request_logger.info(json.dumps(log_entry, ensure_ascii=False))
 
         # Parse the natural language question to extract parameters
         parsed_params = await parse_meal_plan_question(req.question) # Await the async function
@@ -80,7 +95,13 @@ async def get_meal_plan_recommendations(
         natural_response = await generate_natural_response_from_recommendations(req.question, recommendations)
 
         # Return the generated text instead of the raw JSON
-        return {"success": True, "response": natural_response}
+        # Ensure response is properly encoded for Windows console
+        try:
+            return {"success": True, "response": natural_response}
+        except UnicodeEncodeError:
+            # Fallback: encode to ASCII with replacement for problematic characters
+            safe_response = natural_response.encode('ascii', 'replace').decode('ascii')
+            return {"success": True, "response": safe_response}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error getting meal plan recommendations: {e}")
 
