@@ -10,8 +10,8 @@ from datetime import datetime
 # Import routers
 from api.routers import obesity
 
-from services.infer import infer # For calorie prediction
-from services.infer_meal_plan import recommend_meal_plan, parse_meal_plan_question, generate_natural_response_from_recommendations # For meal plan recommendation and parsing
+from services.calorie_inference import infer # For calorie prediction
+from services.meal_plan_inference import recommend_meal_plan, parse_meal_plan_question, generate_natural_response_from_recommendations # For meal plan recommendation and parsing
 # from services.infer_meal_sequence import generate_full_day_menu, suggest_next_meal # For HMM meal sequence
 
 # --- Setup Logging for user questions ---

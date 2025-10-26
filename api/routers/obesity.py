@@ -3,7 +3,7 @@ from pydantic import BaseModel, Field
 from typing import Literal
 import pandas as pd
 
-from obesity.test_model import predict_obesity
+from services.obesity_inference import predict_obesity
 
 router = APIRouter(
     prefix="/obesity",

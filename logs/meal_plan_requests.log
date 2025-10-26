@@ -35,3 +35,9 @@
 2025-10-26 14:50:00,561 - meal_plan_requests - INFO - {"timestamp": "2025-10-26T07:50:00.561760", "question": "Tôi muốn giảm cân, sáng nên ăn gì?"}
 2025-10-26 14:50:31,819 - meal_plan_requests - INFO - {"timestamp": "2025-10-26T07:50:31.819314", "question": "TÃ´i muá»‘n giáº£m cÃ¢n, sÃ¡ng nÃªn Äƒn gÃ¬?"}
 2025-10-26 14:50:36,490 - meal_plan_requests - INFO - {"timestamp": "2025-10-26T07:50:36.490218", "question": "TÃ´i bá»‹ tiá»ƒu Ä‘Æ°á»ng, muá»‘n á»•n Ä‘á»‹nh Ä‘Æ°á»ng huyáº¿t thÃ¬ nÃªn Äƒn gÃ¬?"}
+2025-10-26 14:54:00,554 - meal_plan_requests - INFO - {"timestamp": "2025-10-26T07:54:00.554769", "question": "Béo, Thực đơn giảm cân"}
+2025-10-26 15:14:15,141 - meal_plan_requests - INFO - {"timestamp": "2025-10-26T08:14:15.141279", "question": "TÃ´i muá»‘n giáº£m cÃ¢n, sÃ¡ng nÃªn Äƒn gÃ¬?"}
+2025-10-26 15:15:42,345 - meal_plan_requests - INFO - {"timestamp": "2025-10-26T08:15:42.345434", "question": "TÃ´i muá»‘n giáº£m cÃ¢n, sÃ¡ng nÃªn Äƒn gÃ¬?"}
+2025-10-26 15:49:48,071 - meal_plan_requests - INFO - {"timestamp": "2025-10-26T08:49:48.071335", "question": "TÃ´i muá»‘n giáº£m cÃ¢n, sÃ¡ng nÃªn Äƒn gÃ¬?"}
+2025-10-26 16:14:22,112 - meal_plan_requests - INFO - {"timestamp": "2025-10-26T09:14:22.112006", "question": "Tôi muốn giảm cân, sáng nên ăn gì?"}
+2025-10-26 16:16:04,426 - meal_plan_requests - INFO - {"timestamp": "2025-10-26T09:16:04.426916", "question": "tôi cần giảm cân, hãy cho tôi thực đơn"}
