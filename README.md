@@ -1,18 +1,23 @@
 # 🍎 Nutrition AI – Food NLP Pipeline
 
 ## Overview
+
 This project provides a comprehensive nutrition analysis system with multiple AI models for food recognition, calorie estimation, and meal planning.
 
 ### ⚙️ Quick Setup
 
 1. **Clone and Install**
+
    ```bash
    git clone <your-repository-url>
    cd nutrition-ai-app
+   python -m venv venv
+   venv\Scripts\activate
    pip install -r requirements.txt
    ```
 
 2. **Train Models**
+
    ```bash
    python scripts/setup_models.py
    ```
@@ -27,9 +32,11 @@ This project provides a comprehensive nutrition analysis system with multiple AI
 ### 🚀 API Endpoints
 
 #### 1. Calorie Prediction (`/predict`)
+
 Predicts calories and nutrition information from food text input.
 
 **Request:**
+
 ```json
 {
   "content": "Tôi ăn 1 bát phở bò"
@@ -37,6 +44,7 @@ Predicts calories and nutrition information from food text input.
 ```
 
 **Response:**
+
 ```json
 {
   "success": true,
@@ -56,9 +64,11 @@ Predicts calories and nutrition information from food text input.
 ```
 
 #### 2. Meal Plan Recommendation (`/recommend_meal_plan`)
+
 Provides personalized meal plan recommendations based on health status and goals.
 
 **Request:**
+
 ```json
 {
   "question": "Tôi muốn giảm cân, sáng nên ăn gì?"
@@ -66,6 +76,7 @@ Provides personalized meal plan recommendations based on health status and goals
 ```
 
 **Response:**
+
 ```json
 {
   "success": true,
@@ -74,9 +85,11 @@ Provides personalized meal plan recommendations based on health status and goals
 ```
 
 #### 3. Obesity Prediction (`/obesity/predict`)
+
 Predicts obesity level based on lifestyle and health parameters.
 
 **Request:**
+
 ```json
 {
   "Gender": "Female",
@@ -99,6 +112,7 @@ Predicts obesity level based on lifestyle and health parameters.
 ```
 
 **Response:**
+
 ```json
 {
   "prediction": "Normal_Weight",
