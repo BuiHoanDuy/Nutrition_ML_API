@@ -138,3 +138,7 @@ LLM parsing failed for question: TÃ´i muá»‘n giáº£m cÃ¢n, sÃ¡ng nÃ
 2025-10-26 20:13:52,814 - llm_interactions - WARNING - LLM parsing failed for question: tôi cần giảm cân, hãy cho tôi thực đơn. Falling back to keyword parsing.
 2025-10-26 20:13:52,864 - llm_interactions - WARNING - OPENROUTER_API_KEY not set. Skipping LLM call.
 2025-10-26 20:13:52,864 - llm_interactions - WARNING - LLM response for natural language generation was not in the expected format. Falling back to raw data.
+2025-10-26 21:15:35,190 - llm_interactions - WARNING - OPENROUTER_API_KEY not set. Skipping LLM call.
+2025-10-26 21:15:35,191 - llm_interactions - WARNING - LLM parsing failed for question: Cho tôi thực đơn cho người gầy. Falling back to keyword parsing.
+2025-10-26 21:15:35,445 - llm_interactions - WARNING - OPENROUTER_API_KEY not set. Skipping LLM call.
+2025-10-26 21:15:35,445 - llm_interactions - WARNING - LLM response for natural language generation was not in the expected format. Falling back to raw data.

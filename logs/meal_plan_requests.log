@@ -45,3 +45,4 @@
 2025-10-26 19:20:27,289 - meal_plan_requests - INFO - {"timestamp": "2025-10-26T12:20:27.289937", "question": "Tôi muốn giảm cân, nên ăn gì trong ngày?"}
 2025-10-26 19:22:40,723 - meal_plan_requests - INFO - {"timestamp": "2025-10-26T12:22:40.723947", "question": "Tôi muốn giảm cân, nên ăn gì trong ngày?"}
 2025-10-26 20:13:52,813 - meal_plan_requests - INFO - {"timestamp": "2025-10-26T13:13:52.813885", "question": "tôi cần giảm cân, hãy cho tôi thực đơn"}
+2025-10-26 21:15:35,190 - meal_plan_requests - INFO - {"timestamp": "2025-10-26T14:15:35.190046", "question": "Cho tôi thực đơn cho người gầy"}
