@@ -1,13 +1,14 @@
 # tạo virtualenv
+
 python -m venv .venv
-source .venv/bin/activate    # windows: .venv\Scripts\activate
+source .venv/bin/activate # windows: .venv\Scripts\activate
 
 pip install --upgrade pip
-pip install jupyterlab pandas numpy scikit-learn datasets transformers torch fastapi uvicorn pydantic sqlalchemy alembic psycopg2-binary joblib xgboost lightgbm prophet sentencepiece tokenizers sentence-transformers
+pip install jupyterlab pandas numpy scikit-learn datasets transformers torch fastapi uvicorn pydantic sqlalchemy alembic psycopg2-binary joblib xgboost lightgbm prophet sentencepiece tokenizers sentence-transformers httpx pytest pytest-asyncio
+
 # thêm thư viện tuỳ chọn: rasa, implicit, surprise, torchvision nếu cần
 
-
-```
+````
 nutrition-ai/
 ├─ data/
 │  ├─ ner/            # train.json, valid.json (NER)
@@ -59,42 +60,51 @@ services/models/
 -- Run server for testing API
 python -m uvicorn api.main:app --host 127.0.0.1 --port 8000 --reload
 
-## API: /predict (Postman example)
+## API Endpoints (Postman Examples)
 
-Use Postman to POST JSON to the running server:
+### 1. `/predict`
 
-URL: http://127.0.0.1:8000/predict
-Method: POST
-Headers: Content-Type: application/json
-Body (raw JSON):
-```
-{ "content": "Tôi ăn 300g bột gạo" }
+**Mục đích**: Phân tích câu nói để tìm món ăn và tính toán dinh dưỡng.
+- **URL**: `http://127.0.0.1:8000/predict`
+- **Method**: `POST`
+- **Body (raw/json)**:
+```json
+{
+    "content": "Tôi ăn 300g bột gạo"
+}
 ```
 
 Example successful response:
 ```
+
 {
-	"success": true,
-	"result": {
-		"food": "Bột gạo tí",
-		"food_key": "bot gao ti",
-		"quantity": 300.0,
-		"unit": "g",
-		"nutrition": {
-			"calories": 1077.0,
-			"protein_g": 19.8,
-			"carbs_g": 246.6,
-			"fat_g": 1.2,
-			"fiber_g": 1.2,
-			"water_g": 30.0,
-			"ash_g": 1.2
-		},
-		"found_in_master": true
-	}
+"success": true,
+"result": {
+"food": "Bột gạo tí",
+"food_key": "bot gao ti",
+"quantity": 300.0,
+"unit": "g",
+"nutrition": {
+"calories": 1077.0,
+"protein_g": 19.8,
+"carbs_g": 246.6,
+"fat_g": 1.2,
+"fiber_g": 1.2,
+"water_g": 30.0,
+"ash_g": 1.2
+},
+"found_in_master": true
 }
+}
+
 ```
 
 If the food isn't found the API returns a helpful message and parsed output:
 ```
+
 { "success": true, "result": { "found_in_master": false, "message": "Không tìm thấy món ăn.", "parsed": { ... } } }
+
 ```
+
+```
+````
