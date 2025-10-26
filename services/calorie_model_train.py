@@ -35,6 +35,7 @@ def main():
     print(f"✅ RMSE: {rmse:.2f}")
 
     out = Path("services/models/calorie_from_macro_rf.pkl")
+    out.parent.mkdir(parents=True, exist_ok=True) # Ensure the directory exists
     joblib.dump(model, out)
     print(f"✅ Model saved to {out}")
 
