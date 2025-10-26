@@ -3,36 +3,6 @@
 python -m venv .venv
 source .venv/bin/activate # windows: .venv\Scripts\activate
 
-pip install --upgrade pip
-pip install jupyterlab pandas numpy scikit-learn datasets transformers torch fastapi uvicorn pydantic sqlalchemy alembic psycopg2-binary joblib xgboost lightgbm prophet sentencepiece tokenizers sentence-transformers httpx pytest pytest-asyncio
-
-# thêm thư viện tuỳ chọn: rasa, implicit, surprise, torchvision nếu cần
-
-````
-nutrition-ai/
-├─ data/
-│  ├─ ner/            # train.json, valid.json (NER)
-│  ├─ intent/         # intent.csv
-│  ├─ sentiment/      # sentiment.csv
-│  ├─ users/          # user_profiles.csv, logs.csv
-│  ├─ food_db.csv     # food metadata (name, kcal, protein, carb, fat)
-│  └─ wearable/       # sensor csv nếu có
-├─ notebooks/
-│  ├─ 01_ner_train.ipynb
-│  ├─ 02_intent_train.ipynb
-│  ├─ 03_sentiment_train.ipynb
-│  ├─ 04_calorie_regression.ipynb
-│  ├─ 05_recommender.ipynb
-│  └─ 06_timeseries.ipynb
-├─ services/
-│  ├─ api/            # FastAPI app
-│  └─ models/         # saved models (.pt, .pkl)
-├─ scripts/
-│  ├─ preprocess.py
-│  └─ train_ner.py
-├─ Dockerfile
-└─ README.md
-
 # 🍎 Nutrition AI – Food NLP Pipeline
 
 ### ⚙️ Setup
@@ -73,6 +43,8 @@ python -m uvicorn api.main:app --host 127.0.0.1 --port 8000 --reload
     "content": "Tôi ăn 300g bột gạo"
 }
 ```
+# Run the obesity predict
+C:\Users\Admin\Documents\Study\AI\Project1\nutrition-ai-app\.venv\Scripts\python.exe -m uvicorn obesity.api:app --reload
 
 Example successful response:
 ```

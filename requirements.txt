@@ -11,3 +11,7 @@ seqeval
 fastapi 
 uvicorn
 deep-translator
+httpx
+python-multipart
+python-dotenv
+openai
