@@ -80,7 +80,7 @@ Provides personalized meal plan recommendations based on health status and goals
 ```json
 {
   "success": true,
-  "response": "Chào bạn! Để giúp bạn giảm cân hiệu quả, tôi gợi ý thực đơn sáng như sau: Bữa sáng: Cháo yến mạch với sữa tách béo và chuối, Bữa trưa: Salad rau xanh với ức gà nướng, Bữa tối: Cá hồi áp chảo với rau luộc. Thực đơn này tập trung vào protein nạc và rau xanh, giúp bạn no lâu và giảm cân an toàn. Tổng calo ước tính: 1200 kcal. Chúc bạn thành công!"
+  "response": "Chào bạn! Để giúp bạn giảm cân hiệu quả, tôi gợi ý thực đơn sáng như sau: Bữa sáng: Cháo yến mạch với sữa tách béo và chuối, Bữa trưa: Salad rau xanh với ức gà nướng, Bữa tối: Cá hồi áp chảo với rau luộc. Thực đơn này tập trung vào protein nạc và rau xanh, giúp bạn no lâu và giảm cân an toàn.  Chúc bạn thành công!"
 }
 ```
 
@@ -159,7 +159,7 @@ nutrition-ai-app/
 ### 🔧 Technical Details
 
 - **Calorie Prediction**: Uses Random Forest model trained on Vietnamese food nutrition data
-- **Meal Planning**: TF-IDF vectorization + cosine similarity for personalized recommendations
+- **Meal Planning**: PhoBERT embeddings + cosine similarity for personalized recommendations
 - **Obesity Prediction**: Random Forest classifier with feature engineering
 - **Text Processing**: Rule-based parsing + fuzzy matching for Vietnamese food names
 - **LLM Integration**: OpenRouter API for natural language generation

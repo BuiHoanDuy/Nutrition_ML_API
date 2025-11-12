@@ -15,7 +15,7 @@ def parse_input(text: str):
         'muỗng canh', 'muong canh', 'thìa canh', 'thia canh', 'thìa',
         'gram', 'gam', 'g', 'kg', 'mg', 'kí', 'kilogam', 'kilo', 'ký',
         'lạng', 'lang', 'ta',
-        'cốc', 'tách', 'ly', 'ml', 'ca',
+        'cốc', 'tách', 'ly', 'ml', 'ca', 'bát', 'chén',
         'bát', 'chén',
         'cái', 'quả', 'trái', 'chiếc', 'miếng', 'viên',
         'phần'
@@ -23,7 +23,7 @@ def parse_input(text: str):
     unit_pattern = r"(?:" + r"|".join(re.escape(u) for u in units) + r")"
 
     # find quantity + optional unit (supports multi-word units)
-    m = re.search(rf"(\d+(?:\.\d+)?)(\s*)({unit_pattern})?\b", text)
+    m = re.search(rf"(\d[\d\.,]*)(\s*)({unit_pattern})?\b", text)
     quantity = None
     unit = None
     if m:
@@ -37,7 +37,7 @@ def parse_input(text: str):
     t = re.sub(r"^\s*(?:tôi|mình)?\s*(?:đã|dang|đang|vừa|mới)?\s*(ăn|uống|dùng)\b", '', t, flags=re.IGNORECASE)
     
     # remove quantity and units from text
-    t = re.sub(rf"(\d+(?:\.\d+)?)(\s*){unit_pattern}\b", '', t)
+    t = re.sub(rf"(\d[\d\.,]*)(\s*){unit_pattern}\b", '', t)
     # also remove any leftover standalone unit words
     t = re.sub(rf"\b{unit_pattern}\b", '', t)
 

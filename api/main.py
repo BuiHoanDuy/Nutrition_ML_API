@@ -95,15 +95,21 @@ async def get_meal_plan_recommendations(
         parsed_params = await parse_meal_plan_question(req.question) # Await the async function
 
         recommendations = recommend_meal_plan(
+            original_question=req.question,
             health_status=parsed_params["health_status"],
             goal=parsed_params["goal"],
-            nutrition_intent=parsed_params["nutrition_intent"],
+            diet_type=parsed_params["diet_type"],
             requested_meals=parsed_params["requested_meals"]
         )
 
         # New Step: Generate a natural language response from the recommendations
-        natural_response = await generate_natural_response_from_recommendations(req.question, recommendations)
-
+        natural_response = await generate_natural_response_from_recommendations(
+            question=req.question,
+            health_status=parsed_params["health_status"],
+            goal=parsed_params["goal"],
+            recommendations=recommendations
+        )
+ 
         # Return the generated text instead of the raw JSON
         # Ensure response is properly encoded for Windows console
         try:
