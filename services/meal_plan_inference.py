@@ -105,9 +105,6 @@ class MealPlanRecommender:
     def is_ready(self) -> bool:
         """Check if all artifacts are loaded and the recommender is ready."""
         return self.meal_plans_df is not None and self.phobert_model is not None
-
-# --- Instantiate the recommender ---
-# This creates a single instance that will be reused across requests.
 recommender = MealPlanRecommender()
 
 # --- OpenRouter Integration ---
@@ -307,13 +304,6 @@ def recommend_meal_plan(
     if not requested_meals:
         requested_meals = DEFAULT_MEALS
 
-    # --- NEW: Early exit if no meaningful parameters are extracted ---
-    # If the question is irrelevant (e.g., "Tôi bị khùng"), all parameters will be 'không có'.
-    # In this case, we can confidently say we can't find a suitable meal plan.
-    if health_status == 'không có' and goal == 'không có' and diet_type == 'không có':
-        print("[INFO] No relevant health, goal, or diet keywords found in the question. Returning no results.")
-        return []
-
     # Create a DataFrame for the user's input to encode
     user_input_df = pd.DataFrame([{
         'Tình trạng sức khỏe': health_status,
@@ -347,11 +337,15 @@ def recommend_meal_plan(
     if goal and goal != 'không có':
         conditions.append(filtered_df['Mục tiêu'].str.lower().str.strip() == goal.lower())
 
+    # Only apply filter if there are specific conditions.
+    # If the query is generic, we skip this and search the whole dataset.
     if conditions:
         filtered_df = filtered_df[np.logical_and.reduce(conditions)]
-    if filtered_df.empty:
-        print("[INFO] No meal plans found after applying hard filters.")
-        return []
+        if filtered_df.empty:
+            print("[INFO] No meal plans found after applying hard filters.")
+            return []
+    else:
+        print("[INFO] Generic query. Skipping hard filters and performing semantic search on the entire dataset.")
     
     print(f"[INFO] Found {len(filtered_df)} candidates after filtering.")
 
