@@ -1,7 +1,7 @@
 ﻿Bữa sáng,Bữa phụ,Bữa trưa,Bữa tối,Chế độ ăn,Tình trạng sức khỏe,Mục tiêu
 Khoai lang hấp,Hạt hạnh nhân,Canh gà lá giang; Miến; Trái cây ít đường,Phở bò; Rau luộc; Cơm trắng ít,Không chay,Tiểu đường,Ổn định đường huyết
 Bánh mì đen + trứng ốp la,Hạt hạnh nhân,Cơm chiên hải sản; Rau muống xào tỏi; Canh chua,Gỏi cuốn tôm thịt; Canh rau ngót,Không chay,Tiểu đường,Ổn định đường huyết
-Yến mạch + sữa hạt + chuối,Sữa chua Hy Lạp,Bánh cuốn Thanh Trì; Cá hấp; Cải thìa xào,Canh rau ngót thịt băm; Đậu phụ sốt,Không chay,Bình thường,Giữ cân
+Yến mạch + sữa hạt + chuối,Sữa chua Hy Lạp,Bánh cuốn Thanh Trì; Cá hấp; Cải thìa xào,Canh rau ngót thịt băm chay; Đậu phụ sốt,Không chay,Bình thường,Giữ cân
 Sữa chua Hy Lạp + dâu,Dâu tây,Cá lóc hấp bầu; Miến; Cải thìa xào,Phở gà; Salad trộn ít dầu,Không chay,Tiểu đường,Ổn định đường huyết
 Khoai lang hấp,Đậu hũ non,Rau xào tam sắc (món chay); Rau củ xào giò nấm chay; Canh bí đỏ,Bún Nấm Rơm Nấu Chao Chay; Rau luộc,chay,Cao huyết áp,Ổn định huyết áp
 Yến mạch + sữa hạt,Hạt điều,Khoai Tây Chiên Kho Cà Chua Chay; Xôi đậu xanh; Rau muống xào tỏi,Bông Kim Châm Kho Rau Củ Chay; Canh Lạc Bí Xanh Chay,chay,Cao huyết áp,Ổn định huyết áp
@@ -19,7 +19,7 @@ Ngũ cốc nguyên hạt + sữa hạt,Trái cây ít đường,Cháo sườn; C
 Sữa chua Hy Lạp + dâu,Phô mai ít béo,Cháo gà; Canh rau ngót; Canh chua,Cơm rang dưa bò; Salad trộn ít dầu,Không chay,Tiểu đường,Ổn định đường huyết
 Sữa chua thực vật + trái cây,Đậu hũ non,Sườn chay cà rim cay tê tê; Rau củ luộc; Canh bí đỏ,Canh rau diếp nấu nấm (món chay); Canh rau ngót,chay,Bình thường,Giữ cân
 Sinh tố protein whey,Sữa chua Hy Lạp,Bánh pancake mật ong; Đậu phụ sốt; Canh rau ngót,Bánh chuối chiên; Rau muống xào tỏi; Cá hấp,Không chay,Béo phì,Giảm cân
-Trứng luộc + rau củ hấp,Sữa chua Hy Lạp không đường,Canh rau ngót thịt băm; Miến; Kim chi ít cay,Cơm ba chỉ kho tàu; Canh rau ngót; Cá hấp,Không chay,Tiểu đường,Ổn định đường huyết
+Trứng luộc + rau củ hấp,Sữa chua Hy Lạp không đường,Canh rau ngót thịt băm chay; Miến; Kim chi ít cay,Cơm ba chỉ kho tàu; Canh rau ngót; Cá hấp,Không chay,Tiểu đường,Ổn định đường huyết
 Khoai lang hấp,Táo,Xôi lá cẩm; Bò xào nhẹ; Rau muống xào tỏi,Cháo lòng; Ức gà áp chảo; Cải thìa xào,Không chay,Cao huyết áp,Ổn định huyết áp
 Khoai lang hấp,Hạt hạnh nhân,Cơm rang dưa bò; Canh mồng tơi; Dưa góp,Bánh căn Đà Lạt; Cá hấp; Cải thìa xào,Không chay,Tiểu đường,Ổn định đường huyết
 Sinh tố protein whey,Hạt hỗn hợp,Cơm chiên dương châu; Ức gà áp chảo; Salad trộn ít dầu,Canh đậu hũ non hải sản; Bò xào nhẹ,Không chay,Mỡ trong máu,Giảm mỡ trong máu
@@ -323,7 +323,7 @@ Sữa chua thực vật + trái cây,Trái cây ít đường,Bánh tiêu nhân 
 Khoai lang hấp + sữa hạt,Sữa chua Hy Lạp,Phở gà; Cải thìa xào; Canh chua,Súp cua trứng bắc thảo; Canh rau ngót,Không chay,Bình thường,Tăng cân
 Sinh tố protein whey,Trứng luộc,Cháo vịt; Tôm nướng; Salad trộn ít dầu,Bún mắm miền Tây; Ức gà áp chảo; Cải thìa xào,Không chay,Bình thường,Tăng cân
 Ngũ cốc nguyên hạt + sữa hạt,Đậu hũ non,Củ cải đậu kho (chay eatclean 218kcal); Cải thìa xào; Nấm Mỡ hấp/luộc Cần Tây (Vegan),Miến om nấm (món chay); Đậu phụ sốt; Canh rau ngót,chay,Cao huyết áp,Ổn định huyết áp
-Khoai lang hấp,Sữa chua Hy Lạp không đường,Lẩu vịt nấu chao; Bún; Đậu phụ sốt,Canh rau ngót thịt băm; Rau củ luộc,Không chay,Tiểu đường,Ổn định đường huyết
+Khoai lang hấp,Sữa chua Hy Lạp không đường,Lẩu vịt nấu chao; Bún; Đậu phụ sốt,Canh rau ngót thịt băm chay; Rau củ luộc,Không chay,Tiểu đường,Ổn định đường huyết
 Khoai lang hấp,Hạt điều không muối,Bánh khoai mì nướng; Cá hấp; Canh rau ngót,Hủ tiếu Nam Vang; Tôm nướng; Rau củ luộc,Không chay,Cao huyết áp,Ổn định huyết áp
 Khoai lang hấp + sữa hạt,Thanh protein,Hủ tiếu bò kho; Canh rau ngót; Canh chua,Bánh mì pate; Canh rau ngót; Trứng luộc,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Sữa chua Hy Lạp + dâu,Dâu tây,Cơm niêu cá kho tộ; Salad trộn ít dầu; Canh chua,Bánh mì pate; Cải thìa xào; Trứng luộc,Không chay,Tiểu đường,Ổn định đường huyết
@@ -365,7 +365,7 @@ Khoai lang hấp,Sữa chua thực vật,Chả Lụa Chay Kho Nước Tương; C
 Yến mạch + trái cây ít natri,Hạt điều không muối,Đậu hũ sốt cà chua; Khoai lang; Rau muống xào tỏi,Mực xào sa tếCá basa sốt cà chua; Cá hấp,Không chay,Cao huyết áp,Ổn định huyết áp
 Sinh tố protein whey,Trái cây ít đường,Hủ tiếu Nam Vang; Ức gà áp chảo; Cải thìa xào,Cháo lòng; Tôm nướng; Rau luộc,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Đậu hũ xào rau củ,Trái cây ít đường,Cá chay sốt cà chua; Rau muống hấp/luộc tỏi; Bún xào chay,Vịt quay chay; CHẢ lạnh chay; Canh rau ngót,chay,Mỡ trong máu,Giảm mỡ trong máu
-Sữa chua Hy Lạp + trái cây ít đường,Trái cây ít đường,Canh rau ngót thịt băm; Miến; Dưa góp,Bánh tráng cuốn thịt heo; Salad trộn ít dầu,Không chay,Mỡ trong máu,Giảm mỡ trong máu
+Sữa chua Hy Lạp + trái cây ít đường,Trái cây ít đường,Canh rau ngót thịt băm chay; Miến; Dưa góp,Bánh tráng cuốn thịt heo; Salad trộn ít dầu,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Khoai lang hấp,Hạt hạnh nhân,Cơm tấm sườn bì chả; Rau củ luộc; Canh chua,Bánh khoai mì nướng; Rau muống xào tỏi; Trứng luộc,Không chay,Tiểu đường,Ổn định đường huyết
 Sinh tố protein whey,Trái cây ít đường,Cháo hải sản; Rau muống xào tỏi; Canh mồng tơi,Bánh mì bơ đường; Rau củ luộc; Trứng luộc,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Khoai lang hấp + sữa hạt,Thanh protein,Súp gà nấm đông cô; Phở; Canh rau ngót,Cháo lòng; Trứng luộc; Canh rau ngót,Không chay,Bình thường,Giảm cân
@@ -389,7 +389,7 @@ Khoai lang hấp,Hạt điều không muối,Súp cua trứng bắc thảo; Khoa
 Khoai lang hấp,Rau củ luộc nhỏ,Lẩu vịt nấu chao; Miến; Trứng luộc,Lẩu vịt nấu chao; Đậu phụ sốt; Salad trộn ít dầu,Không chay,Cao huyết áp,Ổn định huyết áp
 Yến mạch + sữa hạt + chuối,Thanh protein,Chả lá lốt hấp; Cơm trắng; Cá hấp,Bánh cam đường; Tôm nướng; Rau luộc,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Sữa chua thực vật + trái cây,Đậu hũ non,Mì Chũ hấp/luộc Rau Củ Chay (Vegan); Chả giò chay; Rau luộc,Canh măng chay; Cải thìa xào; Bánh xèo nấm chay,chay,Bình thường,Giữ cân
-Yến mạch + trái cây ít natri,Táo,Xôi gấc; Bò xào nhẹ; Canh rau ngót,Canh rau ngót thịt băm; Tôm nướng,Không chay,Cao huyết áp,Ổn định huyết áp
+Yến mạch + trái cây ít natri,Táo,Xôi gấc; Bò xào nhẹ; Canh rau ngót,Canh rau ngót thịt băm chay; Tôm nướng,Không chay,Cao huyết áp,Ổn định huyết áp
 Bánh mì đen + trứng ốp la,Sữa chua Hy Lạp không đường,Đậu bắp luộc chấm mắm ruốc; Bánh mì; Canh cá nấu rau,Lẩu ếch măng chua; Trứng luộc; Salad trộn ít dầu,Không chay,Tiểu đường,Ổn định đường huyết
 Ngũ cốc nguyên hạt + sữa hạt,Thanh protein,Chân giò hầm hạt sen; Bún; Tôm nướng,Bún bò Huế; Rau muống xào tỏi,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Khoai lang hấp,Hạt điều,Chà bông chay; Cà tím nướng xạ hương chay; Canh bí đỏ,Phở hấp/luộc phồng chay; Cải thìa xào,chay,Cao huyết áp,Ổn định huyết áp
@@ -441,9 +441,9 @@ Bánh mì nguyên cám + trứng,Hạt điều không muối,Bánh cuốn nhân 
 Sữa chua Hy Lạp + chuối,Chuối,Đậu hũ sốt cà chua; Khoai lang; Cải thìa xào,Cơm gà Hội An; Salad trộn ít dầu,Không chay,Cao huyết áp,Ổn định huyết áp
 Yến mạch + trái cây ít natri,Rau củ luộc nhỏ,Xôi mặn; Trứng luộc; Cải thìa xào,Bún chả cá; Rau củ luộc,Không chay,Cao huyết áp,Ổn định huyết áp
 Sữa chua Hy Lạp + trái cây ít đường,Trứng luộc,Bánh tiêu nhân đậu xanh; Rau luộc; Canh chua,Súp cua trứng bắc thảo; Salad trộn ít dầu,Không chay,Bình thường,Tăng cân
-Yến mạch + sữa hạt,Đậu hũ non,Xôi đậu xanh; Canh rau ngót; Đậu hũ túi tiền chay,Canh rau ngót thịt băm; SALAD GIÁNG SINH - SALAD ĐẬU GÀ THUẦN CHAY; Rau củ luộc,chay,Béo phì,Giảm cân
+Yến mạch + sữa hạt,Đậu hũ non,Xôi đậu xanh; Canh rau ngót; Đậu hũ túi tiền chay,Canh rau ngót thịt băm chay; SALAD GIÁNG SINH - SALAD ĐẬU GÀ THUẦN CHAY; Rau củ luộc,chay,Béo phì,Giảm cân
 Yến mạch + sữa hạt,Sữa chua thực vật,Súp lơ hấp/luộc nấm lộc nhung (món chay); Rau củ xào giò nấm chay; Đậu phụ sốt,hấp/luộc chay ngũ sắc; Vegan Spaghetti Bolognese/ Mỳ Ý chay; Phở Sắn Trộn Chay,chay,Tiểu đường,Ổn định đường huyết
-Trứng luộc + rau củ hấp,Sữa chua Hy Lạp,Canh rau ngót thịt băm; Khoai lang; Dưa góp,Canh gà lá giang; Cá hấp,Không chay,Bình thường,Giữ cân
+Trứng luộc + rau củ hấp,Sữa chua Hy Lạp,Canh rau ngót thịt băm chay; Khoai lang; Dưa góp,Canh gà lá giang; Cá hấp,Không chay,Bình thường,Giữ cân
 Ngũ cốc nguyên hạt + sữa hạt,Sữa chua thực vật,Hoành thánh chay chiên; Chả chay kho riềng; Heo quay chay (cách làm đơn giản),Canh chay đậu hủ nấu mướp và rau; Rau muống xào tỏi,chay,Cao huyết áp,Ổn định huyết áp
 Bánh mì đen + trứng ốp la,Phô mai ít béo,Bánh bèo Huế; Ức gà áp chảo; Rau củ luộc,Cơm gà Hội An; Canh rau ngót,Không chay,Tiểu đường,Ổn định đường huyết
 Khoai lang hấp + sữa hạt,Hạt hỗn hợp,Bánh cuốn nhân thịt; Rau luộc; Canh cá nấu rau,Lẩu mắm miền Tây; Trứng luộc; Salad trộn ít dầu,Không chay,Bình thường,Giữ cân
@@ -461,7 +461,7 @@ Sữa chua Hy Lạp + trái cây ít đường,Thanh protein,Thịt ba chỉ lu�
 Yến mạch + trái cây ít natri,Hạt điều không muối,Thịt ba chỉ luộc chấm mắm tép; Bún; Canh cá nấu rau,Cơm nắm muối mè; Cải thìa xào; Trứng luộc,Không chay,Cao huyết áp,Ổn định huyết áp
 Đậu hũ xào rau củ,Đậu hũ non,Vegan Spaghetti Bolognese/ Mỳ Ý chay; Chà bông chay từ củ sắn; Bông Kim Châm Kho Rau Củ Chay,Cookie Bơ Đậu Phộng Thuần Chay; Rau luộc; Sườn non chay chiên ngũ vị,chay,Cao huyết áp,Ổn định huyết áp
 Bánh mì nguyên cám + trứng ốp la,Thanh protein,Thịt ba chỉ luộc chấm mắm tép; Khoai lang; Canh chua,Tôm hấp bia; Canh rau ngót,Không chay,Mỡ trong máu,Giảm mỡ trong máu
-Bánh mì nguyên cám + trứng ốp la,Trái cây ít đường,Hủ tiếu Mỹ Tho; Cá hấp; Rau luộc,Canh rau ngót thịt băm; Tôm nướng,Không chay,Bình thường,Giữ cân
+Bánh mì nguyên cám + trứng ốp la,Trái cây ít đường,Hủ tiếu Mỹ Tho; Cá hấp; Rau luộc,Canh rau ngót thịt băm chay; Tôm nướng,Không chay,Bình thường,Giữ cân
 Sữa chua Hy Lạp + trái cây ít đường,Trứng luộc,Bánh ướt chả lụa; Trứng luộc; Canh rau ngót,Rau muống xào tỏi; Đậu phụ hấp,Không chay,Bình thường,Tăng cân
 Yến mạch + hạt chia,Hạt hạnh nhân,Bánh mì chả cá; Canh rau ngót; Canh cá nấu rau,Hủ tiếu bò kho; Rau luộc,Không chay,Tiểu đường,Ổn định đường huyết
 Sữa chua thực vật + trái cây,Hạt điều,Lẩu nấm chay; Phở hấp/luộc phồng chay; Rau muống xào tỏi,Chả cốm chay; Rau luộc; Phở Sắn Trộn Nấm Hầu Thủ Chay,chay,Tiểu đường,Ổn định đường huyết
@@ -489,7 +489,7 @@ Yến mạch + trái cây ít natri,Táo,Cơm niêu cá kho tộ; Canh rau ngót
 Bánh mì nguyên cám + trứng,Táo,Bún riêu cua; Bò xào nhẹ; Rau muống xào tỏi,Bánh mì trứng ốp la; Rau củ luộc,Không chay,Cao huyết áp,Ổn định huyết áp
 Trứng luộc + rau củ hấp,Sữa chua Hy Lạp không đường,Sandwich trứng; Bánh mì; Rau muống xào tỏi,Lẩu gà lá é; Rau muống xào tỏi,Không chay,Tiểu đường,Ổn định đường huyết
 Yến mạch + trái cây ít natri,Rau củ luộc nhỏ,Bánh bông lan trứng muối; Canh rau ngót; Canh bí đỏ,Tôm hấp bia; Rau muống xào tỏi,Không chay,Cao huyết áp,Ổn định huyết áp
-Khoai lang hấp + sữa hạt,Sữa chua Hy Lạp,Canh rau ngót thịt băm; Miến; Trái cây ít đường,Bánh rán Doraemon; Rau luộc; Trứng luộc,Không chay,Béo phì,Giảm cân
+Khoai lang hấp + sữa hạt,Sữa chua Hy Lạp,Canh rau ngót thịt băm chay; Miến; Trái cây ít đường,Bánh rán Doraemon; Rau luộc; Trứng luộc,Không chay,Béo phì,Giảm cân
 Đậu hũ xào rau củ,Sữa chua thực vật,Canh cá nấu rau; Rau luộc; Canh bí đỏ,Canh chay đậu hủ nấu mướp và rau; Cải thìa xào; Canh chua chay nấm rơm,chay,Bình thường,Giữ cân
 Bánh mì nguyên cám + trứng ốp la,Thanh protein,Canh đậu hũ non hải sản; Bánh mì; Kim chi ít cay,Bánh bèo Huế; Ức gà áp chảo; Canh rau ngót,Không chay,Gầy yếu,Tăng cân
 Yến mạch + sữa hạt + chuối,Sữa chua Hy Lạp,Bún mắm miền Tây; Bò xào nhẹ; Rau luộc,Bánh mì thịt nguội; Rau luộc,Không chay,Mỡ trong máu,Giảm mỡ trong máu
@@ -506,27 +506,27 @@ Sữa chua Hy Lạp + dâu,Sữa chua Hy Lạp không đường,Lẩu vịt nấ
 Khoai lang hấp,Táo,Đậu hũ sốt cà chua; Bánh mì; Canh rau ngót,Xôi mặn; Cải thìa xào; Tôm nướng,Không chay,Cao huyết áp,Ổn định huyết áp
 Ngũ cốc nguyên hạt + sữa hạt,Trái cây ít đường,Cơm Chiên Bí Đỏ Chay; Cơm Chiên Bí Đỏ Chay; Rau muống xào tỏi,Cháo Đậu Xanh Ăn Với Đậu Tẩm Hành Chay; Món chay: khoai tây hấp/luộc hành; Cải thìa xào,chay,Cao huyết áp,Ổn định huyết áp
 Yến mạch + sữa hạt,Đậu hũ non,Củ cải đậu kho (chay eatclean 218kcal); Canh Lạc Bí Xanh Chay; Rau củ luộc,Đậu bắp luộc chấm mắm ruốc; Bún đậu gạo lứt mắm tôm chay,chay,Cao huyết áp,Ổn định huyết áp
-Yến mạch + hạt chia,Dâu tây,Canh rau ngót thịt băm; Bún; Trái cây ít đường,Bánh cam đường; Cá hấp; Canh rau ngót,Không chay,Tiểu đường,Ổn định đường huyết
+Yến mạch + hạt chia,Dâu tây,Canh rau ngót thịt băm chay; Bún; Trái cây ít đường,Bánh cam đường; Cá hấp; Canh rau ngót,Không chay,Tiểu đường,Ổn định đường huyết
 Yến mạch + trái cây ít natri,Rau củ luộc nhỏ,Hủ tiếu bò kho; Rau muống xào tỏi; Canh mồng tơi,Cơm ba chỉ kho tàu; Rau luộc; Cá hấp,Không chay,Cao huyết áp,Ổn định huyết áp
 Khoai lang hấp + sữa hạt,Trái cây ít đường,Nghêu hấp sả; Bún; Bò xào nhẹ,Bún riêu cua; Ức gà áp chảo; Salad trộn ít dầu,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Sữa chua Hy Lạp + dâu,Hạt hạnh nhân,Cơm chiên hải sản; Rau củ luộc; Canh chua,Hủ tiếu Nam Vang; Đậu phụ sốt; Cải thìa xào,Không chay,Tiểu đường,Ổn định đường huyết
 Khoai lang hấp + sữa hạt,Thanh protein,Bánh bèo Huế; Đậu phụ sốt; Rau củ luộc,Rau muống xào tỏi; Đậu phụ hấp,Không chay,Gầy yếu,Tăng cân
 Ngũ cốc nguyên hạt + sữa hạt,Hạt điều,Bún riêu chay; Heo quay chay; Canh rau ngót,Xào chay thập cẩm với nấm bào ngư; Rau muống xào tỏi,chay,Tiểu đường,Ổn định đường huyết
-Ngũ cốc nguyên hạt + sữa hạt,Sữa chua thực vật,Canh rau ngót thịt băm; Đậu phụ sốt; Rau củ luộc,Giò heo cuộn chiên giòn (món chay); Rau muống xào tỏi,chay,Mỡ trong máu,Giảm mỡ trong máu
+Ngũ cốc nguyên hạt + sữa hạt,Sữa chua thực vật,Canh rau ngót thịt băm chay; Đậu phụ sốt; Rau củ luộc,Giò heo cuộn chiên giòn (món chay); Rau muống xào tỏi,chay,Mỡ trong máu,Giảm mỡ trong máu
 Sữa chua Hy Lạp + chuối,Chuối,Cơm sườn nướng mật ong; Rau muống xào tỏi; Canh chua,Bò xào cần tỏi; Ức gà áp chảo,Không chay,Cao huyết áp,Ổn định huyết áp
 Sữa chua Hy Lạp + trái cây ít đường,Sữa chua Hy Lạp,Sandwich trứng; Bún; Rau luộc,Bánh mì trứng ốp la; Rau củ luộc,Không chay,Bình thường,Giảm cân
 Yến mạch + hạt chia,Dâu tây,Rau muống xào tỏi; Miến; Trứng luộc,Cháo lòng; Tôm nướng; Rau củ luộc,Không chay,Tiểu đường,Ổn định đường huyết
 Yến mạch + sữa hạt + chuối,Hạt hỗn hợp,Canh cua mồng tơi; Khoai lang; Tôm nướng,Canh chua cá lóc; Salad trộn ít dầu,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Sữa chua Hy Lạp + chuối,Chuối,Miến măng vịt; Cá hấp; Cải thìa xào,Sườn non rim nước dừa; Rau muống xào tỏi,Không chay,Cao huyết áp,Ổn định huyết áp
-Đậu hũ xào rau củ,Hạt điều,Canh rau ngót thịt băm; Canh rau ngót; Cháo nấm chay,Chà bông chay từ củ sắn; Nấm xào,chay,Bình thường,Giữ cân
+Đậu hũ xào rau củ,Hạt điều,Canh rau ngót thịt băm chay; Canh rau ngót; Cháo nấm chay,Chà bông chay từ củ sắn; Nấm xào,chay,Bình thường,Giữ cân
 Trứng luộc + rau củ hấp,Hạt hỗn hợp,Bánh tiêu nhân đậu xanh; Rau muống xào tỏi; Canh mồng tơi,Chân giò hầm hạt sen; Đậu phụ sốt; Rau củ luộc,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Khoai lang hấp + sữa hạt,Trứng luộc,Cháo sườn; Cải thìa xào; Canh bí đỏ,Cháo gà; Rau luộc,Không chay,Bình thường,Tăng cân
 Sữa chua Hy Lạp + chuối,Rau củ luộc nhỏ,Canh kim chi Hàn Quốc; Khoai lang; Cá hấp,Đậu hũ sốt cà chua; Rau muống xào tỏi,Không chay,Cao huyết áp,Ổn định huyết áp
 Sữa chua Hy Lạp + trái cây ít đường,Trái cây ít đường,Chân giò hầm hạt sen; Bún; Đậu phụ sốt,Canh chua cá lóc; Rau củ luộc,Không chay,Mỡ trong máu,Giảm mỡ trong máu
-Khoai lang hấp + sữa hạt,Thanh protein,Cháo vịt; Ức gà áp chảo; Rau củ luộc,Canh rau ngót thịt băm; Trứng luộc,Không chay,Gầy yếu,Tăng cân
+Khoai lang hấp + sữa hạt,Thanh protein,Cháo vịt; Ức gà áp chảo; Rau củ luộc,Canh rau ngót thịt băm chay; Trứng luộc,Không chay,Gầy yếu,Tăng cân
 Bánh mì nguyên cám + trứng,Chuối,Trứng hấp Hàn Quốc; Phở; Rau muống xào tỏi,Cơm rang dưa bò; Ức gà áp chảo,Không chay,Cao huyết áp,Ổn định huyết áp
 Trứng luộc + rau củ hấp,Dâu tây,Lòng non xào dưa chua; Bánh mì; Ức gà áp chảo,Mực xào sa tếCá basa sốt cà chua; Rau luộc,Không chay,Tiểu đường,Ổn định đường huyết
-Sinh tố protein whey,Trái cây ít đường,Canh rau ngót thịt băm; Cơm trắng; Dưa góp,Cơm rang dưa bò; Cá hấp,Không chay,Bình thường,Giảm cân
+Sinh tố protein whey,Trái cây ít đường,Canh rau ngót thịt băm chay; Cơm trắng; Dưa góp,Cơm rang dưa bò; Cá hấp,Không chay,Bình thường,Giảm cân
 Yến mạch + hạt chia,Dâu tây,Canh cua mồng tơi; Miến; Ức gà áp chảo,Cháo gà; Canh rau ngót; Cơm trắng ít,Không chay,Tiểu đường,Ổn định đường huyết
 Khoai lang hấp + sữa hạt,Sữa chua Hy Lạp,Cơm rang dưa bò; Canh chua; Đậu phụ hấp,Sandwich cá ngừ; Rau luộc,Không chay,Bình thường,Giảm cân
 Sinh tố protein whey,Trứng luộc,Cơm gà Hội An; Salad trộn ít dầu; Canh mồng tơi,Mực xào sa tếCá basa sốt cà chua; Ức gà áp chảo,Không chay,Bình thường,Tăng cân
@@ -554,7 +554,7 @@ Khoai lang hấp + sữa hạt,Sữa chua Hy Lạp,Lẩu vịt nấu chao; Bánh
 Sinh tố protein whey,Thanh protein,Bánh mì heo quay; Cải thìa xào; Canh mồng tơi,Canh cua mồng tơi; Trứng luộc,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Yến mạch + sữa hạt,Trái cây ít đường,Canh đậu hũ non hải sản; Cá chay sốt cà chua; Miến dong xào chay,Chà bông chay; Cháo Gạo Lứt Đậu Đỏ Chay; Canh đậu hũ non hải sản,chay,Mỡ trong máu,Giảm mỡ trong máu
 Yến mạch + trái cây ít natri,Hạt điều không muối,Canh gà lá giang; Khoai lang; Kim chi ít cay,Cháo vịt; Ức gà áp chảo; Rau muống xào tỏi,Không chay,Cao huyết áp,Ổn định huyết áp
-Khoai lang hấp + sữa hạt,Sữa chua Hy Lạp,Bánh cuốn Thanh Trì; Tôm nướng; Cải thìa xào,Canh rau ngót thịt băm; Canh rau ngót,Không chay,Bình thường,Giữ cân
+Khoai lang hấp + sữa hạt,Sữa chua Hy Lạp,Bánh cuốn Thanh Trì; Tôm nướng; Cải thìa xào,Canh rau ngót thịt băm chay; Canh rau ngót,Không chay,Bình thường,Giữ cân
 Khoai lang hấp,Rau củ luộc nhỏ,Xôi đậu xanh; Cải thìa xào; Canh cá nấu rau,Bánh ướt chả lụa; Ức gà áp chảo; Rau luộc,Không chay,Cao huyết áp,Ổn định huyết áp
 Ngũ cốc nguyên hạt + sữa hạt,Trái cây ít đường,Cá lóc hấp bầu; Miến; Rau củ luộc,Cơm chiên hải sản; Rau muống xào tỏi,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Ngũ cốc nguyên hạt + sữa hạt,Trái cây ít đường,Cá chay sốt cà chua; Đậu hũ sốt cà chua; Rau củ luộc,Chà bông chay từ củ sắn; Cải thìa xào; Gỏi KHỔ QUA chay,chay,Bình thường,Giữ cân
@@ -570,7 +570,7 @@ Khoai lang hấp,Đậu hũ non,Mực xào sa tế (món chay); Rau luộc; Canh
 Bánh mì nguyên cám + trứng,Táo,Xôi lá cẩm; Bò xào nhẹ; Cải thìa xào,Sandwich trứng; Cải thìa xào,Không chay,Cao huyết áp,Ổn định huyết áp
 Trứng luộc + rau củ hấp,Trứng luộc,Bánh khoai mì nướng; Cá hấp; Rau củ luộc,Cơm sườn nướng mật ong; Rau luộc,Không chay,Bình thường,Giảm cân
 Bánh mì nguyên cám + trứng ốp la,Trứng luộc,Xôi bắp; Tôm nướng; Rau củ luộc,Bánh cuốn nhân thịt; Rau luộc,Không chay,Bình thường,Giữ cân
-Khoai lang hấp,Sữa chua Hy Lạp không đường,Canh rau ngót thịt băm; Cơm trắng; Kim chi ít cay,Phở gà; Rau luộc,Không chay,Tiểu đường,Ổn định đường huyết
+Khoai lang hấp,Sữa chua Hy Lạp không đường,Canh rau ngót thịt băm chay; Cơm trắng; Kim chi ít cay,Phở gà; Rau luộc,Không chay,Tiểu đường,Ổn định đường huyết
 Ngũ cốc nguyên hạt + sữa hạt,Thanh protein,Bún chả cá; Salad trộn ít dầu; Canh mồng tơi,Canh măng nấu vịt; Cá hấp,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Trứng luộc + rau củ hấp,Hạt hỗn hợp,Lẩu riêu cua bắp bò; Bánh mì; Canh rau ngót,Hủ tiếu Mỹ Tho; Trứng luộc; Canh rau ngót,Không chay,Bình thường,Giảm cân
 Bánh mì đen + trứng ốp la,Sữa chua Hy Lạp không đường,Bánh khoai mì nướng; Tôm nướng; Cải thìa xào,Bún mắm miền Tây; Ức gà áp chảo; Rau luộc,Không chay,Tiểu đường,Ổn định đường huyết
@@ -626,7 +626,7 @@ Sữa chua Hy Lạp + dâu,Hạt hạnh nhân,Bánh căn Đà Lạt; Trứng lu�
 Yến mạch + trái cây ít natri,Rau củ luộc nhỏ,Đậu hũ sốt cà chua; Khoai lang; Cải thìa xào,Bánh mì heo quay; Rau củ luộc,Không chay,Cao huyết áp,Ổn định huyết áp
 Bánh mì nguyên cám + trứng ốp la,Hạt hỗn hợp,Miến lươn; Đậu phụ sốt; Rau luộc,Cơm sườn nướng mật ong; Rau củ luộc,Không chay,Bình thường,Giữ cân
 Bánh mì nguyên cám + trứng ốp la,Trái cây ít đường,Xôi gấc; Tôm nướng; Rau củ luộc,Cháo vịt; Đậu phụ sốt; Rau củ luộc,Không chay,Bình thường,Giảm cân
-Khoai lang hấp + sữa hạt,Trứng luộc,Tôm rim mặn ngọt; Bún; Rau củ luộc,Canh rau ngót thịt băm; Rau củ luộc,Không chay,Bình thường,Giữ cân
+Khoai lang hấp + sữa hạt,Trứng luộc,Tôm rim mặn ngọt; Bún; Rau củ luộc,Canh rau ngót thịt băm chay; Rau củ luộc,Không chay,Bình thường,Giữ cân
 Sữa chua Hy Lạp + dâu,Sữa chua Hy Lạp không đường,Súp gà nấm đông cô; Phở; Salad trộn ít dầu,Bún bò Huế; Canh rau ngót; Cơm trắng ít,Không chay,Tiểu đường,Ổn định đường huyết
 Yến mạch + trái cây ít natri,Rau củ luộc nhỏ,Xôi đậu xanh; Cải thìa xào; Canh chua,Xôi đậu xanh; Cải thìa xào,Không chay,Cao huyết áp,Ổn định huyết áp
 Bánh mì nguyên cám + trứng ốp la,Trái cây ít đường,Canh bí đỏ hầm xương; Cơm trắng; Trứng luộc,Xôi gấc; Rau muống xào tỏi; Cá hấp,Không chay,Bình thường,Giảm cân
@@ -684,7 +684,7 @@ Yến mạch + sữa hạt,Trái cây ít đường,Bún riêu chay; Rau muống
 Ngũ cốc nguyên hạt + sữa hạt,Trứng luộc,Bún riêu chay; Salad trộn ít dầu; Canh chua,SALAD GIÁNG SINH - SALAD ĐẬU GÀ THUẦN CHAY; Đậu phụ sốt,Không chay,Bình thường,Tăng cân
 Khoai lang hấp,Trái cây ít đường,Chà bông chay từ củ sắn; Đậu phụ sốt; Rau muống xào tỏi,Canh Miso Nấm Đậu Hũ Non Chay; Khổ qua kho chay,chay,Cao huyết áp,Ổn định huyết áp
 Sữa chua Hy Lạp + chuối,Rau củ luộc nhỏ,Bánh xèo miền Tây; Bò xào nhẹ; Rau muống xào tỏi,Bánh xèo miền Trung; Tôm nướng; Canh rau ngót,Không chay,Cao huyết áp,Ổn định huyết áp
-Yến mạch + sữa hạt + chuối,Trái cây ít đường,Cơm hấp/luộc dương châu; Canh bí đỏ; Dưa góp,Canh rau ngót thịt băm; Rau luộc,Không chay,Bình thường,Tăng cân
+Yến mạch + sữa hạt + chuối,Trái cây ít đường,Cơm hấp/luộc dương châu; Canh bí đỏ; Dưa góp,Canh rau ngót thịt băm chay; Rau luộc,Không chay,Bình thường,Tăng cân
 Yến mạch + sữa hạt + chuối,Trứng luộc,Bánh mì heo quay; Canh rau ngót; Canh mồng tơi,Cơm rang dưa bò; Trứng luộc,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Bánh mì nguyên cám + trứng,Hạt điều không muối,Canh măng nấu vịt; Bún; Tôm nướng,Canh khoai mỡ tôm tươi; Cải thìa xào,Không chay,Cao huyết áp,Ổn định huyết áp
 Bánh mì nguyên cám + trứng ốp la,Trái cây ít đường,Gỏi cuốn tôm thịt; Bánh mì; Canh bí đỏ,Bún riêu cua; Tôm nướng; Salad trộn ít dầu,Không chay,Bình thường,Giảm cân
@@ -711,7 +711,7 @@ Ngũ cốc nguyên hạt + sữa hạt,Thanh protein,Miến măng vịt; Ức g�
 Yến mạch + trái cây ít natri,Chuối,Bánh mì trứng ốp la; Rau muống xào tỏi; Canh mồng tơi,Bánh xèo miền Tây; Đậu phụ sốt; Salad trộn ít dầu,Không chay,Cao huyết áp,Ổn định huyết áp
 Đậu hũ xào rau củ,Hạt điều,Đậu phụ sốt; Đậu phụ sốt; Cải thìa xào,Đậu hũ sốt cà chua; Cà Tím Nướng Sốt Dầu Hành Nước Tương Chay (Vegan); Rau muống xào tỏi,chay,Cao huyết áp,Ổn định huyết áp
 Sữa chua Hy Lạp + chuối,Chuối,Bò xào cần tỏi; Miến; Canh mồng tơi,Lẩu tôm chua cay; Cải thìa xào,Không chay,Cao huyết áp,Ổn định huyết áp
-Sữa chua thực vật + trái cây,Hạt điều,Miến dong xào chay; Củ Quả Kho Chay; Rau luộc,Canh rau ngót thịt băm; Cơm hấp/luộc rong biển cá mặn chay,chay,Cao huyết áp,Ổn định huyết áp
+Sữa chua thực vật + trái cây,Hạt điều,Miến dong xào chay; Củ Quả Kho Chay; Rau luộc,Canh rau ngót thịt băm chay; Cơm hấp/luộc rong biển cá mặn chay,chay,Cao huyết áp,Ổn định huyết áp
 Sữa chua Hy Lạp + chuối,Táo,Hủ tiếu bò kho; Rau muống xào tỏi; Canh cá nấu rau,Hủ tiếu bò kho; Rau muống xào tỏi,Không chay,Cao huyết áp,Ổn định huyết áp
 Trứng luộc + rau củ hấp,Trái cây ít đường,Trứng hấp Hàn Quốc; Khoai lang; Salad trộn ít dầu,Súp cua trứng bắc thảo; Rau củ luộc,Không chay,Gầy yếu,Tăng cân
 Ngũ cốc nguyên hạt + sữa hạt,Trái cây ít đường,Mì lá tươi cuộn chay; Vịt quay chay; Đậu hũ sốt cà chua,Bún đậu gạo lứt mắm tôm chay; Đậu phụ sốt; Cải thìa xào,chay,Cao huyết áp,Ổn định huyết áp
@@ -760,7 +760,7 @@ Khoai lang hấp,Táo,Bánh khọt Vũng Tàu; Đậu phụ sốt; Cải thìa x
 Trứng luộc + rau củ hấp,Dâu tây,Bún thang; Đậu phụ sốt; Rau luộc,Canh đậu hũ non hải sản; Tôm nướng,Không chay,Tiểu đường,Ổn định đường huyết
 Ngũ cốc nguyên hạt + sữa hạt,Sữa chua thực vật,Mì chay sốt dầu mè; Canh rau ngót; Sườn chay kho nước tương mè rang,Bông Bí Xào Tỏi Chay; Rau luộc; Cuốn chay chấm bơ hạt điều,chay,Cao huyết áp,Ổn định huyết áp
 Khoai lang hấp,Dâu tây,Bò xào cần tỏi; Khoai lang; Canh cá nấu rau,Bánh pancake mật ong; Trứng luộc; Cải thìa xào,Không chay,Tiểu đường,Ổn định đường huyết
-Khoai lang hấp,Trái cây ít đường,Canh rau ngót thịt băm; Đậu Hủ Xào Măng Tre Tương Hột Chay (Vegan); Chả nấm chay,Canh chay rong biển đậu hủ nấm kim châm; Rau củ luộc,chay,Bình thường,Giữ cân
+Khoai lang hấp,Trái cây ít đường,Canh rau ngót thịt băm chay; Đậu Hủ Xào Măng Tre Tương Hột Chay (Vegan); Chả nấm chay,Canh chay rong biển đậu hủ nấm kim châm; Rau củ luộc,chay,Bình thường,Giữ cân
 Khoai lang hấp,Sữa chua thực vật,Món Chay Cải Mầm Trộn Nấm Hương Và Tàu Hủ Ky; Gỏi bóng cá chay trộn gỏi dưa leo siêu dễ làm; Củ cải đậu kho (chay eatclean 218kcal),Mì Ý Dẹp Capellini Xào Nấm Mỡ & Lá Súp Lơ Trắng (Vegan); Rau muống xào tỏi,chay,Cao huyết áp,Ổn định huyết áp
 Bánh mì nguyên cám + trứng ốp la,Hạt hỗn hợp,Cá lóc hấp bầu; Cơm trắng; Rau luộc,Trứng hấp Hàn Quốc; Cải thìa xào,Không chay,Bình thường,Tăng cân
 Yến mạch + trái cây ít natri,Táo,Hủ tiếu bò kho; Rau muống xào tỏi; Canh bí đỏ,Trứng hấp Hàn Quốc; Cải thìa xào,Không chay,Cao huyết áp,Ổn định huyết áp
@@ -777,7 +777,7 @@ Bánh mì đen + trứng ốp la,Sữa chua Hy Lạp không đường,Cơm nắm
 Yến mạch + hạt chia,Hạt hạnh nhân,Tôm hấp bia; Bánh mì; Rau củ luộc,Bạch tuộc xào cay Hàn Quốc; Cá hấp,Không chay,Tiểu đường,Ổn định đường huyết
 Bánh mì nguyên cám + trứng ốp la,Trái cây ít đường,Chả lá lốt hấp; Miến; Cá hấp,Bánh căn Đà Lạt; Ức gà áp chảo; Rau luộc,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Yến mạch + sữa hạt,Trái cây ít đường,Nem Thính Rong Sụn Chay; Canh chua đậu hủ chay; Đậu phụ sốt,Cà tím cuộn đậu hũ hấp (món chay); Rau muống xào tỏi; Cốt lết chay kho tiêu,chay,Cao huyết áp,Ổn định huyết áp
-Đậu hũ xào rau củ,Đậu hũ non,Canh đậu hũ non hải sản; Nấm Rơm Kho Tiêu Xanh Chay; Canh rau ngót,Canh rau ngót thịt băm; Rau luộc,chay,Mỡ trong máu,Giảm mỡ trong máu
+Đậu hũ xào rau củ,Đậu hũ non,Canh đậu hũ non hải sản; Nấm Rơm Kho Tiêu Xanh Chay; Canh rau ngót,Canh rau ngót thịt băm chay; Rau luộc,chay,Mỡ trong máu,Giảm mỡ trong máu
 Trứng luộc + rau củ hấp,Phô mai ít béo,Xôi đậu xanh; Salad trộn ít dầu; Canh chua,Xôi gấc; Canh rau ngót; Đậu phụ hấp,Không chay,Tiểu đường,Ổn định đường huyết
 Sữa chua Hy Lạp + trái cây ít đường,Sữa chua Hy Lạp,Bánh pancake mật ong; Trứng luộc; Cải thìa xào,Cháo lòng; Ức gà áp chảo; Rau củ luộc,Không chay,Bình thường,Tăng cân
 Khoai lang hấp + sữa hạt,Sữa chua Hy Lạp,Lẩu nấm chay; Cơm gạo lứt; Rau luộc,Đậu hũ sốt cà chua; Cải thìa xào,Không chay,Bình thường,Tăng cân
@@ -785,7 +785,7 @@ Sữa chua Hy Lạp + trái cây ít đường,Sữa chua Hy Lạp,Canh cà chua
 Khoai lang hấp,Hạt điều,Canh Rong Mứt Chay; Chả giò chay; Cải Xoong Trộn Mè Rang - Món Banchan Hàn Quốc (Vegan),Rau muống xào tỏi; Cơm Chiên Chay Trái Thơm,chay,Tiểu đường,Ổn định đường huyết
 Sữa chua Hy Lạp + chuối,Hạt điều không muối,Canh gà lá giang; Phở; Đậu phụ hấp,Cơm ba chỉ kho tàu; Rau muống xào tỏi; Trứng luộc,Không chay,Cao huyết áp,Ổn định huyết áp
 Khoai lang hấp,Sữa chua Hy Lạp không đường,Lẩu cá kèo lá giang; Miến; Rau muống xào tỏi,Bún riêu cua; Tôm nướng; Cải thìa xào,Không chay,Tiểu đường,Ổn định đường huyết
-Yến mạch + sữa hạt,Sữa chua thực vật,Canh rau ngót thịt băm; Canh Lá Tỏi Gấu Đậu Hủ (Vegan); Đậu phụ sốt,Phở hấp/luộc phồng chay; Canh Nấm Mỡ Cần Tây Chay (Vegan); Canh rau ngót thịt băm,chay,Bình thường,Giảm cân
+Yến mạch + sữa hạt,Sữa chua thực vật,Canh rau ngót thịt băm chay; Canh Lá Tỏi Gấu Đậu Hủ (Vegan); Đậu phụ sốt,Phở hấp/luộc phồng chay; Canh Nấm Mỡ Cần Tây Chay (Vegan); Canh rau ngót thịt băm chay,chay,Bình thường,Giảm cân
 Trứng luộc + rau củ hấp,Phô mai ít béo,Mực xào sa tếCá basa sốt cà chua; Bún; Canh cá nấu rau,Canh cà chua trứng; Cải thìa xào,Không chay,Tiểu đường,Ổn định đường huyết
 Khoai lang hấp + sữa hạt,Sữa chua Hy Lạp,Cháo sườn; Salad trộn ít dầu; Canh chua,Bún riêu cua; Tôm nướng; Salad trộn ít dầu,Không chay,Bình thường,Giữ cân
 Bánh mì nguyên cám + trứng,Táo,Bánh bèo Huế; Bò xào nhẹ; Cải thìa xào,Bò xào cần tỏi; Rau củ luộc,Không chay,Cao huyết áp,Ổn định huyết áp
@@ -809,7 +809,7 @@ Sinh tố protein whey,Trái cây ít đường,Xôi gấc; Cá hấp; Canh rau 
 Yến mạch + hạt chia,Dâu tây,Bánh cuốn nhân thịt; Cải thìa xào; Canh bí đỏ,Bún riêu cua; Ức gà áp chảo; Cải thìa xào,Không chay,Tiểu đường,Ổn định đường huyết
 Yến mạch + sữa hạt,Trái cây ít đường,Mì lứt chay; Canh Bông Hẹ Đậu Hũ (Món Chay); Rau luộc,Nấm Mỡ hấp/luộc Cần Tây (Vegan); hấp/luộc chay ngũ sắc; Canh rau ngót,chay,Mỡ trong máu,Giảm mỡ trong máu
 Ngũ cốc nguyên hạt + sữa hạt,Sữa chua thực vật,Canh Súp Mandu Rong Biển Đậu Hủ Chay; Măng kho đậu hũ chay; Đậu phụ hấp,Cháo nấm chay; Khô cá lóc chay; Cải thìa xào,chay,Cao huyết áp,Ổn định huyết áp
-Yến mạch + trái cây ít natri,Rau củ luộc nhỏ,Cơm chiên dương châu; Trứng luộc; Salad trộn ít dầu,Canh rau ngót thịt băm; Bò xào nhẹ,Không chay,Cao huyết áp,Ổn định huyết áp
+Yến mạch + trái cây ít natri,Rau củ luộc nhỏ,Cơm chiên dương châu; Trứng luộc; Salad trộn ít dầu,Canh rau ngót thịt băm chay; Bò xào nhẹ,Không chay,Cao huyết áp,Ổn định huyết áp
 Trứng luộc + rau củ hấp,Trái cây ít đường,Bánh mì pate; Ức gà áp chảo; Canh rau ngót,Bánh mì thịt nguội; Rau luộc,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Bánh mì nguyên cám + trứng ốp la,Trứng luộc,Miến lươn; Tôm nướng; Canh rau ngót,Phở gà; Salad trộn ít dầu; Cơm trắng ít,Không chay,Bình thường,Giảm cân
 Yến mạch + sữa hạt,Hạt điều,Bò kho bánh mì chay; CHẢ lạnh chay; Chà bông (ruốc) chay lúa mạch,Canh Rong Mứt Chay; Bánh tiêu nhân đậu xanh,chay,Cao huyết áp,Ổn định huyết áp
@@ -885,7 +885,7 @@ Bánh mì đen + trứng ốp la,Phô mai ít béo,Bánh mì pate; Tôm nướng
 Sữa chua Hy Lạp + trái cây ít đường,Hạt hỗn hợp,Đậu bắp luộc chấm mắm ruốc; Khoai lang; Canh mồng tơi,Trứng hấp Hàn Quốc; Canh rau ngót,Không chay,Bình thường,Tăng cân
 Yến mạch + trái cây ít natri,Rau củ luộc nhỏ,Bánh xèo miền Trung; Bò xào nhẹ; Rau muống xào tỏi,Bánh tiêu nhân đậu xanh; Cải thìa xào; Khoai lang nhỏ,Không chay,Cao huyết áp,Ổn định huyết áp
 Sữa chua Hy Lạp + chuối,Rau củ luộc nhỏ,Cháo vịt; Tôm nướng; Rau muống xào tỏi,Cơm nắm muối mè; Rau luộc; Đậu phụ hấp,Không chay,Cao huyết áp,Ổn định huyết áp
-Ngũ cốc nguyên hạt + sữa hạt,Sữa chua thực vật,Bông Bí Xào Tỏi Chay; Miến Xào Nấm Lộc Nhung Chay; Rau củ luộc,Canh rau ngót thịt băm; Đậu phụ hấp,chay,Cao huyết áp,Ổn định huyết áp
+Ngũ cốc nguyên hạt + sữa hạt,Sữa chua thực vật,Bông Bí Xào Tỏi Chay; Miến Xào Nấm Lộc Nhung Chay; Rau củ luộc,Canh rau ngót thịt băm chay; Đậu phụ hấp,chay,Cao huyết áp,Ổn định huyết áp
 Ngũ cốc nguyên hạt + sữa hạt,Trứng luộc,Bánh pancake mật ong; Đậu phụ sốt; Cải thìa xào,Bánh ướt chả lụa; Trứng luộc; Rau luộc,Không chay,Gầy yếu,Tăng cân
 Khoai lang hấp,Hạt hạnh nhân,Cơm nắm muối mè; Đậu phụ sốt; Rau luộc,Bánh khọt Vũng Tàu; Cá hấp; Cải thìa xào,Không chay,Tiểu đường,Ổn định đường huyết
 Trứng luộc + rau củ hấp,Hạt hạnh nhân,Bún mắm miền Tây; Trứng luộc; Rau muống xào tỏi,Bún riêu cua; Ức gà áp chảo; Canh rau ngót,Không chay,Tiểu đường,Ổn định đường huyết
@@ -895,7 +895,7 @@ Bánh mì nguyên cám + trứng,Táo,Bún riêu cua; Tôm nướng; Canh rau ng
 Sữa chua Hy Lạp + dâu,Hạt hạnh nhân,Canh cua mồng tơi; Bún; Trứng luộc,Xôi bắp; Canh rau ngót; Cá hấp,Không chay,Tiểu đường,Ổn định đường huyết
 Sữa chua thực vật + trái cây,Trái cây ít đường,Bún chả cá chay; Bún xào chay; Đậu phụ sốt,Rau luộc; Khổ qua xào chay nửa vời; Bì Cuốn Nấm Chay,chay,Tiểu đường,Ổn định đường huyết
 Khoai lang hấp + sữa hạt,Trứng luộc,Cháo gà; Rau luộc; Canh bí đỏ,Phở gà; Canh rau ngót,Không chay,Bình thường,Giảm cân
-Khoai lang hấp,Đậu hũ non,Canh rau ngót thịt băm; Canh Nấm Bào Ngư Chay; Đậu phụ sốt,Viên tứ hỉ chay; Canh rau ngót; Sườn chay xào xả ớt,chay,Cao huyết áp,Ổn định huyết áp
+Khoai lang hấp,Đậu hũ non,Canh rau ngót thịt băm chay; Canh Nấm Bào Ngư Chay; Đậu phụ sốt,Viên tứ hỉ chay; Canh rau ngót; Sườn chay xào xả ớt,chay,Cao huyết áp,Ổn định huyết áp
 Sinh tố protein whey,Trái cây ít đường,Trứng hấp Hàn Quốc; Bún; Rau luộc,Canh măng nấu vịt; Cá hấp,Không chay,Bình thường,Tăng cân
 Khoai lang hấp + sữa hạt,Thanh protein,Bò hấp/luộc cần tỏi; Khoai lang; Canh cá nấu rau,Rau muống hấp/luộc tỏi; Ức gà áp chảo,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Trứng luộc + rau củ hấp,Trứng luộc,Súp cua trứng bắc thảo; Miến; Rau luộc,Lẩu cá kèo lá giang; Canh rau ngót,Không chay,Bình thường,Giảm cân
@@ -915,7 +915,7 @@ Ngũ cốc nguyên hạt + sữa hạt,Sữa chua Hy Lạp,Bún riêu cua; Ức 
 Ngũ cốc nguyên hạt + sữa hạt,Trái cây ít đường,Rau càng cua trộn chay; Sandwich cá ngừ chay; Rau luộc,Súp Măng Tây Trắng Nấm Tuyết Chay; Rau muống xào tỏi,chay,Cao huyết áp,Ổn định huyết áp
 Sữa chua Hy Lạp + chuối,Chuối,Bánh xèo miền Tây; Bò xào nhẹ; Cải thìa xào,Bánh pancake mật ong; Trứng luộc; Cải thìa xào,Không chay,Cao huyết áp,Ổn định huyết áp
 Sữa chua thực vật + trái cây,Sữa chua thực vật,Cải thìa xào; Mac & no-cheese (chay); Rau muống xào tỏi,Cải thìa sốt nấm đông cô và sườn gà chay; Đậu Hủ Xào Măng Tre Tương Hột Chay (Vegan); Salad Kiều Mạch Chay,chay,Cao huyết áp,Ổn định huyết áp
-Ngũ cốc nguyên hạt + sữa hạt,Sữa chua Hy Lạp,Bánh tráng cuốn thịt heo; Canh rau ngót; Canh cá nấu rau,Canh rau ngót thịt băm; Rau củ luộc,Không chay,Mỡ trong máu,Giảm mỡ trong máu
+Ngũ cốc nguyên hạt + sữa hạt,Sữa chua Hy Lạp,Bánh tráng cuốn thịt heo; Canh rau ngót; Canh cá nấu rau,Canh rau ngót thịt băm chay; Rau củ luộc,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Bánh mì nguyên cám + trứng,Táo,Bún chả cá; Salad trộn ít dầu; Canh mồng tơi,Hủ tiếu bò kho; Cải thìa xào,Không chay,Cao huyết áp,Ổn định huyết áp
 Khoai lang hấp,Hạt điều,Sườn chay dồn thịt chiên; Nấm xào; Rau muống xào tỏi,Canh măng chay; Rau muống xào tỏi,chay,Cao huyết áp,Ổn định huyết áp
 Đậu hũ xào rau củ,Đậu hũ non,Khoai tây kho chay; Cải thìa xào; Rau xào tam sắc (món chay),Canh rau diếp nấu nấm (món chay); Gỏi cuốn ngũ sắc chay; Rau muống xào tỏi,chay,Cao huyết áp,Ổn định huyết áp
@@ -945,17 +945,17 @@ Yến mạch + trái cây ít natri,Chuối,Tôm rim mặn ngọt; Bánh mì; Ca
 Trứng luộc + rau củ hấp,Dâu tây,Lẩu vịt nấu chao; Miến; Cá hấp,Bánh pancake mật ong; Đậu phụ sốt; Rau củ luộc,Không chay,Tiểu đường,Ổn định đường huyết
 Khoai lang hấp,Sữa chua thực vật,Nấm Rơm Kho Tiêu Xanh Chay; Rau muống xào tỏi; Canh bí đỏ hầm xương,Soup tóc tiên chay; Cải thìa xào,chay,Cao huyết áp,Ổn định huyết áp
 Sinh tố protein whey,Hạt hỗn hợp,Canh chua cá lóc; Miến; Đậu phụ hấp,Cháo gà; Cải thìa xào,Không chay,Bình thường,Tăng cân
-Trứng luộc + rau củ hấp,Thanh protein,Canh rau ngót thịt băm; Bún; Đậu phụ hấp,Hủ tiếu Nam Vang; Ức gà áp chảo; Salad trộn ít dầu,Không chay,Bình thường,Giảm cân
+Trứng luộc + rau củ hấp,Thanh protein,Canh rau ngót thịt băm chay; Bún; Đậu phụ hấp,Hủ tiếu Nam Vang; Ức gà áp chảo; Salad trộn ít dầu,Không chay,Bình thường,Giảm cân
 Khoai lang hấp + sữa hạt,Trứng luộc,Lẩu mắm miền Tây; Miến; Cá hấp,Bún chả cá; Rau luộc,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Khoai lang hấp + sữa hạt,Thanh protein,Bánh căn Đà Lạt; Ức gà áp chảo; Canh rau ngót,Canh cà chua trứng; Cá hấp,Không chay,Gầy yếu,Tăng cân
 Sữa chua Hy Lạp + trái cây ít đường,Hạt hỗn hợp,Bún chả cá; Salad trộn ít dầu; Canh bí đỏ,Bánh tráng cuốn thịt heo; Rau luộc,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Khoai lang hấp,Chuối,Hủ tiếu Mỹ Tho; Ức gà áp chảo; Cải thìa xào,Bò xào cần tỏi; Cá hấp,Không chay,Cao huyết áp,Ổn định huyết áp
-Khoai lang hấp,Đậu hũ non,Đậu phụ sốt; Bánh tiêu nhân đậu xanh; Hoành thánh chay chiên,Canh rau ngót thịt băm; Đậu phụ sốt,chay,Bình thường,Giảm cân
+Khoai lang hấp,Đậu hũ non,Đậu phụ sốt; Bánh tiêu nhân đậu xanh; Hoành thánh chay chiên,Canh rau ngót thịt băm chay; Đậu phụ sốt,chay,Bình thường,Giảm cân
 Sữa chua thực vật + trái cây,Hạt điều,Mì Ý Dẹp Capellini Xào Nấm Mỡ & Lá Súp Lơ Trắng (Vegan); Canh rau ngót; Canh cá nấu rau,Canh Miso Nấm Đậu Hũ Non Chay; Cải thìa xào,chay,Cao huyết áp,Ổn định huyết áp
 Yến mạch + trái cây ít natri,Rau củ luộc nhỏ,Cơm gà Hội An; Rau muống xào tỏi; Canh bí đỏ,Bánh ướt chả lụa; Ức gà áp chảo; Rau muống xào tỏi,Không chay,Cao huyết áp,Ổn định huyết áp
 Sữa chua Hy Lạp + dâu,Hạt hạnh nhân,Bạch tuộc xào cay Hàn Quốc; Miến; Tôm nướng,Bánh mì bơ đường; Rau củ luộc; Trứng luộc,Không chay,Tiểu đường,Ổn định đường huyết
 Khoai lang hấp,Chuối,Canh đậu hũ non hải sản; Khoai lang; Kim chi ít cay,Tôm hấp bia; Rau muống xào tỏi,Không chay,Cao huyết áp,Ổn định huyết áp
-Yến mạch + sữa hạt,Trái cây ít đường,Bánh đa đỏ hải sản chay; Rau muống xào tỏi; Canh cá nấu rau,Cơm Lươn Chay (Unadon); Canh rau ngót thịt băm; Canh rau ngót,chay,Cao huyết áp,Ổn định huyết áp
+Yến mạch + sữa hạt,Trái cây ít đường,Bánh đa đỏ hải sản chay; Rau muống xào tỏi; Canh cá nấu rau,Cơm Lươn Chay (Unadon); Canh rau ngót thịt băm chay; Canh rau ngót,chay,Cao huyết áp,Ổn định huyết áp
 Khoai lang hấp + sữa hạt,Trứng luộc,Bánh xèo miền Tây; Tôm nướng; Rau muống xào tỏi,Đậu bắp luộc chấm mắm ruốc; Rau củ luộc,Không chay,Bình thường,Giữ cân
 Trứng luộc + rau củ hấp,Dâu tây,Cơm hấp/luộc dương châu; Canh mồng tơi; Đậu phụ hấp,Sandwich cá ngừ; Cải thìa xào,Không chay,Tiểu đường,Ổn định đường huyết
 Ngũ cốc nguyên hạt + sữa hạt,Thanh protein,Gỏi cuốn tôm thịt; Cơm trắng; Canh mồng tơi,Chân giò hầm hạt sen; Đậu phụ sốt; Salad trộn ít dầu,Không chay,Mỡ trong máu,Giảm mỡ trong máu
@@ -1015,7 +1015,7 @@ Trứng luộc + rau củ hấp,Hạt hạnh nhân,Bún chả cá; Rau luộc; C
 Khoai lang hấp,Rau củ luộc nhỏ,Tôm rim mặn ngọt; Bún; Rau củ luộc,Tôm rim mặn ngọt; Rau củ luộc,Không chay,Cao huyết áp,Ổn định huyết áp
 Khoai lang hấp,Phô mai ít béo,Miến gà; Cải thìa xào; Canh cá nấu rau,Bánh mì chả cá; Cải thìa xào,Không chay,Tiểu đường,Ổn định đường huyết
 Trứng luộc + rau củ hấp,Hạt hạnh nhân,Sườn non rim nước dừa; Bánh mì; Canh rau ngót,Bánh cuốn nhân thịt; Cải thìa xào; Bánh mì nhỏ,Không chay,Tiểu đường,Ổn định đường huyết
-Bánh mì nguyên cám + trứng,Chuối,Canh rau ngót thịt băm; Miến; Dưa góp,Bún bò Huế; Cải thìa xào,Không chay,Cao huyết áp,Ổn định huyết áp
+Bánh mì nguyên cám + trứng,Chuối,Canh rau ngót thịt băm chay; Miến; Dưa góp,Bún bò Huế; Cải thìa xào,Không chay,Cao huyết áp,Ổn định huyết áp
 Đậu hũ xào rau củ,Hạt điều,Canh đậu hũ non hải sản; Chà bông chay; Sườn chay chiên giòn,Canh Bông Hẹ Đậu Hũ (Món Chay); Rau muống xào tỏi; Bánh tráng trộn chay,chay,Mỡ trong máu,Giảm mỡ trong máu
 Bánh mì nguyên cám + trứng,Rau củ luộc nhỏ,Gà xào sả ớt; Miến; Canh chua,Rau muống xào tỏi; Đậu phụ hấp,Không chay,Cao huyết áp,Ổn định huyết áp
 Bánh mì đen + trứng ốp la,Dâu tây,Lẩu cá kèo lá giang; Bánh mì; Cải thìa xào,Cơm niêu cá kho tộ; Rau muống xào tỏi,Không chay,Tiểu đường,Ổn định đường huyết
@@ -1070,7 +1070,7 @@ Sinh tố protein whey,Sữa chua Hy Lạp,Súp gà nấm đông cô; Bún; Rau 
 Yến mạch + trái cây ít natri,Chuối,Bánh bông lan trứng muối; Cải thìa xào; Canh chua,Bánh pancake mật ong; Tôm nướng; Rau luộc,Không chay,Cao huyết áp,Ổn định huyết áp
 Đậu hũ xào rau củ,Sữa chua thực vật,Sườn chay dồn thịt chiên; Rau củ xào giò nấm chay; Canh Lạc Bí Xanh Chay,Xôi đậu xanh; Cải thìa xào,chay,Cao huyết áp,Ổn định huyết áp
 Khoai lang hấp,Chuối,Tôm hấp bia; Khoai lang; Rau luộc,Gà xào sả ớt; Canh rau ngót,Không chay,Cao huyết áp,Ổn định huyết áp
-Khoai lang hấp + sữa hạt,Hạt hỗn hợp,Canh rau ngót thịt băm; Cơm trắng; Dưa góp,Lẩu cá kèo lá giang; Rau luộc,Không chay,Bình thường,Giữ cân
+Khoai lang hấp + sữa hạt,Hạt hỗn hợp,Canh rau ngót thịt băm chay; Cơm trắng; Dưa góp,Lẩu cá kèo lá giang; Rau luộc,Không chay,Bình thường,Giữ cân
 Khoai lang hấp + sữa hạt,Trái cây ít đường,Cơm tấm sườn bì chả; Canh rau ngót; Canh bí đỏ,Cháo gà; Rau luộc,Không chay,Bình thường,Giữ cân
 Yến mạch + sữa hạt,Sữa chua thực vật,Gỏi bóng cá chay trộn gỏi dưa leo siêu dễ làm; Nấm Lộc Nhung Xào Cải Rổ Chay; Vegan Spaghetti Bolognese/ Mỳ Ý chay,Đậu phụ hấp; Soup tóc tiên chay,chay,Cao huyết áp,Ổn định huyết áp
 Ngũ cốc nguyên hạt + sữa hạt,Sữa chua thực vật,hấp/luộc chay ngũ sắc; Canh chua đậu hủ chay; Canh rau ngót,Chà bông (ruốc) chay lúa mạch; Cà tím hấp nước tương (món chay); Rau củ luộc,chay,Bình thường,Giữ cân
@@ -1114,7 +1114,7 @@ Sữa chua Hy Lạp + dâu,Phô mai ít béo,Súp cua trứng bắc thảo; Bún
 Sữa chua Hy Lạp + trái cây ít đường,Trái cây ít đường,Chả lá lốt hấp; Bánh mì; Trứng luộc,Cháo sườn; Rau củ luộc,Không chay,Bình thường,Tăng cân
 Bánh mì đen + trứng ốp la,Phô mai ít béo,Bún bò Huế; Salad trộn ít dầu; Canh mồng tơi,Xôi bắp; Salad trộn ít dầu; Cá hấp,Không chay,Tiểu đường,Ổn định đường huyết
 Bánh mì nguyên cám + trứng,Rau củ luộc nhỏ,Bánh cuốn nhân thịt; Rau muống xào tỏi; Canh mồng tơi,Hủ tiếu bò kho; Cải thìa xào,Không chay,Cao huyết áp,Ổn định huyết áp
-Bánh mì nguyên cám + trứng ốp la,Thanh protein,Canh rau ngót thịt băm; Cơm trắng; Đậu phụ hấp,Canh cà chua trứng; Tôm nướng,Không chay,Bình thường,Tăng cân
+Bánh mì nguyên cám + trứng ốp la,Thanh protein,Canh rau ngót thịt băm chay; Cơm trắng; Đậu phụ hấp,Canh cà chua trứng; Tôm nướng,Không chay,Bình thường,Tăng cân
 Khoai lang hấp + sữa hạt,Hạt hỗn hợp,Miến măng vịt; Tôm nướng; Canh rau ngót,Bánh mì thịt nguội; Rau củ luộc,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Yến mạch + sữa hạt,Đậu hũ non,Bánh tráng trộn chay; Món chay: khoai tây hấp/luộc hành; Rau luộc,Cải Xoong hấp/luộc Cà Chua (Vegan); Rau luộc; Đậu phụ hấp,chay,Cao huyết áp,Ổn định huyết áp
 Bánh mì đen + trứng ốp la,Dâu tây,Lẩu tôm chua cay; Cơm trắng; Rau muống xào tỏi,Bánh mì bơ đường; Rau luộc; Trứng luộc,Không chay,Tiểu đường,Ổn định đường huyết
@@ -1136,7 +1136,7 @@ Yến mạch + hạt chia,Phô mai ít béo,Bánh tráng cuốn thịt heo; Rau 
 Yến mạch + sữa hạt + chuối,Thanh protein,Bánh tiêu nhân đậu xanh; Canh rau ngót; Canh chua,Canh măng nấu vịt; Trứng luộc,Không chay,Bình thường,Giữ cân
 Ngũ cốc nguyên hạt + sữa hạt,Hạt hỗn hợp,Xôi gấc; Ức gà áp chảo; Canh rau ngót,Gà xào sả ớt; Rau củ luộc,Không chay,Bình thường,Giữ cân
 Đậu hũ xào rau củ,Hạt điều,Tàu hủ ky tươi hấp/luộc lăn (chay); Củ cải đậu kho (chay eatclean 218kcal); Đậu phụ sốt,Cháo Đậu Xanh Ăn Với Đậu Tẩm Hành Chay; Bún Thái chay; Mọc Chay,chay,Béo phì,Giảm cân
-Khoai lang hấp,Chuối,Canh khoai mỡ tôm tươi; Khoai lang; Đậu phụ hấp,Canh rau ngót thịt băm; Tôm nướng,Không chay,Cao huyết áp,Ổn định huyết áp
+Khoai lang hấp,Chuối,Canh khoai mỡ tôm tươi; Khoai lang; Đậu phụ hấp,Canh rau ngót thịt băm chay; Tôm nướng,Không chay,Cao huyết áp,Ổn định huyết áp
 Khoai lang hấp,Chuối,Tôm rim mặn ngọt; Bánh mì; Rau luộc,Lẩu nấm chay; Cải thìa xào,Không chay,Cao huyết áp,Ổn định huyết áp
 Bánh mì đen + trứng ốp la,Hạt hạnh nhân,Lẩu nấm chay; Cơm gạo lứt; Rau củ luộc,Bún bò Huế; Canh rau ngót; Bánh mì nhỏ,Không chay,Tiểu đường,Ổn định đường huyết
 Sinh tố protein whey,Trứng luộc,Cơm nắm muối mè; Ức gà áp chảo; Salad trộn ít dầu,Lẩu ếch măng chua; Cá hấp; Rau luộc,Không chay,Bình thường,Tăng cân
@@ -1144,7 +1144,7 @@ Khoai lang hấp + sữa hạt,Trứng luộc,Xôi bắp; Trứng luộc; Canh r
 Khoai lang hấp + sữa hạt,Trứng luộc,Cháo vịt; Cá hấp; Rau củ luộc,Cháo vịt; Tôm nướng; Rau luộc,Không chay,Bình thường,Giữ cân
 Sữa chua Hy Lạp + dâu,Hạt hạnh nhân,Canh chua cá lóc; Khoai lang; Trái cây ít đường,Cháo gà; Cải thìa xào,Không chay,Tiểu đường,Ổn định đường huyết
 Yến mạch + trái cây ít natri,Chuối,Canh khoai mỡ tôm tươi; Cơm trắng; Đậu phụ hấp,Bạch tuộc xào cay Hàn Quốc; Tôm nướng,Không chay,Cao huyết áp,Ổn định huyết áp
-Ngũ cốc nguyên hạt + sữa hạt,Trái cây ít đường,Thịt ba chỉ luộc chấm mắm tép; Bánh mì; Canh bí đỏ,Canh rau ngót thịt băm; Salad trộn ít dầu,Không chay,Mỡ trong máu,Giảm mỡ trong máu
+Ngũ cốc nguyên hạt + sữa hạt,Trái cây ít đường,Thịt ba chỉ luộc chấm mắm tép; Bánh mì; Canh bí đỏ,Canh rau ngót thịt băm chay; Salad trộn ít dầu,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Khoai lang hấp + sữa hạt,Thanh protein,Cá lóc hấp bầu; Bún; Rau luộc,Trứng hấp Hàn Quốc; Rau muống xào tỏi,Không chay,Bình thường,Giữ cân
 Trứng luộc + rau củ hấp,Trái cây ít đường,Miến lươn; Tôm nướng; Cải thìa xào,Trứng hấp Hàn Quốc; Canh rau ngót,Không chay,Bình thường,Tăng cân
 Bánh mì nguyên cám + trứng ốp la,Trứng luộc,Bánh cuốn Thanh Trì; Cá hấp; Rau muống xào tỏi,Gỏi cuốn tôm thịt; Đậu phụ sốt,Không chay,Gầy yếu,Tăng cân
@@ -1154,7 +1154,7 @@ Sữa chua thực vật + trái cây,Trái cây ít đường,Canh chua chay nâ
 Sữa chua Hy Lạp + dâu,Dâu tây,Cơm ba chỉ kho tàu; Trứng luộc; Rau củ luộc,Phở bò; Rau muống xào tỏi; Cơm trắng ít,Không chay,Tiểu đường,Ổn định đường huyết
 Sinh tố protein whey,Sữa chua Hy Lạp,Bánh căn Đà Lạt; Đậu phụ sốt; Rau muống xào tỏi,Canh kim chi Hàn Quốc; Cá hấp,Không chay,Gầy yếu,Tăng cân
 Yến mạch + sữa hạt,Đậu hũ non,Chà bông chay từ củ sắn; Đậu phụ sốt; Miến nấm rau răm (Miến lươn chay),Khô cá lóc chay; Đậu phụ hấp,chay,Bình thường,Giảm cân
-Khoai lang hấp,Hạt hạnh nhân,Canh rau ngót thịt băm; Bún; Trái cây ít đường,Bún riêu cua; Đậu phụ sốt; Rau muống xào tỏi,Không chay,Tiểu đường,Ổn định đường huyết
+Khoai lang hấp,Hạt hạnh nhân,Canh rau ngót thịt băm chay; Bún; Trái cây ít đường,Bún riêu cua; Đậu phụ sốt; Rau muống xào tỏi,Không chay,Tiểu đường,Ổn định đường huyết
 Sữa chua Hy Lạp + trái cây ít đường,Trứng luộc,Canh bí đỏ hầm xương; Miến; Đậu phụ sốt,Bạch tuộc xào cay Hàn Quốc; Tôm nướng,Không chay,Bình thường,Tăng cân
 Sinh tố protein whey,Thanh protein,Cháo hải sản; Rau muống xào tỏi; Canh bí đỏ,Tôm hấp bia; Rau củ luộc,Không chay,Bình thường,Giữ cân
 Khoai lang hấp,Sữa chua Hy Lạp không đường,Canh kim chi Hàn Quốc; Phở; Tôm nướng,Bún riêu cua; Đậu phụ sốt; Rau luộc,Không chay,Tiểu đường,Ổn định đường huyết
@@ -1165,7 +1165,7 @@ Trứng luộc + rau củ hấp,Sữa chua Hy Lạp không đường,Miến lư�
 Khoai lang hấp + sữa hạt,Trứng luộc,Cháo hải sản; Salad trộn ít dầu; Canh bí đỏ,Canh kim chi Hàn Quốc; Cá hấp,Không chay,Bình thường,Tăng cân
 Bánh mì nguyên cám + trứng,Hạt điều không muối,Canh chua cá lóc; Bún; Dưa góp,Bánh tiêu nhân đậu xanh; Salad trộn ít dầu; Khoai lang nhỏ,Không chay,Cao huyết áp,Ổn định huyết áp
 Yến mạch + hạt chia,Sữa chua Hy Lạp không đường,Lòng non hấp/luộc dưa chua; Cơm trắng; Canh cá nấu rau,Miến măng vịt; Trứng luộc; Canh rau ngót,Không chay,Tiểu đường,Ổn định đường huyết
-Đậu hũ xào rau củ,Sữa chua thực vật,Đậu phụ sốt; Canh rau ngót thịt băm; Rau củ luộc,Sườn non chay nướng chao; Đậu bắp luộc chấm mắm ruốc,chay,Bình thường,Giữ cân
+Đậu hũ xào rau củ,Sữa chua thực vật,Đậu phụ sốt; Canh rau ngót thịt băm chay; Rau củ luộc,Sườn non chay nướng chao; Đậu bắp luộc chấm mắm ruốc,chay,Bình thường,Giữ cân
 Sữa chua Hy Lạp + trái cây ít đường,Hạt hỗn hợp,Canh gà lá giang; Miến; Trái cây ít đường,Hủ tiếu Mỹ Tho; Tôm nướng; Rau luộc,Không chay,Bình thường,Giảm cân
 Trứng luộc + rau củ hấp,Sữa chua Hy Lạp,Bánh mì heo quay; Rau luộc; Canh bí đỏ,Gà hấp muối; Rau củ luộc,Không chay,Bình thường,Giảm cân
 Yến mạch + sữa hạt + chuối,Thanh protein,Đậu bắp luộc chấm mắm ruốc; Phở; Canh mồng tơi,Rau muống xào tỏi; Tôm nướng,Không chay,Bình thường,Giữ cân
@@ -1197,7 +1197,7 @@ Yến mạch + trái cây ít natri,Hạt điều không muối,Sườn non rim 
 Trứng luộc + rau củ hấp,Phô mai ít béo,Lẩu riêu cua bắp bò; Bánh mì; Cải thìa xào,Bánh tráng cuốn thịt heo; Salad trộn ít dầu,Không chay,Tiểu đường,Ổn định đường huyết
 Khoai lang hấp + sữa hạt,Sữa chua Hy Lạp,Tôm hấp bia; Bánh mì; Cải thìa xào,Hủ tiếu Mỹ Tho; Đậu phụ sốt; Salad trộn ít dầu,Không chay,Bình thường,Giảm cân
 Khoai lang hấp,Dâu tây,Cá lóc hấp bầu; Cơm trắng; Rau luộc,Sườn non rim nước dừa; Cải thìa xào,Không chay,Tiểu đường,Ổn định đường huyết
-Yến mạch + sữa hạt,Trái cây ít đường,Nấm xào; Bò kho bánh mì chay; Rau củ luộc,Canh rau ngót thịt băm; Rau củ luộc,chay,Cao huyết áp,Ổn định huyết áp
+Yến mạch + sữa hạt,Trái cây ít đường,Nấm xào; Bò kho bánh mì chay; Rau củ luộc,Canh rau ngót thịt băm chay; Rau củ luộc,chay,Cao huyết áp,Ổn định huyết áp
 Yến mạch + hạt chia,Dâu tây,Canh măng nấu vịt; Phở; Bò xào nhẹ,Gà xào sả ớt; Canh rau ngót,Không chay,Tiểu đường,Ổn định đường huyết
 Khoai lang hấp,Trái cây ít đường,Súp Măng Tây Trắng Nấm Tuyết Chay; Cháo Đậu Xanh Ăn Với Đậu Tẩm Hành Chay; Rau củ luộc,Gỏi bóng cá chay trộn gỏi dưa leo siêu dễ làm; Rau củ luộc,chay,Bình thường,Giữ cân
 Khoai lang hấp,Phô mai ít béo,Đậu hũ sốt cà chua; Cơm gạo lứt; Salad trộn ít dầu,Bánh cam đường; Trứng luộc; Rau muống xào tỏi,Không chay,Tiểu đường,Ổn định đường huyết
@@ -1243,7 +1243,7 @@ Bánh mì đen + trứng ốp la,Phô mai ít béo,Tôm hấp bia; Miến; Canh 
 Khoai lang hấp,Hạt điều không muối,Cháo hải sản; Cải thìa xào; Canh chua,Lẩu vịt nấu chao; Ức gà áp chảo; Cải thìa xào,Không chay,Cao huyết áp,Ổn định huyết áp
 Sinh tố protein whey,Trứng luộc,Gà hấp muối; Miến; Canh rau ngót,Cháo lòng; Ức gà áp chảo; Salad trộn ít dầu,Không chay,Bình thường,Giảm cân
 Khoai lang hấp,Phô mai ít béo,Miến gà; Salad trộn ít dầu; Canh mồng tơi,Phở gà; Rau luộc; Bánh mì nhỏ,Không chay,Tiểu đường,Ổn định đường huyết
-Khoai lang hấp,Hạt điều không muối,Canh rau ngót thịt băm; Khoai lang; Dưa góp,Cháo sườn; Cải thìa xào,Không chay,Cao huyết áp,Ổn định huyết áp
+Khoai lang hấp,Hạt điều không muối,Canh rau ngót thịt băm chay; Khoai lang; Dưa góp,Cháo sườn; Cải thìa xào,Không chay,Cao huyết áp,Ổn định huyết áp
 Bánh mì nguyên cám + trứng ốp la,Hạt hỗn hợp,Hủ tiếu Nam Vang; Trứng luộc; Rau luộc,Bánh mì chả cá; Rau luộc,Không chay,Bình thường,Giữ cân
 Khoai lang hấp,Hạt điều không muối,Cơm rang dưa bò; Canh mồng tơi; Dưa góp,Sandwich trứng; Cải thìa xào,Không chay,Cao huyết áp,Ổn định huyết áp
 Yến mạch + sữa hạt,Trái cây ít đường,Bí đao kho nghệ; Heo quay chay (cách làm đơn giản); Rau luộc,Cuốn chay chấm bơ hạt điều; Su su xào đậu hũ chay; Cải thìa xào,chay,Cao huyết áp,Ổn định huyết áp
@@ -1274,7 +1274,7 @@ Khoai lang hấp,Trái cây ít đường,Cá kèo chay kho tiêu; Bánh xèo n�
 Bánh mì đen + trứng ốp la,Dâu tây,Canh khoai mỡ tôm tươi; Phở; Dưa góp,Bánh bèo Huế; Đậu phụ sốt; Salad trộn ít dầu,Không chay,Tiểu đường,Ổn định đường huyết
 Khoai lang hấp,Dâu tây,Bánh mì bơ đường; Trứng luộc; Rau muống xào tỏi,Cơm niêu cá kho tộ; Rau luộc,Không chay,Tiểu đường,Ổn định đường huyết
 Ngũ cốc nguyên hạt + sữa hạt,Sữa chua thực vật,Mì sợi trứng xào chay; Thịt nạc kho tiêu (món chay); Canh rau ngót,Cháo Đậu Xanh Ăn Với Đậu Tẩm Hành Chay; Rau luộc; Miến dong xào chay,chay,Cao huyết áp,Ổn định huyết áp
-Trứng luộc + rau củ hấp,Trứng luộc,Canh kim chi Hàn Quốc; Phở; Trứng luộc,Canh rau ngót thịt băm; Ức gà áp chảo,Không chay,Gầy yếu,Tăng cân
+Trứng luộc + rau củ hấp,Trứng luộc,Canh kim chi Hàn Quốc; Phở; Trứng luộc,Canh rau ngót thịt băm chay; Ức gà áp chảo,Không chay,Gầy yếu,Tăng cân
 Bánh mì nguyên cám + trứng ốp la,Thanh protein,Lẩu vịt nấu chao; Miến; Tôm nướng,Trứng hấp Hàn Quốc; Rau củ luộc,Không chay,Bình thường,Tăng cân
 Sữa chua Hy Lạp + dâu,Dâu tây,Cơm gà Hội An; Rau muống xào tỏi; Canh mồng tơi,Sườn non rim nước dừa; Canh rau ngót,Không chay,Tiểu đường,Ổn định đường huyết
 Yến mạch + sữa hạt + chuối,Hạt hỗn hợp,Cơm rang dưa bò; Canh mồng tơi; Đậu phụ hấp,Súp cua trứng bắc thảo; Salad trộn ít dầu,Không chay,Béo phì,Giảm cân
@@ -1328,7 +1328,7 @@ Sữa chua Hy Lạp + chuối,Hạt điều không muối,Lẩu gà lá é; Bán
 Yến mạch + trái cây ít natri,Táo,Bánh chuối chiên; Ức gà áp chảo; Rau củ luộc,Canh cà chua trứng; Ức gà áp chảo,Không chay,Cao huyết áp,Ổn định huyết áp
 Ngũ cốc nguyên hạt + sữa hạt,Đậu hũ non,Rau muống xào tỏi; Bò kho bánh mì chay; Canh cá nấu rau,Giò heo cuộn chiên giòn (món chay); Rau củ luộc; Đậu hũ chiên,chay,Cao huyết áp,Ổn định huyết áp
 Khoai lang hấp,Hạt điều không muối,Cá lóc hấp bầu; Khoai lang; Rau muống xào tỏi,Xôi mặn; Rau củ luộc; Trứng luộc,Không chay,Cao huyết áp,Ổn định huyết áp
-Đậu hũ xào rau củ,Hạt điều,Món chay: khoai tây hấp/luộc hành; Đậu phụ sốt; Chả chay kho riềng,Canh rau ngót thịt băm; Rau muống xào tỏi,chay,Cao huyết áp,Ổn định huyết áp
+Đậu hũ xào rau củ,Hạt điều,Món chay: khoai tây hấp/luộc hành; Đậu phụ sốt; Chả chay kho riềng,Canh rau ngót thịt băm chay; Rau muống xào tỏi,chay,Cao huyết áp,Ổn định huyết áp
 Sinh tố protein whey,Trái cây ít đường,Bánh xèo miền Trung; Tôm nướng; Cải thìa xào,Bánh thấp/luộcg cuốn thịt heo; Canh rau ngót,Không chay,Bình thường,Giảm cân
 Yến mạch + sữa hạt + chuối,Thanh protein,Canh măng nấu vịt; Khoai lang; Đậu phụ sốt,Sandwich cá ngừ; Rau củ luộc,Không chay,Gầy yếu,Tăng cân
 Khoai lang hấp,Chuối,Cháo lòng; Bò xào nhẹ; Rau luộc,Miến lươn; Đậu phụ sốt; Canh rau ngót,Không chay,Cao huyết áp,Ổn định huyết áp
@@ -1355,7 +1355,7 @@ Sữa chua Hy Lạp + dâu,Hạt hạnh nhân,Bún bò Huế; Rau luộc; Canh c
 Sữa chua Hy Lạp + trái cây ít đường,Trái cây ít đường,Bánh mì heo quay; Cải thìa xào; Canh bí đỏ,Canh cua mồng tơi; Trứng luộc,Không chay,Bình thường,Giảm cân
 Sữa chua Hy Lạp + dâu,Sữa chua Hy Lạp không đường,Canh chua cá lóc; Miến; Đậu phụ hấp,Gà hấp muối; Salad trộn ít dầu,Không chay,Tiểu đường,Ổn định đường huyết
 Sữa chua Hy Lạp + trái cây ít đường,Trái cây ít đường,Chả lá lốt hấp; Cơm trắng; Đậu phụ sốt,Cơm gà Hải Nam; Canh rau ngót,Không chay,Bình thường,Giảm cân
-Sinh tố protein whey,Sữa chua Hy Lạp,Canh cà chua trứng; Bún; Đậu phụ hấp,Canh rau ngót thịt băm; Cá hấp,Không chay,Gầy yếu,Tăng cân
+Sinh tố protein whey,Sữa chua Hy Lạp,Canh cà chua trứng; Bún; Đậu phụ hấp,Canh rau ngót thịt băm chay; Cá hấp,Không chay,Gầy yếu,Tăng cân
 Sữa chua Hy Lạp + chuối,Hạt điều không muối,Xôi mặn; Trứng luộc; Salad trộn ít dầu,Bún riêu cua; Cá hấp; Cải thìa xào,Không chay,Cao huyết áp,Ổn định huyết áp
 Trứng luộc + rau củ hấp,Thanh protein,Cháo sườn; Rau củ luộc; Canh mồng tơi,Bánh tráng cuốn thịt heo; Rau luộc,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Ngũ cốc nguyên hạt + sữa hạt,Trứng luộc,Canh chua cá lóc; Khoai lang; Trái cây ít đường,Cháo gà; Canh rau ngót,Không chay,Béo phì,Giảm cân
@@ -1371,9 +1371,9 @@ Ngũ cốc nguyên hạt + sữa hạt,Đậu hũ non,Su su hấp/luộc đậu 
 Sữa chua Hy Lạp + dâu,Hạt hạnh nhân,Cháo hải sản; Cải thìa xào; Canh cá nấu rau,Bánh mì chả cá; Rau củ luộc,Không chay,Tiểu đường,Ổn định đường huyết
 Trứng luộc + rau củ hấp,Hạt hạnh nhân,Cơm tấm sườn bì chả; Rau luộc; Canh chua,Nghêu hấp sả; Cá hấp; Rau luộc,Không chay,Tiểu đường,Ổn định đường huyết
 Khoai lang hấp,Táo,Gỏi cuốn tôm thịt; Khoai lang; Canh bí đỏ,Súp gà nấm đông cô; Rau muống xào tỏi,Không chay,Cao huyết áp,Ổn định huyết áp
-Khoai lang hấp + sữa hạt,Trứng luộc,Miến lươn; Trứng luộc; Cải thìa xào,Canh rau ngót thịt băm; Salad trộn ít dầu,Không chay,Bình thường,Giữ cân
+Khoai lang hấp + sữa hạt,Trứng luộc,Miến lươn; Trứng luộc; Cải thìa xào,Canh rau ngót thịt băm chay; Salad trộn ít dầu,Không chay,Bình thường,Giữ cân
 Sữa chua thực vật + trái cây,Trái cây ít đường,Canh Súp Mandu Rong Biển Đậu Hủ Chay; Su su xào đậu hũ chay; Cải thìa xào,Cookie Bơ Đậu Phộng Thuần Chay; Cải bắp trộn chay,chay,Cao huyết áp,Ổn định huyết áp
-Trứng luộc + rau củ hấp,Sữa chua Hy Lạp không đường,Canh rau ngót thịt băm; Bánh mì; Đậu phụ hấp,Xôi mặn; Cải thìa xào; Tôm nướng,Không chay,Tiểu đường,Ổn định đường huyết
+Trứng luộc + rau củ hấp,Sữa chua Hy Lạp không đường,Canh rau ngót thịt băm chay; Bánh mì; Đậu phụ hấp,Xôi mặn; Cải thìa xào; Tôm nướng,Không chay,Tiểu đường,Ổn định đường huyết
 Sữa chua Hy Lạp + dâu,Dâu tây,Bánh mì trứng ốp la; Rau củ luộc; Canh bí đỏ,Bánh cuốn nhân thịt; Salad trộn ít dầu,Không chay,Tiểu đường,Ổn định đường huyết
 Trứng luộc + rau củ hấp,Trái cây ít đường,Cơm gà Hải Nam; Rau củ luộc; Canh cá nấu rau,Cháo hải sản; Rau luộc,Không chay,Bình thường,Giữ cân
 Bánh mì đen + trứng ốp la,Sữa chua Hy Lạp không đường,Bánh mì bơ đường; Đậu phụ sốt; Salad trộn ít dầu,Bò xào cần tỏi; Bò xào nhẹ,Không chay,Tiểu đường,Ổn định đường huyết
@@ -1390,7 +1390,7 @@ Sinh tố protein whey,Thanh protein,Bánh mì pate; Tôm nướng; Canh rau ng�
 Sữa chua Hy Lạp + trái cây ít đường,Hạt hỗn hợp,Lẩu mắm miền Tây; Cơm trắng; Ức gà áp chảo,Canh chua cá lóc; Cá hấp,Không chay,Gầy yếu,Tăng cân
 Yến mạch + hạt chia,Sữa chua Hy Lạp không đường,Canh kim chi Hàn Quốc; Cơm trắng; Cá hấp,Bánh mì bơ đường; Rau củ luộc; Trứng luộc,Không chay,Tiểu đường,Ổn định đường huyết
 Sữa chua thực vật + trái cây,Sữa chua thực vật,Canh Rong Mứt Chay; Canh măng tây đậu hủ chay; Rau luộc,Xôi đậu xanh; Rau củ luộc,chay,Bình thường,Giảm cân
-Đậu hũ xào rau củ,Đậu hũ non,Món chay dễ làm| Soup khoai tây bó xôi; Bò xào lúc lắc chay; Canh bí đỏ,Canh rau ngót thịt băm; Rau củ luộc,chay,Cao huyết áp,Ổn định huyết áp
+Đậu hũ xào rau củ,Đậu hũ non,Món chay dễ làm| Soup khoai tây bó xôi; Bò xào lúc lắc chay; Canh bí đỏ,Canh rau ngót thịt băm chay; Rau củ luộc,chay,Cao huyết áp,Ổn định huyết áp
 Trứng luộc + rau củ hấp,Trái cây ít đường,Gà xào sả ớt; Cơm trắng; Canh mồng tơi,Gỏi cuốn tôm thịt; Trứng luộc,Không chay,Bình thường,Tăng cân
 Yến mạch + sữa hạt + chuối,Thanh protein,Bánh ướt chả lụa; Đậu phụ sốt; Rau luộc,Bánh khoai mì nướng; Rau củ luộc; Tôm nướng,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Sữa chua thực vật + trái cây,Đậu hũ non,Nấm Kho Lá Gừng Chay; Nấm Kim Châm Cuộn Rong Biển Chiên Giòn Chay; Mỳ căn ruột (món chay),Cải bắp trộn chay; Rau củ luộc,chay,Mỡ trong máu,Giảm mỡ trong máu
@@ -1437,10 +1437,10 @@ Yến mạch + hạt chia,Phô mai ít béo,Bánh mì trứng ốp la; Rau củ 
 Bánh mì đen + trứng ốp la,Hạt hạnh nhân,Miến măng vịt; Ức gà áp chảo; Rau luộc,Bún mắm miền Tây; Đậu phụ sốt; Cải thìa xào,Không chay,Tiểu đường,Ổn định đường huyết
 Yến mạch + hạt chia,Sữa chua Hy Lạp không đường,Nghêu hấp sả; Phở; Đậu phụ sốt,Cơm chiên dương châu; Rau muống xào tỏi; Tôm nướng,Không chay,Tiểu đường,Ổn định đường huyết
 Sữa chua Hy Lạp + trái cây ít đường,Trái cây ít đường,Cơm rang dưa bò; Canh mồng tơi; Dưa góp,Tôm hấp bia; Salad trộn ít dầu,Không chay,Bình thường,Giảm cân
-Sữa chua Hy Lạp + dâu,Dâu tây,Canh rau ngót thịt băm; Bún; Đậu phụ hấp,Bánh mì heo quay; Canh rau ngót,Không chay,Tiểu đường,Ổn định đường huyết
+Sữa chua Hy Lạp + dâu,Dâu tây,Canh rau ngót thịt băm chay; Bún; Đậu phụ hấp,Bánh mì heo quay; Canh rau ngót,Không chay,Tiểu đường,Ổn định đường huyết
 Yến mạch + hạt chia,Dâu tây,Lẩu tôm chua cay; Miến; Cải thìa xào,Sandwich cá ngừ; Rau củ luộc,Không chay,Tiểu đường,Ổn định đường huyết
 Bánh mì nguyên cám + trứng,Hạt điều không muối,Canh khoai mỡ tôm tươi; Khoai lang; Kim chi ít cay,Bánh bông lan trứng muối; Salad trộn ít dầu,Không chay,Cao huyết áp,Ổn định huyết áp
-Ngũ cốc nguyên hạt + sữa hạt,Hạt điều,Rau củ luộc; Đậu phụ sốt; Rau củ luộc,Canh rau ngót thịt băm; Miến om nấm (món chay),chay,Bình thường,Giảm cân
+Ngũ cốc nguyên hạt + sữa hạt,Hạt điều,Rau củ luộc; Đậu phụ sốt; Rau củ luộc,Canh rau ngót thịt băm chay; Miến om nấm (món chay),chay,Bình thường,Giảm cân
 Bánh mì nguyên cám + trứng ốp la,Trứng luộc,Cơm gà Hội An; Canh rau ngót; Canh mồng tơi,Miến lươn; Tôm nướng; Rau củ luộc,Không chay,Béo phì,Giảm cân
 Yến mạch + trái cây ít natri,Rau củ luộc nhỏ,Lòng non xào dưa chua; Bún; Bò xào nhẹ,Lẩu riêu cua bắp bò; Canh rau ngót,Không chay,Cao huyết áp,Ổn định huyết áp
 Sữa chua thực vật + trái cây,Đậu hũ non,Cốt lết chay kho tiêu; Chả Lụa Chay Kho Nước Tương; Đậu phụ sốt,Thịt nạc kho tiêu (món chay); Khổ qua xào chay nửa vời; Đậu phụ hấp,chay,Cao huyết áp,Ổn định huyết áp
@@ -1454,7 +1454,7 @@ Khoai lang hấp,Trái cây ít đường,Bánh đa đỏ hải sản chay; hấ
 Khoai lang hấp,Sữa chua thực vật,Cháo Đậu Xanh Ăn Với Đậu Tẩm Hành Chay; Rau củ luộc; Khô cá lóc chay,Rau muống hấp/luộc tỏi; Rau luộc,chay,Mỡ trong máu,Giảm mỡ trong máu
 Sữa chua Hy Lạp + trái cây ít đường,Hạt hỗn hợp,Lẩu tôm chua cay; Miến; Rau củ luộc,Cá lóc hấp bầu; Salad trộn ít dầu,Không chay,Bình thường,Tăng cân
 Sữa chua Hy Lạp + trái cây ít đường,Sữa chua Hy Lạp,Bánh tiêu nhân đậu xanh; Salad trộn ít dầu; Canh cá nấu rau,Xôi đậu xanh; Rau củ luộc,Không chay,Bình thường,Tăng cân
-Khoai lang hấp,Trái cây ít đường,Canh bí đỏ hầm xương; Rau muống xào tỏi; Canh cá nấu rau,Canh rau ngót thịt băm; Canh rau ngót,chay,Mỡ trong máu,Giảm mỡ trong máu
+Khoai lang hấp,Trái cây ít đường,Canh bí đỏ hầm xương; Rau muống xào tỏi; Canh cá nấu rau,Canh rau ngót thịt băm chay; Canh rau ngót,chay,Mỡ trong máu,Giảm mỡ trong máu
 Ngũ cốc nguyên hạt + sữa hạt,Trứng luộc,Xôi lá cẩm; Cá hấp; Rau củ luộc,Lẩu gà lá é; Cải thìa xào,Không chay,Bình thường,Giữ cân
 Yến mạch + hạt chia,Dâu tây,Cơm nắm muối mè; Đậu phụ sốt; Canh rau ngót,Cháo vịt; Trứng luộc; Rau luộc,Không chay,Tiểu đường,Ổn định đường huyết
 Sữa chua Hy Lạp + chuối,Chuối,Bạch tuộc xào cay Hàn Quốc; Miến; Bò xào nhẹ,Cá lóc hấp bầu; Cải thìa xào,Không chay,Cao huyết áp,Ổn định huyết áp
@@ -1465,7 +1465,7 @@ Khoai lang hấp,Hạt hạnh nhân,Canh gà lá giang; Bún; Dưa góp,Súp cua
 Đậu hũ xào rau củ,Trái cây ít đường,CHẢ lạnh chay; Canh Nấm Mỡ Cần Tây Chay (Vegan); Đậu phụ sốt,Chà bông (ruốc) chay lúa mạch; Rau luộc,chay,Mỡ trong máu,Giảm mỡ trong máu
 Trứng luộc + rau củ hấp,Hạt hạnh nhân,Mực xào sa tếCá basa sốt cà chua; Bánh mì; Canh chua,Bún chả cá; Salad trộn ít dầu,Không chay,Tiểu đường,Ổn định đường huyết
 Yến mạch + trái cây ít natri,Chuối,Bánh khoai mì nướng; Bò xào nhẹ; Rau củ luộc,Cơm niêu cá kho tộ; Rau củ luộc,Không chay,Cao huyết áp,Ổn định huyết áp
-Khoai lang hấp,Sữa chua thực vật,Bún đậu gạo lứt mắm tôm chay; Đậu phụ sốt; Rau luộc,Canh rau ngót thịt băm; Chả nấm chay,chay,Bình thường,Giữ cân
+Khoai lang hấp,Sữa chua thực vật,Bún đậu gạo lứt mắm tôm chay; Đậu phụ sốt; Rau luộc,Canh rau ngót thịt băm chay; Chả nấm chay,chay,Bình thường,Giữ cân
 Khoai lang hấp,Hạt hạnh nhân,Sườn non rim nước dừa; Bánh mì; Rau muống xào tỏi,Miến gà; Canh rau ngót; Khoai lang nhỏ,Không chay,Tiểu đường,Ổn định đường huyết
 Trứng luộc + rau củ hấp,Hạt hỗn hợp,Bánh mì heo quay; Salad trộn ít dầu; Canh chua,Lẩu riêu cua bắp bò; Rau muống xào tỏi,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Khoai lang hấp + sữa hạt,Thanh protein,Sandwich cá ngừ; Bún; Salad trộn ít dầu,Súp gà nấm đông cô; Rau luộc,Không chay,Bình thường,Giữ cân
@@ -1515,7 +1515,7 @@ Khoai lang hấp,Sữa chua thực vật,Đậu non sốt nấm hành (món chay
 Bánh mì đen + trứng ốp la,Hạt hạnh nhân,Lẩu nấm chay; Bánh mì; Rau luộc,Bún riêu cua; Trứng luộc; Salad trộn ít dầu,Không chay,Tiểu đường,Ổn định đường huyết
 Yến mạch + hạt chia,Dâu tây,Miến gà; Rau luộc; Canh cá nấu rau,Bánh tiêu nhân đậu xanh; Salad trộn ít dầu,Không chay,Tiểu đường,Ổn định đường huyết
 Khoai lang hấp,Sữa chua thực vật,Sườn chay kho nước tương mè rang; Cookie Bơ Đậu Phộng Thuần Chay; Rau luộc,Bún chả cá chay; Canh rau ngót; Miến măng chay,chay,Mỡ trong máu,Giảm mỡ trong máu
-Yến mạch + sữa hạt,Hạt điều,Canh rau ngót thịt băm; Bánh xèo nấm chay; Đậu phụ hấp,Gỏi bóng cá chay trộn gỏi dưa leo siêu dễ làm; Canh rau ngót; Vịt quay chay,chay,Bình thường,Giữ cân
+Yến mạch + sữa hạt,Hạt điều,Canh rau ngót thịt băm chay; Bánh xèo nấm chay; Đậu phụ hấp,Gỏi bóng cá chay trộn gỏi dưa leo siêu dễ làm; Canh rau ngót; Vịt quay chay,chay,Bình thường,Giữ cân
 Yến mạch + trái cây ít natri,Hạt điều không muối,Súp gà nấm đông cô; Khoai lang; Rau củ luộc,Bún mắm miền Tây; Trứng luộc; Rau muống xào tỏi,Không chay,Cao huyết áp,Ổn định huyết áp
 Trứng luộc + rau củ hấp,Hạt hạnh nhân,Sandwich cá ngừ; Bánh mì; Rau muống xào tỏi,Canh cua mồng tơi; Ức gà áp chảo,Không chay,Tiểu đường,Ổn định đường huyết
 Sữa chua Hy Lạp + trái cây ít đường,Thanh protein,Súp cua trứng bắc thảo; Phở; Canh rau ngót,Trứng hấp Hàn Quốc; Canh rau ngót,Không chay,Gầy yếu,Tăng cân
@@ -1586,7 +1586,7 @@ Sinh tố protein whey,Sữa chua Hy Lạp,Xôi gấc; Tôm nướng; Canh rau n
 Yến mạch + sữa hạt + chuối,Trái cây ít đường,Bánh mì heo quay; Cải thìa xào; Canh mồng tơi,Canh chua cá lóc; Đậu phụ sốt,Không chay,Bình thường,Giảm cân
 Yến mạch + hạt chia,Sữa chua Hy Lạp không đường,Bánh mì thịt nguội; Rau củ luộc; Canh cá nấu rau,Miến lươn; Trứng luộc; Canh rau ngót,Không chay,Tiểu đường,Ổn định đường huyết
 Yến mạch + hạt chia,Sữa chua Hy Lạp không đường,Bánh mì heo quay; Rau luộc; Canh cá nấu rau,Cơm niêu cá kho tộ; Rau củ luộc,Không chay,Tiểu đường,Ổn định đường huyết
-Yến mạch + sữa hạt + chuối,Thanh protein,Canh rau ngót thịt băm; Bánh mì; Kim chi ít cay,Xôi gấc; Rau muống xào tỏi; Cá hấp,Không chay,Bình thường,Giảm cân
+Yến mạch + sữa hạt + chuối,Thanh protein,Canh rau ngót thịt băm chay; Bánh mì; Kim chi ít cay,Xôi gấc; Rau muống xào tỏi; Cá hấp,Không chay,Bình thường,Giảm cân
 Bánh mì đen + trứng ốp la,Hạt hạnh nhân,Cơm gà Hội An; Rau muống xào tỏi; Canh chua,Lẩu gà lá é; Cải thìa xào,Không chay,Tiểu đường,Ổn định đường huyết
 Sữa chua Hy Lạp + chuối,Hạt điều không muối,Xôi mặn; Cá hấp; Rau muống xào tỏi,Bánh bông lan trứng muối; Rau muống xào tỏi,Không chay,Cao huyết áp,Ổn định huyết áp
 Ngũ cốc nguyên hạt + sữa hạt,Sữa chua Hy Lạp,Đậu bắp luộc chấm mắm ruốc; Bún; Canh cá nấu rau,Cơm niêu cá kho tộ; Rau củ luộc,Không chay,Mỡ trong máu,Giảm mỡ trong máu
@@ -1596,7 +1596,7 @@ Khoai lang hấp,Rau củ luộc nhỏ,Bánh khoai mì nướng; Bò xào nhẹ;
 Bánh mì nguyên cám + trứng,Rau củ luộc nhỏ,Tôm rim mặn ngọt; Miến; Rau muống xào tỏi,Lòng non xào dưa chua; Cá hấp,Không chay,Cao huyết áp,Ổn định huyết áp
 Khoai lang hấp,Hạt hạnh nhân,Xôi đậu xanh; Rau luộc; Canh bí đỏ,Bánh cam đường; Đậu phụ sốt; Rau muống xào tỏi,Không chay,Tiểu đường,Ổn định đường huyết
 Yến mạch + hạt chia,Phô mai ít béo,Bánh bông lan trứng muối; Rau luộc; Canh bí đỏ,Gà xào sả ớt; Rau muống xào tỏi,Không chay,Tiểu đường,Ổn định đường huyết
-Khoai lang hấp,Đậu hũ non,Măng Xào Hành Tây Rau Răm Chay; Mực xào sa tế (món chay); Xào chay thập cẩm với nấm bào ngư,Canh rau ngót thịt băm; Mọc Chay,chay,Cao huyết áp,Ổn định huyết áp
+Khoai lang hấp,Đậu hũ non,Măng Xào Hành Tây Rau Răm Chay; Mực xào sa tế (món chay); Xào chay thập cẩm với nấm bào ngư,Canh rau ngót thịt băm chay; Mọc Chay,chay,Cao huyết áp,Ổn định huyết áp
 Sinh tố protein whey,Sữa chua Hy Lạp,Cơm gà Hội An; Canh rau ngót; Canh chua,Miến lươn; Đậu phụ sốt; Rau củ luộc,Không chay,Bình thường,Giữ cân
 Ngũ cốc nguyên hạt + sữa hạt,Trứng luộc,Gỏi cuốn tôm thịt; Bún; Canh cá nấu rau,Bạch tuộc xào cay Hàn Quốc; Đậu phụ hấp,Không chay,Gầy yếu,Tăng cân
 Đậu hũ xào rau củ,Sữa chua thực vật,Bì Cuốn Nấm Chay; Đậu phụ sốt; Cải thìa xào,Bún riêu chay; Rau muống xào tỏi,chay,Cao huyết áp,Ổn định huyết áp
@@ -1619,7 +1619,7 @@ Bánh mì nguyên cám + trứng,Hạt điều không muối,Mực xào sa tếC
 Khoai lang hấp,Dâu tây,Bánh mì trứng ốp la; Rau luộc; Canh cá nấu rau,Canh măng nấu vịt; Đậu phụ sốt,Không chay,Tiểu đường,Ổn định đường huyết
 Yến mạch + sữa hạt,Hạt điều,Chả nấm chay; Viên tứ hỉ chay; Rau luộc,CHẢ lạnh chay; Mì lứt chay; Canh rau ngót,chay,Mỡ trong máu,Giảm mỡ trong máu
 Trứng luộc + rau củ hấp,Sữa chua Hy Lạp,Bánh mì thịt nguội; Canh rau ngót; Canh mồng tơi,Bánh mì heo quay; Cải thìa xào,Không chay,Mỡ trong máu,Giảm mỡ trong máu
-Ngũ cốc nguyên hạt + sữa hạt,Trái cây ít đường,Canh rau ngót thịt băm; Rau củ luộc; Canh bí đỏ,Mac & no-cheese (chay); Canh Lá Tỏi Gấu Đậu Hủ (Vegan); Canh rau ngót,chay,Bình thường,Giảm cân
+Ngũ cốc nguyên hạt + sữa hạt,Trái cây ít đường,Canh rau ngót thịt băm chay; Rau củ luộc; Canh bí đỏ,Mac & no-cheese (chay); Canh Lá Tỏi Gấu Đậu Hủ (Vegan); Canh rau ngót,chay,Bình thường,Giảm cân
 Khoai lang hấp,Hạt hạnh nhân,Xôi đậu xanh; Salad trộn ít dầu; Canh chua,Canh đậu hũ non hải sản; Rau luộc,Không chay,Tiểu đường,Ổn định đường huyết
 Sữa chua Hy Lạp + dâu,Sữa chua Hy Lạp không đường,Súp cua trứng bắc thảo; Bún; Cải thìa xào,Cháo hải sản; Cải thìa xào,Không chay,Tiểu đường,Ổn định đường huyết
 Yến mạch + sữa hạt + chuối,Trái cây ít đường,Lẩu ếch măng chua; Cơm trắng; Bò xào nhẹ,Rau muống hấp/luộc tỏi; Salad trộn ít dầu,Không chay,Bình thường,Giữ cân
@@ -1639,7 +1639,7 @@ Sữa chua Hy Lạp + dâu,Sữa chua Hy Lạp không đường,Gà hấp muối
 Sữa chua thực vật + trái cây,Hạt điều,Khô cá lóc chay; Canh Mồng Tơi Nấu Nấm Mỡ Chay; Rau muống xào tỏi,Đậu phụ sốt; Rau luộc,chay,Mỡ trong máu,Giảm mỡ trong máu
 Khoai lang hấp,Sữa chua thực vật,Canh Chua Nấm & Củ Hủ Kim Chi Chay; Sandwich cá ngừ chay; Canh Rau Đay Mướp Nấm Chay,Rau muống xào tỏi; Bánh tiêu nhân đậu xanh,chay,Bình thường,Giữ cân
 Trứng luộc + rau củ hấp,Thanh protein,Bánh khọt Vũng Tàu; Ức gà áp chảo; Rau luộc,Hủ tiếu bò kho; Canh rau ngót,Không chay,Mỡ trong máu,Giảm mỡ trong máu
-Yến mạch + hạt chia,Dâu tây,Canh rau ngót thịt băm; Miến; Kim chi ít cay,Bánh căn Đà Lạt; Trứng luộc; Rau củ luộc,Không chay,Tiểu đường,Ổn định đường huyết
+Yến mạch + hạt chia,Dâu tây,Canh rau ngót thịt băm chay; Miến; Kim chi ít cay,Bánh căn Đà Lạt; Trứng luộc; Rau củ luộc,Không chay,Tiểu đường,Ổn định đường huyết
 Khoai lang hấp,Phô mai ít béo,Cháo vịt; Ức gà áp chảo; Canh rau ngót,Cơm gà Hải Nam; Rau củ luộc,Không chay,Tiểu đường,Ổn định đường huyết
 Sinh tố protein whey,Sữa chua Hy Lạp,Miến măng vịt; Trứng luộc; Rau luộc,Bún mắm miền Tây; Tôm nướng; Cải thìa xào,Không chay,Bình thường,Giữ cân
 Ngũ cốc nguyên hạt + sữa hạt,Trái cây ít đường,Da heo rim tỏi ớt (món chay); Rau củ luộc; Canh cá nấu rau,Bibimbap chay - (cơm trộn HQ); Rau muống xào tỏi,chay,Cao huyết áp,Ổn định huyết áp
@@ -1647,7 +1647,7 @@ Sữa chua Hy Lạp + trái cây ít đường,Trứng luộc,Lẩu tôm chua ca
 Yến mạch + hạt chia,Sữa chua Hy Lạp không đường,Bún thang; Ức gà áp chảo; Rau củ luộc,Rau muống xào tỏi; Cá hấp,Không chay,Tiểu đường,Ổn định đường huyết
 Yến mạch + hạt chia,Hạt hạnh nhân,Gà xào sả ớt; Bánh mì; Canh cá nấu rau,Bánh tiêu nhân đậu xanh; Canh rau ngót; Khoai lang nhỏ,Không chay,Tiểu đường,Ổn định đường huyết
 Yến mạch + sữa hạt,Trái cây ít đường,Bún riêu chay; Gỏi RONG SỤN chay; Cải thìa xào,Cơm hấp/luộc rong biển cá mặn chay; Rau muống xào tỏi; Gỏi bóng cá chay trộn gỏi dưa leo siêu dễ làm,chay,Cao huyết áp,Ổn định huyết áp
-Sinh tố protein whey,Trứng luộc,Xôi bắp; Trứng luộc; Rau luộc,Canh rau ngót thịt băm; Rau luộc,Không chay,Bình thường,Tăng cân
+Sinh tố protein whey,Trứng luộc,Xôi bắp; Trứng luộc; Rau luộc,Canh rau ngót thịt băm chay; Rau luộc,Không chay,Bình thường,Tăng cân
 Sữa chua thực vật + trái cây,Hạt điều,CHẢ lạnh chay; Rau củ luộc; Canh bí đỏ,hấp/luộc chay ngũ sắc; Bánh ít chay gói lá chuối,chay,Bình thường,Giữ cân
 Khoai lang hấp,Hạt hạnh nhân,Bánh cam đường; Trứng luộc; Rau củ luộc,Miến măng vịt; Ức gà áp chảo; Rau muống xào tỏi,Không chay,Tiểu đường,Ổn định đường huyết
 Bánh mì nguyên cám + trứng,Táo,Canh măng nấu vịt; Bún; Bò xào nhẹ,Đậu hũ sốt cà chua; Rau muống xào tỏi,Không chay,Cao huyết áp,Ổn định huyết áp
@@ -1684,7 +1684,7 @@ Yến mạch + hạt chia,Sữa chua Hy Lạp không đường,Lẩu nấm chay;
 Khoai lang hấp,Táo,Bánh cuốn Thanh Trì; Bò xào nhẹ; Salad trộn ít dầu,Sandwich cá ngừ; Rau muống xào tỏi,Không chay,Cao huyết áp,Ổn định huyết áp
 Ngũ cốc nguyên hạt + sữa hạt,Trái cây ít đường,Mì lứt chay; Món Chay Cải Mầm Trộn Nấm Hương Và Tàu Hủ Ky; Rau luộc,Xôi đậu xanh; Bibimbap chay - (cơm trộn HQ),chay,Bình thường,Tăng cân
 Khoai lang hấp,Dâu tây,Canh cua mồng tơi; Bún; Đậu phụ sốt,Bánh khoai mì nướng; Rau luộc; Trứng luộc,Không chay,Tiểu đường,Ổn định đường huyết
-Đậu hũ xào rau củ,Sữa chua thực vật,Canh rau ngót thịt băm; Chả chay kho riềng; Bánh xèo nấm chay,Gỏi RONG SỤN chay; Canh Lạc Bí Xanh Chay; Rau củ luộc,chay,Mỡ trong máu,Giảm mỡ trong máu
+Đậu hũ xào rau củ,Sữa chua thực vật,Canh rau ngót thịt băm chay; Chả chay kho riềng; Bánh xèo nấm chay,Gỏi RONG SỤN chay; Canh Lạc Bí Xanh Chay; Rau củ luộc,chay,Mỡ trong máu,Giảm mỡ trong máu
 Bánh mì đen + trứng ốp la,Hạt hạnh nhân,Súp cua trứng bắc thảo; Cơm trắng; Rau luộc,Bánh bèo Huế; Trứng luộc; Rau muống xào tỏi,Không chay,Tiểu đường,Ổn định đường huyết
 Sinh tố protein whey,Trứng luộc,Bánh khọt Vũng Tàu; Cá hấp; Rau củ luộc,Bò xào cần tỏi; Ức gà áp chảo,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Khoai lang hấp,Sữa chua thực vật,Canh Lạc Bí Xanh Chay; Phở Sắn Trộn Nấm Hầu Thủ Chay; Rau muống xào tỏi,Măng Xào Hành Tây Rau Răm Chay; Rau củ luộc,chay,Cao huyết áp,Ổn định huyết áp
@@ -1699,7 +1699,7 @@ Sữa chua Hy Lạp + trái cây ít đường,Trái cây ít đường,Bánh m�
 Khoai lang hấp,Rau củ luộc nhỏ,Rau muống xào tỏi; Cơm trắng; Bò xào nhẹ,Thịt ba chỉ luộc chấm mắm tép; Canh rau ngót,Không chay,Cao huyết áp,Ổn định huyết áp
 Yến mạch + sữa hạt,Đậu hũ non,Xôi đậu xanh; Rau muống xào tỏi; Vegan Spaghetti Bolognese/ Mỳ Ý chay,Bún Gạo Xào Chay; Rau muống xào tỏi; Canh đậu hũ non nấu nấm bào ngư (món chay),chay,Cao huyết áp,Ổn định huyết áp
 Khoai lang hấp,Dâu tây,Bánh mì bơ đường; Ức gà áp chảo; Rau muống xào tỏi,Xôi bắp; Salad trộn ít dầu; Tôm nướng,Không chay,Tiểu đường,Ổn định đường huyết
-Yến mạch + hạt chia,Dâu tây,Canh rau ngót thịt băm; Miến; Đậu phụ hấp,Canh kim chi Hàn Quốc; Đậu phụ sốt,Không chay,Tiểu đường,Ổn định đường huyết
+Yến mạch + hạt chia,Dâu tây,Canh rau ngót thịt băm chay; Miến; Đậu phụ hấp,Canh kim chi Hàn Quốc; Đậu phụ sốt,Không chay,Tiểu đường,Ổn định đường huyết
 Trứng luộc + rau củ hấp,Dâu tây,Cơm chiên hải sản; Cải thìa xào; Canh mồng tơi,Nghêu hấp sả; Đậu phụ sốt; Canh rau ngót,Không chay,Tiểu đường,Ổn định đường huyết
 Ngũ cốc nguyên hạt + sữa hạt,Sữa chua thực vật,CHẢ lạnh chay; Cải Xoong hấp/luộc Cà Chua (Vegan); Canh bí đỏ chay,Súp gà nấm đông cô; Rau củ luộc; Lẩu nấm chay,chay,Bình thường,Giữ cân
 Sữa chua Hy Lạp + trái cây ít đường,Hạt hỗn hợp,Đậu hũ sốt cà chua; Cơm gạo lứt; Rau luộc,Bánh mì thịt nguội; Canh rau ngót,Không chay,Mỡ trong máu,Giảm mỡ trong máu
@@ -1739,7 +1739,7 @@ Trứng luộc + rau củ hấp,Dâu tây,Nghêu hấp sả; Bún; Trứng luộ
 Trứng luộc + rau củ hấp,Trái cây ít đường,Lẩu ếch măng chua; Miến; Đậu phụ sốt,Xôi đậu xanh; Salad trộn ít dầu,Không chay,Bình thường,Giảm cân
 Yến mạch + trái cây ít natri,Chuối,Sandwich cá ngừ; Bánh mì; Rau luộc,Bánh khoai mì nướng; Canh rau ngót; Cá hấp,Không chay,Cao huyết áp,Ổn định huyết áp
 Trứng luộc + rau củ hấp,Hạt hạnh nhân,Bún thang; Trứng luộc; Rau củ luộc,Miến măng vịt; Cá hấp; Rau luộc,Không chay,Tiểu đường,Ổn định đường huyết
-Khoai lang hấp,Đậu hũ non,Cà Tím Nướng Sốt Dầu Hành Nước Tương Chay (Vegan); Cháo Gạo Lứt Đậu Đỏ Chay; Rau muống xào tỏi,Canh rau ngót thịt băm; Cải thìa xào,chay,Cao huyết áp,Ổn định huyết áp
+Khoai lang hấp,Đậu hũ non,Cà Tím Nướng Sốt Dầu Hành Nước Tương Chay (Vegan); Cháo Gạo Lứt Đậu Đỏ Chay; Rau muống xào tỏi,Canh rau ngót thịt băm chay; Cải thìa xào,chay,Cao huyết áp,Ổn định huyết áp
 Sữa chua Hy Lạp + trái cây ít đường,Thanh protein,Miến lươn; Đậu phụ sốt; Rau muống xào tỏi,Bánh mì heo quay; Rau luộc,Không chay,Bình thường,Giảm cân
 Yến mạch + hạt chia,Hạt hạnh nhân,Canh chua cá lóc; Phở; Dưa góp,Cơm sườn nướng mật ong; Salad trộn ít dầu,Không chay,Tiểu đường,Ổn định đường huyết
 Khoai lang hấp + sữa hạt,Trái cây ít đường,Rau muống xào tỏi; Cơm trắng; Ức gà áp chảo,Bánh rán Doraemon; Canh rau ngót; Đậu phụ hấp,Không chay,Mỡ trong máu,Giảm mỡ trong máu
@@ -1747,7 +1747,7 @@ Sữa chua Hy Lạp + dâu,Hạt hạnh nhân,Canh gà lá giang; Bánh mì; Kim
 Đậu hũ xào rau củ,Sữa chua thực vật,Đậu rán (món chay); Đậu phụ sốt; Canh rau ngót,Món Chay Cải Mầm Trộn Nấm Hương Và Tàu Hủ Ky; Canh rau ngót,chay,Bình thường,Tăng cân
 Khoai lang hấp + sữa hạt,Trứng luộc,Cháo sườn; Cải thìa xào; Canh bí đỏ,Bánh ướt chả lụa; Tôm nướng; Salad trộn ít dầu,Không chay,Bình thường,Giữ cân
 Khoai lang hấp,Sữa chua Hy Lạp không đường,Bánh mì bơ đường; Bò xào nhẹ; Cải thìa xào,Miến gà; Rau muống xào tỏi,Không chay,Tiểu đường,Ổn định đường huyết
-Yến mạch + sữa hạt + chuối,Trái cây ít đường,Bánh mì chả cá; Rau củ luộc; Canh chua,Canh rau ngót thịt băm; Rau muống xào tỏi,Không chay,Bình thường,Giữ cân
+Yến mạch + sữa hạt + chuối,Trái cây ít đường,Bánh mì chả cá; Rau củ luộc; Canh chua,Canh rau ngót thịt băm chay; Rau muống xào tỏi,Không chay,Bình thường,Giữ cân
 Trứng luộc + rau củ hấp,Trái cây ít đường,Chả lá lốt hấp; Bún; Ức gà áp chảo,Bánh rán Doraemon; Rau luộc; Trứng luộc,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Trứng luộc + rau củ hấp,Hạt hỗn hợp,Sandwich trứng; Cơm trắng; Rau luộc,Cơm nắm muối mè; Rau củ luộc; Cá hấp,Không chay,Bình thường,Giữ cân
 Bánh mì nguyên cám + trứng,Chuối,Lòng non xào dưa chua; Phở; Bò xào nhẹ,Bạch tuộc xào cay Hàn Quốc; Tôm nướng,Không chay,Cao huyết áp,Ổn định huyết áp
@@ -1759,7 +1759,7 @@ Sữa chua Hy Lạp + chuối,Hạt điều không muối,Đậu hũ sốt cà c
 Ngũ cốc nguyên hạt + sữa hạt,Thanh protein,Bánh mì thịt nguội; Rau luộc; Canh chua,Miến lươn; Trứng luộc; Salad trộn ít dầu,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Đậu hũ xào rau củ,Đậu hũ non,Cà tím hấp nước tương (món chay); Rau muống xào tỏi; Canh bí đỏ,Bún riêu chay; Cải thìa xào,chay,Cao huyết áp,Ổn định huyết áp
 Sinh tố protein whey,Sữa chua Hy Lạp,Cơm sườn nướng mật ong; Rau củ luộc; Canh cá nấu rau,Miến măng vịt; Đậu phụ sốt; Rau luộc,Không chay,Bình thường,Giảm cân
-Bánh mì đen + trứng ốp la,Hạt hạnh nhân,Canh rau ngót thịt băm; Cơm trắng; Đậu phụ hấp,Hủ tiếu bò kho; Salad trộn ít dầu,Không chay,Tiểu đường,Ổn định đường huyết
+Bánh mì đen + trứng ốp la,Hạt hạnh nhân,Canh rau ngót thịt băm chay; Cơm trắng; Đậu phụ hấp,Hủ tiếu bò kho; Salad trộn ít dầu,Không chay,Tiểu đường,Ổn định đường huyết
 Sinh tố protein whey,Hạt hỗn hợp,Miến gà; Rau luộc; Canh bí đỏ,Xôi mặn; Canh rau ngót; Trứng luộc,Không chay,Bình thường,Giảm cân
 Sữa chua thực vật + trái cây,Sữa chua thực vật,Xôi đậu xanh; Cải thìa xào; Canh bí đỏ,Bò kho bánh mì chay; Cải thìa xào,chay,Cao huyết áp,Ổn định huyết áp
 Sữa chua Hy Lạp + chuối,Hạt điều không muối,Tôm hấp bia; Bánh mì; Rau muống xào tỏi,Rau muống xào tỏi; Tôm nướng,Không chay,Cao huyết áp,Ổn định huyết áp
@@ -1866,7 +1866,7 @@ Khoai lang hấp,Phô mai ít béo,Mực xào sa tếCá basa sốt cà chua; B�
 Khoai lang hấp,Hạt điều không muối,Lẩu cá kèo lá giang; Miến; Cải thìa xào,Lẩu nấm chay; Cải thìa xào,Không chay,Cao huyết áp,Ổn định huyết áp
 Ngũ cốc nguyên hạt + sữa hạt,Thanh protein,Cơm chiên hải sản; Rau luộc; Canh mồng tơi,Nghêu hấp sả; Trứng luộc; Cải thìa xào,Không chay,Bình thường,Giảm cân
 Sữa chua Hy Lạp + trái cây ít đường,Trái cây ít đường,Canh gà lá giang; Bánh mì; Kim chi ít cay,Bún chả cá; Cải thìa xào,Không chay,Bình thường,Giảm cân
-Yến mạch + trái cây ít natri,Chuối,Canh rau ngót thịt băm; Khoai lang; Trái cây ít đường,Cháo hải sản; Cải thìa xào,Không chay,Cao huyết áp,Ổn định huyết áp
+Yến mạch + trái cây ít natri,Chuối,Canh rau ngót thịt băm chay; Khoai lang; Trái cây ít đường,Cháo hải sản; Cải thìa xào,Không chay,Cao huyết áp,Ổn định huyết áp
 Bánh mì đen + trứng ốp la,Dâu tây,Mực xào sa tếCá basa sốt cà chua; Phở; Canh mồng tơi,Phở bò; Canh rau ngót,Không chay,Tiểu đường,Ổn định đường huyết
 Bánh mì nguyên cám + trứng ốp la,Trái cây ít đường,Bánh mì pate; Cá hấp; Canh rau ngót,Cháo lòng; Tôm nướng; Cải thìa xào,Không chay,Bình thường,Giữ cân
 Khoai lang hấp,Trái cây ít đường,Nấm Hầu Thủ Áp Chảo Sốt Sa Tế Chay; Mì sợi trứng xào chay; Đậu phụ hấp,Hoành thánh chay chiên; Cuốn chay chấm bơ hạt điều; Canh rau ngót,chay,Mỡ trong máu,Giảm mỡ trong máu
@@ -1880,11 +1880,11 @@ Khoai lang hấp,Sữa chua Hy Lạp không đường,Bánh mì heo quay; Cải 
 Trứng luộc + rau củ hấp,Sữa chua Hy Lạp,Sandwich trứng; Bún; Salad trộn ít dầu,Cơm sườn nướng mật ong; Rau củ luộc,Không chay,Bình thường,Giảm cân
 Sữa chua Hy Lạp + chuối,Hạt điều không muối,Bánh cuốn Thanh Trì; Bò xào nhẹ; Cải thìa xào,Hủ tiếu Nam Vang; Trứng luộc; Rau muống xào tỏi,Không chay,Cao huyết áp,Ổn định huyết áp
 Ngũ cốc nguyên hạt + sữa hạt,Thanh protein,Bánh bèo Huế; Trứng luộc; Salad trộn ít dầu,Bún bò Huế; Canh rau ngót,Không chay,Bình thường,Giảm cân
-Yến mạch + hạt chia,Phô mai ít béo,Canh rau ngót thịt băm; Bánh mì; Đậu phụ hấp,Súp cua trứng bắc thảo; Rau muống xào tỏi,Không chay,Tiểu đường,Ổn định đường huyết
+Yến mạch + hạt chia,Phô mai ít béo,Canh rau ngót thịt băm chay; Bánh mì; Đậu phụ hấp,Súp cua trứng bắc thảo; Rau muống xào tỏi,Không chay,Tiểu đường,Ổn định đường huyết
 Sinh tố protein whey,Hạt hỗn hợp,Cơm gà Hội An; Canh rau ngót; Canh chua,Lẩu vịt nấu chao; Ức gà áp chảo; Cải thìa xào,Không chay,Gầy yếu,Tăng cân
 Bánh mì nguyên cám + trứng,Rau củ luộc nhỏ,Canh khoai mỡ tôm tươi; Khoai lang; Kim chi ít cay,Súp gà nấm đông cô; Salad trộn ít dầu,Không chay,Cao huyết áp,Ổn định huyết áp
 Sữa chua Hy Lạp + chuối,Rau củ luộc nhỏ,Bánh mì heo quay; Rau muống xào tỏi; Canh cá nấu rau,Lòng non xào dưa chua; Trứng luộc,Không chay,Cao huyết áp,Ổn định huyết áp
-Yến mạch + trái cây ít natri,Hạt điều không muối,Gà hấp muối; Khoai lang; Canh rau ngót,Canh rau ngót thịt băm; Đậu phụ sốt,Không chay,Cao huyết áp,Ổn định huyết áp
+Yến mạch + trái cây ít natri,Hạt điều không muối,Gà hấp muối; Khoai lang; Canh rau ngót,Canh rau ngót thịt băm chay; Đậu phụ sốt,Không chay,Cao huyết áp,Ổn định huyết áp
 Sữa chua Hy Lạp + dâu,Hạt hạnh nhân,Bánh mì chả cá; Rau muống xào tỏi; Canh mồng tơi,Tôm rim mặn ngọt; Cải thìa xào,Không chay,Tiểu đường,Ổn định đường huyết
 Đậu hũ xào rau củ,Đậu hũ non,Súp gà nấm đông cô; Phở Chay Nấm Đậu Phụ (Vegan); Rau củ luộc,Món Chay Cải Mầm Trộn Nấm Hương Và Tàu Hủ Ky; Phở Chay Nấm Đậu Phụ (Vegan); Rau củ luộc,chay,Béo phì,Giảm cân
 Bánh mì nguyên cám + trứng,Táo,Lòng non xào dưa chua; Khoai lang; Trứng luộc,Canh chua cá lóc; Tôm nướng,Không chay,Cao huyết áp,Ổn định huyết áp
@@ -1963,13 +1963,13 @@ Khoai lang hấp,Táo,Cơm chiên hải sản; Rau muống xào tỏi; Canh bí 
 Sữa chua Hy Lạp + trái cây ít đường,Trái cây ít đường,Bánh cuốn Thanh Trì; Đậu phụ sốt; Salad trộn ít dầu,Canh kim chi Hàn Quốc; Tôm nướng,Không chay,Gầy yếu,Tăng cân
 Sữa chua Hy Lạp + trái cây ít đường,Trứng luộc,Canh bí đỏ hầm xương; Khoai lang; Đậu phụ sốt,Đậu hũ sốt cà chua; Salad trộn ít dầu,Không chay,Béo phì,Giảm cân
 Bánh mì nguyên cám + trứng ốp la,Hạt hỗn hợp,Cháo lòng; Tôm nướng; Rau luộc,Phở gà; Rau muống xào tỏi,Không chay,Bình thường,Giữ cân
-Sữa chua Hy Lạp + chuối,Rau củ luộc nhỏ,Lòng non xào dưa chua; Phở; Bò xào nhẹ,Canh rau ngót thịt băm; Rau luộc,Không chay,Cao huyết áp,Ổn định huyết áp
+Sữa chua Hy Lạp + chuối,Rau củ luộc nhỏ,Lòng non xào dưa chua; Phở; Bò xào nhẹ,Canh rau ngót thịt băm chay; Rau luộc,Không chay,Cao huyết áp,Ổn định huyết áp
 Trứng luộc + rau củ hấp,Sữa chua Hy Lạp,Bánh pancake mật ong; Tôm nướng; Cải thìa xào,Xôi bắp; Canh rau ngót; Cá hấp,Không chay,Bình thường,Giữ cân
 Khoai lang hấp + sữa hạt,Sữa chua Hy Lạp,Cháo lòng; Tôm nướng; Salad trộn ít dầu,Phở gà; Rau luộc; Khoai lang nhỏ,Không chay,Bình thường,Giảm cân
 Sữa chua Hy Lạp + trái cây ít đường,Thanh protein,Cơm chiên hải sản; Rau luộc; Canh chua,Cháo gà; Rau luộc,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Sữa chua Hy Lạp + dâu,Dâu tây,Trứng hấp Hàn Quốc; Bánh mì; Cải thìa xào,Canh cua mồng tơi; Ức gà áp chảo,Không chay,Tiểu đường,Ổn định đường huyết
 Khoai lang hấp + sữa hạt,Sữa chua Hy Lạp,Cháo lòng; Ức gà áp chảo; Rau củ luộc,Cá lóc hấp bầu; Rau muống xào tỏi,Không chay,Bình thường,Tăng cân
-Ngũ cốc nguyên hạt + sữa hạt,Trái cây ít đường,Canh rau ngót thịt băm; Miến; Kim chi ít cay,Lẩu ếch măng chua; Tôm nướng; Rau luộc,Không chay,Bình thường,Tăng cân
+Ngũ cốc nguyên hạt + sữa hạt,Trái cây ít đường,Canh rau ngót thịt băm chay; Miến; Kim chi ít cay,Lẩu ếch măng chua; Tôm nướng; Rau luộc,Không chay,Bình thường,Tăng cân
 Bánh mì nguyên cám + trứng,Rau củ luộc nhỏ,Xôi bắp; Tôm nướng; Rau muống xào tỏi,Bánh khoai mì nướng; Cải thìa xào; Đậu phụ hấp,Không chay,Cao huyết áp,Ổn định huyết áp
 Bánh mì nguyên cám + trứng ốp la,Sữa chua Hy Lạp,Thịt ba chỉ luộc chấm mắm tép; Bún; Canh bí đỏ,Bánh ướt chả lụa; Trứng luộc; Rau muống xào tỏi,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Trứng luộc + rau củ hấp,Sữa chua Hy Lạp,Sườn non rim nước dừa; Phở; Rau luộc,Bánh xèo miền Tây; Đậu phụ sốt; Salad trộn ít dầu,Không chay,Bình thường,Giữ cân
@@ -2046,7 +2046,7 @@ Bánh mì nguyên cám + trứng ốp la,Trái cây ít đường,Măng Tây Tr�
 Sữa chua Hy Lạp + chuối,Rau củ luộc nhỏ,Lẩu mắm miền Tây; Khoai lang; Trứng luộc,Mực xào sa tếCá basa sốt cà chua; Canh rau ngót,Không chay,Cao huyết áp,Ổn định huyết áp
 Trứng luộc + rau củ hấp,Thanh protein,Cháo lòng; Ức gà áp chảo; Salad trộn ít dầu,Cơm chiên dương châu; Rau muống xào tỏi; Tôm nướng,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Sữa chua Hy Lạp + dâu,Sữa chua Hy Lạp không đường,Bún riêu cua; Bò xào nhẹ; Cải thìa xào,Canh bí đỏ hầm xương; Tôm nướng,Không chay,Tiểu đường,Ổn định đường huyết
-Ngũ cốc nguyên hạt + sữa hạt,Hạt điều,Rau xào tam sắc (món chay); Đậu phụ sốt; Rau luộc,Canh rau ngót thịt băm; Mì chay sốt dầu mè,chay,Bình thường,Giữ cân
+Ngũ cốc nguyên hạt + sữa hạt,Hạt điều,Rau xào tam sắc (món chay); Đậu phụ sốt; Rau luộc,Canh rau ngót thịt băm chay; Mì chay sốt dầu mè,chay,Bình thường,Giữ cân
 Ngũ cốc nguyên hạt + sữa hạt,Hạt hỗn hợp,Bánh thấp/luộcg cuốn thịt heo; Canh cá nấu rau; Kim chi ít cay,Bánh bèo Huế; Trứng luộc; Rau luộc,Không chay,Bình thường,Tăng cân
 Ngũ cốc nguyên hạt + sữa hạt,Sữa chua thực vật,Lẩu nấm chay; Củ cải đậu kho (chay eatclean 218kcal); Canh rau ngót,Chả nấm chay; Canh Nấm Bào Ngư Chay,chay,Mỡ trong máu,Giảm mỡ trong máu
 Bánh mì nguyên cám + trứng,Chuối,Bánh ướt chả lụa; Ức gà áp chảo; Rau củ luộc,Lẩu mắm miền Tây; Cá hấp; Rau muống xào tỏi,Không chay,Cao huyết áp,Ổn định huyết áp
@@ -2126,7 +2126,7 @@ Trứng luộc + rau củ hấp,Hạt hạnh nhân,Bún riêu cua; Bò xào nh�
 Khoai lang hấp,Dâu tây,Cơm ba chỉ kho tàu; Bò xào nhẹ; Rau củ luộc,Bò hấp/luộc cần tỏi; Đậu phụ sốt,Không chay,Tiểu đường,Ổn định đường huyết
 Yến mạch + trái cây ít natri,Rau củ luộc nhỏ,Canh bí đỏ hầm xương; Bánh mì; Bò xào nhẹ,Cơm chiên hải sản; Rau muống xào tỏi,Không chay,Cao huyết áp,Ổn định huyết áp
 Sữa chua Hy Lạp + trái cây ít đường,Trứng luộc,Canh đậu hũ non hải sản; Bánh mì; Dưa góp,Bánh bông lan trứng muối; Rau luộc; Bánh mì nhỏ,Không chay,Bình thường,Giảm cân
-Yến mạch + sữa hạt + chuối,Thanh protein,Canh rau ngót thịt băm; Phở; Đậu phụ hấp,Miến gà; Salad trộn ít dầu,Không chay,Bình thường,Giảm cân
+Yến mạch + sữa hạt + chuối,Thanh protein,Canh rau ngót thịt băm chay; Phở; Đậu phụ hấp,Miến gà; Salad trộn ít dầu,Không chay,Bình thường,Giảm cân
 Yến mạch + hạt chia,Hạt hạnh nhân,Cơm rang dưa bò; Canh chua; Dưa góp,Cơm chiên dương châu; Salad trộn ít dầu; Tôm nướng,Không chay,Tiểu đường,Ổn định đường huyết
 Bánh mì nguyên cám + trứng ốp la,Thanh protein,Bún mắm miền Tây; Tôm nướng; Cải thìa xào,Canh cà chua trứng; Ức gà áp chảo,Không chay,Bình thường,Tăng cân
 Sữa chua thực vật + trái cây,Hạt điều,Chả Lụa Chay Kho Nước Tương; Cuốn chay chấm bơ hạt điều; Rau củ luộc,Bún xào chay; Rau muống xào tỏi,chay,Cao huyết áp,Ổn định huyết áp
@@ -2189,7 +2189,7 @@ Yến mạch + hạt chia,Sữa chua Hy Lạp không đường,Lẩu cá kèo l�
 Trứng luộc + rau củ hấp,Dâu tây,Bánh mì trứng ốp la; Cải thìa xào; Canh chua,Canh măng nấu vịt; Cá hấp,Không chay,Tiểu đường,Ổn định đường huyết
 Bánh mì đen + trứng ốp la,Sữa chua Hy Lạp không đường,Mực xào sa tếCá basa sốt cà chua; Phở; Canh cá nấu rau,Bún chả cá; Cải thìa xào,Không chay,Tiểu đường,Ổn định đường huyết
 Bánh mì đen + trứng ốp la,Dâu tây,Cháo hải sản; Canh rau ngót; Canh cá nấu rau,Bánh mì bơ đường; Salad trộn ít dầu; Trứng luộc,Không chay,Tiểu đường,Ổn định đường huyết
-Khoai lang hấp,Dâu tây,Bánh căn Đà Lạt; Ức gà áp chảo; Rau củ luộc,Canh rau ngót thịt băm; Rau củ luộc,Không chay,Tiểu đường,Ổn định đường huyết
+Khoai lang hấp,Dâu tây,Bánh căn Đà Lạt; Ức gà áp chảo; Rau củ luộc,Canh rau ngót thịt băm chay; Rau củ luộc,Không chay,Tiểu đường,Ổn định đường huyết
 Sữa chua Hy Lạp + trái cây ít đường,Hạt hỗn hợp,Bánh khọt Vũng Tàu; Cá hấp; Rau luộc,Hủ tiếu bò kho; Salad trộn ít dầu,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Khoai lang hấp + sữa hạt,Trái cây ít đường,Chả lá lốt hấp; Miến; Trứng luộc,Cơm rang dưa bò; Trứng luộc,Không chay,Mỡ trong máu,Giảm mỡ trong máu
 Khoai lang hấp + sữa hạt,Sữa chua Hy Lạp,Cháo lòng; Bò xào nhẹ; Rau luộc,Canh gà lá giang; Cá hấp,Không chay,Bình thường,Giữ cân
@@ -2277,7 +2277,7 @@ Bánh mì nguyên cám + trứng ốp la,Trứng luộc,Bún chả cá; Rau củ
 Sữa chua Hy Lạp + chuối,Táo,Lẩu gà lá é; Phở; Canh rau ngót,Bún thang; Đậu phụ sốt; Cải thìa xào,Không chay,Cao huyết áp,Ổn định huyết áp
 Khoai lang hấp + sữa hạt,Sữa chua Hy Lạp,Bánh căn Đà Lạt; Tôm nướng; Rau muống xào tỏi,Mực hấp/luộc sa tếCá basa sốt cà chua; Salad trộn ít dầu,Không chay,Bình thường,Tăng cân
 Trứng luộc + rau củ hấp,Hạt hạnh nhân,Cơm hấp/luộc dương châu; Canh cá nấu rau; Trái cây ít đường,Canh cà chua trứng; Trứng luộc,Không chay,Tiểu đường,Ổn định đường huyết
-Bánh mì đen + trứng ốp la,Phô mai ít béo,Xôi mặn; Đậu phụ sốt; Rau luộc,Canh rau ngót thịt băm; Canh rau ngót,Không chay,Tiểu đường,Ổn định đường huyết
+Bánh mì đen + trứng ốp la,Phô mai ít béo,Xôi mặn; Đậu phụ sốt; Rau luộc,Canh rau ngót thịt băm chay; Canh rau ngót,Không chay,Tiểu đường,Ổn định đường huyết
 Bánh mì đen + trứng ốp la,Hạt hạnh nhân,Bánh căn Đà Lạt; Ức gà áp chảo; Canh rau ngót,Bánh mì bơ đường; Canh rau ngót; Trứng luộc,Không chay,Tiểu đường,Ổn định đường huyết
 Yến mạch + sữa hạt,Sữa chua thực vật,Phở Sắn Trộn Nấm Hầu Thủ Chay; Cải thìa xào; Canh cá nấu rau,Sườn chay xào xả ớt; Rau củ luộc; Canh cá nấu rau,chay,Cao huyết áp,Ổn định huyết áp
 Sữa chua Hy Lạp + dâu,Hạt hạnh nhân,Miến lươn; Tôm nướng; Canh rau ngót,Phở gà; Salad trộn ít dầu; Cơm trắng ít,Không chay,Tiểu đường,Ổn định đường huyết

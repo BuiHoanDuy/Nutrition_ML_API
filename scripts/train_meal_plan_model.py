@@ -46,7 +46,6 @@ def train_meal_plan_model():
         'Bữa phụ': 'bua_phu'
     })
     print("[INFO] Standardized column names.")
-
     # --- NEW: Clean whitespace from key categorical columns BEFORE encoding and embedding ---
     print("[INFO] Cleaning whitespace from categorical features...")
     for col in ['che_do_an', 'tinh_trang_suc_khoe', 'muc_tieu']:
@@ -58,17 +57,14 @@ def train_meal_plan_model():
     print("[INFO] Processing user profile features with OneHotEncoder...")
     # Rename columns to match new data structure
     user_features = ['tinh_trang_suc_khoe', 'muc_tieu', 'che_do_an']
-    
     # --- CRITICAL FIX: Consistent data cleaning ---
     # 1. Fill actual NaN values with 'không có'.
     meal_plans_df[user_features] = meal_plans_df[user_features].fillna('không có')
-
     # 2. Strip whitespace from all entries. This might create empty strings ''.
     # 3. Replace any resulting empty strings with 'không có'.
     for col in user_features:
         meal_plans_df[col] = meal_plans_df[col].astype(str).str.strip()
         meal_plans_df[col] = meal_plans_df[col].replace('', 'không có', regex=False)
-
     encoder = OneHotEncoder(handle_unknown='ignore', sparse_output=True)
     user_features_encoded = encoder.fit_transform(meal_plans_df[user_features])
     
