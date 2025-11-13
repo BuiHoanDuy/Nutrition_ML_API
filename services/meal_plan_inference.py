@@ -6,6 +6,8 @@ import os
 import json
 import random
 import logging
+import ssl
+import certifi
 from logging.handlers import RotatingFileHandler
 from pathlib import Path
 
@@ -14,11 +16,16 @@ import joblib
 import numpy as np
 import pandas as pd
 import scipy.sparse
+import google.generativeai as genai
 import torch
 from dotenv import load_dotenv
-from openai import AsyncOpenAI, RateLimitError, APIError
 from sklearn.metrics.pairwise import cosine_similarity
 from transformers import AutoTokenizer, AutoModel
+
+# --- SSL Certificate Configuration ---
+# Set SSL_CERT_FILE to use certifi's certificate bundle
+# This is a robust way to handle SSL verification errors in corporate/firewalled environments.
+os.environ['SSL_CERT_FILE'] = certifi.where()
 
 # --- Constants ---
 SIMILARITY_THRESHOLD = 0.4
@@ -107,67 +114,72 @@ class MealPlanRecommender:
         return self.meal_plans_df is not None and self.phobert_model is not None
 recommender = MealPlanRecommender()
 
-# --- OpenRouter Integration ---
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
-OPENROUTER_MODEL = os.getenv("OPENROUTER_MODEL", "mistralai/mistral-7b-instruct:free")
-OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1/chat/completions"
+# --- Gemini Integration ---
+GEMINI_API_KEY = os.getenv("GOOGLE_API_KEY") # SỬA LỖI: Thống nhất tên biến môi trường
+GEMINI_MODEL_NAME = os.getenv("GEMINI_MODEL", "gemini-2.5-flash") # Cảnh báo: Model này có thể chưa có sẵn qua API.
 
-
-if OPENROUTER_API_KEY:
-    llm_client = AsyncOpenAI(
-        api_key=OPENROUTER_API_KEY,
-        base_url=OPENROUTER_BASE_URL,
-        max_retries=3, # Automatically retry up to 3 times on transient errors
+if GEMINI_API_KEY:
+    genai.configure(api_key=GEMINI_API_KEY)
+    llm_client = genai.GenerativeModel(
+        GEMINI_MODEL_NAME,
+        generation_config={"temperature": 0.1},
+        safety_settings={ # Disable all safety settings for more control
+            'HARM_CATEGORY_HARASSMENT': 'BLOCK_NONE',
+            'HARM_CATEGORY_HATE_SPEECH': 'BLOCK_NONE',
+            'HARM_CATEGORY_SEXUALLY_EXPLICIT': 'BLOCK_NONE',
+            'HARM_CATEGORY_DANGEROUS_CONTENT': 'BLOCK_NONE',
+        }
     )
 else:
     llm_client = None
-    # Thêm cảnh báo quan trọng nếu không tìm thấy API Key
     print("="*80)
-    print("[CẢNH BÁO] Biến môi trường OPENROUTER_API_KEY không được tìm thấy hoặc không hợp lệ.")
+    print("[CẢNH BÁO] Biến môi trường GOOGLE_API_KEY không được tìm thấy hoặc không hợp lệ.")
     print("Hãy đảm bảo bạn đã tạo file .env và đặt API key vào đó.")
     print("="*80)
 
-async def _call_openrouter_llm(prompt: str, model: str = OPENROUTER_MODEL, json_mode: bool = True) -> dict | str | None:
-    """Calls the OpenRouter LLM API using the openai library to get a structured response."""
+async def _call_gemini_llm(prompt: str, json_mode: bool = False) -> dict | str | None:
+    """Calls the Gemini LLM API to get a structured response."""
     if not llm_client:
-        llm_logger.warning("OPENROUTER_API_KEY not set. Skipping LLM call.")
+        llm_logger.warning("GOOGLE_API_KEY not set. Skipping LLM call.")
         return None
 
+    # Gemini uses generation_config for parameters
     request_params = {
-        "model": model,
-        "messages": [{"role": "user", "content": prompt}],
-        "temperature": 0.1 if json_mode else 0.7
+        "generation_config": {"temperature": 0.2 if json_mode else 0.7}
     }
     if json_mode:
-        request_params["response_format"] = {"type": "json_object"}
+        # For Gemini, we specify the response format in generation_config
+        request_params["generation_config"]["response_mime_type"] = "application/json"
 
     try:
-        response = await llm_client.chat.completions.create(**request_params)
-        llm_response_content = response.choices[0].message.content
+        # Use the correct async method for Gemini
+        response = await llm_client.generate_content_async(
+            contents=prompt,
+            generation_config=request_params["generation_config"]
+        )
+        llm_response_content = response.text
 
         try:
-            llm_logger.info(f"LLM call successful. Model: {model}, Prompt: {prompt[:100]}..., Raw Response: {llm_response_content}")
+            llm_logger.info(f"LLM call successful. Model: {GEMINI_MODEL_NAME}, Prompt: {prompt[:100]}..., Raw Response: {llm_response_content}")
         except UnicodeEncodeError:
             safe_prompt = prompt[:100].encode('ascii', 'replace').decode('ascii')
             safe_response = llm_response_content.encode('ascii', 'replace').decode('ascii')
-            llm_logger.info(f"LLM call successful. Model: {model}, Prompt: {safe_prompt}..., Raw Response: {safe_response}")
+            llm_logger.info(f"LLM call successful. Model: {GEMINI_MODEL_NAME}, Prompt: {safe_prompt}..., Raw Response: {safe_response}")
 
         if json_mode:
             return json.loads(llm_response_content)
         else:
             return llm_response_content.strip()
 
-    except RateLimitError as e:
-        llm_logger.error(f"Rate limit hit (429) calling OpenRouter LLM. The library's retries were exhausted. Error: {e}")
-        return None
-    except APIError as e:
-        llm_logger.error(f"API Error from OpenRouter LLM: {e.status_code} - {e.message}")
-        return None
-    except (KeyError, IndexError, json.JSONDecodeError) as e:
+    except (json.JSONDecodeError, ValueError) as e:
         llm_logger.error(f"Error parsing LLM response or malformed response: {e}")
         return None
     except Exception as e:
-        llm_logger.error(f"An unexpected error occurred during LLM call: {e}")
+        # Catching Gemini's rate limit error
+        if "Resource has been exhausted" in str(e) or "429" in str(e):
+            llm_logger.error(f"Rate limit hit calling Gemini LLM. Error: {e}")
+        else:
+            llm_logger.error(f"An unexpected error occurred during LLM call: {e}")
         return None
 
 def _parse_question_with_keywords(question_lower: str) -> dict:
@@ -236,9 +248,35 @@ def _parse_question_with_keywords(question_lower: str) -> dict:
 
     return extracted_params
 
+async def _is_meal_plan_request(question: str) -> bool:
+    """
+    Uses a quick LLM call to determine if the user's query is related to meal planning.
+    This acts as a guardrail to prevent irrelevant questions from being processed.
+    """
+    if not llm_client:
+        # If LLM is not available, assume it's a valid request and let the old logic handle it.
+        return True
+
+    prompt = f"""
+    Phân tích câu hỏi của người dùng. Câu hỏi này có liên quan đến thực phẩm, dinh dưỡng, bữa ăn, hoặc gợi ý thực đơn không?
+    Chỉ trả lời "CÓ" hoặc "KHÔNG".
+
+    Câu hỏi: "{question}"
+    """
+    try:
+        # Use a simpler, faster model call if possible. Here we use the main client.
+        response_text = await _call_gemini_llm(prompt, json_mode=False)
+        
+        if response_text and "có" in response_text.lower():
+            return True
+        return False
+    except Exception as e:
+        llm_logger.error(f"Error during intent detection for question '{question}': {e}")
+        return True # Default to true to avoid blocking valid requests on error
+
 async def parse_meal_plan_question(question: str) -> dict:
     """Parses a natural language question to extract health_status, goal, and nutrition_intent."""
-    llm_prompt = f"""Bạn là một trợ lý dinh dưỡng. Hãy phân tích câu hỏi sau của người dùng và trích xuất các thông tin sau vào định dạng JSON:
+    llm_prompt = f"""Bạn là một trợ lý dinh dưỡng. Hãy phân tích câu hỏi sau của người dùng và trích xuất các thông tin sau vào một đối tượng JSON duy nhất:
 - `health_status`: Tình trạng sức khỏe (ví dụ: 'béo phì', 'tiểu đường', 'bình thường', 'không có').
 - `goal`: Mục tiêu (ví dụ: 'giảm cân', 'tăng cân', 'tăng cơ', 'giữ cân', 'không có').
 - `diet_type`: Loại chế độ ăn đặc biệt nếu có (ví dụ: 'chay', 'keto', 'paleo', 'không có'). Nếu trong câu hỏi có từ 'chay' hoặc 'ăn chay', hãy đặt giá trị này là 'chay'.
@@ -251,7 +289,14 @@ Câu hỏi của người dùng: '{question}'
 
 Vui lòng chỉ trả về một đối tượng JSON hợp lệ.
 """
-    llm_parsed_params = await _call_openrouter_llm(llm_prompt)
+    # --- GUARDRAIL: Check intent first ---
+    is_valid_intent = await _is_meal_plan_request(question)
+    if not is_valid_intent:
+        llm_logger.info(f"Query rejected by intent detection: '{question}'")
+        # Return a special flag to indicate an invalid question
+        return {"invalid_intent": True}
+
+    llm_parsed_params = await _call_gemini_llm(prompt=llm_prompt, json_mode=True)
 
     if llm_parsed_params and isinstance(llm_parsed_params, dict):
         try:
@@ -290,13 +335,20 @@ def _get_query_embedding(text: str, model, tokenizer) -> np.ndarray:
     return outputs.last_hidden_state.mean(dim=1).cpu().numpy()
 
 def recommend_meal_plan(
-    original_question: str, # Thêm câu hỏi gốc làm tham số
-    health_status: str,
-    goal: str,
-    diet_type: str,
-    requested_meals: list[str] = None
+    original_question: str,
+    parsed_params: dict
 ) -> list[dict]:
     """Recommends a suitable meal plan based on user's query and profile."""
+    # Lấy các giá trị từ dictionary, sử dụng .get() để tránh KeyError
+    health_status = parsed_params.get("health_status")
+    goal = parsed_params.get("goal")
+    diet_type = parsed_params.get("diet_type")
+    requested_meals = parsed_params.get("requested_meals", DEFAULT_MEALS)
+
+    # Handle the case where the intent was invalid from the parsing step
+    if parsed_params.get("invalid_intent"):
+        return []
+
     if not recommender.is_ready():
         print("[ERROR] Recommender is not ready. Artifacts may have failed to load.")
         return []
@@ -330,15 +382,26 @@ def recommend_meal_plan(
     filtered_df = recommender.meal_plans_df.copy()
 
     conditions = []
+    # SỬA LỖI LOGIC: Xử lý nhiều giá trị trong một trường (ví dụ: "béo phì, tiểu đường")
+    # Thay vì tìm kiếm sự trùng khớp chính xác, chúng ta sẽ tìm kiếm sự tồn tại của bất kỳ từ khóa nào.
     if diet_type and diet_type != 'không có':
-        conditions.append(filtered_df['Chế độ ăn'].str.lower().str.strip() == diet_type.lower())
+        # Chế độ ăn thường là một giá trị duy nhất, giữ nguyên logic so sánh bằng.
+        conditions.append(filtered_df['Chế độ ăn'].str.lower().str.strip() == diet_type.lower().strip())
+
     if health_status and health_status != 'không có':
-        conditions.append(filtered_df['Tình trạng sức khỏe'].str.lower().str.strip() == health_status.lower())
+        # Tách các tình trạng sức khỏe (ví dụ: "béo phì, tiểu đường" -> ["béo phì", "tiểu đường"])
+        health_keywords = [kw.strip() for kw in health_status.lower().split(',')]
+        # Tạo điều kiện OR: cột phải chứa BẤT KỲ từ khóa nào trong danh sách.
+        health_condition = filtered_df['Tình trạng sức khỏe'].str.lower().str.contains('|'.join(health_keywords), na=False)
+        conditions.append(health_condition)
+
     if goal and goal != 'không có':
-        conditions.append(filtered_df['Mục tiêu'].str.lower().str.strip() == goal.lower())
+        # Tương tự cho mục tiêu
+        goal_keywords = [kw.strip() for kw in goal.lower().split(',')]
+        goal_condition = filtered_df['Mục tiêu'].str.lower().str.contains('|'.join(goal_keywords), na=False)
+        conditions.append(goal_condition)
 
     # Only apply filter if there are specific conditions.
-    # If the query is generic, we skip this and search the whole dataset.
     if conditions:
         filtered_df = filtered_df[np.logical_and.reduce(conditions)]
         if filtered_df.empty:
@@ -380,6 +443,12 @@ def recommend_meal_plan(
     
     # --- NEW LOGIC: Handle first vs. subsequent requests for the same question ---
     # Check if this is a subsequent request for the same question
+    
+    # SỬA LỖI: Nếu chỉ có 1 ứng viên, luôn trả về ứng viên đó.
+    if len(original_relevant_indices) == 1:
+        best_match_index = original_relevant_indices[0]
+        print(f"[INFO] Only one candidate found. Consistently returning index: {best_match_index}")
+
     if original_question in recommender.last_recommendation_cache:
         # This is a subsequent request. Try to find the *next best* result.
         last_shown_index = recommender.last_recommendation_cache[original_question]
@@ -459,20 +528,26 @@ Nhiệm vụ của bạn là diễn giải những gợi ý trên thành một c
 1.  **Bắt đầu thân thiện**: Chào hỏi và tóm tắt lại yêu cầu của người dùng, bao gồm tình trạng sức khỏe và mục tiêu của họ (nếu có). Ví dụ: "Chào bạn, với tình trạng sức khỏe [tình trạng] và mục tiêu [mục tiêu], tôi gợi ý...". Nếu không có thông tin cụ thể về sức khỏe/mục tiêu, hãy bắt đầu bằng cách chào hỏi và đề cập đến câu hỏi chung của họ.
 2.  **Trình bày rõ ràng**: Liệt kê các món ăn gợi ý cho từng bữa một cách mạch lạc.
 3.  **Giải thích ngắn gọn**: Nêu lý do tại sao thực đơn này phù hợp với tình trạng sức khỏe và mục tiêu của họ (nếu có). Ví dụ: "Thực đơn này tập trung vào các món giàu protein nạc và rau xanh, rất tốt cho việc xây dựng cơ bắp...". Nếu không có thông tin gì thêm, chỉ cần trình bày thực đơn.
-4.  **Thêm lời khuyên (nếu có)**: Nếu có thông tin bổ sung, hãy đưa ra lời khuyên.
-5.  **Kết thúc động viên**: Kết thúc bằng một lời chúc hoặc động viên tích cực.
+4.  **Kết thúc động viên**: Kết thúc bằng một lời chúc hoặc động viên tích cực.
 
 **Quan trọng**: Câu trả lời của bạn phải là một đoạn văn hoàn chỉnh, không sử dụng các ký tự gạch đầu dòng (`-`) hay xuống dòng không cần thiết (`\n`). Hãy viết như một chuyên gia đang trò chuyện trực tiếp với người dùng.
 """
 
 async def generate_natural_response_from_recommendations(
     question: str,
-    health_status: str, # Thêm tham số health_status
-    goal: str,           # Thêm tham số goal
+    parsed_params: dict,
     recommendations: list[dict]
 ) -> str:
-    """Uses an LLM via OpenRouter to generate a natural, conversational response based on the structured meal recommendations."""
-    if not recommendations:
+    """Uses a LLM to generate a natural, conversational response based on the structured meal recommendations."""
+    health_status = parsed_params.get("health_status", "không có")
+    goal = parsed_params.get("goal", "không có")
+
+    # SỬA LỖI LOGIC: Phải kiểm tra ý định không hợp lệ TRƯỚC TIÊN.
+    # Đây là bước quan trọng nhất để xử lý các câu hỏi không liên quan.
+    if parsed_params.get("invalid_intent"):
+        return "Xin lỗi, tôi là một trợ lý chuyên về dinh dưỡng và thực đơn. Tôi chưa được huấn luyện để trả lời các câu hỏi ngoài lĩnh vực này. Bạn có cần tôi giúp gì về việc ăn uống không?"
+    elif not recommendations:
+        # Nếu ý định hợp lệ nhưng không tìm thấy kết quả, trả về thông báo này.
         return "Rất tiếc, tôi không tìm thấy thực đơn nào phù hợp với yêu cầu của bạn. Bạn có thể thử lại với một yêu cầu khác nhé."
 
     prompt = _build_natural_response_prompt(
@@ -481,11 +556,7 @@ async def generate_natural_response_from_recommendations(
         goal=goal,
         recommendations=recommendations
     )
-    natural_response = await _call_openrouter_llm(
-        prompt,
-        model=os.getenv("OPENROUTER_MODEL_CHAT", "mistralai/mistral-7b-instruct:free"),
-        json_mode=False
-    )
+    natural_response = await _call_gemini_llm(prompt=prompt, json_mode=False)
 
     if natural_response and isinstance(natural_response, str):
         try:

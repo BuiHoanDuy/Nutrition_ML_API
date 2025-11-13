@@ -94,19 +94,17 @@ async def get_meal_plan_recommendations(
         # Parse the natural language question to extract parameters
         parsed_params = await parse_meal_plan_question(req.question) # Await the async function
 
+        # SỬA LỖI: Truyền toàn bộ dictionary `parsed_params` thay vì các key riêng lẻ.
         recommendations = recommend_meal_plan(
             original_question=req.question,
-            health_status=parsed_params["health_status"],
-            goal=parsed_params["goal"],
-            diet_type=parsed_params["diet_type"],
-            requested_meals=parsed_params["requested_meals"]
+            parsed_params=parsed_params
         )
 
         # New Step: Generate a natural language response from the recommendations
+        # SỬA LỖI: Truyền toàn bộ dictionary `parsed_params`
         natural_response = await generate_natural_response_from_recommendations(
             question=req.question,
-            health_status=parsed_params["health_status"],
-            goal=parsed_params["goal"],
+            parsed_params=parsed_params,
             recommendations=recommendations
         )
  
