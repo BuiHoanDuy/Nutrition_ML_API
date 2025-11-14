@@ -54,6 +54,17 @@ llm_formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(me
 llm_handler.setFormatter(llm_formatter)
 llm_logger.addHandler(llm_handler)
 
+# --- Setup Logging for Meal Plan Requests ---
+meal_plan_logger = logging.getLogger("meal_plan_requests")
+meal_plan_logger.setLevel(logging.INFO)
+meal_plan_logger.propagate = False
+meal_plan_handler = RotatingFileHandler(
+    LOGS_DIR / "meal_plan_requests.log", maxBytes=10_000_000, backupCount=5, encoding="utf-8"
+)
+meal_plan_formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+meal_plan_handler.setFormatter(meal_plan_formatter)
+meal_plan_logger.addHandler(meal_plan_handler)
+
 class MealPlanRecommender:
     """
     A class to handle meal plan recommendations, encapsulating all models and data.
@@ -183,7 +194,10 @@ async def _call_gemini_llm(prompt: str, json_mode: bool = False) -> dict | str |
         return None
 
 def _parse_question_with_keywords(question_lower: str) -> dict:
-    """Fallback function to parse a question using keyword matching."""
+    """
+    Parse a question using advanced keyword matching algorithm.
+    Supports multiple health conditions and goals in a single query.
+    """
     extracted_params = {
         "health_status": "không có",
         "goal": "không có",
@@ -191,40 +205,112 @@ def _parse_question_with_keywords(question_lower: str) -> dict:
         "requested_meals": DEFAULT_MEALS
     }
 
-    # Define keywords for each category
+    # Define comprehensive keywords for each category
+    # Updated with the complete list of health conditions
     health_status_map = {
-        "béo phì": ["béo phì", "thừa cân"],
-        "cao huyết áp": ["cao huyết áp", "huyết áp cao"],
-        "tiểu đường": ["tiểu đường", "đường huyết cao"],
-        "gầy yếu": ["gầy yếu", "quá gầy"],
-        "bình thường": ["bình thường", "người bình thường"]
+        "Táo bón": ["táo bón", "bị táo bón", "mắc táo bón", "táo bón mãn tính"],
+        "Béo phì": ["béo phì", "thừa cân", "béo", "bị béo phì", "mắc béo phì", "béo phì độ"],
+        "Tim mạch": ["tim mạch", "bệnh tim", "vấn đề tim mạch", "bệnh tim mạch", "tim"],
+        "Tăng huyết áp": ["tăng huyết áp", "cao huyết áp", "huyết áp cao", "bị cao huyết áp", "mắc cao huyết áp"],
+        "Tiểu đường": ["tiểu đường", "đái tháo đường", "đường huyết cao", "bị tiểu đường", "mắc tiểu đường"],
+        "Thiếu kẽm": ["thiếu kẽm", "thiếu chất kẽm", "bị thiếu kẽm"],
+        "Thiếu máu": ["thiếu máu", "bị thiếu máu", "mắc thiếu máu", "thiếu hồng cầu"],
+        "Suy dinh dưỡng": ["suy dinh dưỡng", "bị suy dinh dưỡng", "mắc suy dinh dưỡng", "thiếu dinh dưỡng"],
+        "Thiếu canxi": ["thiếu canxi", "thiếu chất canxi", "bị thiếu canxi", "thiếu can xi"],
+        "Rối loạn mỡ máu": ["rối loạn mỡ máu", "mỡ máu cao", "cholesterol cao", "rối loạn lipid máu", "mỡ máu"],
+        "Người mệt mỏi": ["mệt mỏi", "người mệt mỏi", "hay mệt mỏi", "thường xuyên mệt mỏi", "mệt"],
+        "Thiếu vitamin": ["thiếu vitamin", "thiếu vi chất", "thiếu vitamin và khoáng chất", "thiếu vitamin"],
+        "Loãng xương": ["loãng xương", "bị loãng xương", "mắc loãng xương", "xương yếu"],
+        "Trẻ em": ["trẻ em", "trẻ nhỏ", "bé", "con nhỏ", "trẻ", "em bé"],
+        "Phụ nữ mang thai": ["phụ nữ mang thai", "bà bầu", "mang thai", "có thai", "thai phụ", "mẹ bầu"],
+        "Người khỏe mạnh": ["người khỏe mạnh", "bình thường", "khỏe mạnh", "người bình thường", "sức khỏe tốt"]
     }
+    
+    # Updated with the complete list of goals
     goal_map = {
-        "giảm cân": ["giảm cân", "muốn giảm cân"],
-        "tăng cân": ["tăng cân", "muốn tăng cân"],
-        "tăng cơ": ["tăng cơ", "xây dựng cơ bắp"],
-        "giữ cân": ["giữ cân", "duy trì cân nặng"],
-        "duy trì sức khỏe": ["duy trì sức khỏe", "sức khỏe tốt"],
-        "ăn lành mạnh": ["ăn lành mạnh", "chế độ ăn lành mạnh"]
+        "kiểm soát năng lượng": ["kiểm soát năng lượng", "kiểm soát calo", "kiểm soát lượng calo", "kiểm soát calori"],
+        "Giảm cân": ["giảm cân", "muốn giảm cân", "cần giảm cân", "giảm béo", "slim", "giảm trọng lượng"],
+        "Tăng chất xơ": ["tăng chất xơ", "bổ sung chất xơ", "nhiều chất xơ", "ăn nhiều xơ", "chất xơ"],
+        "hạn chế chất béo xấu": ["hạn chế chất béo xấu", "giảm chất béo xấu", "ít chất béo xấu", "tránh chất béo xấu", "chất béo xấu"],
+        "ổn định huyết áp": ["ổn định huyết áp", "huyết áp ổn định", "kiểm soát huyết áp", "điều hòa huyết áp"],
+        "Ổn định đường huyết": ["ổn định đường huyết", "đường huyết ổn định", "kiểm soát đường huyết", "điều hòa đường huyết"],
+        "uống đủ nước": ["uống đủ nước", "đủ nước", "bổ sung nước", "nhiều nước", "đủ chất lỏng"],
+        "Giảm muối": ["giảm muối", "ít muối", "hạn chế muối", "giảm natri", "ít natri", "giảm bớt muối", "muối"],
+        "Bổ sung vitamin và khoáng chất": ["bổ sung vitamin và khoáng chất", "vitamin và khoáng chất", "bổ sung vitamin", "bổ sung khoáng chất", "vitamin khoáng chất"],
+        "Giảm mỡ bão hòa": ["giảm mỡ bão hòa", "ít mỡ bão hòa", "hạn chế mỡ bão hòa", "chất béo bão hòa", "mỡ bão hòa"],
+        "Tăng cường năng lượng": ["tăng cường năng lượng", "nhiều năng lượng", "bổ sung năng lượng", "tăng năng lượng", "năng lượng"],
+        "Bổ sung sắt": ["bổ sung sắt", "nhiều sắt", "thêm sắt", "sắt", "thiếu sắt"],
+        "tăng cường máu": ["tăng cường máu", "bổ máu", "tạo máu", "tăng hồng cầu", "máu"],
+        "Tăng cân": ["tăng cân", "muốn tăng cân", "cần tăng cân", "tăng trọng lượng", "tăng ký"],
+        "bổ sung năng lượng và đạm": ["bổ sung năng lượng và đạm", "năng lượng và đạm", "nhiều đạm", "protein", "đạm"],
+        "Bổ sung canxi và D": ["bổ sung canxi và d", "canxi và vitamin d", "canxi d", "vitamin d và canxi", "canxi vitamin d"],
+        "Hỗ trợ phát triển toàn diện": ["hỗ trợ phát triển toàn diện", "phát triển toàn diện", "phát triển", "tăng trưởng"],
+        "cân bằng dinh dưỡng": ["cân bằng dinh dưỡng", "dinh dưỡng cân bằng", "đầy đủ dinh dưỡng", "dinh dưỡng"],
+        "Duy trì sức khỏe": ["duy trì sức khỏe", "sức khỏe tốt", "giữ sức khỏe", "bảo vệ sức khỏe"],
+        "Bổ sung dinh dưỡng cho thai kỳ": ["bổ sung dinh dưỡng cho thai kỳ", "dinh dưỡng thai kỳ", "dinh dưỡng cho bà bầu", "dinh dưỡng mang thai"]
     }
+    
     diet_type_map = {
-        "chay": ["chay", "ăn chay", "thuần chay", "vegan"],
+        "chay": ["chay", "ăn chay", "thuần chay", "vegan", "vegetarian"],
     }
+    
     meal_map = {
-        "Bữa sáng": ["bữa sáng", "buổi sáng", "sáng"],
-        "Bữa trưa": ["bữa trưa", "buổi trưa", "trưa"],
-        "Bữa tối": ["bữa tối", "buổi tối", "tối"],
-        "Bữa phụ": ["bữa phụ", "ăn vặt", "ăn nhẹ"],
-        "cả_ngày": ["cả ngày", "một ngày", "1 ngày"]
+        "Bữa sáng": ["bữa sáng", "buổi sáng", "sáng", "bữa ăn sáng"],
+        "Bữa trưa": ["bữa trưa", "buổi trưa", "trưa", "bữa ăn trưa"],
+        "Bữa tối": ["bữa tối", "buổi tối", "tối", "bữa ăn tối"],
+        "Bữa phụ": ["bữa phụ", "ăn vặt", "ăn nhẹ", "snack"],
+        "cả_ngày": ["cả ngày", "một ngày", "1 ngày", "trong ngày", "suốt ngày"]
     }
 
-    def find_keyword(text, keyword_map):
+    def find_keywords_multiple(text, keyword_map):
+        """
+        Find ALL matching keywords in the text, not just the first one.
+        Returns a comma-separated string of matched categories, or "không có" if none found.
+        Uses longest-match-first strategy to avoid partial matches.
+        """
+        found_categories = set()  # Use set to avoid duplicates
+        
+        # Sort all keywords by length (longest first) to match longer phrases first
+        # This prevents "cao" from matching when "cao huyết áp" should match
+        all_keywords = []
         for category, kws in keyword_map.items():
-            # Sort by length to match longer phrases first (e.g., "cao huyết áp" before "cao")
-            kws_sorted = sorted(kws, key=len, reverse=True)
-            for kw in kws_sorted:
-                if kw in text:
-                    return category
+            for kw in kws:
+                all_keywords.append((category, kw, len(kw)))
+        
+        # Sort by length descending, then by category to ensure consistency
+        all_keywords.sort(key=lambda x: (-x[2], x[0]))
+        
+        # Track matched positions to avoid overlapping matches
+        matched_ranges = []
+        
+        for category, kw, kw_len in all_keywords:
+            # Check if this keyword appears in text
+            start_pos = text.find(kw)
+            if start_pos != -1:
+                end_pos = start_pos + kw_len
+                
+                # Check if this range significantly overlaps with already matched ranges
+                # Allow some overlap (up to 30% of shorter keyword) to handle cases like
+                # "cao huyết áp" and "huyết áp cao"
+                overlaps = False
+                for matched_start, matched_end in matched_ranges:
+                    overlap_start = max(start_pos, matched_start)
+                    overlap_end = min(end_pos, matched_end)
+                    if overlap_end > overlap_start:
+                        overlap_len = overlap_end - overlap_start
+                        min_len = min(kw_len, matched_end - matched_start)
+                        # If overlap is more than 30% of the shorter keyword, skip
+                        if overlap_len > min_len * 0.3:
+                            overlaps = True
+                            break
+                
+                if not overlaps:
+                    found_categories.add(category)
+                    matched_ranges.append((start_pos, end_pos))
+        
+        if found_categories:
+            # Return comma-separated string, sorted for consistency
+            return ", ".join(sorted(found_categories))
         return "không có"
 
     def find_requested_meals(text, meal_keyword_map):
@@ -238,9 +324,10 @@ def _parse_question_with_keywords(question_lower: str) -> dict:
                         found_meals.append(meal_key)
         return found_meals if found_meals else None
 
-    extracted_params["health_status"] = find_keyword(question_lower, health_status_map)
-    extracted_params["goal"] = find_keyword(question_lower, goal_map)
-    extracted_params["diet_type"] = find_keyword(question_lower, diet_type_map)
+    # Use the improved multi-keyword matching
+    extracted_params["health_status"] = find_keywords_multiple(question_lower, health_status_map)
+    extracted_params["goal"] = find_keywords_multiple(question_lower, goal_map)
+    extracted_params["diet_type"] = find_keywords_multiple(question_lower, diet_type_map)
     
     requested = find_requested_meals(question_lower, meal_map)
     if requested:
@@ -275,54 +362,46 @@ async def _is_meal_plan_request(question: str) -> bool:
         return True # Default to true to avoid blocking valid requests on error
 
 async def parse_meal_plan_question(question: str) -> dict:
-    """Parses a natural language question to extract health_status, goal, and nutrition_intent."""
-    llm_prompt = f"""Bạn là một trợ lý dinh dưỡng. Hãy phân tích câu hỏi sau của người dùng và trích xuất các thông tin sau vào một đối tượng JSON duy nhất:
-- `health_status`: Tình trạng sức khỏe (ví dụ: 'béo phì', 'tiểu đường', 'bình thường', 'không có').
-- `goal`: Mục tiêu (ví dụ: 'giảm cân', 'tăng cân', 'tăng cơ', 'giữ cân', 'không có').
-- `diet_type`: Loại chế độ ăn đặc biệt nếu có (ví dụ: 'chay', 'keto', 'paleo', 'không có'). Nếu trong câu hỏi có từ 'chay' hoặc 'ăn chay', hãy đặt giá trị này là 'chay'.
-- `requested_meals`: Danh sách các bữa ăn được yêu cầu (ví dụ: ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']). Nếu không rõ, mặc định là tất cả.
-
-Nếu không tìm thấy thông tin cụ thể, hãy sử dụng giá trị 'không có' cho các trường `health_status` và `goal`.
-Đối với `requested_meals`, nếu không có yêu cầu cụ thể, hãy mặc định là `['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']`. Nếu người dùng hỏi về "cả ngày", hãy trả về tất cả các bữa.
-
-Câu hỏi của người dùng: '{question}'
-
-Vui lòng chỉ trả về một đối tượng JSON hợp lệ.
-"""
-    # --- GUARDRAIL: Check intent first ---
+    """
+    Parses a natural language question to extract health_status, goal, and nutrition_intent.
+    Uses advanced keyword matching algorithm instead of LLM for extraction.
+    LLM is only used for intent detection (guardrail) and response generation.
+    """
+    # --- GUARDRAIL: Check intent first using LLM ---
     is_valid_intent = await _is_meal_plan_request(question)
     if not is_valid_intent:
         llm_logger.info(f"Query rejected by intent detection: '{question}'")
         # Return a special flag to indicate an invalid question
         return {"invalid_intent": True}
 
-    llm_parsed_params = await _call_gemini_llm(prompt=llm_prompt, json_mode=True)
-
-    if llm_parsed_params and isinstance(llm_parsed_params, dict):
-        try:
-            llm_logger.info(f"LLM successfully parsed question: {question} -> {llm_parsed_params}")
-        except UnicodeEncodeError:
-            safe_question = question.encode('ascii', 'replace').decode('ascii')
-            llm_logger.info(f"LLM successfully parsed question: {safe_question} -> {llm_parsed_params}")
-        
-        final_params = {
-            "health_status": llm_parsed_params.get("health_status", "không có"),
-            "goal": llm_parsed_params.get("goal", "không có"),
-            "diet_type": llm_parsed_params.get("diet_type", "không có"),
-            "requested_meals": llm_parsed_params.get("requested_meals", DEFAULT_MEALS)
-        }
-        
-        if not isinstance(final_params["requested_meals"], list):
-            llm_logger.warning(f"LLM returned non-list for requested_meals. Defaulting. Raw: {llm_parsed_params.get('requested_meals')}")
-            final_params["requested_meals"] = DEFAULT_MEALS
-        return final_params
-    else:
-        try:
-            llm_logger.warning(f"LLM parsing failed for question: {question}. Falling back to keyword parsing.")
-        except UnicodeEncodeError:
-            safe_question = question.encode('ascii', 'replace').decode('ascii')
-            llm_logger.warning(f"LLM parsing failed for question: {safe_question}. Falling back to keyword parsing.")
-        return _parse_question_with_keywords(question.lower())
+    # --- Use keyword matching algorithm for extraction ---
+    # This is more reliable and faster than LLM extraction
+    parsed_params = _parse_question_with_keywords(question.lower())
+    
+    try:
+        llm_logger.info(f"Keyword matching parsed question: {question} -> {parsed_params}")
+    except UnicodeEncodeError:
+        safe_question = question.encode('ascii', 'replace').decode('ascii')
+        llm_logger.info(f"Keyword matching parsed question: {safe_question} -> {parsed_params}")
+    
+    # --- Log extracted parameters to meal_plan_requests.log ---
+    try:
+        meal_plan_logger.info("=" * 80)
+        meal_plan_logger.info(f"Question: {question}")
+        meal_plan_logger.info(f"Tình trạng sức khỏe: {parsed_params.get('health_status', 'không có')}")
+        meal_plan_logger.info(f"Mục tiêu: {parsed_params.get('goal', 'không có')}")
+        meal_plan_logger.info(f"Chế độ ăn: {parsed_params.get('diet_type', 'không có')}")
+        meal_plan_logger.info(f"Các bữa được yêu cầu: {parsed_params.get('requested_meals', DEFAULT_MEALS)}")
+    except UnicodeEncodeError:
+        safe_question = question.encode('ascii', 'replace').decode('ascii')
+        meal_plan_logger.info("=" * 80)
+        meal_plan_logger.info(f"Question: {safe_question}")
+        meal_plan_logger.info(f"Tình trạng sức khỏe: {parsed_params.get('health_status', 'không có')}")
+        meal_plan_logger.info(f"Mục tiêu: {parsed_params.get('goal', 'không có')}")
+        meal_plan_logger.info(f"Chế độ ăn: {parsed_params.get('diet_type', 'không có')}")
+        meal_plan_logger.info(f"Các bữa được yêu cầu: {parsed_params.get('requested_meals', DEFAULT_MEALS)}")
+    
+    return parsed_params
 
 def _get_query_embedding(text: str, model, tokenizer) -> np.ndarray:
     """Generates a PhoBERT embedding for a single query text."""
@@ -492,6 +571,19 @@ def recommend_meal_plan(
                 recommendation[meal_key] = meal_value
         output_recommendations.append(recommendation)
     
+    # --- Log meal plan recommendations to meal_plan_requests.log ---
+    try:
+        meal_plan_logger.info("Thực đơn được gợi ý:")
+        for rec in output_recommendations:
+            for meal_key, meal_value in rec.items():
+                if meal_value and meal_value != "Không có gợi ý":
+                    meal_plan_logger.info(f"  {meal_key}: {meal_value}")
+                else:
+                    meal_plan_logger.info(f"  {meal_key}: Không có gợi ý")
+        meal_plan_logger.info("=" * 80)
+    except Exception as e:
+        meal_plan_logger.error(f"Error logging meal plan recommendations: {e}")
+    
     return output_recommendations
 
 def _build_natural_response_prompt(question: str, health_status: str, goal: str, recommendations: list[dict]) -> str:
@@ -522,7 +614,7 @@ ${health_goal_context}
 
 Dựa trên dữ liệu, đây là gợi ý thực đơn phù hợp nhất cho họ:
 {recs_str}
-Nhiệm vụ của bạn là diễn giải những gợi ý trên thành một câu trả lời tự nhiên, mượt mà, và mang tính tư vấn cho người dùng.
+Nhiệm vụ của bạn là diễn giải những gợi ý trên thành một câu trả lời tự nhiên, mượt mà, và mang tính tư vấn cho người dùng và giữ nguyên lại lượng calo cho từng món ăn của tôi.
 
 **Yêu cầu:**
 1.  **Bắt đầu thân thiện**: Chào hỏi và tóm tắt lại yêu cầu của người dùng, bao gồm tình trạng sức khỏe và mục tiêu của họ (nếu có). Ví dụ: "Chào bạn, với tình trạng sức khỏe [tình trạng] và mục tiêu [mục tiêu], tôi gợi ý...". Nếu không có thông tin cụ thể về sức khỏe/mục tiêu, hãy bắt đầu bằng cách chào hỏi và đề cập đến câu hỏi chung của họ.
