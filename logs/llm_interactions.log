@@ -142,3 +142,193 @@ LLM parsing failed for question: TÃ´i muá»‘n giáº£m cÃ¢n, sÃ¡ng nÃ
 2025-10-26 21:15:35,191 - llm_interactions - WARNING - LLM parsing failed for question: Cho tôi thực đơn cho người gầy. Falling back to keyword parsing.
 2025-10-26 21:15:35,445 - llm_interactions - WARNING - OPENROUTER_API_KEY not set. Skipping LLM call.
 2025-10-26 21:15:35,445 - llm_interactions - WARNING - LLM response for natural language generation was not in the expected format. Falling back to raw data.
+2025-11-19 15:42:26,750 - llm_interactions - INFO - LLM call successful. Model: gemini-2.5-flash, Prompt: 
+    Phân tích câu hỏi của người dùng. Câu hỏi này có liên quan đến thực phẩm, dinh dưỡng, bữa ăn, h..., Raw Response: CÓ
+2025-11-19 15:42:26,752 - llm_interactions - INFO - Keyword matching parsed question: béo phì -> {'health_status': 'Béo phì', 'goal': 'không có', 'diet_type': 'không có', 'requested_meals': ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']}
+2025-11-19 15:42:46,641 - llm_interactions - INFO - LLM call successful. Model: gemini-2.5-flash, Prompt: 
+    Phân tích câu hỏi của người dùng. Câu hỏi này có liên quan đến thực phẩm, dinh dưỡng, bữa ăn, h..., Raw Response: CÓ
+2025-11-19 15:42:46,642 - llm_interactions - INFO - Keyword matching parsed question: tôi bị béo phì -> {'health_status': 'Béo phì', 'goal': 'không có', 'diet_type': 'không có', 'requested_meals': ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']}
+2025-11-19 15:42:56,868 - llm_interactions - INFO - LLM call successful. Model: gemini-2.5-flash, Prompt: Bạn là một chuyên gia dinh dưỡng AI thân thiện và am hiểu, có khả năng tư vấn cá nhân hóa.
+Người dùn..., Raw Response: Chào bạn, tôi hiểu bạn đang gặp tình trạng béo phì và đang tìm kiếm một thực đơn phù hợp để cải thiện sức khỏe. Với vai trò là chuyên gia dinh dưỡng AI, tôi đã chuẩn bị một gợi ý thực đơn được thiết kế để hỗ trợ bạn kiểm soát cân nặng một cách hiệu quả và lành mạnh. Thực đơn này tập trung vào các món ăn ít calo nhưng vẫn đảm bảo đủ dinh dưỡng, ưu tiên các phương pháp chế biến lành mạnh như hấp, luộc, nướng và bổ sung nhiều chất xơ từ rau củ để giúp bạn cảm thấy no lâu hơn. Cụ thể, cho bữa sáng, bạn có thể thưởng thức trứng luộc kết hợp rau củ hấp, với ước tính 150 kcal/100g. Đến bữa trưa, tôi gợi ý bánh khoai mì nướng (khoảng 110 kcal/100g), cá hấp (khoảng 250 kcal/100g) và rau củ luộc (chỉ khoảng 50 kcal/100g). Bữa tối, bạn có thể dùng cơm sườn nướng mật ong (khoảng 110 kcal/100g) cùng rau luộc (khoảng 50 kcal/100g). Và để bổ sung năng lượng giữa các bữa chính, một bữa phụ với trứng luộc (khoảng 150 kcal/100g) sẽ rất phù hợp. Hãy nhớ rằng sự kiên trì và lắng nghe cơ thể mình là chìa khóa để đạt được kết quả tốt nhất. Chúc bạn sẽ có một hành trình cải thiện sức khỏe thật thành công và tràn đầy năng lượng!
+2025-11-19 20:04:46,860 - llm_interactions - INFO - Classifier intent check: xin chào bạn, ngủ thế nào là tốt -> meal_plan (0.65)
+2025-11-19 20:04:46,862 - llm_interactions - INFO - Keyword matching parsed question: xin chào bạn, ngủ thế nào là tốt -> {'health_status': 'không có', 'goal': 'không có', 'diet_type': 'không có', 'requested_meals': ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']}
+2025-11-19 20:09:07,028 - llm_interactions - ERROR - Rate limit hit calling Gemini LLM. Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 250, model: gemini-2.5-flash
+Please retry in 54.329151852s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250
+}
+, retry_delay {
+  seconds: 54
+}
+]
+2025-11-19 20:09:07,032 - llm_interactions - WARNING - LLM response for natural language generation was not in the expected format. Falling back to raw data.
+2025-11-19 20:54:36,034 - llm_interactions - INFO - Classifier intent check: tôi bị béo phì -> meal_plan (1.00)
+2025-11-19 20:54:36,035 - llm_interactions - INFO - Keyword matching parsed question: tôi bị béo phì -> {'health_status': 'Béo phì', 'goal': 'không có', 'diet_type': 'không có', 'requested_meals': ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']}
+2025-11-19 20:54:40,362 - llm_interactions - ERROR - Rate limit hit calling Gemini LLM. Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 250, model: gemini-2.5-flash
+Please retry in 22.149596186s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250
+}
+, retry_delay {
+  seconds: 22
+}
+]
+2025-11-19 20:54:40,362 - llm_interactions - WARNING - LLM response for natural language generation was not in the expected format. Falling back to raw data.
+2025-11-19 21:00:47,031 - llm_interactions - INFO - Classifier intent check: tôi bị béo phì -> meal_plan (1.00)
+2025-11-19 21:00:47,034 - llm_interactions - INFO - Keyword matching parsed question: tôi bị béo phì -> {'health_status': 'Béo phì', 'goal': 'không có', 'diet_type': 'không có', 'requested_meals': ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']}
+2025-11-19 21:00:54,645 - llm_interactions - ERROR - Rate limit hit calling Gemini LLM. Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 250, model: gemini-2.5-flash
+Please retry in 6.800353765s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250
+}
+, retry_delay {
+  seconds: 6
+}
+]
+2025-11-19 21:00:54,645 - llm_interactions - WARNING - LLM response for natural language generation was not in the expected format. Falling back to raw data.
+2025-11-19 21:02:57,739 - llm_interactions - INFO - Classifier intent check: tôi bị béo phì -> meal_plan (1.00)
+2025-11-19 21:02:57,740 - llm_interactions - INFO - Keyword matching parsed question: tôi bị béo phì -> {'health_status': 'Béo phì', 'goal': 'không có', 'diet_type': 'không có', 'requested_meals': ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']}
+2025-11-19 21:02:59,255 - llm_interactions - ERROR - Rate limit hit calling Gemini LLM. Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 250, model: gemini-2.5-flash
+Please retry in 2.13401517s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250
+}
+, retry_delay {
+  seconds: 2
+}
+]
+2025-11-19 21:02:59,255 - llm_interactions - WARNING - LLM response for natural language generation was not in the expected format. Falling back to raw data.
+2025-11-19 21:03:14,330 - llm_interactions - INFO - Classifier intent check: tôi bị thiếu cân -> meal_plan (1.00)
+2025-11-19 21:03:14,332 - llm_interactions - INFO - Keyword matching parsed question: tôi bị thiếu cân -> {'health_status': 'không có', 'goal': 'không có', 'diet_type': 'không có', 'requested_meals': ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']}
+2025-11-19 21:03:14,920 - llm_interactions - ERROR - Rate limit hit calling Gemini LLM. Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 250, model: gemini-2.5-flash
+Please retry in 46.467825475s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250
+}
+, retry_delay {
+  seconds: 46
+}
+]
+2025-11-19 21:03:14,920 - llm_interactions - WARNING - LLM response for natural language generation was not in the expected format. Falling back to raw data.
+2025-11-19 21:03:38,090 - llm_interactions - INFO - Classifier intent check: tôi bị béo phì -> meal_plan (1.00)
+2025-11-19 21:03:38,090 - llm_interactions - INFO - Keyword matching parsed question: tôi bị béo phì -> {'health_status': 'Béo phì', 'goal': 'không có', 'diet_type': 'không có', 'requested_meals': ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']}
+2025-11-19 21:03:38,549 - llm_interactions - ERROR - Rate limit hit calling Gemini LLM. Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 250, model: gemini-2.5-flash
+Please retry in 22.851448779s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250
+}
+, retry_delay {
+  seconds: 22
+}
+]
+2025-11-19 21:03:38,549 - llm_interactions - WARNING - LLM response for natural language generation was not in the expected format. Falling back to raw data.
+2025-11-19 21:03:55,302 - llm_interactions - INFO - Classifier intent check: tôi bị tiểu đường -> meal_plan (1.00)
+2025-11-19 21:03:55,302 - llm_interactions - INFO - Keyword matching parsed question: tôi bị tiểu đường -> {'health_status': 'Tiểu đường', 'goal': 'không có', 'diet_type': 'không có', 'requested_meals': ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']}
+2025-11-19 21:03:55,724 - llm_interactions - ERROR - Rate limit hit calling Gemini LLM. Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 250, model: gemini-2.5-flash
+Please retry in 5.659412654s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250
+}
+, retry_delay {
+  seconds: 5
+}
+]
+2025-11-19 21:03:55,724 - llm_interactions - WARNING - LLM response for natural language generation was not in the expected format. Falling back to raw data.

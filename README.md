@@ -63,7 +63,29 @@ Predicts calories and nutrition information from food text input.
 }
 ```
 
-#### 2. Meal Plan Recommendation (`/recommend_meal_plan`)
+#### 2. Unified Intent Endpoint (`/ask`)
+
+Phân loại câu hỏi và tự động gọi module phù hợp (meal plan, calorie, v.v.).
+
+**Request:**
+
+```json
+{
+  "question": "Mình muốn thực đơn eat clean để giảm cân."
+}
+```
+
+**Response:**
+
+```json
+{
+  "intent": "meal_plan",
+  "confidence": 0.94,
+  "answer": "Chào bạn..."
+}
+```
+
+#### 3. Meal Plan Recommendation (`/recommend_meal_plan`)
 
 Provides personalized meal plan recommendations based on health status and goals.
 
@@ -84,7 +106,7 @@ Provides personalized meal plan recommendations based on health status and goals
 }
 ```
 
-#### 3. Obesity Prediction (`/obesity/predict`)
+#### 4. Obesity Prediction (`/obesity/predict`)
 
 Predicts obesity level based on lifestyle and health parameters.
 

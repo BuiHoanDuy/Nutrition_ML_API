@@ -46,3 +46,225 @@
 2025-10-26 19:22:40,723 - meal_plan_requests - INFO - {"timestamp": "2025-10-26T12:22:40.723947", "question": "Tôi muốn giảm cân, nên ăn gì trong ngày?"}
 2025-10-26 20:13:52,813 - meal_plan_requests - INFO - {"timestamp": "2025-10-26T13:13:52.813885", "question": "tôi cần giảm cân, hãy cho tôi thực đơn"}
 2025-10-26 21:15:35,190 - meal_plan_requests - INFO - {"timestamp": "2025-10-26T14:15:35.190046", "question": "Cho tôi thực đơn cho người gầy"}
+2025-11-19 15:42:24,933 - meal_plan_requests - INFO - {"timestamp": "2025-11-19T08:42:24.933025", "question": "béo phì"}
+2025-11-19 15:42:24,933 - meal_plan_requests - INFO - {"timestamp": "2025-11-19T08:42:24.933025", "question": "béo phì"}
+2025-11-19 15:42:26,752 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 15:42:26,752 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 15:42:26,752 - meal_plan_requests - INFO - Question: béo phì
+2025-11-19 15:42:26,752 - meal_plan_requests - INFO - Question: béo phì
+2025-11-19 15:42:26,752 - meal_plan_requests - INFO - Tình trạng sức khỏe: Béo phì
+2025-11-19 15:42:26,752 - meal_plan_requests - INFO - Tình trạng sức khỏe: Béo phì
+2025-11-19 15:42:26,752 - meal_plan_requests - INFO - Mục tiêu: không có
+2025-11-19 15:42:26,752 - meal_plan_requests - INFO - Mục tiêu: không có
+2025-11-19 15:42:26,753 - meal_plan_requests - INFO - Chế độ ăn: không có
+2025-11-19 15:42:26,753 - meal_plan_requests - INFO - Chế độ ăn: không có
+2025-11-19 15:42:26,753 - meal_plan_requests - INFO - Các bữa được yêu cầu: ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']
+2025-11-19 15:42:26,753 - meal_plan_requests - INFO - Các bữa được yêu cầu: ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']
+2025-11-19 15:42:44,219 - meal_plan_requests - INFO - {"timestamp": "2025-11-19T08:42:44.219792", "question": "tôi bị béo phì"}
+2025-11-19 15:42:44,219 - meal_plan_requests - INFO - {"timestamp": "2025-11-19T08:42:44.219792", "question": "tôi bị béo phì"}
+2025-11-19 15:42:46,642 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 15:42:46,642 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 15:42:46,642 - meal_plan_requests - INFO - Question: tôi bị béo phì
+2025-11-19 15:42:46,642 - meal_plan_requests - INFO - Question: tôi bị béo phì
+2025-11-19 15:42:46,642 - meal_plan_requests - INFO - Tình trạng sức khỏe: Béo phì
+2025-11-19 15:42:46,642 - meal_plan_requests - INFO - Tình trạng sức khỏe: Béo phì
+2025-11-19 15:42:46,642 - meal_plan_requests - INFO - Mục tiêu: không có
+2025-11-19 15:42:46,642 - meal_plan_requests - INFO - Mục tiêu: không có
+2025-11-19 15:42:46,642 - meal_plan_requests - INFO - Chế độ ăn: không có
+2025-11-19 15:42:46,642 - meal_plan_requests - INFO - Chế độ ăn: không có
+2025-11-19 15:42:46,642 - meal_plan_requests - INFO - Các bữa được yêu cầu: ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']
+2025-11-19 15:42:46,642 - meal_plan_requests - INFO - Các bữa được yêu cầu: ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']
+2025-11-19 15:42:46,806 - meal_plan_requests - INFO - Thực đơn được gợi ý:
+2025-11-19 15:42:46,806 - meal_plan_requests - INFO - Thực đơn được gợi ý:
+2025-11-19 15:42:46,806 - meal_plan_requests - INFO -   Bữa sáng: Trứng luộc + rau củ hấp (150 kcal/100g)
+2025-11-19 15:42:46,806 - meal_plan_requests - INFO -   Bữa sáng: Trứng luộc + rau củ hấp (150 kcal/100g)
+2025-11-19 15:42:46,806 - meal_plan_requests - INFO -   Bữa trưa: Bánh khoai mì nướng (110 kcal/100g); Cá hấp (250 kcal/100g); Rau củ luộc (50 kcal/100g)
+2025-11-19 15:42:46,806 - meal_plan_requests - INFO -   Bữa trưa: Bánh khoai mì nướng (110 kcal/100g); Cá hấp (250 kcal/100g); Rau củ luộc (50 kcal/100g)
+2025-11-19 15:42:46,806 - meal_plan_requests - INFO -   Bữa tối: Cơm sườn nướng mật ong (110 kcal/100g); Rau luộc (50 kcal/100g)
+2025-11-19 15:42:46,806 - meal_plan_requests - INFO -   Bữa tối: Cơm sườn nướng mật ong (110 kcal/100g); Rau luộc (50 kcal/100g)
+2025-11-19 15:42:46,806 - meal_plan_requests - INFO -   Bữa phụ: Trứng luộc (150 kcal/100g)
+2025-11-19 15:42:46,806 - meal_plan_requests - INFO -   Bữa phụ: Trứng luộc (150 kcal/100g)
+2025-11-19 15:42:46,806 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 15:42:46,806 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 20:04:46,644 - meal_plan_requests - INFO - {"timestamp": "2025-11-19T13:04:46.644778", "question": "xin chào bạn, ngủ thế nào là tốt"}
+2025-11-19 20:04:46,644 - meal_plan_requests - INFO - {"timestamp": "2025-11-19T13:04:46.644778", "question": "xin chào bạn, ngủ thế nào là tốt"}
+2025-11-19 20:04:46,862 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 20:04:46,862 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 20:04:46,862 - meal_plan_requests - INFO - Question: xin chào bạn, ngủ thế nào là tốt
+2025-11-19 20:04:46,862 - meal_plan_requests - INFO - Question: xin chào bạn, ngủ thế nào là tốt
+2025-11-19 20:04:46,862 - meal_plan_requests - INFO - Tình trạng sức khỏe: không có
+2025-11-19 20:04:46,862 - meal_plan_requests - INFO - Tình trạng sức khỏe: không có
+2025-11-19 20:04:46,862 - meal_plan_requests - INFO - Mục tiêu: không có
+2025-11-19 20:04:46,862 - meal_plan_requests - INFO - Mục tiêu: không có
+2025-11-19 20:04:46,862 - meal_plan_requests - INFO - Chế độ ăn: không có
+2025-11-19 20:04:46,862 - meal_plan_requests - INFO - Chế độ ăn: không có
+2025-11-19 20:04:46,862 - meal_plan_requests - INFO - Các bữa được yêu cầu: ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']
+2025-11-19 20:04:46,862 - meal_plan_requests - INFO - Các bữa được yêu cầu: ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']
+2025-11-19 20:04:47,498 - meal_plan_requests - INFO - Thực đơn được gợi ý:
+2025-11-19 20:04:47,498 - meal_plan_requests - INFO - Thực đơn được gợi ý:
+2025-11-19 20:04:47,498 - meal_plan_requests - INFO -   Bữa sáng: Đậu hũ xào rau củ (150 kcal/100g)
+2025-11-19 20:04:47,498 - meal_plan_requests - INFO -   Bữa sáng: Đậu hũ xào rau củ (150 kcal/100g)
+2025-11-19 20:04:47,499 - meal_plan_requests - INFO -   Bữa trưa: Mực xào sa tế (món chay) (180 kcal/100g); Rau củ luộc (50 kcal/100g); Canh bí đỏ (180 kcal/100g)
+2025-11-19 20:04:47,499 - meal_plan_requests - INFO -   Bữa trưa: Mực xào sa tế (món chay) (180 kcal/100g); Rau củ luộc (50 kcal/100g); Canh bí đỏ (180 kcal/100g)
+2025-11-19 20:04:47,499 - meal_plan_requests - INFO -   Bữa tối: Gỏi bóng cá chay trộn gỏi dưa leo siêu dễ làm (250 kcal/100g); Chả quế chay sốt Thái (180 kcal/100g); Rau luộc (50 kcal/100g)
+2025-11-19 20:04:47,499 - meal_plan_requests - INFO -   Bữa tối: Gỏi bóng cá chay trộn gỏi dưa leo siêu dễ làm (250 kcal/100g); Chả quế chay sốt Thái (180 kcal/100g); Rau luộc (50 kcal/100g)
+2025-11-19 20:04:47,499 - meal_plan_requests - INFO -   Bữa phụ: Sữa chua thực vật (150 kcal/100g)
+2025-11-19 20:04:47,499 - meal_plan_requests - INFO -   Bữa phụ: Sữa chua thực vật (150 kcal/100g)
+2025-11-19 20:04:47,500 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 20:04:47,500 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 20:54:35,775 - meal_plan_requests - INFO - {"timestamp": "2025-11-19T13:54:35.774869", "question": "tôi bị béo phì"}
+2025-11-19 20:54:35,775 - meal_plan_requests - INFO - {"timestamp": "2025-11-19T13:54:35.774869", "question": "tôi bị béo phì"}
+2025-11-19 20:54:36,035 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 20:54:36,035 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 20:54:36,036 - meal_plan_requests - INFO - Question: tôi bị béo phì
+2025-11-19 20:54:36,036 - meal_plan_requests - INFO - Question: tôi bị béo phì
+2025-11-19 20:54:36,036 - meal_plan_requests - INFO - Tình trạng sức khỏe: Béo phì
+2025-11-19 20:54:36,036 - meal_plan_requests - INFO - Tình trạng sức khỏe: Béo phì
+2025-11-19 20:54:36,036 - meal_plan_requests - INFO - Mục tiêu: không có
+2025-11-19 20:54:36,036 - meal_plan_requests - INFO - Mục tiêu: không có
+2025-11-19 20:54:36,036 - meal_plan_requests - INFO - Chế độ ăn: không có
+2025-11-19 20:54:36,036 - meal_plan_requests - INFO - Chế độ ăn: không có
+2025-11-19 20:54:36,036 - meal_plan_requests - INFO - Các bữa được yêu cầu: ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']
+2025-11-19 20:54:36,036 - meal_plan_requests - INFO - Các bữa được yêu cầu: ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']
+2025-11-19 20:54:36,593 - meal_plan_requests - INFO - Thực đơn được gợi ý:
+2025-11-19 20:54:36,593 - meal_plan_requests - INFO - Thực đơn được gợi ý:
+2025-11-19 20:54:36,594 - meal_plan_requests - INFO -   Bữa sáng: Trứng luộc + rau củ hấp (150 kcal/100g)
+2025-11-19 20:54:36,594 - meal_plan_requests - INFO -   Bữa sáng: Trứng luộc + rau củ hấp (150 kcal/100g)
+2025-11-19 20:54:36,594 - meal_plan_requests - INFO -   Bữa trưa: Bánh khoai mì nướng (110 kcal/100g); Cá hấp (250 kcal/100g); Rau củ luộc (50 kcal/100g)
+2025-11-19 20:54:36,594 - meal_plan_requests - INFO -   Bữa trưa: Bánh khoai mì nướng (110 kcal/100g); Cá hấp (250 kcal/100g); Rau củ luộc (50 kcal/100g)
+2025-11-19 20:54:36,594 - meal_plan_requests - INFO -   Bữa tối: Cơm sườn nướng mật ong (110 kcal/100g); Rau luộc (50 kcal/100g)
+2025-11-19 20:54:36,594 - meal_plan_requests - INFO -   Bữa tối: Cơm sườn nướng mật ong (110 kcal/100g); Rau luộc (50 kcal/100g)
+2025-11-19 20:54:36,594 - meal_plan_requests - INFO -   Bữa phụ: Trứng luộc (150 kcal/100g)
+2025-11-19 20:54:36,594 - meal_plan_requests - INFO -   Bữa phụ: Trứng luộc (150 kcal/100g)
+2025-11-19 20:54:36,594 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 20:54:36,594 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 21:00:46,439 - meal_plan_requests - INFO - {"timestamp": "2025-11-19T14:00:46.439489", "question": "tôi bị béo phì"}
+2025-11-19 21:00:46,439 - meal_plan_requests - INFO - {"timestamp": "2025-11-19T14:00:46.439489", "question": "tôi bị béo phì"}
+2025-11-19 21:00:47,034 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 21:00:47,034 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 21:00:47,034 - meal_plan_requests - INFO - Question: tôi bị béo phì
+2025-11-19 21:00:47,034 - meal_plan_requests - INFO - Question: tôi bị béo phì
+2025-11-19 21:00:47,035 - meal_plan_requests - INFO - Tình trạng sức khỏe: Béo phì
+2025-11-19 21:00:47,035 - meal_plan_requests - INFO - Tình trạng sức khỏe: Béo phì
+2025-11-19 21:00:47,035 - meal_plan_requests - INFO - Mục tiêu: không có
+2025-11-19 21:00:47,035 - meal_plan_requests - INFO - Mục tiêu: không có
+2025-11-19 21:00:47,035 - meal_plan_requests - INFO - Chế độ ăn: không có
+2025-11-19 21:00:47,035 - meal_plan_requests - INFO - Chế độ ăn: không có
+2025-11-19 21:00:47,035 - meal_plan_requests - INFO - Các bữa được yêu cầu: ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']
+2025-11-19 21:00:47,035 - meal_plan_requests - INFO - Các bữa được yêu cầu: ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']
+2025-11-19 21:00:48,757 - meal_plan_requests - INFO - Thực đơn được gợi ý:
+2025-11-19 21:00:48,757 - meal_plan_requests - INFO - Thực đơn được gợi ý:
+2025-11-19 21:00:48,757 - meal_plan_requests - INFO -   Bữa sáng: Trứng luộc + rau củ hấp (150 kcal/100g)
+2025-11-19 21:00:48,757 - meal_plan_requests - INFO -   Bữa sáng: Trứng luộc + rau củ hấp (150 kcal/100g)
+2025-11-19 21:00:48,757 - meal_plan_requests - INFO -   Bữa trưa: Bánh khoai mì nướng (110 kcal/100g); Cá hấp (250 kcal/100g); Rau củ luộc (50 kcal/100g)
+2025-11-19 21:00:48,757 - meal_plan_requests - INFO -   Bữa trưa: Bánh khoai mì nướng (110 kcal/100g); Cá hấp (250 kcal/100g); Rau củ luộc (50 kcal/100g)
+2025-11-19 21:00:48,758 - meal_plan_requests - INFO -   Bữa tối: Cơm sườn nướng mật ong (110 kcal/100g); Rau luộc (50 kcal/100g)
+2025-11-19 21:00:48,758 - meal_plan_requests - INFO -   Bữa tối: Cơm sườn nướng mật ong (110 kcal/100g); Rau luộc (50 kcal/100g)
+2025-11-19 21:00:48,758 - meal_plan_requests - INFO -   Bữa phụ: Trứng luộc (150 kcal/100g)
+2025-11-19 21:00:48,758 - meal_plan_requests - INFO -   Bữa phụ: Trứng luộc (150 kcal/100g)
+2025-11-19 21:00:48,758 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 21:00:48,758 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 21:02:57,522 - meal_plan_requests - INFO - {"timestamp": "2025-11-19T14:02:57.522594", "question": "tôi bị béo phì"}
+2025-11-19 21:02:57,522 - meal_plan_requests - INFO - {"timestamp": "2025-11-19T14:02:57.522594", "question": "tôi bị béo phì"}
+2025-11-19 21:02:57,740 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 21:02:57,740 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 21:02:57,741 - meal_plan_requests - INFO - Question: tôi bị béo phì
+2025-11-19 21:02:57,741 - meal_plan_requests - INFO - Question: tôi bị béo phì
+2025-11-19 21:02:57,741 - meal_plan_requests - INFO - Tình trạng sức khỏe: Béo phì
+2025-11-19 21:02:57,741 - meal_plan_requests - INFO - Tình trạng sức khỏe: Béo phì
+2025-11-19 21:02:57,741 - meal_plan_requests - INFO - Mục tiêu: không có
+2025-11-19 21:02:57,741 - meal_plan_requests - INFO - Mục tiêu: không có
+2025-11-19 21:02:57,741 - meal_plan_requests - INFO - Chế độ ăn: không có
+2025-11-19 21:02:57,741 - meal_plan_requests - INFO - Chế độ ăn: không có
+2025-11-19 21:02:57,741 - meal_plan_requests - INFO - Các bữa được yêu cầu: ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']
+2025-11-19 21:02:57,741 - meal_plan_requests - INFO - Các bữa được yêu cầu: ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']
+2025-11-19 21:02:58,408 - meal_plan_requests - INFO - Thực đơn được gợi ý:
+2025-11-19 21:02:58,408 - meal_plan_requests - INFO - Thực đơn được gợi ý:
+2025-11-19 21:02:58,408 - meal_plan_requests - INFO -   Bữa sáng: Trứng luộc + rau củ hấp (150 kcal/100g)
+2025-11-19 21:02:58,408 - meal_plan_requests - INFO -   Bữa sáng: Trứng luộc + rau củ hấp (150 kcal/100g)
+2025-11-19 21:02:58,408 - meal_plan_requests - INFO -   Bữa trưa: Bánh khoai mì nướng (110 kcal/100g); Cá hấp (250 kcal/100g); Rau củ luộc (50 kcal/100g)
+2025-11-19 21:02:58,408 - meal_plan_requests - INFO -   Bữa trưa: Bánh khoai mì nướng (110 kcal/100g); Cá hấp (250 kcal/100g); Rau củ luộc (50 kcal/100g)
+2025-11-19 21:02:58,408 - meal_plan_requests - INFO -   Bữa tối: Cơm sườn nướng mật ong (110 kcal/100g); Rau luộc (50 kcal/100g)
+2025-11-19 21:02:58,408 - meal_plan_requests - INFO -   Bữa tối: Cơm sườn nướng mật ong (110 kcal/100g); Rau luộc (50 kcal/100g)
+2025-11-19 21:02:58,409 - meal_plan_requests - INFO -   Bữa phụ: Trứng luộc (150 kcal/100g)
+2025-11-19 21:02:58,409 - meal_plan_requests - INFO -   Bữa phụ: Trứng luộc (150 kcal/100g)
+2025-11-19 21:02:58,409 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 21:02:58,409 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 21:03:14,088 - meal_plan_requests - INFO - {"timestamp": "2025-11-19T14:03:14.087871", "question": "tôi bị thiếu cân"}
+2025-11-19 21:03:14,088 - meal_plan_requests - INFO - {"timestamp": "2025-11-19T14:03:14.087871", "question": "tôi bị thiếu cân"}
+2025-11-19 21:03:14,332 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 21:03:14,332 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 21:03:14,332 - meal_plan_requests - INFO - Question: tôi bị thiếu cân
+2025-11-19 21:03:14,332 - meal_plan_requests - INFO - Question: tôi bị thiếu cân
+2025-11-19 21:03:14,332 - meal_plan_requests - INFO - Tình trạng sức khỏe: không có
+2025-11-19 21:03:14,332 - meal_plan_requests - INFO - Tình trạng sức khỏe: không có
+2025-11-19 21:03:14,332 - meal_plan_requests - INFO - Mục tiêu: không có
+2025-11-19 21:03:14,332 - meal_plan_requests - INFO - Mục tiêu: không có
+2025-11-19 21:03:14,332 - meal_plan_requests - INFO - Chế độ ăn: không có
+2025-11-19 21:03:14,332 - meal_plan_requests - INFO - Chế độ ăn: không có
+2025-11-19 21:03:14,332 - meal_plan_requests - INFO - Các bữa được yêu cầu: ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']
+2025-11-19 21:03:14,332 - meal_plan_requests - INFO - Các bữa được yêu cầu: ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']
+2025-11-19 21:03:14,453 - meal_plan_requests - INFO - Thực đơn được gợi ý:
+2025-11-19 21:03:14,453 - meal_plan_requests - INFO - Thực đơn được gợi ý:
+2025-11-19 21:03:14,453 - meal_plan_requests - INFO -   Bữa sáng: Trứng luộc + rau củ hấp (150 kcal/100g)
+2025-11-19 21:03:14,453 - meal_plan_requests - INFO -   Bữa sáng: Trứng luộc + rau củ hấp (150 kcal/100g)
+2025-11-19 21:03:14,453 - meal_plan_requests - INFO -   Bữa trưa: Bánh mì trứng ốp la (320 kcal/100g); Rau củ luộc (50 kcal/100g); Canh mồng tơi (180 kcal/100g)
+2025-11-19 21:03:14,453 - meal_plan_requests - INFO -   Bữa trưa: Bánh mì trứng ốp la (320 kcal/100g); Rau củ luộc (50 kcal/100g); Canh mồng tơi (180 kcal/100g)
+2025-11-19 21:03:14,453 - meal_plan_requests - INFO -   Bữa tối: Bánh mì trứng ốp la (320 kcal/100g); Rau củ luộc (50 kcal/100g)
+2025-11-19 21:03:14,453 - meal_plan_requests - INFO -   Bữa tối: Bánh mì trứng ốp la (320 kcal/100g); Rau củ luộc (50 kcal/100g)
+2025-11-19 21:03:14,454 - meal_plan_requests - INFO -   Bữa phụ: Sữa chua Hy Lạp không đường (150 kcal/100g)
+2025-11-19 21:03:14,454 - meal_plan_requests - INFO -   Bữa phụ: Sữa chua Hy Lạp không đường (150 kcal/100g)
+2025-11-19 21:03:14,454 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 21:03:14,454 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 21:03:37,867 - meal_plan_requests - INFO - {"timestamp": "2025-11-19T14:03:37.867509", "question": "tôi bị béo phì"}
+2025-11-19 21:03:37,867 - meal_plan_requests - INFO - {"timestamp": "2025-11-19T14:03:37.867509", "question": "tôi bị béo phì"}
+2025-11-19 21:03:38,091 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 21:03:38,091 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 21:03:38,092 - meal_plan_requests - INFO - Question: tôi bị béo phì
+2025-11-19 21:03:38,092 - meal_plan_requests - INFO - Question: tôi bị béo phì
+2025-11-19 21:03:38,092 - meal_plan_requests - INFO - Tình trạng sức khỏe: Béo phì
+2025-11-19 21:03:38,092 - meal_plan_requests - INFO - Tình trạng sức khỏe: Béo phì
+2025-11-19 21:03:38,093 - meal_plan_requests - INFO - Mục tiêu: không có
+2025-11-19 21:03:38,093 - meal_plan_requests - INFO - Mục tiêu: không có
+2025-11-19 21:03:38,093 - meal_plan_requests - INFO - Chế độ ăn: không có
+2025-11-19 21:03:38,093 - meal_plan_requests - INFO - Chế độ ăn: không có
+2025-11-19 21:03:38,093 - meal_plan_requests - INFO - Các bữa được yêu cầu: ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']
+2025-11-19 21:03:38,093 - meal_plan_requests - INFO - Các bữa được yêu cầu: ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']
+2025-11-19 21:03:38,208 - meal_plan_requests - INFO - Thực đơn được gợi ý:
+2025-11-19 21:03:38,208 - meal_plan_requests - INFO - Thực đơn được gợi ý:
+2025-11-19 21:03:38,208 - meal_plan_requests - INFO -   Bữa sáng: Trứng luộc + rau củ hấp (150 kcal/100g)
+2025-11-19 21:03:38,208 - meal_plan_requests - INFO -   Bữa sáng: Trứng luộc + rau củ hấp (150 kcal/100g)
+2025-11-19 21:03:38,209 - meal_plan_requests - INFO -   Bữa trưa: Bánh xèo miền Trung (320 kcal/100g); Cá hấp (250 kcal/100g); Salad trộn ít dầu (50 kcal/100g)
+2025-11-19 21:03:38,209 - meal_plan_requests - INFO -   Bữa trưa: Bánh xèo miền Trung (320 kcal/100g); Cá hấp (250 kcal/100g); Salad trộn ít dầu (50 kcal/100g)
+2025-11-19 21:03:38,209 - meal_plan_requests - INFO -   Bữa tối: Bánh bèo Huế (180 kcal/100g); Tôm nướng (250 kcal/100g); Salad trộn ít dầu (50 kcal/100g)
+2025-11-19 21:03:38,209 - meal_plan_requests - INFO -   Bữa tối: Bánh bèo Huế (180 kcal/100g); Tôm nướng (250 kcal/100g); Salad trộn ít dầu (50 kcal/100g)
+2025-11-19 21:03:38,209 - meal_plan_requests - INFO -   Bữa phụ: Trứng luộc (150 kcal/100g)
+2025-11-19 21:03:38,209 - meal_plan_requests - INFO -   Bữa phụ: Trứng luộc (150 kcal/100g)
+2025-11-19 21:03:38,209 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 21:03:38,209 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 21:03:55,055 - meal_plan_requests - INFO - {"timestamp": "2025-11-19T14:03:55.055120", "question": "tôi bị tiểu đường"}
+2025-11-19 21:03:55,055 - meal_plan_requests - INFO - {"timestamp": "2025-11-19T14:03:55.055120", "question": "tôi bị tiểu đường"}
+2025-11-19 21:03:55,302 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 21:03:55,302 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 21:03:55,302 - meal_plan_requests - INFO - Question: tôi bị tiểu đường
+2025-11-19 21:03:55,302 - meal_plan_requests - INFO - Question: tôi bị tiểu đường
+2025-11-19 21:03:55,302 - meal_plan_requests - INFO - Tình trạng sức khỏe: Tiểu đường
+2025-11-19 21:03:55,302 - meal_plan_requests - INFO - Tình trạng sức khỏe: Tiểu đường
+2025-11-19 21:03:55,303 - meal_plan_requests - INFO - Mục tiêu: không có
+2025-11-19 21:03:55,303 - meal_plan_requests - INFO - Mục tiêu: không có
+2025-11-19 21:03:55,303 - meal_plan_requests - INFO - Chế độ ăn: không có
+2025-11-19 21:03:55,303 - meal_plan_requests - INFO - Chế độ ăn: không có
+2025-11-19 21:03:55,303 - meal_plan_requests - INFO - Các bữa được yêu cầu: ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']
+2025-11-19 21:03:55,303 - meal_plan_requests - INFO - Các bữa được yêu cầu: ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']
+2025-11-19 21:03:55,416 - meal_plan_requests - INFO - Thực đơn được gợi ý:
+2025-11-19 21:03:55,416 - meal_plan_requests - INFO - Thực đơn được gợi ý:
+2025-11-19 21:03:55,416 - meal_plan_requests - INFO -   Bữa sáng: Ngũ cốc nguyên hạt + sữa hạt (150 kcal/100g)
+2025-11-19 21:03:55,416 - meal_plan_requests - INFO -   Bữa sáng: Ngũ cốc nguyên hạt + sữa hạt (150 kcal/100g)
+2025-11-19 21:03:55,416 - meal_plan_requests - INFO -   Bữa trưa: Rau càng cua trộn chay (50 kcal/100g); Sandwich cá ngừ chay (250 kcal/100g); Rau luộc (50 kcal/100g)
+2025-11-19 21:03:55,416 - meal_plan_requests - INFO -   Bữa trưa: Rau càng cua trộn chay (50 kcal/100g); Sandwich cá ngừ chay (250 kcal/100g); Rau luộc (50 kcal/100g)
+2025-11-19 21:03:55,416 - meal_plan_requests - INFO -   Bữa tối: Súp Măng Tây Trắng Nấm Tuyết Chay (180 kcal/100g); Rau muống xào tỏi (50 kcal/100g)
+2025-11-19 21:03:55,416 - meal_plan_requests - INFO -   Bữa tối: Súp Măng Tây Trắng Nấm Tuyết Chay (180 kcal/100g); Rau muống xào tỏi (50 kcal/100g)
+2025-11-19 21:03:55,417 - meal_plan_requests - INFO -   Bữa phụ: Trái cây ít đường (50 kcal/100g)
+2025-11-19 21:03:55,417 - meal_plan_requests - INFO -   Bữa phụ: Trái cây ít đường (50 kcal/100g)
+2025-11-19 21:03:55,417 - meal_plan_requests - INFO - ================================================================================
+2025-11-19 21:03:55,417 - meal_plan_requests - INFO - ================================================================================

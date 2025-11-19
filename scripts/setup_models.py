@@ -22,6 +22,7 @@ def setup_models():
         "models/calorie",
         "models/obesity", 
         "models/meal_plan",
+        "models/question_classifier",
         "logs"
     ]
     
@@ -67,6 +68,38 @@ def setup_models():
     except Exception as e:
         print(f"[ERROR] Error training meal plan model: {e}")
         return False
+
+    # Train question classifier if dataset is available
+    dataset_path = project_root / "data" / "dataset_clean_text_v7.csv"
+    if dataset_path.exists():
+        print("\n[INFO] Training question classifier model...")
+        try:
+            from scripts.train_question_classifier import (
+                Config as QCConfig,
+                train_question_classifier,
+            )
+
+            qc_config = QCConfig(
+                data_path=dataset_path,
+                model_name="vinai/phobert-base",
+                output_dir=project_root / "models" / "question_classifier",
+                test_size=0.1,
+                num_train_epochs=3,
+                batch_size=16,
+                learning_rate=5e-5,
+                weight_decay=0.01,
+                seed=42,
+            )
+            train_question_classifier(qc_config)
+            print("[OK] Question classifier training completed")
+        except Exception as e:
+            print(f"[ERROR] Error training question classifier: {e}")
+            return False
+    else:
+        print(
+            f"[WARN] Question classifier dataset not found at {dataset_path}. "
+            "Skipping classifier training."
+        )
     
     print("\n" + "=" * 50)
     print("[SUCCESS] Setup completed successfully!")

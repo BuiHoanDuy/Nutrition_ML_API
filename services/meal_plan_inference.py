@@ -7,6 +7,7 @@ import json
 import random
 import logging
 import ssl
+import asyncio
 import certifi
 from logging.handlers import RotatingFileHandler
 from pathlib import Path
@@ -21,6 +22,10 @@ import torch
 from dotenv import load_dotenv
 from sklearn.metrics.pairwise import cosine_similarity
 from transformers import AutoTokenizer, AutoModel
+from services.question_classifier import (
+    classify_question,
+    is_ready as question_classifier_ready,
+)
 
 # --- SSL Certificate Configuration ---
 # Set SSL_CERT_FILE to use certifi's certificate bundle
@@ -128,6 +133,7 @@ recommender = MealPlanRecommender()
 # --- Gemini Integration ---
 GEMINI_API_KEY = os.getenv("GOOGLE_API_KEY") # SỬA LỖI: Thống nhất tên biến môi trường
 GEMINI_MODEL_NAME = os.getenv("GEMINI_MODEL", "gemini-2.5-flash") # Cảnh báo: Model này có thể chưa có sẵn qua API.
+LLM_TIMEOUT_SECONDS = float(os.getenv("LLM_TIMEOUT_SECONDS", "15"))
 
 if GEMINI_API_KEY:
     genai.configure(api_key=GEMINI_API_KEY)
@@ -164,9 +170,12 @@ async def _call_gemini_llm(prompt: str, json_mode: bool = False) -> dict | str |
 
     try:
         # Use the correct async method for Gemini
-        response = await llm_client.generate_content_async(
-            contents=prompt,
-            generation_config=request_params["generation_config"]
+        response = await asyncio.wait_for(
+            llm_client.generate_content_async(
+                contents=prompt,
+                generation_config=request_params["generation_config"]
+            ),
+            timeout=LLM_TIMEOUT_SECONDS
         )
         llm_response_content = response.text
 
@@ -182,6 +191,12 @@ async def _call_gemini_llm(prompt: str, json_mode: bool = False) -> dict | str |
         else:
             return llm_response_content.strip()
 
+    except asyncio.TimeoutError:
+        llm_logger.error(
+            "LLM call timed out after %.1fs. Falling back to structured response.",
+            LLM_TIMEOUT_SECONDS
+        )
+        return None
     except (json.JSONDecodeError, ValueError) as e:
         llm_logger.error(f"Error parsing LLM response or malformed response: {e}")
         return None
@@ -337,11 +352,34 @@ def _parse_question_with_keywords(question_lower: str) -> dict:
 
 async def _is_meal_plan_request(question: str) -> bool:
     """
-    Uses a quick LLM call to determine if the user's query is related to meal planning.
-    This acts as a guardrail to prevent irrelevant questions from being processed.
+    Determine if the query should be handled by the meal-plan module.
+    Prefer the local classifier; fall back to Gemini guardrail if absent.
     """
+    if question_classifier_ready():
+        result = classify_question(question)
+        if result:
+            intent_ok = (
+                result["label"] == "meal_plan"
+                and result["confidence"] >= result.get("threshold", 0.0)
+            )
+            try:
+                llm_logger.info(
+                    "Classifier intent check: %s -> %s (%.2f)",
+                    question,
+                    result["label"],
+                    result["confidence"],
+                )
+            except UnicodeEncodeError:
+                safe_question = question.encode("ascii", "replace").decode("ascii")
+                llm_logger.info(
+                    "Classifier intent check: %s -> %s (%.2f)",
+                    safe_question,
+                    result["label"],
+                    result["confidence"],
+                )
+            return intent_ok
+
     if not llm_client:
-        # If LLM is not available, assume it's a valid request and let the old logic handle it.
         return True
 
     prompt = f"""
@@ -351,15 +389,13 @@ async def _is_meal_plan_request(question: str) -> bool:
     Câu hỏi: "{question}"
     """
     try:
-        # Use a simpler, faster model call if possible. Here we use the main client.
         response_text = await _call_gemini_llm(prompt, json_mode=False)
-        
         if response_text and "có" in response_text.lower():
             return True
         return False
     except Exception as e:
         llm_logger.error(f"Error during intent detection for question '{question}': {e}")
-        return True # Default to true to avoid blocking valid requests on error
+        return True
 
 async def parse_meal_plan_question(question: str) -> dict:
     """
