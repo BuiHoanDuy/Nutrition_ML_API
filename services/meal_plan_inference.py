@@ -1,18 +1,15 @@
-"""
-Meal plan inference service.
-"""
+"""Meal plan inference service."""
 # Standard library imports
 import os
 import json
-import random
 import logging
-import ssl
-import asyncio
-import certifi
 from logging.handlers import RotatingFileHandler
 from pathlib import Path
+import re
+import unicodedata
 
 # Third-party imports
+import certifi
 import joblib
 import numpy as np
 import pandas as pd
@@ -22,28 +19,73 @@ import torch
 from dotenv import load_dotenv
 from sklearn.metrics.pairwise import cosine_similarity
 from transformers import AutoTokenizer, AutoModel
-from services.question_classifier import (
-    classify_question,
-    is_ready as question_classifier_ready,
-)
+from rapidfuzz import fuzz, process
 
 # --- SSL Certificate Configuration ---
-# Set SSL_CERT_FILE to use certifi's certificate bundle
-# This is a robust way to handle SSL verification errors in corporate/firewalled environments.
 os.environ['SSL_CERT_FILE'] = certifi.where()
 
 # --- Constants ---
-SIMILARITY_THRESHOLD = 0.4
+SIMILARITY_THRESHOLD = 0.5
+INTENT_MIN_SIMILARITY_FOR_WEAK_KEYWORDS = 0.6
 DEFAULT_MEALS = ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']
-
-# --- Load environment variables from .env file ---
-# Xác định đường dẫn tuyệt đối đến file .env trong thư mục gốc của dự án.
 env_path = Path(__file__).parent.parent / ".env"
 # Nạp các biến môi trường từ file .env. Nếu file không tồn tại, nó sẽ không báo lỗi.
 load_dotenv(dotenv_path=env_path)
 # Define paths
 HERE = Path(__file__).parent.parent
 MODEL_DIR = HERE / "models" / "meal_plan"
+KEYWORD_CONFIG_PATH = HERE / "config" / "keyword_maps.json"
+VI_DICT_PATH = HERE / "data" / "vietnamese_dict.txt"
+
+_keyword_maps_cache: dict | None = None
+_vi_vocab_cache: set[str] | None = None
+
+
+def load_keyword_maps() -> dict:
+    """Load keyword maps for parsing from external JSON config.
+    The JSON must contain: health_status_map, goal_map, diet_type_map, meal_map.
+    Values are dict[label -> list of normalized (khong dau) keywords].
+    """
+    global _keyword_maps_cache
+    if _keyword_maps_cache is not None:
+        return _keyword_maps_cache
+
+    try:
+        with open(KEYWORD_CONFIG_PATH, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except FileNotFoundError as exc:
+        raise RuntimeError(f"Keyword config file not found: {KEYWORD_CONFIG_PATH}") from exc
+    except json.JSONDecodeError as exc:
+        raise RuntimeError(f"Invalid JSON in keyword config file: {exc}") from exc
+
+    for key in ("health_status_map", "goal_map", "diet_type_map", "meal_map"):
+        data.setdefault(key, {})
+
+    _keyword_maps_cache = data
+    return data
+
+
+def load_vi_vocab() -> set[str]:
+    """Load a general Vietnamese vocabulary (non-accent, one word per line).
+
+    File is optional; if missing, this step is skipped gracefully.
+    """
+    global _vi_vocab_cache
+    if _vi_vocab_cache is not None:
+        return _vi_vocab_cache
+
+    vocab: set[str] = set()
+    try:
+        with open(VI_DICT_PATH, "r", encoding="utf-8") as f:
+            for line in f:
+                word = line.strip()
+                if word:
+                    vocab.add(word)
+    except FileNotFoundError:
+        vocab = set()
+
+    _vi_vocab_cache = vocab
+    return vocab
 
 # --- Setup Logging for LLM interactions ---
 LOGS_DIR = HERE / "logs"
@@ -69,6 +111,128 @@ meal_plan_handler = RotatingFileHandler(
 meal_plan_formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 meal_plan_handler.setFormatter(meal_plan_formatter)
 meal_plan_logger.addHandler(meal_plan_handler)
+
+
+def _strip_accents(s: str) -> str:
+    """Remove Vietnamese accents (NFD) for robust matching."""
+    return "".join(
+        c for c in unicodedata.normalize("NFD", s)
+        if unicodedata.category(c) != "Mn"
+    )
+
+CHAR_NORMALIZATION_MAP = {
+    "@": "a",
+    "0": "o",
+}
+
+def normalize_for_match(text: str) -> str:
+    """Soft-normalize user text for teencode / typo tolerant matching."""
+    if not text:
+        return ""
+    s = text.lower()
+    for bad, good in CHAR_NORMALIZATION_MAP.items():
+        s = s.replace(bad, good)
+    s = s.replace("đ", "d").replace("Đ", "d")
+    s = _strip_accents(s)
+    return re.sub(r"\s+", " ", s).strip()
+def _build_correction_dictionary(keyword_maps: dict) -> set[str]:
+    """Build a set of normalized words from all keyword maps for fuzzy correction.
+
+    Each keyword phrase is split into tokens ("tieu", "duong", "tim", "mach", ...)
+    and used as correction targets for teencode / typo tokens.
+    """
+    words: set[str] = set()
+    for section in ("health_status_map", "goal_map", "diet_type_map", "meal_map"):
+        mapping = keyword_maps.get(section, {})
+        for kw_list in mapping.values():
+            for phrase in kw_list:
+                for token in str(phrase).split():
+                    token = token.strip()
+                    if token:
+                        words.add(token)
+    return words
+
+
+def _build_protected_tokens(keyword_maps: dict) -> set[str]:
+    """Build a set of tokens that belong to domain keyword phrases.
+    Những token này (vd. "tieu", "duong", "huyet", "ap") sẽ
+    **không** bị sửa bởi các tầng spell-correction mạnh để tránh
+    làm méo các cụm bệnh/mục tiêu/che_do_an quan trọng.
+    """
+    protected: set[str] = set()
+    for section in ("health_status_map", "goal_map", "diet_type_map", "meal_map"):
+        mapping = keyword_maps.get(section, {})
+        for kw_list in mapping.values():
+            for phrase in kw_list:
+                for token in str(phrase).split():
+                    token = token.strip()
+                    if token:
+                        protected.add(token)
+    return protected
+
+
+def correct_teencode_tokens(text: str, keyword_maps: dict, *, threshold: int = 85) -> str:
+
+    if not text:
+        return ""
+
+    vocab = _build_correction_dictionary(keyword_maps)
+    if not vocab:
+        return text
+
+    protected_tokens = _build_protected_tokens(keyword_maps)
+
+    tokens = text.split()
+    corrected_tokens: list[str] = []
+
+    for tok in tokens:
+        # Skip very short tokens (vd. "va", "la") và token domain đã bảo vệ
+        if len(tok) <= 2 or tok in protected_tokens:
+            corrected_tokens.append(tok)
+            continue
+
+        best = process.extractOne(tok, vocab, scorer=fuzz.ratio)
+        if not best:
+            corrected_tokens.append(tok)
+            continue
+
+        match_word, score, _ = best
+        if score >= threshold:
+            corrected_tokens.append(match_word)
+        else:
+            corrected_tokens.append(tok)
+
+    return " ".join(corrected_tokens)
+
+
+def strong_dict_spell_correction(text: str, keyword_maps: dict | None = None, *, threshold: int = 80) -> str:
+    if not text:
+        return ""
+
+    vocab = load_vi_vocab()
+    if not vocab:
+        return text
+
+    protected_tokens: set[str] = set()
+    if keyword_maps is not None:
+        protected_tokens = _build_protected_tokens(keyword_maps)
+
+    tokens = text.split()
+    corrected_tokens: list[str] = []
+
+    for tok in tokens:
+        # Không sửa các token domain đã được bảo vệ hoặc token quá ngắn
+        if len(tok) <= 2 or tok in protected_tokens:
+            corrected_tokens.append(tok)
+            continue
+
+        best = process.extractOne(tok, vocab, scorer=fuzz.ratio)
+        if best and best[1] >= threshold:
+            corrected_tokens.append(best[0])
+        else:
+            corrected_tokens.append(tok)
+
+    return " ".join(corrected_tokens)
 
 class MealPlanRecommender:
     """
@@ -133,7 +297,6 @@ recommender = MealPlanRecommender()
 # --- Gemini Integration ---
 GEMINI_API_KEY = os.getenv("GOOGLE_API_KEY") # SỬA LỖI: Thống nhất tên biến môi trường
 GEMINI_MODEL_NAME = os.getenv("GEMINI_MODEL", "gemini-2.5-flash") # Cảnh báo: Model này có thể chưa có sẵn qua API.
-LLM_TIMEOUT_SECONDS = float(os.getenv("LLM_TIMEOUT_SECONDS", "15"))
 
 if GEMINI_API_KEY:
     genai.configure(api_key=GEMINI_API_KEY)
@@ -170,12 +333,9 @@ async def _call_gemini_llm(prompt: str, json_mode: bool = False) -> dict | str |
 
     try:
         # Use the correct async method for Gemini
-        response = await asyncio.wait_for(
-            llm_client.generate_content_async(
-                contents=prompt,
-                generation_config=request_params["generation_config"]
-            ),
-            timeout=LLM_TIMEOUT_SECONDS
+        response = await llm_client.generate_content_async(
+            contents=prompt,
+            generation_config=request_params["generation_config"]
         )
         llm_response_content = response.text
 
@@ -191,12 +351,6 @@ async def _call_gemini_llm(prompt: str, json_mode: bool = False) -> dict | str |
         else:
             return llm_response_content.strip()
 
-    except asyncio.TimeoutError:
-        llm_logger.error(
-            "LLM call timed out after %.1fs. Falling back to structured response.",
-            LLM_TIMEOUT_SECONDS
-        )
-        return None
     except (json.JSONDecodeError, ValueError) as e:
         llm_logger.error(f"Error parsing LLM response or malformed response: {e}")
         return None
@@ -217,119 +371,52 @@ def _parse_question_with_keywords(question_lower: str) -> dict:
         "health_status": "không có",
         "goal": "không có",
         "diet_type": "không có",
-        "requested_meals": DEFAULT_MEALS
+        "requested_meals": DEFAULT_MEALS,
     }
 
-    # Define comprehensive keywords for each category
-    # Updated with the complete list of health conditions
-    health_status_map = {
-        "Táo bón": ["táo bón", "bị táo bón", "mắc táo bón", "táo bón mãn tính"],
-        "Béo phì": ["béo phì", "thừa cân", "béo", "bị béo phì", "mắc béo phì", "béo phì độ"],
-        "Tim mạch": ["tim mạch", "bệnh tim", "vấn đề tim mạch", "bệnh tim mạch", "tim"],
-        "Tăng huyết áp": ["tăng huyết áp", "cao huyết áp", "huyết áp cao", "bị cao huyết áp", "mắc cao huyết áp"],
-        "Tiểu đường": ["tiểu đường", "đái tháo đường", "đường huyết cao", "bị tiểu đường", "mắc tiểu đường"],
-        "Thiếu kẽm": ["thiếu kẽm", "thiếu chất kẽm", "bị thiếu kẽm"],
-        "Thiếu máu": ["thiếu máu", "bị thiếu máu", "mắc thiếu máu", "thiếu hồng cầu"],
-        "Suy dinh dưỡng": ["suy dinh dưỡng", "bị suy dinh dưỡng", "mắc suy dinh dưỡng", "thiếu dinh dưỡng"],
-        "Thiếu canxi": ["thiếu canxi", "thiếu chất canxi", "bị thiếu canxi", "thiếu can xi"],
-        "Rối loạn mỡ máu": ["rối loạn mỡ máu", "mỡ máu cao", "cholesterol cao", "rối loạn lipid máu", "mỡ máu"],
-        "Người mệt mỏi": ["mệt mỏi", "người mệt mỏi", "hay mệt mỏi", "thường xuyên mệt mỏi", "mệt"],
-        "Thiếu vitamin": ["thiếu vitamin", "thiếu vi chất", "thiếu vitamin và khoáng chất", "thiếu vitamin"],
-        "Loãng xương": ["loãng xương", "bị loãng xương", "mắc loãng xương", "xương yếu"],
-        "Trẻ em": ["trẻ em", "trẻ nhỏ", "bé", "con nhỏ", "trẻ", "em bé"],
-        "Phụ nữ mang thai": ["phụ nữ mang thai", "bà bầu", "mang thai", "có thai", "thai phụ", "mẹ bầu"],
-        "Người khỏe mạnh": ["người khỏe mạnh", "bình thường", "khỏe mạnh", "người bình thường", "sức khỏe tốt"]
-    }
-    
-    # Updated with the complete list of goals
-    goal_map = {
-        "kiểm soát năng lượng": ["kiểm soát năng lượng", "kiểm soát calo", "kiểm soát lượng calo", "kiểm soát calori"],
-        "Giảm cân": ["giảm cân", "muốn giảm cân", "cần giảm cân", "giảm béo", "slim", "giảm trọng lượng"],
-        "Tăng chất xơ": ["tăng chất xơ", "bổ sung chất xơ", "nhiều chất xơ", "ăn nhiều xơ", "chất xơ"],
-        "hạn chế chất béo xấu": ["hạn chế chất béo xấu", "giảm chất béo xấu", "ít chất béo xấu", "tránh chất béo xấu", "chất béo xấu"],
-        "ổn định huyết áp": ["ổn định huyết áp", "huyết áp ổn định", "kiểm soát huyết áp", "điều hòa huyết áp"],
-        "Ổn định đường huyết": ["ổn định đường huyết", "đường huyết ổn định", "kiểm soát đường huyết", "điều hòa đường huyết"],
-        "uống đủ nước": ["uống đủ nước", "đủ nước", "bổ sung nước", "nhiều nước", "đủ chất lỏng"],
-        "Giảm muối": ["giảm muối", "ít muối", "hạn chế muối", "giảm natri", "ít natri", "giảm bớt muối", "muối"],
-        "Bổ sung vitamin và khoáng chất": ["bổ sung vitamin và khoáng chất", "vitamin và khoáng chất", "bổ sung vitamin", "bổ sung khoáng chất", "vitamin khoáng chất"],
-        "Giảm mỡ bão hòa": ["giảm mỡ bão hòa", "ít mỡ bão hòa", "hạn chế mỡ bão hòa", "chất béo bão hòa", "mỡ bão hòa"],
-        "Tăng cường năng lượng": ["tăng cường năng lượng", "nhiều năng lượng", "bổ sung năng lượng", "tăng năng lượng", "năng lượng"],
-        "Bổ sung sắt": ["bổ sung sắt", "nhiều sắt", "thêm sắt", "sắt", "thiếu sắt"],
-        "tăng cường máu": ["tăng cường máu", "bổ máu", "tạo máu", "tăng hồng cầu", "máu"],
-        "Tăng cân": ["tăng cân", "muốn tăng cân", "cần tăng cân", "tăng trọng lượng", "tăng ký"],
-        "bổ sung năng lượng và đạm": ["bổ sung năng lượng và đạm", "năng lượng và đạm", "nhiều đạm", "protein", "đạm"],
-        "Bổ sung canxi và D": ["bổ sung canxi và d", "canxi và vitamin d", "canxi d", "vitamin d và canxi", "canxi vitamin d"],
-        "Hỗ trợ phát triển toàn diện": ["hỗ trợ phát triển toàn diện", "phát triển toàn diện", "phát triển", "tăng trưởng"],
-        "cân bằng dinh dưỡng": ["cân bằng dinh dưỡng", "dinh dưỡng cân bằng", "đầy đủ dinh dưỡng", "dinh dưỡng"],
-        "Duy trì sức khỏe": ["duy trì sức khỏe", "sức khỏe tốt", "giữ sức khỏe", "bảo vệ sức khỏe"],
-        "Bổ sung dinh dưỡng cho thai kỳ": ["bổ sung dinh dưỡng cho thai kỳ", "dinh dưỡng thai kỳ", "dinh dưỡng cho bà bầu", "dinh dưỡng mang thai"]
-    }
-    
-    diet_type_map = {
-        "chay": ["chay", "ăn chay", "thuần chay", "vegan", "vegetarian"],
-    }
-    
-    meal_map = {
-        "Bữa sáng": ["bữa sáng", "buổi sáng", "sáng", "bữa ăn sáng"],
-        "Bữa trưa": ["bữa trưa", "buổi trưa", "trưa", "bữa ăn trưa"],
-        "Bữa tối": ["bữa tối", "buổi tối", "tối", "bữa ăn tối"],
-        "Bữa phụ": ["bữa phụ", "ăn vặt", "ăn nhẹ", "snack"],
-        "cả_ngày": ["cả ngày", "một ngày", "1 ngày", "trong ngày", "suốt ngày"]
-    }
+    maps = load_keyword_maps()
+    health_status_map = maps["health_status_map"]
+    goal_map = maps["goal_map"]
+    diet_type_map = maps["diet_type_map"]
+    meal_map = maps["meal_map"]
 
     def find_keywords_multiple(text, keyword_map):
-        """
-        Find ALL matching keywords in the text, not just the first one.
-        Returns a comma-separated string of matched categories, or "không có" if none found.
-        Uses longest-match-first strategy to avoid partial matches.
-        """
-        found_categories = set()  # Use set to avoid duplicates
-        
-        # Sort all keywords by length (longest first) to match longer phrases first
-        # This prevents "cao" from matching when "cao huyết áp" should match
-        all_keywords = []
-        for category, kws in keyword_map.items():
-            for kw in kws:
-                all_keywords.append((category, kw, len(kw)))
-        
-        # Sort by length descending, then by category to ensure consistency
+        """Find ALL matching keyword categories, using longest-match-first and overlap control."""
+        found_categories = set()
+        all_keywords = [
+            (category, kw, len(kw))
+            for category, kws in keyword_map.items()
+            for kw in kws
+        ]
         all_keywords.sort(key=lambda x: (-x[2], x[0]))
-        
-        # Track matched positions to avoid overlapping matches
         matched_ranges = []
-        
         for category, kw, kw_len in all_keywords:
-            # Check if this keyword appears in text
             start_pos = text.find(kw)
-            if start_pos != -1:
-                end_pos = start_pos + kw_len
-                
-                # Check if this range significantly overlaps with already matched ranges
-                # Allow some overlap (up to 30% of shorter keyword) to handle cases like
-                # "cao huyết áp" and "huyết áp cao"
-                overlaps = False
-                for matched_start, matched_end in matched_ranges:
-                    overlap_start = max(start_pos, matched_start)
-                    overlap_end = min(end_pos, matched_end)
-                    if overlap_end > overlap_start:
-                        overlap_len = overlap_end - overlap_start
-                        min_len = min(kw_len, matched_end - matched_start)
-                        # If overlap is more than 30% of the shorter keyword, skip
-                        if overlap_len > min_len * 0.3:
-                            overlaps = True
-                            break
-                
-                if not overlaps:
-                    found_categories.add(category)
-                    matched_ranges.append((start_pos, end_pos))
-        
-        if found_categories:
-            # Return comma-separated string, sorted for consistency
-            return ", ".join(sorted(found_categories))
-        return "không có"
+            if start_pos == -1:
+                continue
+            end_pos = start_pos + kw_len
+            overlaps = False
+            for matched_start, matched_end in matched_ranges:
+                overlap_start = max(start_pos, matched_start)
+                overlap_end = min(end_pos, matched_end)
+                if overlap_end > overlap_start:
+                    overlap_len = overlap_end - overlap_start
+                    min_len = min(kw_len, matched_end - matched_start)
+                    if overlap_len > min_len * 0.3:
+                        overlaps = True
+                        break
+            if not overlaps:
+                found_categories.add(category)
+                matched_ranges.append((start_pos, end_pos))
+        return ", ".join(sorted(found_categories)) if found_categories else "không có"
 
     def find_requested_meals(text, meal_keyword_map):
-        found_meals = []
+        """Detect which meals are explicitly mentioned in the text.
+        - Không có keyword bữa nào -> trả về None để giữ DEFAULT_MEALS (cả ngày).
+        - Có keyword "cả_ngày" -> coi như hỏi thực đơn cả ngày, trả DEFAULT_MEALS.
+        - Ngược lại, trả về đúng các bữa được nhắc đến.
+        """
+        found_meals: list[str] = []
         for meal_key, kws in meal_keyword_map.items():
             for kw in kws:
                 if kw in text:
@@ -350,80 +437,33 @@ def _parse_question_with_keywords(question_lower: str) -> dict:
 
     return extracted_params
 
-async def _is_meal_plan_request(question: str) -> bool:
-    """
-    Determine if the query should be handled by the meal-plan module.
-    Prefer the local classifier; fall back to Gemini guardrail if absent.
-    """
-    if question_classifier_ready():
-        result = classify_question(question)
-        if result:
-            intent_ok = (
-                result["label"] == "meal_plan"
-                and result["confidence"] >= result.get("threshold", 0.0)
-            )
-            try:
-                llm_logger.info(
-                    "Classifier intent check: %s -> %s (%.2f)",
-                    question,
-                    result["label"],
-                    result["confidence"],
-                )
-            except UnicodeEncodeError:
-                safe_question = question.encode("ascii", "replace").decode("ascii")
-                llm_logger.info(
-                    "Classifier intent check: %s -> %s (%.2f)",
-                    safe_question,
-                    result["label"],
-                    result["confidence"],
-                )
-            return intent_ok
-
-    if not llm_client:
-        return True
-
-    prompt = f"""
-    Phân tích câu hỏi của người dùng. Câu hỏi này có liên quan đến thực phẩm, dinh dưỡng, bữa ăn, hoặc gợi ý thực đơn không?
-    Chỉ trả lời "CÓ" hoặc "KHÔNG".
-
-    Câu hỏi: "{question}"
-    """
-    try:
-        response_text = await _call_gemini_llm(prompt, json_mode=False)
-        if response_text and "có" in response_text.lower():
-            return True
-        return False
-    except Exception as e:
-        llm_logger.error(f"Error during intent detection for question '{question}': {e}")
-        return True
-
 async def parse_meal_plan_question(question: str) -> dict:
+    """Parse question with keyword maps; PhoBERT will gate intent via similarity.
+    Pipeline:
+    1) `normalize_for_match`: lower, map teencode chars, remove accents.
+    2) `correct_teencode_tokens`: fuzzy-correct theo vocab domain (bỏ qua token domain).
+    3) `_parse_question_with_keywords`: trích health_status/goal/diet_type/requested_meals.
     """
-    Parses a natural language question to extract health_status, goal, and nutrition_intent.
-    Uses advanced keyword matching algorithm instead of LLM for extraction.
-    LLM is only used for intent detection (guardrail) and response generation.
-    """
-    # --- GUARDRAIL: Check intent first using LLM ---
-    is_valid_intent = await _is_meal_plan_request(question)
-    if not is_valid_intent:
-        llm_logger.info(f"Query rejected by intent detection: '{question}'")
-        # Return a special flag to indicate an invalid question
-        return {"invalid_intent": True}
+    # 1) Chuẩn hóa mềm câu hỏi (teencode + bỏ dấu)
+    base_normalized = normalize_for_match(question)
+    print("[DEBUG] base_normalized:", base_normalized)
 
-    # --- Use keyword matching algorithm for extraction ---
-    # This is more reliable and faster than LLM extraction
-    parsed_params = _parse_question_with_keywords(question.lower())
-    
-    try:
-        llm_logger.info(f"Keyword matching parsed question: {question} -> {parsed_params}")
-    except UnicodeEncodeError:
-        safe_question = question.encode('ascii', 'replace').decode('ascii')
-        llm_logger.info(f"Keyword matching parsed question: {safe_question} -> {parsed_params}")
-    
-    # --- Log extracted parameters to meal_plan_requests.log ---
+    # 2) Sửa nhẹ theo từ vựng domain (không dùng strong_dict_spell_correction ở bước parse)
+    keyword_maps = load_keyword_maps()
+    normalized_question = correct_teencode_tokens(
+        base_normalized,
+        keyword_maps,
+        threshold=80,
+    )
+    print("[DEBUG] normalized_question:", normalized_question)
+    # 3) Parse keyword trên câu đã chuẩn hóa
+    parsed_params = _parse_question_with_keywords(normalized_question.lower())
+
+    # Logging kết quả parse
     try:
         meal_plan_logger.info("=" * 80)
         meal_plan_logger.info(f"Question: {question}")
+        meal_plan_logger.info(f"Question_normalized: {normalized_question}")
         meal_plan_logger.info(f"Tình trạng sức khỏe: {parsed_params.get('health_status', 'không có')}")
         meal_plan_logger.info(f"Mục tiêu: {parsed_params.get('goal', 'không có')}")
         meal_plan_logger.info(f"Chế độ ăn: {parsed_params.get('diet_type', 'không có')}")
@@ -436,7 +476,10 @@ async def parse_meal_plan_question(question: str) -> dict:
         meal_plan_logger.info(f"Mục tiêu: {parsed_params.get('goal', 'không có')}")
         meal_plan_logger.info(f"Chế độ ăn: {parsed_params.get('diet_type', 'không có')}")
         meal_plan_logger.info(f"Các bữa được yêu cầu: {parsed_params.get('requested_meals', DEFAULT_MEALS)}")
-    
+
+    # Trả thêm text đã chuẩn hóa cho PhoBERT dùng embedding trên text sạch hơn.
+    parsed_params["normalized_question"] = normalized_question
+    parsed_params["dict_corrected_base"] = base_normalized
     return parsed_params
 
 def _get_query_embedding(text: str, model, tokenizer) -> np.ndarray:
@@ -449,20 +492,44 @@ def _get_query_embedding(text: str, model, tokenizer) -> np.ndarray:
         outputs = model(**inputs)
     return outputs.last_hidden_state.mean(dim=1).cpu().numpy()
 
+
+def _build_structured_query_text(
+    health_status: str | None,
+    goal: str | None,
+    diet_type: str | None,
+    requested_meals: list[str] | None
+) -> str:
+    """Creates a normalized text string from parsed attributes for embedding fallback."""
+    meta_parts: list[str] = []
+
+    if health_status and health_status != 'không có':
+        meta_parts.append(f"Tình trạng sức khỏe: {health_status}")
+    if goal and goal != 'không có':
+        meta_parts.append(f"Mục tiêu: {goal}")
+    if diet_type and diet_type != 'không có':
+        meta_parts.append(f"Chế độ ăn: {diet_type}")
+    if requested_meals:
+        meta_parts.append("Các bữa quan tâm: " + ", ".join(requested_meals))
+
+    return " | ".join(meta_parts)
+
 def recommend_meal_plan(
     original_question: str,
     parsed_params: dict
 ) -> list[dict]:
-    """Recommends a suitable meal plan based on user's query and profile."""
+    """Recommends a suitable meal plan based on user's query and profile.
+
+    Intent is controlled by:
+    - Keyword parsing (health_status, goal, diet_type).
+    - PhoBERT similarity gate when no nutrition keywords are found.
+    """
     # Lấy các giá trị từ dictionary, sử dụng .get() để tránh KeyError
     health_status = parsed_params.get("health_status")
     goal = parsed_params.get("goal")
     diet_type = parsed_params.get("diet_type")
     requested_meals = parsed_params.get("requested_meals", DEFAULT_MEALS)
-
-    # Handle the case where the intent was invalid from the parsing step
-    if parsed_params.get("invalid_intent"):
-        return []
+    normalized_question = parsed_params.get("normalized_question") or original_question
+    dict_corrected_base = parsed_params.get("dict_corrected_base")
 
     if not recommender.is_ready():
         print("[ERROR] Recommender is not ready. Artifacts may have failed to load.")
@@ -470,6 +537,13 @@ def recommend_meal_plan(
 
     if not requested_meals:
         requested_meals = DEFAULT_MEALS
+
+    structured_query_text = _build_structured_query_text(
+        health_status=health_status,
+        goal=goal,
+        diet_type=diet_type,
+        requested_meals=requested_meals
+    )
 
     # Create a DataFrame for the user's input to encode
     user_input_df = pd.DataFrame([{
@@ -486,7 +560,7 @@ def recommend_meal_plan(
             'Chế độ ăn': 'che_do_an'
         })
         # This is not used for ranking anymore, but kept for potential future use
-        user_input_encoded = recommender.user_feature_encoder.transform(df_to_encode[recommender.user_features_cols])
+        _ = recommender.user_feature_encoder.transform(df_to_encode[recommender.user_features_cols])
     except ValueError as e:
         print(f"[ERROR] Error encoding user input: {e}")
         return []
@@ -497,6 +571,14 @@ def recommend_meal_plan(
     filtered_df = recommender.meal_plans_df.copy()
 
     conditions = []
+    def _normalize_multi_value_field(raw_value: str) -> list[str]:
+        if not raw_value:
+            return []
+        text = str(raw_value).lower()
+        for pat in (" và ", " và", "và "):
+            text = text.replace(pat, ",")
+        text = text.strip(" ,")
+        return [p.strip() for p in text.split(",") if p.strip()]
     # SỬA LỖI LOGIC: Xử lý nhiều giá trị trong một trường (ví dụ: "béo phì, tiểu đường")
     # Thay vì tìm kiếm sự trùng khớp chính xác, chúng ta sẽ tìm kiếm sự tồn tại của bất kỳ từ khóa nào.
     if diet_type and diet_type != 'không có':
@@ -504,62 +586,122 @@ def recommend_meal_plan(
         conditions.append(filtered_df['Chế độ ăn'].str.lower().str.strip() == diet_type.lower().strip())
 
     if health_status and health_status != 'không có':
-        # Tách các tình trạng sức khỏe (ví dụ: "béo phì, tiểu đường" -> ["béo phì", "tiểu đường"])
-        health_keywords = [kw.strip() for kw in health_status.lower().split(',')]
-        # Tạo điều kiện OR: cột phải chứa BẤT KỲ từ khóa nào trong danh sách.
-        health_condition = filtered_df['Tình trạng sức khỏe'].str.lower().str.contains('|'.join(health_keywords), na=False)
-        conditions.append(health_condition)
+        health_keywords = _normalize_multi_value_field(health_status)
+        if health_keywords:
+            # OR từng keyword, không dùng regex phức tạp
+            health_condition = False
+            col = filtered_df['Tình trạng sức khỏe'].str.lower()
+            for kw in health_keywords:
+                health_condition = health_condition | col.str.contains(kw, na=False)
+            conditions.append(health_condition)
 
     if goal and goal != 'không có':
-        # Tương tự cho mục tiêu
-        goal_keywords = [kw.strip() for kw in goal.lower().split(',')]
-        goal_condition = filtered_df['Mục tiêu'].str.lower().str.contains('|'.join(goal_keywords), na=False)
-        conditions.append(goal_condition)
+        goal_keywords = _normalize_multi_value_field(goal)
+        if goal_keywords:
+            goal_condition = False
+            col = filtered_df['Mục tiêu'].str.lower()
+            for kw in goal_keywords:
+                goal_condition = goal_condition | col.str.contains(kw, na=False)
+            conditions.append(goal_condition)
 
-    # Only apply filter if there are specific conditions.
+    # Chỉ apply filter nếu có điều kiện cụ thể.
     if conditions:
         filtered_df = filtered_df[np.logical_and.reduce(conditions)]
         if filtered_df.empty:
             print("[INFO] No meal plans found after applying hard filters.")
             return []
     else:
-        print("[INFO] Generic query. Skipping hard filters and performing semantic search on the entire dataset.")
+        # Trường hợp câu hỏi chung chung, không có tình trạng sức khỏe / mục tiêu / chế độ ăn.
+        # Ta sẽ coi đây là "generic query" và chọn ngẫu nhiên một vài thực đơn an toàn.
+        print("[INFO] Generic query detected. Selecting random safe meal plans without intent gate.")
+        # Thử ưu tiên các thực đơn dành cho người bình thường (nếu có)
+        generic_mask = recommender.meal_plans_df['Tình trạng sức khỏe'].str.contains(
+            'bình thường|khoe manh|khong benh|khong co benh', case=False, na=False
+        )
+        generic_df = recommender.meal_plans_df[generic_mask]
+        if generic_df.empty:
+            generic_df = recommender.meal_plans_df
+
+        # Chọn ngẫu nhiên 1 dòng làm kế hoạch bữa ăn
+        sampled = generic_df.sample(n=1, random_state=None)
+        best_plans_raw = sampled.to_dict(orient='records')
+
+        output_recommendations = []
+        for plan in best_plans_raw:
+            recommendation = {}
+            for meal_key in requested_meals:
+                meal_value = plan.get(meal_key)
+                if pd.isna(meal_value):
+                    recommendation[meal_key] = "Không có gợi ý"
+                else:
+                    recommendation[meal_key] = meal_value
+            output_recommendations.append(recommendation)
+
+        # Log lại
+        try:
+            meal_plan_logger.info("Thực đơn được gợi ý (generic query - random):")
+            for rec in output_recommendations:
+                for meal_key, meal_value in rec.items():
+                    if meal_value and meal_value != "Không có gợi ý":
+                        meal_plan_logger.info(f"  {meal_key}: {meal_value}")
+                    else:
+                        meal_plan_logger.info(f"  {meal_key}: Không có gợi ý")
+            meal_plan_logger.info("=" * 80)
+        except Exception as e:
+            meal_plan_logger.error(f"Error logging generic meal plan recommendations: {e}")
+
+        return output_recommendations
     
     print(f"[INFO] Found {len(filtered_df)} candidates after filtering.")
 
-    # 2. Perform semantic search on the filtered subset
-    query_text = original_question
-    query_embedding = _get_query_embedding(query_text, recommender.phobert_model, recommender.phobert_tokenizer)
-
-    # Get embeddings only for the filtered candidates
+    # 2. Perform semantic search on the filtered subset with graceful fallback
     filtered_indices = filtered_df.index
     filtered_embeddings = recommender.meal_features_phobert_matrix[filtered_indices]
 
-    # Calculate similarity scores against the filtered subset
-    similarity_scores = cosine_similarity(query_embedding, filtered_embeddings).flatten()
+    # Intent gate: check if any nutrition-related keywords were extracted
+    has_any_keyword = any(
+        v and v != 'không có'
+        for v in (health_status, goal, diet_type)
+    )
 
-    # 3. Rank the filtered candidates
+    # Dùng câu đã được sửa chính tả mạnh nhất nếu có, để PhoBERT bớt nhạy với lỗi.
+    query_text_for_embedding = (dict_corrected_base or normalized_question or original_question).strip()
+    query_embedding = _get_query_embedding(query_text_for_embedding, recommender.phobert_model, recommender.phobert_tokenizer)
+    similarity_scores = cosine_similarity(query_embedding, filtered_embeddings).flatten()
     top_indices = similarity_scores.argsort()[::-1]
 
+    if not len(top_indices):
+        return []
+
     best_score = similarity_scores[top_indices[0]]
+    print(f"[DEBUG] Best similarity score with original question: {best_score:.4f}")
+
+    # PhoBERT-based intent gate: if no nutrition keywords and similarity is very high-level/low, treat as out-of-domain
+    if not has_any_keyword and best_score < INTENT_MIN_SIMILARITY_FOR_WEAK_KEYWORDS:
+        print(
+            f"[INFO] Intent gate: no nutrition keywords and similarity "
+            f"{best_score:.4f} < {INTENT_MIN_SIMILARITY_FOR_WEAK_KEYWORDS}. Treat as out-of-domain."
+        )
+        return []
+
+    if best_score < SIMILARITY_THRESHOLD and structured_query_text:
+        print("[INFO] Similarity below threshold. Retrying with structured attributes.")
+        query_text_for_embedding = structured_query_text
+        query_embedding = _get_query_embedding(query_text_for_embedding, recommender.phobert_model, recommender.phobert_tokenizer)
+        similarity_scores = cosine_similarity(query_embedding, filtered_embeddings).flatten()
+        top_indices = similarity_scores.argsort()[::-1]
+        if not len(top_indices):
+            return []
+        best_score = similarity_scores[top_indices[0]]
+        print(f"[DEBUG] Best similarity score with structured query: {best_score:.4f}")
 
     if best_score < SIMILARITY_THRESHOLD:
         print(f"[INFO] Best match score ({best_score:.2f}) is below threshold ({SIMILARITY_THRESHOLD}). Returning no results.")
         return [] # Return empty list if no good match is found
-
-    # Filter the meal plans to only those that have a suggestion for at least one of the requested meals.
-    # This ensures we don't return an empty plan.
-    # Map local filtered indices back to original DataFrame indices.
-    # `top_indices` are the positions within the `filtered_df`. We use them to get the original indices.
     original_relevant_indices = [filtered_indices[i] for i in top_indices]
     
     if not original_relevant_indices:
         return [] # No suitable plan found after filtering and ranking
-    
-    # --- NEW LOGIC: Handle first vs. subsequent requests for the same question ---
-    # Check if this is a subsequent request for the same question
-    
-    # SỬA LỖI: Nếu chỉ có 1 ứng viên, luôn trả về ứng viên đó.
     if len(original_relevant_indices) == 1:
         best_match_index = original_relevant_indices[0]
         print(f"[INFO] Only one candidate found. Consistently returning index: {best_match_index}")
@@ -578,7 +720,6 @@ def recommend_meal_plan(
             # The last shown index is not in the current candidate list, so start from the beginning
             best_match_index = original_relevant_indices[0]
             print(f"[INFO] Subsequent request. Last shown index not in new candidates. Starting over at index: {best_match_index}")
-
     else:
         # This is the first request for this question.
         # We can take the top result directly or randomize if needed. Let's take the top one for consistency.
@@ -651,16 +792,14 @@ ${health_goal_context}
 Dựa trên dữ liệu, đây là gợi ý thực đơn phù hợp nhất cho họ:
 {recs_str}
 Nhiệm vụ của bạn là diễn giải những gợi ý trên thành một câu trả lời tự nhiên, mượt mà, và mang tính tư vấn cho người dùng và giữ nguyên lại lượng calo cho từng món ăn của tôi.
-
+**Lưu ý độ dài**: Toàn bộ câu trả lời nên ngắn gọn, súc tích, ưu tiên truyền đạt ý chính thay vì mô tả chi tiết từng món.
 **Yêu cầu:**
 1.  **Bắt đầu thân thiện**: Chào hỏi và tóm tắt lại yêu cầu của người dùng, bao gồm tình trạng sức khỏe và mục tiêu của họ (nếu có). Ví dụ: "Chào bạn, với tình trạng sức khỏe [tình trạng] và mục tiêu [mục tiêu], tôi gợi ý...". Nếu không có thông tin cụ thể về sức khỏe/mục tiêu, hãy bắt đầu bằng cách chào hỏi và đề cập đến câu hỏi chung của họ.
 2.  **Trình bày rõ ràng**: Liệt kê các món ăn gợi ý cho từng bữa một cách mạch lạc.
-3.  **Giải thích ngắn gọn**: Nêu lý do tại sao thực đơn này phù hợp với tình trạng sức khỏe và mục tiêu của họ (nếu có). Ví dụ: "Thực đơn này tập trung vào các món giàu protein nạc và rau xanh, rất tốt cho việc xây dựng cơ bắp...". Nếu không có thông tin gì thêm, chỉ cần trình bày thực đơn.
-4.  **Kết thúc động viên**: Kết thúc bằng một lời chúc hoặc động viên tích cực.
-
+3.  **Giải thích ngắn gọn**: Tóm tắt 1–2 câu vì sao thực đơn này phù hợp với tình trạng sức khỏe và mục tiêu của họ, tránh giải thích dài dòng.
+4.  **Kết thúc động viên**: Kết thúc bằng một câu chúc ngắn gọn, tích cực.
 **Quan trọng**: Câu trả lời của bạn phải là một đoạn văn hoàn chỉnh, không sử dụng các ký tự gạch đầu dòng (`-`) hay xuống dòng không cần thiết (`\n`). Hãy viết như một chuyên gia đang trò chuyện trực tiếp với người dùng.
 """
-
 async def generate_natural_response_from_recommendations(
     question: str,
     parsed_params: dict,
@@ -670,12 +809,8 @@ async def generate_natural_response_from_recommendations(
     health_status = parsed_params.get("health_status", "không có")
     goal = parsed_params.get("goal", "không có")
 
-    # SỬA LỖI LOGIC: Phải kiểm tra ý định không hợp lệ TRƯỚC TIÊN.
-    # Đây là bước quan trọng nhất để xử lý các câu hỏi không liên quan.
-    if parsed_params.get("invalid_intent"):
-        return "Xin lỗi, tôi là một trợ lý chuyên về dinh dưỡng và thực đơn. Tôi chưa được huấn luyện để trả lời các câu hỏi ngoài lĩnh vực này. Bạn có cần tôi giúp gì về việc ăn uống không?"
-    elif not recommendations:
-        # Nếu ý định hợp lệ nhưng không tìm thấy kết quả, trả về thông báo này.
+    if not recommendations:
+        # Không có thực đơn nào được tìm thấy (có thể do intent gate hoặc không có match phù hợp).
         return "Rất tiếc, tôi không tìm thấy thực đơn nào phù hợp với yêu cầu của bạn. Bạn có thể thử lại với một yêu cầu khác nhé."
 
     prompt = _build_natural_response_prompt(
@@ -688,11 +823,10 @@ async def generate_natural_response_from_recommendations(
 
     if natural_response and isinstance(natural_response, str):
         try:
-            cleaned_response = natural_response.replace("\n", " ").replace("- ", "").strip()
-            return cleaned_response
+            return natural_response.replace("\n", " ").replace("- ", "").strip()
         except UnicodeEncodeError:
-            safe_response = natural_response.encode('ascii', 'replace').decode('ascii')
-            return safe_response.replace("\n", " ").replace("- ", "").strip()
+            safe = natural_response.encode('ascii', 'replace').decode('ascii')
+            return safe.replace("\n", " ").replace("- ", "").strip()
     
     llm_logger.warning("LLM response for natural language generation was not in the expected format. Falling back to raw data.")
     # --- CRITICAL FIX: Improve fallback response formatting ---
