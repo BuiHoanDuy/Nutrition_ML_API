@@ -1,0 +1,49 @@
+{
+  "health_status_map": {
+    "Táo bón": ["tao bon", "bi tao bon", "mac tao bon", "tao bon man tinh"],
+    "Béo phì": ["beo phi", "thua can", "beo", "bi beo phi", "mac beo phi", "beo phi do","map"],
+    "Tim mạch": ["tim mach", "benh tim", "van de tim mach", "benh tim mach", "tim"],
+    "Huyết áp": ["tang huyet ap", "cao huyet ap", "huyet ap cao", "bi cao huyet ap", "mac cao huyet ap"],
+    "Tiểu đường": ["tieu duong", "dai thao duong", "duong huyet cao", "bi tieu duong", "mac tieu duong"],
+    "Thiếu kẽm": ["thieu kem", "thieu chat kem", "bi thieu kem"],
+    "Thiếu máu": ["thieu mau", "bi thieu mau", "mac thieu mau", "thieu hong cau"],
+    "Suy dinh dưỡng": ["suy dinh duong", "bi suy dinh duong", "mac suy dinh duong", "thieu dinh duong","om yeu","gay go","xanh xao"],
+    "Thiếu canxi": ["thieu canxi", "thieu chat canxi", "bi thieu canxi", "thieu can xi"],
+    "Rối loạn mỡ máu": ["roi loan mo mau", "mo mau cao", "cholesterol cao", "roi loan lipid mau", "mo mau","mo trong mau"],
+    "Loãng xương": ["loang xuong", "bi loang xuong", "mac loang xuong", "xuong yeu"],
+    "Trẻ em": ["tre em", "tre nho", "be", "con nho", "tre", "em be"],
+    "Người khỏe mạnh": ["nguoi khoe manh", "binh thuong", "khoe manh", "nguoi binh thuong", "suc khoe tot"]
+  },
+  "goal_map": {
+    "kiểm soát năng lượng": ["kiem soat nang luong", "kiem soat calo", "kiem soat luong calo", "kiem soat calori"],
+    "Giảm cân": ["giam can", "muon giam can", "can giam can", "giam beo", "slim", "giam trong luong"],
+    "Tăng chất xơ": ["tang chat xo", "bo sung chat xo", "nhieu chat xo", "an nhieu xo", "chat xo"],
+    "hạn chế chất béo xấu": ["han che chat beo xau", "giam chat beo xau", "it chat beo xau", "tranh chat beo xau", "chat beo xau"],
+    "ổn định huyết áp": ["on dinh huyet ap", "huyet ap on dinh", "kiem soat huyet ap", "dieu hoa huyet ap"],
+    "Ổn định đường huyết": ["on dinh duong huyet", "duong huyet on dinh", "kiem soat duong huyet", "dieu hoa duong huyet"],
+    "uống đủ nước": ["uong du nuoc", "du nuoc", "bo sung nuoc", "nhieu nuoc", "du chat long"],
+    "Giảm muối": ["giam muoi", "it muoi", "han che muoi", "giam natri", "it natri", "giam bot muoi", "muoi"],
+    "Bổ sung vitamin và khoáng chất": ["bo sung vitamin va khoang chat", "vitamin va khoang chat", "bo sung vitamin", "bo sung khoang chat", "vitamin khoang chat"],
+    "Giảm mỡ bão hòa": ["giam mo bao hoa", "it mo bao hoa", "han che mo bao hoa", "chat beo bao hoa", "mo bao hoa"],
+    "Tăng cường năng lượng": ["tang cuong nang luong", "nhieu nang luong", "bo sung nang luong", "tang nang luong", "nang luong"],
+    "Bổ sung sắt": ["bo sung sat", "nhieu sat", "them sat", "sat", "thieu sat"],
+    "tăng cường máu": ["tang cuong mau", "bo mau", "tao mau", "tang hong cau", "mau"],
+    "Tăng cân": ["tang can", "muon tang can", "can tang can", "tang trong luong", "tang ky"],
+    "bổ sung năng lượng và đạm": ["bo sung nang luong va dam", "nang luong va dam", "nhieu dam", "protein", "dam"],
+    "Bổ sung canxi và D": ["bo sung canxi va d", "canxi va vitamin d", "canxi d", "vitamin d va canxi", "canxi vitamin d"],
+    "Hỗ trợ phát triển toàn diện": ["ho tro phat trien toan dien", "phat trien toan dien", "phat trien", "tang truong"],
+    "cân bằng dinh dưỡng": ["can bang dinh duong", "dinh duong can bang", "day du dinh duong", "dinh duong"],
+    "Duy trì sức khỏe": ["duy tri suc khoe", "suc khoe tot", "giu suc khoe", "bao ve suc khoe"]
+  },
+  "diet_type_map": {
+    "chay": ["chay", "an chay", "thuan chay", "vegan", "vegetarian"],
+    "không chay": ["khong chay", "khong co mon chay", "tranh mon chay"]
+  },
+  "meal_map": {
+    "Bữa sáng": ["bua sang", "buoi sang", "an sang", "bua an sang"],
+    "Bữa trưa": ["bua trua", "buoi trua", "an trua", "bua an trua"],
+    "Bữa tối": ["bua toi", "buoi toi", "an toi", "bua an toi"],
+    "Bữa phụ": ["bua phu", "an vat", "an nhe", "snack"],
+    "cả_ngày": ["ca ngay", "mot ngay", "1 ngay", "trong ngay", "suot ngay"]
+  }
+}
