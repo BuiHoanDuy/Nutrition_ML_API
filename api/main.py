@@ -15,7 +15,7 @@ from api.routers import obesity
 
 from services.calorie_inference import infer  # For calorie prediction
 from services.meal_plan_inference import (
-    generate_natural_response_from_recommendations,
+    generate_answer_with_fallback,
     parse_meal_plan_question,
     recommend_meal_plan,
 )
@@ -134,20 +134,17 @@ async def _generate_meal_plan_answer(question: str) -> tuple[bool, str]:
         # Parse the natural language question to extract parameters
         parsed_params = await parse_meal_plan_question(question) # Await the async function
 
-        # SỬA LỖI: Truyền toàn bộ dictionary `parsed_params` thay vì các key riêng lẻ.
+        # Tạo recommendations từ data (nếu có)
         recommendations = recommend_meal_plan(
             original_question=question,
-            parsed_params=parsed_params
+            parsed_params=parsed_params,
         )
 
-        if not recommendations:
-            return False, "Rất tiếc, tôi không tìm thấy thực đơn nào phù hợp với yêu cầu của bạn."
-
-        # New Step: Generate a natural language response from the recommendations
-        natural_response = await generate_natural_response_from_recommendations(
+        # Sinh câu trả lời cuối cùng, có fallback sang Gemini
+        natural_response = await generate_answer_with_fallback(
             question=question,
             parsed_params=parsed_params,
-            recommendations=recommendations
+            recommendations=recommendations,
         )
  
         # Return the generated text instead of the raw JSON
@@ -210,60 +207,3 @@ async def ask_nutrition_assistant(req: AskRequest) -> Dict[str, Any]:
         "intent": final_intent,
         "answer": final_answer
     }
-
-
-# --- HMM-based Meal Sequence Endpoints ---
-
-# @app.get("/generate_daily_menu", summary="Generate a full day menu using HMM")
-# async def get_daily_menu(num_meals: int = 3) -> Dict[str, Any]:
-#     """
-#     Generates a random but probable full-day meal plan using the HMM.
-#     This simulates a likely sequence of meal types (e.g., breakfast -> lunch -> dinner).
-#     """
-#     try:
-#         menu = generate_full_day_menu(num_meals=num_meals)
-#         if "error" in menu:
-#             raise HTTPException(status_code=500, detail=menu["error"])
-#         return {"success": True, "menu": menu}
-#     except Exception as e:
-#         # Catch exceptions from within the service function as well
-#         raise HTTPException(status_code=500, detail=f"Error generating daily menu: {e}")
-
-
-# class SuggestNextMealRequest(BaseModel):
-#     question: str
-
-
-# @app.post("/suggest_next_meal", summary="Suggest next meal based on previous one using HMM")
-# async def get_next_meal_suggestion(
-#     req: SuggestNextMealRequest,
-#     num_suggestions: int = 3
-# ) -> Dict[str, Any]:
-#     """
-#     Suggests possible next meals based on a user's question about what they just ate.
-#     This endpoint will:
-#     1. Parse the question to extract the food item.
-#     2. Use the extracted food item to get suggestions from the HMM.
-#     """
-#     try:
-#         # Step 1: Parse the question to extract the food item.
-#         # We can reuse the `infer` function which is designed for this.
-#         parsed_info = infer(req.question)
-
-#         if not parsed_info or not parsed_info.get("found_in_master"):
-#             # If no food is found in the question, return a helpful message.
-#             return {
-#                 "success": False,
-#                 "message": "Không thể tìm thấy món ăn trong câu hỏi của bạn. Vui lòng thử lại, ví dụ: 'Tôi vừa ăn phở bò'."
-#             }
-
-#         # Step 2: Use the extracted food to get suggestions from the HMM.
-#         suggestions = suggest_next_meal(
-#             previous_meal_text=parsed_info["food"],
-#             num_suggestions=num_suggestions
-#         )
-#         if suggestions and isinstance(suggestions[0], dict) and "error" in suggestions[0]:
-#             raise HTTPException(status_code=500, detail=suggestions[0]["error"])
-#         return {"success": True, "suggestions": suggestions}
-#     except Exception as e:
-#         raise HTTPException(status_code=500, detail=f"Error suggesting next meal: {e}")
