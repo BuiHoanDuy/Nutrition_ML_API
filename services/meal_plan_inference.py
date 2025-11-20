@@ -185,9 +185,19 @@ def correct_teencode_tokens(text: str, keyword_maps: dict, *, threshold: int = 8
     tokens = text.split()
     corrected_tokens: list[str] = []
 
+    # Các ký tự thường dùng trong teencode / viết tắt
+    special_chars = set("0123456789@#$%&*_+zjw")
+
     for tok in tokens:
-        # Skip very short tokens (vd. "va", "la") và token domain đã bảo vệ
+        # Không sửa token rất ngắn hoặc token thuộc domain
         if len(tok) <= 2 or tok in protected_tokens:
+            corrected_tokens.append(tok)
+            continue
+
+        # Chỉ coi là teencode nếu có cả chữ cái và ký tự đặc biệt/số
+        has_letter = any(c.isalpha() for c in tok)
+        has_special = any(c in special_chars for c in tok)
+        if not (has_letter and has_special):
             corrected_tokens.append(tok)
             continue
 
@@ -201,9 +211,6 @@ def correct_teencode_tokens(text: str, keyword_maps: dict, *, threshold: int = 8
             corrected_tokens.append(match_word)
         else:
             corrected_tokens.append(tok)
-
-    return " ".join(corrected_tokens)
-
 
 def strong_dict_spell_correction(text: str, keyword_maps: dict | None = None, *, threshold: int = 80) -> str:
     if not text:
@@ -444,19 +451,23 @@ async def parse_meal_plan_question(question: str) -> dict:
     2) `correct_teencode_tokens`: fuzzy-correct theo vocab domain (bỏ qua token domain).
     3) `_parse_question_with_keywords`: trích health_status/goal/diet_type/requested_meals.
     """
-    # 1) Chuẩn hóa mềm câu hỏi (teencode + bỏ dấu)
+    # 1) Chuẩn hóa mềm câu hỏi (teencode + bỏ dấu): **luôn** là bản gốc an toàn
     base_normalized = normalize_for_match(question)
     print("[DEBUG] base_normalized:", base_normalized)
 
-    # 2) Sửa nhẹ theo từ vựng domain (không dùng strong_dict_spell_correction ở bước parse)
+    # 2) Sửa nhẹ theo từ vựng domain nếu có teencode; nếu không, giữ nguyên base_normalized
     keyword_maps = load_keyword_maps()
     normalized_question = correct_teencode_tokens(
         base_normalized,
         keyword_maps,
         threshold=80,
     )
+    if not normalized_question:
+        normalized_question = base_normalized
+
     print("[DEBUG] normalized_question:", normalized_question)
-    # 3) Parse keyword trên câu đã chuẩn hóa
+
+    # 3) Parse keyword trên câu đã chuẩn hóa (nhưng vẫn rất gần base_normalized)
     parsed_params = _parse_question_with_keywords(normalized_question.lower())
 
     # Logging kết quả parse
@@ -477,7 +488,9 @@ async def parse_meal_plan_question(question: str) -> dict:
         meal_plan_logger.info(f"Chế độ ăn: {parsed_params.get('diet_type', 'không có')}")
         meal_plan_logger.info(f"Các bữa được yêu cầu: {parsed_params.get('requested_meals', DEFAULT_MEALS)}")
 
-    # Trả thêm text đã chuẩn hóa cho PhoBERT dùng embedding trên text sạch hơn.
+    # Trả thêm:
+    # - normalized_question: bản đã chuẩn hóa + sửa teencode (nếu có)
+    # - dict_corrected_base: luôn là bản chuẩn hóa mềm an toàn, không fuzzy
     parsed_params["normalized_question"] = normalized_question
     parsed_params["dict_corrected_base"] = base_normalized
     return parsed_params
@@ -530,6 +543,7 @@ def recommend_meal_plan(
     requested_meals = parsed_params.get("requested_meals", DEFAULT_MEALS)
     normalized_question = parsed_params.get("normalized_question") or original_question
     dict_corrected_base = parsed_params.get("dict_corrected_base")
+    keyword_maps = load_keyword_maps()
 
     if not recommender.is_ready():
         print("[ERROR] Recommender is not ready. Artifacts may have failed to load.")
@@ -611,46 +625,72 @@ def recommend_meal_plan(
             print("[INFO] No meal plans found after applying hard filters.")
             return []
     else:
-        # Trường hợp câu hỏi chung chung, không có tình trạng sức khỏe / mục tiêu / chế độ ăn.
-        # Ta sẽ coi đây là "generic query" và chọn ngẫu nhiên một vài thực đơn an toàn.
-        print("[INFO] Generic query detected. Selecting random safe meal plans without intent gate.")
-        # Thử ưu tiên các thực đơn dành cho người bình thường (nếu có)
-        generic_mask = recommender.meal_plans_df['Tình trạng sức khỏe'].str.contains(
-            'bình thường|khoe manh|khong benh|khong co benh', case=False, na=False
-        )
-        generic_df = recommender.meal_plans_df[generic_mask]
-        if generic_df.empty:
-            generic_df = recommender.meal_plans_df
+        # Không có health_status / goal / diet_type -> có thể là câu hỏi chung.
+        # Chỉ random thực đơn nếu câu thực sự nhắc đến bữa ăn/thực đơn.
+        # Ưu tiên dùng bản đã normalize nhưng CHƯA fuzzy (dict_corrected_base) để tránh méo từ.
+        base_text = (dict_corrected_base or normalized_question or original_question).lower()
 
-        # Chọn ngẫu nhiên 1 dòng làm kế hoạch bữa ăn
-        sampled = generic_df.sample(n=1, random_state=None)
-        best_plans_raw = sampled.to_dict(orient='records')
+        # 1) Kiểm tra keyword bữa ăn từ meal_map (Bữa sáng/trưa/tối/phụ/cả ngày)
+        meal_map = keyword_maps.get("meal_map", {})
+        has_meal_keyword = False
+        for _, kws in meal_map.items():
+            for kw in kws:
+                if kw in base_text:
+                    has_meal_keyword = True
+                    break
+            if has_meal_keyword:
+                break
 
-        output_recommendations = []
-        for plan in best_plans_raw:
-            recommendation = {}
-            for meal_key in requested_meals:
-                meal_value = plan.get(meal_key)
-                if pd.isna(meal_value):
-                    recommendation[meal_key] = "Không có gợi ý"
-                else:
-                    recommendation[meal_key] = meal_value
-            output_recommendations.append(recommendation)
+        # 2) Thêm một số cụm chung về thực đơn/bữa ăn trong ngày
+        if not has_meal_keyword:
+            generic_phrases = [
+                "thuc don", "thực đơn", "an gi", "ăn gì",
+                "bua an", "bữa ăn", "1 ngay", "mot ngay", "ca ngay", "trong ngay"
+            ]
+            has_meal_keyword = any(p in base_text for p in generic_phrases)
 
-        # Log lại
-        try:
-            meal_plan_logger.info("Thực đơn được gợi ý (generic query - random):")
-            for rec in output_recommendations:
-                for meal_key, meal_value in rec.items():
-                    if meal_value and meal_value != "Không có gợi ý":
-                        meal_plan_logger.info(f"  {meal_key}: {meal_value}")
+        if has_meal_keyword:
+            print("[INFO] Generic meal-related query detected. Selecting random safe meal plan without intent gate.")
+            # Thử ưu tiên các thực đơn dành cho người bình thường (nếu có)
+            generic_mask = recommender.meal_plans_df['Tình trạng sức khỏe'].str.contains(
+                'bình thường|khoe manh|khong benh|khong co benh', case=False, na=False
+            )
+            generic_df = recommender.meal_plans_df[generic_mask]
+            if generic_df.empty:
+                generic_df = recommender.meal_plans_df
+
+            # Chọn ngẫu nhiên 1 dòng làm kế hoạch bữa ăn
+            sampled = generic_df.sample(n=1, random_state=None)
+            best_plans_raw = sampled.to_dict(orient='records')
+
+            output_recommendations = []
+            for plan in best_plans_raw:
+                recommendation = {}
+                for meal_key in requested_meals:
+                    meal_value = plan.get(meal_key)
+                    if pd.isna(meal_value):
+                        recommendation[meal_key] = "Không có gợi ý"
                     else:
-                        meal_plan_logger.info(f"  {meal_key}: Không có gợi ý")
-            meal_plan_logger.info("=" * 80)
-        except Exception as e:
-            meal_plan_logger.error(f"Error logging generic meal plan recommendations: {e}")
+                        recommendation[meal_key] = meal_value
+                output_recommendations.append(recommendation)
 
-        return output_recommendations
+            # Log lại
+            try:
+                meal_plan_logger.info("Thực đơn được gợi ý (generic meal query - random):")
+                for rec in output_recommendations:
+                    for meal_key, meal_value in rec.items():
+                        if meal_value and meal_value != "Không có gợi ý":
+                            meal_plan_logger.info(f"  {meal_key}: {meal_value}")
+                        else:
+                            meal_plan_logger.info(f"  {meal_key}: Không có gợi ý")
+                meal_plan_logger.info("=" * 80)
+            except Exception as e:
+                meal_plan_logger.error(f"Error logging meal plan recommendations: {e}")
+
+            return output_recommendations
+        else:
+            # Không có keyword bữa ăn -> để PhoBERT + intent gate xử lý như trước.
+            print("[INFO] No explicit meal keywords in a keyword-less query; falling back to semantic intent gate.")
     
     print(f"[INFO] Found {len(filtered_df)} candidates after filtering.")
 
