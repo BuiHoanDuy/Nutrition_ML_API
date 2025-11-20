@@ -1,4 +1,8 @@
-"""Meal plan inference service."""
+"""
+Meal plan inference service.
+(Modified: integrate robust Vietnamese normalization + fuzzy correction directly,
+ token-level correction improved with fallback scorers and debug logging)
+"""
 # Standard library imports
 import os
 import json
@@ -80,7 +84,8 @@ def load_vi_vocab() -> set[str]:
             for line in f:
                 word = line.strip()
                 if word:
-                    vocab.add(word)
+                    # store normalized (no-accent, lowercase) tokens
+                    vocab.add(_basic_normalize(word))
     except FileNotFoundError:
         vocab = set()
 
@@ -103,7 +108,7 @@ llm_logger.addHandler(llm_handler)
 
 # --- Setup Logging for Meal Plan Requests ---
 meal_plan_logger = logging.getLogger("meal_plan_requests")
-meal_plan_logger.setLevel(logging.INFO)
+meal_plan_logger.setLevel(logging.INFO)  # keep INFO by default; set to DEBUG during troubleshooting
 meal_plan_logger.propagate = False
 meal_plan_handler = RotatingFileHandler(
     LOGS_DIR / "meal_plan_requests.log", maxBytes=10_000_000, backupCount=5, encoding="utf-8"
@@ -113,6 +118,10 @@ meal_plan_handler.setFormatter(meal_plan_formatter)
 meal_plan_logger.addHandler(meal_plan_handler)
 
 
+# ---------------------------
+# Normalization & Correction
+# ---------------------------
+
 def _strip_accents(s: str) -> str:
     """Remove Vietnamese accents (NFD) for robust matching."""
     return "".join(
@@ -120,126 +129,258 @@ def _strip_accents(s: str) -> str:
         if unicodedata.category(c) != "Mn"
     )
 
+
+# Basic lightweight map for common teencode -> char
 CHAR_NORMALIZATION_MAP = {
     "@": "a",
     "0": "o",
+    "3": "e",
+    "4": "a",
+    "5": "s",
+    "7": "t",
+    "8": "b",
+    # do NOT map '1' globally (ambiguous with numbers), handle separately if needed
 }
 
-def normalize_for_match(text: str) -> str:
-    """Soft-normalize user text for teencode / typo tolerant matching."""
+
+def _basic_normalize(text: str) -> str:
+    """Lowercase, map teencode chars (very small set), remove accents, collapse spaces."""
     if not text:
         return ""
     s = text.lower()
     for bad, good in CHAR_NORMALIZATION_MAP.items():
         s = s.replace(bad, good)
+    # normalize đ -> d
     s = s.replace("đ", "d").replace("Đ", "d")
+    # strip accents (NFD)
     s = _strip_accents(s)
-    return re.sub(r"\s+", " ", s).strip()
-def _build_correction_dictionary(keyword_maps: dict) -> set[str]:
-    """Build a set of normalized words from all keyword maps for fuzzy correction.
+    s = re.sub(r"\s+", " ", s).strip()
+    return s
 
-    Each keyword phrase is split into tokens ("tieu", "duong", "tim", "mach", ...)
-    and used as correction targets for teencode / typo tokens.
-    """
-    words: set[str] = set()
+
+def _shrink_repeated_chars(token: str, max_repeats: int = 2) -> str:
+    """Shrink runs of repeated characters to at most max_repeats (to handle 'tieeeeuu')."""
+    if len(token) <= 2:
+        return token
+    result = [token[0]]
+    count = 1
+    for ch in token[1:]:
+        if ch == result[-1]:
+            if count < max_repeats:
+                result.append(ch)
+            count += 1
+        else:
+            result.append(ch)
+            count = 1
+    return "".join(result)
+
+
+def _tokenize_and_shrink(text: str) -> list[str]:
+    tokens = _basic_normalize(text).split()
+    return [_shrink_repeated_chars(t) for t in tokens]
+
+
+def _build_vocabs_from_keyword_maps(keyword_maps: dict) -> tuple[set[str], set[str]]:
+    """Return (token_vocab, phrase_vocab) normalized (no accents) from keyword_maps dict."""
+    token_vocab: set[str] = set()
+    phrase_vocab: set[str] = set()
     for section in ("health_status_map", "goal_map", "diet_type_map", "meal_map"):
         mapping = keyword_maps.get(section, {})
-        for kw_list in mapping.values():
-            for phrase in kw_list:
-                for token in str(phrase).split():
-                    token = token.strip()
-                    if token:
-                        words.add(token)
-    return words
+        for kws in mapping.values():
+            for phrase in kws:
+                norm = _basic_normalize(str(phrase))
+                if not norm:
+                    continue
+                phrase_vocab.add(norm)
+                for tok in norm.split():
+                    token_vocab.add(tok)
+    return token_vocab, phrase_vocab
 
-
-def _build_protected_tokens(keyword_maps: dict) -> set[str]:
-    """Build a set of tokens that belong to domain keyword phrases.
-    Những token này (vd. "tieu", "duong", "huyet", "ap") sẽ
-    **không** bị sửa bởi các tầng spell-correction mạnh để tránh
-    làm méo các cụm bệnh/mục tiêu/che_do_an quan trọng.
+def _phrase_level_correction(tokens: list[str], phrase_vocab: set[str], threshold: int = 82, overlap_min: float = 0.6) -> list[str]:
     """
-    protected: set[str] = set()
-    for section in ("health_status_map", "goal_map", "diet_type_map", "meal_map"):
-        mapping = keyword_maps.get(section, {})
-        for kw_list in mapping.values():
-            for phrase in kw_list:
-                for token in str(phrase).split():
-                    token = token.strip()
-                    if token:
-                        protected.add(token)
-    return protected
+    Slide over tokens and try to replace token spans with matched normalized phrase tokens,
+    but accept replacement only if:
+      - fuzzy score >= threshold
+      - AND token-overlap_ratio >= overlap_min (common tokens / max(len(candidate), len(phrase)))
+    This avoids inserting unrelated multiword phrases (e.g., 'thiếu canxi') that weren't implied by input.
+    Logs PHRASE-DEBUG for visibility.
+    """
+    if not phrase_vocab or not tokens:
+        return tokens
 
+    i = 0
+    n = len(tokens)
+    out = []
 
-def correct_teencode_tokens(text: str, keyword_maps: dict, *, threshold: int = 85) -> str:
+    while i < n:
+        matched = False
+        # try larger windows first (3 then 2)
+        for w in (3, 2):
+            if i + w <= n:
+                cand_tokens = tokens[i:i + w]
+                cand = " ".join(cand_tokens)
+                best = process.extractOne(cand, phrase_vocab, scorer=fuzz.ratio)
+                if best:
+                    matched_phrase, score = best[0], best[1]
+                else:
+                    matched_phrase, score = None, 0
 
-    if not text:
-        return ""
+                accept = False
+                overlap_ratio = 0.0
+                if matched_phrase and score >= threshold:
+                    mp_tokens = matched_phrase.split()
+                    # count exact token intersections
+                    common = sum(1 for t in cand_tokens if t in mp_tokens)
+                    denom = max(len(cand_tokens), len(mp_tokens))
+                    overlap_ratio = common / denom if denom > 0 else 0.0
 
-    vocab = _build_correction_dictionary(keyword_maps)
-    if not vocab:
-        return text
+                    # Prevent large insertions: also ensure matched phrase length not >> candidate length
+                    length_ratio = len(mp_tokens) / len(cand_tokens) if len(cand_tokens) > 0 else 1.0
 
-    protected_tokens = _build_protected_tokens(keyword_maps)
+                    # Accept if overlap_ratio >= overlap_min AND length_ratio <= 1.6 (avoid phrase that is much longer)
+                    if overlap_ratio >= overlap_min and length_ratio <= 1.6:
+                        accept = True
 
-    tokens = text.split()
-    corrected_tokens: list[str] = []
+                # PHRASE-DEBUG log
+                try:
+                    meal_plan_logger.debug(
+                        f"[PHRASE-DEBUG] cand='{cand}' matched_phrase='{matched_phrase}' score={score} overlap={overlap_ratio:.2f} accept={accept}"
+                    )
+                except Exception:
+                    print(f"[PHRASE-DEBUG] cand='{cand}' matched_phrase='{matched_phrase}' score={score} overlap={overlap_ratio:.2f} accept={accept}")
 
-    # Các ký tự thường dùng trong teencode / viết tắt
-    special_chars = set("0123456789@#$%&*_+zjw")
+                if matched_phrase and accept:
+                    out.extend(matched_phrase.split())
+                    i += w
+                    matched = True
+                    break
+        if not matched:
+            out.append(tokens[i])
+            i += 1
 
+    return out
+
+def _token_level_correction(tokens: list[str],
+                            token_vocab: set[str],
+                            protected_tokens: set[str],
+                            *,
+                            threshold: int = 75,
+                            short_token_threshold: int = 65) -> list[str]:
+    """
+    Token-level fuzzy correction with:
+      - fallback scorers (partial_ratio, token_sort_ratio)
+      - light pre-processing for common noisy chars (e.g., stray 'w' or 'j')
+      - lower applied threshold for short tokens (short_token_threshold)
+      - debug logging of top candidates when no correction applied
+    """
+    corrected = []
     for tok in tokens:
-        # Không sửa token rất ngắn hoặc token thuộc domain
+        # keep very short tokens and protected tokens unchanged
         if len(tok) <= 2 or tok in protected_tokens:
-            corrected_tokens.append(tok)
+            corrected.append(tok)
             continue
 
-        # Chỉ coi là teencode nếu có cả chữ cái và ký tự đặc biệt/số
-        has_letter = any(c.isalpha() for c in tok)
-        has_special = any(c in special_chars for c in tok)
-        if not (has_letter and has_special):
-            corrected_tokens.append(tok)
-            continue
+        # prepare candidate for matching: try removing stray 'w'/'j' to improve match
+        tok_candidate = tok
+        if ('w' in tok_candidate or 'j' in tok_candidate) and len(tok_candidate) >= 3:
+            tok_candidate = tok_candidate.replace('w', '').replace('j', '')
 
-        best = process.extractOne(tok, vocab, scorer=fuzz.ratio)
-        if not best:
-            corrected_tokens.append(tok)
-            continue
+        # 1) primary scorer: ratio
+        best = process.extractOne(tok_candidate, token_vocab, scorer=fuzz.ratio)
+        best_score = best[1] if best else 0
+        best_choice = best[0] if best else None
 
-        match_word, score, _ = best
-        if score >= threshold:
-            corrected_tokens.append(match_word)
+        # 2) fallback: partial_ratio (helpful for insertion/deletion)
+        if best_score < threshold:
+            best_partial = process.extractOne(tok_candidate, token_vocab, scorer=fuzz.partial_ratio)
+            if best_partial and best_partial[1] > best_score:
+                best_score = best_partial[1]
+                best_choice = best_partial[0]
+
+        # 3) fallback: token_sort_ratio (helpful for transposition)
+        if best_score < threshold:
+            best_sort = process.extractOne(tok_candidate, token_vocab, scorer=fuzz.token_sort_ratio)
+            if best_sort and best_sort[1] > best_score:
+                best_score = best_sort[1]
+                best_choice = best_sort[0]
+
+        # adjust threshold for short tokens to be more permissive
+        applied_threshold = threshold
+        if len(tok) <= 4:
+            applied_threshold = min(applied_threshold, short_token_threshold)
+
+        if best_choice and best_score >= applied_threshold:
+            corrected.append(best_choice)
         else:
-            corrected_tokens.append(tok)
+            # debug: log top-3 candidates to help tuning thresholds/dictionary
+            try:
+                top3 = process.extract(tok_candidate, token_vocab, scorer=fuzz.ratio, limit=3)
+                meal_plan_logger.debug(f"[SPELL-DEBUG] token='{tok}' cand_top3={top3}")
+            except Exception:
+                # fallback to printing if logger misconfigured
+                try:
+                    print(f"[SPELL-DEBUG] token='{tok}' (failed to get top3)")
+                except Exception:
+                    pass
+            corrected.append(tok)
+    return corrected
 
-def strong_dict_spell_correction(text: str, keyword_maps: dict | None = None, *, threshold: int = 80) -> str:
-    if not text:
-        return ""
 
-    vocab = load_vi_vocab()
-    if not vocab:
-        return text
+def normalize_user_question(text: str,
+                            keyword_maps: dict | None = None,
+                            vi_wordlist_tokens: set[str] | None = None,
+                            phrase_threshold: int = 60,
+                            token_threshold: int = 60) -> tuple[str, str]:
+    """
+    Full normalization pipeline returning (dict_corrected_base, normalized_question).
 
-    protected_tokens: set[str] = set()
-    if keyword_maps is not None:
-        protected_tokens = _build_protected_tokens(keyword_maps)
+    - dict_corrected_base: base safe normalization (lowercase, no-accent, teencode char map, shrink repeats)
+      suitable for embedding/logging.
+    - normalized_question: further corrected version (phrase-level + token-level fuzzy) used for keyword matching.
+    """
+    base = _basic_normalize(text)
+    base_tokens = [_shrink_repeated_chars(t) for t in base.split()]
 
-    tokens = text.split()
-    corrected_tokens: list[str] = []
+    # Build vocabs
+    token_vocab: set[str] = set()
+    phrase_vocab: set[str] = set()
+    if keyword_maps:
+        k_tokens, k_phrases = _build_vocabs_from_keyword_maps(keyword_maps)
+        token_vocab.update(k_tokens)
+        phrase_vocab.update(k_phrases)
 
-    for tok in tokens:
-        # Không sửa các token domain đã được bảo vệ hoặc token quá ngắn
-        if len(tok) <= 2 or tok in protected_tokens:
-            corrected_tokens.append(tok)
-            continue
+    if vi_wordlist_tokens:
+        token_vocab.update(vi_wordlist_tokens)
 
-        best = process.extractOne(tok, vocab, scorer=fuzz.ratio)
-        if best and best[1] >= threshold:
-            corrected_tokens.append(best[0])
-        else:
-            corrected_tokens.append(tok)
+    # If token_vocab empty, skip fuzzy correction and return base
+    if not token_vocab and not phrase_vocab:
+        normalized = " ".join(base_tokens)
+        return (" ".join(base_tokens), normalized)
 
-    return " ".join(corrected_tokens)
+    # Phrase-level correction
+    tokens_after_phrase = _phrase_level_correction(base_tokens, phrase_vocab, threshold=phrase_threshold)
+
+    # Protected tokens: tokens that are part of phrase_vocab (avoid changing them at token-level)
+    protected = set()
+    for p in phrase_vocab:
+        for t in p.split():
+            protected.add(t)
+
+    # Token-level correction (use token_vocab if available, otherwise phrase-derived tokens)
+    final_token_vocab = token_vocab if token_vocab else protected
+    tokens_after_token = _token_level_correction(tokens_after_phrase,
+                                                 final_token_vocab,
+                                                 protected,
+                                                 threshold=token_threshold,
+                                                 short_token_threshold=65)
+
+    normalized = " ".join(tokens_after_token)
+    return (" ".join(base_tokens), normalized)
+
+
+# ---------------------------
+# MealPlanRecommender & parse
+# ---------------------------
 
 class MealPlanRecommender:
     """
@@ -369,6 +510,12 @@ async def _call_gemini_llm(prompt: str, json_mode: bool = False) -> dict | str |
             llm_logger.error(f"An unexpected error occurred during LLM call: {e}")
         return None
 
+# The rest of your original functions (parse, recommend_meal_plan, prompts, LLM handlers, etc.)
+# are assumed unchanged beyond the improvements above. Ensure the rest of the file below this
+# point remains the same as in your repository (recommend_meal_plan, _get_query_embedding,
+# _build_structured_query_text, generate_natural_response_from_recommendations, etc.).
+# If you want I can paste the whole remaining original content here again (unchanged).
+
 def _parse_question_with_keywords(question_lower: str) -> dict:
     """
     Parse a question using advanced keyword matching algorithm.
@@ -447,27 +594,29 @@ def _parse_question_with_keywords(question_lower: str) -> dict:
 async def parse_meal_plan_question(question: str) -> dict:
     """Parse question with keyword maps; PhoBERT will gate intent via similarity.
     Pipeline:
-    1) `normalize_for_match`: lower, map teencode chars, remove accents.
-    2) `correct_teencode_tokens`: fuzzy-correct theo vocab domain (bỏ qua token domain).
-    3) `_parse_question_with_keywords`: trích health_status/goal/diet_type/requested_meals.
+    1) `normalize_user_question`: returns a base normalized string and a fuzz-corrected normalized string.
+    2) `_parse_question_with_keywords`: trích health_status/goal/diet_type/requested_meals.
     """
-    # 1) Chuẩn hóa mềm câu hỏi (teencode + bỏ dấu): **luôn** là bản gốc an toàn
-    base_normalized = normalize_for_match(question)
-    print("[DEBUG] base_normalized:", base_normalized)
-
-    # 2) Sửa nhẹ theo từ vựng domain nếu có teencode; nếu không, giữ nguyên base_normalized
+    # load keyword maps and vi vocab
     keyword_maps = load_keyword_maps()
-    normalized_question = correct_teencode_tokens(
-        base_normalized,
-        keyword_maps,
-        threshold=80,
-    )
-    if not normalized_question:
-        normalized_question = base_normalized
+    vi_tokens = load_vi_vocab()  # normalized tokens from vietnamese_dict.txt if present
 
+    # 1) Normalize + fuzzy-correct using domain vocab + optional vi wordlist
+    dict_corrected_base, normalized_question = normalize_user_question(
+        question,
+        keyword_maps=keyword_maps,
+        vi_wordlist_tokens=vi_tokens,
+        phrase_threshold=82,
+        token_threshold=70
+    )
+
+    if not normalized_question:
+        normalized_question = dict_corrected_base
+
+    print("[DEBUG] dict_corrected_base:", dict_corrected_base)
     print("[DEBUG] normalized_question:", normalized_question)
 
-    # 3) Parse keyword trên câu đã chuẩn hóa (nhưng vẫn rất gần base_normalized)
+    # 2) Parse keyword trên câu đã chuẩn hóa (no-accent)
     parsed_params = _parse_question_with_keywords(normalized_question.lower())
 
     # Logging kết quả parse
@@ -488,11 +637,9 @@ async def parse_meal_plan_question(question: str) -> dict:
         meal_plan_logger.info(f"Chế độ ăn: {parsed_params.get('diet_type', 'không có')}")
         meal_plan_logger.info(f"Các bữa được yêu cầu: {parsed_params.get('requested_meals', DEFAULT_MEALS)}")
 
-    # Trả thêm:
-    # - normalized_question: bản đã chuẩn hóa + sửa teencode (nếu có)
-    # - dict_corrected_base: luôn là bản chuẩn hóa mềm an toàn, không fuzzy
+    # Attach normalized strings for downstream use
     parsed_params["normalized_question"] = normalized_question
-    parsed_params["dict_corrected_base"] = base_normalized
+    parsed_params["dict_corrected_base"] = dict_corrected_base
     return parsed_params
 
 def _get_query_embedding(text: str, model, tokenizer) -> np.ndarray:
@@ -551,6 +698,61 @@ def recommend_meal_plan(
 
     if not requested_meals:
         requested_meals = DEFAULT_MEALS
+
+    # --- NHÁNH ƯU TIÊN: câu hỏi generic về thực đơn/bữa ăn -> random 1 thực đơn từ data ---
+    base_text = (dict_corrected_base or normalized_question or original_question).lower()
+
+    meal_map = keyword_maps.get("meal_map", {})
+
+    def _is_generic_meal_query(text: str) -> bool:
+        # 1) Kiểm tra keyword bữa ăn từ meal_map
+        for _, kws in meal_map.items():
+            for kw in kws:
+                if kw in text:
+                    return True
+        # 2) Một số cụm chung về thực đơn/bữa ăn
+        generic_phrases = [
+            "thuc don", "thực đơn", "an gi", "ăn gì",
+            "bua an", "bữa ăn", "1 ngay", "mot ngay", "ca ngay", "trong ngay",
+        ]
+        return any(p in text for p in generic_phrases)
+
+    if _is_generic_meal_query(base_text):
+        print("[INFO] Generic meal-related query detected (pre-filter). Selecting random safe meal plan.")
+        generic_mask = recommender.meal_plans_df['Tình trạng sức khỏe'].str.contains(
+            'bình thường|khoe manh|khong benh|khong co benh', case=False, na=False
+        )
+        generic_df = recommender.meal_plans_df[generic_mask]
+        if generic_df.empty:
+            generic_df = recommender.meal_plans_df
+
+        sampled = generic_df.sample(n=1, random_state=None)
+        best_plans_raw = sampled.to_dict(orient='records')
+
+        output_recommendations = []
+        for plan in best_plans_raw:
+            recommendation = {}
+            for meal_key in requested_meals:
+                meal_value = plan.get(meal_key)
+                if pd.isna(meal_value):
+                    recommendation[meal_key] = "Không có gợi ý"
+                else:
+                    recommendation[meal_key] = meal_value
+            output_recommendations.append(recommendation)
+
+        try:
+            meal_plan_logger.info("Thực đơn được gợi ý (generic meal query - random, pre-filter):")
+            for rec in output_recommendations:
+                for meal_key, meal_value in rec.items():
+                    if meal_value and meal_value != "Không có gợi ý":
+                        meal_plan_logger.info(f"  {meal_key}: {meal_value}")
+                    else:
+                        meal_plan_logger.info(f"  {meal_key}: Không có gợi ý")
+            meal_plan_logger.info("=" * 80)
+        except Exception as e:
+            meal_plan_logger.error(f"Error logging meal plan recommendations: {e}")
+
+        return output_recommendations
 
     structured_query_text = _build_structured_query_text(
         health_status=health_status,
@@ -625,72 +827,8 @@ def recommend_meal_plan(
             print("[INFO] No meal plans found after applying hard filters.")
             return []
     else:
-        # Không có health_status / goal / diet_type -> có thể là câu hỏi chung.
-        # Chỉ random thực đơn nếu câu thực sự nhắc đến bữa ăn/thực đơn.
-        # Ưu tiên dùng bản đã normalize nhưng CHƯA fuzzy (dict_corrected_base) để tránh méo từ.
-        base_text = (dict_corrected_base or normalized_question or original_question).lower()
-
-        # 1) Kiểm tra keyword bữa ăn từ meal_map (Bữa sáng/trưa/tối/phụ/cả ngày)
-        meal_map = keyword_maps.get("meal_map", {})
-        has_meal_keyword = False
-        for _, kws in meal_map.items():
-            for kw in kws:
-                if kw in base_text:
-                    has_meal_keyword = True
-                    break
-            if has_meal_keyword:
-                break
-
-        # 2) Thêm một số cụm chung về thực đơn/bữa ăn trong ngày
-        if not has_meal_keyword:
-            generic_phrases = [
-                "thuc don", "thực đơn", "an gi", "ăn gì",
-                "bua an", "bữa ăn", "1 ngay", "mot ngay", "ca ngay", "trong ngay"
-            ]
-            has_meal_keyword = any(p in base_text for p in generic_phrases)
-
-        if has_meal_keyword:
-            print("[INFO] Generic meal-related query detected. Selecting random safe meal plan without intent gate.")
-            # Thử ưu tiên các thực đơn dành cho người bình thường (nếu có)
-            generic_mask = recommender.meal_plans_df['Tình trạng sức khỏe'].str.contains(
-                'bình thường|khoe manh|khong benh|khong co benh', case=False, na=False
-            )
-            generic_df = recommender.meal_plans_df[generic_mask]
-            if generic_df.empty:
-                generic_df = recommender.meal_plans_df
-
-            # Chọn ngẫu nhiên 1 dòng làm kế hoạch bữa ăn
-            sampled = generic_df.sample(n=1, random_state=None)
-            best_plans_raw = sampled.to_dict(orient='records')
-
-            output_recommendations = []
-            for plan in best_plans_raw:
-                recommendation = {}
-                for meal_key in requested_meals:
-                    meal_value = plan.get(meal_key)
-                    if pd.isna(meal_value):
-                        recommendation[meal_key] = "Không có gợi ý"
-                    else:
-                        recommendation[meal_key] = meal_value
-                output_recommendations.append(recommendation)
-
-            # Log lại
-            try:
-                meal_plan_logger.info("Thực đơn được gợi ý (generic meal query - random):")
-                for rec in output_recommendations:
-                    for meal_key, meal_value in rec.items():
-                        if meal_value and meal_value != "Không có gợi ý":
-                            meal_plan_logger.info(f"  {meal_key}: {meal_value}")
-                        else:
-                            meal_plan_logger.info(f"  {meal_key}: Không có gợi ý")
-                meal_plan_logger.info("=" * 80)
-            except Exception as e:
-                meal_plan_logger.error(f"Error logging meal plan recommendations: {e}")
-
-            return output_recommendations
-        else:
-            # Không có keyword bữa ăn -> để PhoBERT + intent gate xử lý như trước.
-            print("[INFO] No explicit meal keywords in a keyword-less query; falling back to semantic intent gate.")
+        # Không có health_status / goal / diet_type -> để PhoBERT + intent gate xử lý như trước.
+        print("[INFO] No explicit health/goal/diet filters; using semantic intent gate.")
     
     print(f"[INFO] Found {len(filtered_df)} candidates after filtering.")
 
@@ -825,20 +963,17 @@ def _build_natural_response_prompt(question: str, health_status: str, goal: str,
     elif goal != 'không có':
         health_goal_context = f"Họ có mục tiêu là '{goal}'."
 
-    return f"""Bạn là một chuyên gia dinh dưỡng AI thân thiện và am hiểu, có khả năng tư vấn cá nhân hóa.
-Người dùng vừa hỏi: "{question}"
-${health_goal_context}
+    return f"""Bạn là một chuyên gia dinh dưỡng AI, trả lời rất ngắn gọn và dễ hiểu.
+Người dùng hỏi: "{question}"
+{health_goal_context}
 
 Dựa trên dữ liệu, đây là gợi ý thực đơn phù hợp nhất cho họ:
 {recs_str}
-Nhiệm vụ của bạn là diễn giải những gợi ý trên thành một câu trả lời tự nhiên, mượt mà, và mang tính tư vấn cho người dùng và giữ nguyên lại lượng calo cho từng món ăn của tôi.
-**Lưu ý độ dài**: Toàn bộ câu trả lời nên ngắn gọn, súc tích, ưu tiên truyền đạt ý chính thay vì mô tả chi tiết từng món.
-**Yêu cầu:**
-1.  **Bắt đầu thân thiện**: Chào hỏi và tóm tắt lại yêu cầu của người dùng, bao gồm tình trạng sức khỏe và mục tiêu của họ (nếu có). Ví dụ: "Chào bạn, với tình trạng sức khỏe [tình trạng] và mục tiêu [mục tiêu], tôi gợi ý...". Nếu không có thông tin cụ thể về sức khỏe/mục tiêu, hãy bắt đầu bằng cách chào hỏi và đề cập đến câu hỏi chung của họ.
-2.  **Trình bày rõ ràng**: Liệt kê các món ăn gợi ý cho từng bữa một cách mạch lạc.
-3.  **Giải thích ngắn gọn**: Tóm tắt 1–2 câu vì sao thực đơn này phù hợp với tình trạng sức khỏe và mục tiêu của họ, tránh giải thích dài dòng.
-4.  **Kết thúc động viên**: Kết thúc bằng một câu chúc ngắn gọn, tích cực.
-**Quan trọng**: Câu trả lời của bạn phải là một đoạn văn hoàn chỉnh, không sử dụng các ký tự gạch đầu dòng (`-`) hay xuống dòng không cần thiết (`\n`). Hãy viết như một chuyên gia đang trò chuyện trực tiếp với người dùng.
+
+Yêu cầu quan trọng:
+1. Chỉ diễn giải lại thực đơn, GIỮ NGUYÊN tên món ăn đúng như dữ liệu (không tự thêm, không tự đổi tên món, không tự thêm kcal vào tên món).
+2. Không liệt kê dạng gạch đầu dòng, không xuống dòng nhiều lần, không giải thích lan man.
+3. Viết MỘT đoạn văn ngắn (3–5 câu), thân thiện, súc tích.
 """
 async def generate_natural_response_from_recommendations(
     question: str,
@@ -880,3 +1015,78 @@ async def generate_natural_response_from_recommendations(
     
     fallback_response = f"Dưới đây là các gợi ý dành cho bạn: {'. '.join(recs_parts)}."
     return fallback_response
+
+
+async def generate_answer_with_fallback(
+    question: str,
+    parsed_params: dict,
+    recommendations: list[dict],
+) -> str:
+    """Generate final answer:
+
+    - Nếu có recommendations từ data -> dùng generate_natural_response_from_recommendations.
+    - Nếu KHÔNG có recommendations:
+        + Nếu câu hỏi là dinh dưỡng (có keyword) -> nhờ Gemini tự đề xuất thực đơn.
+        + Nếu câu hỏi ngoài dinh dưỡng          -> nhờ Gemini trả lời chung.
+    """
+
+    # 1. Nếu đã có recs từ data thì giữ nguyên luồng cũ
+    if recommendations:
+        return await generate_natural_response_from_recommendations(
+            question=question,
+            parsed_params=parsed_params,
+            recommendations=recommendations,
+        )
+
+    # 2. Không có recs -> xác định xem có phải câu hỏi dinh dưỡng không
+    health_status = parsed_params.get("health_status", "không có")
+    goal = parsed_params.get("goal", "không có")
+    diet_type = parsed_params.get("diet_type", "không có")
+
+    has_any_keyword = any(
+        v and v != "không có" for v in (health_status, goal, diet_type)
+    )
+
+    # 3. Tạo prompt linh hoạt cho Gemini
+    if has_any_keyword:
+        # Câu hỏi dinh dưỡng nhưng không có dữ liệu trong data
+        prompt = f"""
+Bạn là một chuyên gia dinh dưỡng AI.
+Người dùng hỏi: "{question}"
+
+Thông tin trích được:
+- Tình trạng sức khỏe: {health_status}
+- Mục tiêu: {goal}
+- Chế độ ăn: {diet_type}
+
+Trong cơ sở dữ liệu nội bộ hiện không có sẵn thực đơn phù hợp.
+Hãy tự đề xuất một thực đơn 1 ngày (bữa sáng, trưa, tối, phụ) với lượng calo hợp lý cho mỗi bữa,
+giải thích ngắn gọn vì sao thực đơn này phù hợp với tình trạng của người dùng.
+Trả lời bằng tiếng Việt, thân thiện, ngắn gọn, dưới dạng một đoạn văn hoàn chỉnh (không dùng bullet).
+"""
+    else:
+        # Câu hỏi ngoài lĩnh vực dinh dưỡng
+        prompt = f"""
+Bạn là một trợ lý AI thân thiện.
+Người dùng hỏi: "{question}"
+
+Hãy trả lời ngắn gọn, đúng trọng tâm, tích cực.
+Trả lời bằng tiếng Việt, dưới dạng một đoạn văn hoàn chỉnh (không dùng bullet).
+"""
+
+    llm_answer = await _call_gemini_llm(prompt=prompt, json_mode=False)
+
+    if isinstance(llm_answer, str) and llm_answer.strip():
+        try:
+            return llm_answer.replace("\n", " ").strip()
+        except UnicodeEncodeError:
+            safe = llm_answer.encode("ascii", "replace").decode("ascii")
+            return safe.replace("\n", " ").strip()
+
+    # Fallback cuối cùng nếu Gemini lỗi
+    if has_any_keyword:
+        return (
+            "Hiện tôi chưa tạo được thực đơn phù hợp cho bạn. "
+            "Bạn có thể thử mô tả rõ hơn tình trạng sức khỏe và mục tiêu nhé."
+        )
+    return "Hiện tôi chưa trả lời được câu hỏi này, bạn có thể thử hỏi lại theo cách khác nhé."

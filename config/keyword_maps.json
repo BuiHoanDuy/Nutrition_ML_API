@@ -3,7 +3,7 @@
     "Táo bón": ["tao bon", "bi tao bon", "mac tao bon", "tao bon man tinh"],
     "Béo phì": ["beo phi", "thua can", "beo", "bi beo phi", "mac beo phi", "beo phi do","map"],
     "Tim mạch": ["tim mach", "benh tim", "van de tim mach", "benh tim mach", "tim"],
-    "Huyết áp": ["tang huyet ap", "cao huyet ap", "huyet ap cao", "bi cao huyet ap", "mac cao huyet ap"],
+    "Huyết áp": ["tang huyet ap", "cao huyet ap", "huyet ap cao", "bi cao huyet ap", "mac cao huyet ap","huyet ap"],
     "Tiểu đường": ["tieu duong", "dai thao duong", "duong huyet cao", "bi tieu duong", "mac tieu duong"],
     "Thiếu kẽm": ["thieu kem", "thieu chat kem", "bi thieu kem"],
     "Thiếu máu": ["thieu mau", "bi thieu mau", "mac thieu mau", "thieu hong cau"],
@@ -45,5 +45,6 @@
     "Bữa tối": ["bua toi", "buoi toi", "an toi", "bua an toi"],
     "Bữa phụ": ["bua phu", "an vat", "an nhe", "snack"],
     "cả_ngày": ["ca ngay", "mot ngay", "1 ngay", "trong ngay", "suot ngay"]
+ 
   }
 }
