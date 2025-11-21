@@ -240,6 +240,13 @@ def _select_best_name(query_key: str, candidate_names: Iterable[str]) -> str | N
 
 
 def _row_to_payload(row: pd.Series, score: float | None = None) -> dict:
+    # Try to get image_url from either "image_url" or "Link" column (for backward compatibility)
+    image_url = None
+    if "image_url" in row.index:
+        image_url = row["image_url"] if pd.notna(row["image_url"]) else None
+    elif "Link" in row.index:
+        image_url = row["Link"] if pd.notna(row["Link"]) else None
+    
     return {
         "name": row["Tên thực phẩm"],
         "score": score,
@@ -249,6 +256,7 @@ def _row_to_payload(row: pd.Series, score: float | None = None) -> dict:
         "fat": float(row["Lipid"]) if pd.notna(row["Lipid"]) else 0.0,
         "fiber": float(row["Celluloza"]) if pd.notna(row["Celluloza"]) else 0.0,
         "weight_g": 100.0,
+        "image_url": image_url if image_url and str(image_url).strip() else None,
     }
 
 
