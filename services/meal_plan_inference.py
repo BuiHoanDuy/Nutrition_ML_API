@@ -997,6 +997,7 @@ Trong cơ sở dữ liệu nội bộ hiện không có sẵn thực đơn phù 
 Hãy tự đề xuất một thực đơn 1 ngày (bữa sáng, trưa, tối, phụ) với lượng calo hợp lý cho mỗi bữa,
 giải thích ngắn gọn vì sao thực đơn này phù hợp với tình trạng của người dùng.
 Trả lời bằng tiếng Việt, thân thiện, ngắn gọn, dưới dạng một đoạn văn hoàn chỉnh (không dùng bullet).
+Nếu nằm ngoài phạm vi về dinh dưỡng, sức khoẻ, các câu dẫn thông thường thì trả lời: "Xin lỗi, tôi là chuyên gia dinh dưỡng, hãy hỏi tôi về lĩnh vực sức khoẻ!"
 """
     else:
         # Câu hỏi ngoài lĩnh vực dinh dưỡng

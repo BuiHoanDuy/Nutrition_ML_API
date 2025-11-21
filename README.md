@@ -156,8 +156,6 @@ nutrition-ai-app/
 │   ├── meal_plan_inference.py   # Meal plan recommendation service
 │   └── obesity_inference.py     # Obesity prediction service
 ├── models/                       # Pre-trained models (organized by type)
-│   ├── calorie/                  # Calorie prediction models
-│   │   └── calorie_from_macro_rf.pkl
 │   ├── meal_plan/                # Meal plan recommendation models
 │   │   ├── meal_plans_data.csv
 │   │   ├── user_feature_encoder.pkl
@@ -180,7 +178,7 @@ nutrition-ai-app/
 
 ### 🔧 Technical Details
 
-- **Calorie Prediction**: Uses Random Forest model trained on Vietnamese food nutrition data
+- **Calorie Prediction**: Rule-based quantity parser + fuzzy food matching over curated nutrition table
 - **Meal Planning**: PhoBERT embeddings + cosine similarity for personalized recommendations
 - **Obesity Prediction**: Random Forest classifier with feature engineering
 - **Text Processing**: Rule-based parsing + fuzzy matching for Vietnamese food names
@@ -188,7 +186,6 @@ nutrition-ai-app/
 
 ### 📊 Model Performance
 
-- **Calorie Prediction**: RMSE ~50 calories
 - **Meal Plan Accuracy**: 85% user satisfaction
 - **Obesity Classification**: 92% accuracy
 

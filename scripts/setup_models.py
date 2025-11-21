@@ -19,7 +19,6 @@ def setup_models():
     # Create necessary directories
     print("[INFO] Creating directories...")
     directories = [
-        "models/calorie",
         "models/obesity", 
         "models/meal_plan",
         "logs"
@@ -37,16 +36,6 @@ def setup_models():
         return False
     
     print(f"[OK] Found data file: {data_file}")
-    
-    # Train calorie model
-    print("\n[INFO] Training calorie prediction model...")
-    try:
-        from scripts.train_calorie_model import train_calorie_model
-        train_calorie_model()
-        print("[OK] Calorie model training completed")
-    except Exception as e:
-        print(f"[ERROR] Error training calorie model: {e}")
-        return False
     
     # Train obesity model
     print("\n[INFO] Training obesity prediction model...")

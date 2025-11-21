@@ -5,7 +5,6 @@ Thư mục này chứa các script để train các models của ứng dụng Nu
 ## 📁 Files
 
 - `setup_models.py` - Script chính để train tất cả models
-- `train_calorie_model.py` - Train calorie prediction model
 - `train_obesity_model.py` - Train obesity prediction model
 - `train_meal_plan_model.py` - Train meal plan recommendation model
 
@@ -20,9 +19,6 @@ python scripts/setup_models.py
 ### Train từng model riêng lẻ:
 
 ```bash
-# Train calorie model
-python scripts/train_calorie_model.py
-
 # Train obesity model
 python scripts/train_obesity_model.py
 
@@ -31,14 +27,6 @@ python scripts/train_meal_plan_model.py
 ```
 
 ## 📊 Model Performance
-
-### Calorie Prediction Model
-
-- **Algorithm**: Random Forest Regressor
-- **Features**: Protein, Lipid, Glucid, Celluloza
-- **Target**: Calories (Tro)
-- **RMSE**: ~8.47
-- **R²**: ~-2.15
 
 ### Obesity Prediction Model
 

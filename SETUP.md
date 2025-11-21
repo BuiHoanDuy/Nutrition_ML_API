@@ -50,10 +50,9 @@ python scripts/setup_models.py
 
 Script này sẽ:
 - Tạo các thư mục cần thiết
-- Train calorie prediction model
 - Train obesity prediction model  
 - Train meal plan recommendation model
-- Lưu tất cả models vào thư mục `models/`
+- Lưu models vào thư mục `models/`
 
 ### Bước 6: Cấu hình environment variables (Tùy chọn)
 
@@ -108,7 +107,6 @@ nutrition-ai-app/
 ├── api/                    # FastAPI application
 ├── services/               # Core inference services
 ├── models/                 # Trained models (tự động tạo)
-│   ├── calorie/           # Calorie prediction models
 │   ├── meal_plan/         # Meal plan recommendation models
 │   └── obesity/           # Obesity prediction models
 ├── utils/                  # Utility functions

@@ -4,7 +4,7 @@ Gạo nếp máy (Loại thường),13.9,346,8.4,1.6,74.9,0.5,0.7,https://tse1.m
 Gạo tẻ giã,14,344,8.1,1.3,75,0.7,0.9,https://noitronhanh.com/wp-content/uploads/2021/02/Gao-te-gia.jpg
 Gạo tẻ máy,14,344,7.9,1,75.9,0.4,0.8,https://www.huongnghiepaau.com/wp-content/uploads/2018/03/677482e376ddff1baa49981c1fb14240.jpg
 Gạo lứt,12.4,345,7.5,2.7,72.8,3.4,1.3,https://cdn.tgdd.vn/2020/07/CookProduct/2-1200x676-1.jpg
-Kê,14,331,7,3,69,3.4,3.6,
+Kê,14,331,7,3,69,3.4,3.6,https://cdn.tgdd.vn/2020/07/CookProduct/2-1200x676-1.jpg
 Ngô bắp tươi,52,196,4.1,2.3,39.6,1.2,0.8,https://thafaco.vn/wp-content/uploads/2024/01/ngo.jpg
 Ngô vàng hạt khô,14,354,8.6,4.7,69.4,2,1.3,https://thafaco.vn/wp-content/uploads/2024/01/ngo.jpg
 Bánh bao nhân thịt,44,219,6.1,0.5,47.5,0.5,1.4,https://tse3.mm.bing.net/th/id/OIP.moGcJf3k1ga9k0zJLihY1QHaFP?pid=Api&P=0&h=180
@@ -22,7 +22,7 @@ Cốm,25,297,6.1,0.8,66.3,0.6,1.2,https://tse4.mm.bing.net/th/id/OIP._wH2qRpGzhT
 mì sợi,13,349,11,0.9,74.2,0.3,0.6,https://tse3.mm.bing.net/th/id/OIP.bj_9b2gcTDj5qEmeCqb_FQHaD4?pid=Api&P=0&h=180
 Ngô nếp luộc,59,167,3.9,2.2,32.9,1.2,0.8,https://tse1.mm.bing.net/th/id/OIP.jn_-xHwtBjIjaT-snP-arAHaHM?pid=Api&P=0&h=180
 Củ ấu,69.2,115,3.6,0.5,24,1,1.7,https://tse1.mm.bing.net/th/id/OIP.osr7nP9OgXR5uLCDqyAJggHaEV?pid=Api&P=0&h=180
-Củ cái,65.5,127,3.1,0.2,28.3,1.8,1.1,https://tse2.mm.bing.net/th/id/OIP.s8TS8oL-AoM1aCP_YZVuEwHaHa?pid=Api&P=0&h=180
+Củ cải,65.5,127,3.1,0.2,28.3,1.8,1.1,https://tse2.mm.bing.net/th/id/OIP.s8TS8oL-AoM1aCP_YZVuEwHaHa?pid=Api&P=0&h=180
 Củ sắn,60,152,1.1,0.2,36.4,1.5,0.8,https://tse2.mm.bing.net/th/id/OIP.s8TS8oL-AoM1aCP_YZVuEwHaHa?pid=Api&P=0&h=180
 Củ sắn dây,60.3,119,1.6,0.1,28,9.2,0.8,https://tse1.mm.bing.net/th/id/OIP.K6SLB6o0Aka4xb5UgnN6rwHaE8?pid=Api&P=0&h=180
 Củ súng khô (đã bỏ vỏ),8.6,350,16.1,0.5,70.3,2.3,2.2,https://tse2.mm.bing.net/th/id/OIP.CFanZ0tlnXOPohRGuqhPygHaGN?pid=Api&P=0&h=180
@@ -51,803 +51,801 @@ Cùi dừa non,87.8,40,3.5,1.7,2.6,3.5,0.9,https://tse1.mm.bing.net/th/id/OIP.1v
 đậu trứng cuốc,14,321,25.8,2,50,4.8,3.4,https://tse4.mm.bing.net/th/id/OIP.KJv-mqi_mosmu0o48njYygHaHa?pid=Api&P=0&h=180
 đậu xanh (đậu tắt),14,328,23.4,2.4,53.1,4.7,2.4,https://tse4.mm.bing.net/th/id/OIP._m0XgGuSetYCMLAB9z9CdgHaFA?pid=Api&P=0&h=180
 Hạt dẻ to,9,638,18,59,8.7,3.5,1.8,https://tse2.mm.bing.net/th/id/OIP.yJAcGKisz16sU5PyWbTCdwHaHa?pid=Api&P=0&h=180
-Hạt dẻ tươi,44,223,4.2,1.1,49.1,16,1.7,https://tse3.mm.bing.net/th/id/OIP.1wibPK6W-wDRjYt5_GRQegHaHa?pid=Api&P=0&h=180
-Hạt dẻ khô,8.9,363,6.8,1.8,79.8,16,2.7,
-Hạt đen,12,472,17.3,29,35.5,3.5,2.7,
-Hạt điều,3.4,605,18.4,46.3,28.7,0.6,2.6,
-Hạt mít,58.2,166,0.7,1.1,38.3,16,1.7,
-Lạc hạt,7.5,573,27.5,44.5,15.5,2.5,2.5,
-Quả cọ tươi,67.1,178,2.3,13.4,12.1,3.5,1.6,
-Quả đại hái tươi,35,427,20,38,1.2,3.4,2.4,
-"vừng (đen, trắng)",7.6,568,20.1,46.4,17.6,3.5,4.8,
-Bột đậu tương đã loại béo (đậu nành),14,321,49,1,29,2.5,4.5,
-Bột đậu tương rang chín,10,418,41,18,22.9,2.5,5.6,
-Bột đậu xanh,10,347,24.6,2.5,56.5,3.9,2.5,
-Bột lạc,8,575,27.5,45,15,2.1,2.4,
-đậu phụ,82,95,10.9,5.4,0.7,0.4,0.6,
-đậu phụ chúc,18.5,414,50.2,20.8,6.5,0.3,3.7,
-đậu phụ nướng,78.2,114,13.4,6.4,0.8,0.5,0.7,
-Hạt bí đỏ rang,3.6,519,35.1,31.8,23,2.3,4.2,
-Hạt dưa đỏ rang (dưa hấu),4.8,551,31.8,39.1,18,1.8,4.5,
-"Hạt điều khô, chiên dầu",12.7,583,18.3,49.3,16.4,0.7,2.6,
-Sữa Bột đậu nành,3.5,405,31.1,9.7,48.2,2.2,5.3,
-Sữa đậu nành (100g đậu/lít),94.4,28,3.1,1.6,0.4,0.1,0.4,
-Tào phớ,90,37,2.3,0.2,6.4,0.2,0.9,
-Bầu,95.1,14,0.6,0.02,2.9,1,0.4,
-bí ngô,92,27,0.3,0.1,6.1,0.7,0.8,
-Cà bát,92.5,23,1.2,0.2,4,1.5,0.6,
-Cà chua,94,20,0.6,0.2,4,0.8,0.4,
-"Cà rốt (củ đỏ, vàng)",88.5,39,1.5,0.2,7.8,1.2,0.8,
-Cà rốt khô,14,292,9.2,1.5,60.4,9.6,5.3,
-Cải bắp,90,29,1.8,0.1,5.3,1.6,1.2,
-Cải bắp đỏ,84,45,1.9,0.2,9,4,0.9,
-Cải bắp khô,16,245,18,1.6,39.7,14,10.7,
-Cải soong,93.7,15,2.1,0.1,1.3,2,0.8,
-Cải thìa (cải trắng),93.2,17,1.4,0.2,2.4,1.8,1,
-Cải xanh,93.8,16,1.7,0.2,1.9,1.8,0.6,
-Cần tây,85,48,3.7,0.2,7.9,1.5,1.7,
-Chuối xanh,80.2,74,1.2,0.5,16.4,1,0.8,
-Củ cải trắng,92.1,21,1.5,0.1,3.6,1.5,1.2,
-Củ cải trắng khô,16,220,17.6,1.5,33.9,17.7,13.3,
-dưa chuột,95,16,0.8,0.1,2.9,0.7,0.5,
-đậu đũa,83,59,6,0.4,7.9,2,0.7,
-đậu Hà Lan,81,72,6.5,0.4,10.6,1,0.5,
-đậu rồng (quả non),89.5,34,1.9,0.1,6.3,1.6,0.6,
-Gấc,77,122,2.1,7.9,10.5,1.8,0.7,
-Giá đậu tương,80.8,79,7.7,1.8,8,0.7,1,
-Giá đậu xanh,86.5,44,5.5,0.2,5.1,2,0.7,
-Hành củ tươi,92.5,26,1.3,0.4,4.4,0.7,0.7,
-Hành tây,88,41,1.8,0.1,8.2,1.1,0.8,
-Hạt sen tươi,57.9,161,9.5,0.5,29.5,0.8,1.8,
-Hạt sen khô,14,334,20,2.4,58,2.2,3.4,
-Hẹ lá,94.5,18,2.2,0.3,1.5,0.9,0.6,
-Khế,93.5,16,0.6,0.3,2.8,2.6,0.2,
-Măng khô,23,157,13,2.1,21.5,36,4.4,
-Măng tây,93.7,14,2.2,0.1,1.1,2.3,0.6,
-Măng tre,92,15,1.7,0.3,1.4,4.1,0.5,
-Mướp,95.1,17,0.9,0.2,2.8,0.5,0.5,
-Mướp đâng,94.4,16,0.9,0.2,2.8,1.1,0.6,
-Mướp Nhật bản,95.4,10,0.8,0,1.8,1.4,0.6,
-Ngải cứu,89.7,25,3.8,0,2.4,2,2.1,
-Ngô bao tử,89.2,40,2.2,0.2,7.4,0.4,0.6,
-Ngó sen,82.9,61,1,0.1,13.9,1.2,0.9,
-ớt đỏ to,92.2,23,1,0.3,4,2,0.5,
-ớt vàng to,91,29,1.3,0.2,5.5,1.4,0.6,
-ớt xanh to,92,25,1.3,0.2,4.5,1.5,0.5,
-Quả dọc,95,19,0.8,0,3.9,16,0.3,
-Rau bí,93.2,18,2.7,0.21,1.7,1.7,0.7,
-Rau câu khô,20,198,11.2,1.1,35.8,20.8,11.1,
-Rau câu tươi,86.2,25,1.9,0.1,4.1,5,2.7,
-Rau diếp,95.7,14,1.2,0.2,1.8,0.5,0.6,
-Rau đay,91.4,25,2.8,0.3,3,1.5,1.1,
-Rau giền cơm,92,21,3.4,0.3,1.1,1.6,1.6,
-Rau giền đỏ,86.2,41,3.3,0.3,6.2,1.6,2.4,
-Rau giền trắng,86.7,42,3.2,0.4,6.3,1.5,1.9,
-Rau húng,91.4,20,2.2,0.6,1.5,3.5,0.8,
-Rau khoai lang,91.9,23,2.6,0.3,2.5,1.4,1.3,
-Rau mùi,93.3,16,2.6,0.5,0.2,1.8,1.6,
-Rau mùi tàu,92,25,2.1,0.8,2.4,1.6,1.1,
-Rau muống,92,25,3.2,0.4,2.1,1,1.3,
-Rau muống khô,14,245,34.2,1.8,23,12,15,
-Rau ngót khô,14,239,32.2,2.6,21.8,15,14.4,
-Rau sà lách,95,17,1.5,0.4,1.8,0.5,0.8,
-Su hào,88,37,2.8,0.1,6.2,1.7,1.2,
-Su hào khô,15,261,20,1.4,42.1,12.5,9,
-"Su su, quả",94,19,0.8,0.1,3.6,1,0.5,
-Sóp lơ trắng,90.9,30,2.5,0.1,4.8,0.9,0.8,
-Sóp lơ xanh,89.8,26,3,0.3,2.9,3.2,0.9,
-thìa là,88.4,28,2.6,1.1,1.8,5,1.1,
-Tỏi ta,67.7,121,6,0.5,23,1.5,1.3,
-Trám đen chín,77,114,2.5,10,3.6,4.9,2,
-"Trám xanh sống, trám trắng",86.7,37,1.2,1.6,4.4,4.9,1.2,
-dưa chuột muối,92.1,13,0.8,0.05,2.5,0.7,3.9,
-Men bia khô,7.5,340,52.5,3.2,25.4,6.6,4.8,
-Men bia tươi,74.6,95,16.2,1.3,4.5,2,1.4,
-Mộc nhĩ,11.4,304,10.6,0.2,65,7,5.8,
-Nêm hương khô,13,274,36,4,23.5,17,6.5,
-Nêm hương tươi,87,39,5.5,0.5,3.1,3,0.9,
-Nêm mỡ (Nêm tây),90.4,32,4,0.3,3.4,1.1,0.8,
-Nêm rơm,87.9,57,3.6,3.2,3.4,1.1,0.8,
-Nêm thường tươi,88,34,4.6,0.8,2.2,3.5,0.9,
-Bưởi,91.4,30,0.2,0,7.3,0.7,0.4,
-Cam,88.8,38,0.9,0.1,8.3,1.4,0.5,
-Chanh,92.5,24,0.9,0.3,4.5,1.3,0.5,
-Chôm chôm,80.3,72,1.5,0,16.4,1.3,0.5,
-Chuối khô,22,292,5,0,68,2.3,2.7,
-Chuối tây,83.2,56,0.9,0.3,12.4,2.6,0.6,
-Chuối tiêu,74.4,97,1.5,0.2,22.2,0.8,0.9,
-Dâu tây,84.9,43,1.8,0.4,8.1,4,0.8,
-dưa bở,94.5,18,0.5,0.2,3.6,0.7,0.5,
-dưa hấu,95.5,16,1.2,0.2,2.3,0.5,0.3,
-dưa hồng,95,17,0.3,0.1,3.7,0.4,0.5,
-dưa lê,93.3,18,0.4,0,4.2,0.5,1.6,
-Dứa tây,89.7,38,0.5,0.1,8.8,0.4,0.5,
-đào,90.5,31,0.9,0.2,6.3,1.5,0.6,
-đu đủ chín,90.1,36,1,0.1,7.6,0.6,0.6,
-Gioi,93,16,0.4,0.3,3.2,2.9,0.2,
-Hồng đỏ,90,29,0.7,0.2,6,2.5,0.6,
-Hồng xiêm,85.7,48,0.5,0.7,10,2.5,0.6,
-Lê,87.8,45,0.7,0.2,10.2,0.6,0.5,
-Lựu,79.6,70,0.6,0.3,16.2,2.5,0.8,
-Mãng cầu xiêm,84.7,53,1.8,0.6,10.1,1.9,0.9,
-Mận,94.1,20,0.6,0.2,3.9,0.7,0.5,
-mít,85.4,50,0.6,0.3,11.1,1.2,1.4,
-Mơ,87.1,48,0.9,0.4,10.1,0.8,0.7,
-Mơ khô,25.9,273,3,1.1,62.8,4.1,3.1,
-"Muỗm, quéo",82.9,67,0.6,0.4,15.3,0.4,0.4,
-Na,82.5,66,1.6,0.3,14.2,0.8,0.6,
-Nhãn,86.3,48,0.9,0.1,10.9,1,0.8,
-Nhãn khô,25,285,4.3,0.5,65.9,1.7,2.6,
-Nho ngọt,82.1,68,0.4,0.2,16.3,0.6,0.4,
-ổi,85,38,0.6,1,6.8,6,0.7,
-Quả bơ vỏ tím,88.3,74,1.8,6.2,2.8,0.4,0.5,
-Quả bơ vỏ xanh,85.4,101,1.9,9.4,2.3,0.5,0.5,
-Quả trứng gà,73.4,106,4.3,0.4,21.3,16,0.6,
-Quít,89.5,39,0.8,0.3,8.3,0.6,0.5,
-Sầu riêng,66.8,132,2.5,1.6,26.9,1.4,0.8,
-Táo ta,89.5,38,0.8,0.2,8.3,0.7,0.5,
-Táo tây,87.2,48,0.5,0.2,11,0.6,0.5,
-Vải,87.8,45,0.7,0.4,9.6,1.1,0.4,
-Vải khô,34.9,260,3,1.9,57.6,1,1.6,
-Xoài chín,82.6,62,0.6,0.3,14.1,1.8,0.6,
-Quả kiwi,83.1,56,1.1,0.5,11.7,3,0.6,
-Bơ,15.4,756,0.5,83.5,0.5,0,0.1,
-"dầu thảo mộc (Lạc, vừng, cám...)",0.3,897,0,99.7,0,0,0,
-mỡ lợn muối,3,827,2,91,0,0,4,
-Mì lợn nước,0.4,896,0,99.6,0,0,0,
-Bơ thực vật,18.5,729,0.5,80.7,0.1,0,0.2,
-dầu bông,0,900,0,100,0,0,0,
-dầu cám gạo,0,900,0,100,0,0,0,
-dầu cọ,0,900,0,100,0,0,0,
-dầu dừa,0,900,0,100,0,0,0,
-dầu đậu tương,0,900,0,100,0,0,0,
-dầu lạc,0,900,0,100,0,0,0,
-dầu mè,0,900,0,100,0,0,0,
-dầu ngô,0,900,0,100,0,0,0,
-dầu oliu,0,900,0,100,0,0,0,
-thịt bê mỡ,72.8,144,19,7.5,0,0,0.7,
-thịt bê nạc,78.2,85,20,0.5,0,0,1.3,
-thịt bò loại I,74.1,118,21,3.8,0,0,1.1,
-thịt bò loại II,70.5,167,18,10.5,0,0,1,
-"Thịt bò, lưng, nạc",72.7,127,23.1,3.9,0,0,1,
-"Thịt bò, lưng, nạc và mì",67.4,182,21.5,10.7,0,0,0.9,
-Thịt bồ câu ra ràng,51.7,340,17.5,30,0,0,0.8,
-thịt chó sên,53,338,16,30.4,0,0,0.6,
-thịt chó vai,63.8,230,18,17.6,0,0,0.6,
-"thịt cừu, nạc",65.8,219,16.4,17,0,0,0.8,
-"thịt dê, nạc",74.4,122,20.7,4.3,0,0,0.6,
-Thịt gà rừng,69.7,141,24.4,4.8,0,0,1.1,
-Thịt gà ta,65.6,199,20.3,13.1,0,0,1,
-Thịt gà tây,63.6,218,20.1,15.3,0,0,1,
-Thịt hươu,77.9,94,19,2,0,0,1.1,
-thịt heo mỡ,47.5,394,14.5,37.3,0,0,0.7,
-thịt lợn mỡ,47.5,394,14.5,37.3,0,0,0.7,
-thịt lợn nạc,73,139,19,7,0,0,1,
-thịt heo nạc,73,139,19,7,0,0,1,
-thịt heo ba chỉ,60.9,260,16.5,21.5,0,0,1.1,
-thịt lợn ba chỉ,60.9,260,16.5,21.5,0,0,1.1,
-thịt ngầng,46.1,409,14,39.2,0,0,0.7,
-thịt ngựa,66.8,176,21.5,10,0,0,1.7,
-Thịt thỏ nhà,69.3,158,21.5,8,0,0,1.2,
-thịt thỏ rừng,74.3,103,23.5,1,0,0,1.2,
-thịt trâu,76.3,97,20.4,1.4,0.9,0,1.1,
-thịt trâu bắp,74.2,115,21.9,3,0,0,0.9,
-thịt trâu cổ,74.9,112,20.9,3.1,0,0,1.1,
-thịt trâu đùi,74.9,112,21.2,3,0,0,0.9,
-thịt trâu thăn,73,121,22.8,3.3,0,0,0.9,
-thịt vịt,59.5,267,17.8,21.8,0,0,0.9,
-Bầu dục bò,84.3,67,12.5,1.8,0.3,0,1.1,
-Bầu dục lợn,82.5,81,13,3.1,0.3,0,1.1,
-Bì lợn,73.3,118,23.3,2.7,0,0,0.7,
-Chân giò lợn,64.7,230,15.7,18.6,0,0,1,
-Dạ dày bò,80.5,97,14.8,4.2,0,0,0.5,
-Dạ dày lợn,81.7,85,14.6,2.9,0,0,0.8,
-đầu bò,68.7,185,18.1,12.5,0,0,0.7,
-đầu lợn,54.6,335,13.4,31.3,0,0,0.7,
-đuôi bò,73,137,19.7,6.5,0,0,0.8,
-đuôi lợn,41.8,467,10.8,47.1,0,0,0.3,
-Gan bò,75.2,109,17.4,3.1,3,0,1.3,
-Gan gà,75,111,18.2,3.4,2,0,1.4,
-Gan lợn,74.1,116,18.8,3.6,2,0,1.5,
-Gan vịt,74.1,122,17.1,4.7,2.8,0,1.3,
-Gân chân bò,69.2,124,30.2,0.3,0,0,0.3,
-Lưỡi bò,73.2,164,13.6,12.1,0.2,0,0.9,
-Lưỡi lợn,70.8,178,14.2,12.8,1.4,0,0.8,
-Lòng lợn (ruột già),76.6,167,6.9,15.1,0.8,0,0.6,
-Lòng lợn (ruột non),90.5,44,7.2,1.3,0.8,0,0.2,
-Mề gà,75.6,99,21.3,1.3,0.6,0,1.2,
-óc bò,79.4,124,9,9.5,0.5,0,1.6,
-óc lợn,80.1,123,9,9.5,0.4,0,1,
-Phổi bò,79.1,103,15.2,4.7,0,0,1,
-Phổi lợn,80.6,92,14.8,3.6,0,0,1,
-Sườn lợn,68.2,187,17.9,12.8,0,0,1.1,
-Tai lợn,72.9,126,21,4.1,1.3,0,0.7,
-Tim bò,80.4,89,15,3,0.6,0,1,
-Tim gà,77.5,114,16,5.5,0,0,1,
-Tim lợn,79.5,94,15.1,3.2,1.2,0,1,
-Tiết bò,80.4,75,18,0.2,0.4,0,1,
-Tiết lợn luộc,86.8,44,10.7,0.1,0,0,2.4,
-Tiết lợn sống,91.9,25,5.7,0.1,0.2,0,2.1,
-Tủy xương bò,8.7,814,1.1,89.9,0,0,0.3,
-Tủy xương lợn,15,749,2.3,82.2,0,0,0.5,
-"Ba tê , pa tê",47.5,326,10.8,24.6,15.4,0,1.7,
-Chả lợn,32.6,517,10.8,50.4,5.1,0,1.1,
-Chả quế lợn,42.5,416,16.2,39,0,0,2.3,
-Dăm bông lợn,48.7,318,23,25,0.3,0,3,
-Dồi lợn,78.9,114,12.4,7.1,0,0,1.6,
-Giò bò,48.8,357,13.8,33.5,0,0,3.9,
-Giò lụa,72,136,21.5,5.5,0,0,1,
-Giò thủ lợn,29,553,16,54.3,0,0,0.7,
-Lạp xường,18.8,585,20.8,55,1.7,0,3.7,
-Nem chạo,68.1,153,16.6,6.5,6.9,0,1.9,
-Nem chua,68,137,21.7,3.7,4.3,0,2.3,
-Ruốc thịt lợn,25.8,369,46.6,20.3,0,0,7.3,
-thịt bò khô,32.4,239,51,1.6,5.2,0,9.8,
-thịt trâu khô,36.4,226,50.4,2.7,0,0,10.5,
-Xúc xích,17,535,27.2,47.4,0,0,8.4,
-Bột cóc,7.2,342,55.4,13.4,0,0,24,
-Châu chấu,71.1,130,24.3,3.6,0,0,1,
-ếch (thịt đùi),75,90,20,1.1,0,0,3.9,
-Nhộng,79.7,111,13,6.5,0,0,0.8,
-Lòng gà (cả bộ),74.9,119,17.9,4.5,1.8,0,1,
-Cá bống,81.9,70,15.8,0.8,0,0,1.5,
-Cá chày,75.1,113,20.1,3.6,0,0,1.2,
-Cá chép,79.1,96,16,3.6,0,0,1.3,
-Cá dưa,75.6,115,17.6,5,0,0,1.8,
-Cá dầu,75.1,96,18.9,2.3,0,0,3.7,
-Cá diếc,78.9,87,17.7,1.8,0,0,1.6,
-Cá đao,78.3,94,18.3,2.3,0,0,1.1,
-Cá đé,78.8,83,18.7,0.9,0,0,1.6,
-Cá đối,76,108,19.5,3.3,0,0,1.2,
-Cá đồng tiền,76.4,98,20.1,2,0,0,1.5,
-Cá hồi,71.3,136,22,5.3,0,0,1.4,
-"Cá khô (chim, thu, nụ, đé)",37.8,208,43.3,3.9,0,0,15,
-Cá lác,78.1,71,16.7,0.5,0,0,4.7,
-Cá mè,74.7,144,15.4,9.1,0,0,0.8,
-Cá mòi,75.3,124,17.5,6,0,0,1.2,
-Cá mỡ,72.7,151,16.8,9.3,0,0,1.2,
-Cá mối,73.3,116,22.1,3.1,0,0,1.5,
-Cá nạc,80,80,17.5,1.1,0,0,1.4,
-Cá ngừ,77.5,87,21,0.3,0,0,1.2,
-Cá nục,74.9,111,20.2,3.3,0,0,1.6,
-Cá phèn,78.2,104,15.9,4.5,0,0,1.4,
-Cá quả,78,97,18.2,2.7,0,0,1.1,
-Cá rô đồng,74.2,126,19.1,5.5,0,0,1.2,
-Cá rô phi,76.8,100,19.7,2.3,0,0,1.2,
-Cá thờn bơn (cá bơn),81.3,73,17.4,0.4,0,0,0.9,
-Cá thu,70.2,166,18.2,10.3,0,0,1.3,
-Cá thu đao,70.3,156,20,8.4,0,0,1.3,
-Cá trạch (cá chạch),74.2,110,20.4,3.2,0,0,2.2,
-Cá trắm cỏ,79.4,91,17,2.6,0,0,1,
-Cá trê,70.4,173,16.5,11.9,0,0,1.2,
-Cá trích,70.5,166,17.7,10.6,0,0,1.2,
-Cá trôi,74.3,127,18.8,5.7,0,0,1.2,
-Cua bể,72.2,103,17.5,0.6,7,0,2.7,
-Cua đồng,74.4,87,12.3,3.3,2,0,8,
-ghẹ,85.5,54,11.9,0.7,0,0,1.9,
-Hải sâm,76.9,90,21.5,0.3,0.2,0,1.1,
-Hến,88.8,45,4.5,0.7,5.1,0,0.9,
-Lươn,68.3,180,18.4,11.7,0.2,0,1.4,
-Mực khô,26.2,291,60.1,4.5,2.5,0,6.7,
-Mực tươi,81.4,73,16.3,0.9,0,0,1.4,
-ốc bươu,76.8,84,11.1,0.7,8.3,0,3.1,
-ốc đá,80.3,63,11.2,0.3,3.9,0,4.3,
-ốc nhồi,77.6,84,11.9,0.7,7.6,0,2.2,
-ốc vặn,79.1,72,12.2,0.7,4.3,0,3.7,
-"Rạm (muối, đồ)",64.4,83,14.2,2.9,0,0,18.5,
-Rạm tươi,78.2,77,12.9,2.8,0,0,6.1,
-Rươi,81.9,89,12.4,4.4,0,0,1.3,
-Sò,82.1,78,9.5,2.3,4.9,0,1.2,
-Tép gạo,84.5,58,11.7,1.2,0,0,2.6,
-Tép khô,23,269,59.8,3,0.7,0,13.5,
-Tôm biển,79.2,82,17.6,0.9,0.9,0,1.4,
-Tôm đồng,76.9,90,18.4,1.8,0,0,2.9,
-Tôm khô,12.6,347,75.6,3.8,2.5,0,5.5,
-Trai,89.9,38,4.6,1.1,2.5,0,1.9,
-Bánh phồng tôm rán,3.8,676,1.6,59.2,34.1,0,1.3,
-Bánh phồng tôm sống,12,381,3.4,7.4,75.3,0,1.9,
-Bột cá,11.6,323,71.2,2.9,3,0,11.3,
-Ruốc cá quả,14,312,65.7,4.1,3,0,13.2,
-Ruốc tôm,13.1,305,65.5,3.1,3.7,0,14.6,
-Trứng gà,72,166,14.8,11.6,0.5,0,1.1,
-Lòng đỏ trứng gà,54,327,13.6,29.8,1,0,1.6,
-Lòng trắng trứng gà,88,46,10.3,0.1,1,0,0.6,
-Trứng vịt,70,184,13,14.2,1,0,1.8,
-Lòng đỏ trứng vịt,47.5,364,13.6,32.3,4.8,0,1.8,
-Lòng trắng trứng vịt,87.8,47,10.7,0.1,0.8,0,0.6,
-Trứng chim cút,74.4,154,13.1,11.1,0.4,0,1.1,
-Trứng cá,64.9,171,20.5,9.9,0,0,4.7,
-Trứng cá muối,47.5,274,24.6,17.9,3.5,0,6.5,
-Trứng vịt lộn,67,182,13.6,12.4,4,0,3,
-Bột trứng,8.5,563,44,42.2,1.8,0,3.5,
-Sữa bò tươi,86.2,74,3.9,4.4,4.8,0,0.7,
-Sữa dê tươi,87.2,69,3.5,4.1,4.5,0,0.7,
-Sữa mẹ (Sữa người),88.3,61,1.5,3,7,0,0.2,
-Sữa chua (từ Sữa bò),88.7,61,3.3,3.7,3.6,0,0.7,
-Sữa chua vớt béo,71.6,103,3.5,0,22.3,1.2,1.4,
-Sữa Bột toàn phần,3.5,494,27,26,38,0,5.5,
-Sữa Bột tách béo,4,357,35,1,52,0,8,
-Sữa đặc có đường Viỏt Nam,25.4,336,8.1,8.8,56,0,1.7,
-Pho mát,38.9,380,25.5,30.9,0,0,4.7,
-Chuối nước đường,83.9,58,0.5,0,13.9,1.3,0.4,
-dưa chuột hộp,94.1,8,0.3,0.2,1.2,3.1,1.1,
-Dứa hộp,85.7,53,0.4,0.1,12.7,0.8,0.3,
-Lạc chao dầu,1.8,680,25.7,59.5,10.3,16,2.7,
-Mắc coọc nước đường,85.1,56,0.2,0,13.7,0.7,0.3,
-Mận nước đường,83,64,0.4,0.1,15.4,0.9,0.2,
-Mứt bí ngô,49.4,198,0.5,0,49.1,0.7,0.3,
-Mứt cam că vá,42.8,218,0.4,0,54.2,2.2,0.4,
-Mứt chuối,43.8,218,0.7,0,53.9,1.3,0.3,
-Mứt dứa,47.2,208,0.5,0,51.5,0.4,0.4,
-Mứt đu đủ,53.2,178,0.4,0,44.1,2,0.3,
-Nhãn nước đường,83.3,62,0.5,0,15,1,0.2,
-Nước dứa hộp,86.4,53,0.4,0.1,12.6,0.2,0.3,
-Vải nước đường,83.6,60,0.4,0,14.7,1.1,0.2,
-Cá thu hộp,57.5,207,24.8,12,0,16,5.7,
-Cá trích hộp,56.7,233,22.3,14.4,3.5,16,3.1,
-thịt bò hộp,61.4,251,16.4,20.6,0,16,1.6,
-Thịt gà hộp,59,273,17,22.8,0,16,1.2,
-thịt lợn hộp,49,344,17.3,29.3,2.7,16,1.7,
-"thịt lợn, thịt bò xay hộp",62.8,244,16,20,0,16,1.2,
-thịt vịt hầm,59.9,224,19.6,16.2,0,16,4.3,
-Bánh bích cốt,12,346,12.3,1.3,71.3,0.8,2.3,
-Bánh bích quy,10.4,376,8.8,4.5,75.1,0.5,0.7,
-Bánh chả,8,395,3.4,6.6,80.5,1,0.5,
-Bánh con cá,10,368,7.5,2.2,79.6,0.2,0.5,
-Bánh đậu xanh,6.8,416,15.6,11.5,62.4,1.1,2.6,
-Bánh kem xốp,1.9,492,8.3,24,60.7,3.5,1.6,
-Bánh khảo chay,5.8,376,3.2,0.3,90.2,0.2,0.3,
-Bánh quế,3.6,435,8.3,10.7,76.4,0.3,0.7,
-Bánh sô cô la,8.5,449,3.9,17.6,68.8,0,1.2,
-Bánh thái sô cô la,0.8,543,4.9,30.4,62.5,16,1.4,
-Bánh trứng nhỏn,11.6,369,9.6,3.7,74.2,0.2,0.7,
-Bột ca cao,3,414,19.6,13.7,53,4.6,6.1,
-đường cát,1.7,390,0,0,97.4,0,0.9,
-đường kính,0.5,397,0,0,99.3,0,0.2,
-Kẹo bơ cứng,8.8,448,2.1,17.2,71.1,0,0.8,
-Kẹo cà phê,6.6,378,0,1.3,91.5,0,0.6,
-Kẹo cam chanh,5.4,377,0,0.5,93.1,0.3,0.7,
-Kẹo dừa mềm,8.5,415,0.6,12.2,75.6,2.5,0.6,
-Kẹo dứa mềm,8.5,415,0.6,12.2,75.6,2.5,0.6,
-Kẹo lạc,5,449,10.3,16.5,64.8,2.2,1.2,
-Kẹo Pastille (kẹo ngậm bạc hà),10.2,356,5.2,0,83.8,16,0.8,
-Kẹo sô cô la,6.8,388,1.6,4.6,85.1,1.2,0.7,
-Kẹo Sữa,8.4,390,2.9,5.2,83,16,0.5,
-Kẹo vừng viên,1.7,417,2.8,6.9,85.9,1.7,1,
-Mạch nha,15,331,0.2,0,82.5,0,2.3,
-Mật ong,18,327,0.4,0,81.3,0,0.3,
-Mứt lạc,1.8,431,5.4,8.6,82.9,0.7,0.6,
-Cary Bột,10,283,8.2,7.3,46,8.9,19.6,
-Gừng khô (Bột),9.4,323,9.1,5.9,58.3,12.5,4.8,
-Gừng tươi,90,29,0.4,0.8,5.1,3.3,0.5,
-Hạt tiêu,13.5,231,7,7.4,34.1,33.5,4.5,
-Muối,1,0,0,0,0,0,99,
-"nghệ khô, Bột",11.4,295,7.8,9.9,43.8,21.1,6,
-nghệ tươi,86.7,25,1.1,0.3,4.4,6.5,1,
-ớt khô bột,12,227,15.6,4.2,31.8,23.6,12.8,
-Magi,66,65,10.5,0.1,5.6,0,17.8,
-Mắm tôm đặc,48,73,14.8,1.5,0,0,35.7,
-Mắm tôm loãng,68.6,44,7,0.8,2.1,0,21.5,
-Mắm tép chua,55.5,68,8.7,1.2,5.5,0,29.1,
-Nước mắm cá (loại đặc biỏt),60,60,15,0,0,0,25,
-Nước mắm cá loại I,67.9,28,7.1,0,0,0,25,
-Nước mắm loại II,66.8,21,5.2,0,0,0,28,
-Nước mắm cá,71.1,35,5.1,0.01,3.6,0,20.2,
-Nước mắm cô,20.2,131,32.8,0,0,0,47,
-Tương ngô,70.3,75,3.9,0.1,14.5,0,11.2,
-Tương nếp,68.3,86,4.3,0.7,15.7,0,11,
-Tương ớt,84,37,0.5,0.5,7.6,0.9,6.5,
-Xì dầu,70.8,53,6.3,0.04,6.8,0.8,15.3,
-Sốt mayonnaise,21.7,701,0,77.8,0.1,0,0.4,
-"Bia (cồn: 4,5 g)",92.5,11,0.5,0,2.3,0,0.2,
+Hạt dẻ tươi,44,223,4.2,1.1,49.1,16,1.7,https://cdn.tgdd.vn/2020/07/CookProduct/2-1200x676-1.jpg
+Hạt dẻ khô,8.9,363,6.8,1.8,79.8,16,2.7,https://tse2.mm.bing.net/th/id/OIP.yJAcGKisz16sU5PyWbTCdwHaHa?pid=Api&P=0&h=180
+Hạt đen,12,472,17.3,29,35.5,3.5,2.7,https://tse2.mm.bing.net/th/id/OIP.zpg2u7dxKxmbG4x-utXm2gHaEK?pid=Api&P=0&h=180
+Hạt điều,3.4,605,18.4,46.3,28.7,0.6,2.6,https://tse4.mm.bing.net/th/id/OIP.h9P7DVSBQlnkTUUbo6D0DgHaE8?pid=Api&P=0&h=180
+Hạt mít,58.2,166,0.7,1.1,38.3,16,1.7,https://tse4.mm.bing.net/th/id/OIP.0v3BwIwSHqaEb-imgNEJpwHaD4?pid=Api&P=0&h=180
+Lạc hạt,7.5,573,27.5,44.5,15.5,2.5,2.5,https://tse4.mm.bing.net/th/id/OIP.GEFETmEjX3jbP9iEijA6rgHaE7?pid=Api&P=0&h=180
+Quả cọ tươi,67.1,178,2.3,13.4,12.1,3.5,1.6,https://tse2.mm.bing.net/th/id/OIP.eXaIL6aEgJA89Lw_YA61YQHaEV?pid=Api&P=0&h=180
+Quả đại hái tươi,35,427,20,38,1.2,3.4,2.4,https://tse2.mm.bing.net/th/id/OIP.YUxqVypY-sPeFjWjd2isYwHaE8?pid=Api&P=0&h=180
+"vừng (đen, trắng)",7.6,568,20.1,46.4,17.6,3.5,4.8,https://tse4.mm.bing.net/th/id/OIP.nLWreSrBFKVuJb9nklElwgHaGK?pid=Api&P=0&h=180
+Bột đậu tương đã loại béo (đậu nành),14,321,49,1,29,2.5,4.5,https://tse3.mm.bing.net/th/id/OIP.DaHGGu0D_PeAElVigEZxvgHaHa?pid=Api&P=0&h=180
+Bột đậu tương rang chín,10,418,41,18,22.9,2.5,5.6,https://tse3.mm.bing.net/th/id/OIP.DaHGGu0D_PeAElVigEZxvgHaHa?pid=Api&P=0&h=180
+Bột đậu xanh,10,347,24.6,2.5,56.5,3.9,2.5,https://tse4.mm.bing.net/th/id/OIP.X4AuMRIcXqXWl1a752xMjgHaHa?pid=Api&P=0&h=180
+Bột lạc,8,575,27.5,45,15,2.1,2.4,https://tse4.mm.bing.net/th/id/OIP.IWiItyh68dtrC2MjRBe2rwAAAA?pid=Api&P=0&h=180
+đậu phụ,82,95,10.9,5.4,0.7,0.4,0.6,https://tse1.mm.bing.net/th/id/OIP.zLZx9fs_Bd4FK4ORhI28CAHaE8?pid=Api&P=0&h=180
+đậu phụ chúc,18.5,414,50.2,20.8,6.5,0.3,3.7,https://tse1.mm.bing.net/th/id/OIP.UpoWWrC00KkKHvOfAsf60gHaEj?pid=Api&P=0&h=180
+đậu phụ nướng,78.2,114,13.4,6.4,0.8,0.5,0.7,https://tse3.mm.bing.net/th/id/OIP.FPpFdVaCHxlR2vd6UE-Q9AHaE8?pid=Api&P=0&h=180
+Hạt bí đỏ rang,3.6,519,35.1,31.8,23,2.3,4.2,https://tse1.mm.bing.net/th/id/OIP.ggmNwqfeu5q8CoWmI-emxQHaEh?pid=Api&P=0&h=180
+Hạt dưa đỏ rang (dưa hấu),4.8,551,31.8,39.1,18,1.8,4.5,https://tse2.mm.bing.net/th/id/OIP.B6GZsHMtOqgkpIWqY_9-AAHaFn?pid=Api&P=0&h=180
+"Hạt điều khô, chiên dầu",12.7,583,18.3,49.3,16.4,0.7,2.6,https://tse3.mm.bing.net/th/id/OIP.-Mo7Z6cY0_oyQAemvB6IwgHaHa?pid=Api&P=0&h=180
+Sữa Bột đậu nành,3.5,405,31.1,9.7,48.2,2.2,5.3,https://tse1.mm.bing.net/th/id/OIP.MqSrZ9BQzTsqeNM4t-5nTgHaFE?pid=Api&P=0&h=180
+Sữa đậu nành (100g đậu/lít),94.4,28,3.1,1.6,0.4,0.1,0.4,https://tse1.mm.bing.net/th/id/OIP.MqSrZ9BQzTsqeNM4t-5nTgHaFE?pid=Api&P=0&h=180
+Tào phớ,90,37,2.3,0.2,6.4,0.2,0.9,https://tse3.mm.bing.net/th/id/OIP.qambTdlRa8nSGxjIglblVQHaGs?pid=Api&P=0&h=180
+Bầu,95.1,14,0.6,0.02,2.9,1,0.4,https://tse2.mm.bing.net/th/id/OIP.ViULZ6RsWH2300BlDDNO8QHaFk?pid=Api&P=0&h=180
+bí ngô,92,27,0.3,0.1,6.1,0.7,0.8,https://tse3.mm.bing.net/th/id/OIP.-gZS_1J-mXcL_1iS81H_ewHaHa?pid=Api&P=0&h=180
+Cà bát,92.5,23,1.2,0.2,4,1.5,0.6,https://tse2.mm.bing.net/th/id/OIP.UIRmWdOuKNm59YQkRyTQPAHaFj?pid=Api&P=0&h=180
+Cà chua,94,20,0.6,0.2,4,0.8,0.4,https://tse3.mm.bing.net/th/id/OIP.wBKSKB0RuBYazXWGw3G8OQHaE8?pid=Api&P=0&h=180
+"Cà rốt (củ đỏ, vàng)",88.5,39,1.5,0.2,7.8,1.2,0.8,https://tse4.mm.bing.net/th/id/OIP.yy1-sjIjwAPraPbggsux6QHaEK?pid=Api&P=0&h=180
+Cà rốt khô,14,292,9.2,1.5,60.4,9.6,5.3,https://tse1.mm.bing.net/th/id/OIP.hO69M48wDqtzuH6YZcyK9QHaHa?pid=Api&P=0&h=180
+Cải bắp,90,29,1.8,0.1,5.3,1.6,1.2,https://tse2.mm.bing.net/th/id/OIP.yu9Ey4atNDU2bcoJAFzQ8QHaE7?pid=Api&P=0&h=180
+Cải bắp đỏ,84,45,1.9,0.2,9,4,0.9,https://tse1.mm.bing.net/th/id/OIP.Rq45pDqsJVww8j4tEvBQSAHaHa?pid=Api&P=0&h=180
+Cải bắp khô,16,245,18,1.6,39.7,14,10.7,https://tse3.mm.bing.net/th/id/OIP.DtiXp7KrUssXkbMO4fIhVAHaE3?pid=Api&P=0&h=180
+Cải soong,93.7,15,2.1,0.1,1.3,2,0.8,https://tse4.mm.bing.net/th/id/OIP.Nrm9s3_cxDSwH76dCJqCUwHaEK?pid=Api&P=0&h=180
+Cải thìa (cải trắng),93.2,17,1.4,0.2,2.4,1.8,1,https://tse4.mm.bing.net/th/id/OIP.P5WpKmQ8o3QRE3t8oQlxnAHaHa?pid=Api&P=0&h=180
+Cải xanh,93.8,16,1.7,0.2,1.9,1.8,0.6,https://tse4.mm.bing.net/th/id/OIP.0V63lsPa79SY665BwqpA5QHaHa?pid=Api&P=0&h=180
+Cần tây,85,48,3.7,0.2,7.9,1.5,1.7,https://tse3.mm.bing.net/th/id/OIP.zRYX_4b4tyX8etWcOwJyRgHaFi?pid=Api&P=0&h=180
+Chuối xanh,80.2,74,1.2,0.5,16.4,1,0.8,https://tse1.mm.bing.net/th/id/OIP.fMQo1DC-6IOR7gV-Of7QlwHaEK?pid=Api&P=0&h=180
+Củ cải trắng,92.1,21,1.5,0.1,3.6,1.5,1.2,https://tse4.mm.bing.net/th/id/OIP.Q_QDtlCNXcLJb70MuwBBwQHaHa?pid=Api&P=0&h=180
+Củ cải trắng khô,16,220,17.6,1.5,33.9,17.7,13.3,https://tse3.mm.bing.net/th/id/OIP.j_Z5BgXiFRAQI_DLgPQU9gHaJz?pid=Api&P=0&h=180
+dưa chuột,95,16,0.8,0.1,2.9,0.7,0.5,https://tse2.mm.bing.net/th/id/OIP.KhmRKXDR7l6f0mRhUH9ahgHaHa?pid=Api&P=0&h=180
+đậu đũa,83,59,6,0.4,7.9,2,0.7,https://tse3.mm.bing.net/th/id/OIP.M2c7y_D1cAxZXu-MLuRzdQHaFF?pid=Api&P=0&h=180
+đậu Hà Lan,81,72,6.5,0.4,10.6,1,0.5,https://tse4.mm.bing.net/th/id/OIP.itthDTUqi523NVPQxBHDVwHaFj?pid=Api&P=0&h=180
+đậu rồng (quả non),89.5,34,1.9,0.1,6.3,1.6,0.6,https://tse3.mm.bing.net/th/id/OIP.yJMgmXF43zLSkQQYJp6M9AHaGc?pid=Api&P=0&h=180
+Gấc,77,122,2.1,7.9,10.5,1.8,0.7,https://tse3.mm.bing.net/th/id/OIP.-v-hmCX6WRCWUxqTzxj7EQHaE8?pid=Api&P=0&h=180
+Giá đậu tương,80.8,79,7.7,1.8,8,0.7,1,https://tse4.mm.bing.net/th/id/OIP.I5P0Rdbd6BHnoMqDjn47UgHaJ4?pid=Api&P=0&h=180
+Giá đậu xanh,86.5,44,5.5,0.2,5.1,2,0.7,https://tse4.mm.bing.net/th/id/OIP.H790OrqMcBSxJFRd0_x6rwHaET?pid=Api&P=0&h=180
+Hành củ tươi,92.5,26,1.3,0.4,4.4,0.7,0.7,https://tse1.mm.bing.net/th/id/OIP.SSJ5uyzlge-fKRphM7Dz1gHaD4?pid=Api&P=0&h=180
+Hành tây,88,41,1.8,0.1,8.2,1.1,0.8,https://tse4.mm.bing.net/th/id/OIP.kvHQSBhBKKdApeRakkUDpAHaFj?pid=Api&P=0&h=180
+Hạt sen tươi,57.9,161,9.5,0.5,29.5,0.8,1.8,https://tse3.mm.bing.net/th/id/OIP.iGXEKhlbZZGR_S8p-oSBqAHaFS?pid=Api&P=0&h=180
+Hạt sen khô,14,334,20,2.4,58,2.2,3.4,https://tse1.mm.bing.net/th/id/OIP.a5OanTtOrUnrCIbWSlRpWwHaHa?pid=Api&P=0&h=180
+Hẹ lá,94.5,18,2.2,0.3,1.5,0.9,0.6,https://tse2.mm.bing.net/th/id/OIP.MUc0AyxeDLsSD5ChdW8X-wHaHa?pid=Api&P=0&h=180
+Khế,93.5,16,0.6,0.3,2.8,2.6,0.2,https://tse4.mm.bing.net/th/id/OIP.qMDch0DNAQo5yKFE1c1a7gHaFj?pid=Api&P=0&h=180
+Măng khô,23,157,13,2.1,21.5,36,4.4,https://tse2.mm.bing.net/th/id/OIP.w5nAOlfa7iNsjGd9j4T3ygHaE8?pid=Api&P=0&h=180
+Măng tây,93.7,14,2.2,0.1,1.1,2.3,0.6,https://tse1.mm.bing.net/th/id/OIP.SlEhs2a4IJxuX4olEvPRpQHaFF?pid=Api&P=0&h=180
+Măng tre,92,15,1.7,0.3,1.4,4.1,0.5,https://tse3.mm.bing.net/th/id/OIP.a78IU3tUFyEbxvEQf5jNMQHaEK?pid=Api&P=0&h=180
+Mướp,95.1,17,0.9,0.2,2.8,0.5,0.5,https://tse4.mm.bing.net/th/id/OIP.kHuOWnr45Cf7Xkl8st-9pAHaFj?pid=Api&P=0&h=180
+Mướp đâng,94.4,16,0.9,0.2,2.8,1.1,0.6,https://tse2.mm.bing.net/th/id/OIP.G5ilJrFcv3ZLjRy4yaXiAgHaEL?pid=Api&P=0&h=180
+Mướp Nhật bản,95.4,10,0.8,0,1.8,1.4,0.6,https://tse1.mm.bing.net/th/id/OIP.VBvQpWg68bqjDD6g8qH3sgHaEo?pid=Api&P=0&h=180
+Ngải cứu,89.7,25,3.8,0,2.4,2,2.1,https://tse1.mm.bing.net/th/id/OIP.T31Jj0s9dkMtJojwtSJAowHaE8?pid=Api&P=0&h=180
+Ngô bao tử,89.2,40,2.2,0.2,7.4,0.4,0.6,https://tse4.mm.bing.net/th/id/OIP.iWvNAMoB-h9eK0Yg39zVhAHaFj?pid=Api&P=0&h=180
+Ngó sen,82.9,61,1,0.1,13.9,1.2,0.9,https://tse4.mm.bing.net/th/id/OIP.V4magew3tsTrrFBPPq8b_wHaEK?pid=Api&P=0&h=180
+ớt đỏ to,92.2,23,1,0.3,4,2,0.5,https://tse3.mm.bing.net/th/id/OIP.0qm0dEp_LKwM21p50Hu0tAHaLH?pid=Api&P=0&h=180
+ớt vàng to,91,29,1.3,0.2,5.5,1.4,0.6,https://tse3.mm.bing.net/th/id/OIP.fd8TJ8LMG3G3IwU4ptD9oAHaFj?pid=Api&P=0&h=180
+ớt xanh to,92,25,1.3,0.2,4.5,1.5,0.5,https://tse4.mm.bing.net/th/id/OIP.3AgW89NOpGhOl9vZFxPz-AHaHa?pid=Api&P=0&h=180
+Quả dọc,95,19,0.8,0,3.9,16,0.3,https://tse2.mm.bing.net/th/id/OIP.kBcNMyJjUs26ZV4S85CX2wHaF6?pid=Api&P=0&h=180
+Rau bí,93.2,18,2.7,0.21,1.7,1.7,0.7,https://tse1.mm.bing.net/th/id/OIP.VzY6PmDIu5wJnJnsIdTvEQHaE8?pid=Api&P=0&h=180
+Rau câu khô,20,198,11.2,1.1,35.8,20.8,11.1,https://tse2.mm.bing.net/th/id/OIP.ApdIQgidblMen-cXRhB4QgHaEL?pid=Api&P=0&h=180
+Rau câu tươi,86.2,25,1.9,0.1,4.1,5,2.7,https://tse4.mm.bing.net/th/id/OIP.1fqctN99Ez1x1xqHyXoELAHaEL?pid=Api&P=0&h=180
+Rau diếp,95.7,14,1.2,0.2,1.8,0.5,0.6,https://tse2.mm.bing.net/th/id/OIP.3yDQhFII8-gRyIP4xhQ1kQHaHa?pid=Api&P=0&h=180
+Rau đay,91.4,25,2.8,0.3,3,1.5,1.1,https://tse4.mm.bing.net/th/id/OIP.ptHNn0BX619xDkyASlRnaAHaEK?pid=Api&P=0&h=180
+Rau giền cơm,92,21,3.4,0.3,1.1,1.6,1.6,https://tse1.mm.bing.net/th/id/OIP.s_DduqrtOhKammpKcLZJ0gHaHa?pid=Api&P=0&h=180
+Rau giền đỏ,86.2,41,3.3,0.3,6.2,1.6,2.4,https://tse2.mm.bing.net/th/id/OIP.sJF_ifxO4Y4AoY7wRCCuXgHaEK?pid=Api&P=0&h=180
+Rau giền trắng,86.7,42,3.2,0.4,6.3,1.5,1.9,https://tse3.mm.bing.net/th/id/OIP.P--CKwzoCKRKl6kxsTSlmAHaLO?pid=Api&P=0&h=180
+Rau húng,91.4,20,2.2,0.6,1.5,3.5,0.8,https://tse3.mm.bing.net/th/id/OIP.JXzOWRWWz4UzUrCQn8RqIAHaFj?pid=Api&P=0&h=180
+Rau khoai lang,91.9,23,2.6,0.3,2.5,1.4,1.3,https://tse1.mm.bing.net/th/id/OIP.3W1aXxqHvy7rwC6yHAcwSAHaEK?pid=Api&P=0&h=180
+Rau mùi,93.3,16,2.6,0.5,0.2,1.8,1.6,https://tse1.mm.bing.net/th/id/OIP.Dcd_niRohE8kGvVJnpywSAHaFn?pid=Api&P=0&h=180
+Rau mùi tàu,92,25,2.1,0.8,2.4,1.6,1.1,https://tse3.mm.bing.net/th/id/OIP.hAVEJ58BRKmDBLY32fkoiQHaDt?pid=Api&P=0&h=180
+Rau muống,92,25,3.2,0.4,2.1,1,1.3,https://tse3.mm.bing.net/th/id/OIP.ZpwvqaH9Li12tMx-dKGGjgHaEj?pid=Api&P=0&h=180
+Rau muống khô,14,245,34.2,1.8,23,12,15,https://tse4.mm.bing.net/th/id/OIP.tRpi3evJ3g7BumLqzrgYxAHaEK?pid=Api&P=0&h=180
+Rau ngót khô,14,239,32.2,2.6,21.8,15,14.4,https://tse1.mm.bing.net/th/id/OIP.4sA4CWvwgPOp0DhS7UqvbwHaHa?pid=Api&P=0&h=180
+Rau sà lách,95,17,1.5,0.4,1.8,0.5,0.8,https://tse3.mm.bing.net/th/id/OIP.P9OzjaAwYxvJ3P-NfbLkhgHaHa?pid=Api&P=0&h=180
+Su hào,88,37,2.8,0.1,6.2,1.7,1.2,https://tse4.mm.bing.net/th/id/OIP.lx3eFMafNuIodME_qdVxEgHaE8?pid=Api&P=0&h=180
+Su hào khô,15,261,20,1.4,42.1,12.5,9,https://tse2.mm.bing.net/th/id/OIP.uGA-U5rjP350WNNh32jtKQHaFj?pid=Api&P=0&h=180
+"Su su, quả",94,19,0.8,0.1,3.6,1,0.5,https://tse2.mm.bing.net/th/id/OIP.qUgZyMs7uy4L4K_f5HD-wAHaE8?pid=Api&P=0&h=180
+Sóp lơ trắng,90.9,30,2.5,0.1,4.8,0.9,0.8,https://tse4.mm.bing.net/th/id/OIP.vhIsXUyR4ukEVniwv6eLTgHaHa?pid=Api&P=0&h=180
+Sóp lơ xanh,89.8,26,3,0.3,2.9,3.2,0.9,https://tse2.mm.bing.net/th/id/OIP.hf_3gzFSis19MEwI7M_h3wHaHa?pid=Api&P=0&h=180
+thìa là,88.4,28,2.6,1.1,1.8,5,1.1,https://tse4.mm.bing.net/th/id/OIP.0hWddQz_xiCF_EhDTflOFgHaE8?pid=Api&P=0&h=180
+Tỏi ta,67.7,121,6,0.5,23,1.5,1.3,https://tse2.mm.bing.net/th/id/OIP.wB1SnQz1jLsRS9wwj7frDwHaE5?pid=Api&P=0&h=180
+Trám đen chín,77,114,2.5,10,3.6,4.9,2,https://tse4.mm.bing.net/th/id/OIP.ls3HD6zMW_pU4SZDdgyJowHaE8?pid=Api&P=0&h=180
+"Trám xanh sống, trám trắng",86.7,37,1.2,1.6,4.4,4.9,1.2,https://tse1.mm.bing.net/th/id/OIP.ZLwzPz5rAtdMSoyS_Y7DbAAAAA?pid=Api&P=0&h=180
+dưa chuột muối,92.1,13,0.8,0.05,2.5,0.7,3.9,https://tse1.mm.bing.net/th/id/OIP.EX7k_b5hhIJ9R-aDiI53QwHaEK?pid=Api&P=0&h=180
+Men bia khô,7.5,340,52.5,3.2,25.4,6.6,4.8,https://tse4.mm.bing.net/th/id/OIP.RdHqrEhuoNGF18tF8k24HwHaFp?pid=Api&P=0&h=180
+Men bia tươi,74.6,95,16.2,1.3,4.5,2,1.4,https://tse4.mm.bing.net/th/id/OIP.kMVPIQ5g65oqwR0Vh1HRjQHaFj?pid=Api&P=0&h=180
+Mộc nhĩ,11.4,304,10.6,0.2,65,7,5.8,https://tse1.mm.bing.net/th/id/OIP.wFqWnMQn3IGFy2Qz5tAS5wHaFR?pid=Api&P=0&h=180
+Nấm hương khô,13,274,36,4,23.5,17,6.5,https://tse4.mm.bing.net/th/id/OIP.3qhuBzZpwwkHM8kdJdulsgHaHa?pid=Api&P=0&h=180
+Nấm hương tươi,87,39,5.5,0.5,3.1,3,0.9,https://tse4.mm.bing.net/th/id/OIP.xjIaxR8EjoMQt_R6QhA1KAHaFF?pid=Api&P=0&h=180
+Nấm mỡ (Nêm tây),90.4,32,4,0.3,3.4,1.1,0.8,https://tse2.mm.bing.net/th/id/OIP.ErbdH_UICbtRFZInVzjCeQHaHa?pid=Api&P=0&h=180
+Nấm rơm,87.9,57,3.6,3.2,3.4,1.1,0.8,https://tse4.mm.bing.net/th/id/OIP.dt528ksOVYPkJGklkpr-FAHaGb?pid=Api&P=0&h=180
+Nấm thường tươi,88,34,4.6,0.8,2.2,3.5,0.9,https://tse3.mm.bing.net/th/id/OIP.SBK3K6OTK0yupHKek7TQhQEsEs?pid=Api&P=0&h=180
+Bưởi,91.4,30,0.2,0,7.3,0.7,0.4,https://tse3.mm.bing.net/th/id/OIP.0dCFz56uINjFC4HcILZcFAHaEm?pid=Api&P=0&h=180
+Cam,88.8,38,0.9,0.1,8.3,1.4,0.5,https://tse3.mm.bing.net/th/id/OIP.8HW3BAr9k1QTWAZkKJ5_OAHaE7?pid=Api&P=0&h=180
+Chanh,92.5,24,0.9,0.3,4.5,1.3,0.5,https://tse1.mm.bing.net/th/id/OIP.8jPUXXvmWQt-RFmbE4gadQHaEL?pid=Api&P=0&h=180
+Chôm chôm,80.3,72,1.5,0,16.4,1.3,0.5,https://tse3.mm.bing.net/th/id/OIP.-n6ixb_UV1IXrsawUxSNyQHaFj?pid=Api&P=0&h=180
+Chuối khô,22,292,5,0,68,2.3,2.7,https://tse4.mm.bing.net/th/id/OIP.jB0agODPrwPGJrX-O37IEgHaGW?pid=Api&P=0&h=180
+Chuối tây,83.2,56,0.9,0.3,12.4,2.6,0.6,https://tse3.mm.bing.net/th/id/OIP.4thN_vtTLHy3zojYzpHYawHaEL?pid=Api&P=0&h=180
+Chuối tiêu,74.4,97,1.5,0.2,22.2,0.8,0.9,https://tse1.mm.bing.net/th/id/OIP.dG1jLtebbM7t9DLH2J9P8AHaHa?pid=Api&P=0&h=180
+Dâu tây,84.9,43,1.8,0.4,8.1,4,0.8,https://tse4.mm.bing.net/th/id/OIP.7XKXB_lHaIlHtMMZTlkprQHaE8?pid=Api&P=0&h=180
+dưa bở,94.5,18,0.5,0.2,3.6,0.7,0.5,https://tse4.mm.bing.net/th/id/OIP.mLtZzYiXjZc0W9ouqKczQAHaHa?pid=Api&P=0&h=180
+dưa hấu,95.5,16,1.2,0.2,2.3,0.5,0.3,https://tse1.mm.bing.net/th/id/OIP.haX_-i5h74s5A8Um6xV8DQHaFQ?pid=Api&P=0&h=180
+dưa hồng,95,17,0.3,0.1,3.7,0.4,0.5,https://tse2.mm.bing.net/th/id/OIP.mOTqwvbsjtunj4fFPIV15AHaFj?pid=Api&P=0&h=180
+dưa lê,93.3,18,0.4,0,4.2,0.5,1.6,https://tse2.mm.bing.net/th/id/OIP.ruTMLRISCXi80zWpNj50UgHaFj?pid=Api&P=0&h=180
+Dứa tây,89.7,38,0.5,0.1,8.8,0.4,0.5,https://tse2.mm.bing.net/th/id/OIP.a4NZqIpct0hFVkJ14cc9YQHaET?pid=Api&P=0&h=180
+đào,90.5,31,0.9,0.2,6.3,1.5,0.6,https://tse4.mm.bing.net/th/id/OIP.yMrJjZWSP7cmjC7OTjtvJwHaHa?pid=Api&P=0&h=180
+đu đủ chín,90.1,36,1,0.1,7.6,0.6,0.6,https://tse4.mm.bing.net/th/id/OIP.eTusuWyQ1Kqq3elXYjpH0wHaE8?pid=Api&P=0&h=180
+Hồng đỏ,90,29,0.7,0.2,6,2.5,0.6,https://tse2.mm.bing.net/th/id/OIP.07ZrmHFsWH_YriQN0WIZTQHaE8?pid=Api&P=0&h=180
+Hồng xiêm,85.7,48,0.5,0.7,10,2.5,0.6,https://tse1.mm.bing.net/th/id/OIP.AjRv4Z4CI3W1yx1oSXs64gHaEL?pid=Api&P=0&h=180
+Lê,87.8,45,0.7,0.2,10.2,0.6,0.5,https://tse1.mm.bing.net/th/id/OIP.je6Sl5FVWkrlNGW48Zac_QHaFj?pid=Api&P=0&h=180
+Lựu,79.6,70,0.6,0.3,16.2,2.5,0.8,https://tse3.mm.bing.net/th/id/OIP.9QF0VoGYik_7UQ0Dt_ouvwHaEK?pid=Api&P=0&h=180
+Mãng cầu xiêm,84.7,53,1.8,0.6,10.1,1.9,0.9,https://tse1.mm.bing.net/th/id/OIP.OjJtRrzhzp809T-iOh_y0AHaHa?pid=Api&P=0&h=180
+Mận,94.1,20,0.6,0.2,3.9,0.7,0.5,https://tse1.mm.bing.net/th/id/OIP.JKesFQHmY0FHaU0S93M9xQHaHa?pid=Api&P=0&h=180
+mít,85.4,50,0.6,0.3,11.1,1.2,1.4,https://tse1.mm.bing.net/th/id/OIP.CHM4cbApR1sYP5tvFYhEdQHaEK?pid=Api&P=0&h=180
+Mơ,87.1,48,0.9,0.4,10.1,0.8,0.7,https://tse1.mm.bing.net/th/id/OIP.HqkIRTSppwocBSQzinZztgHaD4?pid=Api&P=0&h=180
+Mơ khô,25.9,273,3,1.1,62.8,4.1,3.1,https://tse2.mm.bing.net/th/id/OIP.MS_kyJr1JGNtbYEUqxUMPwHaE7?pid=Api&P=0&h=180
+"Muỗm, quéo",82.9,67,0.6,0.4,15.3,0.4,0.4,https://tse3.mm.bing.net/th/id/OIP.yn8QrKXEuMTo55lczdYvwAHaEk?pid=Api&P=0&h=180
+Na,82.5,66,1.6,0.3,14.2,0.8,0.6,https://tse1.mm.bing.net/th/id/OIP.-5LE8SZMWSuvVXAaBwIIKgHaD4?pid=Api&P=0&h=180
+Nhãn,86.3,48,0.9,0.1,10.9,1,0.8,https://tse1.mm.bing.net/th/id/OIP.xXEpzOyvKiAe7ohvjlL2wQHaFj?pid=Api&P=0&h=180
+Nhãn khô,25,285,4.3,0.5,65.9,1.7,2.6,https://tse3.mm.bing.net/th/id/OIP.crmgO9ezXLRKIV2SW6cDkgHaFj?pid=Api&P=0&h=180
+Nho ngọt,82.1,68,0.4,0.2,16.3,0.6,0.4,https://tse4.mm.bing.net/th/id/OIP.FDnHWwT-k8kfSvVPqx8WIAHaEK?pid=Api&P=0&h=180
+ổi,85,38,0.6,1,6.8,6,0.7,https://tse4.mm.bing.net/th/id/OIP.hPsE0ENAJtkbx8exk_1vvgHaE3?pid=Api&P=0&h=180
+Quả bơ vỏ tím,88.3,74,1.8,6.2,2.8,0.4,0.5,https://tse3.mm.bing.net/th/id/OIP.-pcF16h0V5EWFEC2zaoS9gHaFj?pid=Api&P=0&h=180
+Quả bơ vỏ xanh,85.4,101,1.9,9.4,2.3,0.5,0.5,https://tse3.mm.bing.net/th/id/OIP.-pcF16h0V5EWFEC2zaoS9gHaFj?pid=Api&P=0&h=180
+Quả trứng gà,73.4,106,4.3,0.4,21.3,16,0.6,https://tse3.mm.bing.net/th/id/OIP.bvd9Ylc9BhU6Oxctl7qd4wHaHa?pid=Api&P=0&h=180
+Quít,89.5,39,0.8,0.3,8.3,0.6,0.5,https://tse3.mm.bing.net/th/id/OIP.sGthHOTXagsEDUvUQzgErwHaDt?pid=Api&P=0&h=180
+Sầu riêng,66.8,132,2.5,1.6,26.9,1.4,0.8,https://tse3.mm.bing.net/th/id/OIP.M0NgcRLPQm-MdWYztTcYzAEsCo?pid=Api&P=0&h=180
+Táo ta,89.5,38,0.8,0.2,8.3,0.7,0.5,https://tse3.mm.bing.net/th/id/OIP.1RryrRnxBDzMR7i2PLn0xgHaET?pid=Api&P=0&h=180
+Táo tây,87.2,48,0.5,0.2,11,0.6,0.5,https://tse4.mm.bing.net/th/id/OIP.ZFENTBSIssdqXeqiSU4IewHaFj?pid=Api&P=0&h=180
+Vải,87.8,45,0.7,0.4,9.6,1.1,0.4,https://tse3.mm.bing.net/th/id/OIP.Gj5c39--klEbMja2S1NojAHaEK?pid=Api&P=0&h=180
+Vải khô,34.9,260,3,1.9,57.6,1,1.6,https://tse1.mm.bing.net/th/id/OIP.uIb2bd_zAnY3g2QPTP5gmAHaHa?pid=Api&P=0&h=180
+Xoài chín,82.6,62,0.6,0.3,14.1,1.8,0.6,https://tse1.mm.bing.net/th/id/OIP.76Z2nPjoLHk7Mp0-wQSRowHaDt?pid=Api&P=0&h=180
+Quả kiwi,83.1,56,1.1,0.5,11.7,3,0.6,https://tse1.mm.bing.net/th/id/OIP.AXw_-MC5mCNqA1cfsDO92AHaE5?pid=Api&P=0&h=180
+Bơ,15.4,756,0.5,83.5,0.5,0,0.1,https://tse3.mm.bing.net/th/id/OIP.5W59tuZqdH6mvoqYgOvrpQHaEK?pid=Api&P=0&h=180
+"dầu thảo mộc (Lạc, vừng, cám...)",0.3,897,0,99.7,0,0,0,https://tse3.mm.bing.net/th/id/OIP._rvHysIIJhzTVmGqRGqvSQHaE8?pid=Api&P=0&h=180
+mỡ lợn muối,3,827,2,91,0,0,4,https://tse1.mm.bing.net/th/id/OIP.cdz0WuGWBXeiKFPICLQOpgHaFj?pid=Api&P=0&h=180
+Mì lợn nước,0.4,896,0,99.6,0,0,0,https://tse2.mm.bing.net/th/id/OIP.q7i8upJLTShigh51nGF6oAHaEK?pid=Api&P=0&h=180
+Bơ thực vật,18.5,729,0.5,80.7,0.1,0,0.2,https://tse4.mm.bing.net/th/id/OIP.eBUw7RJ1aN2a8qeqK5ODfgHaFj?pid=Api&P=0&h=180
+dầu bông,0,900,0,100,0,0,0,https://tse4.mm.bing.net/th/id/OIP.Hphk3ze68TO2KXh2sXHEHgHaEK?pid=Api&P=0&h=180
+dầu cám gạo,0,900,0,100,0,0,0,https://tse1.mm.bing.net/th/id/OIP.EtN5Nx8puSBJahvHAwbb3gHaEK?pid=Api&P=0&h=180
+dầu cọ,0,900,0,100,0,0,0,https://tse3.mm.bing.net/th/id/OIP.1b9_RJ8AvRaYF6m8LdjTygHaEs?pid=Api&P=0&h=180
+dầu dừa,0,900,0,100,0,0,0,https://tse3.mm.bing.net/th/id/OIP.91kI9n3o9vUnHx4DReXi_AHaFj?pid=Api&P=0&h=180
+dầu đậu tương,0,900,0,100,0,0,0,https://tse4.mm.bing.net/th/id/OIP.CpPV8xrXDG7lbuPMsfCgIwHaGe?pid=Api&P=0&h=180
+dầu lạc,0,900,0,100,0,0,0,https://tse4.mm.bing.net/th/id/OIP.V8YgUClrWg2hmEEItsQq6AHaFj?pid=Api&P=0&h=180
+dầu mè,0,900,0,100,0,0,0,https://tse3.mm.bing.net/th/id/OIP.CeJp7blV9LUl2n3R9uC-RwHaEK?pid=Api&P=0&h=180
+dầu ngô,0,900,0,100,0,0,0,https://tse3.mm.bing.net/th/id/OIP.DoMaUmXpaWdYQw69MDezxwHaE8?pid=Api&P=0&h=180
+dầu oliu,0,900,0,100,0,0,0,https://tse4.mm.bing.net/th/id/OIP.c1pyl2DGSLdPQH9zXpNkJAHaE8?pid=Api&P=0&h=180
+thịt bê mỡ,72.8,144,19,7.5,0,0,0.7,https://tse3.mm.bing.net/th/id/OIP.CtYQh5MbyU6EJTZXIBMUqAHaEK?pid=Api&P=0&h=180
+thịt bê nạc,78.2,85,20,0.5,0,0,1.3,https://tse4.mm.bing.net/th/id/OIP.c2EDQb3lvme76rPvncjNbAHaHa?pid=Api&P=0&h=180
+thịt bò loại I,74.1,118,21,3.8,0,0,1.1,https://tse1.mm.bing.net/th/id/OIP.vKgdT95_pERGeF1nQMQwHAHaET?pid=Api&P=0&h=180
+thịt bò loại II,70.5,167,18,10.5,0,0,1,https://tse2.mm.bing.net/th/id/OIP.UoUfZBxpEWUUKOA_T4KH6QHaE8?pid=Api&P=0&h=180
+"Thịt bò, lưng, nạc",72.7,127,23.1,3.9,0,0,1,https://tse2.mm.bing.net/th/id/OIP.pVcbPMnixh9dkbWBce_O2AHaHa?pid=Api&P=0&h=180
+"Thịt bò, lưng, nạc và mì",67.4,182,21.5,10.7,0,0,0.9,https://tse1.mm.bing.net/th/id/OIP.1yAU29xeAiHsnj7kAIMHbwHaEo?pid=Api&P=0&h=180
+Thịt bồ câu ra ràng,51.7,340,17.5,30,0,0,0.8,https://tse4.mm.bing.net/th/id/OIP.6sY6FZAom_mRsgKDi7zT0gHaHa?pid=Api&P=0&h=180
+thịt chó vai,63.8,230,18,17.6,0,0,0.6,https://tse4.mm.bing.net/th/id/OIP.VgOa92CZKfMSwWISbqnDkgHaE8?pid=Api&P=0&h=180
+"thịt cừu, nạc",65.8,219,16.4,17,0,0,0.8,https://tse2.mm.bing.net/th/id/OIP.WY1ZguG2S9bORi1Q3lSDQQHaFj?pid=Api&P=0&h=180
+"thịt dê, nạc",74.4,122,20.7,4.3,0,0,0.6,https://tse4.mm.bing.net/th/id/OIP.lCZM_izxN7Ttq6z5kFVvDwHaE8?pid=Api&P=0&h=180
+Thịt gà rừng,69.7,141,24.4,4.8,0,0,1.1,https://tse4.mm.bing.net/th/id/OIP.lMsPVFdJJLJfSVhsohO4PAHaE0?pid=Api&P=0&h=180
+Thịt gà ta,65.6,199,20.3,13.1,0,0,1,https://tse3.mm.bing.net/th/id/OIP.Z05JtGcNOXqBfYYtXmNeCwHaEK?pid=Api&P=0&h=180
+Thịt gà tây,63.6,218,20.1,15.3,0,0,1,https://tse4.mm.bing.net/th/id/OIP.O0fmOZ15Rs1K-HGCwtjZVgHaHa?pid=Api&P=0&h=180
+Thịt hươu,77.9,94,19,2,0,0,1.1,https://tse2.mm.bing.net/th/id/OIP.kmu1ctUuGOf32NL3nJKPvwAAAA?pid=Api&P=0&h=180
+thịt heo mỡ,47.5,394,14.5,37.3,0,0,0.7,https://tse2.mm.bing.net/th/id/OIP.CrWxNkU3jmooxa_S_8ceRwHaHa?pid=Api&P=0&h=180
+thịt lợn mỡ,47.5,394,14.5,37.3,0,0,0.7,https://tse3.mm.bing.net/th/id/OIP.YEJneghH3qu5jmVhluQnaAHaEK?pid=Api&P=0&h=180
+thịt lợn nạc,73,139,19,7,0,0,1,https://tse3.mm.bing.net/th/id/OIP.lMv3inby4Wj4APJxwK6qIgHaFR?pid=Api&P=0&h=180
+thịt heo nạc,73,139,19,7,0,0,1,https://tse4.mm.bing.net/th/id/OIP.fbcPnCC_XhX5b7a5YVPEmgHaFj?pid=Api&P=0&h=180
+thịt heo ba chỉ,60.9,260,16.5,21.5,0,0,1.1,https://tse2.mm.bing.net/th/id/OIP.7-B-Vr5PeYgmAA6boLyGbAHaEK?pid=Api&P=0&h=180
+thịt lợn ba chỉ,60.9,260,16.5,21.5,0,0,1.1,https://tse2.mm.bing.net/th/id/OIP.7-B-Vr5PeYgmAA6boLyGbAHaEK?pid=Api&P=0&h=180
+thịt ngan,46.1,409,14,39.2,0,0,0.7,https://tse3.mm.bing.net/th/id/OIP.RdgnsveurIHgjPzlsfdp1wHaEK?pid=Api&P=0&h=180
+thịt ngựa,66.8,176,21.5,10,0,0,1.7,https://tse1.mm.bing.net/th/id/OIP.Vjot5FAr5R8HqoTJP2FTOAHaE8?pid=Api&P=0&h=180
+Thịt thỏ nhà,69.3,158,21.5,8,0,0,1.2,https://tse3.mm.bing.net/th/id/OIP.6K1T2Ion9FjIK7HjobaadwHaHa?pid=Api&P=0&h=180
+thịt thỏ rừng,74.3,103,23.5,1,0,0,1.2,https://tse2.mm.bing.net/th/id/OIP.RkClZOxg_D6PmqTRPVtK0AHaEL?pid=Api&P=0&h=180
+thịt trâu,76.3,97,20.4,1.4,0.9,0,1.1,https://tse4.mm.bing.net/th/id/OIP._0KgjURUsOx4fMuaoOCrWgHaEp?pid=Api&P=0&h=180
+thịt trâu bắp,74.2,115,21.9,3,0,0,0.9,https://tse4.mm.bing.net/th/id/OIP.bAPZybaMOE5U-ttyepVFYwAAAA?pid=Api&P=0&h=180
+thịt trâu cổ,74.9,112,20.9,3.1,0,0,1.1,https://tse4.mm.bing.net/th/id/OIP.7CMZt6YKrMCL8ZJABfsBBgHaFF?pid=Api&P=0&h=180
+thịt trâu đùi,74.9,112,21.2,3,0,0,0.9,https://tse4.mm.bing.net/th/id/OIP._0KgjURUsOx4fMuaoOCrWgHaEp?pid=Api&P=0&h=180
+thịt trâu thăn,73,121,22.8,3.3,0,0,0.9,https://tse2.mm.bing.net/th/id/OIP.j73Id-fANDNNN-AyPMpI0AHaFQ?pid=Api&P=0&h=180
+thịt vịt,59.5,267,17.8,21.8,0,0,0.9,https://tse4.mm.bing.net/th/id/OIP.5T2qM5AykmkH1F5mLyNPSgHaE8?pid=Api&P=0&h=180
+Bầu dục bò,84.3,67,12.5,1.8,0.3,0,1.1,https://tse3.mm.bing.net/th/id/OIP.Wlh1ZmVfe_5kRQ_CvDPUGAHaE9?pid=Api&P=0&h=180
+Bầu dục lợn,82.5,81,13,3.1,0.3,0,1.1,https://tse1.mm.bing.net/th/id/OIP.o7UaAWbo_tsW_OFCoawlGAAAAA?pid=Api&P=0&h=180
+Bì lợn,73.3,118,23.3,2.7,0,0,0.7,https://tse4.mm.bing.net/th/id/OIP.GHSlWLPSCzYrKvtN7UYrsQHaEo?pid=Api&P=0&h=180
+Chân giò lợn,64.7,230,15.7,18.6,0,0,1,https://tse1.mm.bing.net/th/id/OIP.SVUlKoEqHyjRxVs3AxNZHgHaFj?pid=Api&P=0&h=180
+Dạ dày bò,80.5,97,14.8,4.2,0,0,0.5,https://tse3.mm.bing.net/th/id/OIP.L2kG_EXBE_w4CUox-1iXdwHaEL?pid=Api&P=0&h=180
+Dạ dày lợn,81.7,85,14.6,2.9,0,0,0.8,https://tse3.mm.bing.net/th/id/OIP.L2kG_EXBE_w4CUox-1iXdwHaEL?pid=Api&P=0&h=180
+đầu bò,68.7,185,18.1,12.5,0,0,0.7,https://tse4.mm.bing.net/th/id/OIP.jBZiRSzBuOxyiicojcdjLwHaE8?pid=Api&P=0&h=180
+đầu lợn,54.6,335,13.4,31.3,0,0,0.7,https://tse3.mm.bing.net/th/id/OIP.KfInwhpvpdg3wNWlhYV_-wHaEu?pid=Api&P=0&h=180
+đuôi bò,73,137,19.7,6.5,0,0,0.8,https://tse2.mm.bing.net/th/id/OIP._LWo-vIzAxDqIga7Jj9RwwHaEK?pid=Api&P=0&h=180
+đuôi lợn,41.8,467,10.8,47.1,0,0,0.3,https://tse1.mm.bing.net/th/id/OIP.YKqRvxhoAHqDUNICSSXyDwHaFj?pid=Api&P=0&h=180
+Gan bò,75.2,109,17.4,3.1,3,0,1.3,https://tse4.mm.bing.net/th/id/OIP.KwHyrXMun20eX-ozjfRZZwHaEL?pid=Api&P=0&h=180
+Gan gà,75,111,18.2,3.4,2,0,1.4,https://tse3.mm.bing.net/th/id/OIP.0oEe8EnmG1W1wleiqxiKmgHaFj?pid=Api&P=0&h=180
+Gan lợn,74.1,116,18.8,3.6,2,0,1.5,https://tse3.mm.bing.net/th/id/OIP.FEN-WyQDCAmPDpNbH4xPTgHaEo?pid=Api&P=0&h=180
+Gan vịt,74.1,122,17.1,4.7,2.8,0,1.3,https://tse3.mm.bing.net/th/id/OIP.cWlOLRZ6bRpnUFP2lweXXAHaEo?pid=Api&P=0&h=180
+Gân chân bò,69.2,124,30.2,0.3,0,0,0.3,https://tse4.mm.bing.net/th/id/OIP.Sye2SjAnCPe-nIkBNA_LlwHaD9?pid=Api&P=0&h=180
+Lưỡi bò,73.2,164,13.6,12.1,0.2,0,0.9,https://tse2.mm.bing.net/th/id/OIP.z8F_jDmeosgQ446g-vxMsgHaE3?pid=Api&P=0&h=180
+Lưỡi lợn,70.8,178,14.2,12.8,1.4,0,0.8,https://tse4.mm.bing.net/th/id/OIP.zNf48tugIFYen8A7tdEeOQHaE8?pid=Api&P=0&h=180
+Lòng lợn (ruột già),76.6,167,6.9,15.1,0.8,0,0.6,https://tse4.mm.bing.net/th/id/OIP.ivjoGnkzXXd2jSUrYWQSvQHaEl?pid=Api&P=0&h=180
+Lòng lợn (ruột non),90.5,44,7.2,1.3,0.8,0,0.2,https://tse4.mm.bing.net/th/id/OIP.ivjoGnkzXXd2jSUrYWQSvQHaEl?pid=Api&P=0&h=180
+Mề gà,75.6,99,21.3,1.3,0.6,0,1.2,https://tse4.mm.bing.net/th/id/OIP.dc98T0j_j6R8V_O-Wh9i7AHaEL?pid=Api&P=0&h=180
+óc bò,79.4,124,9,9.5,0.5,0,1.6,https://tse3.mm.bing.net/th/id/OIP.Yk-2utn3I50k3GgoGLe9EwHaFL?pid=Api&P=0&h=180
+óc lợn,80.1,123,9,9.5,0.4,0,1,https://tse2.mm.bing.net/th/id/OIP.Tni45IBAXpIHfrCi1RNIQQHaHa?pid=Api&P=0&h=180
+Phổi bò,79.1,103,15.2,4.7,0,0,1,https://tse3.mm.bing.net/th/id/OIP.ide8-ey2LKGw8y83VE9rCAHaHa?pid=Api&P=0&h=180
+Phổi lợn,80.6,92,14.8,3.6,0,0,1,https://tse3.mm.bing.net/th/id/OIP.mFesn8O1nfQtolTrSrzm4AHaHa?pid=Api&P=0&h=180
+Sườn lợn,68.2,187,17.9,12.8,0,0,1.1,https://tse4.mm.bing.net/th/id/OIP.DYggsoTsCnk8mrVD0YJ5lgHaFV?pid=Api&P=0&h=180
+Tai lợn,72.9,126,21,4.1,1.3,0,0.7,https://tse4.mm.bing.net/th/id/OIP.-JEcGEd9GfA9yLVkwp0_cgHaE8?pid=Api&P=0&h=180
+Tim bò,80.4,89,15,3,0.6,0,1,https://tse2.mm.bing.net/th/id/OIP.Eobrn10O3crZj82pp69dGQHaE8?pid=Api&P=0&h=180
+Tim gà,77.5,114,16,5.5,0,0,1,https://tse4.mm.bing.net/th/id/OIP.X88JTro0QhO2QkCXG-8qhAHaEK?pid=Api&P=0&h=180
+Tim lợn,79.5,94,15.1,3.2,1.2,0,1,https://tse3.mm.bing.net/th/id/OIP.yhWE1wrSejgNIl5byBIB7QHaD-?pid=Api&P=0&h=180
+Tiết bò,80.4,75,18,0.2,0.4,0,1,https://tse4.mm.bing.net/th/id/OIP.rEeCnAkHZb8YlStuxkrHFwHaE7?pid=Api&P=0&h=180
+Tiết lợn luộc,86.8,44,10.7,0.1,0,0,2.4,https://tse4.mm.bing.net/th/id/OIP.rEeCnAkHZb8YlStuxkrHFwHaE7?pid=Api&P=0&h=180
+Tiết lợn sống,91.9,25,5.7,0.1,0.2,0,2.1,https://tse4.mm.bing.net/th/id/OIP.2coFknjf5F836C3sb19sNAHaD4?pid=Api&P=0&h=180
+Tủy xương bò,8.7,814,1.1,89.9,0,0,0.3,https://tse4.mm.bing.net/th/id/OIP.qyKeRqE_DU9ZhGgM0X_rUAHaHa?pid=Api&P=0&h=180
+Tủy xương lợn,15,749,2.3,82.2,0,0,0.5,https://tse4.mm.bing.net/th/id/OIP.qyKeRqE_DU9ZhGgM0X_rUAHaHa?pid=Api&P=0&h=180
+"Ba tê , pa tê",47.5,326,10.8,24.6,15.4,0,1.7,https://tse2.mm.bing.net/th/id/OIP.VPUrCxkeiY5F5MTweTtxJwHaE7?pid=Api&P=0&h=180
+Chả lợn,32.6,517,10.8,50.4,5.1,0,1.1,https://tse3.mm.bing.net/th/id/OIP.2ioZ0evlb2biJ0nHgbDutAHaEs?pid=Api&P=0&h=180
+Chả quế lợn,42.5,416,16.2,39,0,0,2.3,https://tse1.mm.bing.net/th/id/OIP.xzuOfHwIk1uFo3yQ4Sdg_AHaFj?pid=Api&P=0&h=180
+Dăm bông lợn,48.7,318,23,25,0.3,0,3,https://tse4.mm.bing.net/th/id/OIP.zJ2gzfjKO-IokrgJKt7BgQHaE7?pid=Api&P=0&h=180
+Dồi lợn,78.9,114,12.4,7.1,0,0,1.6,https://tse1.mm.bing.net/th/id/OIP.LQKFPws8fXbPOlmp3R-iaQHaEK?pid=Api&P=0&h=180
+Giò bò,48.8,357,13.8,33.5,0,0,3.9,https://tse3.mm.bing.net/th/id/OIP.3mKUTUHpL6JITI2Ab18zkQHaFj?pid=Api&P=0&h=180
+Giò lụa,72,136,21.5,5.5,0,0,1,https://tse4.mm.bing.net/th/id/OIP.fDI1TcIdXNFpO37-OJAqwwHaE8?pid=Api&P=0&h=180
+Giò thủ lợn,29,553,16,54.3,0,0,0.7,https://tse3.mm.bing.net/th/id/OIP.QC1RS3Byc5x7ECFGHVNT8AHaEK?pid=Api&P=0&h=180
+Lạp xường,18.8,585,20.8,55,1.7,0,3.7,https://tse3.mm.bing.net/th/id/OIP.DCaItsyrlZkkTluSsX8eTAHaHa?pid=Api&P=0&h=180
+Nem chạo,68.1,153,16.6,6.5,6.9,0,1.9,https://tse1.mm.bing.net/th/id/OIP.vM6E5059TSZ2JhVAJfnNrQHaDy?pid=Api&P=0&h=180
+Nem chua,68,137,21.7,3.7,4.3,0,2.3,https://tse1.mm.bing.net/th/id/OIP.sLAbynjutwOpkKtMyZlzogHaE8?pid=Api&P=0&h=180
+Ruốc thịt lợn,25.8,369,46.6,20.3,0,0,7.3,https://tse2.mm.bing.net/th/id/OIP.RDoArRZvyEsQHuGCuMiucgHaFA?pid=Api&P=0&h=180
+thịt bò khô,32.4,239,51,1.6,5.2,0,9.8,https://tse1.mm.bing.net/th/id/OIP.sdcAQ1JoKv-cwd_0xKwomQHaEL?pid=Api&P=0&h=180
+thịt trâu khô,36.4,226,50.4,2.7,0,0,10.5,https://tse4.mm.bing.net/th/id/OIP.guQOUF5ltD-dN2CWG7M1HwHaE_?pid=Api&P=0&h=180
+Xúc xích,17,535,27.2,47.4,0,0,8.4,https://tse3.mm.bing.net/th/id/OIP.VkWDlDF3dkkmsoQDCXtpVwHaE7?pid=Api&P=0&h=180
+Bột cóc,7.2,342,55.4,13.4,0,0,24,https://tse2.mm.bing.net/th/id/OIP.d3ajHzN3Q0_mgrrOhq5fygHaDx?pid=Api&P=0&h=180
+Châu chấu,71.1,130,24.3,3.6,0,0,1,https://tse3.mm.bing.net/th/id/OIP.BuLZp8fNZ0_KNXkOuQNJQgHaEc?pid=Api&P=0&h=180
+ếch (thịt đùi),75,90,20,1.1,0,0,3.9,https://tse4.mm.bing.net/th/id/OIP.J4k5gHcgGhCwNmdT8nb8UgAAAA?pid=Api&P=0&h=180
+Nhộng,79.7,111,13,6.5,0,0,0.8,https://tse2.mm.bing.net/th/id/OIP.reVxdum1__QI875Wz1vgyAHaE4?pid=Api&P=0&h=180
+Lòng gà (cả bộ),74.9,119,17.9,4.5,1.8,0,1,https://tse2.mm.bing.net/th/id/OIP.27GavG-fd6onLQOJUtYaqwHaHa?pid=Api&P=0&h=180
+Cá bống,81.9,70,15.8,0.8,0,0,1.5,https://tse2.mm.bing.net/th/id/OIP.uj8p20GHZO8VhIghW4bsdAHaFD?pid=Api&P=0&h=180
+Cá chày,75.1,113,20.1,3.6,0,0,1.2,https://tse3.mm.bing.net/th/id/OIP.WfukiobHhqvAbVlttXpWnwHaJ4?pid=Api&P=0&h=180
+Cá chép,79.1,96,16,3.6,0,0,1.3,https://tse4.mm.bing.net/th/id/OIP.bfV1ySLb1K8gtTRw2Gu3RgHaHa?pid=Api&P=0&h=180
+Cá dưa,75.6,115,17.6,5,0,0,1.8,https://tse4.mm.bing.net/th/id/OIP.YZU1OIcwdffUiUzJFn5ujQHaEL?pid=Api&P=0&h=180
+Cá tra dầu,75.1,96,18.9,2.3,0,0,3.7,https://tse3.mm.bing.net/th/id/OIP.Who_KbbYHuDK9wap1ONzEwHaHa?pid=Api&P=0&h=180
+Cá diếc,78.9,87,17.7,1.8,0,0,1.6,https://tse3.mm.bing.net/th/id/OIP.aiC9m_vgkb5N98pqHINULQHaE8?pid=Api&P=0&h=180
+Cá đao,78.3,94,18.3,2.3,0,0,1.1,https://tse1.mm.bing.net/th/id/OIP.mpE5VfEBkA562cv04h1E7wHaEL?pid=Api&P=0&h=180
+Cá đé,78.8,83,18.7,0.9,0,0,1.6,https://tse4.mm.bing.net/th/id/OIP.03QceVKQodE60RevohvsvAHaFj?pid=Api&P=0&h=180
+Cá đối,76,108,19.5,3.3,0,0,1.2,https://tse4.mm.bing.net/th/id/OIP.-zEM9M2Z2LLuwiN2vm25RQHaHa?pid=Api&P=0&h=180
+Cá đồng tiền,76.4,98,20.1,2,0,0,1.5,https://tse3.mm.bing.net/th/id/OIP.IbucdTKJ5qGV98lpGTQVZwHaGc?pid=Api&P=0&h=180
+Cá hồi,71.3,136,22,5.3,0,0,1.4,https://tse2.mm.bing.net/th/id/OIP.7gXyQo9eopfl-EhYMx8vdAHaET?pid=Api&P=0&h=180
+"Cá khô (chim, thu, nụ, đé)",37.8,208,43.3,3.9,0,0,15,https://tse2.mm.bing.net/th/id/OIP.c0DqJAMZYUDB2IV_1m_JwAHaJ3?pid=Api&P=0&h=180
+Cá lác,78.1,71,16.7,0.5,0,0,4.7,https://tse1.mm.bing.net/th/id/OIP.ssFYg-aqUOX1dLnKcqF2HQHaE8?pid=Api&P=0&h=180
+Cá mè,74.7,144,15.4,9.1,0,0,0.8,https://tse2.mm.bing.net/th/id/OIP.Jfmc3sSQnWO1y_RA5j71zQHaEK?pid=Api&P=0&h=180
+Cá mòi,75.3,124,17.5,6,0,0,1.2,https://tse2.mm.bing.net/th/id/OIP.TTZmxSwXunYf9nYVUb2GnQHaEo?pid=Api&P=0&h=180
+Cá mỡ,72.7,151,16.8,9.3,0,0,1.2,https://tse3.mm.bing.net/th/id/OIP.WoVKi4rQs8eLA9jQRoLOsQHaHa?pid=Api&P=0&h=180
+Cá mối,73.3,116,22.1,3.1,0,0,1.5,https://tse4.mm.bing.net/th/id/OIP.w1cCplpmDv0heYnQcb-9OAHaHa?pid=Api&P=0&h=180
+Cá nạc,80,80,17.5,1.1,0,0,1.4,https://tse2.mm.bing.net/th/id/OIP.XTacp3nSC0u-gtYyW6WwFAHaFV?pid=Api&P=0&h=180
+Cá ngừ,77.5,87,21,0.3,0,0,1.2,https://tse1.mm.bing.net/th/id/OIP.qonfQ0TzA7Yn2YMTL5DOUQHaHa?pid=Api&P=0&h=180
+Cá nục,74.9,111,20.2,3.3,0,0,1.6,https://tse2.mm.bing.net/th/id/OIP.osMz8WDUW8zdrKpiWaodswHaHa?pid=Api&P=0&h=180
+Cá phèn,78.2,104,15.9,4.5,0,0,1.4,https://tse2.mm.bing.net/th/id/OIP.L5DIdwRUUbP0q3FOjHKC2AHaHa?pid=Api&P=0&h=180
+Cá quả,78,97,18.2,2.7,0,0,1.1,https://tse3.mm.bing.net/th/id/OIP.x47lrKbeFR0ZEnD0ESx2RQHaFd?pid=Api&P=0&h=180
+Cá rô đồng,74.2,126,19.1,5.5,0,0,1.2,https://tse2.mm.bing.net/th/id/OIP.-CipJaVmVXMjvb0QoFUy8AHaE8?pid=Api&P=0&h=180
+Cá rô phi,76.8,100,19.7,2.3,0,0,1.2,https://tse2.mm.bing.net/th/id/OIP.1UA-JCph4dSZ2p2Iqc9KwwHaEL?pid=Api&P=0&h=180
+Cá thờn bơn (cá bơn),81.3,73,17.4,0.4,0,0,0.9,https://tse3.mm.bing.net/th/id/OIP.NzuJ0feyX5-xn2IAGTFSdAHaE8?pid=Api&P=0&h=180
+Cá thu,70.2,166,18.2,10.3,0,0,1.3,https://tse2.mm.bing.net/th/id/OIP.Oate2AGr_TrH88V1IliXRQHaEo?pid=Api&P=0&h=180
+Cá thu đao,70.3,156,20,8.4,0,0,1.3,https://tse1.mm.bing.net/th/id/OIP.j7HKmZ8xrYFiz9ro9gSK0AHaE8?pid=Api&P=0&h=180
+Cá trạch (cá chạch),74.2,110,20.4,3.2,0,0,2.2,https://tse2.mm.bing.net/th/id/OIP.vq_wKwd3OwtOHTUAEV7pUAHaHa?pid=Api&P=0&h=180
+Cá trắm cỏ,79.4,91,17,2.6,0,0,1,https://tse3.mm.bing.net/th/id/OIP.fcF7-O2t9pb4epPcxjUEiAHaEE?pid=Api&P=0&h=180
+Cá trê,70.4,173,16.5,11.9,0,0,1.2,https://tse1.mm.bing.net/th/id/OIP.YHe06Y9swS-qW9UnyfAq0AHaFC?pid=Api&P=0&h=180
+Cá trích,70.5,166,17.7,10.6,0,0,1.2,https://tse4.mm.bing.net/th/id/OIP.Qs_mxqjubvK-AsWhscmeywHaE8?pid=Api&P=0&h=180
+Cá trôi,74.3,127,18.8,5.7,0,0,1.2,https://tse3.mm.bing.net/th/id/OIP.GpGyl02ZVnLJMDk-v6_qrQHaEK?pid=Api&P=0&h=180
+Cua bể,72.2,103,17.5,0.6,7,0,2.7,https://tse1.mm.bing.net/th/id/OIP.1-4eEFrLQeYwcfw-Wrt4CgHaHa?pid=Api&P=0&h=180
+Cua đồng,74.4,87,12.3,3.3,2,0,8,https://tse3.mm.bing.net/th/id/OIP.lcISetly7nLiMhahtY-RNgHaFk?pid=Api&P=0&h=180
+ghẹ,85.5,54,11.9,0.7,0,0,1.9,https://tse1.mm.bing.net/th/id/OIP.VUiq9akAeqzFCJyLbNFtTgHaHa?pid=Api&P=0&h=180
+Hải sâm,76.9,90,21.5,0.3,0.2,0,1.1,https://tse3.mm.bing.net/th/id/OIP.axSghKuif8VcsiIsBb3cAwHaEU?pid=Api&P=0&h=180
+Hến,88.8,45,4.5,0.7,5.1,0,0.9,https://tse4.mm.bing.net/th/id/OIP.GQpVjRtqQhj6qvcohbxBUgHaFC?pid=Api&P=0&h=180
+Lươn,68.3,180,18.4,11.7,0.2,0,1.4,https://tse4.mm.bing.net/th/id/OIP.WhkGGRUmY0PiPk9NLGZ6awHaEp?pid=Api&P=0&h=180
+Mực khô,26.2,291,60.1,4.5,2.5,0,6.7,https://tse1.mm.bing.net/th/id/OIP.PQXtvW0cvLYbE2iyJvE4igHaHa?pid=Api&P=0&h=180
+Mực tươi,81.4,73,16.3,0.9,0,0,1.4,https://tse2.mm.bing.net/th/id/OIP.pd4EPWL1zNEcMibHAtt67wHaE-?pid=Api&P=0&h=180
+ốc bươu,76.8,84,11.1,0.7,8.3,0,3.1,https://tse1.mm.bing.net/th/id/OIP.uWQ-Kc3Ju9W5VUz8UpErRQHaFv?pid=Api&P=0&h=180
+ốc đá,80.3,63,11.2,0.3,3.9,0,4.3,https://tse2.mm.bing.net/th/id/OIP.V5SZkKfH6j2LRy081QC9BQHaEK?pid=Api&P=0&h=180
+ốc nhồi,77.6,84,11.9,0.7,7.6,0,2.2,https://tse3.mm.bing.net/th/id/OIP.in8XUyAOt4bhFptNYnatxwHaE8?pid=Api&P=0&h=180
+ốc vặn,79.1,72,12.2,0.7,4.3,0,3.7,https://tse3.mm.bing.net/th/id/OIP.fbVZhMUOGKlfxAqTS_eCXQHaE8?pid=Api&P=0&h=180
+"Rạm (muối, đồ)",64.4,83,14.2,2.9,0,0,18.5,https://tse1.mm.bing.net/th/id/OIP.ljYHUKufYinyaB056WbRqAHaEL?pid=Api&P=0&h=180
+Rạm tươi,78.2,77,12.9,2.8,0,0,6.1,https://tse4.mm.bing.net/th/id/OIP.Ur5lDhaCB4-J1kGA_155hwHaFj?pid=Api&P=0&h=180
+Rươi,81.9,89,12.4,4.4,0,0,1.3,https://tse4.mm.bing.net/th/id/OIP.emz3wfqSHNgG-LmIyEWZ8QHaFM?pid=Api&P=0&h=180
+Sò,82.1,78,9.5,2.3,4.9,0,1.2,https://tse4.mm.bing.net/th/id/OIP.VJEH7u78jhgYJl_LuvVnGQHaGW?pid=Api&P=0&h=180
+Tép gạo,84.5,58,11.7,1.2,0,0,2.6,https://tse3.mm.bing.net/th/id/OIP.CNzBOLpEqwMY8U_by4SXMAHaFj?pid=Api&P=0&h=180
+Tép khô,23,269,59.8,3,0.7,0,13.5,https://tse3.mm.bing.net/th/id/OIP.m984OfGVyLy0EVYF8H6QGQHaFP?pid=Api&P=0&h=180
+Tôm biển,79.2,82,17.6,0.9,0.9,0,1.4,https://tse3.mm.bing.net/th/id/OIP.ea_nHFh19U7G6eP3KwtjXAHaFj?pid=Api&P=0&h=180
+Tôm đồng,76.9,90,18.4,1.8,0,0,2.9,https://tse1.mm.bing.net/th/id/OIP.XHzVdpg1yFCk6nU7zC7VjAHaE8?pid=Api&P=0&h=180
+Tôm khô,12.6,347,75.6,3.8,2.5,0,5.5,https://tse2.mm.bing.net/th/id/OIP.T6AjuCQ_1Pk6BWJWFcOpPQHaEK?pid=Api&P=0&h=180
+Trai,89.9,38,4.6,1.1,2.5,0,1.9,https://tse2.mm.bing.net/th/id/OIP.O6cjTKltlG4aT5uWesP8JQHaET?pid=Api&P=0&h=180
+Bánh phồng tôm rán,3.8,676,1.6,59.2,34.1,0,1.3,https://tse2.mm.bing.net/th/id/OIP.O6cjTKltlG4aT5uWesP8JQHaET?pid=Api&P=0&h=180
+Bánh phồng tôm sống,12,381,3.4,7.4,75.3,0,1.9,https://tse1.mm.bing.net/th/id/OIP.v7xHtYzzaPlJKsj_zgxaLgHaEk?pid=Api&P=0&h=180
+Bột cá,11.6,323,71.2,2.9,3,0,11.3,https://tse3.mm.bing.net/th/id/OIP.eJ9ngYZ-aELps4sl9NQmVQHaE1?pid=Api&P=0&h=180
+Ruốc cá quả,14,312,65.7,4.1,3,0,13.2,https://tse1.mm.bing.net/th/id/OIP.yntPq5tNGU5D-dJN_y6pyAHaEK?pid=Api&P=0&h=180
+Ruốc tôm,13.1,305,65.5,3.1,3.7,0,14.6,https://tse4.mm.bing.net/th/id/OIP.KGLYrjENZ9FrHzXVj6WW5gHaDk?pid=Api&P=0&h=180
+Trứng gà,72,166,14.8,11.6,0.5,0,1.1,https://tse2.mm.bing.net/th/id/OIP.9oVRf8VUuAeDSMu5KT8CKQHaEK?pid=Api&P=0&h=180
+Lòng đỏ trứng gà,54,327,13.6,29.8,1,0,1.6,https://tse2.mm.bing.net/th/id/OIP.9oVRf8VUuAeDSMu5KT8CKQHaEK?pid=Api&P=0&h=180
+Lòng trắng trứng gà,88,46,10.3,0.1,1,0,0.6,https://tse2.mm.bing.net/th/id/OIP.4GelpippqoDeDBSstYDQ0wHaFM?pid=Api&P=0&h=180
+Trứng vịt,70,184,13,14.2,1,0,1.8,https://tse1.mm.bing.net/th/id/OIP.lS5cJsJYqsmmovd7Gi5Y0QHaF7?pid=Api&P=0&h=180
+Lòng đỏ trứng vịt,47.5,364,13.6,32.3,4.8,0,1.8,https://tse3.mm.bing.net/th/id/OIP.wmaP48v4T-krpYf2SYIzFQHaGN?pid=Api&P=0&h=180
+Lòng trắng trứng vịt,87.8,47,10.7,0.1,0.8,0,0.6,https://tse4.mm.bing.net/th/id/OIP.JH3wD2OS8A2Ykr9p_7SDAAHaEx?pid=Api&P=0&h=180
+Trứng chim cút,74.4,154,13.1,11.1,0.4,0,1.1,https://tse3.mm.bing.net/th/id/OIP.85XLAzPvUAqx9CLmArZNzgHaFG?pid=Api&P=0&h=180
+Trứng cá,64.9,171,20.5,9.9,0,0,4.7,https://tse1.mm.bing.net/th/id/OIP.mzAh6zk2MNDgC8KWcjJvnAHaHa?pid=Api&P=0&h=180
+Trứng cá muối,47.5,274,24.6,17.9,3.5,0,6.5,https://tse2.mm.bing.net/th/id/OIP.sxoUvCylTJzy3iCnEp-S3gHaEO?pid=Api&P=0&h=180
+Trứng vịt lộn,67,182,13.6,12.4,4,0,3,https://tse3.mm.bing.net/th/id/OIP.32sdpsL1fYDdRMmi4AHH6AHaE8?pid=Api&P=0&h=180
+Bột trứng,8.5,563,44,42.2,1.8,0,3.5,https://tse2.mm.bing.net/th/id/OIP.iBnbjHgTf0uI9TNo0OQEewHaCf?pid=Api&P=0&h=180
+Sữa bò tươi,86.2,74,3.9,4.4,4.8,0,0.7,https://tse3.mm.bing.net/th/id/OIP.l-Xi8ACWhk3V5OEmyYmIjgHaEx?pid=Api&P=0&h=180
+Sữa dê tươi,87.2,69,3.5,4.1,4.5,0,0.7,https://tse3.mm.bing.net/th/id/OIP.OfWZ2SxP-ZluZQ8lkDeLrAHaEK?pid=Api&P=0&h=180
+Sữa mẹ (Sữa người),88.3,61,1.5,3,7,0,0.2,https://tse1.mm.bing.net/th/id/OIP.QV1hXjOrb9dAbylQRVYSJgHaE8?pid=Api&P=0&h=180
+Sữa chua (từ Sữa bò),88.7,61,3.3,3.7,3.6,0,0.7,https://tse1.mm.bing.net/th/id/OIP.v0sM1t5tDljxVCLLJUOT0QHaEL?pid=Api&P=0&h=180
+Sữa chua vớt béo,71.6,103,3.5,0,22.3,1.2,1.4,https://tse3.mm.bing.net/th/id/OIP.PWlGc-X43QTUC7CLOD4fbgHaGr?pid=Api&P=0&h=180
+Sữa Bột toàn phần,3.5,494,27,26,38,0,5.5,https://tse2.mm.bing.net/th/id/OIP._2trNVQv30y5lb29HANGLwHaHa?pid=Api&P=0&h=180
+Sữa Bột tách béo,4,357,35,1,52,0,8,https://tse4.mm.bing.net/th/id/OIP.oVlwUdAhhon9Cg8G7V5kWQHaE7?pid=Api&P=0&h=180
+Sữa đặc có đường Viỏt Nam,25.4,336,8.1,8.8,56,0,1.7,https://tse2.mm.bing.net/th/id/OIP.b_qq_0gosNWkD3IvqSRq8gHaHa?pid=Api&P=0&h=180
+Pho mát,38.9,380,25.5,30.9,0,0,4.7,https://tse3.mm.bing.net/th/id/OIP.W6OKQPev12sST9sS8v_OOAHaEo?pid=Api&P=0&h=180
+Chuối nước đường,83.9,58,0.5,0,13.9,1.3,0.4,https://tse1.mm.bing.net/th/id/OIP.IBqlOqpI1slQCmFkw1trqgHaFr?pid=Api&P=0&h=180
+dưa chuột hộp,94.1,8,0.3,0.2,1.2,3.1,1.1,https://tse4.mm.bing.net/th/id/OIP.19aUO6PlYhAVoTGvW94J1QHaHa?pid=Api&P=0&h=180
+Dứa hộp,85.7,53,0.4,0.1,12.7,0.8,0.3,https://tse1.mm.bing.net/th/id/OIP.SAaOVq9-VOM8bRP_nChfdgHaHa?pid=Api&P=0&h=180
+Lạc chao dầu,1.8,680,25.7,59.5,10.3,16,2.7,https://tse4.mm.bing.net/th/id/OIP.aZZ9KEFovBI_fV9fzPMkEwHaD4?pid=Api&P=0&h=180
+Mắc coọc nước đường,85.1,56,0.2,0,13.7,0.7,0.3,https://tse2.mm.bing.net/th/id/OIP.KjFRCLWGT0UvjyFDZaD0ugHaE8?pid=Api&P=0&h=180
+Mận nước đường,83,64,0.4,0.1,15.4,0.9,0.2,https://tse4.mm.bing.net/th/id/OIP.ovb-W0wzbTilBkZawEVXoAHaHO?pid=Api&P=0&h=180
+Mứt bí ngô,49.4,198,0.5,0,49.1,0.7,0.3,https://tse1.mm.bing.net/th/id/OIP.lhpQpIqSJWRhqLLIO7cS-wHaEK?pid=Api&P=0&h=180
+Mứt cam că vá,42.8,218,0.4,0,54.2,2.2,0.4,https://tse2.mm.bing.net/th/id/OIP.5oaZvFbmFfzPz5rE28u-2AHaED?pid=Api&P=0&h=180
+Mứt chuối,43.8,218,0.7,0,53.9,1.3,0.3,https://tse1.mm.bing.net/th/id/OIP.rDX4BOD0cpYuv9DqdqDEawHaFE?pid=Api&P=0&h=180
+Mứt dứa,47.2,208,0.5,0,51.5,0.4,0.4,https://tse1.mm.bing.net/th/id/OIP.9F7UYfbottuMz8udc7lUjQHaEt?pid=Api&P=0&h=180
+Mứt đu đủ,53.2,178,0.4,0,44.1,2,0.3,https://tse3.mm.bing.net/th/id/OIP.j-XhnhACvFerLKa3Ex7SqAHaEL?pid=Api&P=0&h=180
+Nhãn nước đường,83.3,62,0.5,0,15,1,0.2,https://tse2.mm.bing.net/th/id/OIP.8EkUxQZFbAbq5_OQlw64ggHaHa?pid=Api&P=0&h=180
+Nước dứa hộp,86.4,53,0.4,0.1,12.6,0.2,0.3,https://tse4.mm.bing.net/th/id/OIP.QRYDwkU25LWI1YEbyRm3vAHaHa?pid=Api&P=0&h=180
+Vải nước đường,83.6,60,0.4,0,14.7,1.1,0.2,https://tse2.mm.bing.net/th/id/OIP.sihmwF4ZLeCbPxImNg3s3AHaHa?pid=Api&P=0&h=180
+Cá thu hộp,57.5,207,24.8,12,0,16,5.7,https://tse1.mm.bing.net/th/id/OIP.rXtcAMz4gofuJ-Sin0aXiQHaHa?pid=Api&P=0&h=180
+Cá trích hộp,56.7,233,22.3,14.4,3.5,16,3.1,https://tse3.mm.bing.net/th/id/OIP.aZR8iquF1jXO5srgwb1ZVAHaHa?pid=Api&P=0&h=180
+thịt bò hộp,61.4,251,16.4,20.6,0,16,1.6,https://tse2.mm.bing.net/th/id/OIP.v5Cr7c6oXAHugCiwVOYdUgHaHa?pid=Api&P=0&h=180
+Thịt gà hộp,59,273,17,22.8,0,16,1.2,https://tse4.mm.bing.net/th/id/OIP.9NXT0I0dwq_mfGK2XVnD4wHaHa?pid=Api&P=0&h=180
+thịt lợn hộp,49,344,17.3,29.3,2.7,16,1.7,https://tse3.mm.bing.net/th/id/OIP.UyY7XgS5ByWYaW7lq6VxpgHaFj?pid=Api&P=0&h=180
+"thịt lợn, thịt bò xay hộp",62.8,244,16,20,0,16,1.2,https://tse1.mm.bing.net/th/id/OIP.7MMoEq5pPjUlmml5-J6KHwHaHa?pid=Api&P=0&h=180
+thịt vịt hầm,59.9,224,19.6,16.2,0,16,4.3,https://tse1.mm.bing.net/th/id/OIP.caFRSfn6kyNzkzh41Pdn5wHaD4?pid=Api&P=0&h=180
+Bánh bích cốt,12,346,12.3,1.3,71.3,0.8,2.3,https://tse1.mm.bing.net/th/id/OIP.YEkyyvITI9X8D7J8GaiKAAHaD4?pid=Api&P=0&h=180
+Bánh bích quy,10.4,376,8.8,4.5,75.1,0.5,0.7,https://tse3.mm.bing.net/th/id/OIP.KhR0WRF-JYpXc3nsqKI7SQHaF6?pid=Api&P=0&h=180
+Bánh chả,8,395,3.4,6.6,80.5,1,0.5,https://tse4.mm.bing.net/th/id/OIP.V-phRenDCx6LVNB2GdKL0wHaEK?pid=Api&P=0&h=180
+Bánh con cá,10,368,7.5,2.2,79.6,0.2,0.5,https://tse3.mm.bing.net/th/id/OIP.1Du84RNjM9vYtgOwwqMeFAHaEK?pid=Api&P=0&h=180
+Bánh đậu xanh,6.8,416,15.6,11.5,62.4,1.1,2.6,https://tse4.mm.bing.net/th/id/OIP.9d4whvLH7bHhWZYXW4OjNwHaDt?pid=Api&P=0&h=180
+Bánh kem xốp,1.9,492,8.3,24,60.7,3.5,1.6,https://tse3.mm.bing.net/th/id/OIP.eZt1gqid1I_gG_rJaZEDzwHaHa?pid=Api&P=0&h=180
+Bánh khảo chay,5.8,376,3.2,0.3,90.2,0.2,0.3,https://tse3.mm.bing.net/th/id/OIP.Md9_ExwYukdl6DtdoPvb1wHaEC?pid=Api&P=0&h=180
+Bánh quế,3.6,435,8.3,10.7,76.4,0.3,0.7,https://tse1.mm.bing.net/th/id/OIP.iekU9xDSbjwvywEfZr8rLgHaFj?pid=Api&P=0&h=180
+Bánh sô cô la,8.5,449,3.9,17.6,68.8,0,1.2,https://tse3.mm.bing.net/th/id/OIP.nvg5UxMfPi81Udy3tZ1HTgHaFj?pid=Api&P=0&h=180
+Bánh thái sô cô la,0.8,543,4.9,30.4,62.5,16,1.4,https://tse4.mm.bing.net/th/id/OIP.5F8XyXSmhVCHgLrXfgmXGQHaFj?pid=Api&P=0&h=180
+Bánh trứng nhỏn,11.6,369,9.6,3.7,74.2,0.2,0.7,https://tse2.mm.bing.net/th/id/OIP.l21xYpP_r3JPXzioMaSveQHaE8?pid=Api&P=0&h=180
+Bột ca cao,3,414,19.6,13.7,53,4.6,6.1,https://tse2.mm.bing.net/th/id/OIP.aqlRExG3MuJG6957VqxVZgHaHa?pid=Api&P=0&h=180
+đường cát,1.7,390,0,0,97.4,0,0.9,https://tse2.mm.bing.net/th/id/OIP.dUuYx6FVs7hH6uqIx4qv-gHaHa?pid=Api&P=0&h=180
+đường kính,0.5,397,0,0,99.3,0,0.2,https://tse4.mm.bing.net/th/id/OIP.KG1ym3YAAvya-BUi5_cf1gHaEL?pid=Api&P=0&h=180
+Kẹo bơ cứng,8.8,448,2.1,17.2,71.1,0,0.8,https://tse4.mm.bing.net/th/id/OIP.PprrZresbnLZ86qm6Ir9pAHaHa?pid=Api&P=0&h=180
+Kẹo cà phê,6.6,378,0,1.3,91.5,0,0.6,https://tse4.mm.bing.net/th/id/OIP.Mdmf5-7jHNGOh_uEfnC2cgHaHa?pid=Api&P=0&h=180
+Kẹo cam chanh,5.4,377,0,0.5,93.1,0.3,0.7,https://tse4.mm.bing.net/th/id/OIP.tLbD3eMfcp5dARVRO1yzbQHaFj?pid=Api&P=0&h=180
+Kẹo dừa mềm,8.5,415,0.6,12.2,75.6,2.5,0.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYq0vXm76vE8r5Zb8KOONBG9NWoGY0W5WotXzaLUk1YMA-rlI&s
+Kẹo dứa mềm,8.5,415,0.6,12.2,75.6,2.5,0.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYq0vXm76vE8r5Zb8KOONBG9NWoGY0W5WotXzaLUk1YMA-rlI&s
+Kẹo lạc,5,449,10.3,16.5,64.8,2.2,1.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYq0vXm76vE8r5Zb8KOONBG9NWoGY0W5WotXzaLUk1YMA-rlI&s
+Kẹo Pastille (kẹo ngậm bạc hà),10.2,356,5.2,0,83.8,16,0.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKa-31ZVvAtyzd_VNlFgn2oYuYXKTPC4-qUDBPbqc383wIJgSh&s
+Kẹo sô cô la,6.8,388,1.6,4.6,85.1,1.2,0.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTttM8z61nAW-GE9GsK427IR1vJKaHn4piyziTKzs-7lferLyg&s
+Kẹo Sữa,8.4,390,2.9,5.2,83,16,0.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKmVeCwKThY6iXp7xNNfvkf6tSIP2gg2D2kwnxqvi8NEJrlhtm&s
+Kẹo vừng viên,1.7,417,2.8,6.9,85.9,1.7,1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl29KpzmUH6rO4xhPmYWxFwN8NCwoyiQ7O-q4KHFBMYnhSRZ-s&s
+Mạch nha,15,331,0.2,0,82.5,0,2.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfZxd2z4Pi0cWxfafWVmpOM7xWUA7-fZG__9Mej8oHH_cQkEA&s
+Mật ong,18,327,0.4,0,81.3,0,0.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj7WmrQIBBY264W3cVu3gVL51JFL0woM11YwoNeK2XQkoU4Ng&s
+Mứt lạc,1.8,431,5.4,8.6,82.9,0.7,0.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6sDhk4xC3RO2A3s47p-nFnDOkQITjA8vSCu-HMgZFhnH_NHo&s
+Cary Bột,10,283,8.2,7.3,46,8.9,19.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKxtbkLhM_rWHcmSneV8gLNBx78JNmUPFDdMCEUKTHlzXbsLU&s
+Gừng khô (Bột),9.4,323,9.1,5.9,58.3,12.5,4.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiESjvD0WwyOc6jXFX_sZk-hzATBZySmgzQ0cLsmPXlwGMug9s&s
+Gừng tươi,90,29,0.4,0.8,5.1,3.3,0.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ398yj9MJ60YtLnCH75Ze51giFAFNASdpicO8pINPkwlQoBzGe&s
+Hạt tiêu,13.5,231,7,7.4,34.1,33.5,4.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIdX1fPBsWxHqb3rdJ9OhvtdrL7399rbL3kAejdS1W8PriT5k&s
+Muối,1,0,0,0,0,0,99,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_V1p0d8FSkWmxSyBhYQntkpi36zTzt9JP7tkPMWhG6wf6-5uf&s
+"nghệ khô, Bột",11.4,295,7.8,9.9,43.8,21.1,6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx_Ua9y0NcT06_KFTb2m-_tfA9qQlbF2Dos4M9uxlfx5ol224&s
+nghệ tươi,86.7,25,1.1,0.3,4.4,6.5,1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4skZgmdlStw1u0-a1V9sBbM3mdeMTIgDdok00rUKWybt7Kgk&s
+ớt khô bột,12,227,15.6,4.2,31.8,23.6,12.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL7brAA1AJuCLCCI2_QXzESt_bLD8DreuISBWM7nOFRFMl9wce&s
+Magi,66,65,10.5,0.1,5.6,0,17.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL7brAA1AJuCLCCI2_QXzESt_bLD8DreuISBWM7nOFRFMl9wce&s
+Mắm tôm đặc,48,73,14.8,1.5,0,0,35.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQgSUeMmUWV2-LAbYjUpk89S6LE7ODIkMcyj24c2vW6xRkxuco&s
+Mắm tôm loãng,68.6,44,7,0.8,2.1,0,21.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ241ITnBGz4CvPqVNljd32jvJjmPooX54CI44kM692zW_5onYE&s
+Mắm tép chua,55.5,68,8.7,1.2,5.5,0,29.1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsnWwftcc9l6ApgDnZd3Cv27fQnTm9fsKpVu_MHNyzDp3NEm1O&s
+Nước mắm cá (loại đặc biỏt),60,60,15,0,0,0,25,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStleUgISWX9TiWjWGF9katpY2EmRTozM_PCsm0Pvx0k1p6SBk&s
+Nước mắm cá loại I,67.9,28,7.1,0,0,0,25,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOIQYdo-9ywII1Qc_ncaYVX6jKQxc0Be3hVzTEJh8NGfQxNRA&s
+Nước mắm loại II,66.8,21,5.2,0,0,0,28,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-qujTio0u-050Pypq8yPYAJofXA0xCYonuc-yNkub7FkgjxA&s
+Nước mắm cá,71.1,35,5.1,0.01,3.6,0,20.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmJcUfbPlYjNtsTOBXG4oTOSs1drJnn8-d42d4RKKtX_o0j_s&s
+Nước mắm cô,20.2,131,32.8,0,0,0,47,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXC0Nlowe2jGAqPSDzaHB2mxlMMyGQkfJxHdYec-YSuv8udUJV&s
+Tương ngô,70.3,75,3.9,0.1,14.5,0,11.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjpfX9JYou3fJLef88TH28SIpz9hbxrqX_TYNFvX814BidmkEP&s
+Tương nếp,68.3,86,4.3,0.7,15.7,0,11,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY8ZkiHu5PFAd0t0K9Tm1-I9xv2alk_MerOah3M6UZvmMZRlxP&s
+Tương ớt,84,37,0.5,0.5,7.6,0.9,6.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoaCZnuEdjT-oMglJOzQUjYtJ8RZ8O4N0SwywaSql9D8r2oZg&s
+Xì dầu,70.8,53,6.3,0.04,6.8,0.8,15.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7mCses4e-AMaUAPhhIb2Q8UC3OAZLCSCAwcuIstASzzyJ390&s
+Sốt mayonnaise,21.7,701,0,77.8,0.1,0,0.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNCtj8PU68PdwWAebWrRth9xQfLcrVuvfNtlwgOFqmApKir3I&s
+"Bia (cồn: 4,5 g)",92.5,11,0.5,0,2.3,0,0.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4gjZ99HI6dUzfB-SSbV0GGCAXpoktFwEwaXy2Johf5tZ9MlQ&s
 Cô nhục (cồn 32 g),67.8,0,0,0,0,0,0.2,
-Cốc tai (cồn 13 g),71,63,0,0,15.7,0,0.3,
-Coca cola,89.4,42,0,0,10.4,0,0.2,
-Nước cam tươi,94.1,23,0.7,0.2,4.5,0.2,0.3,
-Nước dừa non tươi,94.4,21,0.4,0,4.8,0,0.4,
-Nước đp cà chua,94.6,19,0.8,0.6,2.6,0.4,1,
-Nước khoáng,99.7,0,0,0,0,0,0.3,
-Nước quít tươi,93.8,24,0.4,0.2,5.1,0.2,0.3,
-"Rựu cam, chanh (cồn 24,2 g)",75.8,0,0,0,0,0,17,
-Rựu nếp (80g/ 24 ml) (cồn 5 g),52.4,167,4,0,37.7,0.2,0.7,
-Rựu trắng (cồn 39 g),61,273,0,0,0,0,17,
-"Rựu vang đỏ (cồn 9,5 g)",88,9,0.2,0,2,0,0.3,
-"Rựu vang trắng (cồn 9,5 g)",89.9,1,0.1,0,0.2,0,0.3,
-Rựu vang trắng ngọt (cồn 10.2 g),83.4,24,0.2,0,5.9,0,0.3,
-"Rựu Whisky (cồn 35,2 g)",64.7,0,0,0,0,0,0.1,
-Bánh mì pate,48,235,9.5,9.8,28.5,1.2,2.2,
-Bánh bột chiên,52,215,6.8,11.5,24.5,1.5,1.7,
-Bánh cống,58,185,5.5,7.8,25.8,1.8,1.1,
-Bánh khúc,48,205,6.2,4.8,38.5,2.2,1.3,
-Xôi vò,52,195,7.5,5.5,33.8,1.8,1.4,
-Bún ốc,83,98,7.2,2.8,14.5,1.2,1.3,
-Mì vịt tiềm,84,92,8.5,2.5,12.8,0.9,1.3,
-Bánh canh cua,85,88,6.8,2.2,13.5,0.8,1.7,
-Hủ tiếu gõ,82,105,8.2,3.2,14.8,1.1,1.5,
-Cơm cá kho,65,185,16.5,7.2,21.5,0.7,1.6,
-Cơm sườn bì chả,64,192,13.8,6.8,23.5,1,1.5,
-Cơm niêu Singapore,62,198,11.5,8.5,24.2,1.2,1.6,
-Thịt ba chỉ kho,58,255,16.8,18.5,8.2,0.4,2.4,
-Cá kho tiêu,64,205,19.5,11.5,6.8,0.3,2.9,
-Gà kho gừng,66,185,20.5,9.8,5.5,0.5,1.8,
-Thịt rim,62,225,17.5,14.8,8.5,0.6,2.2,
-Cá rô kho tộ,65,195,18.8,11.2,6.2,0.4,2.5,
-Chả cá Hà Nội,64,195,19.5,10.5,7.5,0.8,1.7,
-Nem cua bể,52,245,11.8,13.5,23.8,1.2,2.2,
-Chạo tôm,58,218,18.5,11.8,10.5,0.9,2.3,
-Gà rán,48,268,18.5,15.8,16.5,1.1,1.8,
-Canh chua cá lóc,91,42,4.5,1.2,5.5,1.6,0.8,
-Súp cua,89,55,5.8,1.8,6.2,0.8,1.4,
-Canh măng,92,35,2.8,0.8,5.8,2.2,0.6,
-Chè đậu xanh,78,115,4.5,1.8,22.5,2.5,0.7,
-Chè khúc bạch,75,128,3.2,2.5,24.8,1.2,0.8,
-Chè sương sa hột lựu,80,105,2.8,1.5,21.8,1.8,0.6,
-Chè hạt sen,76,122,4.2,2.2,23.5,1.5,0.9,
-Kem flan,70,145,5.2,6.5,19.8,0.3,0.9,
-Chè đậu đen,77,118,5.8,2.2,22.2,2.8,0.8,
-Bánh cuốn thanh trì,70,125,4.2,1.5,24.8,0.7,0.8,
-Nem rán Hải Phòng,50,265,9.5,13.8,26.5,1.3,1.9,
-Bún riêu cua,84,98,7.8,2.5,13.5,1.1,1.6,
-Bún cá Kiên Giang,82,108,8.8,3.2,14.8,1.2,1.5,
-Bánh tôm Hồ Tây,42,285,12.5,16.8,25.5,1.5,2.2,
-Bún măng vịt,83,105,9.2,3.5,14.2,1.3,1.5,
-Cháo lươn,86,75,6.5,2.2,9.8,0.6,1.4,
-Cháo sườn,85,82,7.2,2.8,10.5,0.5,1.3,
-Bánh tráng cuốn thịt heo,68,148,10.5,4.8,20.5,1.8,1.2,
-Mì Quảng gà,78,125,10.2,3.5,17.2,1.3,1.5,
-Cao lầu Hội An,75,145,10.5,4.5,19.2,1.3,1.5,
-Bánh tráng phơi sương,8,355,5.2,2.8,78.5,1.2,1.5,
-Bánh ướt lòng gà,72,115,6.8,2.5,20.8,0.8,1.1,
-Bánh hỏi,65,142,5.5,1.8,28.5,0.9,1.3,
-Bò bía,70,135,8.5,3.8,20.5,2.2,1.2,
-Bánh đúc tôm chấm,82,68,3.8,1.5,12.5,0.6,0.9,
-Bánh ú tro,55,178,5.2,2.2,36.8,2.5,1.3,
-Bánh lá mơ,52,188,6.5,3.5,36.2,2.2,1.4,
-Cơm rượu,65,152,3.8,1.2,32.5,0.8,0.7,
-Bánh dày,52,195,6.8,2.8,38.5,1.8,1.1,
-Bánh giò,68,145,8.5,4.5,22.5,1.2,1.3,
-Bún suông,84,95,7.5,2.5,13.8,1.1,1.4,
-Bún bò giò heo,81,118,10.5,4.2,14.5,1.2,1.7,
-Bún nước lèo,83,102,8.2,3.2,14.2,1.3,1.6,
-Bún kèn,82,108,8.8,3.5,14.8,1.2,1.5,
-Bún bung,84,98,7.8,2.8,13.8,1.1,1.4,
-Bún măm nêm,81,112,9.2,3.5,15.2,1.4,1.8,
-Bún sứa,85,92,7.2,2.2,13.5,1.2,1.5,
-Bún quậy Phú Quốc,82,105,8.5,3.2,14.5,1.1,1.5,
-Bún ngan,83,102,8.8,3.5,13.8,1.2,1.6,
-Bún cá sứa,84,95,7.5,2.5,13.5,1.1,1.4,
-Bánh canh chả cá,84,98,8.2,2.8,13.8,0.9,1.5,
-Bánh canh Trảng Bàng,83,105,8.5,3.2,14.5,1,1.6,
-Bánh canh bột lọc,85,92,6.8,2.2,13.8,0.8,1.4,
-Bánh canh giò heo,82,108,9.2,3.5,14.2,1,1.7,
-Bánh canh cá lóc,84,98,8.5,2.8,13.5,0.9,1.5,
-Hủ tiếu Mỹ Tho,83,102,8.2,2.8,14.2,0.9,1.5,
-Hủ tiếu khô,68,168,11.5,5.5,22.5,1.1,1.4,
-Hủ tiếu Sa Đéc,83,105,8.5,3.2,14.5,1,1.5,
-Hủ tiếu cá,84,98,8.8,2.8,13.5,0.9,1.5,
-Mì hoành thánh,82,108,9.2,3.5,14.8,0.9,1.5,
-Mì xá xíu,81,115,10.5,4.2,15.5,1,1.6,
-Mì trộn xá xíu,68,175,12.5,6.8,21.5,1.1,1.5,
-Mì sườn heo,82,112,10.2,3.8,15.2,1,1.6,
-Mì gà xé,83,105,9.5,3.2,14.5,0.9,1.5,
-Phở bò tái,84,98,9.2,2.8,13.8,0.8,1.5,
-Phở bò viên,85,92,8.5,2.5,13.2,0.8,1.4,
-Phở cuốn,68,138,6.5,2.8,26.5,1.5,1.2,
-Phở áp chảo,62,188,10.5,7.5,24.8,1.2,1.5,
-Phở xào,65,175,11.2,6.8,22.5,1.1,1.4,
-Phở sốt vang,83,108,9.5,3.5,14.8,1,1.6,
-Phở gà quay,85,95,8.5,2.8,13.5,0.8,1.4,
-Phở chua,84,98,7.8,2.5,14.2,1.2,1.5,
-Cơm sườn nướng,64,198,15.2,7.2,22.4,0.9,1.4,
-Cơm gà rán,56,235,16.8,10.5,24.2,1.1,1.6,
-Cơm gà xối mỡ,65,188,13.5,6.8,23.5,0.8,1.3,
-Cơm chiên dương châu,58,215,8.2,8.5,28.5,1.2,1.5,
-Cơm chiên hải sản,62,198,11.5,7.2,24.8,1,1.5,
-Cơm chiên gà,60,205,10.8,7.8,26.5,1.1,1.4,
-Cơm rang thập cẩm,62,195,9.5,7.2,25.2,1,1.4,
-Cơm chiên cá mặn,64,188,12.5,6.5,23.8,0.9,1.6,
-Cơm hến,78,118,8.5,3.2,15.8,1.2,1.8,
-Cơm tấm bì chả,64,192,13.8,6.8,23.5,1,1.5,
-Cơm tấm sườn nướng,62,195,14.8,7.5,22.8,0.9,1.4,
-Cơm tấm sườn bì chả,63,198,14.2,7.8,23.2,1,1.5,
-Cơm gà Hải Nam,66,182,13.8,6.5,22.8,0.8,1.4,
-Cơm gà Phú Yên,67,178,14.2,6.2,22.5,0.9,1.3,
-Cơm gà Tam Kỳ,66,185,13.5,6.8,23.2,0.8,1.4,
-Cơm tay cầm,58,205,11.5,8.2,25.8,1.2,1.6,
-Cơm nguội,62,168,7.8,2.5,34.5,1,0.9,
-Xôi gấc,58,178,6.5,5.8,28.7,1.1,1.4,
-Xôi xéo,55,185,6.8,4.2,32.5,1.2,1.5,
-Xôi lạc,52,205,8.5,6.5,32.8,1.8,1.4,
-Xôi đậu xanh,54,188,7.8,4.8,33.5,1.5,1.4,
-Xôi thịt,58,195,10.5,5.5,30.8,1.2,1.6,
-Xôi gà,60,188,11.2,5.8,29.5,1.1,1.5,
-Xôi chiên phồng,45,245,7.5,10.8,32.5,1.5,1.7,
-Xôi nhồi thịt,56,198,9.8,6.5,31.2,1.3,1.6,
-Xôi lá dứa,58,175,6.2,3.8,33.5,1.2,1.3,
-Xôi ngũ sắc,56,188,7.5,4.5,32.8,1.4,1.5,
-Cháo vịt,86,72,6.8,2.2,9.5,0.6,1.3,
-Cháo ếch,87,68,7.2,1.8,8.8,0.5,1.2,
-Cháo trai,88,62,5.8,1.5,8.5,0.6,1.4,
-Cháo cá,86,75,7.5,2.2,9.2,0.5,1.3,
-Cháo thịt,85,82,7.8,2.8,9.8,0.5,1.4,
-Cháo bầu dục,87,68,6.5,1.8,9.5,0.6,1.3,
-Cháo hầm sâm,84,78,6.8,2.2,10.5,0.7,1.2,
-Cháo dinh dưỡng,83,88,7.5,2.8,11.2,0.8,1.4,
-Cháo trắng,88,58,4.2,0.8,11.5,0.4,0.8,
-Cháo hải sản,86,72,7.2,2.2,9.5,0.6,1.5,
-Bánh canh Nam Phổ,84,95,7.8,2.5,13.8,0.9,1.5,
-Bánh canh Bến Tre,83,102,8.5,3.2,14.2,1,1.6,
-Bánh tráng nướng mắm ruốc,12,348,6.2,7.5,68.8,1.6,2.1,
-Bánh tráng me,10,352,5.8,3.2,78.5,1.8,1.5,
-Bánh tráng tôm,9,358,6.5,4.8,76.8,1.5,1.9,
-Bánh tráng dừa,11,345,5.2,8.5,73.5,2.2,1.6,
-Bánh đa cua Hải Phòng,14,338,5.8,2.8,75.5,1.2,1.7,
-Bánh đa nem,15,333,4,0.2,78.9,0.5,1.4,
-Bánh đa trộn,45,235,7.5,8.8,35.5,1.5,2.2,
-Bánh tôm chiên,38,295,13.5,17.8,24.5,1.3,2.4,
-Bánh rán nhân đậu xanh,35,315,8.5,13.8,43.5,1.5,1.7,
-Bánh rán mặn,42,285,9.8,14.5,32.8,1.2,2.2,
-Bánh chuối chiên,48,235,4.2,8.5,38.5,2.5,1.3,
-Bánh khoai chiên,52,225,3.8,7.8,38.8,2.8,1.5,
-Bánh bao nhân đậu xanh,46,208,6.8,1.2,44.5,1.8,1.2,
-Bánh bao kim sa,42,248,7.5,8.5,38.5,1.2,1.6,
-Bánh bao char siu,44,228,8.2,4.5,42.8,1.1,1.4,
-Bánh bao pizza,46,235,9.5,6.8,40.5,1.3,1.6,
-Bánh bột lọc tôm thịt,66,145,5.5,2.2,28.5,1,1.3,
-Bánh bột lọc nhân tép,68,138,6.2,2.5,26.8,0.9,1.4,
-Bánh bèo Huế,73,115,3.5,1.8,23.2,0.9,1.1,
-Bánh bèo bến tre,74,112,3.2,1.5,22.8,0.8,0.9,
-Bánh nậm Huế,69,135,5.8,3.2,24.5,1.6,1.3,
-Bánh lá Huế,54,185,6.8,4.2,36.5,2.2,1.5,
-Bánh ram ít,58,175,6.5,3.8,33.8,2,1.4,
-Bánh ít lá gai,55,188,5.5,2.8,37.5,2.5,1.2,
-Bánh lọc gói,68,142,5.2,2.2,28.2,1.1,1.3,
-Bánh khoái,62,168,7.5,5.5,26.8,1.5,1.4,
-Bánh xèo miền Trung,64,172,8.2,6.8,23.5,1.3,1.5,
-Bánh xèo miền Tây,61,182,8.8,7.5,24.2,1.4,1.6,
-Bánh khọt Vũng Tàu,59,192,7.5,9.2,24.5,1.1,1.4,
-Bánh khọt miền Tây,60,188,7.8,8.8,24.8,1,1.3,
-Bánh căn Phan Thiết,63,162,6.5,4.2,28.8,1.3,1.4,
-Bánh căn Ninh Thuận,64,158,6.2,3.8,29.2,1.2,1.3,
-Bánh ép,55,195,8.5,6.8,30.5,1.5,1.6,
-Bánh tét,52,192,6.5,3.2,37.2,1.8,1.5,
-Bánh chưng,48,205,7.2,4.5,38.5,2.2,1.6,
-Bánh chưng gù,50,198,7.5,4.2,37.8,2,1.5,
-Bánh ú ống,54,188,6.8,3.5,36.5,2.2,1.4,
-Bánh ú nước tro,56,182,6.2,2.8,37.2,2.5,1.5,
-Cơm lam,58,178,6.8,2.5,35.5,2.8,1.4,
-Cơm cháy,8,368,8.5,5.5,75.8,1.5,1.7,
-Cơm rượu nếp than,62,165,4.5,1.8,34.5,1.2,0.9,
-Bánh pía Sóc Trăng,22,325,8.5,11.5,52.5,2.5,1.8,
-Bánh pía đậu xanh,24,318,9.2,10.8,51.8,2.3,1.9,
-Bánh pía sầu riêng,26,335,8.8,13.5,51.2,2.2,1.8,
-Bánh đậu xanh Hải Dương,8,405,14.8,10.5,63.8,1.5,2.4,
-Bánh đậu xanh Rồng Vàng,9,398,15.2,9.8,64.5,1.4,2.3,
-Bánh in,15,348,7.5,8.8,67.5,1.8,1.9,
-Bánh dừa,18,358,6.8,12.5,61.8,2.5,1.9,
-Bánh bông lan,32,268,8.5,9.8,42.5,0.8,1.4,
-Bánh su kem,48,245,7.8,13.5,28.5,0.6,1.6,
-Bánh tiramisu,52,285,6.5,16.8,28.8,0.5,1.4,
-Bánh gato,28,298,7.2,14.5,38.5,0.7,1.6,
-Bánh mousse,55,235,5.8,13.8,25.5,0.4,1.3,
-Chả lụa,68,152,19.8,6.5,4.2,0.3,1.4,
-Chả bò,64,168,20.5,7.5,4.8,0.4,1.6,
-Chả mực,55,215,22.5,10.8,8.5,0.6,2.8,
-Chả cá thác lác,62,185,19.8,9.5,7.2,0.7,1.8,
-Chả phượng,66,158,18.5,7.8,6.5,0.5,1.5,
-Chả rươi,68,148,17.8,7.2,6.8,0.6,1.6,
-Chả tôm,60,195,21.5,9.8,7.5,0.5,2.2,
-Chả giò rế,48,268,10.8,14.8,25.5,1.3,2.1,
-Nem chạo Yên Mạc,69,148,16.2,6.2,7.2,0.4,1.8,
-Nem công,62,178,17.5,8.8,8.5,0.6,2.1,
-Nem tai,64,168,18.2,7.8,7.5,0.5,1.9,
-Nem nướng Ninh Hòa,54,228,18.8,14.2,8.8,0.6,2.1,
-Nem nướng Nha Trang,52,235,18.5,14.5,8.5,0.6,1.9,
-Nem lụi,58,208,17.8,12.5,9.5,0.7,2.2,
-Nem rán rế,46,278,10.5,15.5,26.8,1.4,2.3,
-Giò thủ,29,553,16,54.3,0,0,0.7,
-Giò bò,48.8,357,13.8,33.5,0,0,3.9,
-Giò sống,72,136,21.5,5.5,0,0,1,
-Giò xá xíu,62,188,17.5,11.8,5.5,0.3,2.1,
-Giò bì,68,158,19.2,7.8,4.5,0.4,1.6,
-Dồi lợn,78.9,114,12.4,7.1,0,0,1.6,
-Dồi huyết,82,95,11.5,4.8,1.2,0,2.4,
-Lạp sườn,22,565,19.5,53.8,2.5,0,3.8,
-Lạp gà,24,548,21.2,51.5,2.8,0,3.5,
-Lạp vịt,23,558,20.5,52.8,2.6,0,3.7,
-Thịt lợn muối,42,358,18.5,31.8,1.5,0,6.2,
-Thịt bò muối,45,325,22.5,26.5,1.2,0,5.8,
-Cá cơm kho,45,248,28.5,13.5,5.8,0.3,7.2,
-Cá kèo kho,48,235,26.8,12.8,6.2,0.4,6.8,
-Cá linh kho,46,242,27.5,13.2,6.5,0.4,7.1,
-Cá lóc kho nghệ,62,208,20.5,12.5,6.8,0.5,2.8,
-Cá rô phi kho,64,195,19.8,11.5,6.5,0.4,2.6,
-Cá nục kho,58,218,21.5,13.2,7.2,0.4,3.2,
-Cá trích kho,56,228,22.8,14.5,7.5,0.3,3.4,
-Cá basa kho,66,188,19.5,10.8,6.2,0.3,2.5,
-Cá diêu hồng kho,64,198,20.2,11.5,6.8,0.4,2.7,
-Cá khô một nắng,28,268,48.5,6.5,3.5,0.2,13.3,
-Cá khô rim,24,285,52.8,7.8,4.2,0.3,14.5,
-Mực khô nướng,22,298,62.5,5.5,3.8,0.2,8.2,
-Mực rim me,35,245,48.5,8.5,12.5,0.6,5.8,
-Tôm khô kho,18,332,72.5,4.8,3.5,0.1,8.5,
-Ruốc tôm chua,16,298,63.8,4.2,5.5,0.2,13.8,
-Mắm cá sặc,52,95,18.5,2.5,1.8,0,25.2,
-Mắm cá linh,54,88,17.8,2.2,2.2,0,23.8,
-Mắm cá lóc,50,102,19.5,2.8,1.5,0,26.2,
-Mắm tôm chua,56,85,16.5,2.5,3.5,0,27.5,
-Mắm ruốc,58,78,15.8,2.2,2.8,0,24.2,
-Mắm nêm,62,72,14.5,1.8,3.2,0,22.5,
-Mắm tép,54,88,17.2,2.5,3.8,0,26.5,
-Mắm ba khía,65,65,13.5,1.5,2.5,0,21.8,
-Mắm cá sắt,48,105,20.5,3.2,1.8,0,28.5,
-Mắm khoai,62,68,14.2,1.8,3.5,0,22.8,
-Thịt bò khô,32.4,239,51,1.6,5.2,0,9.8,
-Thịt trâu khô,36.4,226,50.4,2.7,0,0,10.5,
-Thịt heo khô,28,268,48.5,8.5,6.5,0.3,11.2,
-Thịt gà khô,25,285,52.8,7.8,5.8,0.2,10.8,
-Thịt vịt hun khói,32,248,45.5,10.5,4.5,0.3,9.5,
-Gỏi cuốn tôm thịt,71,128,7.2,2.8,21.8,2,1.1,
-Gỏi cuốn chả lụa,72,125,6.8,2.5,21.5,1.8,0.9,
-Gỏi cuốn bò,70,135,8.5,3.2,21.2,1.9,1.2,
-Gỏi gà xé phay,77,115,13.2,4.2,8.8,2.3,1.3,
-Gỏi xoài khô bò,75,128,12.5,4.5,11.5,2.8,1.5,
-Gỏi củ hủ dừa tôm thịt,76,122,10.8,3.8,12.2,2.5,1.4,
-Gỏi đu đủ bò khô,86,52,3.5,1.2,8.5,3.2,0.8,
-Gỏi gà hoa chuối,78,108,11.5,3.5,9.8,2.8,1.2,
-Gỏi tai heo,74,125,14.8,5.2,7.5,1.8,1.5,
-Gỏi cuốn rau,76,95,4.2,1.5,18.5,3.5,0.8,
-Nem lụi nướng,56,218,19.5,13.5,9.2,0.8,2.2,
-Bò nướng lá lốt,62,215,19.8,13.5,5.2,1.2,1.5,
-Bò nướng sả,64,205,20.5,12.8,5.8,1,1.6,
-Gà nướng mật ong,58,225,21.5,14.2,6.5,0.5,1.8,
-Gà nướng muối ớt,62,198,22.8,10.5,4.8,0.6,1.7,
-Sườn nướng BBQ,56,248,18.8,17.5,7.2,0.5,2.1,
-Sườn nướng mật ong,58,242,18.5,16.8,7.8,0.5,1.9,
-Cá lóc nướng trui,68,172,21.8,8.5,2.2,0.3,1.6,
-Cá thu nướng,66,178,22.5,9.2,2.5,0.3,1.7,
-Mực nướng sa tế,64,188,20.5,10.8,5.5,0.4,2.1,
-Tôm nướng muối ớt,72,125,22.5,3.5,2.8,0.2,2.5,
-Chân gà nướng mật ong,58,215,18.5,13.8,8.5,0.3,2.4,
-Cánh gà nướng,56,235,19.8,16.5,6.5,0.4,2.1,
-Sườn cây nướng,54,255,17.5,19.5,7.8,0.5,2.2,
-Ba chỉ cuộn nấm kim châm,62,228,16.8,16.5,8.5,1.2,1.8,
-Bạch tuộc nướng,68,165,24.5,6.5,4.2,0.3,2.2,
-Nghêu nướng mỡ hành,75,138,16.5,6.8,5.5,0.4,2.8,
-Sò nướng mỡ hành,74,142,15.8,7.2,5.8,0.4,2.5,
-Hàu nướng phô mai,72,158,14.5,9.5,7.2,0.3,2.8,
-Hàu nướng mỡ hành,74,148,15.2,8.5,6.5,0.3,2.6,
-Lòng gà xào,72,142,18.5,6.8,4.5,0.6,1.8,
-Lòng lợn xào dưa,74,135,16.8,6.2,5.8,1.2,1.9,
-Dồi xào dưa,76,128,15.5,5.8,6.5,1.1,1.8,
-Gan gà xào hành tây,73,145,19.5,7.2,5.2,0.8,1.7,
-Gan lợn xào mè,72,152,20.2,7.8,5.5,0.6,1.9,
-Bò xào cần tây,70,168,20.5,8.5,6.2,1.5,1.5,
-Bò xào nấm,72,158,19.8,7.8,6.8,1.2,1.4,
-Bò xào măng,74,148,19.2,7.2,7.5,1.8,1.5,
-Bò xào bông cải xanh,73,152,20.5,7.5,6.5,1.6,1.4,
-Thịt gà xào sả ớt,68,175,21.5,8.8,5.5,0.8,1.6,
-Gà xào gung,70,168,22.2,8.2,5.2,0.7,1.5,
-Gà xào hạt điều,66,195,21.8,11.5,6.5,1.2,1.7,
-Thịt bò xào đậu que,72,162,19.5,8.2,7.8,1.5,1.5,
-Thịt lợn xào khổ qua,74,155,18.8,7.8,7.2,1.6,1.6,
-Thịt lợn xào chua ngọt,68,185,17.5,9.5,11.5,1.2,1.8,
-Thịt lợn xào măng,73,158,18.2,8.2,7.8,1.8,1.6,
-Thịt ba chỉ xào kim chi,66,205,16.5,14.8,9.5,1.5,2.2,
-Tôm xào thập cẩm,76,142,18.5,6.5,7.8,1.5,1.9,
-Tôm xào bông cải,78,135,19.2,5.8,7.2,1.6,1.8,
-Mực xào chua ngọt,72,168,18.8,8.5,9.5,1.2,1.8,
-Cá xào cà chua,74,155,19.5,7.5,7.8,1.4,1.9,
-Cá rô phi xào xả ớt,70,172,20.5,8.8,6.5,1.1,1.8,
-Hải sản xào xà lách,78,128,17.5,5.5,8.2,2.2,1.7,
-Nghêu xào me,80,115,14.5,4.2,8.5,1.5,2.5,
-Sò huyết xào hành,79,122,15.2,4.8,8.2,1.4,2.4,
-Ốc xào dừa,76,145,13.5,7.8,9.5,1.2,2.8,
-Bào ngư xào nấm,74,158,20.5,7.5,7.2,1.5,2.2,
-Đậu hũ xào rau củ,82,98,10.5,4.8,9.5,2.2,1.2,
-Đậu hũ xào sả ớt,80,108,11.2,5.5,9.2,2,1.3,
-Đậu hũ non xào tôm,78,125,12.5,6.2,9.8,1.8,1.5,
-Miến xào cua,78,125,8.5,4.5,17.5,1.5,1.8,
-Miến xào lươn,76,138,10.5,5.5,16.8,1.4,1.9,
-Miến xào hải sản,77,132,9.8,5.2,17.2,1.5,1.8,
-Mì xào bò,66,178,13.5,7.5,21.5,1.3,1.6,
-Mì xào hải sản,68,172,12.8,7.2,22.2,1.4,1.7,
-Hủ tiếu xào bò,66,175,13.2,7.8,21.8,1.3,1.6,
-Bún xào,70,155,10.5,6.2,20.5,1.5,1.5,
-Phở xào bò,68,168,12.5,7.5,21.2,1.2,1.5,
-Súp bào ngư,88,68,7.5,2.5,7.8,0.6,1.8,
-Súp hải sản,89,62,6.8,2.2,7.5,0.7,1.6,
-Súp gà,88,65,7.2,2.5,7.2,0.6,1.5,
-Súp bí đỏ,90,52,3.5,1.5,8.5,1.8,0.8,
-Súp nấm,91,48,4.2,1.2,7.8,2.2,0.9,
-Súp miso,89,48,4.2,1.5,5.8,0.8,1.2,
-Canh chua tôm,91,38,4.2,1.2,5.2,1.5,0.9,
-Canh chua cá,92,35,3.8,1,5.5,1.6,0.8,
-Canh ngao nấu chua,90,42,4.5,1.5,5.8,1.4,1.2,
-Canh hến nấu chua,91,38,3.8,1.2,5.5,1.5,1.4,
-Canh cá nấu dưa chua,89,45,5.2,1.5,5.2,1.2,1.6,
-Canh ghẹ nấu mướp,90,42,4.8,1.2,5.5,1.8,1.3,
-Canh rau đay nấu tôm,92,32,3.5,0.8,4.8,2.2,0.9,
-Canh cải chua nấu cá,91,38,4.2,1,5.2,1.8,1.1,
-Canh rau muống nấu tôm,93,28,2.8,0.6,3.5,1.2,0.7,
-Canh rau ngót nấu tôm,92,32,3.2,0.8,4.2,1.8,0.8,
-Canh hoa chuối nấu xương,90,45,4.8,1.5,5.8,2.5,1.2,
-Canh măng tây nấu cua,91,38,4.5,1.2,4.8,1.8,1.1,
-Canh mồng tơi nấu tôm,93,28,2.8,0.6,3.8,1.5,0.7,
-Canh bí đao nấu tôm,91,35,3.2,0.8,5.2,1.8,0.8,
-Canh khoai môn nấu tôm,88,52,4.5,1.5,7.8,1.5,1.2,
-Canh chua lá giang,92,32,3.5,0.8,4.5,1.6,0.9,
-Lẩu bò,87,75,8.5,3.2,8.5,1.8,1.5,
-Lẩu dê,86,82,9.2,3.5,8.2,1.7,1.6,
-Lẩu cá kèo,88,68,7.8,2.8,8.8,1.6,1.8,
-Lẩu cá lăng,87,72,8.2,3.2,8.5,1.5,1.7,
-Lẩu nấm,89,58,5.5,2.2,8.5,2.8,1.2,
-Lẩu gà lá é,87,72,7.2,2.8,8.2,1.7,1.3,
-Lẩu hải sản,89,65,6.8,2.2,7.5,1.5,1.5,
-Lẩu tôm chua cay,88,68,7.5,2.5,8.2,1.6,1.6,
-Lẩu riêu cua,88,72,7.8,2.8,8.8,1.5,1.8,
-Lẩu nấm kim chi,87,75,6.5,3.2,9.5,2.2,1.5,
-Lẩu Thái tôm,88,68,7.2,2.5,8.5,1.8,1.4,
-Bún đậu mắm tôm,72,158,12.8,6.5,18.5,1.2,1.7,
-Miến lươn,78,128,10.5,4.5,16.8,1.5,1.9,
-Miến gà,79,122,9.8,4.2,16.5,1.4,1.7,
-Miến ngan,78,128,10.8,4.8,16.2,1.5,1.8,
-Miến măng vịt,79,125,10.2,4.5,16.8,1.6,1.8,
-Miến gà tiềm thuốc bắc,80,118,9.5,4.2,16.2,1.4,1.6,
-Hủ tiếu sate,82,112,9.5,4.2,15.2,1.2,1.8,
-Hủ tiếu bò kho,81,125,11.5,5.2,16.5,1.1,1.9,
-Bánh canh ghẹ,84,95,8.8,3.2,13.2,0.9,1.8,
-Bánh canh bột gạo,85,88,7.5,2.5,13.8,0.8,1.4,
-Bánh ướt thịt nướng,70,142,9.5,4.5,21.8,1.2,1.4,
-Bánh cuốn thịt,69,135,8.8,4.2,22.5,1.1,1.3,
-Bánh cuốn tôm,70,132,8.5,3.8,22.8,1.2,1.2,
-Bánh uốt chả quế,71,138,9.2,4.5,21.5,1,1.4,
-Chè đậu đỏ,77,122,5.2,2.2,23.8,2.5,0.9,
-Chè đậu trắng,76,125,5.5,2.5,23.5,2.6,0.8,
-Chè khoai môn,74,135,4.8,3.2,25.5,1.8,1.1,
-Chè khoai dẻo,75,132,4.5,2.8,25.8,1.9,1,
-Chè bắp,78,115,4.2,2.2,22.5,2.2,0.8,
-Chè chuối,76,128,3.8,2.5,24.8,2.5,0.9,
-Chè trôi nước,72,145,4.5,3.5,27.5,1.5,1,
-Chè đậu xanh nước cốt dừa,75,138,5.2,4.8,24.2,2.2,1.1,
-Chè hạt é,76,132,5.8,3.2,24.5,2.8,1,
-Chè long nhãn,80,105,3.5,1.8,21.8,1.5,0.8,
-Chè bưởi hạt sen,79,112,3.8,2.2,22.5,1.8,0.9,
-Chè thạch rau câu,85,78,2.5,1.2,16.8,2.5,0.6,
-Chè suông sâm,82,95,3.2,1.5,19.5,2.2,0.7,
-Chè vải,81,98,3.5,1.8,19.8,1.8,0.8,
+Cốc tai (cồn 13 g),71,63,0,0,15.7,0,0.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0jqtQgtZe6jalkl2QEwwxYQYlLOcpnZ7P9cyoOyWAG2NfuDo&s
+Coca cola,89.4,42,0,0,10.4,0,0.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3B8goUjc2Xl6xJz4MqSl1g78c6qcZZsVp3Ta2VdJSmrtZVSTK&s
+Nước cam tươi,94.1,23,0.7,0.2,4.5,0.2,0.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlmB3aQpxFmB7tbn7AMqOJcdklf5xlDuZBM2d-cQHlo7UN0Sw&s
+Nước dừa non tươi,94.4,21,0.4,0,4.8,0,0.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe7Vy1i-GfZQoX5mbVQSvTHxgS59uPGJLGDmf39Feog5YHRe3F&s
+Nước đp cà chua,94.6,19,0.8,0.6,2.6,0.4,1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTS27Yhx_DlvnkvjX99dxIuNZh4Eh8qls1Arl61h4lvtPH5wA&s
+Nước khoáng,99.7,0,0,0,0,0,0.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGJHZJP2O6Ap5jp4MPQE6HPXEwcZSo-t2mptoQeSHwokw_TYms&s
+Nước quít tươi,93.8,24,0.4,0.2,5.1,0.2,0.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiBZsRflsORipa5tn86W7fCVwb_ov1stwR2T4zahYzKzAW1MoW&s
+"Rựu cam, chanh (cồn 24,2 g)",75.8,0,0,0,0,0,17,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgHVrXtUbE17K0tfIvzmnsyQPE-jIN2e41Y8DO0um7BR4ViVs&s
+Rựu nếp (80g/ 24 ml) (cồn 5 g),52.4,167,4,0,37.7,0.2,0.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFyuGmTR7gAsN9xJrvUQuZoPrbckY5-lHSneXxcuAUg59gS3Ov&s
+Rựu trắng (cồn 39 g),61,273,0,0,0,0,17,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjbyqafagzGi8MpYy6LhVf1SITy2AYy6DHEBNeZT-U2AI7u28K&s
+"Rựu vang đỏ (cồn 9,5 g)",88,9,0.2,0,2,0,0.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA31ffQVsyic97ehAenotrt4HR6pxoQ6STV4qECt_O1VN3OKu4&s
+"Rựu vang trắng (cồn 9,5 g)",89.9,1,0.1,0,0.2,0,0.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe80V24rx6fEVuWCVK-C83UE8bE3hL29di9lwyVig4jpVXMSk&s
+Rựu vang trắng ngọt (cồn 10.2 g),83.4,24,0.2,0,5.9,0,0.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkEMc1FNHtrOUAswy1aWXoDYlnpX7_AoiJR0oRMa8SInJw2BAn&s
+"Rựu Whisky (cồn 35,2 g)",64.7,0,0,0,0,0,0.1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcU9AJtd0wTHBmDK6JugSYbV960xRxN-0dJW45J1Fjhj6YXpQ&s
+Bánh mì pate,48,235,9.5,9.8,28.5,1.2,2.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdMa7XyHNiCzbspQkXodgepgr4z2-z57vdS1nOMVBR52e8xLlV&s
+Bánh bột chiên,52,215,6.8,11.5,24.5,1.5,1.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo15Qp88vP1cwtCLIpSk6HstieZWCfZPhRq3i4SqOc3Eiiv8GO&s
+Bánh cống,58,185,5.5,7.8,25.8,1.8,1.1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv8kJMMnhYH8t1nvoGNKutLikcpkHIoFmGeamjM5cMHBPDJnY&s
+Bánh khúc,48,205,6.2,4.8,38.5,2.2,1.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhgVQjhPs9PIjje8SvrpX-lQC5_j-3D-ysNBcUnOsAiBXcqh5k&s
+Xôi vò,52,195,7.5,5.5,33.8,1.8,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTpQmmu5_cBq8Q_Ycx7nspBDX3LrlH-WwzpKSySjlamUv0E57g&s
+Bún ốc,83,98,7.2,2.8,14.5,1.2,1.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY2rhtM4qvPk-gCOo7NxfR-gnus6SIUGaxkEuclikGyFNMKV_h&s
+Mì vịt tiềm,84,92,8.5,2.5,12.8,0.9,1.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8XyhubDu6USqMR1M-FDf-Odhgz9R4meWL21QyJKntS40Lk0qn&s
+Bánh canh cua,85,88,6.8,2.2,13.5,0.8,1.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcbADgYdcbfHXqRlhPRdbZ5_GtYKyQrejkGQliIWG84tv1OClU&s
+Hủ tiếu gõ,82,105,8.2,3.2,14.8,1.1,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPqMhoIJZxEzxJ7ILASEv6RsJb8hT8A-esHW8tJXx7SKTpVGk&s
+Cơm cá kho,65,185,16.5,7.2,21.5,0.7,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPqMhoIJZxEzxJ7ILASEv6RsJb8hT8A-esHW8tJXx7SKTpVGk&s
+Cơm sườn bì chả,64,192,13.8,6.8,23.5,1,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP-A5cGpUv1aBq6XroguMmQRqhJMX6GWsML4eif-H8OFkqKOPf&s
+Cơm niêu Singapore,62,198,11.5,8.5,24.2,1.2,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKSSUz6b1UydtlC98_8HE0fLInnFUB0J0a08dAUqn5_TDHWls&s
+Thịt ba chỉ kho,58,255,16.8,18.5,8.2,0.4,2.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmQAHlUKEnpX0kiWAEHmix3Teb0T0iidMs6meIFoby6DqglEHb&s
+Cá kho tiêu,64,205,19.5,11.5,6.8,0.3,2.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqZogNLGF3OL8aZOzZM_JNByPXC8qleBV7gIlILDIeP4BjrcA&s
+Gà kho gừng,66,185,20.5,9.8,5.5,0.5,1.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd57I8MyBMxL8SeD5ob4xJPmgX9OdwKR-XyjJRFb7x2DwFK0A&s
+Thịt rim,62,225,17.5,14.8,8.5,0.6,2.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS03omUtRv53INqiFb-4qtV3jQr44q0emJBo76QIIdgDRSYOzwO&s
+Cá rô kho tộ,65,195,18.8,11.2,6.2,0.4,2.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1fs7r7SLRPbk_PB-udO8g1BT6_2N_kcjwjinL6Rw8s-BmQIHB&s
+Chả cá Hà Nội,64,195,19.5,10.5,7.5,0.8,1.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFwEtjGSy4NRsrhKQ0hNK2p48MtU8ZcNYak3-9FoLubwpTA-w&s
+Nem cua bể,52,245,11.8,13.5,23.8,1.2,2.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThJNBvgAl1MXfEaw-m9GxAxV0Fv3ZT3UbMYEip7fGYKCkPAog&s
+Chạo tôm,58,218,18.5,11.8,10.5,0.9,2.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThJNBvgAl1MXfEaw-m9GxAxV0Fv3ZT3UbMYEip7fGYKCkPAog&s
+Gà rán,48,268,18.5,15.8,16.5,1.1,1.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTImhCV7GzwWvYXXaG-CLkQb2Ik9TCCm_mZU4S_6Ssg9xq_6b-9&s
+Canh chua cá lóc,91,42,4.5,1.2,5.5,1.6,0.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7kppGa9wiHo3gIOm1elYVq3xb7xURiBG1V-JZGDTDtTI-6dsT&s
+Súp cua,89,55,5.8,1.8,6.2,0.8,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKAhk_79jJyZOB9PAU-3pfjUK0X67LhNT351WpjDew2CEzlprk&s
+Canh măng,92,35,2.8,0.8,5.8,2.2,0.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxBWgZ6TAyjTffldbD7bycM2l_tXI4ccU_DAYws-cK0AwxTbc&s
+Chè đậu xanh,78,115,4.5,1.8,22.5,2.5,0.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnQsyInhrxUfSOUyP_1sH_V8EDhGfoQokaE9nXuzm1gg0tdEs&s
+Chè khúc bạch,75,128,3.2,2.5,24.8,1.2,0.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLx393VNUTXHYYf1veDuWkd2EDadFI2J-LpEKyAxjyki5m1m0&s
+Chè sương sa hột lựu,80,105,2.8,1.5,21.8,1.8,0.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTCLWo9a9Rllqlr6spboZWP3lXUwRfXfOAGEqg9awDImICeQ8&s
+Chè hạt sen,76,122,4.2,2.2,23.5,1.5,0.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyeffHtfiscNBV5ypWhy52lDCTS4Sx8mh0dd8oI7OZ0vciiZB1&s
+Kem flan,70,145,5.2,6.5,19.8,0.3,0.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9N2TNP063UBSASn5ZpA-zQsM9E6z-Q3HkxMOlWimp90VT2POK&s
+Chè đậu đen,77,118,5.8,2.2,22.2,2.8,0.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYbpbqZ0jZttM_5MTLV6PdnFVJdfERtYSB1_n6hYH-BM-aPLJg&s
+Bánh cuốn thanh trì,70,125,4.2,1.5,24.8,0.7,0.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ_tFcfnYBybp0Ulp7sa85KmrYPN62ZxM6JT2y-iKjGXoRO2Q&s
+Nem rán Hải Phòng,50,265,9.5,13.8,26.5,1.3,1.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL3cB_pgZBxf_3ojom597LUPr4V1-rI6ukarF0UFKI2NSqF0lg&s
+Bún riêu cua,84,98,7.8,2.5,13.5,1.1,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3ngpXxG1G3MvBNmItlyeG5JdduNK2NPYg_XpKotB-Ez3zIk0&s
+Bún cá Kiên Giang,82,108,8.8,3.2,14.8,1.2,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBfKnx4T3c9FoLc2yWiVQYSz9WytUmZkM1Y9cC7pvwfNU6Ys11&s
+Bánh tôm Hồ Tây,42,285,12.5,16.8,25.5,1.5,2.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJpjoJ2QUqNJY-j9x5aw4tuQvIGm4BJQN3Vq_fZZSsR1uT7z8P&s
+Bún măng vịt,83,105,9.2,3.5,14.2,1.3,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg8TYOf1ILeqchfC4dUEGn9kkbbID2yAK-iVNsxZHriRpkc0U&s
+Cháo lươn,86,75,6.5,2.2,9.8,0.6,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg8TYOf1ILeqchfC4dUEGn9kkbbID2yAK-iVNsxZHriRpkc0U&s
+Cháo sườn,85,82,7.2,2.8,10.5,0.5,1.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzRdI7U7MDq_wptVAgfx5gDB2NdiSKW9_NRjWyXzJU2ITQ3xQ&s
+Bánh tráng cuốn thịt heo,68,148,10.5,4.8,20.5,1.8,1.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzRdI7U7MDq_wptVAgfx5gDB2NdiSKW9_NRjWyXzJU2ITQ3xQ&s
+Mì Quảng gà,78,125,10.2,3.5,17.2,1.3,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZrOmD27rnDhqwI9vOtWuMxCQBQN3--Hm8HTv_dGejuR4JpMwH&s
+Cao lầu Hội An,75,145,10.5,4.5,19.2,1.3,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4LoN9mHeQyzNDO0EvMAcmJl41LXLWRzxLW93it3wPkUZeN0Fs&s
+Bánh tráng phơi sương,8,355,5.2,2.8,78.5,1.2,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1ES56O8b_LacbhO93SZWAQ7kPslzRFMY4JmMwxjY_8vPmXzU&s
+Bánh ướt lòng gà,72,115,6.8,2.5,20.8,0.8,1.1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZx4lytSnRJmzlhjjkxcVbjg_wZtcy3U7KmYjQPHE830KIIj0&s
+Bánh hỏi,65,142,5.5,1.8,28.5,0.9,1.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSTZViGiUXGgMuqqGUoX8jIXLXaqGuthKbCoD-cIf3LyEEqxI&s
+Bò bía,70,135,8.5,3.8,20.5,2.2,1.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSTZViGiUXGgMuqqGUoX8jIXLXaqGuthKbCoD-cIf3LyEEqxI&s
+Bánh đúc tôm chấm,82,68,3.8,1.5,12.5,0.6,0.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSrWs9k_nZLBPbfUH7A7XS_1LDHPJTWr5kPY-pcYmIw4wlmJQ&s
+Bánh ú tro,55,178,5.2,2.2,36.8,2.5,1.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLajF9oOW6YdRArQ5lvxF8cNyzu8EBgMsDbAn7BambeLB6S0I&s
+Bánh lá mơ,52,188,6.5,3.5,36.2,2.2,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-eNAUH49i4TDXrk7p2TLwP-GHXJylyGvTiS8MlXR3k61UacM&s
+Cơm rượu,65,152,3.8,1.2,32.5,0.8,0.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQocoSmuTetP5P8kdwmmdwcWFg-Q_ggZEUHMpe3LLxocyVVpmnx&s
+Bánh dày,52,195,6.8,2.8,38.5,1.8,1.1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG5EBNKo5HWsRMqeycJt9dPecQCq9ruNFH-ZdsvHIMHB5ZxqV_&s
+Bánh giò,68,145,8.5,4.5,22.5,1.2,1.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAtuBdL_R9HAAdVbvGdHNYggD5OwwLN_-ICxH2CBRtFjSC26E&s
+Bún suông,84,95,7.5,2.5,13.8,1.1,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKUGiFIKs7mn2N0sgG7rkfHaEx_CcCl1pznyuN5JLYE2TPq8r5&s
+Bún bò giò heo,81,118,10.5,4.2,14.5,1.2,1.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmBHAXyMLMU42XLf6eA3Vafr6LMCl7bDQnF_umWfPj-1cIZpk&s
+Bún nước lèo,83,102,8.2,3.2,14.2,1.3,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZkpLwxUjv5hD8QIEFdVJvZXEOiKaITeNYafceLkpTpdTs4pc&s
+Bún kèn,82,108,8.8,3.5,14.8,1.2,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl8STqI-Y0l6MwXOGznRzdj2557wkd3_-G9RYGZnaOx8DgK9c&s
+Bún bung,84,98,7.8,2.8,13.8,1.1,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaUJOgdrOWJTcKhb2N692XXPPMSnzOpMLrC39qmrVHNcFd9Mh5&s
+Bún măm nêm,81,112,9.2,3.5,15.2,1.4,1.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaUJOgdrOWJTcKhb2N692XXPPMSnzOpMLrC39qmrVHNcFd9Mh5&s
+Bún sứa,85,92,7.2,2.2,13.5,1.2,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9u1xgG7Beceage35b4joVFPN9_MnY6tRNG4Tz9s4ozBnihfU&s
+Bún quậy Phú Quốc,82,105,8.5,3.2,14.5,1.1,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfKve7HtonWD9vpxdGBry085hLV4dT5R76IxtOyiDSGDl1SBY&s
+Bún ngan,83,102,8.8,3.5,13.8,1.2,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQLrBAME5aOftjFD48DgJplJVetjkyE3lKGLXTzK7cY1iguDVL&s
+Bún cá sứa,84,95,7.5,2.5,13.5,1.1,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfKve7HtonWD9vpxdGBry085hLV4dT5R76IxtOyiDSGDl1SBY&s
+Bánh canh chả cá,84,98,8.2,2.8,13.8,0.9,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMb5dE2YDD7l_XuirkMseC5V6YAJiVwdbb4wRPOJRFXEUl0gs&s
+Bánh canh Trảng Bàng,83,105,8.5,3.2,14.5,1,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScXak71oXA9hAq2FBhK7O8YIHKnxEYXUHd-v5UdRRSi1lWbdHq&s
+Bánh canh bột lọc,85,92,6.8,2.2,13.8,0.8,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5-j144JxZxb5BKY1M9EmXXb_6KFfSv9tqkDbTL6ndhos2aBWY&s
+Bánh canh giò heo,82,108,9.2,3.5,14.2,1,1.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6uSXq7mFbAwz8pILWkQm4vT_3qeGPS8UFlUwfYKfvyOLoWRwF&s
+Bánh canh cá lóc,84,98,8.5,2.8,13.5,0.9,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-zB5eFg4_A-8IFv0jaC_729Uhgka686QdihTGg8fEXdJLGAk&s
+Hủ tiếu Mỹ Tho,83,102,8.2,2.8,14.2,0.9,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUtdNXw4CLataV_D0aDWiBAUSSGV9wyrnMzoRF_tYSTFiIjbIK&s
+Hủ tiếu khô,68,168,11.5,5.5,22.5,1.1,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWa3ShgSDHSb8Sz6VXC_5tO9J9LEV8A69UpoYQZTTmZ29ojMky&s
+Hủ tiếu Sa Đéc,83,105,8.5,3.2,14.5,1,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBeDnPRgqryCoi4IMfZul947NF00OKshRIF5vJARBAbGHodK7h&s
+Hủ tiếu cá,84,98,8.8,2.8,13.5,0.9,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP1OGicc_Gcf7J9HntQNFBpxfH_o-Owvwto-qoCaKOe4UHtp8O&s
+Mì hoành thánh,82,108,9.2,3.5,14.8,0.9,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfDIvNZoAMdw3jCq4E3JDeFG0uttvVSytzkw575VISkdZjovM&s
+Mì xá xíu,81,115,10.5,4.2,15.5,1,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0id2h65QJxAukDLd6YM4vPIsf97zgG0VJxQeBn4yurXXIBgdN&s
+Mì trộn xá xíu,68,175,12.5,6.8,21.5,1.1,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0id2h65QJxAukDLd6YM4vPIsf97zgG0VJxQeBn4yurXXIBgdN&s
+Mì sườn heo,82,112,10.2,3.8,15.2,1,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSnaVCqI4_EXTWvPgyIA-sMS3eNo6y0u1hYZQrsMAaLy-yZ5o1&s
+Mì gà xé,83,105,9.5,3.2,14.5,0.9,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlEs29cZxCZX7cwZQbwuKH4zcjEPJHWs_JTMW0RrCr_4B5RNIa&s
+Phở bò tái,84,98,9.2,2.8,13.8,0.8,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQEVKZMfpr42DRitYxB8YhKPlu8XQJ7srs1PMVVm4sw6H-O5o&s
+Phở bò viên,85,92,8.5,2.5,13.2,0.8,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTkgRi6JBLR9uLPAcDwp8CQoCcVvlfx_cCCyfLahUY3jpe2cY&s
+Phở cuốn,68,138,6.5,2.8,26.5,1.5,1.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyo4enn1azYPRRoS20Oh9Xcj3bbIRdScNuudXIHUOiG0pOf1c&s
+Phở áp chảo,62,188,10.5,7.5,24.8,1.2,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpsYz-VDglmrZjVtW1dvLt67VPqt-6GFFA_05i42v6xSv7PFM&s
+Phở xào,65,175,11.2,6.8,22.5,1.1,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWepDcFw5SdG81Q5o65VNAEAnIovGYTBuQi0KcsoGOO-mkV5g&s
+Phở sốt vang,83,108,9.5,3.5,14.8,1,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBtUMn262pJ8fshjNDXEP98uJ08oQMd8Kwp3zvO-8hiloAnDo&s
+Phở gà quay,85,95,8.5,2.8,13.5,0.8,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQZITx2wGUWaP5DFq07N50Sd2CQvFO0274_MkWBfbTDlwXSkM&s
+Phở chua,84,98,7.8,2.5,14.2,1.2,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQZITx2wGUWaP5DFq07N50Sd2CQvFO0274_MkWBfbTDlwXSkM&s
+Cơm sườn nướng,64,198,15.2,7.2,22.4,0.9,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfs9Aas29_jRBoPlmq8pl7X-nSZLcgRGVQIvxep5RqqQZMMnnY&s
+Cơm gà rán,56,235,16.8,10.5,24.2,1.1,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmjNl0wLMrYbEzwFDE4seFQh1daqZbpPaiodUocHsaywOah-2a&s
+Cơm gà xối mỡ,65,188,13.5,6.8,23.5,0.8,1.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvGp7EBr_H3m8iLwUGLxuEKYddUrx5fJkqwYdc08T0AnURqs8&s
+Cơm chiên dương châu,58,215,8.2,8.5,28.5,1.2,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnPakm4RmWEcN5Gv-Ke_kxS-Ta8gCkRwUl9OcRhhwNOuewjtXd&s
+Cơm chiên hải sản,62,198,11.5,7.2,24.8,1,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCkzx6bEmsGQm9a3eW2RDlPArVGFV3GsdHAV4kcAw1-nNExVfD&s
+Cơm chiên gà,60,205,10.8,7.8,26.5,1.1,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTQp2m1UNF8ftaLkI7Dzd2Dc1e1oYLqX7UrpVyV290KXi5zGgv&s
+Cơm rang thập cẩm,62,195,9.5,7.2,25.2,1,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfX5GS97NMa_uRLh0UuDMkQKrTq2NZptD8abBCkBBY66xD_XI&s
+Cơm chiên cá mặn,64,188,12.5,6.5,23.8,0.9,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSabveegwtmxbE5TpIKQK7wh04PQnqoKmSz_HhhLW2fUo06a8k&s
+Cơm hến,78,118,8.5,3.2,15.8,1.2,1.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTRtX9OPCUq4WhnHV4okMU8bUHXcYvr0x-fWDhsVrd2u8LgJFx&s
+Cơm tấm bì chả,64,192,13.8,6.8,23.5,1,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP-A5cGpUv1aBq6XroguMmQRqhJMX6GWsML4eif-H8OFkqKOPf&s
+Cơm tấm sườn nướng,62,195,14.8,7.5,22.8,0.9,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS24STJ8UNHe59a-pdOZ-olYhtU-WPUjLmEcPlyGdLDz2Geq73H&s
+Cơm tấm sườn bì chả,63,198,14.2,7.8,23.2,1,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh-J2cQU3s9CScOhH4jAx-cQYpAhYQi9QL_NDzMl8UZnwPCJA&s
+Cơm gà Hải Nam,66,182,13.8,6.5,22.8,0.8,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVzXGpxTwigYc4-a99GWyf-J5i8HKO9YxOG0FvFXa53kU_Lzs&s
+Cơm gà Phú Yên,67,178,14.2,6.2,22.5,0.9,1.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLh89ThYOubgRm8fK-P3HDLt8QAKwl8I8XnLA3OvTE1jkUITR6&s
+Cơm gà Tam Kỳ,66,185,13.5,6.8,23.2,0.8,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrRF-vrUIpUa9jeInYfekg2_G0ofmdANZJuNp9CS5Be5wW43-_&s
+Cơm tay cầm,58,205,11.5,8.2,25.8,1.2,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSem3cMZSKvV54zhpp8_2r1uxRz9FucDGgDuC1ifM9yFsIEQ&s
+Cơm nguội,62,168,7.8,2.5,34.5,1,0.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv4koyEMMeyUx9B9DWYQbVT2r5Y7bSUKcyo6QWog_vOtcaTeUm&s
+Xôi gấc,58,178,6.5,5.8,28.7,1.1,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu9mqbrMCGOMG2AXqNyI73cP-uiRvw79Nt9FoeRY-CZAVc2dU&s
+Xôi xéo,55,185,6.8,4.2,32.5,1.2,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrKDQybTUUEXcfpEogTLuU3OOKFuqBE_00T7_ut8u9n9_xvZsR&s
+Xôi lạc,52,205,8.5,6.5,32.8,1.8,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThoUoeK9d9ZpLF9SY6cvF5nIj46DRMrpvHkehR9ml8zPhZdii2&s
+Xôi đậu xanh,54,188,7.8,4.8,33.5,1.5,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs1JISEeSib4GeGEx4_gMQcIzIbsVON4p-3lD7XxmC9Ptty-Di&s
+Xôi thịt,58,195,10.5,5.5,30.8,1.2,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsTRMvTRUUIbnTn6geoo5x1kOXkuTTUBrBfv-eSJ3wTjjEO0Hi&s
+Xôi gà,60,188,11.2,5.8,29.5,1.1,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnhKuUreyIF1vCybgcmSnWwBWVnsSZNc9QTEn3upW5hTqYW1Q&s
+Xôi chiên phồng,45,245,7.5,10.8,32.5,1.5,1.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyqFh7rW7SmHbYfELQf6QDhdZn14-lXiDsj2IL3-h2yvhe-BQ&s
+Xôi nhồi thịt,56,198,9.8,6.5,31.2,1.3,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwpOTpgAlRLezYOLh31kNlIE-sKfinis8zzj0_r9omLhmWM0jL&s
+Xôi lá dứa,58,175,6.2,3.8,33.5,1.2,1.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwpOTpgAlRLezYOLh31kNlIE-sKfinis8zzj0_r9omLhmWM0jL&s
+Xôi ngũ sắc,56,188,7.5,4.5,32.8,1.4,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXzgY7kGSQOH4IERbKgs8iUQl_ugHE7gOawPF0JIy8uOkl4LU&s
+Cháo vịt,86,72,6.8,2.2,9.5,0.6,1.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRERofhglRsIHv5eafo-Ys8CmgPFbIuZ8Cwsd7NB5KI6wk3b0M&s
+Cháo ếch,87,68,7.2,1.8,8.8,0.5,1.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDSqFDnmW0OjJU7X9dlixypSG77MRVbLAvZh5f9pbLgqap1bEp&s
+Cháo trai,88,62,5.8,1.5,8.5,0.6,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0OQuUFGGyxawHxtsBIFGWlQANkYFfejOg7p6byOl4Xx98UoM&s
+Cháo cá,86,75,7.5,2.2,9.2,0.5,1.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW070iq54DL2y23GYpNkGlRX6K6YyrNDmKuYzYGWJ_SbKVTY3w&s
+Cháo thịt,85,82,7.8,2.8,9.8,0.5,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs_lZ7rQPPss_DYdkuw25F7NKirjrd8VO5TPtfxqPKv2wKhMea&s
+Cháo bầu dục,87,68,6.5,1.8,9.5,0.6,1.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHU6478WMkLGRQZMjcq_zVAV5YF5kZSQI8dRT8AK10VglHE6Wt&s
+Cháo hầm sâm,84,78,6.8,2.2,10.5,0.7,1.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV7W4Mr4kOKJnDx7yQB1qGe2yEw4jSHXEtisinr2_3JLETTE1W&s
+Cháo dinh dưỡng,83,88,7.5,2.8,11.2,0.8,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSamuSNu18LJeCiJT4PatzvDPti4lVxxxTF4TDhAM5DejaAc0Mq&s
+Cháo trắng,88,58,4.2,0.8,11.5,0.4,0.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrTb-3ePgJ3RYpcCP8F825IVnBmETfxVEIKpgzMOjtlsa-BW7n&s
+Cháo hải sản,86,72,7.2,2.2,9.5,0.6,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQErev9TJdCzVN7xnbZ9bgYp4mF1dabF9w1tfFmJWj2l8t-X8k&s
+Bánh canh Nam Phổ,84,95,7.8,2.5,13.8,0.9,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3n-FGF-QjbIUvA3sM4ynoH6Ceixy8dLzIMTyES9sbuLG-2DU&s
+Bánh canh Bến Tre,83,102,8.5,3.2,14.2,1,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3QZXEnpnon2YnagwKDFK54ShT7On76mACpUQdCg3uocMrHROg&s
+Bánh tráng nướng mắm ruốc,12,348,6.2,7.5,68.8,1.6,2.1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxdzTqK0nhd-aRCQvymvN2DI-K1UPnB-yQNBSck17zIPfTnKE&s
+Bánh tráng me,10,352,5.8,3.2,78.5,1.8,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxdzTqK0nhd-aRCQvymvN2DI-K1UPnB-yQNBSck17zIPfTnKE&s
+Bánh tráng tôm,9,358,6.5,4.8,76.8,1.5,1.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE_k8U6zfVVSvV8hA-5s3BvI_jmamfcn9UUpXsK44MDjXay8YN&s
+Bánh tráng dừa,11,345,5.2,8.5,73.5,2.2,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnjW_xu08VPVUHU0it8KgUgKKp1t0zYCfgyp53euby-OWLQXnL&s
+Bánh đa cua Hải Phòng,14,338,5.8,2.8,75.5,1.2,1.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX6c4I8IEQwzYmV6G_WNUMi6g2HtYICCEaOFtTOMVw5Ho6ZRE&s
+Bánh đa nem,15,333,4,0.2,78.9,0.5,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfd8y7HlkNV40uDHJfpQD41QkMZd3YYwZjaKC5lFmMndRfa0k&s
+Bánh đa trộn,45,235,7.5,8.8,35.5,1.5,2.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6BomI_AybaAU4sfzQnsjfMAnb2Mv3NKqUbG_hHdwcX24cVTE&s
+Bánh tôm chiên,38,295,13.5,17.8,24.5,1.3,2.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFibB6Hn4UynZAvdxzCw-MBAfncn2YqjMufK1Vk6BprBaMfEA2&s
+Bánh rán nhân đậu xanh,35,315,8.5,13.8,43.5,1.5,1.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPb7wd4azowp-tBFEHKBmimlBIKKUqbbgzC95Zh7uOtNCdsSQ&s
+Bánh rán mặn,42,285,9.8,14.5,32.8,1.2,2.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg3l4_zArC2rTSjtVD3qEO730-UvjXFDTyX2NyhDJNyBKyz8eZ&s
+Bánh chuối chiên,48,235,4.2,8.5,38.5,2.5,1.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3mzpQvC3Ta64-Cm9v63xzHF99mO0qqQ7o3_gjpXwdt01MXf4&s
+Bánh khoai chiên,52,225,3.8,7.8,38.8,2.8,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Ee4smMg79n0FxfrAwPXTXuxSFSHmpnTeoO_Y0omUP3QrH8pf&s
+Bánh bao nhân đậu xanh,46,208,6.8,1.2,44.5,1.8,1.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRakbS1bOtXWdmCJPljGKSCH9ZICizaABPJXYOM-U0ixqBsUPE&s
+Bánh bao kim sa,42,248,7.5,8.5,38.5,1.2,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDtm2f_0ehQWT2zUPrrzsMkV3VbjaeckYXqqQL4s9xtLOCtULt&s
+Bánh bao char siu,44,228,8.2,4.5,42.8,1.1,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmh9boyzLPTmzXj11kruJBEKZ6IPtp9xKxOQa3x45hqDv100uo&s
+Bánh bao pizza,46,235,9.5,6.8,40.5,1.3,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3uCPf6or87bo3KkfEhfqFjAcNEABpXCQkIfNKqd6t-w3O_SiX&s
+Bánh bột lọc tôm thịt,66,145,5.5,2.2,28.5,1,1.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZP9xix9aMNg6N7MhUwA6r7fHsWp0wGrpCea3sz-90NtIP-bJE&s
+Bánh bột lọc nhân tép,68,138,6.2,2.5,26.8,0.9,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-h30A2s7uVAv4Nf08oTqmxOVGowXhNJcwM7MW5SKOq0jKGKi2&s
+Bánh bèo Huế,73,115,3.5,1.8,23.2,0.9,1.1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTCpPOFjhSp60Hv12CYt8xhV04keEKrMCeH0MFtxWKQhl2GuY&s
+Bánh bèo bến tre,74,112,3.2,1.5,22.8,0.8,0.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS74D8EdGJSjavaMAMFkgZ_uoXTQFbN_cEOn2MQDEKCtEZ_N6M&s
+Bánh nậm Huế,69,135,5.8,3.2,24.5,1.6,1.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHwaX2_XIXjNaxgGg4uOAJKTBEHDe-Bh7vTMADxCk0nfugodA&s
+Bánh lá Huế,54,185,6.8,4.2,36.5,2.2,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTegRibl1tGCVj-2IVM_Z-ccvw9XJUuqjTK_sE-0s3FpjcIDKA&s
+Bánh ram ít,58,175,6.5,3.8,33.8,2,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjThn4GM_uf1bTpQ0hoGHBDeRsnDc5hYfVbsxzR64iJB1SnME&s
+Bánh ít lá gai,55,188,5.5,2.8,37.5,2.5,1.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKCc00DbL0puIoCAT_79yruaxxijRjGgiYYZL6jOTSY93bPUM&s
+Bánh lọc gói,68,142,5.2,2.2,28.2,1.1,1.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsMkNBrX_GJMKFyum8-ic_kb2ZIA_1niSCwytTr2RWi31XuYhc&s
+Bánh khoái,62,168,7.5,5.5,26.8,1.5,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQubqyTLSBXxGwppFKgIOA_IpBuw7NFCTHoDG3IV9JMXzQouIQ&s
+Bánh xèo miền Trung,64,172,8.2,6.8,23.5,1.3,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTijZrXA4yUYWwpT-OW7epwyj_bjuDtiwB5Wc0_fv1xVNgce0Di&s
+Bánh xèo miền Tây,61,182,8.8,7.5,24.2,1.4,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTijZrXA4yUYWwpT-OW7epwyj_bjuDtiwB5Wc0_fv1xVNgce0Di&s
+Bánh khọt Vũng Tàu,59,192,7.5,9.2,24.5,1.1,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5KRYKCjsPQLR-1wfSIH6SQxmJbrkCdmI7ztB5yg2Ruv_vrNWr&s
+Bánh khọt miền Tây,60,188,7.8,8.8,24.8,1,1.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZgLxDDBSKWop8NnKN8RY9spNaEZ6xpFAtziH5d9ZwzzWHTRAt&s
+Bánh căn Phan Thiết,63,162,6.5,4.2,28.8,1.3,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGd60Cb0uCtjtpmtM1JFXGI99dtR_e1bVyxR7b0lb4HiWF-78&s
+Bánh căn Ninh Thuận,64,158,6.2,3.8,29.2,1.2,1.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsve0-LsserK4hchZorMMq8mtOgfDb1COrZ46oY1wr_ruailI&s
+Bánh ép,55,195,8.5,6.8,30.5,1.5,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV1IPVCKomOb6aj3iVTb8Ux5w_CDUXGLfkb7oc2l-c0dCgLjYl&s
+Bánh tét,52,192,6.5,3.2,37.2,1.8,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQOlhjvlMLNvVvvQf4hjMxbo7PTB_72oFW7elzKr6n8gy3R9w&s
+Bánh chưng,48,205,7.2,4.5,38.5,2.2,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNUr6UZvj21B-9KxxYRbTKKaxQgM6Z2vq2s6p1kY94Id4aK9yW&s
+Bánh chưng gù,50,198,7.5,4.2,37.8,2,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7ns9bnLZ8TAYX0LvEDTCgdw46vB8NyaObte5GCa80YMlBVF_u&s
+Bánh ú ống,54,188,6.8,3.5,36.5,2.2,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5m6ZiCAXP0I0DmgxaV2uozDPEcDAs_YZeWzAp5bsc43lqn9M&s
+Bánh ú nước tro,56,182,6.2,2.8,37.2,2.5,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg6KhS23YjlTlVoS_PNgtKcVSQ1V7lYgUjX5VYlwLg71g6Rjyn&s
+Cơm lam,58,178,6.8,2.5,35.5,2.8,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg6KhS23YjlTlVoS_PNgtKcVSQ1V7lYgUjX5VYlwLg71g6Rjyn&s
+Cơm cháy,8,368,8.5,5.5,75.8,1.5,1.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrylnu9b0JuSjH3kLSfyDzGjXWj2ij6vXl0tm8VuZqUIZ6nVky&s
+Cơm rượu nếp than,62,165,4.5,1.8,34.5,1.2,0.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4_JbL3lPhQqz53JCL3aQRxgjKgVnurUf-2ht9F1IT6mXR2-mx&s
+Bánh pía Sóc Trăng,22,325,8.5,11.5,52.5,2.5,1.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHRGcuBlwZQBGkcxo90MVoqEuPARSNwFdbj-r1kgo6JR9OlSw&s
+Bánh pía đậu xanh,24,318,9.2,10.8,51.8,2.3,1.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE86aYy83tJs-ivHi7p4r4Z_kWQBvKIIoGmMKFDSm715JerQR5&s
+Bánh pía sầu riêng,26,335,8.8,13.5,51.2,2.2,1.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeLnS2y0HgSgSNxgY4GaDy1yx6JwdOt6VkXq9osmENuu4x3YZU&s
+Bánh đậu xanh Hải Dương,8,405,14.8,10.5,63.8,1.5,2.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9TldPAsJZu0DSJeMzBE-wcXLenP7cAwXPUBeh0dgs_uf2gcc&s
+Bánh đậu xanh Rồng Vàng,9,398,15.2,9.8,64.5,1.4,2.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLrzruyIzqtEDMOFVqwLunyYhpyrACoRE5HJ1WPpZdvP_oxpCy&s
+Bánh in,15,348,7.5,8.8,67.5,1.8,1.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa0tbLje1Ls2BbyiP3tEjhMKoEnDsUKj1fgkm3UKuGALPnMxQ&s
+Bánh dừa,18,358,6.8,12.5,61.8,2.5,1.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsw3BDmO2FK4bNZNqMJmroQLZcR345oC5woOyQGRWDcbJRB7s&s
+Bánh bông lan,32,268,8.5,9.8,42.5,0.8,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm_xzNB9eOqUG22ZB2cfhNMzro6YnBVC_Uc4WdhbMP7ZQc1SB0&s
+Bánh su kem,48,245,7.8,13.5,28.5,0.6,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRychwU18i-Oy4tNr126bKVVLJmJOHoS-uUkP1ROC7zGuX--Inm&s
+Bánh tiramisu,52,285,6.5,16.8,28.8,0.5,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmFqg_0RtgaXAxCKMzXS1mx2RykPAqWum9nq3pDrRPkZaFpQGC&s
+Bánh gato,28,298,7.2,14.5,38.5,0.7,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpFw4kpB3SLjYtwh9WU0dGoP2VUnj5yxHtSJIiZ6T_Dm7qxJcu&s
+Bánh mousse,55,235,5.8,13.8,25.5,0.4,1.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_C5VXrXwQNjyMh2PEGaYbccc42K9M5r1xxfVco42F55R0JxBw&s
+Chả lụa,68,152,19.8,6.5,4.2,0.3,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZNsfYzFeNiy9WGbSWiHAggT3g7bFwZIuCxoZDQkFhPh99tVQ&s
+Chả bò,64,168,20.5,7.5,4.8,0.4,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCITm3J-Bkq10q5hu7HPap311wkgyiOOPkFnf60Y9u9MoAuhmq&s
+Chả mực,55,215,22.5,10.8,8.5,0.6,2.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNkpkh8wvfNIvhXgrjG52XgIkMGIlP3fbD5MKnFZTYX900lPs&s
+Chả cá thác lác,62,185,19.8,9.5,7.2,0.7,1.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV_uxSPbj3YEDa658kxHMFv0lI30Vsj17IIiXt0_MIJ4sHVkcL&s
+Chả phượng,66,158,18.5,7.8,6.5,0.5,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKJQv5ZGDSwsZSjb6-wqCkfzr1yLOH4zhPur86p2edFMkw0Cc&s
+Chả rươi,68,148,17.8,7.2,6.8,0.6,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKJQv5ZGDSwsZSjb6-wqCkfzr1yLOH4zhPur86p2edFMkw0Cc&s
+Chả tôm,60,195,21.5,9.8,7.5,0.5,2.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOV7Fq7pWyQIz5g7wRS5ZKEJOySUvCYcLkiRcXXFF04PqVMsg&s
+Chả giò rế,48,268,10.8,14.8,25.5,1.3,2.1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhmi5DYXgC4vrKBTuh4xV5qHq7XscMdwXpzH7e_Bbf2oTdTV-t&s
+Nem chạo Yên Mạc,69,148,16.2,6.2,7.2,0.4,1.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKbHxyzTV65D35Jwfi869-3-MvFWe2SeqOTyLokRO_8Olv348&s
+Nem công,62,178,17.5,8.8,8.5,0.6,2.1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHUni84Cpb3bedsuEFxySDvSn542iFnU1q68BWELIBOPwtQr9&s
+Nem tai,64,168,18.2,7.8,7.5,0.5,1.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgWbakC7sGbhnf9kpFQqrps34oa0lueWgwkzPhwkAtxmGNzLc&s
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDEltc6fMuhnvvz7VcmxhXYgajCVNrAxdtaCJ9rjZOuR93xhI&s,54,228,18.8,14.2,8.8,0.6,2.1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDEltc6fMuhnvvz7VcmxhXYgajCVNrAxdtaCJ9rjZOuR93xhI&s
+Nem nướng Nha Trang,52,235,18.5,14.5,8.5,0.6,1.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtWpLnlHKk7YSN6ZCDflRw388l77xFTJEYw-9Q9QgQqS1-fKB3&s
+Nem lụi,58,208,17.8,12.5,9.5,0.7,2.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOsKhZzci36IAXynPa84qoB7e0WBN5IYpsRkko-MthXyNAgLU&s
+Nem rán rế,46,278,10.5,15.5,26.8,1.4,2.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ977i0nKmL8DQbKjl8ZEZ9-6e7Ys982mrt4iSa6zKoLYpvETTj&s
+Giò thủ,29,553,16,54.3,0,0,0.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9uv0dnJCo2ohfpAQYZmr1uLCSfrQX9pF51RCM4qdG4k8Pc84&s
+Giò bò,48.8,357,13.8,33.5,0,0,3.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDSnz_BGCNdorIhX61F2nTZ0F6uqCxIbJKUgKTcN53CGKKEwiZ&s
+Giò sống,72,136,21.5,5.5,0,0,1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuGUJc5hjOTvAwDoAKCF1Llw8MsR_Y__61cjPX5AtTw7dfv9E&s
+Giò xá xíu,62,188,17.5,11.8,5.5,0.3,2.1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG-5F5bQnkdvh1UfcJ4r7rr6NlIY1wuIok5Ri-3OWcwv6NqAY&s
+Giò bì,68,158,19.2,7.8,4.5,0.4,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgTTraOBA5I56x7XGsH3F93Yrom8MZuvHm5pOl2-VQwqOPQBWE&s
+Dồi lợn,78.9,114,12.4,7.1,0,0,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwxjgXqKko5gzcPerGTXc0eJW8ACfDG4gLfYmp45-4lYICWFY&s
+Dồi huyết,82,95,11.5,4.8,1.2,0,2.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwz_VEuHHeGVTE2oJ651Nh2DDoEK1SRz6Y6bFYItv7GCGZLL3x&s
+Lạp sườn,22,565,19.5,53.8,2.5,0,3.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoC59UugJ0QTLiCSUCijg7brVi5cLD9dKVOfWkaTfT_gVqUr4&s
+Lạp gà,24,548,21.2,51.5,2.8,0,3.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT-MkDtMBcJrndfeZq6iP30MiM3FOp8R2-nJv7sWpFFTg3e8g&s
+Lạp vịt,23,558,20.5,52.8,2.6,0,3.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNSsGKND62zDPu5t3H_7O9kfu1VaSBlgKW_WltH5gVvQNZx30&s
+Thịt lợn muối,42,358,18.5,31.8,1.5,0,6.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA720OHvnQw6iTzAnzm5z99MBU4BDYlH-v0H7cHk88k46-wcL4&s
+Thịt bò muối,45,325,22.5,26.5,1.2,0,5.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjgdotfjct6HoQpesFPOADdUqKLVLs7GsWVJKbLByNW7i1e7U&s
+Cá cơm kho,45,248,28.5,13.5,5.8,0.3,7.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnOAbDPmUEJHm3Z58m0yV6jy6XihPTQ6Vp25C_Mtj4DF5BRSol&s
+Cá kèo kho,48,235,26.8,12.8,6.2,0.4,6.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgK8vFjND2jN02EQTvB7TS3D6UryYhJIa1Yu8zFlW-LYVuHjo&s
+Cá linh kho,46,242,27.5,13.2,6.5,0.4,7.1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbI9YANKxQ7ybi1GmzhGDxEyWl-370NxZcl3XDy_VZze1Gwnc&s
+Cá lóc kho nghệ,62,208,20.5,12.5,6.8,0.5,2.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSchn3ItldYOsGLWLNHIDY9g_KDJaw4t7PczzhaBCaoebMzKzu3&s
+Cá rô phi kho,64,195,19.8,11.5,6.5,0.4,2.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW9m3nJkHj6RO1Ph6oWOEguG_rgQHMjXmkprJwhkaJcRQg6go&s
+Cá nục kho,58,218,21.5,13.2,7.2,0.4,3.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBevJsu-bmPhVvBQY2CsBbyku03Qgj_fWIS5NbN6tO3oWSqCPY&s
+Cá trích kho,56,228,22.8,14.5,7.5,0.3,3.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaToOLXMwMPwfbf8cU4-5Wr2X3UdeW6knz72xKQvrnSX7zgTM&s
+Cá basa kho,66,188,19.5,10.8,6.2,0.3,2.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfzvlBcTqTDMrsHR2RxM-70UiVNXlQ0o2jhLgAX4eFYvcpFZ9u&s
+Cá diêu hồng kho,64,198,20.2,11.5,6.8,0.4,2.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-k968Wn0x01V79RhNTfK-4Cj9B2_RdrsgTPno-Q3wTh17ET2j&s
+Cá khô một nắng,28,268,48.5,6.5,3.5,0.2,13.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2IjVyjRVmXL0ANt3_f1TMd_dsAVHVxCpBHguzcjQq5O7fc3Y&s
+Cá khô rim,24,285,52.8,7.8,4.2,0.3,14.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTowcgCEO2fKBqlsH1QvIQi5Z5l51XLsoAkjj628ex27dAdzYY&s
+Mực khô nướng,22,298,62.5,5.5,3.8,0.2,8.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMF5jUmN3liPRyUAk_ovzy30UkCKeybb22BrjL4iA5sZQlwO8&s
+Mực rim me,35,245,48.5,8.5,12.5,0.6,5.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRibAbEeMl9KkDlqdnjo79fhaarhAxt3gkD1PMYCRWY4V2CqV7x&s
+Tôm khô kho,18,332,72.5,4.8,3.5,0.1,8.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu-KzChcQ8-R4DjIJfJq4x-4V_W0fqtxDgA30Jpj8vbLZ-6m-O&s
+Ruốc tôm chua,16,298,63.8,4.2,5.5,0.2,13.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIBEO3Wxg4QzV92VQiKT3btS-99JcdFAdOH5q6OHcH2BXCliPC&s
+Mắm cá sặc,52,95,18.5,2.5,1.8,0,25.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS1MtvJUVi8pj0wHVd9IjfK_lTYBioIV_yn4MHKrsb6Va0EKgo&s
+Mắm cá linh,54,88,17.8,2.2,2.2,0,23.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwC3WHaaSqr8L-ukGL1RUHt1LQfLdXYHHkFovBHKWP3k3k5svU&s
+Mắm cá lóc,50,102,19.5,2.8,1.5,0,26.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6I2LEJ4QpUufLxWKLlK50zsqza126b-IzijD3_2a-r0WKhHqy&s
+Mắm tôm chua,56,85,16.5,2.5,3.5,0,27.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQUpMLx_9qvbcVAuuHv-sTF1BS_CFWIuCRBBAmZz8EC6Z4SkcW&s
+Mắm ruốc,58,78,15.8,2.2,2.8,0,24.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3dCHKYBEURlJwnoqCzfMFP3KlPER1kDRqdFmMf_MHnlCrYuIE&s
+Mắm nêm,62,72,14.5,1.8,3.2,0,22.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwrQ8h0ErrPHk0F04Bd7cID20zsVvE5jkimnoSTk1saP8Tngcr&s
+Mắm tép,54,88,17.2,2.5,3.8,0,26.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmmkii4D8QmVOd_2WVrVFNuvoLNlsqiYQ5-zOhSN-zRESkqKLJ&s
+Mắm ba khía,65,65,13.5,1.5,2.5,0,21.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyeqp6HgLYLWWNp2WCpIN54oOkc3E8UPzT26MnJCEMW_AUS-s&s
+Mắm cá sắt,48,105,20.5,3.2,1.8,0,28.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwc_XV4E6-FKgb6nsqv9S26opunwV33L4yMAdPPUJH48Qc5VSS&s
+Mắm khoai,62,68,14.2,1.8,3.5,0,22.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHGkVNZL7vehVhlBZC_PSxsMMIS0hzVZKsWQ7QYOrso78gq1KT&s
+Thịt bò khô,32.4,239,51,1.6,5.2,0,9.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5q0L2AeRpdWluXEmM8vSI-0laCeY32rrQ-rxkUkXBzwwb0_k&s
+Thịt trâu khô,36.4,226,50.4,2.7,0,0,10.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9BG1EcY3mixsMbN2APja_YYq3py-sdlKQddewlbseS_iAykA&s
+Thịt heo khô,28,268,48.5,8.5,6.5,0.3,11.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbgcfFmuB9EeaGS2RhwNppfDzGPzML8pYpcG08z5Iw-Y3wOak0&s
+Thịt gà khô,25,285,52.8,7.8,5.8,0.2,10.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbz5Vh68QrGnAIiQBQvhc6SBdaH_hbZlHNt65Bigqn2wEgM7o&s
+Thịt vịt hun khói,32,248,45.5,10.5,4.5,0.3,9.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqH0EBZdVLJeOY5ucAS6JdepBHxknWGiPsM2EPc7RqTQE6ybw&s
+Gỏi cuốn tôm thịt,71,128,7.2,2.8,21.8,2,1.1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSug7dvZf3zn-d4x6SPYVjkQQW8nU7_Qy6_jQh0fydIGxfj6OQY&s
+Gỏi cuốn chả lụa,72,125,6.8,2.5,21.5,1.8,0.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGn7g8jt0YcreEuEFM4PG08yvA4GkJR4DlpGI5-ntHIC8FDBsI&s
+Gỏi cuốn bò,70,135,8.5,3.2,21.2,1.9,1.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmjoEf0-OROBqelxYKQAhgMo35ZEsNd1lEyOs9ol6MWa1Py18m&s
+Gỏi gà xé phay,77,115,13.2,4.2,8.8,2.3,1.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPsULa6ZbGsg6iKR7OjEhljqky9N1iLfRCte8Rw8EL67LZf1Eb&s
+Gỏi xoài khô bò,75,128,12.5,4.5,11.5,2.8,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhS3Va1x1ypOvkkXTUW-RJzIsY6TgwUnfJsWGilx4vIjlGVbTR&s
+Gỏi củ hủ dừa tôm thịt,76,122,10.8,3.8,12.2,2.5,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8R4PZHPX6TJ1CmJxOQ403vsEqmdKZ_D-Ql3pOWV5nGnij_KM&s
+Gỏi đu đủ bò khô,86,52,3.5,1.2,8.5,3.2,0.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStLocSA1t0ODy3eEzwt3BYw9cbedSIddoOy54WVO_81PAXXtI&s
+Gỏi gà hoa chuối,78,108,11.5,3.5,9.8,2.8,1.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIZ8-ukjsEg4DpJv7qWrVAsiSrw1aBXYaZfaQJpaYutzG81bg&s
+Gỏi tai heo,74,125,14.8,5.2,7.5,1.8,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0piXBu5VRGT3Wl5y_hwqSVMbMsE3lJq9CaFYdIpxgPEgY9Qo&s
+Gỏi cuốn rau,76,95,4.2,1.5,18.5,3.5,0.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ8yQb5KMGvzx54wX_y4zPbTyAIsBeNhxc-pZTp_g7bwfN7cA&s
+Nem lụi nướng,56,218,19.5,13.5,9.2,0.8,2.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhSh7Shgv5u92iUf--LcCX4HsSHwE_BroY4tTFE647asiLnD5A&s
+Bò nướng lá lốt,62,215,19.8,13.5,5.2,1.2,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxRnhN8wngRLfEhws2DfUiFKfSkB3hTjfy2cdu3159gbC8wY&s
+Bò nướng sả,64,205,20.5,12.8,5.8,1,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_WpWf_TPGFyONVMkJGwsvsNggHA3flbiqtJ4Jn2I30DvT3mU&s
+Gà nướng mật ong,58,225,21.5,14.2,6.5,0.5,1.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMG4jRhFAu2KG8YmJGacTqp29CVDNew9wUM2dlKrRsasZBBhWD&s
+Gà nướng muối ớt,62,198,22.8,10.5,4.8,0.6,1.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5yLYfUOdDVmzSUGJChztc0PBd1KyyuqYn-ZrMrjt2dc2wsVE&s
+Sườn nướng BBQ,56,248,18.8,17.5,7.2,0.5,2.1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRybrBD52dxOcclKHitqcSHKinaasUU-C6bJ70ofzPYdikRKu_s&s
+Sườn nướng mật ong,58,242,18.5,16.8,7.8,0.5,1.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSYUNMUqD9_m8j7Vf5VLeTIysK53oMDzo8nuY3AiuYyUcEeDfK&s
+Cá lóc nướng trui,68,172,21.8,8.5,2.2,0.3,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtpXXgeK-sTbBJ6Yf2fq1mQrQm0-SieJiHKdrKyVh3Hvkm_fEW&s
+Cá thu nướng,66,178,22.5,9.2,2.5,0.3,1.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt7gtRvVs8hMK-Gvbjrv6ZnpXPtntfRHgRJ_8TaKNHpYIeAtY&s
+Mực nướng sa tế,64,188,20.5,10.8,5.5,0.4,2.1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWFLlTYA7ss-5BpQfyiVaCJEuomIuShCCc6DCRr1lNUFmSW_iy&s
+Tôm nướng muối ớt,72,125,22.5,3.5,2.8,0.2,2.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmUfcPIb80Xb9pAW-uBFQQ601xkx7lM0ZTsbXdjNUgDM_YWew&s
+Chân gà nướng mật ong,58,215,18.5,13.8,8.5,0.3,2.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMkgW2xf-UZc77YiqFwPM_-7MAQO8CFItRXYsOxP0U8FR02nY&s
+Cánh gà nướng,56,235,19.8,16.5,6.5,0.4,2.1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpJ1XReCD_JK43UEnOe6xtTXU2LZK1eweCcXZBuhTiPwaW26da&s
+Sườn cây nướng,54,255,17.5,19.5,7.8,0.5,2.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbtTIzhX_ZfdJAdbzdVCiNIaOL9RbTFGGeLAXHXVo8TJlEINQ&s
+Ba chỉ cuộn nấm kim châm,62,228,16.8,16.5,8.5,1.2,1.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRky_WkjJFBhWaGrE5d294VTBUcykgL1678OjgKiUQ5yG1GfRM&s
+Bạch tuộc nướng,68,165,24.5,6.5,4.2,0.3,2.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKU2YTseQS_9DkpwQiH7AYl2T_0WqP3sMgSb5p-MwyKR-Jw7HF&s
+Nghêu nướng mỡ hành,75,138,16.5,6.8,5.5,0.4,2.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw88zq79Sz3O0c5G3hraJ6iWT8o4ZxhZ6roTBJjVmtpbaLt53H&s
+Sò nướng mỡ hành,74,142,15.8,7.2,5.8,0.4,2.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeLjqHM4M6Qg9KD7osmblP-phOgEELAMjcRd0TN-xA-Ac7xu34&s
+Hàu nướng phô mai,72,158,14.5,9.5,7.2,0.3,2.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeLjqHM4M6Qg9KD7osmblP-phOgEELAMjcRd0TN-xA-Ac7xu34&s
+Hàu nướng mỡ hành,74,148,15.2,8.5,6.5,0.3,2.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWhojTWxxjksXTHtG9c3dY0WxyUdyZBKUyRXg4oSIQGwGMi9rU&s
+Lòng gà xào,72,142,18.5,6.8,4.5,0.6,1.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-ejel5nC3pUa_YUwLSdqvvQd1T5QXHaO1njiuwMqtPC4-iho_&s
+Lòng lợn xào dưa,74,135,16.8,6.2,5.8,1.2,1.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDT1Ej_8V1e4yH_goPS-GIJkcj3n78B1-hc_JqSTswrGIbe23l&s
+Dồi xào dưa,76,128,15.5,5.8,6.5,1.1,1.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcuOoob_3ZwTO7-nmCw_ktVkhsyYKBVRXqnKjpviKO7Vq6USI&s
+Gan gà xào hành tây,73,145,19.5,7.2,5.2,0.8,1.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5ZoNjHJpW8mGuN8eyIchVfp31cfill5AB0WI4-YdYZFXJmx4&s
+Gan lợn xào mè,72,152,20.2,7.8,5.5,0.6,1.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXpL01CI5iUN6jCvwhN0v5Yk-YHqyKqB8Y_DpJFq_zGS-8ZCo&s
+Bò xào cần tây,70,168,20.5,8.5,6.2,1.5,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPjFVucW22SxWuB-uDvq2TfQ-5P2WNtpM_D28ibWp8fkwZZ8z9&s
+Bò xào nấm,72,158,19.8,7.8,6.8,1.2,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPjFVucW22SxWuB-uDvq2TfQ-5P2WNtpM_D28ibWp8fkwZZ8z9&s
+Bò xào măng,74,148,19.2,7.2,7.5,1.8,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRD1qImmItggcTKBwwiUAxiUEbWb16EICTVsB8STNQT4-x4t4&s
+Bò xào bông cải xanh,73,152,20.5,7.5,6.5,1.6,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeucGaK2Tkqu8R7veHumP9HT-3bQAAAPZI7ZwQx2WtZ7bonAY&s
+Thịt gà xào sả ớt,68,175,21.5,8.8,5.5,0.8,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBjQN4tebG8950K_KYWkTkjSq-ZGr6_LNBXhQSDp5fmfB7t7w&s
+Gà xào gung,70,168,22.2,8.2,5.2,0.7,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOVYv2lZmhAzVQDD3lYh0-xgeRgBmFSPUTtVewbcefnO_5Ebo&s
+Gà xào hạt điều,66,195,21.8,11.5,6.5,1.2,1.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOzWzzUkpwJWoUSZBN4xMbSFdaO6ptGfHWqfPgx7CYaNty2Ids&s
+Thịt bò xào đậu que,72,162,19.5,8.2,7.8,1.5,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSqvypI0r4XhkP6fONdLj1s7Nu3FjrXmGmqxpPg1FRvQ767Cg&s
+Thịt lợn xào khổ qua,74,155,18.8,7.8,7.2,1.6,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXJK6Axwv1iXHgYiW7XYf0W5ew58Me6rAHPCnvWpdOzG_SmXc&s
+Thịt lợn xào chua ngọt,68,185,17.5,9.5,11.5,1.2,1.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-JFN4OsuX8hUyHfx7DMzWnwY_JCtL-yy9zITrSTLlfaC_qBFO&s
+Thịt lợn xào măng,73,158,18.2,8.2,7.8,1.8,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPbT5I2FJmh-_tlfm6wSz5oxAIMHg2ci5fH14fXNQyy6f2J28&s
+Thịt ba chỉ xào kim chi,66,205,16.5,14.8,9.5,1.5,2.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4eJIwcHkCGOx_76Q1s8ZnMvy3miRXA8gzSPq8w0znM7ztm_4&s
+Tôm xào thập cẩm,76,142,18.5,6.5,7.8,1.5,1.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQrT7lTVwInXjhNZEU0ouCG4j2bwGL1tWEm2WsywyCXhEBtTI&s
+Tôm xào bông cải,78,135,19.2,5.8,7.2,1.6,1.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnl8G_MwznaGSqOb3PFxIdBSlRleCzL9zJDbLu_xSOJh3N-alo&s
+Mực xào chua ngọt,72,168,18.8,8.5,9.5,1.2,1.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdMLLqNlLuo9Q_MkoArCbSApq8X_qA_knBDtuM221-xJpaimuB&s
+Cá xào cà chua,74,155,19.5,7.5,7.8,1.4,1.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyQVZyinrVIYKbNHfPY-cSK_ibIG6IqZJ4SazOHo32heFfYSw&s
+Cá rô phi xào xả ớt,70,172,20.5,8.8,6.5,1.1,1.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLc-VFLvMJYHeqCnzUPgXTrla5lg-OAzTDiK6Bxnwy_gVfwkBc&s
+Hải sản xào xà lách,78,128,17.5,5.5,8.2,2.2,1.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfoA-8EXTpSB9z6kC6P3a5oiXb2nfdYnqs8o4uIMsP4RE2yd85&s
+Nghêu xào me,80,115,14.5,4.2,8.5,1.5,2.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7COptf-TKBZ9iWy6-FpIatlI23W4xdtwYyUFSBzHwL5gBBhiU&s
+Sò huyết xào hành,79,122,15.2,4.8,8.2,1.4,2.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnBhWDOfZRw8-MT0n_BfUxQFvSb7Tcbxrmq6EJa8avMHg5qms&s
+Ốc xào dừa,76,145,13.5,7.8,9.5,1.2,2.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBh1BHWgkfA1KtCqvyq5P1D-8Xcw0Tvc3ncGh_zx-43483QuE&s
+Bào ngư xào nấm,74,158,20.5,7.5,7.2,1.5,2.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShdT3wU150qWMlEAK5JDd6vS8sZfZmz8w0KJW23CLZ9S17C5g&s
+Đậu hũ xào rau củ,82,98,10.5,4.8,9.5,2.2,1.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHsHqOmN5ze0Qxgir11HXNvqJRnyS6oZzrjyak2Q1dSwFke6cn&s
+Đậu hũ xào sả ớt,80,108,11.2,5.5,9.2,2,1.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXCHGUyPktmX7my49bZAncA6I7CSB09urSqiWkFUwnfdK8fbm-&s
+Đậu hũ non xào tôm,78,125,12.5,6.2,9.8,1.8,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdw8sc1OCqbZJkpvaWcsT6cuTdN7XikRQC5m9Ib77FmDrEBWq3&s
+Miến xào cua,78,125,8.5,4.5,17.5,1.5,1.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcrfIJxu0TWUgPhCJzi71hkvfSdWuqe2wymcsrOXOsWwzdyXSX&s
+Miến xào lươn,76,138,10.5,5.5,16.8,1.4,1.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkAXcIZYrY7-ZpN6nAIte_OOLeSPOpbX6JLescHCti8mCUOE0&s
+Miến xào hải sản,77,132,9.8,5.2,17.2,1.5,1.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyKCDYdU_ZiPTPtu2cecXBEmDqNVJ2XsFUAfxmfH7cuJqBb5E&s
+Mì xào bò,66,178,13.5,7.5,21.5,1.3,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr56oVz_8EkfeLG3b_bQJnET6s-_r7iIkP5Oa4Mnn_Sa-mgtRh&s
+Mì xào hải sản,68,172,12.8,7.2,22.2,1.4,1.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfbJwEEhG83DEX63TajcA-j6Wx1RyQYR5shTWuwB-pJKevAxc&s
+Hủ tiếu xào bò,66,175,13.2,7.8,21.8,1.3,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfIiZ2yXQs4sBy_g0qJ1Mnn4iCD8x9V7fx3jwsk7Zvjucv50BS&s
+Bún xào,70,155,10.5,6.2,20.5,1.5,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsSndZwxjgCEL5Aolf03OyDLDiMpgRsV-GGP2_IUxK9jBxECc&s
+Phở xào bò,68,168,12.5,7.5,21.2,1.2,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUjWZpcpa8oozQe4zDpmrbvGK9cGNal1fYX6ghCAqRF9WrRAs&s
+Súp bào ngư,88,68,7.5,2.5,7.8,0.6,1.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLdMDgBNXpRP35sFAWvH5BvrGjK68H8VTrR8MgISbTm6fem1Kf&s
+Súp hải sản,89,62,6.8,2.2,7.5,0.7,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3LAZb1yM32XK-4_0YOP0hvZpbv1w0hoHsYkbuJM9-WJZUS-_U&s
+Súp gà,88,65,7.2,2.5,7.2,0.6,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZTXwjfd67adEVM8GJkSksSSiyJBLl6MmfBBRW11M2cr0SkPc&s
+Súp bí đỏ,90,52,3.5,1.5,8.5,1.8,0.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUu4SiC7zfhCKTz0fs3J4oDmxlNavyBBhGCxYna0tT-3J22-c&s
+Súp nấm,91,48,4.2,1.2,7.8,2.2,0.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMOiGmzKpw2WiLt2_9MwhYHx530XGLTGlVlUvw4WbHsjGCA4CC&s
+Súp miso,89,48,4.2,1.5,5.8,0.8,1.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfpKmhfJWyebZC9wpyeTGfhtFpE4M1V7ckoZNwDDOy4sbuSz3Q&s
+Canh chua tôm,91,38,4.2,1.2,5.2,1.5,0.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJHIfkaHn3Z83XlZtZt6f7OEo5Dsx2585-EPDf1bRWCe7SnDCO&s
+Canh chua cá,92,35,3.8,1,5.5,1.6,0.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQpCUOoH6q4u_YlHFEMN7fGxEH8qEPJo9FBH0YJQ6na-u1_ewC&s
+Canh ngao nấu chua,90,42,4.5,1.5,5.8,1.4,1.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF29bLWIXovyogGAIbOuAgU9fhcFWFk9yIxCnNtBcJGhKXPCGt&s
+Canh hến nấu chua,91,38,3.8,1.2,5.5,1.5,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX6dlV29bF5iBp_651G0eICIu3ASAhhfYkpdtwKv6JHiQVkE4&s
+Canh cá nấu dưa chua,89,45,5.2,1.5,5.2,1.2,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOJXnfEBu9f_S3tuamJvmQXD7_9C-o8ry0BDYWUpGAVtoDyhg&s
+Canh ghẹ nấu mướp,90,42,4.8,1.2,5.5,1.8,1.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHwpVmEVbmNAj5WRSiUrkxjXna409wyKIoCuvSqzRO8ay2wANB&s
+Canh rau đay nấu tôm,92,32,3.5,0.8,4.8,2.2,0.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxqkgqV89VMugUnsqz6VudqJitLVjnJbNSq56b3d2FIRYZz1Q&s
+Canh cải chua nấu cá,91,38,4.2,1,5.2,1.8,1.1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIPoF3rwT_Pgtfrk6PzAEyBUK3RhexcdnbwLulihAitWI1JGOg&s
+Canh rau muống nấu tôm,93,28,2.8,0.6,3.5,1.2,0.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpVDaciQbHeW5jN3mbGE7jc6kuagSUHgIv59t41WPrp-rYiGA&s
+Canh rau ngót nấu tôm,92,32,3.2,0.8,4.2,1.8,0.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL_43YX2PehdXB3SEYuhzagvvSZl0HszeJwAYHvM4u4njluGc&s
+Canh hoa chuối nấu xương,90,45,4.8,1.5,5.8,2.5,1.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDIDUW22sGyYRNH5126bxRmwqN3uzh7dhEv2CYb6AdOfbeXGA&s
+Canh măng tây nấu cua,91,38,4.5,1.2,4.8,1.8,1.1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcdKDuEd6Ndtp30QnT0_YFN_ZfsWxW7c3XaW2BfHd3IcEDW0tC&s
+Canh mồng tơi nấu tôm,93,28,2.8,0.6,3.8,1.5,0.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-zuTzgBMDbUEXCE0DU-LwFtjXXFrow6Klcin2C10MfXDwrz2Z&s
+Canh bí đao nấu tôm,91,35,3.2,0.8,5.2,1.8,0.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWI8NRewGrigtLXy4ACryo9Xn32s94SSu6WnmgAungXht3PsoB&s
+Canh khoai môn nấu tôm,88,52,4.5,1.5,7.8,1.5,1.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwwlVsGlTbDy2PoOvPhkY2yBwToIoduYDnyoOMJQhvt32PzTc&s
+Canh chua lá giang,92,32,3.5,0.8,4.5,1.6,0.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfiE5zxclFKfKxQ-0gRspQxOzMoG4OMLJpWpUdj3MU95sWECI&s
+Lẩu bò,87,75,8.5,3.2,8.5,1.8,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyzETn3R6iUCl9a8lIEt9C9LZS071YugVJIkOZfw8SE4Lsaa4&s
+Lẩu dê,86,82,9.2,3.5,8.2,1.7,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUbBZ5-A9lObPfjjuXDT0JfMEJL-Goh7a00vaAQARSvjJEowc&s
+Lẩu cá kèo,88,68,7.8,2.8,8.8,1.6,1.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjxx1N12JOU8FZKE8t9LLjcg7JCF-kjuCffHW_H8_wmOTQeI4r&s
+Lẩu cá lăng,87,72,8.2,3.2,8.5,1.5,1.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRggiKgcuI7NP_pric1xMnFm8nOgKh80GkpdXSsLOflt6-r6EU&s
+Lẩu nấm,89,58,5.5,2.2,8.5,2.8,1.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhl-x-SWLcaoOO9XPwuEpcx7NAgk5ODpvyz-s0DSFsfACYKhmq&s
+Lẩu gà lá é,87,72,7.2,2.8,8.2,1.7,1.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQndJRqG3FwYnhY2jM6YcoDf0Xt9gp8QiyuJ4IgGbRqWwZ6Dn7b&s
+Lẩu hải sản,89,65,6.8,2.2,7.5,1.5,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPZN0Q5yVO9Wo_T2MUTSnglIG9jupdIkLajmRCRfiB57MZlt6g&s
+Lẩu tôm chua cay,88,68,7.5,2.5,8.2,1.6,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDwRnuXL-CLdJTka_IEiv55tZNim3Pp8ohOm1x7nvE-aqPzdU6&s
+Lẩu riêu cua,88,72,7.8,2.8,8.8,1.5,1.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc7HPV-p8fZ3WjtUx2ieUKYvjVeRIkqTOiwLZ4fwF67Jhz1KtP&s
+Lẩu nấm kim chi,87,75,6.5,3.2,9.5,2.2,1.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMLxTYhwNdvjsf80gh68TUlnwxVwA1go13cMkuedrsAbvk4DCc&s
+Lẩu Thái tôm,88,68,7.2,2.5,8.5,1.8,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKZinXzIy3SfjruDd6fDWSElLnwhXJo0w6qVzKbti8sS_8ozlB&s
+Bún đậu mắm tôm,72,158,12.8,6.5,18.5,1.2,1.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPpZ-YwXvr33HKpGbaY6s9ypgYSAXvAHqAm9Ck7DCQLPcderiv&s
+Miến lươn,78,128,10.5,4.5,16.8,1.5,1.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYemBTjNjz01cahDHMTbVomq66hbvDNhD5D-xVz-paHtFWHZht&s
+Miến gà,79,122,9.8,4.2,16.5,1.4,1.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw4CWuzMAeJP-AvjBQUWAxD5Yj-ygMgScdsT9eh_mI95roG2w&s
+Miến ngan,78,128,10.8,4.8,16.2,1.5,1.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcR5ycMKB6RgPaYmV_zx8EI5DART6D3HxflBXB15XVZJ2wtuAd&s
+Miến măng vịt,79,125,10.2,4.5,16.8,1.6,1.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMo39_DChhPx4qjYJP6vyFiB4oGMWllzDIZlRMyti-Py7-GBaT&s
+Miến gà tiềm thuốc bắc,80,118,9.5,4.2,16.2,1.4,1.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2lksmIrOfuh-A02cNZAb7vFChrtIEh27S-LwcTY_uQ-tplkDE&s
+Hủ tiếu sate,82,112,9.5,4.2,15.2,1.2,1.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtg8546X2ZN86WlvrYN3RI4jflpZk_EEYOIiQDgJgN_5BANTA&s
+Hủ tiếu bò kho,81,125,11.5,5.2,16.5,1.1,1.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBCzdNQIQFPN2OL1ueko0_BnqG-V_4aalgT48JL6vOzRvMY-uv&s
+Bánh canh ghẹ,84,95,8.8,3.2,13.2,0.9,1.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpE3vvuHjIwd-KeUGscNRFxxSw437TKsSMGoalCfdrRc6QK_Nr&s
+Bánh canh bột gạo,85,88,7.5,2.5,13.8,0.8,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqYWijzPuB5Trxp6sIL6HxjLgt0hto5QfMyUcjkOeaAKC1Q1t9&s
+Bánh ướt thịt nướng,70,142,9.5,4.5,21.8,1.2,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFXDY095HcTbFqOaNhDv2Omiix9K_qe8mScYbcni_G95Zq6asf&s
+Bánh cuốn thịt,69,135,8.8,4.2,22.5,1.1,1.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQEWm5MBYXx-rkrbxacHwgz9pkpS6n7HfnO3jZy6xPytxh6o4&s
+Bánh cuốn tôm,70,132,8.5,3.8,22.8,1.2,1.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS56zVm2rOkousUjse9f2cDLJWXOTTsSQH55GtV3CC6FiFq7Iar&s
+Bánh uốt chả quế,71,138,9.2,4.5,21.5,1,1.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyurLM05dS1JuFHGfu5Ti0yuQt3r8KipuX4zylfCXPr-LPuTNr&s
+Chè đậu đỏ,77,122,5.2,2.2,23.8,2.5,0.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWudmMCfS92sx6tgQAm3-ZdkwVLl3Y9qrfskEggJU2JyRm3JsO&s
+Chè đậu trắng,76,125,5.5,2.5,23.5,2.6,0.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpOrQjf8PVAmRjLbxt2exp3Ajf5jeUX5bQRaXCsUpVzU6V8XUZ&s
+Chè khoai môn,74,135,4.8,3.2,25.5,1.8,1.1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQgmoCsxd7UvHNe4HVSSJskkR_CcypVvH4R4e7cYxU9K09JCY&s
+Chè khoai dẻo,75,132,4.5,2.8,25.8,1.9,1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLncIK4uqNRK0-PTiYwQ0yqrPyMnWmNIvqkIVKnt-xH3R82H0&s
+Chè bắp,78,115,4.2,2.2,22.5,2.2,0.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwsDZDJiOTAhW1WYE0FExXmbypeuV_KDG3jZ4tlu5GIRzsoRM&s
+Chè chuối,76,128,3.8,2.5,24.8,2.5,0.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQctvezoZttjsZRGWQ6nwp0tEnXh6qENfy88N7tz9MnBHrm6ull&s
+Chè trôi nước,72,145,4.5,3.5,27.5,1.5,1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ27MPcwCMJrZsAzxyuXhH6FU2bJK9LuA-bx9AV8lBxOf4XCA&s
+Chè đậu xanh nước cốt dừa,75,138,5.2,4.8,24.2,2.2,1.1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQGgevSP1lDD60gP_Ca13sMJWJPcMn0HnkINA_lOq1L73RM5ow&s
+Chè hạt é,76,132,5.8,3.2,24.5,2.8,1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB3x6V7edHaS5mPg5vWstW5cdhSNbC6NcVMfhrxTqGUYWNkSU&s
+Chè long nhãn,80,105,3.5,1.8,21.8,1.5,0.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiwC8ns8B1Hx4qWoaOCkzV--oCqhVNbJxwRX7e7uMip-gHndGX&s
+Chè bưởi hạt sen,79,112,3.8,2.2,22.5,1.8,0.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8su4PWrkzBJmXEfmEl6TJUuovztrez3pVOZSvvy03OjhiwdtG&s
+Chè thạch rau câu,85,78,2.5,1.2,16.8,2.5,0.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTzuYR9MAs_ZbKH3VzNAg4i85AjIoKytlNSvxi3u9IVJe6dBU&s
+Chè suông sâm,82,95,3.2,1.5,19.5,2.2,0.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9X3M-fvLoOJV7SE9nwGpOZH8POaN5b1Aasr4sYS4WwBOI2QrN&s
+Chè vải,81,98,3.5,1.8,19.8,1.8,0.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDzevaHn4QkKc59timgpt0X0yqZYQrB7DG-a0rXPxGb_J16MI&s
 Chè măng tây,83,88,3.8,1.5,17.5,1.5,0.9,
-Chè đậu ván,75,128,5.5,2.8,23.5,2.5,0.9,
-Chè bí đao,78,115,3.2,1.8,23.2,2.8,0.7,
-Chè khúc,74,138,4.8,3.5,25.8,2.2,1,
-Chè thập cẩm,77,125,4.2,2.8,24.2,2.5,0.9,
-Sương sáo,86,58,1.5,0.5,12.5,2.8,0.4,
-Tàu hủ nước đường,82,88,3.8,1.5,16.5,1.2,0.8,
-Sữa đậu nành đường phèn,88,62,3.5,1.8,10.5,0.8,0.6,
-Sữa chua nha đam,80,95,3.2,2.5,16.8,1.5,0.8,
-Sữa chua trái cây,78,105,3.5,2.8,18.5,1.2,0.9,
-Yaourt uống,85,75,3.2,1.8,12.5,0.5,0.7,
-Sinh tố bơ,78,128,3.5,6.8,15.5,2.2,0.8,
-Sinh tố mãng cầu,82,98,2.8,2.5,18.5,1.8,0.6,
-Sinh tố dâu,84,88,2.5,1.8,17.2,2.5,0.5,
-Sinh tố dưa hấu,88,68,2.2,1.2,14.5,1.5,0.4,
-Sinh tố xoài,83,92,2.5,1.5,18.8,1.8,0.5,
-Sinh tố sapoche,80,108,2.8,2.8,20.5,2.2,0.6,
-Sinh tố đu đủ,84,85,2.2,1.5,17.5,1.8,0.5,
-Nước mía,88,58,0.8,0.2,13.5,0.5,0.3,
-Nước chanh đường,92,38,0.5,0.1,9.2,0.4,0.2,
-Nước sâm dừa hột é,86,68,1.8,0.8,14.5,1.5,0.5,
-Nước mát đậu đen,85,72,2.5,1.2,14.2,1.8,0.6,
-Nước rau má,91,42,1.5,0.5,8.8,1.2,0.4,
-Nước sắn dây,89,52,1.2,0.3,11.5,1.5,0.4,
-Trà đá chanh,96,18,0.2,0,4.2,0.2,0.1,
-Trà sữa trân châu,78,125,2.8,3.5,22.5,0.8,0.6,
-Cà phê sữa đá,82,95,2.5,3.2,15.8,0.3,0.5,
-Cà phê đen,96,12,0.8,0.2,2.2,0.2,0.1,
-Cà phê bạc xỉu,84,88,2.8,2.8,14.5,0.2,0.5,
-Cà phê trứng,68,165,6.5,9.8,15.5,0.2,0.8,
-Cà phê cốt dừa,80,112,2.5,5.5,16.8,0.8,0.6,
-Soda chanh,94,28,0.2,0,6.8,0.2,0.2,
-Soda sứa,92,35,0.8,0,8.2,0.5,0.3,
-Sữa tươi trân châu đường đen,80,118,3.5,3.8,20.5,0.6,0.7,
-Matcha latte,84,95,3.2,2.8,16.5,0.5,0.6,
+Chè đậu ván,75,128,5.5,2.8,23.5,2.5,0.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ31Fo9pEz8NtPOseFEX6xfFnOdw6MWZHfuC3PnxDBrZjTgncag&s
+Chè bí đao,78,115,3.2,1.8,23.2,2.8,0.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcBy6Rq4WcjUFFtwE-BbcTqqJoW5sFrKtoJcHw2iejsyNqwQo&s
+Chè khúc,74,138,4.8,3.5,25.8,2.2,1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSIKLM9yRInLo6ZCgH7Xw2-tMoMPIRvXXfhynS1xKNsXcZq3sX&s
+Chè thập cẩm,77,125,4.2,2.8,24.2,2.5,0.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzRjIbLUh3ni9V7_IomTLD8NVtjSuwV34i7ytD607aP1pd8mvI&s
+Sương sáo,86,58,1.5,0.5,12.5,2.8,0.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5pTLY-XqXfuIza7mlIjM13S7vBAM0ogmggENGzDG5zNXAqbA&s
+Tàu hủ nước đường,82,88,3.8,1.5,16.5,1.2,0.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJGD_LE4PUIy0R1VHUQWNgI1eboCIrs-5MO5pklZuKV_dNcQ&s
+Sữa đậu nành đường phèn,88,62,3.5,1.8,10.5,0.8,0.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI9x8BnIiRkrhjnEyNxrfGZsza3tfCQXTJRLBTWVIXZn65YLo&s
+Sữa chua nha đam,80,95,3.2,2.5,16.8,1.5,0.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo-XiDApIR314hCGeRQAVEFTlqp7ZKGIAQ0aSMWwvqlTX5O9fn&s
+Sữa chua trái cây,78,105,3.5,2.8,18.5,1.2,0.9,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTPNCBq4gC_FbRty5xw7s9N_0gll3h-LaWX7EZLv_xlf-tkQY&s
+Yaourt uống,85,75,3.2,1.8,12.5,0.5,0.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFzIGiV1aZ9P80a17UpRE_d309Or-Kc1_GP_jbTWxC39Thf160&s
+Sinh tố bơ,78,128,3.5,6.8,15.5,2.2,0.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFzIGiV1aZ9P80a17UpRE_d309Or-Kc1_GP_jbTWxC39Thf160&s
+Sinh tố mãng cầu,82,98,2.8,2.5,18.5,1.8,0.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReJ0JFw5_q3opb9PpDHBPT4p7NEFDM6FpnfJys4zJPSb7NA_5q&s
+Sinh tố dâu,84,88,2.5,1.8,17.2,2.5,0.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2zgz-NONZiLbdNp_66SD9dobRnX5xewmzHF5NlG6m7tp4eKI&s
+Sinh tố dưa hấu,88,68,2.2,1.2,14.5,1.5,0.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAQCTn9_iamSfLdZQa9RW9P1FH6E_48cBzBZ3_vU6wMUEolzZ2&s
+Sinh tố xoài,83,92,2.5,1.5,18.8,1.8,0.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfUmV91W1lMm-BwiCpyQ3bNoZozh0srKl5FE3W2kpZBcxR1jhl&s
+Sinh tố sapoche,80,108,2.8,2.8,20.5,2.2,0.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMcDhdtudUAU0MoiUuwYog1s0ZZZogHCtzAqWi_cIQ1cTinkH9&s
+Sinh tố đu đủ,84,85,2.2,1.5,17.5,1.8,0.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR86AUOFZ-uJsSTZuG6hSnl3fcInBQ8BtlA2gOzRVE6jd8PKV5y&s
+Nước mía,88,58,0.8,0.2,13.5,0.5,0.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2bXkiMnfWPOI0KjKatd5vFmHZIvhDqGm3vAs1Zycdu7t5NSQy&s
+Nước chanh đường,92,38,0.5,0.1,9.2,0.4,0.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcrbGUtqrD8uu2bSDb29vrnRgAdtUnyuR-RsoNS2we4b4SGotM&s
+Nước sâm dừa hột é,86,68,1.8,0.8,14.5,1.5,0.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzTSbCthNemljzhjQE2Q8N1qQqU-3HSEplzN1CK6ldFLot7xA&s
+Nước mát đậu đen,85,72,2.5,1.2,14.2,1.8,0.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkSo6AyJtx4aeDm2W7JW-wdW8RIt7Wod3AMtx5xP0gy8f3bIgN&s
+Nước rau má,91,42,1.5,0.5,8.8,1.2,0.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTzhI-L1nnw80nok0OnHus9nUN_3wuNTthbIuRjZZJbj0uMjs&s
+Nước sắn dây,89,52,1.2,0.3,11.5,1.5,0.4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIrf_vN_jJwC35AjIpaIKWcTiJm-iPn5x-n0hs5-M6tNOfIwpP&s
+Trà đá chanh,96,18,0.2,0,4.2,0.2,0.1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRP5zPo_j1p7QDVMBbC7GzEK134ZyMwUqFbdrZXPdQTuC5HHdP&s
+Trà sữa trân châu,78,125,2.8,3.5,22.5,0.8,0.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWMOHhbfGT2W0hRm6PCt73NVQF5J0FgoAUR0H0PDDxhlqqK_w&s
+Cà phê sữa đá,82,95,2.5,3.2,15.8,0.3,0.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN9snrivEbjc-c5Wy_Tdth33tRYoiFv32LB1AGS7KhTdcD0Qu2&s
+Cà phê đen,96,12,0.8,0.2,2.2,0.2,0.1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4KMyb_LS149FXSy00eSzY9abOFCpoG0fAwEaelJrK4PFWqsZT&s
+Cà phê bạc xỉu,84,88,2.8,2.8,14.5,0.2,0.5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPJX0sEq_qfrnyINqvOf_HlyBOEgy8oPS83gzCeqgCzlmWGQU&s
+Cà phê trứng,68,165,6.5,9.8,15.5,0.2,0.8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJr7kdjInNOZh5cGTr7mvX3W4WmBVHcgka9wyklC2BByiu30x-&s
+Cà phê cốt dừa,80,112,2.5,5.5,16.8,0.8,0.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdihCIKemUSEe07anQzhy9rRkMWblq9mHsHuib0Pcx3zQLDooa&s
+Soda chanh,94,28,0.2,0,6.8,0.2,0.2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_1UiCIAA0CaiK-ri8d-pH4jW7wV-IYpxOrXdtVi3yd62-7Ic&s
+Soda sứa,92,35,0.8,0,8.2,0.5,0.3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqTgC4hb0xiGwuEh1VM0CzKeBudRpCy_MLXkbK67HVyLsr5jE2&s
+Sữa tươi trân châu đường đen,80,118,3.5,3.8,20.5,0.6,0.7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJvRwmTtqLkMqDkKHQRZSSDKy0FomiOhs5d8EeYlbidkG8p5m-&s
+Matcha latte,84,95,3.2,2.8,16.5,0.5,0.6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxmr2s42MzLhL_5wIFgMy_ZRKgydoGYhT2DjEuJyliJjQXLA8&s
