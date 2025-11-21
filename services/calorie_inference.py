@@ -5,23 +5,18 @@ Calorie inference service.
 import os
 import sys
 import pandas as pd
-import joblib
 
 # Ensure project root is on sys.path
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-from utils.fuzzy_match import map_food, normalize_text
+from utils.fuzzy_match import map_food_candidates, normalize_text
 from utils.parser_rule_based import parse_input
 
 # Load Vietnamese nutrition dataset
 data_path = os.path.join(HERE, "data", "food_nutrition_data_final.csv")
 nutrition_df = pd.read_csv(data_path, encoding='utf-8')
-
-# Load calorie prediction model
-model_path = os.path.join(HERE, "models", "calorie", "calorie_from_macro_rf.pkl")
-calorie_model = joblib.load(model_path)
 
 def convert_to_grams(quantity, unit, food_text: str) -> float | None:
     """Convert quantity+unit to grams when possible.
@@ -120,50 +115,61 @@ def infer(text: str) -> dict:
             }
         
         food_text = parsed["food"]
-        quantity = parsed.get("quantity", 1)
-        unit = parsed.get("unit", "phần")
+        quantity = parsed.get("quantity")
+        unit = parsed.get("unit")
         
-        # Normalize and map food
+        # Normalize and map food vào bảng dinh dưỡng gốc
         normalized_food = normalize_text(food_text)
-        mapped_food = map_food(normalized_food, nutrition_df)
-        
-        if mapped_food is None:
+        candidate_foods = map_food_candidates(normalized_food, nutrition_df, top_n=5)
+
+        if not candidate_foods:
             return {
                 "success": False,
                 "message": f"Không tìm thấy thông tin dinh dưỡng cho '{food_text}'",
                 "found_in_master": False,
                 "food": food_text,
                 "quantity": quantity,
-                "unit": unit
+                "unit": unit,
+                "matches": []
             }
-        
-        # Calculate calories
-        calories_per_100g = float(mapped_food["calories"])  # per 100g
-        default_serving_g = float(mapped_food["weight_g"])  # our default serving size
 
         grams = convert_to_grams(quantity, unit, food_text)
+        matches = []
+        for candidate in candidate_foods:
+            calories_per_100g = float(candidate.get("calories") or 0.0)
+            if calories_per_100g <= 0.0:
+                estimated_calories = None
+            elif grams is not None:
+                estimated_calories = calories_per_100g * grams / 100.0
+            elif quantity:
+                default_serving_g = float(candidate.get("weight_g", 100.0))
+                estimated_calories = (calories_per_100g * default_serving_g / 100.0) * float(quantity)
+            else:
+                estimated_calories = calories_per_100g * float(candidate.get("weight_g", 100.0)) / 100.0
 
-        if grams is None:
-            # Use serving-based calculation (e.g., portion)
-            total_calories = (calories_per_100g * default_serving_g / 100.0) * float(quantity if quantity else 1)
-        else:
-            total_calories = (calories_per_100g * grams / 100.0)
-        
+            matches.append(
+                {
+                    "food": candidate["name"],
+                    "score": candidate.get("score"),
+                    "calories_per_100g": calories_per_100g,
+                    "estimated_calories": round(estimated_calories, 2) if estimated_calories is not None else None,
+                    "weight_g": grams if grams is not None else float(candidate.get("weight_g", 100.0)),
+                    "nutrition_info": {
+                        "protein": candidate.get("protein", 0.0),
+                        "carbs": candidate.get("carbs", 0.0),
+                        "fat": candidate.get("fat", 0.0),
+                        "fiber": candidate.get("fiber", 0.0),
+                    },
+                }
+            )
+
         return {
             "success": True,
             "found_in_master": True,
-            "food": food_text,
+            "query": food_text,
             "quantity": quantity,
             "unit": unit,
-            "calories": round(total_calories, 2),
-            "calories_per_100g": calories_per_100g,
-            "weight_g": grams if grams is not None else default_serving_g,
-            "nutrition_info": {
-                "protein": mapped_food["protein"],
-                "carbs": mapped_food["carbs"],
-                "fat": mapped_food["fat"],
-                "fiber": mapped_food["fiber"]
-            }
+            "matches": matches
         }
         
     except Exception as e:
