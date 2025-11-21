@@ -509,13 +509,6 @@ async def _call_gemini_llm(prompt: str, json_mode: bool = False) -> dict | str |
         else:
             llm_logger.error(f"An unexpected error occurred during LLM call: {e}")
         return None
-
-# The rest of your original functions (parse, recommend_meal_plan, prompts, LLM handlers, etc.)
-# are assumed unchanged beyond the improvements above. Ensure the rest of the file below this
-# point remains the same as in your repository (recommend_meal_plan, _get_query_embedding,
-# _build_structured_query_text, generate_natural_response_from_recommendations, etc.).
-# If you want I can paste the whole remaining original content here again (unchanged).
-
 def _parse_question_with_keywords(question_lower: str) -> dict:
     """
     Parse a question using advanced keyword matching algorithm.
@@ -699,36 +692,130 @@ def recommend_meal_plan(
     if not requested_meals:
         requested_meals = DEFAULT_MEALS
 
-    # --- NHÁNH ƯU TIÊN: câu hỏi generic về thực đơn/bữa ăn -> random 1 thực đơn từ data ---
     base_text = (dict_corrected_base or normalized_question or original_question).lower()
-
     meal_map = keyword_maps.get("meal_map", {})
-
     def _is_generic_meal_query(text: str) -> bool:
-        # 1) Kiểm tra keyword bữa ăn từ meal_map
         for _, kws in meal_map.items():
             for kw in kws:
                 if kw in text:
                     return True
-        # 2) Một số cụm chung về thực đơn/bữa ăn
         generic_phrases = [
             "thuc don", "thực đơn", "an gi", "ăn gì",
             "bua an", "bữa ăn", "1 ngay", "mot ngay", "ca ngay", "trong ngay",
+            "goi y thuc don", "gợi ý thực đơn", "menu", "goi y an uong", "gợi ý ăn uống", "goi y bua an", "gợi ý bữa ăn", "thuc don cho toi", "thực đơn cho tôi", "thuc don hom nay", "thực đơn hôm nay"
         ]
         return any(p in text for p in generic_phrases)
 
-    if _is_generic_meal_query(base_text):
-        print("[INFO] Generic meal-related query detected (pre-filter). Selecting random safe meal plan.")
-        generic_mask = recommender.meal_plans_df['Tình trạng sức khỏe'].str.contains(
-            'bình thường|khoe manh|khong benh|khong co benh', case=False, na=False
+    # 1. Nếu có health/goal/diet (ít nhất 1 trường khác "không có") thì luôn lọc + rank, nếu không có kết quả trả []
+    has_any_keyword = any(
+        v and v != 'không có'
+        for v in (health_status, goal, diet_type)
+    )
+    if has_any_keyword:
+        # --- Lọc data theo health_status, goal, diet_type như cũ ---
+        structured_query_text = _build_structured_query_text(
+            health_status=health_status,
+            goal=goal,
+            diet_type=diet_type,
+            requested_meals=requested_meals
         )
-        generic_df = recommender.meal_plans_df[generic_mask]
-        if generic_df.empty:
-            generic_df = recommender.meal_plans_df
-
-        sampled = generic_df.sample(n=1, random_state=None)
-        best_plans_raw = sampled.to_dict(orient='records')
-
+        user_input_df = pd.DataFrame([{
+            'Tình trạng sức khỏe': health_status,
+            'Mục tiêu': goal,
+            'Chế độ ăn': diet_type
+        }])
+        try:
+            df_to_encode = user_input_df.rename(columns={
+                'Tình trạng sức khỏe': 'tinh_trang_suc_khoe',
+                'Mục tiêu': 'muc_tieu',
+                'Chế độ ăn': 'che_do_an'
+            })
+            _ = recommender.user_feature_encoder.transform(df_to_encode[recommender.user_features_cols])
+        except ValueError as e:
+            print(f"[ERROR] Error encoding user input: {e}")
+            return []
+        print("[INFO] Applying hard filters based on extracted attributes...")
+        filtered_df = recommender.meal_plans_df.copy()
+        conditions = []
+        def _normalize_multi_value_field(raw_value: str) -> list[str]:
+            if not raw_value:
+                return []
+            text = str(raw_value).lower()
+            for pat in (" và ", " và", "và "):
+                text = text.replace(pat, ",")
+            text = text.strip(" ,")
+            return [p.strip() for p in text.split(",") if p.strip()]
+        if diet_type and diet_type != 'không có':
+            conditions.append(filtered_df['Chế độ ăn'].str.lower().str.strip() == diet_type.lower().strip())
+        if health_status and health_status != 'không có':
+            health_keywords = _normalize_multi_value_field(health_status)
+            if health_keywords:
+                health_condition = False
+                col = filtered_df['Tình trạng sức khỏe'].str.lower()
+                for kw in health_keywords:
+                    health_condition = health_condition | col.str.contains(kw, na=False)
+                conditions.append(health_condition)
+        if goal and goal != 'không có':
+            goal_keywords = _normalize_multi_value_field(goal)
+            if goal_keywords:
+                goal_condition = False
+                col = filtered_df['Mục tiêu'].str.lower()
+                for kw in goal_keywords:
+                    goal_condition = goal_condition | col.str.contains(kw, na=False)
+                conditions.append(goal_condition)
+        if conditions:
+            filtered_df = filtered_df[np.logical_and.reduce(conditions)]
+        if filtered_df.empty:
+            print("[INFO] No meal plans found after applying hard filters.")
+            return []
+        # --- PhoBERT + ranking như cũ ---
+        filtered_indices = filtered_df.index
+        filtered_embeddings = recommender.meal_features_phobert_matrix[filtered_indices]
+        query_text_for_embedding = (dict_corrected_base or normalized_question or original_question).strip()
+        query_embedding = _get_query_embedding(query_text_for_embedding, recommender.phobert_model, recommender.phobert_tokenizer)
+        similarity_scores = cosine_similarity(query_embedding, filtered_embeddings).flatten()
+        top_indices = similarity_scores.argsort()[::-1]
+        if not len(top_indices):
+            return []
+        best_score = similarity_scores[top_indices[0]]
+        print(f"[DEBUG] Best similarity score with original question: {best_score:.4f}")
+        if best_score < SIMILARITY_THRESHOLD and structured_query_text:
+            print("[INFO] Similarity below threshold. Retrying with structured attributes.")
+            query_text_for_embedding = structured_query_text
+            query_embedding = _get_query_embedding(query_text_for_embedding, recommender.phobert_model, recommender.phobert_tokenizer)
+            similarity_scores = cosine_similarity(query_embedding, filtered_embeddings).flatten()
+            top_indices = similarity_scores.argsort()[::-1]
+            if not len(top_indices):
+                return []
+            best_score = similarity_scores[top_indices[0]]
+            print(f"[DEBUG] Best similarity score with structured query: {best_score:.4f}")
+        if best_score < SIMILARITY_THRESHOLD:
+            print(f"[INFO] Best match score ({best_score:.2f}) is below threshold ({SIMILARITY_THRESHOLD}). Returning no results.")
+            return []
+        original_relevant_indices = [filtered_indices[i] for i in top_indices]
+        if not original_relevant_indices:
+            return []
+        if len(original_relevant_indices) == 1:
+            best_match_index = original_relevant_indices[0]
+            print(f"[INFO] Only one candidate found. Consistently returning index: {best_match_index}")
+        if original_question in recommender.last_recommendation_cache:
+            last_shown_index = recommender.last_recommendation_cache[original_question]
+            try:
+                current_pos = original_relevant_indices.index(last_shown_index)
+                next_pos = (current_pos + 1) % len(original_relevant_indices)
+                best_match_index = original_relevant_indices[next_pos]
+                print(f"[INFO] Subsequent request. Showing next candidate at index: {best_match_index}")
+            except ValueError:
+                best_match_index = original_relevant_indices[0]
+                print(f"[INFO] Subsequent request. Last shown index not in new candidates. Starting over at index: {best_match_index}")
+        else:
+            if original_relevant_indices:
+                best_match_index = original_relevant_indices[0]
+                print(f"[INFO] First request. Selecting top candidate at index: {best_match_index}")
+            else:
+                return []
+        recommender.last_recommendation_cache[original_question] = best_match_index
+        best_plans_raw = recommender.meal_plans_df.iloc[best_match_index:best_match_index+1].to_dict(orient='records')
         output_recommendations = []
         for plan in best_plans_raw:
             recommendation = {}
@@ -739,9 +826,8 @@ def recommend_meal_plan(
                 else:
                     recommendation[meal_key] = meal_value
             output_recommendations.append(recommendation)
-
         try:
-            meal_plan_logger.info("Thực đơn được gợi ý (generic meal query - random, pre-filter):")
+            meal_plan_logger.info("Thực đơn được gợi ý:")
             for rec in output_recommendations:
                 for meal_key, meal_value in rec.items():
                     if meal_value and meal_value != "Không có gợi ý":
@@ -751,195 +837,44 @@ def recommend_meal_plan(
             meal_plan_logger.info("=" * 80)
         except Exception as e:
             meal_plan_logger.error(f"Error logging meal plan recommendations: {e}")
-
         return output_recommendations
-
-    structured_query_text = _build_structured_query_text(
-        health_status=health_status,
-        goal=goal,
-        diet_type=diet_type,
-        requested_meals=requested_meals
-    )
-
-    # Create a DataFrame for the user's input to encode
-    user_input_df = pd.DataFrame([{
-        'Tình trạng sức khỏe': health_status,
-        'Mục tiêu': goal,
-        'Chế độ ăn': diet_type
-    }])
-    
-    try:
-        # Rename columns to match the names the encoder was trained on
-        df_to_encode = user_input_df.rename(columns={
-            'Tình trạng sức khỏe': 'tinh_trang_suc_khoe',
-            'Mục tiêu': 'muc_tieu',
-            'Chế độ ăn': 'che_do_an'
-        })
-        # This is not used for ranking anymore, but kept for potential future use
-        _ = recommender.user_feature_encoder.transform(df_to_encode[recommender.user_features_cols])
-    except ValueError as e:
-        print(f"[ERROR] Error encoding user input: {e}")
-        return []
-
-    # --- NEW LOGIC: Filter-then-Rank ---
-    # 1. Hard-filter the dataset based on extracted attributes
-    print("[INFO] Applying hard filters based on extracted attributes...")
-    filtered_df = recommender.meal_plans_df.copy()
-
-    conditions = []
-    def _normalize_multi_value_field(raw_value: str) -> list[str]:
-        if not raw_value:
-            return []
-        text = str(raw_value).lower()
-        for pat in (" và ", " và", "và "):
-            text = text.replace(pat, ",")
-        text = text.strip(" ,")
-        return [p.strip() for p in text.split(",") if p.strip()]
-    # SỬA LỖI LOGIC: Xử lý nhiều giá trị trong một trường (ví dụ: "béo phì, tiểu đường")
-    # Thay vì tìm kiếm sự trùng khớp chính xác, chúng ta sẽ tìm kiếm sự tồn tại của bất kỳ từ khóa nào.
-    if diet_type and diet_type != 'không có':
-        # Chế độ ăn thường là một giá trị duy nhất, giữ nguyên logic so sánh bằng.
-        conditions.append(filtered_df['Chế độ ăn'].str.lower().str.strip() == diet_type.lower().strip())
-
-    if health_status and health_status != 'không có':
-        health_keywords = _normalize_multi_value_field(health_status)
-        if health_keywords:
-            # OR từng keyword, không dùng regex phức tạp
-            health_condition = False
-            col = filtered_df['Tình trạng sức khỏe'].str.lower()
-            for kw in health_keywords:
-                health_condition = health_condition | col.str.contains(kw, na=False)
-            conditions.append(health_condition)
-
-    if goal and goal != 'không có':
-        goal_keywords = _normalize_multi_value_field(goal)
-        if goal_keywords:
-            goal_condition = False
-            col = filtered_df['Mục tiêu'].str.lower()
-            for kw in goal_keywords:
-                goal_condition = goal_condition | col.str.contains(kw, na=False)
-            conditions.append(goal_condition)
-
-    # Chỉ apply filter nếu có điều kiện cụ thể.
-    if conditions:
-        filtered_df = filtered_df[np.logical_and.reduce(conditions)]
-        if filtered_df.empty:
-            print("[INFO] No meal plans found after applying hard filters.")
-            return []
-    else:
-        # Không có health_status / goal / diet_type -> để PhoBERT + intent gate xử lý như trước.
-        print("[INFO] No explicit health/goal/diet filters; using semantic intent gate.")
-    
-    print(f"[INFO] Found {len(filtered_df)} candidates after filtering.")
-
-    # 2. Perform semantic search on the filtered subset with graceful fallback
-    filtered_indices = filtered_df.index
-    filtered_embeddings = recommender.meal_features_phobert_matrix[filtered_indices]
-
-    # Intent gate: check if any nutrition-related keywords were extracted
-    has_any_keyword = any(
-        v and v != 'không có'
-        for v in (health_status, goal, diet_type)
-    )
-
-    # Dùng câu đã được sửa chính tả mạnh nhất nếu có, để PhoBERT bớt nhạy với lỗi.
-    query_text_for_embedding = (dict_corrected_base or normalized_question or original_question).strip()
-    query_embedding = _get_query_embedding(query_text_for_embedding, recommender.phobert_model, recommender.phobert_tokenizer)
-    similarity_scores = cosine_similarity(query_embedding, filtered_embeddings).flatten()
-    top_indices = similarity_scores.argsort()[::-1]
-
-    if not len(top_indices):
-        return []
-
-    best_score = similarity_scores[top_indices[0]]
-    print(f"[DEBUG] Best similarity score with original question: {best_score:.4f}")
-
-    # PhoBERT-based intent gate: if no nutrition keywords and similarity is very high-level/low, treat as out-of-domain
-    if not has_any_keyword and best_score < INTENT_MIN_SIMILARITY_FOR_WEAK_KEYWORDS:
-        print(
-            f"[INFO] Intent gate: no nutrition keywords and similarity "
-            f"{best_score:.4f} < {INTENT_MIN_SIMILARITY_FOR_WEAK_KEYWORDS}. Treat as out-of-domain."
+    # 2. Nếu không có health/goal/diet nhưng là câu hỏi chung chung về thực đơn thì trả random 1 plan an toàn (bỏ qua PhoBERT)
+    elif _is_generic_meal_query(base_text):
+        print("[INFO] Generic meal-related query detected (no health/goal/diet). Selecting random safe meal plan.")
+        generic_mask = recommender.meal_plans_df['Tình trạng sức khỏe'].str.contains(
+            'bình thường|khoe manh|khong benh|khong co benh', case=False, na=False
         )
-        return []
-
-    if best_score < SIMILARITY_THRESHOLD and structured_query_text:
-        print("[INFO] Similarity below threshold. Retrying with structured attributes.")
-        query_text_for_embedding = structured_query_text
-        query_embedding = _get_query_embedding(query_text_for_embedding, recommender.phobert_model, recommender.phobert_tokenizer)
-        similarity_scores = cosine_similarity(query_embedding, filtered_embeddings).flatten()
-        top_indices = similarity_scores.argsort()[::-1]
-        if not len(top_indices):
-            return []
-        best_score = similarity_scores[top_indices[0]]
-        print(f"[DEBUG] Best similarity score with structured query: {best_score:.4f}")
-
-    if best_score < SIMILARITY_THRESHOLD:
-        print(f"[INFO] Best match score ({best_score:.2f}) is below threshold ({SIMILARITY_THRESHOLD}). Returning no results.")
-        return [] # Return empty list if no good match is found
-    original_relevant_indices = [filtered_indices[i] for i in top_indices]
-    
-    if not original_relevant_indices:
-        return [] # No suitable plan found after filtering and ranking
-    if len(original_relevant_indices) == 1:
-        best_match_index = original_relevant_indices[0]
-        print(f"[INFO] Only one candidate found. Consistently returning index: {best_match_index}")
-
-    if original_question in recommender.last_recommendation_cache:
-        # This is a subsequent request. Try to find the *next best* result.
-        last_shown_index = recommender.last_recommendation_cache[original_question]
-        try:
-            # Find the position of the last shown index in our list of candidates
-            current_pos = original_relevant_indices.index(last_shown_index)
-            # Get the next position, wrapping around if at the end of the list
-            next_pos = (current_pos + 1) % len(original_relevant_indices)
-            best_match_index = original_relevant_indices[next_pos]
-            print(f"[INFO] Subsequent request. Showing next candidate at index: {best_match_index}")
-        except ValueError:
-            # The last shown index is not in the current candidate list, so start from the beginning
-            best_match_index = original_relevant_indices[0]
-            print(f"[INFO] Subsequent request. Last shown index not in new candidates. Starting over at index: {best_match_index}")
-    else:
-        # This is the first request for this question.
-        # We can take the top result directly or randomize if needed. Let's take the top one for consistency.
-        if original_relevant_indices:
-            best_match_index = original_relevant_indices[0]
-            print(f"[INFO] First request. Selecting top candidate at index: {best_match_index}")
-        else:
-            return [] # Should not happen if we passed the earlier checks, but as a safeguard.
-
-    # Update the cache with the index we are about to show
-    recommender.last_recommendation_cache[original_question] = best_match_index
-    
-    # Retrieve the corresponding meal plan
-    best_plans_raw = recommender.meal_plans_df.iloc[best_match_index:best_match_index+1].to_dict(orient='records')
-
-    # Format the output to include only relevant meal plan details
-    output_recommendations = []
-    for plan in best_plans_raw:
-        recommendation = {}
-        for meal_key in requested_meals:
-            meal_value = plan.get(meal_key)
-            # Check if meal_value is NaN or None
-            if pd.isna(meal_value):
-                recommendation[meal_key] = "Không có gợi ý"
-            else:
-                recommendation[meal_key] = meal_value
-        output_recommendations.append(recommendation)
-    
-    # --- Log meal plan recommendations to meal_plan_requests.log ---
-    try:
-        meal_plan_logger.info("Thực đơn được gợi ý:")
-        for rec in output_recommendations:
-            for meal_key, meal_value in rec.items():
-                if meal_value and meal_value != "Không có gợi ý":
-                    meal_plan_logger.info(f"  {meal_key}: {meal_value}")
+        generic_df = recommender.meal_plans_df[generic_mask]
+        if generic_df.empty:
+            generic_df = recommender.meal_plans_df
+        sampled = generic_df.sample(n=1, random_state=None)
+        best_plans_raw = sampled.to_dict(orient='records')
+        output_recommendations = []
+        for plan in best_plans_raw:
+            recommendation = {}
+            for meal_key in requested_meals:
+                meal_value = plan.get(meal_key)
+                if pd.isna(meal_value):
+                    recommendation[meal_key] = "Không có gợi ý"
                 else:
-                    meal_plan_logger.info(f"  {meal_key}: Không có gợi ý")
-        meal_plan_logger.info("=" * 80)
-    except Exception as e:
-        meal_plan_logger.error(f"Error logging meal plan recommendations: {e}")
-    
-    return output_recommendations
+                    recommendation[meal_key] = meal_value
+            output_recommendations.append(recommendation)
+        try:
+            meal_plan_logger.info("Thực đơn được gợi ý (generic meal query - random, fallback):")
+            for rec in output_recommendations:
+                for meal_key, meal_value in rec.items():
+                    if meal_value and meal_value != "Không có gợi ý":
+                        meal_plan_logger.info(f"  {meal_key}: {meal_value}")
+                    else:
+                        meal_plan_logger.info(f"  {meal_key}: Không có gợi ý")
+            meal_plan_logger.info("=" * 80)
+        except Exception as e:
+            meal_plan_logger.error(f"Error logging meal plan recommendations: {e}")
+        return output_recommendations
+    # 3. Nếu không có dữ liệu và không phải câu chung chung thì trả [] (để Gemini fallback)
+    else:
+        print("[INFO] No health/goal/diet and not a generic meal query. Returning empty for Gemini fallback.")
+        return []
 
 def _build_natural_response_prompt(question: str, health_status: str, goal: str, recommendations: list[dict]) -> str:
     """Constructs the prompt for the LLM to generate a natural language response."""
@@ -1029,7 +964,6 @@ async def generate_answer_with_fallback(
         + Nếu câu hỏi là dinh dưỡng (có keyword) -> nhờ Gemini tự đề xuất thực đơn.
         + Nếu câu hỏi ngoài dinh dưỡng          -> nhờ Gemini trả lời chung.
     """
-
     # 1. Nếu đã có recs từ data thì giữ nguyên luồng cũ
     if recommendations:
         return await generate_natural_response_from_recommendations(
