@@ -70,8 +70,8 @@ echo OPENROUTER_MODEL_CHAT=openai/gpt-3.5-turbo >> .env
 ### Bước 7: Chạy ứng dụng
 
 ```bash
-python run_server.py
-```
+
+```python run_server.py
 
 Server sẽ chạy tại: `http://127.0.0.1:8000`
 
