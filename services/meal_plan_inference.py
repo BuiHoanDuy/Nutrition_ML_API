@@ -792,30 +792,15 @@ def recommend_meal_plan(
         if best_score < SIMILARITY_THRESHOLD:
             print(f"[INFO] Best match score ({best_score:.2f}) is below threshold ({SIMILARITY_THRESHOLD}). Returning no results.")
             return []
+
         original_relevant_indices = [filtered_indices[i] for i in top_indices]
         if not original_relevant_indices:
             return []
-        if len(original_relevant_indices) == 1:
-            best_match_index = original_relevant_indices[0]
-            print(f"[INFO] Only one candidate found. Consistently returning index: {best_match_index}")
-        if original_question in recommender.last_recommendation_cache:
-            last_shown_index = recommender.last_recommendation_cache[original_question]
-            try:
-                current_pos = original_relevant_indices.index(last_shown_index)
-                next_pos = (current_pos + 1) % len(original_relevant_indices)
-                best_match_index = original_relevant_indices[next_pos]
-                print(f"[INFO] Subsequent request. Showing next candidate at index: {best_match_index}")
-            except ValueError:
-                best_match_index = original_relevant_indices[0]
-                print(f"[INFO] Subsequent request. Last shown index not in new candidates. Starting over at index: {best_match_index}")
-        else:
-            if original_relevant_indices:
-                best_match_index = original_relevant_indices[0]
-                print(f"[INFO] First request. Selecting top candidate at index: {best_match_index}")
-            else:
-                return []
-        recommender.last_recommendation_cache[original_question] = best_match_index
-        best_plans_raw = recommender.meal_plans_df.iloc[best_match_index:best_match_index+1].to_dict(orient='records')
+
+        # Select up to top 3 meal plans for this query
+        selected_indices = original_relevant_indices[:3]
+        best_plans_raw = recommender.meal_plans_df.loc[selected_indices].to_dict(orient='records')
+
         output_recommendations = []
         for plan in best_plans_raw:
             recommendation = {}
@@ -847,7 +832,8 @@ def recommend_meal_plan(
         generic_df = recommender.meal_plans_df[generic_mask]
         if generic_df.empty:
             generic_df = recommender.meal_plans_df
-        sampled = generic_df.sample(n=1, random_state=None)
+        sample_n = min(3, len(generic_df))
+        sampled = generic_df.sample(n=sample_n, random_state=None)
         best_plans_raw = sampled.to_dict(orient='records')
         output_recommendations = []
         for plan in best_plans_raw:

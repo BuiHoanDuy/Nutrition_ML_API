@@ -14,8 +14,8 @@ if HERE not in sys.path:
 from utils.fuzzy_match import map_food_candidates, normalize_text
 from utils.parser_rule_based import parse_input
 
-# Load Vietnamese nutrition dataset
-data_path = os.path.join(HERE, "data", "food_nutrition_data_final.csv")
+# Load Vietnamese nutrition dataset (switched to food_nutrition.csv)
+data_path = os.path.join(HERE, "data", "food_nutrition.csv")
 nutrition_df = pd.read_csv(data_path, encoding='utf-8')
 
 def convert_to_grams(quantity, unit, food_text: str) -> float | None:
@@ -155,6 +155,7 @@ def infer(text: str) -> dict:
                     "estimated_calories": round(estimated_calories, 2) if estimated_calories is not None else None,
                     "weight_g": grams if grams is not None else float(candidate.get("weight_g", 100.0)),
                     "image_url": candidate.get("image_url"),
+                    "recipe": candidate.get("recipe"),
                     "nutrition_info": {
                         "protein": candidate.get("protein", 0.0),
                         "carbs": candidate.get("carbs", 0.0),

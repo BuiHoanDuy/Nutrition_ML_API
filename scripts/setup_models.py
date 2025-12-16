@@ -28,8 +28,8 @@ def setup_models():
         Path(directory).mkdir(parents=True, exist_ok=True)
         print(f"[OK] Created directory: {directory}")
     
-    # Check if data file exists
-    data_file = project_root / "data" / "food_nutrition_data_final.csv"
+    # Check if data file exists (switched to food_nutrition.csv)
+    data_file = project_root / "data" / "food_nutrition.csv"
     if not data_file.exists():
         print(f"[ERROR] Data file not found at {data_file}")
         print("Please ensure you have the nutrition dataset in the data/ directory")

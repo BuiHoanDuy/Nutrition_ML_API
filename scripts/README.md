@@ -54,6 +54,6 @@ python scripts/train_meal_plan_model.py
 ## 📝 Notes
 
 - Models được lưu trong thư mục `models/`
-- Dữ liệu training cần có trong `data/food_nutrition_data_final.csv`
+- Dữ liệu training cần có trong `data/food_nutrition.csv`
 - Obesity dataset cần có trong `models/obesity/ObesityDataSet.csv`
 - Tất cả models sẽ được tự động train khi chạy `setup_models.py`

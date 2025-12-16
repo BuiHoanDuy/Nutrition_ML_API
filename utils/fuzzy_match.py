@@ -1,5 +1,5 @@
 """
-Fuzzy matching helper to map user food input to closest food in food_nutrition_data_final.csv.
+Fuzzy matching helper to map user food input to closest food in food_nutrition.csv.
 Enhancements:
  - Aggressive normalization pipeline (remove diacritics, handle teencode, slang, abbreviations)
  - Auto-generated aliases (initialisms, concatenated names, brand slang) for every food entry
@@ -257,11 +257,12 @@ def _row_to_payload(row: pd.Series, score: float | None = None) -> dict:
         "fiber": float(row["Celluloza"]) if pd.notna(row["Celluloza"]) else 0.0,
         "weight_g": 100.0,
         "image_url": image_url if image_url and str(image_url).strip() else None,
+        "recipe": row["Công Thức"] if "Công Thức" in row.index and pd.notna(row["Công Thức"]) else None,
     }
 
 
-# Load Vietnamese food dataset
-DATA_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "food_nutrition_data_final.csv")
+# Load Vietnamese food dataset (switched to food_nutrition.csv)
+DATA_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "food_nutrition.csv")
 food_master = pd.read_csv(DATA_PATH, encoding='utf-8')
 
 food_names = food_master["Tên thực phẩm"].fillna("").astype(str).tolist()

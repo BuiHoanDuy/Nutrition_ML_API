@@ -170,7 +170,7 @@ nutrition-ai-app/
 │   ├── fuzzy_match.py           # Food name matching
 │   └── parser_rule_based.py     # Text parsing
 ├── data/                         # Datasets
-│   └── food_nutrition_data_final.csv
+│   └── food_nutrition.csv
 ├── logs/                         # Application logs
 ├── requirements.txt              # Python dependencies
 └── run_server.py                # Server startup script

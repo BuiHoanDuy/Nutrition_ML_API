@@ -38,7 +38,7 @@ pip install -r requirements.txt
 
 ### Bước 4: Chuẩn bị dữ liệu
 
-Đảm bảo bạn có file dữ liệu `data/food_nutrition_data_final.csv` trong thư mục dự án.
+Đảm bảo bạn có file dữ liệu `data/food_nutrition.csv` trong thư mục dự án.
 
 ### Bước 5: Train models
 

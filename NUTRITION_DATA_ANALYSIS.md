@@ -130,7 +130,7 @@ Output: Calorie ước tính + thông tin dinh dưỡng
 
 ## 8. KẾT LUẬN
 
-Bộ dữ liệu `food_nutrition_data_final.csv` là một nguồn tài nguyên tốt cho hệ thống calorie lookup, với:
+Bộ dữ liệu `food_nutrition.csv` là một nguồn tài nguyên tốt cho hệ thống calorie lookup, với:
 - **Độ phủ rộng**: 851 món ăn/thực phẩm
 - **Độ chính xác**: Dữ liệu dinh dưỡng chuẩn
 - **Tính thực tế**: Bao gồm cả món ăn Việt Nam phổ biến
