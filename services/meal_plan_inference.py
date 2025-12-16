@@ -864,16 +864,17 @@ def recommend_meal_plan(
 
 def _build_natural_response_prompt(question: str, health_status: str, goal: str, recommendations: list[dict]) -> str:
     """Constructs the prompt for the LLM to generate a natural language response."""
-    # Convert recommendations to a readable string
-    recs_parts = []
-    if recommendations:
-        rec = recommendations[0]
+    # Convert up to 3 recommendations to a readable string
+    recs_block = []
+    for idx, rec in enumerate(recommendations[:3], start=1):
+        parts = []
         for meal_key in ['Bữa sáng', 'Bữa trưa', 'Bữa tối', 'Bữa phụ']:
             if meal_key in rec and pd.notna(rec[meal_key]) and rec[meal_key] != "Không có gợi ý":
                 meal_content = str(rec[meal_key]).replace(';', ',')
-                recs_parts.append(f"{meal_key}: {meal_content}")
-    
-    recs_str = "; ".join(recs_parts) if recs_parts else "Không có gợi ý cụ thể cho các bữa ăn."
+                parts.append(f"{meal_key}: {meal_content}")
+        if parts:
+            recs_block.append(f"Thực đơn {idx}: " + "; ".join(parts))
+    recs_str = "\n".join(recs_block) if recs_block else "Không có gợi ý cụ thể cho các bữa ăn."
 
     # Construct context about user's health and goals
     health_goal_context = ""
@@ -925,16 +926,20 @@ async def generate_natural_response_from_recommendations(
             return safe.replace("\n", " ").replace("- ", "").strip()
     
     llm_logger.warning("LLM response for natural language generation was not in the expected format. Falling back to raw data.")
-    # --- CRITICAL FIX: Improve fallback response formatting ---
-    # The original recs_str is "Bữa sáng: Món A; Bữa trưa: Món B". We want to make it more readable.
+    # --- Fallback formatting for up to 3 recommendations ---
     recs_parts = []
-    if recommendations:
-        rec = recommendations[0]
+    for idx, rec in enumerate(recommendations[:3], start=1):
+        meal_parts = []
         for meal_key, meal_value in rec.items():
             if pd.notna(meal_value) and meal_value != "Không có gợi ý":
-                recs_parts.append(f"{meal_key}: {str(meal_value).replace(';', ',')}")
-    
-    fallback_response = f"Dưới đây là các gợi ý dành cho bạn: {'. '.join(recs_parts)}."
+                meal_parts.append(f"{meal_key}: {str(meal_value).replace(';', ',')}")
+        if meal_parts:
+            recs_parts.append(f"Thực đơn {idx}: " + "; ".join(meal_parts))
+
+    if not recs_parts:
+        return "Dưới đây là các gợi ý dành cho bạn: Không có gợi ý cụ thể."
+
+    fallback_response = "Dưới đây là các gợi ý dành cho bạn: " + " | ".join(recs_parts) + "."
     return fallback_response
 
 
